@@ -15,6 +15,7 @@
 	<div class="container">
 		<img src={drop} alt="hydro-logo" />
 	</div>
+
 	<div class="multiple-containers">
 		<div class="container-first">
 			<div class="title">Blockchains</div>
@@ -25,12 +26,32 @@
 				<a href="https://coinex.com"><img src={csc} alt="csc-logo" /></a>
 			</div>
 		</div>
+
+		<div class="container-second">
+			<div class="title">Ecosystem</div>
+			<div class="chains" />
+		</div>
+	</div>
+
+	<div class="multiple-containers">
+		<div class="container-third">
+			<div class="title">Info</div>
+		</div>
+
+		<div class="container-fourth">
+			<div class="title">Roadmap</div>
+		</div>
+	</div>
+
+	<div class="multiple-containers">
+		<div class="container-first">
+			<div class="title">Partners</div>
+			<div class="chains" />
+		</div>
+
 		<div class="container-second">
 			<div class="title">Exchanges</div>
 			<div class="chains">
-				<a href="https://coinex.com"><img src={eth} alt="Pancakeswap" /></a>
-				<a href="https://coinex.com"><img src={bsc} alt="Bithumb" /></a>
-				<a href="https://coinex.com"><img src={matic} alt="Bittrex" /></a>
 				<a href="https://coinex.com"><img src={csc} alt="Coinex" /></a>
 			</div>
 		</div>
@@ -71,7 +92,7 @@
 		justify-content: center;
 		flex-direction: column;
 		width: 62rem;
-		height: 30rem;
+		height: 10rem;
 		border-radius: 5px;
 		position: relative;
 		z-index: 1;
@@ -103,7 +124,7 @@
 		justify-content: center;
 		flex-direction: column;
 		width: 62rem;
-		height: 30rem;
+		height: 10rem;
 		border-radius: 5px;
 		position: relative;
 		z-index: 1;
@@ -116,6 +137,69 @@
 	}
 
 	.container-second:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+		filter: blur(10px);
+		margin: -20px;
+	}
+
+	.container-third {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 42rem;
+		height: 30rem;
+		border-radius: 5px;
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 15px;
+		color: #fff;
+		animation: fadeIn 2.5s;
+	}
+
+	.container-third:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+		filter: blur(10px);
+		margin: -20px;
+	}
+
+	.container-fourth {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 62rem;
+		height: 30rem;
+		border-radius: 5px;
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 15px;
+		color: #fff;
+		animation: fadeIn 2.5s;
+	}
+
+	.container-fourth:before {
 		content: "";
 		position: absolute;
 		background: inherit;
