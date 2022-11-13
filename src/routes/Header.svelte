@@ -1,19 +1,22 @@
 <script>
 	import { page } from "$app/stores";
 	import hydro from "$lib/images/white-logo.svg";
+	import blog from "$lib/images/icons/blog.svg";
+	import faq from "$lib/images/icons/faq.svg";
+	import team from "$lib/images/icons/team.svg";
 </script>
 
 <header>
 	<div class="header-button">
-			<a href="/team">TEAM</a>
+			<a href="/team"><img src={team} alt="team" /></a>
 	</div>
 
 	<div class="header-button">
-			<a href="/blog">BLOG</a>
+			<a href="/blog"><img src={blog} alt="blog" /></a>
 	</div>
 
 	<div class="header-button">
-			<a href="/faq">FAQ</a>
+			<a href="/faq"><img src={faq} alt="faq" /></a>
 	</div>
 
 	<div class="header-logo">
@@ -69,6 +72,10 @@
 
 	.header-button a {
 		color: #fff;
+	}
+
+	.header-button img {
+		height: 30px;
 	}
 
 	.header-logo {
