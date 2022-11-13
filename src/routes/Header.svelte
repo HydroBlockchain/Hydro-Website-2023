@@ -30,6 +30,7 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 100px;
+		animation: fadeIn 2.5s;
 	}
 
 	.header-button {
@@ -106,5 +107,14 @@
 		color: #000;
 		width: 128px;
 		padding-right: 10px;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
 </style>

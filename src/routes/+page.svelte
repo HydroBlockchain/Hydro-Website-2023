@@ -1,5 +1,9 @@
 <script>
-	import hydro from "$lib/images/white-logo.svg";
+	import drop from "$lib/images/white-drop.svg";
+	import eth from "$lib/images/blockchains/eth.svg";
+	import bsc from "$lib/images/blockchains/bsc.svg";
+	import matic from "$lib/images/blockchains/matic.svg";
+	import csc from "$lib/images/blockchains/csc.svg";
 </script>
 
 <svelte:head>
@@ -9,11 +13,27 @@
 
 <section>
 	<div class="container">
-		<img src={hydro} alt="hydro-logo" />
+		<img src={drop} alt="hydro-logo" />
 	</div>
 	<div class="multiple-containers">
-		<div class="container-first">Blockchains</div>
-		<div class="container-second">Exchanges</div>
+		<div class="container-first">
+			<div class="title">Blockchains</div>
+			<div class="chains">
+				<a href="https://coinex.com"><img src={eth} alt="eth-logo" /></a>
+				<a href="https://coinex.com"><img src={bsc} alt="bsc-logo" /></a>
+				<a href="https://coinex.com"><img src={matic} alt="matic-logo" /></a>
+				<a href="https://coinex.com"><img src={csc} alt="csc-logo" /></a>
+			</div>
+		</div>
+		<div class="container-second">
+			<div class="title">Exchanges</div>
+			<div class="chains">
+				<a href="https://coinex.com"><img src={eth} alt="Pancakeswap" /></a>
+				<a href="https://coinex.com"><img src={bsc} alt="Bithumb" /></a>
+				<a href="https://coinex.com"><img src={matic} alt="Bittrex" /></a>
+				<a href="https://coinex.com"><img src={csc} alt="Coinex" /></a>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -29,6 +49,7 @@
 		background: inherit;
 		overflow: hidden;
 		margin-bottom: 30px;
+		animation: fadeIn 2.5s;
 	}
 
 	.container:before {
@@ -48,6 +69,7 @@
 	.container-first {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 		width: 62rem;
 		height: 30rem;
 		border-radius: 5px;
@@ -59,6 +81,7 @@
 		margin-left: 0;
 		margin-right: 15px;
 		color: #fff;
+		animation: fadeIn 2.5s;
 	}
 
 	.container-first:before {
@@ -78,6 +101,7 @@
 	.container-second {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 		width: 62rem;
 		height: 30rem;
 		border-radius: 5px;
@@ -88,6 +112,7 @@
 		margin-bottom: 30px;
 		margin-left: 15px;
 		color: #fff;
+		animation: fadeIn 2.5s;
 	}
 
 	.container-second:before {
@@ -108,8 +133,38 @@
 		width: 256px;
 	}
 
+	.container-first img {
+		height: 50px;
+		margin: 10px;
+	}
+
+	.container-second img {
+		height: 50px;
+		margin: 10px;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
 	.multiple-containers {
 		display: flex;
 		flex-direction: row;
+	}
+
+	.chains {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.title {
+		display: flex;
+		justify-content: center;
 	}
 </style>
