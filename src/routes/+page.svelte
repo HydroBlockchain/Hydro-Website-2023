@@ -75,7 +75,6 @@
 		background: inherit;
 		overflow: hidden;
 		margin-bottom: 30px;
-		margin-top: 20px;
 		animation: fadeIn 2.5s;
 	}
 
