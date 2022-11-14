@@ -4,6 +4,9 @@
 	import bsc from "$lib/images/blockchains/bsc.svg";
 	import matic from "$lib/images/blockchains/matic.svg";
 	import csc from "$lib/images/blockchains/csc.svg";
+	import aegir from "$lib/images/logos/Aegir-Wallet.svg";
+	import swap from "$lib/images/logos/Hydro-Swap.svg";
+	import keres from "$lib/images/logos/Keresverse.svg";
 </script>
 
 <svelte:head>
@@ -29,8 +32,12 @@
 
 		<div class="container-second">
 			<div class="title">Ecosystem</div>
-			<div class="chains" />
+			<div class="products">
+			<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
+			<a href="https://coinex.com"><img src={swap} alt="swap-logo" /></a>
+			<a href="https://coinex.com"><img src={keres} alt="keres-logo" /></a>
 		</div>
+	</div>
 	</div>
 
 	<div class="multiple-containers">
@@ -245,6 +252,17 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+	}
+
+	.products {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.products img {
+		height: 20px;
+		margin: 10px;
 	}
 
 	.title {
