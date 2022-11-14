@@ -9,7 +9,6 @@
 	--color-theme-1: #ff3e00;
 	--color-theme-2: #40b3ff;
 	--color-text: #fff;
-	--column-width: 42rem;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
 	color: var(--color-text);
@@ -18,7 +17,6 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-size: 100vw 100vh;
     background: linear-gradient(-45deg, #2D4467, #2B547A, #4d79a3, #182c4a);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -77,14 +75,6 @@ pre {
 	color: var(--color-text);
 }
 
-.text-column {
-	display: flex;
-	max-width: 48rem;
-	flex: 0.6;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 auto;
-}
 
 input,
 button {

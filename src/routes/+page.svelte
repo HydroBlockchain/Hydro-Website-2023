@@ -21,7 +21,6 @@
 
 	<div class="multiple-containers">
 		<div class="container-first">
-			<div class="title">Blockchains</div>
 			<div class="chains">
 				<a href="https://coinex.com"><img src={eth} alt="eth-logo" /></a>
 				<a href="https://coinex.com"><img src={bsc} alt="bsc-logo" /></a>
@@ -31,11 +30,10 @@
 		</div>
 
 		<div class="container-second">
-			<div class="title">Ecosystem</div>
 			<div class="products">
 			<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
-			<a href="https://coinex.com"><img src={swap} alt="swap-logo" /></a>
-			<a href="https://coinex.com"><img src={keres} alt="keres-logo" /></a>
+			<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
+			<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
 		</div>
 	</div>
 	</div>
@@ -69,7 +67,7 @@
 	.container {
 		display: flex;
 		justify-content: center;
-		width: 62rem;
+		width: 85rem;
 		height: 30rem;
 		border-radius: 5px;
 		position: relative;
@@ -77,6 +75,7 @@
 		background: inherit;
 		overflow: hidden;
 		margin-bottom: 30px;
+		margin-top: 20px;
 		animation: fadeIn 2.5s;
 	}
 
@@ -97,8 +96,9 @@
 	.container-first {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		flex-direction: column;
-		width: 62rem;
+		width: 42.5rem;
 		height: 10rem;
 		border-radius: 5px;
 		position: relative;
@@ -130,7 +130,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		width: 62rem;
+		width: 42.5rem;
 		height: 10rem;
 		border-radius: 5px;
 		position: relative;
@@ -161,7 +161,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		width: 42rem;
+		width: 20rem;
 		height: 30rem;
 		border-radius: 5px;
 		position: relative;
@@ -193,7 +193,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		width: 62rem;
+		width: 65rem;
 		height: 30rem;
 		border-radius: 5px;
 		position: relative;
@@ -246,6 +246,7 @@
 	.multiple-containers {
 		display: flex;
 		flex-direction: row;
+		width: 85rem;
 	}
 
 	.chains {
@@ -261,7 +262,7 @@
 	}
 
 	.products img {
-		height: 20px;
+		height: 25px;
 		margin: 10px;
 	}
 

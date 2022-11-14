@@ -34,6 +34,7 @@
 		justify-content: center;
 		margin-top: 50px;
 		animation: fadeIn 2.5s;
+		width: 1200px auto;
 	}
 
 	.header-button {
@@ -83,7 +84,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		text-align: center;
-		width: 630px;
+		width: 1000px;
 		height: 100px;
 		margin: 10px;
 		background-color: #fff;
