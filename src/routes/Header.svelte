@@ -12,10 +12,6 @@
 	</div>
 
 	<div class="header-button">
-			<a href="/blog"><img src={blog} alt="blog" /></a>
-	</div>
-
-	<div class="header-button">
 			<a href="/faq"><img src={faq} alt="faq" /></a>
 	</div>
 
@@ -84,7 +80,7 @@
 		justify-content: flex-end;
 		align-items: center;
 		text-align: center;
-		width: 1000px;
+		width: 1120px;
 		height: 100px;
 		margin: 10px;
 		background-color: #fff;
