@@ -16,7 +16,7 @@
 	.container {
 		display: flex;
 		justify-content: center;
-		width: 62rem;
+		width: 85rem;
 		height: 30rem;
 		border-radius: 5px;
 		position: relative;
