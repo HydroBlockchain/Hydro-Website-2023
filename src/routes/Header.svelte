@@ -128,6 +128,10 @@
 		margin: -20px;
 	}
 
+	.header-logo svg {
+		margin-right: 10px;
+	}
+
 
 	@keyframes fadeIn {
 		0% {
