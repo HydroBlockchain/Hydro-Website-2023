@@ -53,4 +53,82 @@
 		animation: fadeIn 2.5s;
 		width: var(--container-width) auto;
 	}
+
+	.header-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: var(--card-background);
+	color: var(--text-color);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+}
+
+.header-button:before {
+	opacity: 0.5;
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px  var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.header-button a {
+	color: var(--text-color);
+}
+
+.header-button img {
+	height: 30px;
+}
+
+.header-logo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	width: 1120px;
+	height: 100px;
+	margin: 10px;
+	background-color: var(--card-background);
+	color: var(--text-color);
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+}
+
+.header-logo:before {
+	opacity: 0.5;
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px  var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.header-logo svg {
+	margin-right: 10px;
+}
 </style>

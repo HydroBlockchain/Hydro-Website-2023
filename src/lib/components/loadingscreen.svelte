@@ -47,19 +47,10 @@
           justify-content: center;
           align-items: center;
           z-index: 999;
-          background-color: #212124;
+          background-color: var(--preloader-bg);
         }
 
         svg{
             animation: fadeOut 1.5s;
         }
-
-        @keyframes fadeOut {
-		0% {
-			opacity: 1;
-		}
-		100% {
-			opacity: 0;
-		}
-	}
     </style>

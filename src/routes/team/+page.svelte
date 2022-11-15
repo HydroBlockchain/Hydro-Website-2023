@@ -7,24 +7,22 @@
 </svelte:head>
 
 <section>
-	<div class="container">
-		TEAM
-	</div>
+	<div class="container">TEAM</div>
 </section>
 
 <style>
 	.container {
 		display: flex;
 		justify-content: center;
-		width: 85rem;
-		height: 30rem;
-		border-radius: 5px;
+		width: var(--container-width-desktop);
+		height: var(--container-height-large);
+		border-radius: var(--border-radius);
 		position: relative;
 		z-index: 1;
 		background: inherit;
 		overflow: hidden;
 		margin-bottom: 30px;
-		color: #fff;
+		color: var(--text-color);
 	}
 
 	.container:before {
@@ -36,7 +34,7 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+		box-shadow: inset 0 0 2000px var(--card-background);
 		filter: blur(10px);
 		margin: -20px;
 	}

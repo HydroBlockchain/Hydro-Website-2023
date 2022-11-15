@@ -64,5 +64,271 @@
 </section>
 
 <style>
-	
+	.container {
+	display: flex;
+	justify-content: center;
+	width: var(--container-width-desktop);
+	height: var(--container-height-large);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	animation: fadeIn 2.5s;
+}
+
+.container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container-first {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 42.5rem;
+	height: var(--container-height-small);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-left: 0;
+	margin-right: 15px;
+	color: var(--text-color);
+	animation: fadeIn 2.5s;
+}
+
+.container-first:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container-second {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 42.5rem;
+	height: var(--container-height-small);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	color: var(--text-color);
+	animation: fadeIn 2.5s;
+}
+
+.container-second:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container-third {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 20rem;
+	height: var(--container-height-large);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-left: 0;
+	margin-right: 15px;
+	color: var(--text-color);
+	animation: fadeIn 2.5s;
+}
+
+.container-third:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container-fourth {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 65rem;
+	height: var(--container-height-large);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-left: 15px;
+	color: var(--text-color);
+	animation: fadeIn 2.5s;
+}
+
+.container-fourth:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container-fifth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 42.5rem;
+	height: var(--container-height-small);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-left: 0;
+	margin-right: 15px;
+	color: var(--text-color);
+	animation: fadeIn 2.5s;
+}
+
+.container-fifth:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container-sixth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 42.5rem;
+	height: var(--container-height-small);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	margin-left: 0;
+	margin-right: 15px;
+	color: var(--text-color);
+	animation: fadeIn 2.5s;
+}
+
+.container-sixth:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+.container img {
+	width: 256px;
+}
+
+.container-first img {
+	height: 50px;
+	margin: 10px;
+}
+
+.container-second img {
+	height: 50px;
+	margin: 10px;
+}
+
+.container-sixth img {
+	height: 50px;
+	margin: 10px;
+}
+
+.multiple-containers {
+	display: flex;
+	flex-direction: row;
+	width: var(--container-width-desktop);
+}
+
+.chains {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.products {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.products img {
+	height: 25px;
+	margin: 10px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}	
 </style>
