@@ -11,7 +11,7 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="Project Hydro" content="Project Hydro" />
 </svelte:head>
 
 <section>

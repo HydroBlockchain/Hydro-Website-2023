@@ -21,11 +21,11 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-	  --logo-color: #fff;
-	  --text-color: #fff;
-	  --link-color: #fff;
-	  --backgound-color: linear-gradient(-45deg, #2D4467, #2B547A, #4d79a3, #182c4a);
-	  --card-background: rgba(255, 255, 255, 0.5);
+	  --logo-color: #eee;
+	  --text-color: #eee;
+	  --link-color: #eee;
+	  --backgound-color: linear-gradient(-45deg, #4a5a71, #29547c, #1e4a74, #042556);
+	  --card-background: rgba(34, 35, 39, 0.5);
 	  --success-color: #3fd782;
 	  --warn-color: #f25f61;
 	  --info-color: #5f86f2;
@@ -35,11 +35,11 @@ body {
   
   @media (prefers-color-scheme: light) {
 	:root {
-	  --logo-color: #212124;
-	  --text-color: #212124;
-	  --link-color: #212124;
-	  --backgound-color: linear-gradient(-45deg, #8aa2c7, #488fd2, #4192dd, #164b9c);
-	  --card-background: rgba(34, 35, 39, 0.5);
+	  --logo-color: #fff;
+	  --text-color: #fff;
+	  --link-color: #fff;
+	  --backgound-color: linear-gradient(-45deg, #2D4467, #2B547A, #4d79a3, #182c4a);
+	  --card-background: rgba(255, 255, 255, 0.5);
 	  --success-color: #3fd782;
 	  --warn-color: #f25f61;
 	  --info-color: #5f86f2;
@@ -265,7 +265,6 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
 
 .header-button {
 	display: flex;
