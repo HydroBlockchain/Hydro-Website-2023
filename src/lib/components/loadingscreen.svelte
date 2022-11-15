@@ -47,7 +47,7 @@
           justify-content: center;
           align-items: center;
           z-index: 999;
-          background-color: #121212;
+          background-color: #212124;
         }
 
         svg{

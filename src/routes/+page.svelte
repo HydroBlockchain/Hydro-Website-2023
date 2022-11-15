@@ -49,12 +49,12 @@
 	</div>
 
 	<div class="multiple-containers">
-		<div class="container-first">
+		<div class="container-fifth">
 			<div class="title">Partners</div>
 			<div class="chains" />
 		</div>
 
-		<div class="container-second">
+		<div class="container-sixth">
 			<div class="title">Exchanges</div>
 			<div class="chains">
 				<a href="https://coinex.com"><img src={csc} alt="Coinex" /></a>
