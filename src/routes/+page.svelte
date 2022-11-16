@@ -15,12 +15,12 @@
 </svelte:head>
 
 <section>
-	<div class="container">
+	<div class="full">
 		<img src={drop} alt="hydro-logo" />
 	</div>
 
 	<div class="multiple-containers">
-		<div class="container-first">
+		<div class="half">
 			<div class="chains">
 				<a href="https://coinex.com"><img src={eth} alt="eth-logo" /></a>
 				<a href="https://coinex.com"><img src={bsc} alt="bsc-logo" /></a>
@@ -29,32 +29,41 @@
 			</div>
 		</div>
 
-		<div class="container-second">
+		<div class="half">
 			<div class="products">
-			<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
-			<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
-			<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
+				<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
+				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
+				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
+			</div>
 		</div>
-	</div>
 	</div>
 
 	<div class="multiple-containers">
-		<div class="container-third">
+		<div class="one-quarter">
 			<div class="title">Info</div>
+			<div class="information">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+				enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+				in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+				nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+				sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
 		</div>
 
-		<div class="container-fourth">
+		<div class="three-quarter">
 			<div class="title">Roadmap</div>
 		</div>
 	</div>
 
 	<div class="multiple-containers">
-		<div class="container-fifth">
+		<div class="half">
 			<div class="title">Partners</div>
 			<div class="chains" />
 		</div>
 
-		<div class="container-sixth">
+		<div class="half">
 			<div class="title">Exchanges</div>
 			<div class="chains">
 				<a href="https://coinex.com"><img src={csc} alt="Coinex" /></a>
@@ -64,271 +73,170 @@
 </section>
 
 <style>
-	.container {
-	display: flex;
-	justify-content: center;
-	width: var(--container-width-desktop);
-	height: var(--container-height-large);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	animation: fadeIn 2.5s;
-}
+	.full {
+		display: flex;
+		justify-content: center;
+		width: var(--container-width-desktop);
+		height: var(--container-height-large);
+		border-radius: var(--border-radius);
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		animation: fadeIn 2.5s;
+	}
 
-.container:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.full:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px var(--card-background);
+		filter: blur(10px);
+		margin: -20px;
+	}
 
-.container-first {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 42.5rem;
-	height: var(--container-height-small);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	margin-left: 0;
-	margin-right: 15px;
-	color: var(--text-color);
-	animation: fadeIn 2.5s;
-}
+	.half {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 42.5rem;
+		height: var(--container-height-small);
+		border-radius: var(--border-radius);
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 15px;
+		color: var(--text-color);
+		animation: fadeIn 2.5s;
+	}
 
-.container-first:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.half:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px var(--card-background);
+		filter: blur(10px);
+		margin: -20px;
+	}
 
-.container-second {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 42.5rem;
-	height: var(--container-height-small);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	margin-left: 15px;
-	color: var(--text-color);
-	animation: fadeIn 2.5s;
-}
+	.one-quarter {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 20rem;
+		height: var(--container-height-large);
+		border-radius: var(--border-radius);
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 15px;
+		color: var(--text-color);
+		animation: fadeIn 2.5s;
+	}
 
-.container-second:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.one-quarter:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px var(--card-background);
+		filter: blur(10px);
+		margin: -20px;
+	}
 
-.container-third {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 20rem;
-	height: var(--container-height-large);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	margin-left: 0;
-	margin-right: 15px;
-	color: var(--text-color);
-	animation: fadeIn 2.5s;
-}
+	.three-quarter {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 65rem;
+		height: var(--container-height-large);
+		border-radius: var(--border-radius);
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 15px;
+		color: var(--text-color);
+		animation: fadeIn 2.5s;
+	}
 
-.container-third:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.three-quarter:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px var(--card-background);
+		filter: blur(10px);
+		margin: -20px;
+	}
 
-.container-fourth {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 65rem;
-	height: var(--container-height-large);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	margin-left: 15px;
-	color: var(--text-color);
-	animation: fadeIn 2.5s;
-}
+	.full img {
+		width: 256px;
+	}
 
-.container-fourth:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.half img {
+		height: 50px;
+		margin: 10px;
+	}
 
-.container-fifth {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 42.5rem;
-	height: var(--container-height-small);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	margin-left: 0;
-	margin-right: 15px;
-	color: var(--text-color);
-	animation: fadeIn 2.5s;
-}
+	.multiple-containers {
+		display: flex;
+		flex-direction: row;
+		width: var(--container-width-desktop);
+	}
 
-.container-fifth:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.chains {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 
-.container-sixth {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 42.5rem;
-	height: var(--container-height-small);
-	border-radius: var(--border-radius);
-	position: relative;
-	z-index: 1;
-	background: inherit;
-	overflow: hidden;
-	margin-bottom: 30px;
-	margin-left: 0;
-	margin-right: 15px;
-	color: var(--text-color);
-	animation: fadeIn 2.5s;
-}
+	.products {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 
-.container-sixth:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
+	.products img {
+		height: 25px;
+		margin: 10px;
+	}
 
-.container img {
-	width: 256px;
-}
+	.title {
+		display: flex;
+		justify-content: center;
+	}
 
-.container-first img {
-	height: 50px;
-	margin: 10px;
-}
-
-.container-second img {
-	height: 50px;
-	margin: 10px;
-}
-
-.container-sixth img {
-	height: 50px;
-	margin: 10px;
-}
-
-.multiple-containers {
-	display: flex;
-	flex-direction: row;
-	width: var(--container-width-desktop);
-}
-
-.chains {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.products {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.products img {
-	height: 25px;
-	margin: 10px;
-}
-
-.title {
-	display: flex;
-	justify-content: center;
-}	
+	.information{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
 </style>
