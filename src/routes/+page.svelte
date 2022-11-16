@@ -29,12 +29,24 @@
 			</div>
 		</div>
 
-		<div class="half">
+		<div class="half" id="second">
 			<div class="products">
 				<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
 				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
 				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
 			</div>
+		</div>
+	</div>
+
+	<div class="full">
+		<div class="information">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+			enim ad minim veniam, quis nostrud exercitation ullamco laboris
+			nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+			in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+			nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+			sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
 	</div>
 
@@ -54,16 +66,26 @@
 
 		<div class="three-quarter">
 			<div class="title">Roadmap</div>
+			<div class="roadmap">
+			<div class="kvartal">Q1</div>
+			<div class="kvartal">Q2</div>
+			<div class="kvartal">Q3</div>
+			<div class="kvartal">Q4</div>
+		</div>
 		</div>
 	</div>
 
 	<div class="multiple-containers">
 		<div class="half">
 			<div class="title">Partners</div>
-			<div class="chains" />
+			<div class="partners">
+				<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
+				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
+				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
+			</div>
 		</div>
 
-		<div class="half">
+		<div class="half" id="second">
 			<div class="title">Exchanges</div>
 			<div class="chains">
 				<a href="https://coinex.com"><img src={csc} alt="Coinex" /></a>
@@ -76,9 +98,11 @@
 	.full {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		width: var(--container-width-desktop);
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
+		color: var(--text-color);
 		position: relative;
 		z-index: 1;
 		background: inherit;
@@ -132,6 +156,11 @@
 		box-shadow: inset 0 0 2000px var(--card-background);
 		filter: blur(10px);
 		margin: -20px;
+	}
+
+	#second {
+		margin-right: 0px;
+		margin-left: 15px;
 	}
 
 	.one-quarter {
@@ -238,5 +267,28 @@
 		display: flex;
 		justify-content: center;
 		margin: 20px;
+	}
+
+	.roadmap{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.kvartal{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+	}
+
+	.partners {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.partners img {
+		height: 25px;
+		margin: 10px;
 	}
 </style>
