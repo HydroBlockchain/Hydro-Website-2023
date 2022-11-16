@@ -1,5 +1,6 @@
 <script>
 	import Header from './Header.svelte';
+	import Footer from './Footer.svelte';
 	import './styles.css';
 	import {onMount} from "svelte";
     import {state} from "$lib/stores/store.js";
@@ -31,6 +32,7 @@
 	<main>
 		<slot />
 	</main>
+	<Footer />
 </div>
 
 <style>
