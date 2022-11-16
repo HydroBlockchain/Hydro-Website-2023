@@ -1,6 +1,4 @@
 <script>
-	import faq from "$lib/images/icons/faq.svg";
-	import team from "$lib/images/icons/team.svg";
 </script>
 
 <footer>
@@ -43,6 +41,7 @@
 		justify-content: center;
 		animation: fadeIn 2.5s;
 		width: var(--container-width) auto;
+		margin-bottom: 3rem;
 	}
 
 .footer-logo {
