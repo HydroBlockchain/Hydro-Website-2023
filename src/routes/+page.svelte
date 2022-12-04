@@ -264,6 +264,14 @@
 		justify-content: center;
 	}
 
+	.chains a{
+		margin: 20px;
+	}
+
+	a:hover{
+		color: #a1a1a1	!important;
+	}
+
 	.products {
 		display: flex;
 		flex-direction: row;
