@@ -7,12 +7,27 @@
 </svelte:head>
 
 <section>
-	<div class="container">TEAM</div>
+	<div class="container">
+		<div class="team-section">
+			<div class="team-card">Saurav</div>
+			<div class="team-card">Carl</div>
+			<div class="team-card">Jignesh</div>
+		</div>
+		<div class="team-section">
+			<div class="team-card">Briws</div>
+			<div class="team-card">Abhimanyu</div>
+			<div class="team-card">Jwalin</div>
+			<div class="team-card">Abishek</div>
+		</div>
+
+
+	</div>
 </section>
 
 <style>
 	.container {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		width: var(--container-width-desktop);
 		height: var(--container-height-large);
@@ -37,5 +52,18 @@
 		box-shadow: inset 0 0 2000px var(--card-background);
 		filter: blur(10px);
 		margin: -20px;
+	}
+
+	.team-section{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.team-card{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 20px;
 	}
 </style>
