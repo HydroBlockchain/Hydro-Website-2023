@@ -13,7 +13,7 @@
 	import swap from "$lib/images/logos/Hydro-Swap.svg";
 	import keres from "$lib/images/logos/Keresverse.svg";
 	//exchanges
-	import coinex from "$lib/images/exchanges/coinex-logo.svg";
+	import coinex from "$lib/images/exchanges/coinex.svg";
 	import bithumb from "$lib/images/exchanges/bithumb.svg";
 	import mercatox from "$lib/images/exchanges/mercatox.svg";
 	import latoken from "$lib/images/exchanges/latoken.svg";
