@@ -31,6 +31,8 @@ a:hover{
 	  --logo-color: #eee;
 	  --text-color: #eee;
 	  --link-color: #eee;
+	  --button-color: #1c4373;
+	  --button-color-alt: #38a6e6;
 	  --backgound-color: linear-gradient(-45deg, #4a5a71, #29547c, #1e4a74, #042556);
 	  --card-background: rgba(255, 255, 255, 0.2);
 	  --success-color: #3fd782;
@@ -45,6 +47,8 @@ a:hover{
 	  --logo-color: #fff;
 	  --text-color: #fff;
 	  --link-color: #fff;
+	  --button-color: #1c4373;
+	  --button-color-alt: #38a6e6;
 	  --backgound-color: linear-gradient(-45deg, #2D4467, #2B547A, #4d79a3, #182c4a);
 	  --card-background: rgba(255, 255, 255, 0.2);
 	  --success-color: #3fd782;
