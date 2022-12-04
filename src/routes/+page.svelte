@@ -102,12 +102,12 @@
 		</div>
 
 		<div class="half" id="second">
-			<div class="chains">
+			<div class="exchanges">
 				<a href="https://coinex.com"><img src={coinex} alt="Coinex" /></a>
 				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT"><img src={bithumb} alt="Bithumb" /></a>
 				<a href="https://mercatox.com/exchange/HYDRO/BTC"><img src={mercatox} alt="Mercatox" /></a>
 			</div>
-			<div class="chains">
+			<div class="exchanges">
 				<a href="https://latoken.com/exchange/HYDRO_USDT"><img src={latoken} alt="LAtoken" /></a>
 				<a href="https://trade.buyucoin.com/trade/HYDRO-INR"><img src={buyucoin} alt="BuyUcoin" /></a>
 			</div>
@@ -279,6 +279,17 @@
 		justify-content: center;
 	}
 
+	.exchanges {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.exchanges img{
+		width: 128px;
+		margin: 20px;
+	}
+
 	.chains a{
 		margin: 20px;
 	}
@@ -292,11 +303,6 @@
 	.products img {
 		height: 25px;
 		margin: 10px;
-	}
-
-	.title {
-		display: flex;
-		justify-content: center;
 	}
 
 	.information{
