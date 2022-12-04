@@ -194,7 +194,7 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-		width: 20rem;
+		width: 35rem;
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
 		position: relative;
@@ -227,7 +227,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		width: 65rem;
+		width: 50rem;
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
 		position: relative;
