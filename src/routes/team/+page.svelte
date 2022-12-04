@@ -4,6 +4,8 @@
 	import jignesh from "$lib/images/team/jignesh.jpg";
 	import ayushya from "$lib/images/team/ayushya.jpg";
 	import profile from "$lib/images/team/profile.jpg";
+	import twitter from "$lib/images/icons/twitter.svg";
+	import linkedin from "$lib/images/icons/linkedin.svg";
 </script>
 
 <svelte:head>
@@ -21,8 +23,8 @@
 				<div class="team-name">Saurav Kumar</div>
 				<div class="team-title">President</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -31,8 +33,8 @@
 				<div class="team-name">Carl Ulvinen</div>
 				<div class="team-title">Vice President</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -41,8 +43,8 @@
 				<div class="team-name">Jignesh Beladiya</div>
 				<div class="team-title">Writer</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -51,8 +53,8 @@
 				<div class="team-name">Ayushya</div>
 				<div class="team-title">Backend Developer</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -65,8 +67,8 @@
 				<div class="team-name">Briws Ustyugov</div>
 				<div class="team-title">Frontend Developer</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -75,8 +77,8 @@
 				<div class="team-name">Abhimanyu</div>
 				<div class="team-title">Game Developer</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -85,8 +87,8 @@
 				<div class="team-name">Jwalin Adhyaru</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -95,8 +97,8 @@
 				<div class="team-name">Abishek</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -105,8 +107,8 @@
 				<div class="team-name">Sundar</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button">linkedin</div>
-					<div class="button">twitter</div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
 				</div>
 			</div>
 
@@ -152,9 +154,7 @@
 	}
 
 	.team-card{
-		border: 1px solid var(--border-color);
 		padding: 5px;
-		border-radius: var(--border-radius);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -164,7 +164,6 @@
 
 	.team-card img{
 		width: 128px;
-		border-radius: var(--border-radius);
 		margin-top: 3px;
 		margin-bottom: 3px;
 		animation: fadeIn 2.5s;
@@ -187,10 +186,12 @@
 	}
 
 	.button{
-		border: 1px solid var(--border-color);
 		font-size: 12px;
 		padding: 8px;
 		margin: 5px;
-		border-radius: var(--border-radius);
+	}
+
+	.button img{
+		width: 20px;
 	}
 </style>
