@@ -1,6 +1,7 @@
 <script>
 	//logos
 	import drop from "$lib/images/white-drop.svg";
+	import ecosystem from "$lib/images/hydro-ecosystem.svg";
 	//chains
 	import eth from "$lib/images/blockchains/eth.svg";
 	import bsc from "$lib/images/blockchains/bsc.svg";
@@ -65,7 +66,7 @@
 		</div>
 
 		<div class="three-quarter">
-			
+			<img src={ecosystem} alt="hydro-ecosystem" />
 		</div>
 		</div>
 
@@ -209,6 +210,7 @@
 	.three-quarter {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		flex-direction: column;
 		width: 65rem;
 		height: var(--container-height-large);
@@ -239,6 +241,10 @@
 
 	.full img {
 		width: 256px;
+	}
+
+	.three-quarter img {
+		width: 600px;
 	}
 
 	.half img {
