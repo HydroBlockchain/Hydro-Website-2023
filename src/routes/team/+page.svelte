@@ -160,13 +160,14 @@
 		justify-content: center;
 		align-items: center;
 		margin: 20px;
+		animation: fadeIn 2.5s;
 	}
 
 	.team-card img{
 		width: 128px;
 		margin-top: 3px;
 		margin-bottom: 3px;
-		animation: fadeIn 2.5s;
+		border-radius: var(--border-radius);
 	}
 	
 	.team-name{
