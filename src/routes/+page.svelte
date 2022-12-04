@@ -14,7 +14,16 @@
 	import keres from "$lib/images/logos/Keresverse.svg";
 	//exchanges
 	import coinex from "$lib/images/exchanges/coinex-logo.svg";
+	import bithumb from "$lib/images/exchanges/bithumb.svg";
+	import mercatox from "$lib/images/exchanges/mercatox.svg";
+	import latoken from "$lib/images/exchanges/latoken.svg";
+	import buyucoin from "$lib/images/exchanges/buyucoin.svg";
 	//partners
+	import bloceducare from "$lib/images/partners/bloceducare.svg";
+	import ethernity from "$lib/images/partners/ethernity.svg";
+	import sparkpoint from "$lib/images/partners/sparkpoint.svg";
+	import vulkania from "$lib/images/partners/vulkania.svg";
+	import opendefi from "$lib/images/partners/opendefi.svg";
 </script>
 
 <svelte:head>
@@ -84,9 +93,11 @@
 		<div class="half">
 			<div class="title">Partners</div>
 			<div class="partners">
-				<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
-				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
-				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
+				<a href="https://www.blocedu.care/"><img src={bloceducare} alt="bloceducare" /></a>
+				<a href="https://vulkania.io/coins/hydro"><img src={vulkania} alt="vulkania" /></a>
+				<a href="https://sparkpoint.io/"><img src={sparkpoint} alt="sparkpoint" /></a>
+				<a href="https://opendefi.finance/"><img src={opendefi} alt="OpenDeFi" /></a>
+				<a href="https://ethernity.live/"><img src={ethernity} alt="Ethernity" /></a>
 			</div>
 		</div>
 
@@ -94,6 +105,10 @@
 			<div class="title">Exchanges</div>
 			<div class="chains">
 				<a href="https://coinex.com"><img src={coinex} alt="Coinex" /></a>
+				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT"><img src={bithumb} alt="Bithumb" /></a>
+				<a href="https://mercatox.com/exchange/HYDRO/BTC"><img src={mercatox} alt="Mercatox" /></a>
+				<a href="https://latoken.com/exchange/HYDRO_USDT"><img src={latoken} alt="LAtoken" /></a>
+				<a href="https://trade.buyucoin.com/trade/HYDRO-INR"><img src={buyucoin} alt="BuyUcoin" /></a>
 			</div>
 		</div>
 	</div>
