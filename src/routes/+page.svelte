@@ -1,13 +1,19 @@
 <script>
+	//logos
 	import drop from "$lib/images/white-drop.svg";
+	//chains
 	import eth from "$lib/images/blockchains/eth.svg";
 	import bsc from "$lib/images/blockchains/bsc.svg";
 	import matic from "$lib/images/blockchains/matic.svg";
 	import csc from "$lib/images/blockchains/csc.svg";
+	import movr from "$lib/images/blockchains/movr.svg";
+	//products
 	import aegir from "$lib/images/logos/Aegir-Wallet.svg";
 	import swap from "$lib/images/logos/Hydro-Swap.svg";
 	import keres from "$lib/images/logos/Keresverse.svg";
+	//exchanges
 	import coinex from "$lib/images/exchanges/coinex-logo.svg";
+	//partners
 </script>
 
 <svelte:head>
@@ -18,61 +24,60 @@
 <section>
 	<div class="full">
 		<img src={drop} alt="hydro-logo" />
+		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 	</div>
 
 	<div class="multiple-containers">
 		<div class="half">
 			<div class="chains">
-				<a href="https://etherscan.io"><img src={eth} alt="eth-logo" /></a>
-				<a href="https://bscscan.com"><img src={bsc} alt="bsc-logo" /></a>
-				<a href="https://polygonscan.com"><img src={matic} alt="matic-logo" /></a>
-				<a href="https://coinex.net"><img src={csc} alt="csc-logo" /></a>
+				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" /></a>
+				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" /></a>
+				<a href="https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={matic} alt="matic-logo" /></a>
+				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"><img src={csc} alt="csc-logo" /></a>
+				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"><img src={movr} alt="csc-logo" /></a>
 			</div>
 		</div>
 
 		<div class="half" id="second">
 			<div class="products">
-				<a href="https://aegirwallet.org"><img src={aegir} alt="aegir-logo" /></a>
+				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" /></a>
 				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
 				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
 			</div>
 		</div>
 	</div>
 
-	<div class="full">
-		<div class="information">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-			enim ad minim veniam, quis nostrud exercitation ullamco laboris
-			nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-			in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-			nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-			sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
+	
 
 	<div class="multiple-containers">
 		<div class="one-quarter">
-			<div class="title">Info</div>
 			<div class="information">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-				enim ad minim veniam, quis nostrud exercitation ullamco laboris
-				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-				in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-				sunt in culpa qui officia deserunt mollit anim id est laborum.
+				The Hydro protocols are available to use on multiple networks. 
+                All of our protocols and dApps are powered by Hydro tokens.
+				<br><br>
+				Hydro has a total supply of 111,111,111 which was elected by its community. 
+                The distribution between chains is handled by our bridge that swaps your tokens between chains. 
+                Once the swap from one chain to another is complete you are free to enjoy the benefits of your chosen network.
+				<br><br>
+				All of the Hydro tokens that are consumed by a Smart Contract will evaporate, 
+                hence the supply will continously decrease over time.
 			</div>
 		</div>
 
 		<div class="three-quarter">
-			<div class="title">Roadmap</div>
-			<div class="roadmap">
-			<div class="kvartal">Q1</div>
-			<div class="kvartal">Q2</div>
-			<div class="kvartal">Q3</div>
-			<div class="kvartal">Q4</div>
+			
 		</div>
+		</div>
+
+		<div class="full">
+			<div class="information">
+				<div class="title">Roadmap 2023</div>
+				<div class="roadmap">
+				<div class="kvartal">Q1</div>
+				<div class="kvartal">Q2</div>
+				<div class="kvartal">Q3</div>
+				<div class="kvartal">Q4</div>
+			</div>
 		</div>
 	</div>
 
@@ -98,6 +103,7 @@
 <style>
 	.full {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: var(--container-width-desktop);
@@ -124,6 +130,10 @@
 		box-shadow: inset 0 0 2000px var(--card-background);
 		filter: blur(10px);
 		margin: -20px;
+	}
+
+	.tagline{
+		margin-top: 2rem;
 	}
 
 	.half {
