@@ -19,11 +19,11 @@
 	import latoken from "$lib/images/exchanges/latoken.svg";
 	import buyucoin from "$lib/images/exchanges/buyucoin.svg";
 	//partners
-	import bloceducare from "$lib/images/partners/bloceducare.svg";
-	import ethernity from "$lib/images/partners/ethernity.svg";
-	import sparkpoint from "$lib/images/partners/sparkpoint.svg";
+	import bloceducare from "$lib/images/partners/bloceducare.png";
+	import ethernity from "$lib/images/partners/ethernity.png";
+	import sparkpoint from "$lib/images/partners/sparkpoint.png";
 	import vulkania from "$lib/images/partners/vulkania.svg";
-	import opendefi from "$lib/images/partners/opendefi.svg";
+	import opendefi from "$lib/images/partners/opendefi.png";
 </script>
 
 <svelte:head>
@@ -302,7 +302,7 @@
 
 	.products img {
 		height: 25px;
-		margin: 10px;
+		margin: 20px;
 	}
 
 	.information{
@@ -330,7 +330,7 @@
 	}
 
 	.partners img {
-		height: 25px;
-		margin: 10px;
+		width: 128px auto;
+		margin: 20px;
 	}
 </style>
