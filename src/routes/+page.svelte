@@ -7,6 +7,7 @@
 	import aegir from "$lib/images/logos/Aegir-Wallet.svg";
 	import swap from "$lib/images/logos/Hydro-Swap.svg";
 	import keres from "$lib/images/logos/Keresverse.svg";
+	import coinex from "$lib/images/exchanges/coinex-logo.svg";
 </script>
 
 <svelte:head>
@@ -22,16 +23,16 @@
 	<div class="multiple-containers">
 		<div class="half">
 			<div class="chains">
-				<a href="https://coinex.com"><img src={eth} alt="eth-logo" /></a>
-				<a href="https://coinex.com"><img src={bsc} alt="bsc-logo" /></a>
-				<a href="https://coinex.com"><img src={matic} alt="matic-logo" /></a>
-				<a href="https://coinex.com"><img src={csc} alt="csc-logo" /></a>
+				<a href="https://etherscan.io"><img src={eth} alt="eth-logo" /></a>
+				<a href="https://bscscan.com"><img src={bsc} alt="bsc-logo" /></a>
+				<a href="https://polygonscan.com"><img src={matic} alt="matic-logo" /></a>
+				<a href="https://coinex.net"><img src={csc} alt="csc-logo" /></a>
 			</div>
 		</div>
 
 		<div class="half" id="second">
 			<div class="products">
-				<a href="https://coinex.com"><img src={aegir} alt="aegir-logo" /></a>
+				<a href="https://aegirwallet.org"><img src={aegir} alt="aegir-logo" /></a>
 				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
 				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
 			</div>
@@ -88,7 +89,7 @@
 		<div class="half" id="second">
 			<div class="title">Exchanges</div>
 			<div class="chains">
-				<a href="https://coinex.com"><img src={csc} alt="Coinex" /></a>
+				<a href="https://coinex.com"><img src={coinex} alt="Coinex" /></a>
 			</div>
 		</div>
 	</div>
