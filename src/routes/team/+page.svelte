@@ -2,6 +2,8 @@
 	import saurav from "$lib/images/team/saurav.jpg";
 	import carl from "$lib/images/team/carl.jpg";
 	import jignesh from "$lib/images/team/jignesh.jpg";
+	import ayushya from "$lib/images/team/ayushya.jpg";
+	import profile from "$lib/images/team/profile.jpg";
 </script>
 
 <svelte:head>
@@ -35,9 +37,19 @@
 			</div>
 
 			<div class="team-card">
-				<img src={jignesh} alt="saurav" />
+				<img src={jignesh} alt="jignesh" />
 				<div class="team-name">Jignesh Beladiya</div>
 				<div class="team-title">Writer</div>
+				<div class="team-info">
+					<div class="button">linkedin</div>
+					<div class="button">twitter</div>
+				</div>
+			</div>
+
+			<div class="team-card">
+				<img src={ayushya} alt="ayushya" />
+				<div class="team-name">Ayushya</div>
+				<div class="team-title">Backend Developer</div>
 				<div class="team-info">
 					<div class="button">linkedin</div>
 					<div class="button">twitter</div>
@@ -48,10 +60,55 @@
 
 		<div class="team-section">
 
-			<div class="team-card">Briws</div>
-			<div class="team-card">Abhimanyu</div>
-			<div class="team-card">Jwalin</div>
-			<div class="team-card">Abishek</div>
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Briws Ustyugov</div>
+				<div class="team-title">Frontend Developer</div>
+				<div class="team-info">
+					<div class="button">linkedin</div>
+					<div class="button">twitter</div>
+				</div>
+			</div>
+
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Abhimanyu</div>
+				<div class="team-title">Game Developer</div>
+				<div class="team-info">
+					<div class="button">linkedin</div>
+					<div class="button">twitter</div>
+				</div>
+			</div>
+
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Jwalin Adhyaru</div>
+				<div class="team-title">3D Artist</div>
+				<div class="team-info">
+					<div class="button">linkedin</div>
+					<div class="button">twitter</div>
+				</div>
+			</div>
+
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Abishek</div>
+				<div class="team-title">3D Artist</div>
+				<div class="team-info">
+					<div class="button">linkedin</div>
+					<div class="button">twitter</div>
+				</div>
+			</div>
+
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Sundar</div>
+				<div class="team-title">3D Artist</div>
+				<div class="team-info">
+					<div class="button">linkedin</div>
+					<div class="button">twitter</div>
+				</div>
+			</div>
 
 		</div>
 
@@ -95,7 +152,9 @@
 	}
 
 	.team-card{
-
+		border: 1px solid var(--border-color);
+		padding: 5px;
+		border-radius: var(--border-radius);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -106,14 +165,19 @@
 	.team-card img{
 		width: 128px;
 		border-radius: var(--border-radius);
+		margin-top: 3px;
+		margin-bottom: 3px;
+		animation: fadeIn 2.5s;
 	}
 	
 	.team-name{
-
+		margin: 3px;
+		font-size: 14px;
 	}
 
 	.team-title{
-
+		margin: 3px;
+		font-size: 12px;
 	}
 
 	.team-info{
@@ -123,14 +187,10 @@
 	}
 
 	.button{
-		background-color: var(--button-color);
+		border: 1px solid var(--border-color);
 		font-size: 12px;
-		padding: 10px;
+		padding: 8px;
 		margin: 5px;
 		border-radius: var(--border-radius);
-	}
-
-	.button:hover{
-		background-color: var(--button-color-alt);
 	}
 </style>
