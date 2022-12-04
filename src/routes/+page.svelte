@@ -79,7 +79,6 @@
 
 		<div class="full">
 			<div class="information">
-				<div class="title">Roadmap 2023</div>
 				<div class="roadmap">
 				<div class="kvartal">Q1</div>
 				<div class="kvartal">Q2</div>
@@ -91,22 +90,24 @@
 
 	<div class="multiple-containers">
 		<div class="half">
-			<div class="title">Partners</div>
 			<div class="partners">
 				<a href="https://www.blocedu.care/"><img src={bloceducare} alt="bloceducare" /></a>
 				<a href="https://vulkania.io/coins/hydro"><img src={vulkania} alt="vulkania" /></a>
 				<a href="https://sparkpoint.io/"><img src={sparkpoint} alt="sparkpoint" /></a>
+			</div>
+			<div class="partners">
 				<a href="https://opendefi.finance/"><img src={opendefi} alt="OpenDeFi" /></a>
 				<a href="https://ethernity.live/"><img src={ethernity} alt="Ethernity" /></a>
 			</div>
 		</div>
 
 		<div class="half" id="second">
-			<div class="title">Exchanges</div>
 			<div class="chains">
 				<a href="https://coinex.com"><img src={coinex} alt="Coinex" /></a>
 				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT"><img src={bithumb} alt="Bithumb" /></a>
 				<a href="https://mercatox.com/exchange/HYDRO/BTC"><img src={mercatox} alt="Mercatox" /></a>
+			</div>
+			<div class="chains">
 				<a href="https://latoken.com/exchange/HYDRO_USDT"><img src={latoken} alt="LAtoken" /></a>
 				<a href="https://trade.buyucoin.com/trade/HYDRO-INR"><img src={buyucoin} alt="BuyUcoin" /></a>
 			</div>
@@ -152,6 +153,7 @@
 
 	.half {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
