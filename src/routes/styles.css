@@ -11,7 +11,7 @@
 	--container-height-small: 20rem;
 	--border-radius: 5px;
 	--preloader-bg: #212124;
-	--border-color: rgba(255, 255, 255, 0.2);
+	--title-color: rgba(255, 255, 255, 0.5);
 }
 
 body {

@@ -39,6 +39,7 @@
 
 	<div class="multiple-containers">
 		<div class="half">
+			<div class="title">Blockchains</div>
 			<div class="chains">
 				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" /></a>
 				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" /></a>
@@ -49,6 +50,7 @@
 		</div>
 
 		<div class="half" id="second">
+			<div class="title">Our Products</div>
 			<div class="products">
 				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" /></a>
 				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
@@ -59,6 +61,7 @@
 
 	<div class="multiple-containers">
 		<div class="one-quarter">
+			<div class="title">Meet Hydro</div>
 			<div class="information">
 				The Hydro protocols are available to use on multiple networks. 
                 All of our protocols and dApps are powered by Hydro tokens.
@@ -73,11 +76,13 @@
 		</div>
 
 		<div class="three-quarter">
+			<div class="title">Hydro Ecosystem</div>
 			<img src={ecosystem} alt="hydro-ecosystem" />
 		</div>
 		</div>
 
 		<div class="full">
+			<div class="title">Roadmap</div>
 			<div class="information">
 				<div class="roadmap">
 				<div class="kvartal">Q1</div>
@@ -90,6 +95,7 @@
 
 	<div class="multiple-containers">
 		<div class="half">
+			<div class="title">Partners</div>
 			<div class="partners">
 				<a href="https://www.blocedu.care/"><img src={bloceducare} alt="bloceducare" /></a>
 				<a href="https://vulkania.io/coins/hydro"><img src={vulkania} alt="vulkania" /></a>
@@ -102,6 +108,7 @@
 		</div>
 
 		<div class="half" id="second">
+			<div class="title">Exchanges</div>
 			<div class="exchanges">
 				<a href="https://coinex.com"><img src={coinex} alt="Coinex" /></a>
 				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT"><img src={bithumb} alt="Bithumb" /></a>
@@ -192,8 +199,9 @@
 
 	.one-quarter {
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		width: 35rem;
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
@@ -252,6 +260,12 @@
 		box-shadow: inset 0 0 2000px var(--card-background);
 		filter: blur(10px);
 		margin: -20px;
+	}
+
+	.title{
+		font-size: 18px;
+		margin: 10px;
+		color: var(--title-color);
 	}
 
 	.full img {
