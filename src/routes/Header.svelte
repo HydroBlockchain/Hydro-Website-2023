@@ -85,10 +85,6 @@
 	margin: -20px;
 }
 
-.header-button a {
-	color: var(--text-color);
-}
-
 .header-button:hover {
 	opacity: 0.5;
 }

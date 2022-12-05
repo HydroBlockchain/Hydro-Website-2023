@@ -27,9 +27,7 @@
 	</div>
 
 	<div class="multiple-containers">
-
 			<div class="one-quarter">Introduction</div>
-
 			<div class="three-quarter">
 				<div class="title">Roadmap</div>
 				<div class="information">
