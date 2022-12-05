@@ -1,15 +1,17 @@
 <script>
-	import faq from "$lib/images/icons/faq.svg";
-	import team from "$lib/images/icons/team.svg";
 </script>
 
 <header>
 	<div class="header-button">
-			<a href="/team"><img src={team} alt="team" /></a>
+			<a href="/tech">Tech</a>
+    </div>
+
+	<div class="header-button">
+			<a href="/team">Team</a>
 	</div>
 
 	<div class="header-button">
-			<a href="/faq"><img src={faq} alt="faq" /></a>
+			<a href="/faq">Faq</a>
 	</div>
 
 	<div class="header-logo">
@@ -92,16 +94,12 @@
 	color: var(--text-color);
 }
 
-.header-button img {
-	height: 30px;
-}
-
 .header-logo {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	text-align: center;
-	width: 1120px;
+	width: 1000px;
 	height: 100px;
 	margin: 10px;
 	background-color: var(--card-background);
