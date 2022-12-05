@@ -39,7 +39,6 @@
 
 	<div class="multiple-containers">
 		<div class="half">
-			<div class="title">Blockchains</div>
 			<div class="chains">
 				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" /></a>
 				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" /></a>
@@ -50,7 +49,6 @@
 		</div>
 
 		<div class="half" id="second">
-			<div class="title">Our Products</div>
 			<div class="products">
 				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
 			</div>
@@ -199,10 +197,6 @@
 		margin-left: 15px;
 	}
 
-	#second img{
-		height: 40px;
-	}
-
 	.one-quarter {
 		display: flex;
 		flex-direction: column;
@@ -284,7 +278,6 @@
 
 	.half img {
 		height: 50px;
-		margin: 10px;
 	}
 
 	.multiple-containers {
@@ -321,8 +314,8 @@
 	}
 
 	.products img {
-		height: 25px;
-		margin: 20px;
+		height: 35px;
+		margin: 10px;
 	}
 
 	.information{
