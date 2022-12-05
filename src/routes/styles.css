@@ -10,7 +10,7 @@
 	--font-size-mini: 12px;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
-	color: var(--color-text); 
+	color: var(--color-text);
 	--container-width-desktop: 85rem;
 	--container-height-x-large: 50rem;
 	--container-height-large: 30rem;
@@ -25,10 +25,10 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-    background: var(--backgound-color);
-    background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
-    background-attachment: fixed;
+	background: var(--backgound-color);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
+	background-attachment: fixed;
 }
 
 a:link {
@@ -50,52 +50,55 @@ a:active {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-	  --logo-color: #eee;
-	  --text-color: #eee;
-	  --link-color: #eee;
-	  --button-color: #1c4373;
-	  --button-color-alt: #38a6e6;
-	  --backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
-	  --card-background: rgba(255, 255, 255, 0.2);
-	  --success-color: #3fd782;
-	  --warn-color: #f25f61;
-	  --info-color: #5f86f2;
-	  --alert-color: #f2cb5f;
+		--logo-color: #eee;
+		--text-color: #eee;
+		--link-color: #eee;
+		--button-color: #1c4373;
+		--button-color-alt: #38a6e6;
+		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
+		--card-background: rgba(255, 255, 255, 0.2);
+		--success-color: #3fd782;
+		--warn-color: #f25f61;
+		--info-color: #5f86f2;
+		--alert-color: #f2cb5f;
 	}
-  }
-  
-  @media (prefers-color-scheme: light) {
+}
+
+@media (prefers-color-scheme: light) {
 	:root {
-	  --logo-color: #fff;
-	  --text-color: #fff;
-	  --link-color: #fff;
-	  --button-color: #1c4373;
-	  --button-color-alt: #38a6e6;
-	  --backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
-	  --card-background: rgba(255, 255, 255, 0.2);
-	  --success-color: #3fd782;
-	  --warn-color: #f25f61;
-	  --info-color: #5f86f2;
-	  --alert-color: #f2cb5f;
+		--logo-color: #fff;
+		--text-color: #fff;
+		--link-color: #fff;
+		--button-color: #1c4373;
+		--button-color-alt: #38a6e6;
+		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
+		--card-background: rgba(255, 255, 255, 0.2);
+		--success-color: #3fd782;
+		--warn-color: #f25f61;
+		--info-color: #5f86f2;
+		--alert-color: #f2cb5f;
 	}
-  }
+}
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -105,6 +108,7 @@ a:active {
 	0% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
@@ -252,50 +256,22 @@ a:active {
 	margin: -20px;
 }
 
-/* Mobile Mode */
+/* Mobile Mode Small Screens */
 
 @media only screen and (max-width: 480px) {
 
-	html{
-		display: flex !important;
-		align-items: center !important;
-		justify-content: center !important;
-		overflow-x: hidden !important;
+	html {
 		margin: 2rem !important;
-		padding: 0rem !important;
-		width: 21rem !important;
 	}
 
-	.app{
-		justify-content: center !important;
-		align-items: center !important;
-		max-width: 21rem !important;
-		margin: 0 !important;
-		padding: 0 !important;
-	}
-
-	section{
-		max-width: 21rem;
-	}
-
-	.multiple-containers {
-		flex-direction: column !important;
-		width: 21rem !important;
+	.app {
 		margin: 0 !important;
 	}
 
+	.multiple-containers,
 	.multiple-containers-2 {
 		flex-direction: column !important;
-		width: 21rem !important;
 		margin: 0 !important;
-	}
-
-	.full {
-		max-width: 21rem;
-	}
-
-	.half {
-		max-width: 21rem;
 	}
 
 	#second {
@@ -303,12 +279,20 @@ a:active {
 		margin-left: 0px;
 	}
 
-	.one-quarter {
-		max-width: 21rem;
+	html,
+	section,
+	.app,
+	.multiple-containers,
+	.multiple-containers-2,
+	.full,
+	.half,
+	.one-quarter,
+	.three-quarter,
+	.footer-logo {
+		width: 21rem !important;
 	}
 
 	.three-quarter {
-		max-width: 21rem;
 		margin-left: 0px;
 	}
 
@@ -318,10 +302,6 @@ a:active {
 
 	.header-button {
 		max-width: 3rem;
-	}
-
-	.footer-logo {
-		max-width: 21rem;
 	}
 
 }
