@@ -6,7 +6,8 @@
 	--font-size-large: 20px;
 	--font-size-medium: 18px;
 	--font-size-small: 16px;
-	--font-size-xsmall: 20px;
+	--font-size-xsmall: 14px;
+	--font-size-mini: 12px;
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
 	color: var(--color-text); 
