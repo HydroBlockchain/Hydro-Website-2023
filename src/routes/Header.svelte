@@ -2,21 +2,15 @@
 </script>
 
 <header>
-	<div class="header-button">
-			<a href="/tech">Tech</a>
-    </div>
+	<a href="/tech"><div class="header-button">Tech</div></a>
 
-	<div class="header-button">
-			<a href="/team">Team</a>
-	</div>
+	<a href="/team"><div class="header-button">Team</div></a>
 
-	<div class="header-button">
-			<a href="/faq">Faq</a>
-	</div>
+	<a href="/faq"><div class="header-button">Faq</div></a>
 
-	<div class="header-logo">
+	<a href="/"><div class="header-logo">
 		<div class="logo">
-			<a href="/">
+			
 				<svg width="128" height="auto" viewBox="0 0 2561 490" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g filter="url(#filter0_b_1612_190)">
 					<path d="M344.4 20C344.4 8.9543 353.354 0 364.4 0H415.4C426.446 0 435.4 8.9543 435.4 20V470C435.4 481.046 426.446 490 415.4 490H364.4C353.354 490 344.4 481.046 344.4 470V20ZM91 470C91 481.046 82.0457 490 71 490H20C8.9543 490 0 481.046 0 470V20C0 8.9543 8.95431 0 20 0H71C82.0457 0 91 8.9543 91 20V470ZM351.4 260C351.4 271.046 342.446 280 331.4 280H103.3C92.2543 280 83.3 271.046 83.3 260V222.3C83.3 211.254 92.2543 202.3 103.3 202.3H331.4C342.446 202.3 351.4 211.254 351.4 222.3V260Z" fill="var(--logo-color)"/>
@@ -42,9 +36,10 @@
 					</filter>
 					</defs>
 					</svg>
-			</a>
+			
 		</div>
 	</div>
+</a>
 </header>
 
 <style>
@@ -92,6 +87,10 @@
 
 .header-button a {
 	color: var(--text-color);
+}
+
+.header-button:hover {
+	opacity: 0.5;
 }
 
 .header-logo {
