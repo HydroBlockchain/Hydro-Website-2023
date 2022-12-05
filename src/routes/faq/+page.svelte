@@ -43,8 +43,9 @@
 		</div>
 		<div class="three-quarter">
 			<div class="faq-answer">
-
-				
+				<div class="center">
+					Answer will show up here!
+				</div>
 			</div>
 		</div>
 	</div>
@@ -57,9 +58,14 @@
 		color: #fff;
 	}
 
-	.one-quarter, .three-quarter{
+	.one-quarter{
 		height: 60rem;
 		align-items: flex-start;
 	}
+
+	.three-quarter{
+		height: 60rem;
+	}
+	
 	
 </style>
