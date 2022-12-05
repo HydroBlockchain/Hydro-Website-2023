@@ -10,7 +10,7 @@
 
 <svelte:head>
 	<title>Team</title>
-	<meta name="Team Hydro" content="Hydro Team" />
+	<meta name="Team" content="Team" />
 </svelte:head>
 
 <section>

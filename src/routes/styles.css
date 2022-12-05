@@ -20,7 +20,7 @@ body {
 	margin: 0;
     background: var(--backgound-color);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 25s ease infinite;
     background-attachment: fixed;
 }
 
@@ -33,14 +33,12 @@ a:visited {
 }
 
 a:hover {
+	opacity: 0.5;
 	text-decoration: none;
 }
 
 a:active {
 	text-decoration: none;
-}
-a:hover{
-	opacity: 0.5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,7 +48,7 @@ a:hover{
 	  --link-color: #eee;
 	  --button-color: #1c4373;
 	  --button-color-alt: #38a6e6;
-	  --backgound-color: linear-gradient(-45deg, #4a5a71, #29547c, #1e4a74, #042556);
+	  --backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
 	  --card-background: rgba(255, 255, 255, 0.2);
 	  --success-color: #3fd782;
 	  --warn-color: #f25f61;
@@ -66,7 +64,7 @@ a:hover{
 	  --link-color: #fff;
 	  --button-color: #1c4373;
 	  --button-color-alt: #38a6e6;
-	  --backgound-color: linear-gradient(-45deg, #2D4467, #2B547A, #4d79a3, #182c4a);
+	  --backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
 	  --card-background: rgba(255, 255, 255, 0.2);
 	  --success-color: #3fd782;
 	  --warn-color: #f25f61;
@@ -74,7 +72,6 @@ a:hover{
 	  --alert-color: #f2cb5f;
 	}
   }
-
 
 @keyframes gradient {
     0% {
