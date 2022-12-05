@@ -7,8 +7,8 @@
 	font-family: var(--font-body);
 	color: var(--color-text); 
 	--container-width-desktop: 85rem;
-	--container-height-large: 40rem;
-	--container-height-small: 20rem;
+	--container-height-large: 35rem;
+	--container-height-small: 25rem;
 	--border-radius: 5px;
 	--preloader-bg: #212124;
 	--title-color: rgba(255, 255, 255, 0.4);

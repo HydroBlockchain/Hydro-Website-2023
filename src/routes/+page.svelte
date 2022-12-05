@@ -46,15 +46,19 @@
 				<a href="https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={matic} alt="matic-logo" /></a>
 				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"><img src={csc} alt="csc-logo" /></a>
 				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"><img src={movr} alt="csc-logo" /></a>
-			</div>
+		</div>
 		</div>
 
 		<div class="half" id="second">
 			<div class="title">Our Products</div>
 			<div class="products">
-				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" /></a>
-				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
 				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
+			</div>
+			<div class="products">
+				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" /></a>
+			</div>
+			<div class="products">
+				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
 			</div>
 		</div>
 	</div>
@@ -76,7 +80,6 @@
 		</div>
 
 		<div class="three-quarter">
-			<div class="title">Hydro Ecosystem</div>
 			<img src={ecosystem} alt="hydro-ecosystem" />
 		</div>
 		</div>
@@ -126,8 +129,8 @@
 	.full {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 		align-items: center;
+		justify-content: center;
 		width: var(--container-width-desktop);
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
@@ -161,8 +164,8 @@
 	.half {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 		align-items: center;
+		justify-content: center;
 		width: 42.5rem;
 		height: var(--container-height-small);
 		border-radius: var(--border-radius);
@@ -196,11 +199,15 @@
 		margin-left: 15px;
 	}
 
+	#second img{
+		height: 40px;
+	}
+
 	.one-quarter {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
 		align-items: center;
+		justify-content: center;
 		width: 35rem;
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
@@ -232,7 +239,7 @@
 	.three-quarter {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 		width: 50rem;
 		height: var(--container-height-large);
@@ -263,12 +270,12 @@
 
 	.title{
 		font-size: 20px;
-		margin: 10px;
 		color: var(--title-color);
 	}
 
 	.full img {
 		width: 256px;
+		margin-top: 2rem;
 	}
 
 	.three-quarter img {
