@@ -51,7 +51,7 @@
 	header {
 		display: flex;
 		justify-content: center;
-		margin-top: 50px;
+		margin-top: 20px;
 		animation: fadeIn 2.5s;
 		width: var(--container-width) auto;
 	}

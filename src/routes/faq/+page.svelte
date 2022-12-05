@@ -2,8 +2,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="FAQ Hydro" content="Hydro FAQ" />
+	<title>FAQ</title>
+	<meta name="FAQ" content="FAQ" />
 </svelte:head>
 
 <section>
@@ -15,7 +15,7 @@
 		display: flex;
 		justify-content: center;
 		width: var(--container-width-desktop);
-		height: var(--container-height-large);
+		height: var(--container-height-x-large);
 		border-radius: var(--border-radius);
 		position: relative;
 		z-index: 1;

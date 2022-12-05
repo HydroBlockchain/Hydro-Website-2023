@@ -27,19 +27,27 @@
 	</div>
 
 	<div class="multiple-containers">
-		<div class="full">
-			<div class="title">Roadmap</div>
-			<div class="information">
-				<div class="roadmap">
-				<div class="kvartal">Q1</div>
-				<div class="kvartal">Q2</div>
-				<div class="kvartal">Q3</div>
-				<div class="kvartal">Q4</div>
+
+			<div class="one-quarter">Introduction</div>
+
+			<div class="three-quarter">
+				<div class="title">Roadmap</div>
+				<div class="information">
+					<div class="roadmap">
+					<div class="kvartal">Q1</div>
+					<div class="kvartal">Q2</div>
+					<div class="kvartal">Q3</div>
+					<div class="kvartal">Q4</div>
+				</div>
+			</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="multiple-containers">
+		<div class="full">
+			<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
+		</div>
+
+	<div class="multiple-containers-2">
 		<div class="half">
 			<div class="title">Partners</div>
 			<div class="partners">
@@ -66,6 +74,11 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="full">
+		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
+	</div>
+
 </section>
 
 <style>
@@ -75,7 +88,7 @@
 		align-items: center;
 		justify-content: center;
 		width: var(--container-width-desktop);
-		height: var(--container-height-large);
+		height: 22.5rem;
 		border-radius: var(--border-radius);
 		color: var(--text-color);
 		position: relative;
@@ -110,15 +123,15 @@
 		align-items: center;
 		justify-content: center;
 		width: 42.5rem;
-		height: var(--container-height-small);
+		height: 20rem;
 		border-radius: var(--border-radius);
 		position: relative;
 		z-index: 1;
 		background: inherit;
 		overflow: hidden;
-		margin-bottom: 30px;
 		margin-left: 0;
 		margin-right: 15px;
+		margin-bottom: 30px;
 		color: var(--text-color);
 		animation: fadeIn 2.5s;
 	}
@@ -142,13 +155,82 @@
 		margin-left: 15px;
 	}
 
+	.one-quarter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 35rem;
+		height: 25rem;
+		border-radius: var(--border-radius);
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 15px;
+		color: var(--text-color);
+		animation: fadeIn 2.5s;
+	}
+
+    .one-quarter:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px var(--card-background);
+		filter: blur(10px);
+		margin: -20px;
+	}
+
+	.three-quarter {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50rem;
+		height: 25rem;
+		border-radius: var(--border-radius);
+		position: relative;
+		z-index: 1;
+		background: inherit;
+		overflow: hidden;
+		margin-bottom: 30px;
+		margin-left: 15px;
+		color: var(--text-color);
+		animation: fadeIn 2.5s;
+	}
+
+	.three-quarter:before {
+		content: "";
+		position: absolute;
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		box-shadow: inset 0 0 2000px var(--card-background);
+		filter: blur(10px);
+		margin: -20px;
+	}
+
+    .three-quarter img {
+		width: 600px;
+	}
+
 	.title{
 		font-size: 20px;
 		color: var(--title-color);
 	}
 
 	.full img {
-		width: 256px;
+		width: 128px;
 		margin-top: 2rem;
 	}
 
@@ -162,6 +244,12 @@
 		width: var(--container-width-desktop);
 	}
 
+	.multiple-containers-2 {
+		display: flex;
+		flex-direction: row;
+		width: var(--container-width-desktop);
+	}
+
 	.exchanges {
 		display: flex;
 		flex-direction: row;
@@ -170,12 +258,6 @@
 
 	.exchanges img{
 		width: 128px;
-		margin: 20px;
-	}
-
-	.information{
-		display: flex;
-		justify-content: center;
 		margin: 20px;
 	}
 

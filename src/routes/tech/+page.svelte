@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="Tech Hydro" content="Hydro Tech" />
+	<title>Technology</title>
+	<meta name="Tech" content="Tech" />
 </svelte:head>
 
 <section>
@@ -102,6 +102,11 @@
 		box-shadow: inset 0 0 2000px var(--card-background);
 		filter: blur(10px);
 		margin: -20px;
+	}
+
+	#second {
+		margin-right: 0px;
+		margin-left: 15px;
 	}
 
     .one-quarter {
@@ -196,5 +201,11 @@
 	.products img {
 		height: 35px;
 		margin: 10px;
+	}
+
+	.information{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
 	}
 </style>

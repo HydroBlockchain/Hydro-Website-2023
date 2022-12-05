@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Team</title>
 	<meta name="Team Hydro" content="Hydro Team" />
 </svelte:head>
 
@@ -123,7 +123,7 @@
 		flex-direction: column;
 		justify-content: center;
 		width: var(--container-width-desktop);
-		height: var(--container-height-large);
+		height: var(--container-height-x-large);
 		border-radius: var(--border-radius);
 		position: relative;
 		z-index: 1;
