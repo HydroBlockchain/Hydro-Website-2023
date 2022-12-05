@@ -122,6 +122,6 @@
 }
 
 .header-logo svg {
-	margin-right: 10px;
+	margin-right: 2rem;
 }
 </style>
