@@ -9,8 +9,6 @@
 	--font-size-xsmall: 14px;
 	--font-size-mini: 12px;
 	--column-margin-top: 4rem;
-	font-family: var(--font-body);
-	color: var(--color-text);
 	--container-width-desktop: 85rem;
 	--container-height-x-large: 50rem;
 	--container-height-large: 30rem;
@@ -20,6 +18,9 @@
 	--border-radius: 5px;
 	--preloader-bg: #212124;
 	--title-color: rgba(255, 255, 255, 0.4);
+
+	font-family: var(--font-body);
+	color: var(--color-text);
 }
 
 body {
@@ -30,6 +31,8 @@ body {
 	animation: gradient 25s ease infinite;
 	background-attachment: fixed;
 }
+
+/* Links */
 
 a:link {
 	text-decoration: none;
@@ -48,6 +51,8 @@ a:active {
 	text-decoration: none;
 }
 
+/* Dark Mode */
+
 @media (prefers-color-scheme: dark) {
 	:root {
 		--logo-color: #eee;
@@ -57,12 +62,10 @@ a:active {
 		--button-color-alt: #38a6e6;
 		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
 		--card-background: rgba(255, 255, 255, 0.2);
-		--success-color: #3fd782;
-		--warn-color: #f25f61;
-		--info-color: #5f86f2;
-		--alert-color: #f2cb5f;
 	}
 }
+
+/* Light Mode */
 
 @media (prefers-color-scheme: light) {
 	:root {
@@ -73,10 +76,6 @@ a:active {
 		--button-color-alt: #38a6e6;
 		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
 		--card-background: rgba(255, 255, 255, 0.2);
-		--success-color: #3fd782;
-		--warn-color: #f25f61;
-		--info-color: #5f86f2;
-		--alert-color: #f2cb5f;
 	}
 }
 
