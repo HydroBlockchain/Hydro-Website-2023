@@ -23,6 +23,7 @@
 		overflow: hidden;
 		margin-bottom: 30px;
 		color: var(--text-color);
+		animation: fadeIn 2.5s;
 	}
 
 	.container:before {
