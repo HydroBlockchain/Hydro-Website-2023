@@ -276,9 +276,19 @@ a:active {
 		}
 
 	.multiple-containers,
-	.multiple-containers-2 {
+	.multiple-containers-2,
+	.container {
 		flex-direction: column !important;
 		margin: 0 !important;
+	}
+
+	.container{
+		height: auto !important;
+		margin-bottom: 2rem !important;
+	}
+
+	.team-section{
+		flex-direction: column !important;
 	}
 
 	#second {
@@ -295,7 +305,8 @@ a:active {
 	.half,
 	.one-quarter,
 	.three-quarter,
-	.footer-logo {
+	.footer-logo,
+	.container {
 		width: 100% !important;
 	}
 
