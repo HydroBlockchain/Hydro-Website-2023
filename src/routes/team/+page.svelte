@@ -39,19 +39,9 @@
 			</div>
 
 			<div class="team-card">
-				<img src={jignesh} alt="jignesh" />
-				<div class="team-name">Jignesh Beladiya</div>
-				<div class="team-title">Writer</div>
-				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
-				</div>
-			</div>
-
-			<div class="team-card">
-				<img src={ayushya} alt="ayushya" />
-				<div class="team-name">Ayushya</div>
-				<div class="team-title">Backend Developer</div>
+				<img src={profile} alt="profile" />
+				<div class="team-name">Abhimanyu Bundela</div>
+				<div class="team-title">Chief Gaming Officer</div>
 				<div class="team-info">
 					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
 					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
@@ -73,9 +63,9 @@
 			</div>
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
-				<div class="team-name">Abhimanyu</div>
-				<div class="team-title">Game Developer</div>
+				<img src={ayushya} alt="ayushya" />
+				<div class="team-name">Ayushya Chitransh</div>
+				<div class="team-title">Backend Developer</div>
 				<div class="team-info">
 					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
 					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
@@ -94,7 +84,21 @@
 
 			<div class="team-card">
 				<img src={profile} alt="profile" />
-				<div class="team-name">Abishek</div>
+				<div class="team-name">Abishek Padmanaban</div>
+				<div class="team-title">3D Artist</div>
+				<div class="team-info">
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="team-section">
+
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Sundar Mahalingam</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
 					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
@@ -103,9 +107,29 @@
 			</div>
 
 			<div class="team-card">
+				<img src={jignesh} alt="jignesh" />
+				<div class="team-name">Jignesh Beladiya</div>
+				<div class="team-title">Content Creator</div>
+				<div class="team-info">
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+				</div>
+			</div>
+
+			<div class="team-card">
 				<img src={profile} alt="profile" />
-				<div class="team-name">Sundar</div>
-				<div class="team-title">3D Artist</div>
+				<div class="team-name">Anochie Modestus</div>
+				<div class="team-title">Community Manager</div>
+				<div class="team-info">
+					<div class="button"><a href="https://twitter.com/uzobankz"><img src={twitter} alt="twitter" /></a></div>
+					<div class="button"><a href="https://www.linkedin.com/in/anochie-modestus-26b75616a"><img src={linkedin} alt="linkedin" /></a></div>
+				</div>
+			</div>
+
+			<div class="team-card">
+				<img src={profile} alt="profile" />
+				<div class="team-name">Matas</div>
+				<div class="team-title">Community</div>
 				<div class="team-info">
 					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
 					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
@@ -125,7 +149,8 @@
 	}
 
 	.team-card{
-		padding: 5px;
+		width: 10rem;
+		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

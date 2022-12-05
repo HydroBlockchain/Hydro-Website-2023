@@ -10,7 +10,7 @@
 	--font-size-mini: 12px;
 	--column-margin-top: 4rem;
 	--container-width-desktop: 85rem;
-	--container-height-x-large: 50rem;
+	--container-height-x-large: 70rem auto;
 	--container-height-large: 30rem;
 	--container-height-small: 25rem;
 	--container-height-xsmall: 22.5rem;
