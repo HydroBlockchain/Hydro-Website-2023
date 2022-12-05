@@ -172,12 +172,12 @@
 	
 	.team-name{
 		margin: 3px;
-		font-size: 14px;
+		font-size: var(--font-size-xsmall);
 	}
 
 	.team-title{
 		margin: 3px;
-		font-size: 12px;
+		font-size: var(--font-size-mini);
 	}
 
 	.team-info{
@@ -187,7 +187,6 @@
 	}
 
 	.button{
-		font-size: 12px;
 		padding: 8px;
 		margin: 5px;
 	}
