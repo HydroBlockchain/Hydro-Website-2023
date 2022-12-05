@@ -29,12 +29,14 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<div class="app-wrapper">
 <div class="app">
 	<Header />
 	<main>
 		<slot />
 	</main>
 	<Footer />
+</div>
 </div>
 
 <style>
