@@ -97,36 +97,10 @@
 		color: var(--title-color);
 	}
 
-	.full img {
-		width: 128px;
-		margin-top: 2rem;
-	}
-
-	.half img {
-		height: 50px;
-	}
-
-	.multiple-containers {
-		display: flex;
-		flex-direction: row;
-		width: var(--container-width-desktop);
-	}
-
-	.multiple-containers-2 {
-		display: flex;
-		flex-direction: row;
-		width: var(--container-width-desktop);
-	}
-
 	.exchanges {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	}
-
-	.exchanges img{
-		width: 128px;
-		margin: 20px;
 	}
 
 	.roadmap{
@@ -145,10 +119,5 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	}
-
-	.partners img {
-		width: 128px auto;
-		margin: 20px;
 	}
 </style>

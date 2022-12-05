@@ -84,11 +84,6 @@
 		justify-content: center;
 	}
 
-	.products img {
-		height: 35px;
-		margin: 10px;
-	}
-
 	.information{
 		display: flex;
 		justify-content: center;

@@ -80,6 +80,8 @@ a:active {
 	}
 }
 
+/* Keyframes */
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -114,13 +116,45 @@ a:active {
 	}
 }
 
-/* Tiles */
+/* Containers */
 
-.multiple-containers {
+.multiple-containers, .multiple-containers-2 {
 	display: flex;
 	flex-direction: row;
 	width: var(--container-width-desktop);
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: var(--container-width-desktop);
+	height: var(--container-height-x-large);
+	border-radius: var(--border-radius);
+	position: relative;
+	z-index: 1;
+	background: inherit;
+	overflow: hidden;
+	margin-bottom: 30px;
+	color: var(--text-color);
+}
+
+.container:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: inset 0 0 2000px var(--card-background);
+	filter: blur(10px);
+	margin: -20px;
+}
+
+
+/* Tiles */
 
 .full {
 	display: flex;
@@ -256,6 +290,17 @@ a:active {
 	margin: -20px;
 }
 
+/* Images */
+
+.full img {
+	width: 128px;
+	margin-top: 2rem;
+}
+
+.half img {
+	height: 50px;
+}
+
 .three-quarter img {
 	width: 600px;
 }
@@ -264,7 +309,33 @@ a:active {
 	height: 50px;
 }
 
-/* Mobile Mode */
+.exchanges img{
+	width: 128px;
+	margin: 20px;
+}
+
+.partners img {
+	width: 128px auto;
+	margin: 20px;
+}
+
+.team-card img{
+	width: 128px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border-radius: var(--border-radius);
+}
+
+.button img{
+	width: 20px;
+}
+
+.products img {
+	height: 35px;
+	margin: 10px;
+}
+
+/* Responsive */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -273,7 +344,7 @@ a:active {
 		max-width: 600px !important;
 		margin: 1rem !important;
 		overflow-x: hidden !important;
-		}
+	}
 
 	.multiple-containers,
 	.multiple-containers-2,
@@ -282,12 +353,12 @@ a:active {
 		margin: 0 !important;
 	}
 
-	.container{
+	.container {
 		height: auto !important;
 		margin-bottom: 2rem !important;
 	}
 
-	.team-section{
+	.team-section {
 		flex-direction: column !important;
 	}
 
@@ -314,7 +385,7 @@ a:active {
 		margin-left: 0px;
 	}
 
-	.header-logo{
+	.header-logo {
 		width: 11rem !important;
 	}
 
