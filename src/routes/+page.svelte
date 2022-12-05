@@ -126,7 +126,7 @@
 	.full {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
 		width: var(--container-width-desktop);
 		height: var(--container-height-large);
@@ -161,9 +161,8 @@
 	.half {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
 		align-items: center;
-		flex-direction: column;
 		width: 42.5rem;
 		height: var(--container-height-small);
 		border-radius: var(--border-radius);
@@ -200,8 +199,8 @@
 	.one-quarter {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 		align-items: center;
-		justify-content: center;
 		width: 35rem;
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
@@ -232,9 +231,9 @@
 
 	.three-quarter {
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
 		width: 50rem;
 		height: var(--container-height-large);
 		border-radius: var(--border-radius);
@@ -263,7 +262,7 @@
 	}
 
 	.title{
-		font-size: 18px;
+		font-size: 20px;
 		margin: 10px;
 		color: var(--title-color);
 	}
