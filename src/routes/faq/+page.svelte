@@ -7,14 +7,14 @@
 </svelte:head>
 
 <section>
+
+	
 	<div class="multiple-containers">
 		<div class="one-quarter">
 
-			<a href="/faq">What is a multichain network and its advantages?</a>
-
-			<a href="/faq">When did Hydro upgrade to be a multichain token? and how will it benefit the Hydro ecosystem?</a>
-
-			<a href="/faq">What is the main purpose of project Hydro?</a>
+			<!-- <Button text="What is a multichain network and its advantages?" enabled={answer1} on:click={() => handleClick('answer1')}/>
+			<Button text="When did Hydro upgrade to be a multichain token? and how will it benefit the Hydro ecosystem?" enabled={answer2} on:click={() => handleClick('answer2')}/>
+			<Button text="What is the main purpose of project Hydro?" enabled={answer3} on:click={() => handleClick('answer3')}/> -->
 
 			<a href="/faq">What is Hydroswap?</a>
 
@@ -43,9 +43,7 @@
 		</div>
 		<div class="three-quarter">
 			<div class="faq-answer">
-				<div class="center">
-					Answer will show up here!
-				</div>
+				Answer will show up here!
 			</div>
 		</div>
 	</div>
