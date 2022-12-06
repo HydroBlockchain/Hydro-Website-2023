@@ -13,7 +13,7 @@
 
 		<div class="questions">
 
-			<a href="/faq">What is a multichain network and its advantages?</a>
+			<a href="/q1">What is a multichain network and its advantages?</a>
 
 			<a href="/faq">When did Hydro upgrade to be a multichain token? and how will it benefit the Hydro ecosystem?</a>
 
