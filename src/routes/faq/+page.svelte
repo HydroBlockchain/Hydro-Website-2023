@@ -11,6 +11,8 @@
 	
 	<div class="container">
 
+		<div class="container-header"><div class="title">FAQ</div></div>
+
 		<div class="questions">
 
 			<a href="/q1">What is the main purpose of project Hydro?</a>
@@ -42,9 +44,8 @@
 
 <style>
 
-	a{
+	a {
 		padding: 1rem;
-		color: #fff;
 	}
 
 	.questions{
@@ -57,6 +58,5 @@
 	.container{
         height: 50rem;
     }
-	
 	
 </style>

@@ -76,4 +76,5 @@
 .footer-logo svg {
 	margin-left: 2rem;
 }
+
 </style>
