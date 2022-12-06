@@ -38,30 +38,30 @@
 		</div>
 
 		<div class="three-quarter">
-			<img src={ecosystem} alt="hydro-ecosystem" />
+			<img src={ecosystem} alt="hydro-ecosystem" id="ecosystem"/>
 		</div>
 		</div>
 
 	<div class="multiple-containers">
 		<div class="half">
 			<div class="chains">
-				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" /></a>
-				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" /></a>
-				<a href="https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={matic} alt="matic-logo" /></a>
-				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"><img src={csc} alt="csc-logo" /></a>
-				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"><img src={movr} alt="csc-logo" /></a>
+				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" id="chain"/></a>
+				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" id="chain"/></a>
+				<a href="https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={matic} alt="matic-logo" id="chain"/></a>
+				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"><img src={csc} alt="csc-logo" id="chain"/></a>
+				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"><img src={movr} alt="csc-logo" id="chain"/></a>
 		</div>
 		</div>
 
 		<div class="half" id="second">
 			<div class="products">
-				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" /></a>
+				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" id="product"/></a>
 			</div>
 			<div class="products">
-				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" /></a>
+				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" id="product"/></a>
 			</div>
 			<div class="products">
-				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" /></a>
+				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" id="product"/></a>
 			</div>
 		</div>
 	</div>

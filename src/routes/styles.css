@@ -161,7 +161,7 @@ a:active {
 	margin: -20px;
 }
 
-.container-header{
+.container-header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -306,55 +306,56 @@ a:active {
 
 /* Images */
 
-.full img {
-	width: 128px;
-	margin-top: 2rem;
-}
-
-.half img {
-	height: 50px;
-}
-
-.three-quarter img {
-	width: 600px;
-}
-
-.half img {
-	height: 50px;
-}
-
-.exchanges img {
-	width: 128px;
-	margin: 20px;
-}
-
-.partners img {
-	width: 128px auto;
-	margin: 20px;
-}
-
-.team-card img {
-	width: 128px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-	border-radius: var(--border-radius);
-}
-
-.button img {
-	width: 20px;
-}
-
-.products img {
-	height: 35px;
-	margin: 10px;
-}
-
 .header-logo svg {
 	margin-right: 2rem;
 }
 
-.header-button svg{
+.header-button svg {
 	height: 2rem;
+}
+
+#ecosystem {
+	width: 600px;
+}
+
+#chain {
+	height: 50px;
+}
+
+#product {
+	height: 35px;
+	margin: 10px;
+}
+
+#hydro-drop {
+	width: 128px;
+	margin-top: 2rem;
+}
+
+#partner {
+	width: 128px;
+	margin: 20px;
+}
+
+#partner-edu {
+	width: 64px;
+	margin: 20px;
+}
+
+#exchange {
+	width: 128px;
+	margin: 20px;
+}
+
+#icon {
+	width: 20px;
+}
+
+#profile-pic {
+	width: 128px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	border-radius: var(--border-radius);
 }
 
 /* Responsive */

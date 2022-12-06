@@ -19,32 +19,32 @@
 		<div class="team-section">
 
 			<div class="team-card">
-				<img src={saurav} alt="saurav" />
+				<img src={saurav} alt="saurav" id="profile-pic"/>
 				<div class="team-name">Saurav Kumar</div>
 				<div class="team-title">President</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={carl} alt="carl" />
+				<img src={carl} alt="carl" id="profile-pic"/>
 				<div class="team-name">Carl Ulvinen</div>
 				<div class="team-title">Vice President</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Abhimanyu Bundela</div>
 				<div class="team-title">Chief Gaming Officer</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -53,42 +53,42 @@
 		<div class="team-section">
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Briws Ustyugov</div>
 				<div class="team-title">Frontend Developer</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={ayushya} alt="ayushya" />
+				<img src={ayushya} alt="ayushya" id="profile-pic"/>
 				<div class="team-name">Ayushya Chitransh</div>
 				<div class="team-title">Backend Developer</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Jwalin Adhyaru</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Abishek Padmanaban</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -97,42 +97,42 @@
 		<div class="team-section">
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Sundar Mahalingam</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={jignesh} alt="jignesh" />
+				<img src={jignesh} alt="jignesh" id="profile-pic"/>
 				<div class="team-name">Jignesh Beladiya</div>
 				<div class="team-title">Content Creator</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Anochie Modestus</div>
 				<div class="team-title">Community Manager</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com/uzobankz"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://www.linkedin.com/in/anochie-modestus-26b75616a"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com/uzobankz"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://www.linkedin.com/in/anochie-modestus-26b75616a"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
 			<div class="team-card">
-				<img src={profile} alt="profile" />
+				<img src={profile} alt="profile" id="profile-pic"/>
 				<div class="team-name">Matas</div>
 				<div class="team-title">Community</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" /></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" /></a></div>
+					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 

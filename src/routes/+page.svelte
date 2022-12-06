@@ -22,7 +22,7 @@
 
 <section>
 	<div class="full">
-		<img src={drop} alt="hydro-logo" />
+		<img src={drop} alt="hydro-logo" id="hydro-drop"/>
 		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 	</div>
 
@@ -47,26 +47,26 @@
 		<div class="half">
 			<div class="title">Partners</div>
 			<div class="partners">
-				<a href="https://www.blocedu.care/"><img src={bloceducare} alt="bloceducare" /></a>
-				<a href="https://vulkania.io/coins/hydro"><img src={vulkania} alt="vulkania" /></a>
-				<a href="https://sparkpoint.io/"><img src={sparkpoint} alt="sparkpoint" /></a>
+				<a href="https://www.blocedu.care/"><img src={bloceducare} alt="bloceducare" id="partner-edu"/></a>
+				<a href="https://vulkania.io/coins/hydro"><img src={vulkania} alt="vulkania" id="partner"/></a>
+				<a href="https://sparkpoint.io/"><img src={sparkpoint} alt="sparkpoint" id="partner"/></a>
 			</div>
 			<div class="partners">
-				<a href="https://opendefi.finance/"><img src={opendefi} alt="OpenDeFi" /></a>
-				<a href="https://ethernity.live/"><img src={ethernity} alt="Ethernity" /></a>
+				<a href="https://opendefi.finance/"><img src={opendefi} alt="OpenDeFi" id="partner"/></a>
+				<a href="https://ethernity.live/"><img src={ethernity} alt="Ethernity" id="partner"/></a>
 			</div>
 		</div>
 
 		<div class="half" id="second">
 			<div class="title">Exchanges</div>
 			<div class="exchanges">
-				<a href="https://coinex.com"><img src={coinex} alt="Coinex" /></a>
-				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT"><img src={bithumb} alt="Bithumb" /></a>
-				<a href="https://mercatox.com/exchange/HYDRO/BTC"><img src={mercatox} alt="Mercatox" /></a>
+				<a href="https://coinex.com"><img src={coinex} alt="Coinex" id="exchange"/></a>
+				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT"><img src={bithumb} alt="Bithumb" id="exchange"/></a>
+				<a href="https://mercatox.com/exchange/HYDRO/BTC"><img src={mercatox} alt="Mercatox" id="exchange"/></a>
 			</div>
 			<div class="exchanges">
-				<a href="https://latoken.com/exchange/HYDRO_USDT"><img src={latoken} alt="LAtoken" /></a>
-				<a href="https://trade.buyucoin.com/trade/HYDRO-INR"><img src={buyucoin} alt="BuyUcoin" /></a>
+				<a href="https://latoken.com/exchange/HYDRO_USDT"><img src={latoken} alt="LAtoken" id="exchange"/></a>
+				<a href="https://trade.buyucoin.com/trade/HYDRO-INR"><img src={buyucoin} alt="BuyUcoin" id="exchange"/></a>
 			</div>
 		</div>
 	</div>
