@@ -1,12 +1,16 @@
 <script>
+
+import tech from "$lib/images/icons/tech.svg";
+import team from "$lib/images/icons/team.svg";
+import faq from "$lib/images/icons/faq.svg";
 </script>
 
 <header>
-	<a href="/tech"><div class="header-button">Tech</div></a>
+	<a href="/tech"><div class="header-button"><img src={tech} alt="tech" /></div></a>
 
-	<a href="/team"><div class="header-button">Team</div></a>
+	<a href="/team"><div class="header-button"><img src={team} alt="team" /></div></a>
 
-	<a href="/faq"><div class="header-button">Faq</div></a>
+	<a href="/faq"><div class="header-button"><img src={faq} alt="faq" /></div></a>
 
 	<a href="/"><div class="header-logo">
 		<div class="logo">
@@ -121,7 +125,4 @@
 	margin: -20px;
 }
 
-.header-logo svg {
-	margin-right: 2rem;
-}
 </style>
