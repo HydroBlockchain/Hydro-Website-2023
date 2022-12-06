@@ -17,8 +17,6 @@
 	<meta name="Tech" content="Tech" />
 </svelte:head>
 
-
-
 <section>
 
 	<div class="multiple-containers">
@@ -44,6 +42,7 @@
 
 	<div class="multiple-containers">
 		<div class="half">
+			<div class="container-header"><div class="title"><a href="/">Add Hydro to Metamask</a></div></div>
 			<div class="chains">
 				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" id="chain"/></a>
 				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" id="chain"/></a>
