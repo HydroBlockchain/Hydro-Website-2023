@@ -23,8 +23,8 @@
 				<div class="team-name">Saurav Kumar</div>
 				<div class="team-title">President</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -33,8 +33,8 @@
 				<div class="team-name">Carl Ulvinen</div>
 				<div class="team-title">Vice President</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -43,8 +43,8 @@
 				<div class="team-name">Abhimanyu Bundela</div>
 				<div class="team-title">Chief Gaming Officer</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -57,8 +57,8 @@
 				<div class="team-name">Briws Ustyugov</div>
 				<div class="team-title">Frontend Developer</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -67,8 +67,8 @@
 				<div class="team-name">Ayushya Chitransh</div>
 				<div class="team-title">Backend Developer</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -77,8 +77,8 @@
 				<div class="team-name">Jwalin Adhyaru</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -87,8 +87,8 @@
 				<div class="team-name">Abishek Padmanaban</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -101,8 +101,8 @@
 				<div class="team-name">Sundar Mahalingam</div>
 				<div class="team-title">3D Artist</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -111,8 +111,8 @@
 				<div class="team-name">Jignesh Beladiya</div>
 				<div class="team-title">Content Creator</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -121,8 +121,8 @@
 				<div class="team-name">Anochie Modestus</div>
 				<div class="team-title">Community Manager</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com/uzobankz"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://www.linkedin.com/in/anochie-modestus-26b75616a"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com/uzobankz" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://www.linkedin.com/in/anochie-modestus-26b75616a" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 
@@ -131,8 +131,8 @@
 				<div class="team-name">Matas</div>
 				<div class="team-title">Community</div>
 				<div class="team-info">
-					<div class="button"><a href="https://twitter.com"><img src={twitter} alt="twitter" id="icon"/></a></div>
-					<div class="button"><a href="https://linkedin.com"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
+					<div class="button"><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><img src={twitter} alt="twitter" id="icon"/></a></div>
+					<div class="button"><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="linkedin" id="icon"/></a></div>
 				</div>
 			</div>
 

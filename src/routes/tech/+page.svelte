@@ -42,25 +42,25 @@
 
 	<div class="multiple-containers">
 		<div class="half">
-			<div class="container-header"><div class="title"><a href="https://add-hydro.netlify.app/">Add Hydro BEP20 to Metamask</a></div></div>
+			<div class="container-header"><div class="title"><a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" >Add Hydro BEP20 to Metamask</a></div></div>
 			<div class="chains">
-				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={eth} alt="eth-logo" id="chain"/></a>
-				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071"><img src={bsc} alt="bsc-logo" id="chain"/></a>
-				<a href="https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01"><img src={matic} alt="matic-logo" id="chain"/></a>
-				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"><img src={csc} alt="csc-logo" id="chain"/></a>
-				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"><img src={movr} alt="csc-logo" id="chain"/></a>
+				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01" target="_blank" rel="noopener noreferrer" ><img src={eth} alt="eth-logo" id="chain"/></a>
+				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071" target="_blank" rel="noopener noreferrer" ><img src={bsc} alt="bsc-logo" id="chain"/></a>
+				<a href="https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01" target="_blank" rel="noopener noreferrer" ><img src={matic} alt="matic-logo" id="chain"/></a>
+				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code" target="_blank" rel="noopener noreferrer" ><img src={csc} alt="csc-logo" id="chain"/></a>
+				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code" target="_blank" rel="noopener noreferrer" ><img src={movr} alt="csc-logo" id="chain"/></a>
 		</div>
 		</div>
 
 		<div class="half" id="second">
 			<div class="products">
-				<a href="https://keresverse.org"><img src={keres} alt="keres-logo" id="product"/></a>
+				<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><img src={keres} alt="keres-logo" id="product"/></a>
 			</div>
 			<div class="products">
-				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"><img src={aegir} alt="aegir-logo" id="product"/></a>
+				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" ><img src={aegir} alt="aegir-logo" id="product"/></a>
 			</div>
 			<div class="products">
-				<a href="https://hydroswap.org"><img src={swap} alt="swap-logo" id="product"/></a>
+				<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
 			</div>
 		</div>
 	</div>
