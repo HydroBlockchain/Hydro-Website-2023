@@ -8,8 +8,8 @@
 	import latoken from "$lib/images/exchanges/latoken.svg";
 	import buyucoin from "$lib/images/exchanges/buyucoin.svg";
 	//partners
-	import bloceducare from "$lib/images/partners/bloceducare.png";
-	import ethernity from "$lib/images/partners/ethernity.png";
+	import bloceducare from "$lib/images/partners/bloceducare.svg";
+	import ethernity from "$lib/images/partners/ethernity.svg";
 	import sparkpoint from "$lib/images/partners/sparkpoint.png";
 	import vulkania from "$lib/images/partners/vulkania.svg";
 	import opendefi from "$lib/images/partners/opendefi.png";
