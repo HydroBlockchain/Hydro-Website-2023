@@ -114,21 +114,21 @@
 </svelte:head>
 
 <section>
-	<div class="full">
+	<div class="full" id="animated-border">
 		<img src={drop} alt="hydro-logo" id="hydro-drop"/>
 		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 	</div>
 
 	<div class="multiple-containers">
-			<div class="one-quarter">Introduction</div>
-			<div class="three-quarter">Blog Feed
+			<div class="one-quarter" id="animated-border">Introduction</div>
+			<div class="three-quarter" id="animated-border">Blog Feed
 				<!-- <div class="cards row row-cols-1 row-cols-md-2 g-4">
 
 				</div> -->
 			</div>
 		</div>
 
-		<div class="full">
+		<div class="full" id="animated-border">
 			<div class="title">Roadmap</div>
 				<div class="information">
 					<div class="roadmap">
@@ -167,7 +167,7 @@
 		</div>
 	</div>
 
-	<div class="full">
+	<div class="full" id="animated-border">
 		<div class="tagline">Contact Us</div>
 	</div>
 

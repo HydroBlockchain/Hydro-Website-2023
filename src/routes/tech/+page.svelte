@@ -20,7 +20,7 @@
 <section>
 
 	<div class="multiple-containers">
-		<div class="one-quarter">
+		<div class="one-quarter" id="animated-border">
 			<div class="title">Meet Hydro</div>
 			<div class="information">
 				The Hydro protocols are available to use on multiple networks. 
@@ -35,13 +35,13 @@
 			</div>
 		</div>
 
-		<div class="three-quarter">
+		<div class="three-quarter" id="animated-border">
 			<img src={ecosystem} alt="hydro-ecosystem" id="ecosystem"/>
 		</div>
 		</div>
 
 	<div class="multiple-containers">
-		<div class="half">
+		<div class="half" id="animated-border">
 			<div class="container-header"><div class="title"><a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" >Add Hydro BEP20 to Metamask</a></div></div>
 			<div class="chains">
 				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01" target="_blank" rel="noopener noreferrer" ><img src={eth} alt="eth-logo" id="chain"/></a>
@@ -52,7 +52,7 @@
 		</div>
 		</div>
 
-		<div class="half" id="second">
+		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
 			<div class="products">
 				<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><img src={keres} alt="keres-logo" id="product"/></a>
 			</div>

@@ -121,6 +121,19 @@ a:active {
 		opacity: 0;
 	}
 }
+  
+  #animated-border {
+	background: linear-gradient(90deg,
+		rgba(10, 71, 145, 0.2),
+		rgba(4, 11, 138, 0.2),
+		rgba(9, 96, 154, 0.2),
+		rgba(9, 98, 154, 0.2),
+		rgba(9, 144, 154, 0.254),
+		rgba(9, 69, 154, 0.2));
+	animation: gradient 30s ease infinite;
+	background-size: 1000% 100%;
+	border-radius: var(--border-radius);
+  }
 
 /* Containers */
 
