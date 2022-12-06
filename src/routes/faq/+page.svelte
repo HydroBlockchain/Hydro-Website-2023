@@ -13,11 +13,7 @@
 
 		<div class="questions">
 
-			<a href="/q1">What is a multichain network and its advantages?</a>
-
-			<a href="/faq">When did Hydro upgrade to be a multichain token? and how will it benefit the Hydro ecosystem?</a>
-
-			<a href="/faq">What is the main purpose of project Hydro?</a>
+			<a href="/q1">What is the main purpose of project Hydro?</a>
 
 			<a href="/faq">What is Hydroswap?</a>
 
@@ -25,23 +21,19 @@
 
 			<a href="/faq">What is Keresverse?</a>
 
-			<a href="/faq">How can Hydro benefit its users? And why should I choose Hydro?</a>
+			<a href="/faq">How can Hydro benefit its users?</a>
+
+			<a href="/faq">How to swap Hydro between blockchains?</a>
+
+			<a href="/faq">How to stake Hydro and what are the rewards?</a>
+
+			<a href="/faq">How to add Hydro Token in a Web3 wallet?</a>
+
+			<a href="/faq">Smart Contract addresses of the Hydro token?</a>
 
 			<a href="/faq">Did Hydro have any ICO, or received any investment?</a>
 
-			<a href="/faq">How many products of Hydro have been ready to use?</a>
-
-			<a href="/faq">How can I swap Hydro between chains to get the lower fee?</a>
-
-			<a href="/faq">Where can I stake Hydro and how much is the APR ?</a>
-
-			<a href="/faq">How can I show a Hydro BEP20 token on my wallets?</a>
-
 			<a href="/faq">How many percent of total supply does the Team hold?</a>
-
-			<a href="/faq">How many partners of Hydro till now? and which field do they engage in?</a>
-
-			<a href="/faq">What are the new Smart Contract addresses of Hydro token?</a>
 
 		</div>
 		

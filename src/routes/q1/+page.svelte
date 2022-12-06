@@ -2,13 +2,13 @@
 </script>
 
 <svelte:head>
-	<title>Team</title>
-	<meta name="What is a multichain network and its advantages?" content="What is a multichain network and its advantages?" />
+	<title>What is the main purpose of project Hydro?</title>
+	<meta name="What is the main purpose of project Hydro?" content="What is the main purpose of project Hydro?" />
 </svelte:head>
 
 <section>
 	<div class="container">
-        What is a multichain network and its advantages?
+        What is the main purpose of project Hydro?
         <br><br>
         Answer, bla bla
         <br> <br>
