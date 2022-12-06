@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	//logos
 	import drop from "$lib/images/white-drop.svg";
 	//exchanges
@@ -13,6 +15,100 @@
 	import sparkpoint from "$lib/images/partners/sparkpoint.png";
 	import vulkania from "$lib/images/partners/vulkania.svg";
 	import opendefi from "$lib/images/partners/opendefi.png";
+    import { get } from "svelte/store";
+
+// 	//Get Medium Data and parse it to JSON
+// 	const RSSConverter = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed`;
+
+// 	export const getMediumData = async () => {
+    
+//     try {
+//     const response = await fetch(RSSConverter);
+//     const data = await response.json();
+//     console.log(data);
+//     return data
+//     } catch(error){
+//         console.log(error)
+//     }
+// };
+
+// getMediumData()
+
+// const text = document.querySelector('.text');
+// const textList = document.querySelector('.textList');
+
+// const getSingleText = async () => {
+//     const posts = await getMediumData();
+//     const post = posts.items[1]; // latest text (0 to 9)
+//     const title = post.title;
+//     const pubDate = post.pubDate;
+//     const link = post.link;
+//     const author = post.author;
+//     const content = post.content;
+
+//     const newText = document.createElement('div');
+//     newText.className = 'text';
+//     newText.innerHTML = `<h1>${title}</h1>
+//     <a href="${link}"><h2>Published ${pubDate} by ${author}</h2></a>
+//     ${content}`;
+
+//     text.appendChild(newText)
+// };
+
+// const getLatestTextsList = async () => {
+//     const posts = await getMediumData();
+//     for (let post of posts.items){
+//         const newItem = document.createElement('li');
+//         const title = post.title;
+//         const link = post.link;
+//         const thumbnail = post.thumbnail;
+
+//         newItem.innerHTML = `<img src="${thumbnail}" alt=""><a href="${link}"><h3>${title}</h3></a>`;
+
+//         textList.appendChild(newItem)
+
+//     }
+// };
+
+// getSingleText()
+// getLatestTextsList()
+
+// const cards = document.querySelector('.cards');
+// const header = document.querySelector('.header');
+
+// const getTextToCard = async () => {
+//     const posts = await getMediumData();
+//     for (let post of posts.items){
+//         const newItem = document.createElement('col');
+//         newItem.className = 'col';
+        
+//         const title = post.title;
+//         const link = post.link;
+//         const thumbnail = post.thumbnail;
+//         const pubDate = post.pubDate;
+//         const author = post.author;
+
+//         newItem.innerHTML = `<div class="card">
+//         <img src="${thumbnail}" class="card-img-top" alt="Medium Text Thumbnail">
+//         <div class="card-body">
+//           <a href="${link}"><h5 class="card-title">${title.toUpperCase()}</h5></a>
+//           <p class="card-text">Published by ${author} in ${pubDate}</p>
+//         </div>
+//       </div>`;
+
+//         cards.appendChild(newItem)
+
+//     }
+// };
+
+// const getFeedTitle = async () => {
+//     const data = await getMediumData();
+//     header.textContent = `${data.feed.title}`;
+// }
+
+// getFeedTitle();
+// getTextToCard();
+
 </script>
 
 <svelte:head>
@@ -28,7 +124,11 @@
 
 	<div class="multiple-containers">
 			<div class="one-quarter">Introduction</div>
-			<div class="three-quarter">Information</div>
+			<div class="three-quarter">Blog Feed
+				<!-- <div class="cards row row-cols-1 row-cols-md-2 g-4">
+
+				</div> -->
+			</div>
 		</div>
 
 		<div class="full">
