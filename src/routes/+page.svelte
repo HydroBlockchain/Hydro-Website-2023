@@ -28,8 +28,11 @@
 
 	<div class="multiple-containers">
 			<div class="one-quarter">Introduction</div>
-			<div class="three-quarter">
-				<div class="title">Roadmap</div>
+			<div class="three-quarter">Information</div>
+		</div>
+
+		<div class="full">
+			<div class="title">Roadmap</div>
 				<div class="information">
 					<div class="roadmap">
 					<div class="kvartal">Q1</div>
@@ -38,11 +41,6 @@
 					<div class="kvartal">Q4</div>
 				</div>
 			</div>
-			</div>
-		</div>
-
-		<div class="full">
-			<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 		</div>
 
 	<div class="multiple-containers-2">
@@ -74,7 +72,7 @@
 	</div>
 
 	<div class="full">
-		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
+		<div class="tagline">Contact Us</div>
 	</div>
 
 </section>

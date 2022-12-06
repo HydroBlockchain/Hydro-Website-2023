@@ -9,12 +9,15 @@
 <section>
 
 	
-	<div class="multiple-containers">
-		<div class="one-quarter">
+	<div class="container">
 
-			<!-- <Button text="What is a multichain network and its advantages?" enabled={answer1} on:click={() => handleClick('answer1')}/>
-			<Button text="When did Hydro upgrade to be a multichain token? and how will it benefit the Hydro ecosystem?" enabled={answer2} on:click={() => handleClick('answer2')}/>
-			<Button text="What is the main purpose of project Hydro?" enabled={answer3} on:click={() => handleClick('answer3')}/> -->
+		<div class="questions">
+
+			<a href="/faq">What is a multichain network and its advantages?</a>
+
+			<a href="/faq">When did Hydro upgrade to be a multichain token? and how will it benefit the Hydro ecosystem?</a>
+
+			<a href="/faq">What is the main purpose of project Hydro?</a>
 
 			<a href="/faq">What is Hydroswap?</a>
 
@@ -41,11 +44,7 @@
 			<a href="/faq">What are the new Smart Contract addresses of Hydro token?</a>
 
 		</div>
-		<div class="three-quarter">
-			<div class="faq-answer">
-				Answer will show up here!
-			</div>
-		</div>
+		
 	</div>
 </section>
 
@@ -56,13 +55,11 @@
 		color: #fff;
 	}
 
-	.one-quarter{
-		height: 60rem;
+	.questions{
+		display: flex;
+		flex-direction: column;
 		align-items: flex-start;
-	}
-
-	.three-quarter{
-		height: 60rem;
+		padding: 1rem;
 	}
 	
 	
