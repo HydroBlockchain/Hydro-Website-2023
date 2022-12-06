@@ -15,25 +15,25 @@
 
 			<a href="/q1">What is the main purpose of project Hydro?</a>
 
-			<a href="/faq">What is Hydroswap?</a>
+			<a href="/q2">What is Hydroswap?</a>
 
-			<a href="/faq">What is Aegir wallet?</a>
+			<a href="/q3">What is Aegir wallet?</a>
 
-			<a href="/faq">What is Keresverse?</a>
+			<a href="/q4">What is Keresverse?</a>
 
-			<a href="/faq">How can Hydro benefit its users?</a>
+			<a href="/q5">How can Hydro benefit its users?</a>
 
-			<a href="/faq">How to swap Hydro between blockchains?</a>
+			<a href="/q6">How to swap Hydro between blockchains?</a>
 
-			<a href="/faq">How to stake Hydro and what are the rewards?</a>
+			<a href="/q7">How to stake Hydro and what are the rewards?</a>
 
-			<a href="/faq">How to add Hydro Token in a Web3 wallet?</a>
+			<a href="/q8">How to add Hydro Token in a Web3 wallet?</a>
 
-			<a href="/faq">Smart Contract addresses of the Hydro token?</a>
+			<a href="/q9">Smart Contract addresses of the Hydro token?</a>
 
-			<a href="/faq">Did Hydro have any ICO, or received any investment?</a>
+			<a href="/q10">Did Hydro have any ICO, or received any investment?</a>
 
-			<a href="/faq">How many percent of total supply does the Team hold?</a>
+			<a href="/q11">How many percent of total supply does the Team hold?</a>
 
 		</div>
 		
@@ -53,6 +53,10 @@
 		align-items: flex-start;
 		padding: 1rem;
 	}
+
+	.container{
+        height: 50rem;
+    }
 	
 	
 </style>
