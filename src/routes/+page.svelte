@@ -147,12 +147,11 @@
 		<div class="half">
 			<div class="title">Partners</div>
 			<div class="partners">
-				<a href="https://www.blocedu.care/" target="_blank" rel="noopener noreferrer"><img src={bloceducare} alt="bloceducare" id="partner-edu"/></a>
+				<a href="https://www.blocedu.care/" target="_blank" rel="noopener noreferrer"><img src={bloceducare} alt="bloceducare" id="partner"/></a>
 				<a href="https://vulkania.io/coins/hydro" target="_blank" rel="noopener noreferrer"><img src={vulkania} alt="vulkania" id="partner"/></a>
-				<a href="https://sparkpoint.io/" target="_blank" rel="noopener noreferrer"><img src={sparkpoint} alt="sparkpoint" id="partner"/></a>
 			</div>
 			<div class="partners">
-				<a href="https://opendefi.finance/" target="_blank" rel="noopener noreferrer"><img src={opendefi} alt="OpenDeFi" id="partner"/></a>
+				<a href="https://sparkpoint.io/" target="_blank" rel="noopener noreferrer"><img src={sparkpoint} alt="sparkpoint" id="partner"/></a>
 				<a href="https://ethernity.live/" target="_blank" rel="noopener noreferrer"><img src={ethernity} alt="Ethernity" id="partner"/></a>
 			</div>
 		</div>
@@ -199,6 +198,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.roadmap{
@@ -217,5 +217,6 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 	}
 </style>
