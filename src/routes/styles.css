@@ -35,10 +35,6 @@ body {
 
 /* Links */
 
-cg-flex cg-flex-row {
-    border: 1px solid var(--transparent) !important;
-}
-
 a {
 	color: var(--link-color);
 }
