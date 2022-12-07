@@ -425,7 +425,7 @@ a:active {
 
 #wex{
 	height: 130px;
-	animation: fadeIn 4.5s;
+	animation: fadeIn 2.5s;
 }
 
 .jixta{
@@ -459,6 +459,7 @@ a:active {
 	margin-top: 3rem;
 	color: #212124;
 	width: 100px;
+	animation: fadeIn 2.5s;
 }
 
 /* Responsive */
