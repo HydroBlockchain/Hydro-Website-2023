@@ -392,6 +392,8 @@ a:active {
 	animation: fadeIn 2.5s;
 }
 
+/* Keresverse Tile */
+
 #keresverse{
 	background-image: url("/src/lib/images/keresverse.jpg");
 	background-repeat: repeat;
@@ -402,6 +404,7 @@ a:active {
 
 #keresverse-logo{
 	height: 50px;
+	animation: fadeIn 2.5s;
 }
 
 #keres-title{
@@ -410,15 +413,18 @@ a:active {
 
 #jixta{
 	height: 300px;
+	animation: fadeIn 2.5s;
 }
 
 #vox{
 	height: 300px;
 	margin-left: -2rem;
+	animation: fadeIn 2.5s;
 }
 
 #wex{
 	height: 130px;
+	animation: fadeIn 4.5s;
 }
 
 .jixta{
@@ -429,7 +435,7 @@ a:active {
 	justify-content: space-between;
 }
 
-.middle{
+.middle a{
 	display: flex;
 	flex-direction: column;
 	align-items: center;

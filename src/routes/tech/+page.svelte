@@ -50,8 +50,9 @@
 					<img src={vox} alt="keres-agent" id="vox"/>
 
 					<div class="middle">
+						<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" >
 						<img src={wex} alt="keres-logo" id="wex"/>
-						<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><img src={keres} alt="keres-logo" id="keresverse-logo"/></a>
+						<img src={keres} alt="keres-logo" id="keresverse-logo"/></a>
 					</div>
 					
 					<img src={jixta} alt="keres-agent" id="jixta"/>
