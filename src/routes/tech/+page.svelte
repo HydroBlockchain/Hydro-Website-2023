@@ -75,7 +75,7 @@
 <section>
 
 	<div class="multiple-containers">
-		<div class="one-quarter" id="animated-border">
+		<div class="one-quarter" id="meet-hydro">
 			<div class="title">Meet Hydro</div>
 			<div class="information">
 				The Hydro protocols are available to use on multiple networks. 
@@ -90,7 +90,7 @@
 			</div>
 		</div>
 
-		<div class="three-quarter" id="animated-border">
+		<div class="three-quarter" id="multichains">
 			<img src={ecosystem} alt="hydro-ecosystem" id="ecosystem"/>
 		</div>
 		</div>
@@ -111,7 +111,7 @@
 				</div>
 			</div>
 	
-			<div class="one-quarter" id="animated-border" style="margin-right: 0px; margin-left:15px;">
+			<div class="one-quarter" id="hydroswap-dashboard" style="margin-right: 0px; margin-left:15px;">
 				<img src={swap} alt="swap-logo" id="product" style="margin-bottom: 2rem;"/>
 				<div class="products">
 					<div class="hydro-dashboard">
@@ -130,7 +130,7 @@
 		</div>
 
 	<div class="multiple-containers">
-		<div class="half" id="animated-border">
+		<div class="half" id="blockchains-tile">
 			<div class="chains">
 				<a href="https://add-hydro-eth.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={eth} alt="eth-logo" id="chain"/></a>
 				<a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" ><img src={bsc} alt="bsc-logo" id="chain"/></a>
@@ -141,7 +141,7 @@
 		<div class="container-footer"><p style="font-size:12px;">Choose a Network to add Hydro Tokens on by clicking a logo above!</p></div>
 		</div>
 
-		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
+		<div class="half" id="aegir-tile" style="margin-right:0px;margin-left:15px;">
 			
 			<div class="products">
 				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" ><img src={aegir} alt="aegir-logo" id="product"/></a>
