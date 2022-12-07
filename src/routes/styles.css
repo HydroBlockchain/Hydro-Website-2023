@@ -29,7 +29,7 @@ body {
 	margin: 0;
 	background: var(--backgound-color);
 	background-size: 400% 400%;
-	animation: gradient 25s ease infinite;
+	animation: gradient 20s ease infinite;
 	background-attachment: fixed;
 }
 
@@ -65,7 +65,7 @@ a:active {
 		--link-color: #eee;
 		--button-color: #1c4373;
 		--button-color-alt: #38a6e6;
-		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
+		--backgound-color: linear-gradient(90deg, #1b2f5e, #015087, #004878, #002950);
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
 	}
@@ -124,13 +124,13 @@ a:active {
   
   #animated-border {
 	background: linear-gradient(-90deg,
-		rgba(10, 71, 145, 0.15),
-		rgba(4, 11, 138, 0.15),
-		rgba(9, 96, 154, 0.15),
-		rgba(9, 98, 154, 0.15),
-		rgba(9, 144, 154, 0.15),
+		rgba(21, 74, 138, 0.15),
+		rgba(15, 59, 125, 0.15),
+		rgba(9, 91, 145, 0.15),
+		rgba(0, 77, 125, 0.15),
+		rgba(9, 103, 154, 0.15),
 		rgba(9, 69, 154, 0.15));
-	animation: gradient 30s ease infinite;
+	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
   }
