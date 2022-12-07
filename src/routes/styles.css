@@ -247,11 +247,6 @@ a:active {
 	margin: -20px;
 }
 
-#second {
-	margin-right: 0px;
-	margin-left: 15px;
-}
-
 .one-quarter {
 	display: flex;
 	flex-direction: column;

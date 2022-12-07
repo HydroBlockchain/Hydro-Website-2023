@@ -153,9 +153,9 @@
 			</div>
 		</div>
 
-		<div class="half" id="second">
+		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
 			<div class="title">Exchanges</div>
-			<div class="exchanges" id="animated-border">
+			<div class="exchanges">
 				<a href="https://coinex.com" target="_blank" rel="noopener noreferrer"><img src={coinex} alt="Coinex" id="exchange"/></a>
 				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT" target="_blank" rel="noopener noreferrer"><img src={bithumb} alt="Bithumb" id="exchange"/></a>
 				<a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noopener noreferrer"><img src={mercatox} alt="Mercatox" id="exchange"/></a>
