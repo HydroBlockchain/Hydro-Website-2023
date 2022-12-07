@@ -26,9 +26,44 @@
 
 	onMount(async function() {
         const response = await fetch(apiURL);
-        data = await response.json();
-		console.log(data.result);
+		data = await response.json();
+		await checkConnection();
+		await getPrice();
     });
+
+	const url = "https://api.coingecko.com/api/v3/";
+	let connected = false;
+	let data2;
+	async function checkConnection () {
+		const endpoint = url + "ping";
+		const response = await fetch(endpoint);
+		if (response) {
+			connected = true;
+			data2 = await response.json();
+			return;
+		} else {
+			console.log("No connection");
+		}
+	}
+	let coin = "hydro";
+	let coinData;
+	let price = {};
+	let mcap;
+	let totalVol;
+	async function getPrice() {
+		const endpoint = url + `coins/${coin}`;
+		const response = await fetch(endpoint);
+		if (response) {
+			console.log("price query success")
+			coinData = await response.json();
+			price = coinData.market_data.current_price.usd;
+			mcap = coinData.market_data.market_cap.usd;
+			totalVol = coinData.market_data.total_volume.usd;
+			return;
+		} else {
+			console.log("Price query error");
+		}
+	}
 
 </script>
 
@@ -77,13 +112,18 @@
 			</div>
 	
 			<div class="one-quarter" id="animated-border" style="margin-right: 0px; margin-left:15px;">
-				<div class="products" style="display:flex;flex-direction:column;">
-					<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
-					<div id="staked-div" style="color:#fff;">
-						Hydro staked: 
-						<!-- Convert to 18 decimals -->
-						<h1>{(Math.round(data.result/Math.pow(10,16))/100)}</h1>
+				<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
+
+				<div class="products">
+					<div class="hydro-dashboard">
+						<div class="dashboard-slot" id="price">Price: {(price)} <h6>USD</h6></div>
+						<div class="dashboard-slot" id="marketcap">Marketcap: {(mcap)} <h6>USD</h6></div>
+						<div class="dashboard-slot" id="volume">Vol 24/7: {(totalVol)} <h6>USD</h6></div>
+						<div class="dashboard-slot" id="staked"> Staked: {(Math.round(data.result/Math.pow(10,16))/100)} <h6>HYDRO</h6></div>
 					</div>
+
+					
+
 				</div>
 			</div>
 		</div>
@@ -127,7 +167,7 @@
 
 	.products {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 	}
 
