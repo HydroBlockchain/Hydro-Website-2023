@@ -82,7 +82,7 @@
 				<div class="products" style="display:flex;flex-direction:column;">
 					<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
 					<div id="staked-div" style="color:#fff;">
-						Hydro staked: <h1>{(data.result)}</h1>
+						Hydro staked: <h1>{(Math.round(data.result/Math.pow(10,16))/100)}</h1>
 					</div>
 						
 				</div>
