@@ -112,7 +112,7 @@
 			</div>
 	
 			<div class="one-quarter" id="animated-border" style="margin-right: 0px; margin-left:15px;">
-				<img src={swap} alt="swap-logo" id="product"/>
+				<img src={swap} alt="swap-logo" id="product" style="margin-bottom: 2rem;"/>
 				<div class="products">
 					<div class="hydro-dashboard">
 						<div class="dashboard-slot" id="price">Price: {(price)} <h6>USD</h6></div>
@@ -186,7 +186,7 @@
 	.button-row{
 		display: flex;
 		flex-direction: row;
-		margin-top: 1rem;
+		margin-top: 2rem;
 	}
 
 </style>
