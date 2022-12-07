@@ -392,6 +392,42 @@ a:active {
 	animation: fadeIn 2.5s;
 }
 
+#keresverse{
+	background-image: url("/src/lib/images/keresverse.jpg");
+	background-repeat: repeat;
+ 	background-position: center;
+  	background-attachment: fixed;
+	justify-content: space-between;
+}
+
+#keresverse-logo{
+	height: 50px;
+}
+
+#keres-title{
+	margin-top: 2rem;
+}
+
+#jixta{
+	height: 300px;
+}
+
+#vox{
+	height: 300px;
+}
+
+#wex{
+	height: 150px;
+	margin-bottom: 200px;
+}
+
+.jixta{
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
 /* Responsive */
 
 /* Extra small devices (phones, 600px and down) */

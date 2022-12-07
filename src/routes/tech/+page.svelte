@@ -10,6 +10,10 @@
 	import aegir from "$lib/images/logos/Aegir-Wallet.svg";
 	import swap from "$lib/images/logos/Hydro-Swap.svg";
 	import keres from "$lib/images/logos/Keresverse.svg";
+
+	import jixta from "$lib/images/jixta.png"
+	import vox from "$lib/images/vox.png"
+	import wex from "$lib/images/wex.svg"
 </script>
 
 <svelte:head>
@@ -40,6 +44,25 @@
 		</div>
 		</div>
 
+		<div class="multiple-containers">
+			<div class="three-quarter" id="keresverse" style="margin-right: 15px; margin-left:0px;">
+				<div class="products" id="keres-title">
+					<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><img src={keres} alt="keres-logo" id="keresverse-logo"/></a>
+				</div>
+				<div class="jixta">
+					<img src={vox} alt="keres-agent" id="vox"/>
+					<img src={wex} alt="keres-logo" id="wex"/>
+					<img src={jixta} alt="keres-agent" id="jixta"/>
+				</div>
+			</div>
+	
+			<div class="one-quarter" id="animated-border" style="margin-right: 0px; margin-left:15px;">
+				<div class="products">
+					<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
+				</div>
+			</div>
+		</div>
+
 	<div class="multiple-containers">
 		<div class="half" id="animated-border">
 			<div class="chains">
@@ -53,17 +76,15 @@
 		</div>
 
 		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
-			<div class="products">
-				<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><img src={keres} alt="keres-logo" id="product"/></a>
-			</div>
+			
 			<div class="products">
 				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" ><img src={aegir} alt="aegir-logo" id="product"/></a>
 			</div>
-			<div class="products">
-				<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
-			</div>
+			
 		</div>
 	</div>
+
+	
    
 </section>
 
