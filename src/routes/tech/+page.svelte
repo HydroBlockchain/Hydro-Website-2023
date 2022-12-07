@@ -42,7 +42,6 @@
 
 	<div class="multiple-containers">
 		<div class="half" id="animated-border">
-			<div class="container-header"><div class="title"><a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" >Add Hydro BEP20 to Metamask</a></div></div>
 			<div class="chains">
 				<a href="https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01" target="_blank" rel="noopener noreferrer" ><img src={eth} alt="eth-logo" id="chain"/></a>
 				<a href="https://bscscan.com/token/0xf3DBB49999B25c9D6641a9423C7ad84168D00071" target="_blank" rel="noopener noreferrer" ><img src={bsc} alt="bsc-logo" id="chain"/></a>
@@ -50,6 +49,7 @@
 				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code" target="_blank" rel="noopener noreferrer" ><img src={csc} alt="csc-logo" id="chain"/></a>
 				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code" target="_blank" rel="noopener noreferrer" ><img src={movr} alt="csc-logo" id="chain"/></a>
 		</div>
+		<div class="container-header"><a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" ><div class="button">Add Hydro BEP20 to Metamask</div></a></div>
 		</div>
 
 		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
@@ -72,6 +72,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		margin-bottom: 2rem;
 	}
 
     .chains a{

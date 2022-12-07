@@ -56,6 +56,20 @@ a:active {
 	text-decoration: none;
 }
 
+.button{
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	background-color: var(--button-color);
+}
+
+.button:hover{
+	opacity: 0.5;
+}
+
+.container-header a{
+	color: var(--button-text-color);
+}
+
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
@@ -63,8 +77,8 @@ a:active {
 		--logo-color: #eee;
 		--text-color: #eee;
 		--link-color: #eee;
-		--button-color: #1c4373;
-		--button-color-alt: #38a6e6;
+		--button-color: #eee;
+		--button-text-color: #212124;
 		--backgound-color: linear-gradient(90deg, #1b2f5e, #015087, #004878, #002950);
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
@@ -78,8 +92,8 @@ a:active {
 		--logo-color: #fff;
 		--text-color: #fff;
 		--link-color: #fff;
-		--button-color: #1c4373;
-		--button-color-alt: #38a6e6;
+		--button-color: #fff;
+		--button-text-color: #212124;
 		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
