@@ -1,6 +1,8 @@
 <script>
 // @ts-nocheck
-
+	//imports
+	import { onMount } from "svelte";
+	//pics
     import ecosystem from "$lib/images/hydro-ecosystem.svg";
 	//chains
 	import eth from "$lib/images/blockchains/eth.svg";
@@ -12,15 +14,12 @@
 	import aegir from "$lib/images/logos/Aegir-Wallet.svg";
 	import swap from "$lib/images/logos/Hydro-Swap.svg";
 	import keres from "$lib/images/logos/Keresverse.svg";
-
-	import jixta from "$lib/images/jixta.png"
-	import vox from "$lib/images/vox1.png"
-	import wex from "$lib/images/wex.svg"
+	//keresverse
+	import jixta from "$lib/images/keresverse/jixta.png"
+	import vox from "$lib/images/keresverse/vox.png"
+	import wex from "$lib/images/keresverse/wex.svg"
 
 	// API Call to the KVS Staking contract
-
-  import { onMount } from "svelte";
-
     const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
     let data = []
 
@@ -30,7 +29,8 @@
 		await checkConnection();
 		await getPrice();
     });
-
+	
+	// API Call to Coingecko for Price feed
 	const url = "https://api.coingecko.com/api/v3/";
 	let connected = false;
 	let data2;
@@ -142,16 +142,12 @@
 		</div>
 
 		<div class="half" id="aegir-tile" style="margin-right:0px;margin-left:15px;">
-			
 			<div class="products">
 				<a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" ><img src={aegir} alt="aegir-logo" id="product"/></a>
 			</div>
 			
 		</div>
 	</div>
-
-	
-   
 </section>
 
 <style>

@@ -395,16 +395,17 @@ a:active {
 	animation: fadeIn 2.5s;
 }
 
+/* Tile backgrounds */
+
 #hydroswap-dashboard{
-	background-image: url("/src/lib/images/hydroswap.jpg");
+	background-image: url("/src/lib/images/tiles/hydroswap.jpg");
 	background-repeat: repeat;
  	background-position: center;
   	background-attachment: fixed;
 }
 
 #aegir-tile{
-
-	background-image: url("/src/lib/images/aegir.jpg");
+	background-image: url("/src/lib/images/tiles/aegir.jpg");
 	background-repeat: repeat;
  	background-position: center;
   	background-attachment: fixed;
@@ -412,35 +413,35 @@ a:active {
 }
 
 #blockchains-tile{
-	background-image: url("/src/lib/images/blockchains.jpg");
+	background-image: url("/src/lib/images/tiles/blockchains.jpg");
 	background-repeat: repeat;
  	background-position: center;
   	background-attachment: fixed;
 }
 
 #multichains{
-	background-image: url("/src/lib/images/multichain.jpg");
+	background-image: url("/src/lib/images/tiles/multichain.jpg");
 	background-repeat: repeat;
  	background-position: center;
   	background-attachment: fixed;
 }
 
 #meet-hydro{
-	background-image: url("/src/lib/images/meet-hydro.jpg");
+	background-image: url("/src/lib/images/tiles/meet-hydro.jpg");
 	background-repeat: repeat;
  	background-position: center;
   	background-attachment: fixed;
 }
 
-/* Keresverse Tile */
-
 #keresverse{
-	background-image: url("/src/lib/images/keresverse.jpg");
+	background-image: url("/src/lib/images/tiles/keresverse.jpg");
 	background-repeat: repeat;
  	background-position: center;
   	background-attachment: fixed;
 	justify-content: space-between;
 }
+
+/* Keresverse Tile */
 
 #keresverse-logo{
 	height: 50px;
