@@ -323,6 +323,7 @@ a:active {
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	background-color: var(--button-color);
+	animation: fadeIn 2.5s;
 }
 
 .button:hover{
@@ -337,47 +338,51 @@ a:active {
 
 .header-logo svg {
 	margin-right: 2rem;
+	animation: fadeIn 2.5s;
 }
 
 .header-button svg {
 	height: 2rem;
+	animation: fadeIn 2.5s;
 }
 
 #ecosystem {
 	width: 600px;
+	animation: fadeIn 2.5s;
 }
 
 #chain {
 	height: 50px;
+	animation: fadeIn 2.5s;
 }
 
 #product {
 	height: 35px;
 	margin: 10px;
+	animation: fadeIn 2.5s;
 }
 
 #hydro-drop {
 	width: 128px;
 	margin-top: 2rem;
+	animation: fadeIn 2.5s;
 }
 
 #partner {
 	width: 128px;
 	margin: 20px;
-}
-
-#partner-edu {
-	width: 64px;
-	margin: 20px;
+	animation: fadeIn 2.5s;
 }
 
 #exchange {
 	width: 128px;
 	margin: 20px;
+	animation: fadeIn 2.5s;
 }
 
 #icon {
 	width: 20px;
+	animation: fadeIn 2.5s;
 }
 
 #profile-pic {
@@ -385,6 +390,7 @@ a:active {
 	margin-top: 3px;
 	margin-bottom: 3px;
 	border-radius: var(--border-radius);
+	animation: fadeIn 2.5s;
 }
 
 /* Responsive */
