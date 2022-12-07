@@ -12,7 +12,7 @@
 	import keres from "$lib/images/logos/Keresverse.svg";
 
 	import jixta from "$lib/images/jixta.png"
-	import vox from "$lib/images/vox.png"
+	import vox from "$lib/images/vox1.png"
 	import wex from "$lib/images/wex.svg"
 </script>
 
@@ -48,6 +48,7 @@
 			<div class="three-quarter" id="keresverse" style="margin-right: 15px; margin-left:0px;">
 				<div class="jixta">
 					<img src={vox} alt="keres-agent" id="vox"/>
+
 					<div class="middle">
 						<img src={wex} alt="keres-logo" id="wex"/>
 						<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><img src={keres} alt="keres-logo" id="keresverse-logo"/></a>
