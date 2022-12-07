@@ -112,8 +112,7 @@
 			</div>
 	
 			<div class="one-quarter" id="animated-border" style="margin-right: 0px; margin-left:15px;">
-				<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
-
+				<img src={swap} alt="swap-logo" id="product"/>
 				<div class="products">
 					<div class="hydro-dashboard">
 						<div class="dashboard-slot" id="price">Price: {(price)} <h6>USD</h6></div>
@@ -121,9 +120,11 @@
 						<div class="dashboard-slot" id="volume">Vol 24/7: {(totalVol)} <h6>USD</h6></div>
 						<div class="dashboard-slot" id="staked"> Staked: {(Math.round(data.result/Math.pow(10,16))/100)} <h6>HYDRO</h6></div>
 					</div>
-
+					<div class="button-row">
+					<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><div class="button" id="hydroswap-buttons">Swap</div></a>
+					<a href="https://hydroswap.org/pools" target="_blank" rel="noopener noreferrer"><div class="button" id="hydroswap-buttons">Stake</div></a>
+				</div>
 					
-
 				</div>
 			</div>
 		</div>
@@ -175,6 +176,17 @@
 		display: flex;
 		justify-content: center;
 		margin: 20px;
+	}
+
+	#hydroswap-buttons{
+		width: 100px;
+		margin: 1rem;
+	}
+
+	.button-row{
+		display: flex;
+		flex-direction: row;
+		margin-top: 1rem;
 	}
 
 </style>

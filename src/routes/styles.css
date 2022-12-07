@@ -318,7 +318,10 @@ a:active {
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	background-color: var(--button-color);
+	color: var(--button-text-color);
 	animation: fadeIn 2.5s;
+	display: flex;
+	justify-content: center;
 }
 
 .button:hover{
