@@ -49,7 +49,10 @@
 				<a href="https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code" target="_blank" rel="noopener noreferrer" ><img src={csc} alt="csc-logo" id="chain"/></a>
 				<a href="https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code" target="_blank" rel="noopener noreferrer" ><img src={movr} alt="csc-logo" id="chain"/></a>
 		</div>
-		<div class="container-footer"><a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" ><div class="button">Add Hydro BEP20 to Metamask</div></a></div>
+		<div class="container-footer">
+			<a href="https://add-hydro.netlify.app/" target="_blank" rel="noopener noreferrer" ><div class="button">Add Hydro BEP20 to Metamask</div></a>
+			<a href="https://add-hydro-eth.netlify.app/" target="_blank" rel="noopener noreferrer" ><div class="button">Add Hydro ERC20 to Metamask</div></a>
+		</div>
 		</div>
 
 		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
