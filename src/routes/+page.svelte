@@ -141,7 +141,7 @@
 		</div>
 
 	<div class="multiple-containers-2">
-		<div class="half">
+		<div class="half" id="animated-border">
 			<div class="title">Partners</div>
 			<div class="partners">
 				<a href="https://www.blocedu.care/" target="_blank" rel="noopener noreferrer"><img src={bloceducare} alt="bloceducare" id="partner"/></a>
@@ -155,7 +155,7 @@
 
 		<div class="half" id="second">
 			<div class="title">Exchanges</div>
-			<div class="exchanges">
+			<div class="exchanges" id="animated-border">
 				<a href="https://coinex.com" target="_blank" rel="noopener noreferrer"><img src={coinex} alt="Coinex" id="exchange"/></a>
 				<a href="https://www.bitglobal.com/en-us/spot/trade?q=HYDRO-USDT" target="_blank" rel="noopener noreferrer"><img src={bithumb} alt="Bithumb" id="exchange"/></a>
 				<a href="https://mercatox.com/exchange/HYDRO/BTC" target="_blank" rel="noopener noreferrer"><img src={mercatox} alt="Mercatox" id="exchange"/></a>
