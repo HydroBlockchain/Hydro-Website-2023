@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import ecosystem from "$lib/images/hydro-ecosystem.svg";
 	//chains
 	import eth from "$lib/images/blockchains/eth.svg";
@@ -14,6 +16,22 @@
 	import jixta from "$lib/images/jixta.png"
 	import vox from "$lib/images/vox1.png"
 	import wex from "$lib/images/wex.svg"
+
+	// API Call to the KVS Staking contract
+
+  import { onMount } from "svelte";
+
+    const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
+    let data = []
+
+	onMount(async function() {
+        const response = await fetch(apiURL);
+        data = await response.json();
+		console.log(data.result);
+    });
+
+
+
 </script>
 
 <svelte:head>
@@ -61,8 +79,12 @@
 			</div>
 	
 			<div class="one-quarter" id="animated-border" style="margin-right: 0px; margin-left:15px;">
-				<div class="products">
+				<div class="products" style="display:flex;flex-direction:column;">
 					<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><img src={swap} alt="swap-logo" id="product"/></a>
+					<div id="staked-div" style="color:#fff;">
+						Hydro staked: <h1>{(data.result)}</h1>
+					</div>
+						
 				</div>
 			</div>
 		</div>
