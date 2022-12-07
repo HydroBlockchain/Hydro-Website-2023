@@ -414,18 +414,27 @@ a:active {
 
 #vox{
 	height: 300px;
+	margin-left: -2rem;
 }
 
 #wex{
 	height: 150px;
-	margin-bottom: 200px;
 }
 
 .jixta{
+	height: 100%;
 	width: 100%;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
+}
+
+.middle{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10rem;
 }
 
 /* Responsive */
