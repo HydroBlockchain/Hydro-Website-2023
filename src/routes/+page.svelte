@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+	//imports
 	import { onMount } from "svelte";
 	//logos
 	import drop from "$lib/images/white-drop.svg";
@@ -13,7 +15,8 @@
 	import ethernity from "$lib/images/partners/ethernity.svg";
 	import sparkpoint from "$lib/images/partners/sparkpoint.png";
 	import vulkania from "$lib/images/partners/vulkania.svg";
-
+	
+	//API Call to Medium
 	const apiURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed";
     let data = []
 
