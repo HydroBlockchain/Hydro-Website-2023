@@ -59,7 +59,7 @@
 	<div class="multiple-containers">
 			<div class="one-quarter" id="intro-bg">Introduction</div>
 			<div class="three-quarter" id="blog-bg">
-				<div class="latest">Lastest Hydro Blog post:</div>
+				<div class="latest">Lastest Hydro Blog Post</div>
 				<div class="blog-title"><a href ="{(blogLink)}"> {(blogTitle)} </a></div>
 		</div>
 	</div>
