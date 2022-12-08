@@ -1,44 +1,43 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 
-	import Header from './Header.svelte';
-	import Footer from './Footer.svelte';
-	import './styles.css';
-	import {onMount} from "svelte";
-    import {state} from "$lib/stores/store.js";
-    import LoadingScreen from "$lib/components/loadingscreen.svelte";
+	import Header from "./Header.svelte";
+	import Footer from "./Footer.svelte";
+	import "./styles.css";
+	import { onMount } from "svelte";
+	import { state } from "$lib/stores/store.js";
+	import LoadingScreen from "$lib/components/loadingscreen.svelte";
 
-    let ready
+	let ready;
 
-    onMount(() => {
-        ready = true
-    });
+	onMount(() => {
+		ready = true;
+	});
 
-    $: {
-        if (ready) {
-            setInterval(() => {
-                state.set({loading: false})
-            }, 1000)
-        }
-    }
-
+	$: {
+		if (ready) {
+			setInterval(() => {
+				state.set({ loading: false });
+			}, 1000);
+		}
+	}
 </script>
 
 <!--preloader-->
 {#if $state.loading}
-    <LoadingScreen/>
+	<LoadingScreen />
 {/if}
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <div class="app-wrapper">
-<div class="app">
-	<Header />
-	<main>
-		<slot />
-	</main>
-	<Footer />
-</div>
+	<div class="app">
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</div>
 </div>
 
 <style>
@@ -58,4 +57,3 @@
 		margin-top: 20px;
 	}
 </style>
-
