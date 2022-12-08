@@ -15,35 +15,35 @@
 	import ethernity from "$lib/images/partners/ethernity.svg";
 	import sparkpoint from "$lib/images/partners/sparkpoint.png";
 	import vulkania from "$lib/images/partners/vulkania.svg";
-	
+
 	//API Call to Medium
-	const apiURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed";
-    let data = []
+	 const apiURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed";
+	 let data = []
 
-	onMount(async function() {
-        const response = await fetch(apiURL);
-		data = await response.json();
-		console.log(data.items)
-		getData()
-    });
+	 onMount(async function() {
+         const response = await fetch(apiURL);
+	 	data = await response.json();
+	 	console.log(data.items)
+	 	getData()
+     });
 
-	let blogData = {};
-	let blogArticle;
-	let blogArticleLink;
-	async function getData() {
-		const response = await fetch(apiURL);
-		if (response) {
-			console.log("Blog query success")
-			data = await response.json();
-			blogData = data.items[1].title;
-			blogArticle = data.items[1].content;
-			blogArticleLink = data.items[1].link;
+	 let blogData = {};
+	 let blogArticle;
+	 let blogArticleLink;
+	 async function getData() {
+	 	const response = await fetch(apiURL);
+	 	if (response) {
+	 		console.log("Blog query success")
+	 		data = await response.json();
+	 		blogData = data.items[1].title;
+	 		blogArticle = data.items[1].content;
+	 		blogArticleLink = data.items[1].link;
+			getMediumTitles()
 			return;
-		} else {
+	 	} else {
 			console.log("Blog query error");
-		}
-	}	
-
+	 	}
+	 }	
 </script>
 
 <svelte:head>
@@ -60,7 +60,7 @@
 	<div class="multiple-containers">
 			<div class="one-quarter" id="animated-border">Introduction</div>
 			<div class="three-quarter" id="animated-border">
-				{(blogData)} <br> {(blogArticleLink)}
+				{(blogData)}
 		</div>
 	</div>
 
