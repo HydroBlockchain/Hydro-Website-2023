@@ -7,6 +7,8 @@
 	import { onMount } from "svelte";
 	import { state } from "$lib/stores/store.js";
 	import LoadingScreen from "$lib/components/loadingscreen.svelte";
+	import PriceBanner from "$lib/components/pricebanner.svelte";
+    import Pricebanner from "$lib/components/pricebanner.svelte";
 
 	let ready;
 
@@ -31,6 +33,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <div class="app-wrapper">
+	<Pricebanner />
 	<div class="app">
 		<Header />
 		<main>
