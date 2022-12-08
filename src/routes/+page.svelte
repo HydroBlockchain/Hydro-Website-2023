@@ -23,27 +23,26 @@
 	 onMount(async function() {
          const response = await fetch(apiURL);
 	 	data = await response.json();
-	 	console.log(data.items)
+	 	// console.log(data.items)
 	 	getData()
      });
 
-	 let blogData = {};
-	 let blogArticle;
-	 let blogArticleLink;
+	 //Get the latest Article
+	 let blogTitle = [];
+	 let blogLink = [];
 	 async function getData() {
 	 	const response = await fetch(apiURL);
 	 	if (response) {
-	 		console.log("Blog query success")
 	 		data = await response.json();
-	 		blogData = data.items[1].title;
-	 		blogArticle = data.items[1].content;
-	 		blogArticleLink = data.items[1].link;
-			getMediumTitles()
-			return;
+	 		blogTitle = data.items[0].title;
+	 		blogLink = data.items[0].link;
+			// console.log(blogTitle);
+			// console.log(blogLink);
 	 	} else {
 			console.log("Blog query error");
 	 	}
 	 }	
+			
 </script>
 
 <svelte:head>
@@ -60,7 +59,8 @@
 	<div class="multiple-containers">
 			<div class="one-quarter" id="intro-bg">Introduction</div>
 			<div class="three-quarter" id="blog-bg">
-				{(blogData)}
+				<div class="latest">Lastest Hydro Blog post:</div>
+				<div class="blog-title"><a href ="{(blogLink)}"> {(blogTitle)} </a></div>
 		</div>
 	</div>
 
