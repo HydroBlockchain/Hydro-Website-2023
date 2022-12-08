@@ -52,19 +52,19 @@
 </svelte:head>
 
 <section>
-	<div class="full" id="animated-border">
+	<div class="full" id="first-div-bg">
 		<img src={drop} alt="hydro-logo" id="hydro-drop"/>
 		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 	</div>
 
 	<div class="multiple-containers">
-			<div class="one-quarter" id="animated-border">Introduction</div>
-			<div class="three-quarter" id="animated-border">
+			<div class="one-quarter" id="intro-bg">Introduction</div>
+			<div class="three-quarter" id="blog-bg">
 				{(blogData)}
 		</div>
 	</div>
 
-		<div class="full" id="animated-border">
+		<div class="full" id="roadmap-bg">
 			<div class="title">Roadmap</div>
 				<div class="information">
 					<div class="roadmap">
@@ -77,7 +77,7 @@
 		</div>
 
 	<div class="multiple-containers-2">
-		<div class="half" id="animated-border">
+		<div class="half" id="partner-bg">
 			<div class="title">Partners</div>
 			<div class="partners">
 				<a href="https://www.blocedu.care/" target="_blank" rel="noopener noreferrer"><img src={bloceducare} alt="bloceducare" id="partner"/></a>
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 
-		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
+		<div class="half" id="exchange-bg" style="margin-right:0px;margin-left:15px;">
 			<div class="title">Exchanges</div>
 			<div class="exchanges">
 				<a href="https://coinex.com" target="_blank" rel="noopener noreferrer"><img src={coinex} alt="Coinex" id="exchange"/></a>
@@ -103,7 +103,7 @@
 		</div>
 	</div>
 
-	<div class="full" id="animated-border">
+	<div class="full" id="contact-bg">
 		<div class="tagline">Contact Us</div>
 	</div>
 

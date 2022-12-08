@@ -75,6 +75,7 @@
 <section>
 
 	<div class="multiple-containers">
+		<div id="overlay">
 		<div class="one-quarter" id="meet-hydro">
 			<div class="title">Meet Hydro</div>
 			<div class="information">
@@ -89,6 +90,7 @@
                 hence the supply will continously decrease over time.
 			</div>
 		</div>
+	</div>
 
 		<div class="three-quarter" id="multichains">
 			<img src={ecosystem} alt="hydro-ecosystem" id="ecosystem"/>

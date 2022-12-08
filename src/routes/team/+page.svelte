@@ -14,7 +14,7 @@
 </svelte:head>
 
 <section>
-	<div class="container" id="animated-border">
+	<div class="container" id="team-bg">
 
 		<div class="team-section">
 

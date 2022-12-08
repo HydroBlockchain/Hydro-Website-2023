@@ -9,7 +9,7 @@
 <section>
 
 	
-	<div class="container" id="animated-border">
+	<div class="container" id="faq-bg">
 
 		<div class="container-header"><div class="title">FAQ</div></div>
 

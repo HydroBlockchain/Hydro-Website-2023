@@ -397,6 +397,8 @@ a:active {
 
 /* Tile backgrounds */
 
+/* Tech Site */
+
 #hydroswap-dashboard{
 	background-image: url("/src/lib/images/tiles/hydroswap.jpg");
 	background-repeat: repeat;
@@ -441,14 +443,76 @@ a:active {
 	justify-content: space-between;
 }
 
+/* Header/Footer */
+
+#header-bg{
+	background-image: url("/src/lib/images/tiles/header-bg.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
 #footer-bg{
 	background-image: url("/src/lib/images/tiles/footer-bg.jpg");
  	background-position: center;
   	background-attachment: fixed;
 }
 
-#header-bg{
-	background-image: url("/src/lib/images/tiles/header-bg.jpg");
+/* Landing */
+
+#first-div-bg{
+	background-image: url("/src/lib/images/tiles/intro.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#intro-bg{
+	background-image: url("/src/lib/images/tiles/blog.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#blog-bg{
+	background-image: url("/src/lib/images/tiles/blog.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#roadmap-bg{
+	background-image: url("/src/lib/images/tiles/roadmap.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#partner-bg{
+	background-image: url("/src/lib/images/tiles/partners.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#exchange-bg{
+	background-image: url("/src/lib/images/tiles/exchanges.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#contact-bg{
+	background-image: url("/src/lib/images/tiles/contact.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+/* Team */
+
+#team-bg{
+	background-image: url("/src/lib/images/tiles/team.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+/* FAQ */
+
+#faq-bg{
+	background-image: url("/src/lib/images/tiles/team.jpg");
  	background-position: center;
   	background-attachment: fixed;
 }
