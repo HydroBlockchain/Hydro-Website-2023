@@ -386,6 +386,12 @@ a:active {
 	animation: fadeIn 2.5s;
 }
 
+#featured-on{
+	width: 256px;
+	margin: 20px;
+	animation: fadeIn 2.5s;
+}
+
 #exchange {
 	width: 128px;
 	margin: 20px;
@@ -505,7 +511,7 @@ a:active {
   	background-attachment: fixed;
 }
 
-#contact-bg{
+#featured-on-bg{
 	background-image: url("/src/lib/images/tiles/contact.jpg");
  	background-position: center;
   	background-attachment: fixed;
