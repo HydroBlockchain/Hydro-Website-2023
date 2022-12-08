@@ -467,7 +467,7 @@ a:active {
 
 #intro-bg{
 	background-image: url("/src/lib/images/tiles/blog.jpg");
- 	background-position: center;
+ 	background-position: top;
   	background-attachment: fixed;
 }
 
