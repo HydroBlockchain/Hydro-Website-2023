@@ -217,6 +217,8 @@ onMount(async function() {
 .hydro-slot, .eth-slot, .bsc-slot, .poly-slot, .csc-slot {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .banner-slot {
@@ -229,7 +231,7 @@ onMount(async function() {
 
 #name {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 @keyframes example {
