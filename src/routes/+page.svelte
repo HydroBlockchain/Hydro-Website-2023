@@ -63,14 +63,14 @@
 </svelte:head>
 
 <section>
-	<div class="full" id="first-div-bg">
+	<div class="full" id="animated-border">
 		<img src={drop} alt="hydro-logo" id="hydro-drop"/>
 		<div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 	</div>
 
 	<div class="multiple-containers">
-			<div class="one-quarter" id="intro-bg">Introduction</div>
-			<div class="three-quarter" id="blog-bg">
+			<div class="one-quarter" id="animated-border">Introduction</div>
+			<div class="three-quarter" id="animated-border">
 				<div class="blog-posts">
 				<div class="latest">Lastest Hydro Blog Post</div>
 				<div class="blog-title"><a href ="{(blogLink)}" target="_blank" rel="noopener noreferrer"> {(blogTitle)} </a></div>
@@ -80,7 +80,7 @@
 		</div>
 	</div>
 
-		<div class="full" id="roadmap-bg">
+		<div class="full" id="animated-border">
 			<div class="title">Roadmap</div>
 				<div class="information">
 					<div class="roadmap">
@@ -93,7 +93,7 @@
 		</div>
 
 	<div class="multiple-containers-2">
-		<div class="half" id="partner-bg">
+		<div class="half" id="animated-border">
 			<div class="title">Partners</div>
 			<div class="partners">
 				<a href="https://www.blocedu.care/" target="_blank" rel="noopener noreferrer"><img src={bloceducare} alt="bloceducare" id="partner"/></a>
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 
-		<div class="half" id="exchange-bg" style="margin-right:0px;margin-left:15px;">
+		<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
 			<div class="title">Exchanges</div>
 			<div class="exchanges">
 				<a href="https://coinex.com" target="_blank" rel="noopener noreferrer"><img src={coinex} alt="Coinex" id="exchange"/></a>
@@ -119,7 +119,7 @@
 		</div>
 	</div>
 
-	<div class="full" id="featured-on-bg">
+	<div class="full" id="animated-border">
 		<div class="title">Featured on</div>
 			<div class="partners">
 				<a href="https://coinmarketcap.com/currencies/hydro/" target="_blank" rel="noopener noreferrer"><img src={coinmarketcap} alt="cmc" id="featured-on"/></a>

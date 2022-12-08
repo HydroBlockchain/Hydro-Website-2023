@@ -2,7 +2,7 @@
 </script>
 
 <footer>
-	<div class="footer-logo" id="footer-bg">
+	<div class="footer-logo" id="animated-border">
 		<div class="logo">
 				<svg width="128" height="auto" viewBox="0 0 2561 490" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g filter="url(#filter0_b_1612_190)">
