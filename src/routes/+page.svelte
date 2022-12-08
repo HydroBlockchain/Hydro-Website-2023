@@ -5,7 +5,7 @@ import {
     onMount
 } from "svelte";
 //logos
-import drop from "$lib/images/white-drop.svg";
+import drop from "$lib/images/ticker-logo/white-drop.svg";
 //exchanges
 import coinex from "$lib/images/exchanges/coinex.svg";
 import bithumb from "$lib/images/exchanges/bithumb.svg";
