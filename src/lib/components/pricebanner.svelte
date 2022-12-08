@@ -196,8 +196,7 @@ onMount(async function() {
     z-index: 1;
     background: inherit;
     overflow: hidden;
-    margin-bottom: 30px;
-    
+    margin-bottom: 20px;
 }
 
 .banner:before {
@@ -232,13 +231,5 @@ onMount(async function() {
 #name {
     display: flex;
     justify-content: flex-start;
-}
-
-@keyframes example {
-  0%   {left:0px;}
-  25%  {left:200px;}
-  50%  {left:400px;}
-  75%  {left:600px;}
-  100% {left:800px;}
 }
 </style>
