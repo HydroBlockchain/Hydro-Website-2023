@@ -60,7 +60,7 @@
 			<div class="one-quarter" id="intro-bg">Introduction</div>
 			<div class="three-quarter" id="blog-bg">
 				<div class="latest">Lastest Hydro Blog Post</div>
-				<div class="blog-title"><a href ="{(blogLink)}"> {(blogTitle)} </a></div>
+				<div class="blog-title"><a href ="{(blogLink)}" target="_blank" rel="noopener noreferrer"> {(blogTitle)} </a></div>
 		</div>
 	</div>
 
