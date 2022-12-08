@@ -98,7 +98,7 @@
 		</div>
 
 		<div class="multiple-containers">
-			<div class="three-quarter" id="keresverse" style="margin-right: 15px; margin-left:0px;">
+			<div class="three-quarter" id="keresverse">
 				<div class="jixta">
 					<img src={vox} alt="keres-agent" id="vox"/>
 
@@ -106,7 +106,8 @@
 						<img src={wex} alt="keres-logo" id="wex"/>
 						<img src={keres} alt="keres-logo" id="keresverse-logo"/>
 						Manifest your skills to earn!
-						<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" ><div class="button" id="keres-play-button">Play</div></a>
+						<a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" >
+							<div class="button" id="keres-play-button">Play</div></a>
 					</div>
 					
 					<img src={jixta} alt="keres-agent" id="jixta"/>
