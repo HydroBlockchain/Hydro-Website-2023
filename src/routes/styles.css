@@ -441,6 +441,18 @@ a:active {
 	justify-content: space-between;
 }
 
+#footer-bg{
+	background-image: url("/src/lib/images/tiles/footer-bg.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
+#header-bg{
+	background-image: url("/src/lib/images/tiles/header-bg.jpg");
+ 	background-position: center;
+  	background-attachment: fixed;
+}
+
 /* Keresverse Tile */
 
 #keresverse-logo{

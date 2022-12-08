@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+	import { onMount } from "svelte";
 	//logos
 	import drop from "$lib/images/white-drop.svg";
 	//exchanges
@@ -14,97 +14,32 @@
 	import sparkpoint from "$lib/images/partners/sparkpoint.png";
 	import vulkania from "$lib/images/partners/vulkania.svg";
 
-// 	//Get Medium Data and parse it to JSON
-// 	const RSSConverter = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed`;
+	const apiURL = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed";
+    let data = []
 
-// 	export const getMediumData = async () => {
-    
-//     try {
-//     const response = await fetch(RSSConverter);
-//     const data = await response.json();
-//     console.log(data);
-//     return data
-//     } catch(error){
-//         console.log(error)
-//     }
-// };
+	onMount(async function() {
+        const response = await fetch(apiURL);
+		data = await response.json();
+		console.log(data.items)
+		getData()
+    });
 
-// getMediumData()
-
-// const text = document.querySelector('.text');
-// const textList = document.querySelector('.textList');
-
-// const getSingleText = async () => {
-//     const posts = await getMediumData();
-//     const post = posts.items[1]; // latest text (0 to 9)
-//     const title = post.title;
-//     const pubDate = post.pubDate;
-//     const link = post.link;
-//     const author = post.author;
-//     const content = post.content;
-
-//     const newText = document.createElement('div');
-//     newText.className = 'text';
-//     newText.innerHTML = `<h1>${title}</h1>
-//     <a href="${link}"><h2>Published ${pubDate} by ${author}</h2></a>
-//     ${content}`;
-
-//     text.appendChild(newText)
-// };
-
-// const getLatestTextsList = async () => {
-//     const posts = await getMediumData();
-//     for (let post of posts.items){
-//         const newItem = document.createElement('li');
-//         const title = post.title;
-//         const link = post.link;
-//         const thumbnail = post.thumbnail;
-
-//         newItem.innerHTML = `<img src="${thumbnail}" alt=""><a href="${link}"><h3>${title}</h3></a>`;
-
-//         textList.appendChild(newItem)
-
-//     }
-// };
-
-// getSingleText()
-// getLatestTextsList()
-
-// const cards = document.querySelector('.cards');
-// const header = document.querySelector('.header');
-
-// const getTextToCard = async () => {
-//     const posts = await getMediumData();
-//     for (let post of posts.items){
-//         const newItem = document.createElement('col');
-//         newItem.className = 'col';
-        
-//         const title = post.title;
-//         const link = post.link;
-//         const thumbnail = post.thumbnail;
-//         const pubDate = post.pubDate;
-//         const author = post.author;
-
-//         newItem.innerHTML = `<div class="card">
-//         <img src="${thumbnail}" class="card-img-top" alt="Medium Text Thumbnail">
-//         <div class="card-body">
-//           <a href="${link}"><h5 class="card-title">${title.toUpperCase()}</h5></a>
-//           <p class="card-text">Published by ${author} in ${pubDate}</p>
-//         </div>
-//       </div>`;
-
-//         cards.appendChild(newItem)
-
-//     }
-// };
-
-// const getFeedTitle = async () => {
-//     const data = await getMediumData();
-//     header.textContent = `${data.feed.title}`;
-// }
-
-// getFeedTitle();
-// getTextToCard();
+	let blogData = {};
+	let blogArticle;
+	let blogArticleLink;
+	async function getData() {
+		const response = await fetch(apiURL);
+		if (response) {
+			console.log("Blog query success")
+			data = await response.json();
+			blogData = data.items[1].title;
+			blogArticle = data.items[1].content;
+			blogArticleLink = data.items[1].link;
+			return;
+		} else {
+			console.log("Blog query error");
+		}
+	}	
 
 </script>
 
@@ -121,12 +56,10 @@
 
 	<div class="multiple-containers">
 			<div class="one-quarter" id="animated-border">Introduction</div>
-			<div class="three-quarter" id="animated-border">Blog Feed
-				<!-- <div class="cards row row-cols-1 row-cols-md-2 g-4">
-
-				</div> -->
-			</div>
+			<div class="three-quarter" id="animated-border">
+				{(blogData)} <br> {(blogArticleLink)}
 		</div>
+	</div>
 
 		<div class="full" id="animated-border">
 			<div class="title">Roadmap</div>
