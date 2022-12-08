@@ -136,48 +136,104 @@ async function getPriceDataMOVR() {
 
 //Call Price Checking Functions
 onMount(async function() {
-     checkConnection()
-     getPriceDataHydro();
-     getPriceDataETH();
-     getPriceDataBSC();
-     getPriceDataPOLY()
-     getPriceDataCSC()
-     getPriceDataMOVR()
+    checkConnection()
+    getPriceDataHydro();
+    getPriceDataETH();
+    getPriceDataBSC();
+    getPriceDataPOLY()
+    getPriceDataCSC()
+    getPriceDataMOVR()
 });
-
 </script>
 <section>
-
     <div class="banner" id="animated-border">
-        <div class="hydro-slot">
-            <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-            <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangeHydro)} %</div>
-        </div>
-        <div class="eth-slot">
-            <div class="banner-slot" id="name">{(coinNameETH)}</div>
-            <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangeETH)} &</div>
-        </div>
-        <div class="bsc-slot">
-            <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-            <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangeBSC)} %</div>
-        </div>
-        <div class="poly-slot">
-            <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-            <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangePOLY)} %</div>
-        </div>
-        <div class="csc-slot">
-            <div class="banner-slot" id="name">{(coinNameCSC)}</div>
-            <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangeCSC)} %</div>
-        </div>
-        <div class="movr-slot">
-            <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
-            <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangeMOVR)} %</div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <div class="hydro-slot">
+                        <div class="banner-slot" id="name">{(coinNameHydro)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeHydro)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="eth-slot">
+                        <div class="banner-slot" id="name">{(coinNameETH)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeETH)} &</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bsc-slot">
+                        <div class="banner-slot" id="name">{(coinNameBSC)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeBSC)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="poly-slot">
+                        <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
+                        <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangePOLY)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="csc-slot">
+                        <div class="banner-slot" id="name">{(coinNameCSC)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeCSC)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="movr-slot">
+                        <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeMOVR)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="hydro-slot">
+                        <div class="banner-slot" id="name">{(coinNameHydro)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeHydro)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="eth-slot">
+                        <div class="banner-slot" id="name">{(coinNameETH)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeETH)} &</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="bsc-slot">
+                        <div class="banner-slot" id="name">{(coinNameBSC)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeBSC)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="poly-slot">
+                        <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
+                        <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangePOLY)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="csc-slot">
+                        <div class="banner-slot" id="name">{(coinNameCSC)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeCSC)} %</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="movr-slot">
+                        <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
+                        <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeMOVR)} %</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -200,24 +256,30 @@ onMount(async function() {
 }
 
 .banner:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px var(--card-background);
+    filter: blur(10px);
+    margin: -20px;
 }
 
-.hydro-slot, .eth-slot, .bsc-slot, .poly-slot, .csc-slot {
+.hydro-slot,
+.eth-slot,
+.bsc-slot,
+.poly-slot,
+.csc-slot,
+.movr-slot {
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 250px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .banner-slot {
@@ -225,11 +287,54 @@ onMount(async function() {
     margin-right: 1rem;
     color: var(--text-color);
     font-size: 12px;
-    animation: example infinite;
 }
 
 #name {
     display: flex;
     justify-content: flex-start;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 2.5))
+    }
+}
+
+.slider {
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 5);
 }
 </style>
