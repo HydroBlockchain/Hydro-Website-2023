@@ -7,7 +7,6 @@
 	import { onMount } from "svelte";
 	import { state } from "$lib/stores/store.js";
 	import LoadingScreen from "$lib/components/loadingscreen.svelte";
-	import PriceBanner from "$lib/components/pricebanner.svelte";
     import Pricebanner from "$lib/components/pricebanner.svelte";
 
 	let ready;
