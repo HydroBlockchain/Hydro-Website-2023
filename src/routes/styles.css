@@ -314,8 +314,18 @@ a:active {
 
 /* Buttons */
 
-.button{
+.button {
 	padding: 1rem;
+	border-radius: var(--border-radius);
+	background-color: var(--button-color);
+	color: var(--button-text-color);
+	animation: fadeIn 2.5s;
+	display: flex;
+	justify-content: center;
+}
+
+.button a{
+	padding: 0.5rem;
 	border-radius: var(--border-radius);
 	background-color: var(--button-color);
 	color: var(--button-text-color);
@@ -517,6 +527,28 @@ a:active {
   	background-attachment: fixed;
 }
 
+.faq-title{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.faq-answer{
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-bottom: 2rem;
+}
+
+.faq-list{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
 /* Keresverse Tile */
 
 #keresverse-logo{
@@ -613,6 +645,7 @@ h6{
     margin-inline-end: 0px;
 	margin-left: 5px;
 }
+
 
 /* Responsive */
 
