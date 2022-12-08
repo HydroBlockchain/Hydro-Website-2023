@@ -429,7 +429,7 @@ a:active {
 /* Keresverse Tile */
 
 #keresverse {
-	background-image: url("/src/lib/images/tiles/keresverse.jpg");
+	background-image: url("/src/lib/images/keresverse/keresverse.jpg");
 	background-repeat: repeat;
 	background-position: center;
 	background-attachment: fixed;
