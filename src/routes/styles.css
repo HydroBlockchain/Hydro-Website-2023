@@ -65,8 +65,18 @@ a:active {
 		--title-color: rgb(255, 255, 255);
 		--button-color: #eee;
 		--button-text-color: #212124;
-		--backgound-color: linear-gradient(90deg, #1b2f5e, #015087, #004878, #002950);
+		--backgound-color: linear-gradient(90deg,
+				#1b2f5e,
+				#015087,
+				#004878,
+				#002950);
 		--card-background: rgba(255, 255, 255, 0.2);
+		--animated-bg: linear-gradient(-90deg,
+				rgba(24, 79, 161, 0.25),
+				rgba(0, 94, 157, 0.25),
+				rgba(0, 106, 125, 0.25),
+				rgba(9, 154, 152, 0.25),
+				rgba(9, 23, 154, 0.25));
 		--banner-background: rgba(255, 255, 255, 0.15);
 	}
 }
@@ -81,9 +91,19 @@ a:active {
 		--title-color: rgb(255, 255, 255);
 		--button-color: #fff;
 		--button-text-color: #212124;
-		--backgound-color: linear-gradient(90deg, #1f82ce, #224669, #195783, #042351);
+		--backgound-color: linear-gradient(90deg,
+				#1f82ce,
+				#224669,
+				#195783,
+				#042351);
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
+		--animated-bg: linear-gradient(-90deg,
+				rgba(24, 79, 161, 0.25),
+				rgba(0, 94, 157, 0.25),
+				rgba(0, 106, 125, 0.25),
+				rgba(9, 154, 152, 0.25),
+				rgba(9, 23, 154, 0.25));
 	}
 }
 
@@ -172,17 +192,11 @@ a:active {
 /* Tiles */
 
 #animated-border {
-	background: linear-gradient(-90deg,
-		rgba(21, 74, 138, 0.2),
-		rgba(15, 59, 125, 0.2),
-		rgba(9, 91, 145, 0.2),
-		rgba(0, 77, 125, 0.2),
-		rgba(9, 103, 154, 0.2),
-		rgba(9, 69, 154, 0.2));
+	background: var(--animated-bg);
 	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
-  }
+}
 
 .full {
 	display: flex;
@@ -325,7 +339,7 @@ a:active {
 	justify-content: center;
 }
 
-.button a{
+.button a {
 	padding: 0.5rem;
 	border-radius: var(--border-radius);
 	background-color: var(--button-color);
@@ -335,7 +349,7 @@ a:active {
 	justify-content: center;
 }
 
-.button:hover{
+.button:hover {
 	opacity: 0.5;
 }
 
@@ -387,7 +401,7 @@ a:active {
 	animation: fadeIn 2.5s;
 }
 
-#featured-on{
+#featured-on {
 	width: 256px;
 	margin: 20px;
 	animation: fadeIn 2.5s;
@@ -412,179 +426,43 @@ a:active {
 	animation: fadeIn 2.5s;
 }
 
-/* Tile backgrounds */
+/* Keresverse Tile */
 
-/* Tech Site */
-
-#hydroswap-dashboard{
-	background-image: url("/src/lib/images/tiles/hydroswap.jpg");
-	background-repeat: repeat;
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#aegir-tile{
-	background-image: url("/src/lib/images/tiles/aegir.jpg");
-	background-repeat: repeat;
- 	background-position: center;
-  	background-attachment: fixed;
-
-}
-
-#blockchains-tile{
-	background-image: url("/src/lib/images/tiles/blockchains.jpg");
-	background-repeat: repeat;
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#multichains{
-	background-image: url("/src/lib/images/tiles/multichain.jpg");
-	background-repeat: repeat;
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#meet-hydro{
-	background-image: url("/src/lib/images/tiles/meet-hydro.jpg");
-	background-repeat: repeat;
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#keresverse{
+#keresverse {
 	background-image: url("/src/lib/images/tiles/keresverse.jpg");
 	background-repeat: repeat;
- 	background-position: center;
-  	background-attachment: fixed;
+	background-position: center;
+	background-attachment: fixed;
 	justify-content: space-between;
 }
 
-/* Header/Footer */
-
-#header-bg{
-	background-image: url("/src/lib/images/tiles/header-bg.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#footer-bg{
-	background-image: url("/src/lib/images/tiles/footer-bg.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-/* Landing */
-
-#first-div-bg{
-	background-image: url("/src/lib/images/tiles/intro.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#intro-bg{
-	background-image: url("/src/lib/images/tiles/blog.jpg");
- 	background-position: top;
-  	background-attachment: fixed;
-}
-
-#blog-bg{
-	background-image: url("/src/lib/images/tiles/blog.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#roadmap-bg{
-	background-image: url("/src/lib/images/tiles/roadmap.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#partner-bg{
-	background-image: url("/src/lib/images/tiles/partners.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#exchange-bg{
-	background-image: url("/src/lib/images/tiles/exchanges.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-#featured-on-bg{
-	background-image: url("/src/lib/images/tiles/contact.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-/* Team */
-
-#team-bg{
-	background-image: url("/src/lib/images/tiles/team.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-/* FAQ */
-
-#faq-bg{
-	background-image: url("/src/lib/images/tiles/team.jpg");
- 	background-position: center;
-  	background-attachment: fixed;
-}
-
-.faq-title{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.faq-answer{
-	display: flex;
-	flex-direction: column;
-	margin-left: 5rem;
-	margin-right: 5rem;
-	margin-bottom: 2rem;
-}
-
-.faq-list{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-/* Keresverse Tile */
-
-#keresverse-logo{
+#keresverse-logo {
 	height: 50px;
 	animation: fadeIn 2.5s;
 	margin-bottom: 1rem;
 }
 
-#keres-title{
+#keres-title {
 	margin-top: 2rem;
 }
 
-#jixta{
+#jixta {
 	height: 300px;
 	animation: fadeIn 2.5s;
 }
 
-#vox{
+#vox {
 	height: 300px;
 	margin-left: -2rem;
 	animation: fadeIn 2.5s;
 }
 
-#wex{
+#wex {
 	height: 130px;
 	animation: fadeIn 2.5s;
 }
 
-.jixta{
+.jixta {
 	height: 100%;
 	width: 100%;
 	display: flex;
@@ -592,7 +470,7 @@ a:active {
 	justify-content: space-between;
 }
 
-.middle{
+.middle {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -602,16 +480,16 @@ a:active {
 	margin-bottom: 5rem;
 }
 
-.middle a{
+.middle a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 1rem;
-	
+
 }
 
-#keres-play-button{
+#keres-play-button {
 	margin-top: 3rem;
 	color: #212124;
 	width: 100px;
@@ -645,15 +523,25 @@ h6 {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-    font-size: 12px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+	font-size: 12px;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 	margin-left: 5px;
 }
 
-.blog-posts{
+.cg-credit {
+	display: flex !important;
+	width: 100%;
+	justify-content: flex-end;
+	margin-right: 1rem !important;
+	font-size: 10px;
+}
+
+/* Medium Blog Posts */
+
+.blog-posts {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -674,13 +562,30 @@ h6 {
 
 }
 
-.cg-credit{
-	display: flex !important;
-	width: 100%;
-	justify-content: flex-end;
-	margin-right: 1rem !important;
-	font-size: 10px;
+/* FAQ */
+
+.faq-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.faq-answer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-bottom: 2rem;
+}
+
+.faq-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
 /* Responsive */
 
 /* Extra small devices (phones, 600px and down) */
