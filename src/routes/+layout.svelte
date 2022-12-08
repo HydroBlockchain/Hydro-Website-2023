@@ -32,7 +32,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <div class="app-wrapper">
-	<coingecko-coin-price-marquee-widget coin-ids="hydro,ethereum,coinex-token,moonriver,matic-network,binancecoin" currency="usd" background-color="var(--banner-background)" locale="en" font-color="var(--text-color)"></coingecko-coin-price-marquee-widget>
 <div class="app">
 	<Header />
 	<main>

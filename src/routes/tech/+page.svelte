@@ -113,8 +113,8 @@
 				</div>
 			</div>
 	
-			<div class="one-quarter" id="hydroswap-dashboard" style="margin-right: 0px; margin-left:15px;">
-				<img src={swap} alt="swap-logo" id="product" style="margin-bottom: 2rem;"/>
+			<div class="one-quarter" id="hydroswap-dashboard" style="margin-right: 0px; margin-left:15px; flex-direction:column; justify-content: space-between;">
+				<img src={swap} alt="swap-logo" id="product" style="margin-top: 5rem;margin-bottom: 0rem;"/>
 				<div class="products">
 					<div class="hydro-dashboard">
 						<div class="dashboard-slot" id="price">Price: {(price)} <h6>USD</h6></div>
@@ -126,8 +126,8 @@
 					<a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer"><div class="button" id="hydroswap-buttons">Swap</div></a>
 					<a href="https://hydroswap.org/pools" target="_blank" rel="noopener noreferrer"><div class="button" id="hydroswap-buttons">Stake</div></a>
 				</div>
-					
 				</div>
+				<div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Price from Coingecko</a></div>
 			</div>
 		</div>
 
