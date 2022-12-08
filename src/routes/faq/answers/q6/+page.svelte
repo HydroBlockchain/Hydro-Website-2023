@@ -2,27 +2,41 @@
 </script>
 
 <svelte:head>
-	<title>How to swap Hydro between blockchains?</title>
-	<meta name="How to swap Hydro between blockchains?" content="How to swap Hydro between blockchains?" />
-</svelte:head>
+    <title>How to swap Hydro between blockchains?</title>
+    <meta name="How to swap Hydro between blockchains?" content="How to swap Hydro between blockchains?" />
+    </svelte:head>
 
-<section>
-	<div class="container">
-        How to swap Hydro between blockchains?
-        <br><br>
-        Answer, bla bla
-        <br> <br>
-        <a href="/faq">Return</a>
-    </div>
-</section>
+    <section>
+        <div class="container">
+            <div class="faq-title">How to swap Hydro between blockchains?</div>
+            <br><br>
+            <div class="faq-answer">
+                You can swap Hydro tokens between Ethereum, Binance Smart Chain, <br>
+                Polygon, CoinEx Smart Chain & Moonriver using our own Hydro Bridge.
+            </div>
+            <div class="button-row">
+                <div class="button"><a href="https://www.hydro-bridge.org" target="_blank" rel="noopener noreferrer">Hydro-Bridge</a></div>
+                <div class="button"><a href="/faq">Return</a></div>
+            </div>
+        </div>
+    </section>
 
 <style>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50rem;
+}
 
-    .container{
-        display: flex;
-		flex-direction: column;
-		align-items: center;
-        height: 50rem;
-    }
+.button {
+    width: 150px;
+    padding: 0.5rem;
+    margin: 1rem;
+}
 
+.button-row {
+    display: flex;
+    flex-direction: row;
+}
 </style>

@@ -7,12 +7,17 @@
 </svelte:head>
 
 <section>
-	<div class="container">
-        How can Hydro benefit its users?
+    <div class="container">
+        <div class="faq-title">How can Hydro benefit its users?</div>
         <br><br>
-        Answer, bla bla
-        <br> <br>
-        <a href="/faq">Return</a>
+        <div class="faq-answer">
+            Creating a robust ecosystem with supply & demand dynamics and market forces. As the ecosystem grows, HYDRO tokens will be integral in:
+            <div class="faq-list" style="margin: 5px;">(1) Using dApps</div>
+            <div class="faq-list" style="margin: 5px;">(2) Incentivising participation</div>
+            <div class="faq-list" style="margin: 5px;">(3) Validating users</div>
+            For instance, the only way to gain initial access to Keres Assets in the KeresVerse will be to stake your Hydro. The evaporation Function natively used in all Hydro smart contracts Consumes a small amount of Hydro which continuously decreases the supply.
+        </div>
+        <div class="button"><a href="/faq">Return</a></div>
     </div>
 </section>
 
