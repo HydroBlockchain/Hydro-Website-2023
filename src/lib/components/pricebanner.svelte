@@ -4,15 +4,6 @@ import {
     onMount
 } from "svelte";
 
-onMount(async function() {
-     getPriceDataHydro();
-     getPriceDataETH();
-     getPriceDataBSC();
-     getPriceDataPOLY()
-     getPriceDataCSC()
-     getPriceDataMOVR()
-});
-
 // API Call to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
 let connected = false;
@@ -39,13 +30,12 @@ async function getPriceDataHydro() {
     const endpoint = url + `coins/${coinHydro}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success")
         coinDataHydro = await response.json();
         priceHydro = coinDataHydro.market_data.current_price.usd;
         priceChangeHydro = coinDataHydro.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
-        console.log("Price query error");
+        console.log("Error HYDRO");
     }
 }
 
@@ -59,13 +49,12 @@ async function getPriceDataETH() {
     const endpoint = url + `coins/${coinETH}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success2")
         coinDataETH = await response.json();
         priceETH = coinDataETH.market_data.current_price.usd;
         priceChangeETH = coinDataETH.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
-        console.log("Price query error2");
+        console.log("Error ETH");
     }
 }
 
@@ -79,13 +68,12 @@ async function getPriceDataBSC() {
     const endpoint = url + `coins/${coinBSC}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success3")
         coinDataBSC = await response.json();
         priceBSC = coinDataBSC.market_data.current_price.usd;
         priceChangeBSC = coinDataBSC.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
-        console.log("Price query error3");
+        console.log("Error BSC");
     }
 }
 
@@ -99,13 +87,12 @@ async function getPriceDataPOLY() {
     const endpoint = url + `coins/${coinPOLY}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success3")
         coinDataPOLY = await response.json();
         pricePOLY = coinDataPOLY.market_data.current_price.usd;
         priceChangePOLY = coinDataPOLY.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
-        console.log("Price query error3");
+        console.log("Error POLY");
     }
 }
 
@@ -119,13 +106,12 @@ async function getPriceDataCSC() {
     const endpoint = url + `coins/${coinCSC}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success3")
         coinDataCSC = await response.json();
         priceCSC = coinDataCSC.market_data.current_price.usd;
         priceChangeCSC = coinDataCSC.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
-        console.log("Price query error3");
+        console.log("Error CSC");
     }
 }
 
@@ -139,16 +125,25 @@ async function getPriceDataMOVR() {
     const endpoint = url + `coins/${coinMOVR}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success3")
         coinDataMOVR = await response.json();
         priceMOVR = coinDataMOVR.market_data.current_price.usd;
         priceChangeMOVR = coinDataMOVR.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
-        console.log("Price query error3");
+        console.log("Error MOVR");
     }
 }
 
+//Call Price Checking Functions
+onMount(async function() {
+     checkConnection()
+     getPriceDataHydro();
+     getPriceDataETH();
+     getPriceDataBSC();
+     getPriceDataPOLY()
+     getPriceDataCSC()
+     getPriceDataMOVR()
+});
 
 </script>
 <section>
