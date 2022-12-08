@@ -202,7 +202,7 @@ onMount(async function() {
                     <div class="eth-slot">
                         <div class="banner-slot" id="name">{(coinNameETH)}</div>
                         <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
-                        <div class="banner-slot" id="volume">Change: {(priceChangeETH)} &</div>
+                        <div class="banner-slot" id="volume">Change: {(priceChangeETH)} %</div>
                     </div>
                 </div>
                 <div class="slide">
