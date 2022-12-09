@@ -4,36 +4,36 @@
 import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
 import "./styles.css";
-import {
-    onMount
-} from "svelte";
-import {
-    state
-} from "$lib/stores/store.js";
-import LoadingScreen from "$lib/components/loadingscreen.svelte";
+// import {
+//     onMount
+// } from "svelte";
+// import {
+//     state
+// } from "$lib/stores/store.js";
+// import LoadingScreen from "$lib/components/loadingscreen.svelte";
 import Pricebanner from "$lib/components/pricebanner.svelte";
 
-let ready;
+// let ready;
 
-onMount(() => {
-    ready = true;
-});
+// onMount(() => {
+//     ready = true;
+// });
 
-$: {
-    if (ready) {
-        setInterval(() => {
-            state.set({
-                loading: false
-            });
-        }, 1000);
-    }
-}
+// $: {
+//     if (ready) {
+//         setInterval(() => {
+//             state.set({
+//                 loading: false
+//             });
+//         }, 1000);
+//     }
+// }
 </script>
 
 <!--preloader-->
-{#if $state.loading}
+<!-- {#if $state.loading}
 <LoadingScreen />
-{/if}
+{/if} -->
 
 
 <div class="app-wrapper">
