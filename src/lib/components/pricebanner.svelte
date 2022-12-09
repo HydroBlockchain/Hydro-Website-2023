@@ -150,6 +150,8 @@ async function getPriceDataMOVR() {
     getPriceDataPOLY();
     getPriceDataCSC();
     getPriceDataMOVR();
+    console.log(priceChangeETH)
+    console.log(priceETH)
   }, 60000);
 
   onMount(async () => {
