@@ -38,7 +38,7 @@ async function getPriceDataHydro() {
     const response = await fetch(endpoint);
     if (response) {
         coinDataHydro = await response.json();
-        priceHydro = coinDataHydro.market_data.current_price.usd;
+        priceHydro = coinDataHydro.market_data.current_price.usd.toFixed(6);
         priceChangeHydro = coinDataHydro.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
@@ -95,7 +95,7 @@ async function getPriceDataPOLY() {
     const response = await fetch(endpoint);
     if (response) {
         coinDataPOLY = await response.json();
-        pricePOLY = coinDataPOLY.market_data.current_price.usd;
+        pricePOLY = coinDataPOLY.market_data.current_price.usd.toFixed(6);
         priceChangePOLY = coinDataPOLY.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
@@ -114,7 +114,7 @@ async function getPriceDataCSC() {
     const response = await fetch(endpoint);
     if (response) {
         coinDataCSC = await response.json();
-        priceCSC = coinDataCSC.market_data.current_price.usd;
+        priceCSC = coinDataCSC.market_data.current_price.usd.toFixed(6);
         priceChangeCSC = coinDataCSC.market_data.price_change_percentage_24h.toFixed(2);
         return;
     } else {
@@ -528,14 +528,14 @@ onMount(async function() {
     width: 250px;
     flex-direction: row;
     align-items: center;
-    margin-top: 0.25rem;
+    justify-content: center;
 }
 
 .banner-slot {
     margin-left: 1rem;
     margin-right: 1rem;
     color: var(--text-color);
-    font-size: 12px;
+    font-size: 11px;
 
 }
 
@@ -547,6 +547,7 @@ onMount(async function() {
 #name {
     display: flex;
     justify-content: flex-start;
+    font-size: 11px;
 }
 
 #coin-ticker-logo {
@@ -579,7 +580,6 @@ onMount(async function() {
 .slider {
     height: 60px;
     display: flex;
-    justify-content: space-evenly;
     overflow: hidden;
     position: relative;
     width: var(--container-width-desktop);
@@ -605,6 +605,8 @@ onMount(async function() {
 }
 
 .slide {
+    display: flex;
+    justify-content: center;
     height: 60px;
     width: 250px;
 }
