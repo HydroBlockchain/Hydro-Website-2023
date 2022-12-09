@@ -242,7 +242,7 @@ import item from "./team.json"
 .team-title {
     font-size: 10px;
     text-align: right;
-    color: rgb(133, 225, 255);
+    color: var(--text-color-alt);
 }
 
 .team-info {

@@ -62,23 +62,111 @@ onMount(async () => {
     <img src={swap} alt="swap-logo" id="product"/>
     <div class="hydroswap">
         <div class="hydro-dashboard">
-            <div class="dashboard-slot" id="price">Price: {(price)} <h6>USD</h6></div>
-            <div class="dashboard-slot" id="marketcap">Marketcap: {(mcap)} <h6>USD</h6></div>
-            <div class="dashboard-slot" id="volume">Vol 24/7: {(totalVol)} <h6>USD</h6></div>
-            <div class="dashboard-slot" id="staked"> Staked: {(Math.round(data.result/Math.pow(10,16))/100)} <h6>HYDRO</h6></div>
-            <div class="dashboard-slot" id="supply"> Circulating Supply: {(supply)} <h6>HYDRO</h6></div>
+
+            <div class="dashboard-slot" id="price">
+                <div class="price">Price:</div>
+                <div class="currency">{(price)}
+                    <div class="currency-class">USD</div>
+                </div>
+            </div>
+
+            <div class="dashboard-slot" id="marketcap">
+                <div class="price">Marketcap:</div>
+                <div class="currency">{(mcap)}
+                    <div class="currency-class">USD</div>
+                </div>
+            </div>
+
+            <div class="dashboard-slot" id="volume">
+                <div class="price">Vol 24/7:</div>
+                <div class="currency">{(totalVol)}
+                    <div class="currency-class">USD</div>
+                </div>
+            </div>
+
+            <div class="dashboard-slot" id="staked">
+                <div class="price">Staked: </div>
+                <div class="currency">{(Math.round(data.result/Math.pow(10,16))/100)}
+                    <div class="currency-class">HYDRO</div>
+                </div>
+            </div>
+
+            <div class="dashboard-slot" id="supply">
+                <div class="price">Circulating Supply:</div>
+                <div class="currency">{(supply)}
+                    <div class="currency-class">HYDRO</div>
+                </div>
+            </div>
+
         </div>
         <div class="button-row">
             <a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer">
                 <div class="button" id="hydroswap-buttons">Swap</div></a>
             <a href="https://hydroswap.org/pools" target="_blank" rel="noopener noreferrer">
                 <div class="button" id="hydroswap-buttons">Stake</div></a>
+            <a href="https://hydro-bridge.org" target="_blank" rel="noopener noreferrer">
+                <div class="button" id="hydroswap-buttons">Bridge</div></a>
         </div>
     </div>
     <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
 </div>
 
 <style>
+/* Hydroswap */
+
+.currency-class {
+    color: var(--text-color-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 0.3rem;
+}
+
+#staked {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hydro-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    width: 450px;
+    color: var(--text-color);
+}
+
+.dashboard-slot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0.5rem;
+    justify-content: space-between;
+}
+
+.cg-credit {
+    display: flex !important;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1rem !important;
+    margin-bottom: 0.5rem;
+    font-size: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.currency {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .one-quarter {
     margin-right: 0px;
     margin-left: 15px;
@@ -100,6 +188,8 @@ onMount(async () => {
 .button-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 2rem;
 }
