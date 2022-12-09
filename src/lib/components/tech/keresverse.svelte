@@ -4,6 +4,7 @@ import keres from "$lib/images/logos/Keresverse.svg";
 import jixta from "$lib/images/keresverse/jixta.png"
 import vox from "$lib/images/keresverse/vox.png"
 import wex from "$lib/images/keresverse/wex.svg"
+import item from "./techlinks.json"
 </script>
 
 <div class="three-quarter" id="animated-border">
@@ -14,7 +15,7 @@ import wex from "$lib/images/keresverse/wex.svg"
             <img src={wex} alt="keres-logo" id="wex"/>
             <img src={keres} alt="keres-logo" id="keresverse-logo"/>
             Manifest your skills to earn!
-            <a href="https://keresverse.org" target="_blank" rel="noopener noreferrer" >
+            <a href="{item[0].link}" target="_blank" rel="noopener noreferrer" >
                 <div class="button" id="keres-play-button">Play</div></a>
         </div>
 

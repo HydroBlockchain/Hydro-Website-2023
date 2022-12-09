@@ -2,13 +2,17 @@
 import cointelegraph from "$lib/images/featured-on/cointelegraph.svg";
 import coinmarketcap from "$lib/images/featured-on/coinmarketcap.svg";
 import coingecko from "$lib/images/featured-on/coingecko.svg";
+import item from "./landinglinks.json"
 </script>
 <div class="full" id="animated-border">
     <div class="title">Featured on</div>
     <div class="partners">
-        <a href="https://coinmarketcap.com/currencies/hydro/" target="_blank" rel="noopener noreferrer"><img src={coinmarketcap} alt="cmc" id="featured-on"/></a>
-        <a href="https://cointelegraph.com/news/identity-focused-blockchain-project-moves-to-bsc-with-reduced-token-supply" target="_blank" rel="noopener noreferrer"><img src={cointelegraph} alt="cointelegraph" id="featured-on"/></a>
-        <a href="https://www.coingecko.com/en/coins/hydro" target="_blank" rel="noopener noreferrer"><img src={coingecko} alt="cg" id="featured-on"/></a>
+        <a href="{item[9].link}" target="_blank" rel="noopener noreferrer">
+            <img src={coinmarketcap} alt="cmc" id="featured-on"/></a>
+        <a href="{item[10].link}" target="_blank" rel="noopener noreferrer">
+            <img src={cointelegraph} alt="cointelegraph" id="featured-on"/></a>
+        <a href="{item[11].link}" target="_blank" rel="noopener noreferrer">
+            <img src={coingecko} alt="cg" id="featured-on"/></a>
     </div>
 </div>
 

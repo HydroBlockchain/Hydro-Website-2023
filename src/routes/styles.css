@@ -351,6 +351,12 @@ a:active {
 	justify-content: center;
 }
 
+.button-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
 .button:hover {
 	opacity: 0.5;
 }

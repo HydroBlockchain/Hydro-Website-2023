@@ -1,0 +1,58 @@
+[
+    {
+        "id": "0",
+        "title": "Keresverse",
+        "link": "https://keresverse.org"
+    },
+    {
+        "id": "1",
+        "title": "Hydroswap",
+        "link": "https://hydroswap.org"
+    },
+    {
+        "id": "2",
+        "title": "Hydroswap-stake",
+        "link": "https://hydroswap.org/pools"
+    },
+    {
+        "id": "3",
+        "title": "Hydro-Bridge",
+        "link": "https://hydro-bridge.org"
+    },
+    {
+        "id": "4",
+        "title": "Add-Hydro-Eth-Tool",
+        "link": "https://add-hydro-eth.netlify.app/"
+    },
+    {
+        "id": "5",
+        "title": "Add-Hydro-BSC-Tool",
+        "link": "https://add-hydro.netlify.app/"
+    },
+    {
+        "id": "6",
+        "title": "Polygon-Hydro-Contract",
+        "link": "https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"
+    },
+    {
+        "id": "7",
+        "title": "CSC-Hydro-Contract",
+        "link": "https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"
+    },
+    {
+        "id": "8",
+        "title": "MOVR-Hydro-Contract",
+        "link": "https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"
+    },
+    {
+        "id": "9",
+        "title": "Aegir-Playstore",
+        "link": "https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US"
+    },
+    {
+        "id": "10",
+        "title": "Aegir-Ios",
+        "link": "https://apps.apple.com/us/app/aegir-wallet/id1598353170?ign-itscg=30200&ign-itsct=apps_box_link"
+    }
+]
+
