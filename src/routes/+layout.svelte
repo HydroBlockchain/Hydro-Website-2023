@@ -10,24 +10,24 @@ import {
 import {
     state
 } from "$lib/stores/store.js";
-import LoadingScreen from "$lib/components/loadingscreen.svelte";
+// import LoadingScreen from "$lib/components/loadingscreen.svelte";
 import Pricebanner from "$lib/components/pricebanner.svelte";
 
-let ready;
+// let ready;
 
-onMount(() => {
-    ready = true;
-});
+// onMount(() => {
+//     ready = true;
+// });
 
-$: {
-    if (ready) {
-        setInterval(() => {
-            state.set({
-                loading: false
-            });
-        }, 1000);
-    }
-}
+// $: {
+//     if (ready) {
+//         setInterval(() => {
+//             state.set({
+//                 loading: false
+//             });
+//         }, 1000);
+//     }
+// }
 </script>
 
 <!--preloader-->
