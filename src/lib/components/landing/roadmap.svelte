@@ -13,6 +13,9 @@
     </div>
 </div>
 <style>
+    .full{
+        height: 30rem;
+    }
     .roadmap {
     display: flex;
     flex-direction: column;

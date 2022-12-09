@@ -38,8 +38,7 @@ async function getData() {
 
 <div class="three-quarter" id="animated-border">
     <div class="blog-posts">
-        <div class="latest">Lastest Hydro Blog Post</div>
-        <div class="blog-title"><a href ="{(blogLink)}" target="_blank" rel="noopener noreferrer"> {(blogTitle)} </a></div>
+        <div class="blog-title"><a href ="{(blogLink)}" target="_blank" rel="noopener noreferrer">Latest -> {(blogTitle)} </a></div>
         <div class="blog-title"><a href ="{(blogLinkSecond)}" target="_blank" rel="noopener noreferrer"> {(blogTitleSecond)} </a></div>
         <div class="blog-title"><a href ="{(blogLinkThird)}" target="_blank" rel="noopener noreferrer"> {(blogTitleThird)} </a></div>
     </div>
@@ -47,6 +46,6 @@ async function getData() {
 
 <style>
 .three-quarter {
-    height: var(--container-height-small);
+    height: 15rem;
 }
 </style>

@@ -4,6 +4,6 @@
 <div class="one-quarter" id="animated-border">Introduction</div>
 <style>
 .one-quarter {
-    height: var(--container-height-small);
+    height: 15rem;
 }
 </style>
