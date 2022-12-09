@@ -48,4 +48,21 @@ async function getData() {
 .three-quarter {
     height: 15rem;
 }
+
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-title {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.blog-title a {
+    cursor: pointer;
+    color: var(--link-color);
+
+}
 </style>
