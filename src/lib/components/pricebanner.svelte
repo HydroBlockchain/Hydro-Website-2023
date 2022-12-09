@@ -160,7 +160,16 @@ onMount(async function() {
             <div class="coin-data">
                 <div class="banner-slot" id="name">{(coinNameHydro)}</div>
                 <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
-                <div class="banner-slot" id="volume">Change: {(priceChangeHydro)} %</div>
+                <div class="banner-slot" id="volume">
+                    Change:
+                    {#if priceChangeHydro > 0}
+                    <div class="green"> {priceChangeHydro} %</div>
+                    {:else if 0 > priceChangeHydro}
+                    <div class="red"> {priceChangeHydro} %</div>
+                    {:else}
+                    {priceChangeHydro}
+                    {/if}
+                </div>
             </div>
         </div>
 
@@ -169,7 +178,16 @@ onMount(async function() {
             <div class="coin-data">
                 <div class="banner-slot" id="name">{(coinNameETH)}</div>
                 <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
-                <div class="banner-slot" id="volume">Change: {(priceChangeETH)} &</div>
+                <div class="banner-slot" id="volume">
+                    Change:
+                    {#if priceChangeETH > 0}
+                    <div class="green"> {priceChangeETH} %</div>
+                    {:else if 0 > priceChangeETH}
+                    <div class="red"> {priceChangeETH} %</div>
+                    {:else}
+                    {priceChangeETH}
+                    {/if}
+                </div>
             </div>
         </div>
 
@@ -178,7 +196,16 @@ onMount(async function() {
             <div class="coin-data">
                 <div class="banner-slot" id="name">{(coinNameBSC)}</div>
                 <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
-                <div class="banner-slot" id="volume">Change: {(priceChangeBSC)} %</div>
+                <div class="banner-slot" id="volume">
+                    Change:
+                    {#if priceChangeBSC > 0}
+                    <div class="green"> {priceChangeBSC} %</div>
+                    {:else if 0 > priceChangeBSC}
+                    <div class="red"> {priceChangeBSC} %</div>
+                    {:else}
+                    {priceChangeBSC}
+                    {/if}
+                </div>
             </div>
         </div>
 
@@ -187,7 +214,16 @@ onMount(async function() {
             <div class="coin-data">
                 <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
                 <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
-                <div class="banner-slot" id="volume">Change: {(priceChangePOLY)} %</div>
+                <div class="banner-slot" id="volume">
+                    Change:
+                    {#if priceChangePOLY > 0}
+                    <div class="green"> {priceChangePOLY} %</div>
+                    {:else if 0 > priceChangePOLY}
+                    <div class="red"> {priceChangePOLY} %</div>
+                    {:else}
+                    {priceChangePOLY}
+                    {/if}
+                </div>
             </div>
         </div>
 
@@ -196,19 +232,37 @@ onMount(async function() {
             <div class="coin-data">
                 <div class="banner-slot" id="name">{(coinNameCSC)}</div>
                 <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
-                <div class="banner-slot" id="volume">Change: {(priceChangeCSC)} %</div>
+                <div class="banner-slot" id="volume">
+                    Change:
+                    {#if priceChangeCSC > 0}
+                    <div class="green"> {priceChangeCSC} %</div>
+                    {:else if 0 > priceChangeCSC}
+                    <div class="red"> {priceChangeCSC} %</div>
+                    {:else}
+                    {priceChangeCSC}
+                    {/if}
+                </div>
             </div>
         </div>
 
-    <div class="movr-slot">
-        <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
-        <div class="coin-data">
-            <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
-            <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
-            <div class="banner-slot" id="volume">Change: {(priceChangeMOVR)} %</div>
-        </div>
+        <div class="movr-slot">
+            <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
+            <div class="coin-data">
+                <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
+                <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                <div class="banner-slot" id="volume">
+                    Change:
+                    {#if priceChangeMOVR > 0}
+                    <div class="green"> {priceChangeMOVR} %</div>
+                    {:else if 0 > priceChangeMOVR}
+                    <div class="red"> {priceChangeMOVR} %</div>
+                    {:else}
+                    {priceChangeMOVR}
+                    {/if}
+                </div>
+            </div>
 
-    </div>
+        </div>
 
     </div>
 </section>
@@ -231,17 +285,17 @@ onMount(async function() {
 }
 
 .banner:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px var(--card-background);
+    filter: blur(10px);
+    margin: -20px;
 }
 
 .hydro-slot,
@@ -262,6 +316,11 @@ onMount(async function() {
     font-size: 12px;
 }
 
+#volume {
+    display: flex;
+    flex-direction: row;
+}
+
 #name {
     display: flex;
     justify-content: flex-start;
@@ -270,5 +329,17 @@ onMount(async function() {
 #coin-ticker-logo {
     width: 32px;
     height: 32px;
+}
+
+.red {
+    display: flex;
+    margin-left: 3px;
+    color: #f56a6a !important
+}
+
+.green {
+    display: flex;
+    margin-left: 3px;
+    color: #a6ec64 !important
 }
 </style>
