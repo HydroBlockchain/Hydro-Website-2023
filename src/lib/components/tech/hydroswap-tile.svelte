@@ -64,35 +64,35 @@ onMount(async () => {
         <div class="hydro-dashboard">
 
             <div class="dashboard-slot" id="price">
-                <div class="price">Price:</div>
+                <div class="price">Price</div>
                 <div class="currency">{(price)}
                     <div class="currency-class">USD</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="marketcap">
-                <div class="price">Marketcap:</div>
+                <div class="price">Marketcap</div>
                 <div class="currency">{(mcap)}
                     <div class="currency-class">USD</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="volume">
-                <div class="price">Vol 24/7:</div>
+                <div class="price">Vol 24/7</div>
                 <div class="currency">{(totalVol)}
                     <div class="currency-class">USD</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="staked">
-                <div class="price">Staked: </div>
+                <div class="price">Staked</div>
                 <div class="currency">{(Math.round(data.result/Math.pow(10,16))/100)}
                     <div class="currency-class">HYDRO</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="supply">
-                <div class="price">Circulating Supply:</div>
+                <div class="price">Circulating Supply</div>
                 <div class="currency">{(supply)}
                     <div class="currency-class">HYDRO</div>
                 </div>
