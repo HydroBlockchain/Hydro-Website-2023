@@ -2,7 +2,7 @@
 </script>
 
 <header>
-	<a href="/tech"
+	<a href="./tech"
 		><div class="header-button" id="animated-border">
 			<svg
 				width="512"
@@ -23,7 +23,7 @@
 		</div></a
 	>
 
-	<a href="/team"
+	<a href="./team"
 		><div class="header-button" id="animated-border">
 			<svg
 				width="455"
@@ -92,7 +92,7 @@
 		</div></a
 	>
 
-	<a href="/faq"
+	<a href="./faq"
 		><div class="header-button" id="animated-border">
 			<svg
 				width="239"
@@ -109,7 +109,7 @@
 		</div></a
 	>
 
-	<a href="/"
+	<a href="./"
 		><div class="header-logo" id="animated-border">
 			<div class="logo">
 				<svg
