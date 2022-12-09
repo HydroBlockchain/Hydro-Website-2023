@@ -2,7 +2,7 @@
 import cointelegraph from "$lib/images/featured-on/cointelegraph.svg";
 import coinmarketcap from "$lib/images/featured-on/coinmarketcap.svg";
 import coingecko from "$lib/images/featured-on/coingecko.svg";
-import item from "./landinglinks.json"
+import item from "../../json/landinglinks.json"
 </script>
 <div class="full" id="animated-border">
     <div class="title">Featured on</div>

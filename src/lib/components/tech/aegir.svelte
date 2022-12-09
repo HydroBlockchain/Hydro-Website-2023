@@ -1,6 +1,6 @@
 <script>
 import aegir from "$lib/images/logos/Aegir-Wallet.svg";
-import item from "./techlinks.json"
+import item from "../../json/techlinks.json"
 </script>
 
 <div class="half" id="animated-border">

@@ -5,7 +5,7 @@ import bithumb from "$lib/images/exchanges/bithumb.svg";
 import mercatox from "$lib/images/exchanges/mercatox.svg";
 import latoken from "$lib/images/exchanges/latoken.svg";
 import buyucoin from "$lib/images/exchanges/buyucoin.svg";
-import item from "./landinglinks.json"
+import item from "../../json/landinglinks.json"
 </script>
 <div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
     <div class="title">Exchanges</div>

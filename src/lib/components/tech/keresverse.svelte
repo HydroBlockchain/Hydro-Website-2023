@@ -4,7 +4,7 @@ import keres from "$lib/images/logos/Keresverse.svg";
 import jixta from "$lib/images/keresverse/jixta.png"
 import vox from "$lib/images/keresverse/vox.png"
 import wex from "$lib/images/keresverse/wex.svg"
-import item from "./techlinks.json"
+import item from "../../json/techlinks.json"
 </script>
 
 <div class="three-quarter" id="animated-border">

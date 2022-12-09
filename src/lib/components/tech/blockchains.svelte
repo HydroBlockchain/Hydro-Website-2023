@@ -5,7 +5,7 @@ import bsc from "$lib/images/blockchains/bsc.svg";
 import matic from "$lib/images/blockchains/matic.svg";
 import csc from "$lib/images/blockchains/csc.svg";
 import movr from "$lib/images/blockchains/movr.svg";
-import item from "./techlinks.json"
+import item from "../../json/techlinks.json"
 </script>
 
 <div class="half" id="animated-border">

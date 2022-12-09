@@ -5,7 +5,7 @@ import {
     onDestroy
 } from "svelte";
 import swap from "$lib/images/logos/Hydro-Swap.svg";
-import item from "./techlinks.json"
+import item from "../../json/techlinks.json"
 // API Call to the KVS Staking contract
 const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
 const apiURLSupply = "https://api.bscscan.com/api?module=account&action=tokenCsupply&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";

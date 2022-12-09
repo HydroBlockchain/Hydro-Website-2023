@@ -1,0 +1,47 @@
+[
+    {
+        "id": "0",
+        "name": "facebook",
+        "link": "https://www.facebook.com/projecthydroblockchain/"
+    },
+    {
+        "id": "1",
+        "name": "twitter",
+        "link": "https://twitter.com/HydroBlockchain"
+    },
+    {
+        "id": "2",
+        "name": "youtube",
+        "link": "https://www.youtube.com/channel/UCI1QhLB-DeuPmxPLJ98BPLw"
+    },
+    {
+        "id": "3",
+        "name": "instagram",
+        "link": "https://www.instagram.com/hydroblockchain/"
+    },
+    {
+        "id": "4",
+        "name": "telegram",
+        "link": "https://t.me/projecthydro"
+    },
+    {
+        "id": "5",
+        "name": "medium",
+        "link": "https://projecthydro.medium.com/"
+    },
+    {
+        "id": "6",
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/company/68235195/"
+    },
+    {
+        "id": "7",
+        "name": "reddit",
+        "link": "https://www.reddit.com/u/HydroBlockchain/"
+    },
+    {
+        "id": "8",
+        "name": "discord",
+        "link": "https://discord.gg/q6UEPsdzVr"
+    }
+]

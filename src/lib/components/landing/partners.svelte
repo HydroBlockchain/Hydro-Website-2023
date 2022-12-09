@@ -4,7 +4,7 @@ import bloceducare from "$lib/images/partners/bloceducare.svg";
 import ethernity from "$lib/images/partners/ethernity.svg";
 import sparkpoint from "$lib/images/partners/sparkpoint.png";
 import vulkania from "$lib/images/partners/vulkania.svg";
-import item from "./landinglinks.json"
+import item from "../../json/landinglinks.json"
 </script>
 <div class="half" id="animated-border">
     <div class="title">Partners</div>
