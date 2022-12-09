@@ -75,7 +75,7 @@ onMount(async () => {
                 <div class="button" id="hydroswap-buttons">Stake</div></a>
         </div>
     </div>
-    <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Price from Coingecko</a></div>
+    <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
 </div>
 
 <style>
