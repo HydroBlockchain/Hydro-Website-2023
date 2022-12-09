@@ -1,24 +1,38 @@
 <script>
 // @ts-nocheck
 import {
-    onMount
+    onMount,
+    onDestroy
 } from "svelte";
 import swap from "$lib/images/logos/Hydro-Swap.svg";
 // API Call to the KVS Staking contract
 const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
 let data = []
 
-onMount(async function() {
+//Call Price Checking Functions with Interval
+const interval = setInterval(async () => {
+    getPrice();
+  }, 300);
+
+  onMount(async () => {
     const response = await fetch(apiURL);
     data = await response.json();
-    await checkConnection();
-    await getPrice();
-});
+    checkConnection();
+    getPrice();
+  });
+
+  onDestroy(() => clearInterval(interval));
 
 // API Call to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
 let connected = false;
 let data2;
+let coin = "hydro";
+let coinData;
+let price = {};
+let mcap;
+let totalVol;
+//Check Connection
 async function checkConnection() {
     const endpoint = url + "ping";
     const response = await fetch(endpoint);
@@ -30,16 +44,11 @@ async function checkConnection() {
         console.log("No connection");
     }
 }
-let coin = "hydro";
-let coinData;
-let price = {};
-let mcap;
-let totalVol;
+//Get price
 async function getPrice() {
     const endpoint = url + `coins/${coin}`;
     const response = await fetch(endpoint);
     if (response) {
-        console.log("price query success")
         coinData = await response.json();
         price = coinData.market_data.current_price.usd;
         mcap = coinData.market_data.market_cap.usd;
@@ -49,6 +58,7 @@ async function getPrice() {
         console.log("Price query error");
     }
 }
+
 </script>
 
 <div class="one-quarter" id="animated-border">
