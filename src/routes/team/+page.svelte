@@ -8,6 +8,7 @@ import profile from "$lib/images/team/profile.jpg";
 import twitter from "$lib/images/icons/twitter.svg";
 import linkedin from "$lib/images/icons/linkedin.svg";
 import item from "./team.json"
+    import ContactUs from "$lib/components/team/contact-us.svelte";
 </script>
 
 <svelte:head>
@@ -185,6 +186,7 @@ import item from "./team.json"
             </div>
 
         </div>
+        <ContactUs/>
     </section>
 
 <style>
