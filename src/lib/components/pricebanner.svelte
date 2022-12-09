@@ -1,7 +1,8 @@
 <script>
 //imports
 import {
-    onMount
+    onMount,
+    onDestroy
 } from "svelte";
 
 import hydroDrop from "$lib/images/ticker-logo/blue-drop.svg";
@@ -11,7 +12,7 @@ import polyLogo from "$lib/images/ticker-logo/polygon.svg";
 import cscLogo from "$lib/images/ticker-logo/coinex.svg";
 import movrLogo from "$lib/images/ticker-logo/moonriver.svg";
 
-// API Call to Coingecko for Price feed
+    // API Call to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
 let connected = false;
 let data2;
@@ -141,20 +142,33 @@ async function getPriceDataMOVR() {
     }
 }
 
-//Call Price Checking Functions
-onMount(async function() {
-    checkConnection()
+//Call Price Checking Functions with Interval
+  const interval = setInterval(async () => {
     getPriceDataHydro();
     getPriceDataETH();
     getPriceDataBSC();
-    getPriceDataPOLY()
-    getPriceDataCSC()
-    getPriceDataMOVR()
-});
+    getPriceDataPOLY();
+    getPriceDataCSC();
+    getPriceDataMOVR();
+  }, 3000);
+
+  onMount(async () => {
+    getPriceDataHydro();
+    getPriceDataETH();
+    getPriceDataBSC();
+    getPriceDataPOLY();
+    getPriceDataCSC();
+    getPriceDataMOVR();
+  });
+
+  onDestroy(() => clearInterval(interval));
+
+
 </script>
 <section>
     <div class="banner" id="animated-border">
         <div class="slider">
+            
             <div class="slide-track">
                 <a href="https://www.coingecko.com/en/coins/hydro" target="_blank" rel="noopener noreferrer">
                     <div class="slide">
