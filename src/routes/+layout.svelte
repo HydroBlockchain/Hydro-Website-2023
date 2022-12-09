@@ -31,9 +31,9 @@ $: {
 </script>
 
 <!--preloader-->
-{#if $state.loading}
+<!-- {#if $state.loading}
 <LoadingScreen />
-{/if}
+{/if} -->
 
 <div class="app-wrapper">
     <Pricebanner />
