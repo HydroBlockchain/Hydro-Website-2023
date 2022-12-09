@@ -29,7 +29,6 @@ let data = []
 onMount(async function() {
     const response = await fetch(apiURL);
     data = await response.json();
-    // console.log(data.items)
     getData()
 });
 
@@ -50,8 +49,6 @@ async function getData() {
         blogLinkSecond = data.items[1].link;
         blogTitleThird = data.items[2].title;
         blogLinkThird = data.items[2].link;
-        // console.log(blogTitle);
-        // console.log(blogLink);
     } else {
         console.log("Blog query error");
     }

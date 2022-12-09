@@ -149,11 +149,11 @@ async function getPrice() {
                 <div class="products">
                     <img src={aegir} alt="aegir-logo" id="product"/>
                     <div class="button-row">
-                    <a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" >
-                        <div class="button" id="aegir-button-play">Playstore</div></a>
-                    <a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" >
-                        <div class="button" id="aegir-button-ios">Appstore</div></a>
-                </div>
+                        <a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" >
+                            <div class="button" id="aegir-button-play">Playstore</div></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.aegirwallet&hl=en_US&gl=US" target="_blank" rel="noopener noreferrer" >
+                            <div class="button" id="aegir-button-ios">Appstore</div></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -194,7 +194,8 @@ async function getPrice() {
     margin-top: 2rem;
 }
 
-#aegir-button-play, #aegir-button-ios{
+#aegir-button-play,
+#aegir-button-ios {
     width: 100px;
     margin: 1rem;
 }
