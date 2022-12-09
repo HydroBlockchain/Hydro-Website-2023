@@ -85,7 +85,7 @@ async function getPriceDataBSC() {
 }
 
 //POLYGON
-let coinNamePOLY = "MATIC";
+let coinNamePOLY = "POLYGON";
 let coinPOLY = "matic-network";
 let coinDataPOLY;
 let pricePOLY = {};
