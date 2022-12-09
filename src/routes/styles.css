@@ -420,8 +420,6 @@ a:active {
 
 #profile-pic {
 	width: 128px;
-	margin-top: 3px;
-	margin-bottom: 3px;
 	border-radius: var(--border-radius);
 	animation: fadeIn 2.5s;
 }
