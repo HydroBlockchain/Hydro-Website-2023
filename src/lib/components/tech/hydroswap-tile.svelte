@@ -7,21 +7,24 @@ import {
 import swap from "$lib/images/logos/Hydro-Swap.svg";
 // API Call to the KVS Staking contract
 const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
+const apiURLSupply = "https://api.bscscan.com/api?module=account&action=tokenCsupply&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
+
 let data = []
 
 //Call Price Checking Functions with Interval
 const interval = setInterval(async () => {
     getPrice();
-  }, 300);
+}, 60000);
 
-  onMount(async () => {
+onMount(async () => {
     const response = await fetch(apiURL);
+    const responseSupply = await fetch(apiURLSupply);
     data = await response.json();
-    checkConnection();
+    dataSupply = await response.json();
     getPrice();
-  });
+});
 
-  onDestroy(() => clearInterval(interval));
+onDestroy(() => clearInterval(interval));
 
 // API Call to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
@@ -32,18 +35,8 @@ let coinData;
 let price = {};
 let mcap;
 let totalVol;
+let supply;
 //Check Connection
-async function checkConnection() {
-    const endpoint = url + "ping";
-    const response = await fetch(endpoint);
-    if (response) {
-        connected = true;
-        data2 = await response.json();
-        return;
-    } else {
-        console.log("No connection");
-    }
-}
 //Get price
 async function getPrice() {
     const endpoint = url + `coins/${coin}`;
@@ -53,12 +46,16 @@ async function getPrice() {
         price = coinData.market_data.current_price.usd;
         mcap = coinData.market_data.market_cap.usd;
         totalVol = coinData.market_data.total_volume.usd;
+        supply = coinData.market_data.total_supply;
         return;
     } else {
         console.log("Price query error");
     }
 }
 
+onMount(async () => {
+    getPrice();
+});
 </script>
 
 <div class="one-quarter" id="animated-border">
@@ -69,6 +66,7 @@ async function getPrice() {
             <div class="dashboard-slot" id="marketcap">Marketcap: {(mcap)} <h6>USD</h6></div>
             <div class="dashboard-slot" id="volume">Vol 24/7: {(totalVol)} <h6>USD</h6></div>
             <div class="dashboard-slot" id="staked"> Staked: {(Math.round(data.result/Math.pow(10,16))/100)} <h6>HYDRO</h6></div>
+            <div class="dashboard-slot" id="supply"> Circulating Supply: {(supply)} <h6>HYDRO</h6></div>
         </div>
         <div class="button-row">
             <a href="https://hydroswap.org" target="_blank" rel="noopener noreferrer">
