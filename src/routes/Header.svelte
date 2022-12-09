@@ -286,4 +286,17 @@
 		filter: blur(10px);
 		margin: -20px;
 	}
+
+	.header-logo svg {
+	width: 120px;
+    height: 50px;
+	margin-right: 2rem;
+	animation: fadeIn 2.5s;
+	}
+
+	.header-button svg {
+	width: 25px;
+	height: 25px;
+	animation: fadeIn 2.5s;
+	}
 </style>

@@ -371,16 +371,6 @@ a:active {
 
 /* Images */
 
-.header-logo svg {
-	margin-right: 2rem;
-	animation: fadeIn 2.5s;
-}
-
-.header-button svg {
-	height: 2rem;
-	animation: fadeIn 2.5s;
-}
-
 #ecosystem {
 	width: 600px;
 	animation: fadeIn 2.5s;

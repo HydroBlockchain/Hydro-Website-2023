@@ -6,13 +6,12 @@ import {
 } from "svelte";
 import swap from "$lib/images/logos/Hydro-Swap.svg";
 import item from "../../json/techlinks.json"
-// API Call to the KVS Staking contract
+
+// API Calls to the KVS Staking contract
 const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
 const apiURLSupply = "https://api.bscscan.com/api?module=account&action=tokenCsupply&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
 
-let data = []
-
-//Call Price Checking Functions with Interval
+//Get Price data on interval
 const interval = setInterval(async () => {
     getPrice();
 }, 60000);
@@ -21,24 +20,22 @@ onMount(async () => {
     const response = await fetch(apiURL);
     const responseSupply = await fetch(apiURLSupply);
     data = await response.json();
-    dataSupply = await response.json();
     getPrice();
 });
 
 onDestroy(() => clearInterval(interval));
 
-// API Call to Coingecko for Price feed
+// Variables to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
-let connected = false;
-let data2;
+let data = []
 let coin = "hydro";
 let coinData;
 let price = {};
 let mcap;
 let totalVol;
 let supply;
-//Check Connection
-//Get price
+
+//Get price data from Api
 async function getPrice() {
     const endpoint = url + `coins/${coin}`;
     const response = await fetch(endpoint);
@@ -54,6 +51,7 @@ async function getPrice() {
     }
 }
 
+//Get Price data on mount
 onMount(async () => {
     getPrice();
 });

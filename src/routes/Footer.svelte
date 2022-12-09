@@ -199,6 +199,8 @@
 
     .footer-logo svg {
         margin-left: 2rem;
+        width: 120px;
+        height: 50px;
     }
 
     .social-media {
@@ -206,12 +208,14 @@
         flex-direction: row;
         margin-right: 2rem;
     }
+
     .social-icon {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     .social-icon img {
-        height: 32px;
-        width: 32px;
+        height: 25px;
+        width: 25px;
     }
 </style>
