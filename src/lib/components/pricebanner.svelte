@@ -156,314 +156,333 @@ onMount(async function() {
     <div class="banner" id="animated-border">
         <div class="slider">
             <div class="slide-track">
-                <div class="slide">
-                    <div class="hydro-slot">
-                        <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeHydro > 0}
-                                <div class="green"> {priceChangeHydro} %</div>
-                                {:else if 0 > priceChangeHydro}
-                                <div class="red"> {priceChangeHydro} %</div>
-                                {:else}
-                                {priceChangeHydro}
-                                {/if}
+                <a href="https://www.coingecko.com/en/coins/hydro" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="hydro-slot">
+                            <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameHydro)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeHydro > 0}
+                                    <div class="green"> {priceChangeHydro} %</div>
+                                    {:else if 0 > priceChangeHydro}
+                                    <div class="red"> {priceChangeHydro} %</div>
+                                    {:else}
+                                    {priceChangeHydro}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="eth-slot">
-                        <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameETH)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeETH > 0}
-                                <div class="green"> {priceChangeETH} %</div>
-                                {:else if 0 > priceChangeETH}
-                                <div class="red"> {priceChangeETH} %</div>
-                                {:else}
-                                {priceChangeETH}
-                                {/if}
+                </a>
+                <a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="eth-slot">
+                            <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameETH)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeETH > 0}
+                                    <div class="green"> {priceChangeETH} %</div>
+                                    {:else if 0 > priceChangeETH}
+                                    <div class="red"> {priceChangeETH} %</div>
+                                    {:else}
+                                    {priceChangeETH}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="bsc-slot">
-                        <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeBSC > 0}
-                                <div class="green"> {priceChangeBSC} %</div>
-                                {:else if 0 > priceChangeBSC}
-                                <div class="red"> {priceChangeBSC} %</div>
-                                {:else}
-                                {priceChangeBSC}
-                                {/if}
+                </a>
+                <a href="https://www.coingecko.com/en/coins/binancecoin" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="bsc-slot">
+                            <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameBSC)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeBSC > 0}
+                                    <div class="green"> {priceChangeBSC} %</div>
+                                    {:else if 0 > priceChangeBSC}
+                                    <div class="red"> {priceChangeBSC} %</div>
+                                    {:else}
+                                    {priceChangeBSC}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="poly-slot">
-                        <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-                            <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangePOLY > 0}
-                                <div class="green"> {priceChangePOLY} %</div>
-                                {:else if 0 > priceChangePOLY}
-                                <div class="red"> {priceChangePOLY} %</div>
-                                {:else}
-                                {priceChangePOLY}
-                                {/if}
+                </a>
+                <a href="https://www.coingecko.com/en/coins/polygon" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="poly-slot">
+                            <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
+                                <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangePOLY > 0}
+                                    <div class="green"> {priceChangePOLY} %</div>
+                                    {:else if 0 > priceChangePOLY}
+                                    <div class="red"> {priceChangePOLY} %</div>
+                                    {:else}
+                                    {priceChangePOLY}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="csc-slot">
-                        <div class="coin-img"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameCSC)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeCSC > 0}
-                                <div class="green"> {priceChangeCSC} %</div>
-                                {:else if 0 > priceChangeCSC}
-                                <div class="red"> {priceChangeCSC} %</div>
-                                {:else}
-                                {priceChangeCSC}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/coinex-token" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="csc-slot">
+                            <div class="coin-img"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameCSC)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeCSC > 0}
+                                    <div class="green"> {priceChangeCSC} %</div>
+                                    {:else if 0 > priceChangeCSC}
+                                    <div class="red"> {priceChangeCSC} %</div>
+                                    {:else}
+                                    {priceChangeCSC}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="movr-slot">
-                        <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeMOVR > 0}
-                                <div class="green"> {priceChangeMOVR} %</div>
-                                {:else if 0 > priceChangeMOVR}
-                                <div class="red"> {priceChangeMOVR} %</div>
-                                {:else}
-                                {priceChangeMOVR}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/moonriver" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="movr-slot">
+                            <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeMOVR > 0}
+                                    <div class="green"> {priceChangeMOVR} %</div>
+                                    {:else if 0 > priceChangeMOVR}
+                                    <div class="red"> {priceChangeMOVR} %</div>
+                                    {:else}
+                                    {priceChangeMOVR}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="hydro-slot">
-                        <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeHydro > 0}
-                                <div class="green"> {priceChangeHydro} %</div>
-                                {:else if 0 > priceChangeHydro}
-                                <div class="red"> {priceChangeHydro} %</div>
-                                {:else}
-                                {priceChangeHydro}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/hydro" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="hydro-slot">
+                            <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameHydro)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeHydro > 0}
+                                    <div class="green"> {priceChangeHydro} %</div>
+                                    {:else if 0 > priceChangeHydro}
+                                    <div class="red"> {priceChangeHydro} %</div>
+                                    {:else}
+                                    {priceChangeHydro}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="eth-slot">
-                        <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameETH)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeETH > 0}
-                                <div class="green"> {priceChangeETH} %</div>
-                                {:else if 0 > priceChangeETH}
-                                <div class="red"> {priceChangeETH} %</div>
-                                {:else}
-                                {priceChangeETH}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="eth-slot">
+                            <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameETH)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeETH > 0}
+                                    <div class="green"> {priceChangeETH} %</div>
+                                    {:else if 0 > priceChangeETH}
+                                    <div class="red"> {priceChangeETH} %</div>
+                                    {:else}
+                                    {priceChangeETH}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="bsc-slot">
-                        <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeBSC > 0}
-                                <div class="green"> {priceChangeBSC} %</div>
-                                {:else if 0 > priceChangeBSC}
-                                <div class="red"> {priceChangeBSC} %</div>
-                                {:else}
-                                {priceChangeBSC}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/binancecoin" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="bsc-slot">
+                            <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameBSC)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeBSC > 0}
+                                    <div class="green"> {priceChangeBSC} %</div>
+                                    {:else if 0 > priceChangeBSC}
+                                    <div class="red"> {priceChangeBSC} %</div>
+                                    {:else}
+                                    {priceChangeBSC}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="poly-slot">
-                        <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-                            <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangePOLY > 0}
-                                <div class="green"> {priceChangePOLY} %</div>
-                                {:else if 0 > priceChangePOLY}
-                                <div class="red"> {priceChangePOLY} %</div>
-                                {:else}
-                                {priceChangePOLY}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/polygon" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="poly-slot">
+                            <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
+                                <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangePOLY > 0}
+                                    <div class="green"> {priceChangePOLY} %</div>
+                                    {:else if 0 > priceChangePOLY}
+                                    <div class="red"> {priceChangePOLY} %</div>
+                                    {:else}
+                                    {priceChangePOLY}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="csc-slot">
-                        <div class="coin-img"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameCSC)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeCSC > 0}
-                                <div class="green"> {priceChangeCSC} %</div>
-                                {:else if 0 > priceChangeCSC}
-                                <div class="red"> {priceChangeCSC} %</div>
-                                {:else}
-                                {priceChangeCSC}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/coinex-token" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="csc-slot">
+                            <div class="coin-img"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameCSC)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeCSC > 0}
+                                    <div class="green"> {priceChangeCSC} %</div>
+                                    {:else if 0 > priceChangeCSC}
+                                    <div class="red"> {priceChangeCSC} %</div>
+                                    {:else}
+                                    {priceChangeCSC}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="movr-slot">
-                        <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeMOVR > 0}
-                                <div class="green"> {priceChangeMOVR} %</div>
-                                {:else if 0 > priceChangeMOVR}
-                                <div class="red"> {priceChangeMOVR} %</div>
-                                {:else}
-                                {priceChangeMOVR}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/moonriver" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="movr-slot">
+                            <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeMOVR > 0}
+                                    <div class="green"> {priceChangeMOVR} %</div>
+                                    {:else if 0 > priceChangeMOVR}
+                                    <div class="red"> {priceChangeMOVR} %</div>
+                                    {:else}
+                                    {priceChangeMOVR}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="hydro-slot">
-                        <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeHydro > 0}
-                                <div class="green"> {priceChangeHydro} %</div>
-                                {:else if 0 > priceChangeHydro}
-                                <div class="red"> {priceChangeHydro} %</div>
-                                {:else}
-                                {priceChangeHydro}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/hydro" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="hydro-slot">
+                            <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameHydro)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeHydro > 0}
+                                    <div class="green"> {priceChangeHydro} %</div>
+                                    {:else if 0 > priceChangeHydro}
+                                    <div class="red"> {priceChangeHydro} %</div>
+                                    {:else}
+                                    {priceChangeHydro}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="eth-slot">
-                        <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameETH)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeETH > 0}
-                                <div class="green"> {priceChangeETH} %</div>
-                                {:else if 0 > priceChangeETH}
-                                <div class="red"> {priceChangeETH} %</div>
-                                {:else}
-                                {priceChangeETH}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="eth-slot">
+                            <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameETH)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeETH > 0}
+                                    <div class="green"> {priceChangeETH} %</div>
+                                    {:else if 0 > priceChangeETH}
+                                    <div class="red"> {priceChangeETH} %</div>
+                                    {:else}
+                                    {priceChangeETH}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="bsc-slot">
-                        <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-                            <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangeBSC > 0}
-                                <div class="green"> {priceChangeBSC} %</div>
-                                {:else if 0 > priceChangeBSC}
-                                <div class="red"> {priceChangeBSC} %</div>
-                                {:else}
-                                {priceChangeBSC}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/binancecoin" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="bsc-slot">
+                            <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNameBSC)}</div>
+                                <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangeBSC > 0}
+                                    <div class="green"> {priceChangeBSC} %</div>
+                                    {:else if 0 > priceChangeBSC}
+                                    <div class="red"> {priceChangeBSC} %</div>
+                                    {:else}
+                                    {priceChangeBSC}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="poly-slot">
-                        <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
-                        <div class="coin-data">
-                            <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-                            <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
-                            <div class="banner-slot" id="volume">
-                                Change:
-                                {#if priceChangePOLY > 0}
-                                <div class="green"> {priceChangePOLY} %</div>
-                                {:else if 0 > priceChangePOLY}
-                                <div class="red"> {priceChangePOLY} %</div>
-                                {:else}
-                                {priceChangePOLY}
-                                {/if}
+                    </div></a>
+                <a href="https://www.coingecko.com/en/coins/polygon" target="_blank" rel="noopener noreferrer">
+                    <div class="slide">
+                        <div class="poly-slot">
+                            <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
+                            <div class="coin-data">
+                                <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
+                                <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                                <div class="banner-slot" id="volume">
+                                    Change:
+                                    {#if priceChangePOLY > 0}
+                                    <div class="green"> {priceChangePOLY} %</div>
+                                    {:else if 0 > priceChangePOLY}
+                                    <div class="red"> {priceChangePOLY} %</div>
+                                    {:else}
+                                    {priceChangePOLY}
+                                    {/if}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div></a>
             </div>
         </div>
 
-</div>
+    </div>
 
 </section>
 
@@ -483,7 +502,7 @@ onMount(async function() {
     overflow: hidden;
     margin-bottom: 20px;
     margin-top: 20px;
-    
+
 }
 
 .banner:before {
@@ -517,7 +536,7 @@ onMount(async function() {
     margin-right: 1rem;
     color: var(--text-color);
     font-size: 12px;
-    
+
 }
 
 #volume {
@@ -548,45 +567,51 @@ onMount(async function() {
 }
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 6))}
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 6))
+    }
 }
 
 .slider {
-	height: 60px;
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
-	overflow: hidden;
-	position: relative;
+    overflow: hidden;
+    position: relative;
     width: var(--container-width-desktop);
 }
+
 .slider::before,
 .slider::after {
-		content: "";
-		height: 60px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	.slider::after {
-		transform: rotateZ(180deg);
-	}
-	
-	.slide-track {
-		animation: scroll 40s linear infinite;
-		display: flex;
-		width: calc(250px * 16);
-	}
-	
-	.slide {
-		height: 60px;
-		width: 250px;
-	}
+    content: "";
+    height: 60px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
 
-    section{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.slider::after {
+    transform: rotateZ(180deg);
+}
+
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 16);
+}
+
+.slide {
+    height: 60px;
+    width: 250px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 </style>
