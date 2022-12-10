@@ -8,6 +8,7 @@ import medium from "$lib/images/icons/medium.svg";
 import linkedin from "$lib/images/icons/linkedin.svg";
 import reddit from "$lib/images/icons/reddit.svg";
 import discord from "$lib/images/icons/discord.svg";
+import github from "$lib/images/icons/github.svg";
 import item from "../lib/json/sociallinks.json";
 </script>
 
@@ -86,6 +87,11 @@ import item from "../lib/json/sociallinks.json";
             <a href={item[8].link} target="_blank" rel="noopener noreferrer">
                 <div class="social-icon">
                     <img src={discord} alt="eth-logo" id="discord" />
+                </div></a>
+
+                <a href={item[9].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={github} alt="eth-logo" id="discord" />
                 </div></a>
         </div>
     </div>

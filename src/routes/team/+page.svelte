@@ -274,6 +274,7 @@ section {
 .team-title {
     font-size: var(--fs-mini);
     text-align: right;
+    margin-top: var(--margin-xs);
     color: var(--text-color-alt);
 }
 
