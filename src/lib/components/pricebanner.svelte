@@ -12,7 +12,7 @@ import polyLogo from "$lib/images/ticker-logo/polygon.svg";
 import cscLogo from "$lib/images/ticker-logo/coinex.svg";
 import movrLogo from "$lib/images/ticker-logo/moonriver.svg";
 
-    // API Call to Coingecko for Price feed
+// API Call to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
 let connected = false;
 let data2;
@@ -150,7 +150,7 @@ async function getPriceDataMOVR() {
     getPriceDataPOLY();
     getPriceDataCSC();
     getPriceDataMOVR();
-  }, 60000);
+  }, 3000);
 
   onMount(async () => {
     getPriceDataHydro();
@@ -162,7 +162,6 @@ async function getPriceDataMOVR() {
   });
 
   onDestroy(() => clearInterval(interval));
-
 
 </script>
 <section>
@@ -189,8 +188,7 @@ async function getPriceDataMOVR() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </div></a>
                 <a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" rel="noopener noreferrer">
                     <div class="slide">
                         <div class="eth-slot">
@@ -210,8 +208,7 @@ async function getPriceDataMOVR() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </div></a>
                 <a href="https://www.coingecko.com/en/coins/binancecoin" target="_blank" rel="noopener noreferrer">
                     <div class="slide">
                         <div class="bsc-slot">
@@ -231,8 +228,7 @@ async function getPriceDataMOVR() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </div></a>
                 <a href="https://www.coingecko.com/en/coins/polygon" target="_blank" rel="noopener noreferrer">
                     <div class="slide">
                         <div class="poly-slot">
