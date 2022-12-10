@@ -1,60 +1,7 @@
 <script>
-// @ts-nocheck
-import {
-    onMount,
-    onDestroy
-} from "svelte";
 import swap from "$lib/images/logos/Hydro-Swap.svg";
 import item from "../../json/techlinks.json"
-
-// API Calls to the KVS Staking contract
-const apiURL = "https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
-const apiURLSupply = "https://api.bscscan.com/api?module=account&action=tokenCsupply&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9";
-
-//Get Price data on interval
-const interval = setInterval(async () => {
-    getPrice();
-}, 60000);
-
-onMount(async () => {
-    const response = await fetch(apiURL);
-    const responseSupply = await fetch(apiURLSupply);
-    data = await response.json();
-    getPrice();
-});
-
-onDestroy(() => clearInterval(interval));
-
-// Variables to Coingecko for Price feed
-const url = "https://api.coingecko.com/api/v3/";
-let data = []
-let coin = "hydro";
-let coinData;
-let price = {};
-let mcap;
-let totalVol;
-let supply;
-
-//Get price data from Api
-async function getPrice() {
-    const endpoint = url + `coins/${coin}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinData = await response.json();
-        price = coinData.market_data.current_price.usd;
-        mcap = coinData.market_data.market_cap.usd;
-        totalVol = coinData.market_data.total_volume.usd;
-        supply = coinData.market_data.total_supply;
-        return;
-    } else {
-        console.log("Price query error");
-    }
-}
-
-//Get Price data on mount
-onMount(async () => {
-    getPrice();
-});
+import { priceData } from "$lib/stores/store";
 </script>
 
 <div class="one-quarter" id="animated-border">
@@ -64,35 +11,35 @@ onMount(async () => {
 
             <div class="dashboard-slot" id="price">
                 <div class="price">Price</div>
-                <div class="currency">{(price)}
+                <div class="currency">{$priceData.hydroPrice}
                     <div class="currency-class">USD</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="marketcap">
                 <div class="price">Marketcap</div>
-                <div class="currency">{(mcap)}
+                <div class="currency">{$priceData.hydroMC}
                     <div class="currency-class">USD</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="volume">
                 <div class="price">Vol 24/7</div>
-                <div class="currency">{(totalVol)}
+                <div class="currency">{$priceData.hydroVolume}
                     <div class="currency-class">USD</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="staked">
                 <div class="price">Staked</div>
-                <div class="currency">{(Math.round(data.result/Math.pow(10,16))/100)}
+                <div class="currency">{$priceData.hydroStaked}
                     <div class="currency-class">HYDRO</div>
                 </div>
             </div>
 
             <div class="dashboard-slot" id="supply">
                 <div class="price">Circulating Supply</div>
-                <div class="currency">{(supply)}
+                <div class="currency">{$priceData.hydroSupply}
                     <div class="currency-class">HYDRO</div>
                 </div>
             </div>

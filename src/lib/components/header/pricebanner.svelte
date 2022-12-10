@@ -6,7 +6,7 @@ import polyLogo from "$lib/images/ticker-logo/polygon.svg";
 import cscLogo from "$lib/images/ticker-logo/coinex.svg";
 import movrLogo from "$lib/images/ticker-logo/moonriver.svg";
 import { priceData } from "$lib/stores/store";
-
+//Coin names
 let coinNameHydro = "HYDRO";
 let coinNameETH = "ETH";
 let coinNameBSC = "BNB";
