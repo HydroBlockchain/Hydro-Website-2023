@@ -9,8 +9,8 @@ const polyEndpoint = `https://api.coingecko.com/api/v3/coins/matic-network`;
 const movrEndpoint = `https://api.coingecko.com/api/v3/coins/moonriver`;
 
 //Bscscan endpoint
-const contractAddress = import.meta.env.VITE_HYDRO_CONTRACT_ADDRESS;
-const kvsAddress = import.meta.env.VITE_KVS_ADDRESS;
+const contractAddress = `0xf3DBB49999B25c9D6641a9423C7ad84168D00071`;
+const kvsAddress = `0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646`;
 // const apiKey = import.meta.env.BSCSCAN_API_KEY;
 const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=` + `${contractAddress}` + `&address=${kvsAddress}` + `&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9`;
 
