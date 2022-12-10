@@ -14,8 +14,7 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
 <svelte:head>
     <title>Team</title>
     <meta name="Team" content="Team" />
-    </svelte:head>
-
+</svelte:head>
     <section>
 
             <div class="team-section" id="top-one">
@@ -213,15 +212,15 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
             </div>
 
         <ContactUs/>
-            </section>
-
+    
+    </section>
 <style>
-    section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: var(--cw-desktop);
-    }
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--cw-desktop);
+}
 .team-section {
     display: flex;
     flex-direction: row;

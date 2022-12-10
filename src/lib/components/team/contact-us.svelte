@@ -8,7 +8,7 @@
     </div>
 </div>
 
-    <style>
+<style>
 .one-quarter,
 .three-quarter {
     height: var(--ch-mini);
