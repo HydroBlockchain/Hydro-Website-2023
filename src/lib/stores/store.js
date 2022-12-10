@@ -16,7 +16,10 @@ export const priceData = writable({
     cscPrice: 0,
     cscChange: 0,
     movrPrice: 0,
-    movrChange: 0,
+    movrChange: 0
+})
+
+export const mediumData = writable({
     mediumTitleOne: [],
     mediumLinkOne: [],
     mediumTitleTwo: [],
@@ -164,7 +167,7 @@ export const getData = () => {
             return res.json()
         })
         .then(data => {
-            priceData.update(current => {
+            mediumData.update(current => {
                 return {
                     ...current,
                     mediumTitleOne: data.items[0].title,

@@ -1,16 +1,16 @@
 <script>
 // @ts-nocheck
-import { priceData } from "$lib/stores/store";
+import { mediumData } from "$lib/stores/store";
 </script>
 
 <div class="three-quarter" id="animated-border">
     <div class="blog-posts">
         <div class="blog-title">
-            <a href ="{$priceData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">{$priceData.mediumTitleOne} </a></div>
+            <a href ="{$mediumData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">{$mediumData.mediumTitleOne} </a></div>
         <div class="blog-title">
-            <a href ="{$priceData.mediumLinkTwo}" target="_blank" rel="noopener noreferrer"> {$priceData.mediumTitleTwo} </a></div>
+            <a href ="{$mediumData.mediumLinkTwo}" target="_blank" rel="noopener noreferrer"> {$mediumData.mediumTitleTwo} </a></div>
         <div class="blog-title">
-            <a href ="{$priceData.mediumLinkThree}" target="_blank" rel="noopener noreferrer"> {$priceData.mediumTitleThree} </a></div>
+            <a href ="{$mediumData.mediumLinkThree}" target="_blank" rel="noopener noreferrer"> {$mediumData.mediumTitleThree} </a></div>
     </div>
 </div>
 
