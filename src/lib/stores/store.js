@@ -14,9 +14,6 @@ const kvsAddress = `0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646`;
 const apiKey = `YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9`;
 const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=` + `${contractAddress}` + `&address=${kvsAddress}` + `&tag=latest&apikey=${apiKey}`;
 
-//Medium endpoint
-const mediumEndpoint = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed`;
-
 //Exported Pricedata
 export const priceData = writable({
     hydroPrice: 0,
@@ -35,16 +32,6 @@ export const priceData = writable({
     cscChange: 0,
     movrPrice: 0,
     movrChange: 0
-})
-
-//Exported medium data
-export const mediumData = writable({
-    mediumTitleOne: [],
-    mediumLinkOne: [],
-    mediumTitleTwo: [],
-    mediumLinkTwo: [],
-    mediumTitleThree: [],
-    mediumLinkThree: [],
 })
 
 //Fetch Data
@@ -178,32 +165,50 @@ export const getData = () => {
             })
         }).catch(err => console.log(err))
 
-    //fetch Medium Data
-    fetch(mediumEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not Medium data")
-            }
-            return res.json()
-        })
-        .then(data => {
-            mediumData.update(current => {
-                return {
-                    ...current,
-                    mediumTitleOne: data.items[0].title,
-                    mediumLinkOne: data.items[0].link,
-                    mediumTitleTwo: data.items[1].title,
-                    mediumLinkTwo: data.items[1].link,
-                    mediumTitleThree: data.items[2].title,
-                    mediumLinkThree: data.items[2].link
-                }
-            })
-        }).catch(err => console.log(err))
-
 
 }
 
-//Set interval of 1min and fetch data
-setInterval(getData, 60000)
-getData()
+//Exported medium data
+export const mediumData = writable({
+    mediumTitleOne: [],
+    mediumLinkOne: [],
+    mediumTitleTwo: [],
+    mediumLinkTwo: [],
+    mediumTitleThree: [],
+    mediumLinkThree: [],
+})
+
+//Medium endpoint
+const mediumEndpoint = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed`;
+
+//Fetch Medium Data
+export const getMedium = () => {
+
+fetch(mediumEndpoint)
+.then(res => {
+    if (!res.ok) {
+        throw Error("Could not fetch Medium data")
+    }
+    return res.json()
+})
+.then(data => {
+    mediumData.update(current => {
+        return {
+            ...current,
+            mediumTitleOne: data.items[0].title,
+            mediumLinkOne: data.items[0].link,
+            mediumTitleTwo: data.items[1].title,
+            mediumLinkTwo: data.items[1].link,
+            mediumTitleThree: data.items[2].title,
+            mediumLinkThree: data.items[2].link
+        }
+    })
+}).catch(err => console.log(err))
+
+}
+
+//Set interval of 1min for price data and fetch data
+setInterval(getData, 60000);
+getMedium();
+getData();
 

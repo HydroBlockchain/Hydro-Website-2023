@@ -13,6 +13,9 @@
 	--fs-mini: 10px;
 	/* Container Width */
 	--cw-desktop: 85rem;
+	--cw-desktop-three: 50rem;
+	--cw-desktop-half: 42.5rem;
+	--cw-desktop-one: 35rem;
 	--cw-pad: 45rem;
 	--cw-mobile: 35rem;
 	/* Container Height */
@@ -228,7 +231,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 42.5rem;
+	width: var(--cw-desktop-half);
 	height: var(--ch-small);
 	border-radius: var(--border-radius);
 	position: relative;
@@ -260,7 +263,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 35rem;
+	width: var(--cw-desktop-one);
 	height: var(--ch-medium);
 	border-radius: var(--border-radius);
 	position: relative;
@@ -292,7 +295,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 50rem;
+	width: var(--cw-desktop-three);
 	height: var(--ch-medium);
 	border-radius: var(--border-radius);
 	position: relative;
