@@ -7,7 +7,6 @@ import ayushya from "$lib/images/team/ayushya.jpg";
 import profile from "$lib/images/team/profile.jpg";
 import twitter from "$lib/images/icons/twitter.svg";
 import linkedin from "$lib/images/icons/linkedin.svg";
-import drop from "$lib/images/ticker-logos/blue-drop.svg"
 import item from "../../lib/json/team.json"
 import ContactUs from "$lib/components/team/contact-us.svelte";
 </script>
@@ -231,15 +230,13 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
 }
 
 .team-card {
-    width: 300px;
+    width: 285px;
     height: 130px;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    animation: fadeIn 2.5s;
     position: relative;
     z-index: 1;
     background: inherit;
@@ -271,12 +268,12 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
 .team-name {
     font-size: var(--fs-xsmall);
     text-align: right;
-    margin-top: 1rem;
+    margin-top: var(--margin-s);
     color: var(--text-color);
 }
 
 .team-title {
-    font-size: 10px;
+    font-size: var(--fs-mini);
     text-align: right;
     color: var(--text-color-alt);
 }
@@ -289,17 +286,17 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
 
 .button-team {
     margin-top: var(--margin-l);
-    margin-left: 1.5rem;
+    margin-left: var(--margin-x);
     margin-right: 0;
 }
 
 #top-one {
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-m);
 }
 
 #last-one {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: var(--margin-m);
+    margin-bottom: var(--margin-m);
 }
 
 #profile-pic {
@@ -319,12 +316,11 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
 	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
-	animation: fadeIn 2.5s;
 }
 
 #hydro-drop svg{
     width: 90px;
     height: 90px;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--margin-xs);
 }
 </style>

@@ -11,7 +11,7 @@
     <style>
 .one-quarter,
 .three-quarter {
-    height: 15rem;
+    height: var(--ch-mini);
 }
 
 .tagline {
