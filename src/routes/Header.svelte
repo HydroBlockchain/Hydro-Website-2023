@@ -1,5 +1,5 @@
 <script>
-	import Pricebanner from "$lib/components/pricebanner.svelte";
+	import Pricebanner from "$lib/components/header/pricebanner.svelte";
 </script>
 
 <header>
