@@ -5,6 +5,7 @@
 	--font-body: 'Roboto Mono';
 	--font-mono: 'Roboto Mono', monospace;
 	/* Font sizes */
+	--fs-xlarge: 20px;
 	--fs-large: 18px;
 	--fs-medium: 16px;
 	--fs-small: 14px;
@@ -12,12 +13,21 @@
 	--fs-mini: 10px;
 	/* Container Width */
 	--cw-desktop: 85rem;
+	--cw-pad: 45rem;
+	--cw-mobile: 35rem;
 	/* Container Height */
-	--ch-x-large: 70rem auto;
-	--ch-large: 30rem;
+	--ch-xlarge: 70rem auto;
+	--ch-large: 40rem;
+	--ch-medium: 30rem;
 	--ch-small: 25rem;
-	--ch-xsmall: 22.5rem;
-	--ch-mini: 20rem;
+	--ch-xsmall: 20rem;
+	--ch-mini: 15rem;	
+	/* Margins */
+	--margin-xl: 4rem;
+	--margin-l: 3rem;
+	--margin-m: 2rem;
+	--margin-s: 1rem;
+	--margin-xs: 0.5rem;
 	/* Misc */
 	--border-radius: 7px;
 	--transparent: rgba(255, 255, 255, 0);
@@ -141,7 +151,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: var(--cw-desktop);
-	height: var(--ch-x-large);
+	height: var(--ch-xlarge);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
@@ -250,7 +260,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 35rem;
-	height: var(--ch-large);
+	height: var(--ch-medium);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
@@ -282,7 +292,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 50rem;
-	height: var(--ch-large);
+	height: var(--ch-medium);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;

@@ -16,7 +16,7 @@
 
 <style>
 .full {
-    height: 30rem;
+    height: var(--ch-large);
 }
 
 .roadmap {
