@@ -19,7 +19,7 @@
 	--ch-xsmall: 22.5rem;
 	--ch-mini: 20rem;
 	/* Misc */
-	--border-radius: 5px;
+	--border-radius: 7px;
 	--transparent: rgba(255, 255, 255, 0);
 }
 
@@ -130,7 +130,7 @@ body {
 /* Containers */
 
 .multiple-containers,
-.multiple-containers-2 {
+.multiple-containers-alt {
 	display: flex;
 	flex-direction: row;
 	width: var(--cw-desktop);

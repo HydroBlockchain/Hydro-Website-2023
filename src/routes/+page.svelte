@@ -21,7 +21,7 @@
         <Medium />
     </div>
     <Roadmap />
-    <div class="multiple-containers-2">
+    <div class="multiple-containers-alt">
         <Partners />
         <Exchanges />
     </div>
