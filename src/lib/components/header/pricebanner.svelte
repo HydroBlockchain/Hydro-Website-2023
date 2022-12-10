@@ -1,10 +1,4 @@
 <script>
-//imports
-import {
-    onMount,
-    onDestroy
-} from "svelte";
-
 import hydroDrop from "$lib/images/ticker-logo/blue-drop.svg";
 import ethLogo from "$lib/images/ticker-logo/ethereum.svg";
 import bscLogo from "$lib/images/ticker-logo/bsc.svg";
@@ -19,116 +13,6 @@ let coinNameBSC = "BNB";
 let coinNamePOLY = "POLYGON";
 let coinNameCSC = "CET";
 let coinNameMOVR = "MOVR";
-
-// API Call to Coingecko for Price feed
-const url = "https://api.coingecko.com/api/v3/";
-let connected = false;
-let data2;
-async function checkConnection() {
-    const endpoint = url + "ping";
-    const response = await fetch(endpoint);
-    if (response) {
-        connected = true;
-        data2 = await response.json();
-        return;
-    } else {
-        console.log("No connection");
-    }
-}
-
-
-//BSC
-
-let coinBSC = "binancecoin";
-let coinDataBSC;
-let priceBSC = {};
-let priceChangeBSC = {};
-async function getPriceDataBSC() {
-    const endpoint = url + `coins/${coinBSC}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinDataBSC = await response.json();
-        priceBSC = coinDataBSC.market_data.current_price.usd;
-        priceChangeBSC = coinDataBSC.market_data.price_change_percentage_24h.toFixed(2);
-        return;
-    } else {
-        console.log("Error BSC");
-    }
-}
-
-//POLYGON
-
-let coinPOLY = "matic-network";
-let coinDataPOLY;
-let pricePOLY = {};
-let priceChangePOLY = {};
-async function getPriceDataPOLY() {
-    const endpoint = url + `coins/${coinPOLY}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinDataPOLY = await response.json();
-        pricePOLY = coinDataPOLY.market_data.current_price.usd.toFixed(6);
-        priceChangePOLY = coinDataPOLY.market_data.price_change_percentage_24h.toFixed(2);
-        return;
-    } else {
-        console.log("Error POLY");
-    }
-}
-
-//CoinEx Smart Chain
-
-let coinCSC = "coinex-token";
-let coinDataCSC;
-let priceCSC = {};
-let priceChangeCSC = {};
-async function getPriceDataCSC() {
-    const endpoint = url + `coins/${coinCSC}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinDataCSC = await response.json();
-        priceCSC = coinDataCSC.market_data.current_price.usd.toFixed(6);
-        priceChangeCSC = coinDataCSC.market_data.price_change_percentage_24h.toFixed(2);
-        return;
-    } else {
-        console.log("Error CSC");
-    }
-}
-
-//Moonriver Chain
-
-let coinMOVR = "moonriver";
-let coinDataMOVR;
-let priceMOVR = {};
-let priceChangeMOVR = {};
-async function getPriceDataMOVR() {
-    const endpoint = url + `coins/${coinMOVR}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinDataMOVR = await response.json();
-        priceMOVR = coinDataMOVR.market_data.current_price.usd;
-        priceChangeMOVR = coinDataMOVR.market_data.price_change_percentage_24h.toFixed(2);
-        return;
-    } else {
-        console.log("Error MOVR");
-    }
-}
-
-//Call Price Checking Functions with Interval
-  const interval = setInterval(async () => {
-    getPriceDataBSC();
-    getPriceDataPOLY();
-    getPriceDataCSC();
-    getPriceDataMOVR();
-  }, 60000);
-
-  onMount(async () => {
-    getPriceDataBSC();
-    getPriceDataPOLY();
-    getPriceDataCSC();
-    getPriceDataMOVR();
-  });
-
-  onDestroy(() => clearInterval(interval));
 
 </script>
 <section>
@@ -182,15 +66,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.bscPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeBSC > 0}
-                                    <div class="green"> {priceChangeBSC} %</div>
-                                    {:else if 0 > priceChangeBSC}
-                                    <div class="red"> {priceChangeBSC} %</div>
+                                    {#if $priceData.bscChange > 0}
+                                    <div class="green"> {$priceData.bscChange} %</div>
+                                    {:else if 0 > $priceData.bscChange}
+                                    <div class="red"> {$priceData.bscChange} %</div>
                                     {:else}
-                                    {priceChangeBSC}
+                                    {$priceData.bscChange}
                                     {/if}
                                 </div>
                             </div>
@@ -202,15 +86,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-                                <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.polyPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangePOLY > 0}
-                                    <div class="green"> {priceChangePOLY} %</div>
-                                    {:else if 0 > priceChangePOLY}
-                                    <div class="red"> {priceChangePOLY} %</div>
+                                    {#if $priceData.polyChange > 0}
+                                    <div class="green"> {$priceData.polyChange} %</div>
+                                    {:else if 0 > $priceData.polyChange}
+                                    <div class="red"> {$priceData.polyChange} %</div>
                                     {:else}
-                                    {priceChangePOLY}
+                                    {$priceData.polyChange}
                                     {/if}
                                 </div>
                             </div>
@@ -222,15 +106,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameCSC)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.cscPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeCSC > 0}
-                                    <div class="green"> {priceChangeCSC} %</div>
-                                    {:else if 0 > priceChangeCSC}
-                                    <div class="red"> {priceChangeCSC} %</div>
+                                    {#if $priceData.cscChange > 0}
+                                    <div class="green"> {$priceData.cscChange} %</div>
+                                    {:else if 0 > $priceData.cscChange}
+                                    <div class="red"> {$priceData.cscChange} %</div>
                                     {:else}
-                                    {priceChangeCSC}
+                                    {$priceData.cscChange}
                                     {/if}
                                 </div>
                             </div>
@@ -242,15 +126,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.movrPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeMOVR > 0}
-                                    <div class="green"> {priceChangeMOVR} %</div>
-                                    {:else if 0 > priceChangeMOVR}
-                                    <div class="red"> {priceChangeMOVR} %</div>
+                                    {#if $priceData.movrChange > 0}
+                                    <div class="green"> {$priceData.movrChange} %</div>
+                                    {:else if 0 > $priceData.movrChange}
+                                    <div class="red"> {$priceData.movrChange} %</div>
                                     {:else}
-                                    {priceChangeMOVR}
+                                    {$priceData.movrChange}
                                     {/if}
                                 </div>
                             </div>
@@ -302,15 +186,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.bscPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeBSC > 0}
-                                    <div class="green"> {priceChangeBSC} %</div>
-                                    {:else if 0 > priceChangeBSC}
-                                    <div class="red"> {priceChangeBSC} %</div>
+                                    {#if $priceData.bscChange > 0}
+                                    <div class="green"> {$priceData.bscChange} %</div>
+                                    {:else if 0 > $priceData.bscChange}
+                                    <div class="red"> {$priceData.bscChange} %</div>
                                     {:else}
-                                    {priceChangeBSC}
+                                    {$priceData.bscChange}
                                     {/if}
                                 </div>
                             </div>
@@ -322,15 +206,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-                                <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.polyPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangePOLY > 0}
-                                    <div class="green"> {priceChangePOLY} %</div>
-                                    {:else if 0 > priceChangePOLY}
-                                    <div class="red"> {priceChangePOLY} %</div>
+                                    {#if $priceData.polyChange > 0}
+                                    <div class="green"> {$priceData.polyChange} %</div>
+                                    {:else if 0 > $priceData.polyChange}
+                                    <div class="red"> {$priceData.polyChange} %</div>
                                     {:else}
-                                    {priceChangePOLY}
+                                    {$priceData.polyChange}
                                     {/if}
                                 </div>
                             </div>
@@ -342,15 +226,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameCSC)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceCSC)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.cscPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeCSC > 0}
-                                    <div class="green"> {priceChangeCSC} %</div>
-                                    {:else if 0 > priceChangeCSC}
-                                    <div class="red"> {priceChangeCSC} %</div>
+                                    {#if $priceData.cscChange > 0}
+                                    <div class="green"> {$priceData.cscChange} %</div>
+                                    {:else if 0 > $priceData.cscChange}
+                                    <div class="red"> {$priceData.cscChange} %</div>
                                     {:else}
-                                    {priceChangeCSC}
+                                    {$priceData.cscChange}
                                     {/if}
                                 </div>
                             </div>
@@ -362,15 +246,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={movrLogo} alt="moonriver" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameMOVR)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceMOVR)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.movrPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeMOVR > 0}
-                                    <div class="green"> {priceChangeMOVR} %</div>
-                                    {:else if 0 > priceChangeMOVR}
-                                    <div class="red"> {priceChangeMOVR} %</div>
+                                    {#if $priceData.movrChange > 0}
+                                    <div class="green"> {$priceData.movrChange} %</div>
+                                    {:else if 0 > $priceData.movrChange}
+                                    <div class="red"> {$priceData.movrChange} %</div>
                                     {:else}
-                                    {priceChangeMOVR}
+                                    {$priceData.movrChange}
                                     {/if}
                                 </div>
                             </div>
@@ -422,15 +306,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameBSC)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceBSC)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.bscPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeBSC > 0}
-                                    <div class="green"> {priceChangeBSC} %</div>
-                                    {:else if 0 > priceChangeBSC}
-                                    <div class="red"> {priceChangeBSC} %</div>
+                                    {#if $priceData.bscChange > 0}
+                                    <div class="green"> {$priceData.bscChange} %</div>
+                                    {:else if 0 > $priceData.bscChange}
+                                    <div class="red"> {$priceData.bscChange} %</div>
                                     {:else}
-                                    {priceChangeBSC}
+                                    {$priceData.bscChange}
                                     {/if}
                                 </div>
                             </div>
@@ -442,15 +326,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNamePOLY)}</div>
-                                <div class="banner-slot" id="price">Price: {(pricePOLY)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.polyPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangePOLY > 0}
-                                    <div class="green"> {priceChangePOLY} %</div>
-                                    {:else if 0 > priceChangePOLY}
-                                    <div class="red"> {priceChangePOLY} %</div>
+                                    {#if $priceData.polyChange > 0}
+                                    <div class="green"> {$priceData.polyChange} %</div>
+                                    {:else if 0 > $priceData.polyChange}
+                                    <div class="red"> {$priceData.polyChange} %</div>
                                     {:else}
-                                    {priceChangePOLY}
+                                    {$priceData.polyChange}
                                     {/if}
                                 </div>
                             </div>
@@ -541,12 +425,6 @@ async function getPriceDataMOVR() {
     display: flex;
     margin-left: 3px;
     color: #a6ec64 !important
-}
-
-.white {
-    display: flex;
-    margin-left: 3px;
-    color: #ffffff !important
 }
 
 @keyframes scroll {
