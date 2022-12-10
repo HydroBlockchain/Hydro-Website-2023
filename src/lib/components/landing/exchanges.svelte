@@ -41,4 +41,8 @@ import item from "../../json/landinglinks.json"
 	width: 128px;
 	margin: 20px;
 }
+
+a:hover {
+    opacity: 0.5;
+}
 </style>

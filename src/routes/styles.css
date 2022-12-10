@@ -34,7 +34,6 @@
 	--margin-xs: 0.5rem;
 	/* Misc */
 	--border-radius: 7px;
-	--transparent: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -357,7 +356,6 @@ a:active {
 
 .button:hover {
 	background-color: var(--button-hover);
-	opacity: 1 !important;
 }
 
 .button a {
