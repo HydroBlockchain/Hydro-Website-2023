@@ -6,8 +6,8 @@ import "./styles.css";
 </script>
 
 <div class="app-wrapper">
-    <Pricebanner />
     <div class="app">
+        <Pricebanner />
         <Header />
         <main>
             <slot />
