@@ -316,6 +316,7 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
 	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
+    animation: fadeIn 2.5s;
 }
 
 #hydro-drop svg{
