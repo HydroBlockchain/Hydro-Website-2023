@@ -37,6 +37,6 @@
 }
 
 .tagline {
-    font-size: 16px;
+    font-size: var(--fs-medium);
 }
 </style>

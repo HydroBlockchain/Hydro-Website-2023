@@ -22,5 +22,6 @@
     display: flex;
     justify-content: center;
     margin: 20px;
+    font-size: var(--fs-medium);
 }
 </style>

@@ -61,7 +61,7 @@ import item from "../../json/techlinks.json"
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 14px;
+    font-size: var(--fs-small);
     margin-bottom: 5rem;
 }
 

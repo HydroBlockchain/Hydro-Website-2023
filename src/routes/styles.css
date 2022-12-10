@@ -360,14 +360,6 @@ a:active {
 	margin-top: 2rem;
 }
 
-.container-footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: var(--text-color);
-}
-
 /* FAQ */
 
 .faq-title {

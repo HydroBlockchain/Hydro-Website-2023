@@ -117,7 +117,7 @@ onMount(async () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: var(--fs-xsmall);
     margin-left: 0.3rem;
     color: var(--text-color-alt);
 }
@@ -153,7 +153,7 @@ onMount(async () => {
     justify-content: flex-end;
     margin-right: 1rem !important;
     margin-bottom: 0.5rem;
-    font-size: 10px;
+    font-size: var(--fs-mini);
 }
 
 .price {

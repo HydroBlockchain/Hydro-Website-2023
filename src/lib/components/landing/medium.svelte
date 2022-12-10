@@ -63,6 +63,6 @@ async function getData() {
 .blog-title a {
     cursor: pointer;
     color: var(--link-color);
-
+    font-size: var(--fs-large);
 }
 </style>
