@@ -11,6 +11,14 @@ import bscLogo from "$lib/images/ticker-logo/bsc.svg";
 import polyLogo from "$lib/images/ticker-logo/polygon.svg";
 import cscLogo from "$lib/images/ticker-logo/coinex.svg";
 import movrLogo from "$lib/images/ticker-logo/moonriver.svg";
+import { priceData } from "$lib/stores/store";
+
+let coinNameHydro = "HYDRO";
+let coinNameETH = "ETH";
+let coinNameBSC = "BNB";
+let coinNamePOLY = "POLYGON";
+let coinNameCSC = "CET";
+let coinNameMOVR = "MOVR";
 
 // API Call to Coingecko for Price feed
 const url = "https://api.coingecko.com/api/v3/";
@@ -28,46 +36,9 @@ async function checkConnection() {
     }
 }
 
-//HYDRO
-let coinNameHydro = "HYDRO";
-let coinHydro = "hydro";
-let coinDataHydro;
-let priceHydro = {};
-let priceChangeHydro = {};
-async function getPriceDataHydro() {
-    const endpoint = url + `coins/${coinHydro}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinDataHydro = await response.json();
-        priceHydro = coinDataHydro.market_data.current_price.usd.toFixed(6);
-        priceChangeHydro = coinDataHydro.market_data.price_change_percentage_24h.toFixed(2);
-        return;
-    } else {
-        console.log("Error HYDRO");
-    }
-}
-
-//ETHER
-let coinNameETH = "ETH";
-let coinETH = "ethereum";
-let coinDataETH;
-let priceETH = {};
-let priceChangeETH = {};
-async function getPriceDataETH() {
-    const endpoint = url + `coins/${coinETH}`;
-    const response = await fetch(endpoint);
-    if (response) {
-        coinDataETH = await response.json();
-        priceETH = coinDataETH.market_data.current_price.usd;
-        priceChangeETH = coinDataETH.market_data.price_change_percentage_24h.toFixed(2);
-        return;
-    } else {
-        console.log("Error ETH");
-    }
-}
 
 //BSC
-let coinNameBSC = "BNB";
+
 let coinBSC = "binancecoin";
 let coinDataBSC;
 let priceBSC = {};
@@ -86,7 +57,7 @@ async function getPriceDataBSC() {
 }
 
 //POLYGON
-let coinNamePOLY = "POLYGON";
+
 let coinPOLY = "matic-network";
 let coinDataPOLY;
 let pricePOLY = {};
@@ -105,7 +76,7 @@ async function getPriceDataPOLY() {
 }
 
 //CoinEx Smart Chain
-let coinNameCSC = "CET";
+
 let coinCSC = "coinex-token";
 let coinDataCSC;
 let priceCSC = {};
@@ -124,7 +95,7 @@ async function getPriceDataCSC() {
 }
 
 //Moonriver Chain
-let coinNameMOVR = "MOVR";
+
 let coinMOVR = "moonriver";
 let coinDataMOVR;
 let priceMOVR = {};
@@ -144,8 +115,6 @@ async function getPriceDataMOVR() {
 
 //Call Price Checking Functions with Interval
   const interval = setInterval(async () => {
-    getPriceDataHydro();
-    getPriceDataETH();
     getPriceDataBSC();
     getPriceDataPOLY();
     getPriceDataCSC();
@@ -153,8 +122,6 @@ async function getPriceDataMOVR() {
   }, 60000);
 
   onMount(async () => {
-    getPriceDataHydro();
-    getPriceDataETH();
     getPriceDataBSC();
     getPriceDataPOLY();
     getPriceDataCSC();
@@ -175,15 +142,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.hydroPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeHydro > 0}
-                                    <div class="green"> {priceChangeHydro} %</div>
-                                    {:else if 0 > priceChangeHydro}
-                                    <div class="red"> {priceChangeHydro} %</div>
+                                    {#if $priceData.hydroChange > 0}
+                                    <div class="green"> {$priceData.hydroChange} %</div>
+                                    {:else if 0 > $priceData.hydroChange}
+                                    <div class="red"> {$priceData.hydroChange} %</div>
                                     {:else}
-                                    {priceChangeHydro}
+                                    {$priceData.hydroChange}
                                     {/if}
                                 </div>
                             </div>
@@ -195,15 +162,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameETH)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.ethPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeETH > 0}
-                                    <div class="green"> {priceChangeETH} %</div>
-                                    {:else if 0 > priceChangeETH}
-                                    <div class="red"> {priceChangeETH} %</div>
+                                    {#if $priceData.ethChange > 0}
+                                    <div class="green"> {$priceData.ethChange} %</div>
+                                    {:else if 0 > $priceData.ethChange}
+                                    <div class="red"> {$priceData.ethChange} %</div>
                                     {:else}
-                                    {priceChangeETH}
+                                    {$priceData.ethChange}
                                     {/if}
                                 </div>
                             </div>
@@ -295,15 +262,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.hydroPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeHydro > 0}
-                                    <div class="green"> {priceChangeHydro} %</div>
-                                    {:else if 0 > priceChangeHydro}
-                                    <div class="red"> {priceChangeHydro} %</div>
+                                    {#if $priceData.hydroChange > 0}
+                                    <div class="green"> {$priceData.hydroChange} %</div>
+                                    {:else if 0 > $priceData.hydroChange}
+                                    <div class="red"> {$priceData.hydroChange} %</div>
                                     {:else}
-                                    {priceChangeHydro}
+                                    {$priceData.hydroChange}
                                     {/if}
                                 </div>
                             </div>
@@ -315,15 +282,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameETH)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.ethPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeETH > 0}
-                                    <div class="green"> {priceChangeETH} %</div>
-                                    {:else if 0 > priceChangeETH}
-                                    <div class="red"> {priceChangeETH} %</div>
+                                    {#if $priceData.ethChange > 0}
+                                    <div class="green"> {$priceData.ethChange} %</div>
+                                    {:else if 0 > $priceData.ethChange}
+                                    <div class="red"> {$priceData.ethChange} %</div>
                                     {:else}
-                                    {priceChangeETH}
+                                    {$priceData.ethChange}
                                     {/if}
                                 </div>
                             </div>
@@ -415,15 +382,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameHydro)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceHydro)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.hydroPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeHydro > 0}
-                                    <div class="green"> {priceChangeHydro} %</div>
-                                    {:else if 0 > priceChangeHydro}
-                                    <div class="red"> {priceChangeHydro} %</div>
+                                    {#if $priceData.hydroChange > 0}
+                                    <div class="green"> {$priceData.hydroChange} %</div>
+                                    {:else if 0 > $priceData.hydroChange}
+                                    <div class="red"> {$priceData.hydroChange} %</div>
                                     {:else}
-                                    {priceChangeHydro}
+                                    {$priceData.hydroChange}
                                     {/if}
                                 </div>
                             </div>
@@ -435,15 +402,15 @@ async function getPriceDataMOVR() {
                             <div class="coin-img"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameETH)}</div>
-                                <div class="banner-slot" id="price">Price: {(priceETH)} USD</div>
+                                <div class="banner-slot" id="price">Price: {$priceData.ethPrice} USD</div>
                                 <div class="banner-slot" id="volume">
                                     Change:
-                                    {#if priceChangeETH > 0}
-                                    <div class="green"> {priceChangeETH} %</div>
-                                    {:else if 0 > priceChangeETH}
-                                    <div class="red"> {priceChangeETH} %</div>
+                                    {#if $priceData.ethChange > 0}
+                                    <div class="green"> {$priceData.ethChange} %</div>
+                                    {:else if 0 > $priceData.ethChange}
+                                    <div class="red"> {$priceData.ethChange} %</div>
                                     {:else}
-                                    {priceChangeETH}
+                                    {$priceData.ethChange}
                                     {/if}
                                 </div>
                             </div>
@@ -574,6 +541,12 @@ async function getPriceDataMOVR() {
     display: flex;
     margin-left: 3px;
     color: #a6ec64 !important
+}
+
+.white {
+    display: flex;
+    margin-left: 3px;
+    color: #ffffff !important
 }
 
 @keyframes scroll {
