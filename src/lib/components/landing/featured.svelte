@@ -28,4 +28,9 @@ import item from "../../json/landinglinks.json"
     justify-content: center;
     align-items: center;
 }
+
+#featured-on {
+	width: 256px;
+	margin: 20px;
+}
 </style>

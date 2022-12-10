@@ -506,7 +506,7 @@ async function getPriceDataMOVR() {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: var(--container-width-desktop);
+    width: var(--cw-desktop);
     height: 60px;
     border-radius: var(--border-radius);
     color: var(--text-color);
@@ -550,7 +550,6 @@ async function getPriceDataMOVR() {
     margin-right: 1rem;
     color: var(--text-color);
     font-size: 11px;
-
 }
 
 #volume {
@@ -596,7 +595,7 @@ async function getPriceDataMOVR() {
     display: flex;
     overflow: hidden;
     position: relative;
-    width: var(--container-width-desktop);
+    width: var(--cw-desktop);
 }
 
 .slider::before,

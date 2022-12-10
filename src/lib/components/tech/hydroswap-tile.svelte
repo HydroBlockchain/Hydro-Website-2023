@@ -58,7 +58,7 @@ onMount(async () => {
 </script>
 
 <div class="one-quarter" id="animated-border">
-    <img src={swap} alt="swap-logo" id="product"/>
+    <img src={swap} alt="swap-logo" id="hydroswap-logo"/>
     <div class="hydroswap">
         <div class="hydro-dashboard">
 
@@ -114,19 +114,19 @@ onMount(async () => {
 /* Hydroswap */
 
 .currency-class {
-    color: var(--text-color-alt);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
     margin-left: 0.3rem;
+    color: var(--text-color-alt);
 }
 
 #staked {
-    color: var(--text-color);
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: var(--text-color);
 }
 
 .hydro-dashboard {
@@ -179,9 +179,10 @@ onMount(async () => {
     justify-content: center;
 }
 
-#product {
+#hydroswap-logo {
     margin-top: 5rem;
     margin-bottom: 0rem;
+    height: 35px;
 }
 
 .button-row {

@@ -31,24 +31,20 @@ import item from "../../json/techlinks.json"
 
 #keresverse-logo {
     height: 50px;
-    animation: fadeIn 2.5s;
     margin-bottom: 1rem;
 }
 
 #jixta {
     height: 300px;
-    animation: fadeIn 2.5s;
 }
 
 #vox {
     height: 300px;
     margin-left: -2rem;
-    animation: fadeIn 2.5s;
 }
 
 #wex {
     height: 130px;
-    animation: fadeIn 2.5s;
 }
 
 .jixta {
@@ -80,8 +76,6 @@ import item from "../../json/techlinks.json"
 
 #keres-play-button {
     margin-top: 3rem;
-    color: #212124;
     width: 100px;
-    animation: fadeIn 2.5s;
 }
 </style>

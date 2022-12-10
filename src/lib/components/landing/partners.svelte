@@ -24,7 +24,7 @@ import item from "../../json/landinglinks.json"
 
 <style>
 .half {
-    height: var(--container-height-mini);
+    height: var(--ch-mini);
 }
 
 .partners {
@@ -32,5 +32,10 @@ import item from "../../json/landinglinks.json"
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+#partner {
+	width: 128px;
+	margin: 20px;
 }
 </style>

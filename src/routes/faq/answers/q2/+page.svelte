@@ -21,7 +21,7 @@
                     With HydroSwap, users can easily trade their tokens, stake them and earn. For those that want to create liquidity pools, it is feasible.
                 </div>
             </div>
-            <div class="button"><a href="/faq">Return</a></div>
+            <a href="/faq"><div class="button">Return</div></a>
         </div>
     </section>
 

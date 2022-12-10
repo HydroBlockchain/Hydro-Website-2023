@@ -5,8 +5,14 @@ import drop from "$lib/images/ticker-logo/blue-drop.svg";
     <img src={drop} alt="hydro-logo" id="hydro-drop"/>
     <div class="tagline">Multi-chain protocols securing the web3 reality.</div>
 </div>
+
 <style>
-    .tagline {
+.tagline {
+    margin-top: 2rem;
+}
+
+#hydro-drop {
+    width: 128px;
     margin-top: 2rem;
 }
 </style>

@@ -27,6 +27,10 @@ import item from "../../json/techlinks.json"
     margin-bottom: 2rem;
 }
 
+#chain {
+    height: 50px;
+}
+
 .chains a {
     margin: 20px;
 }

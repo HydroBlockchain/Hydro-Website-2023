@@ -7,5 +7,7 @@ import ecosystem from "$lib/images/hydro-ecosystem.svg";
 </div>
 
 <style>
-    
+#ecosystem {
+    width: 600px;
+}
 </style>

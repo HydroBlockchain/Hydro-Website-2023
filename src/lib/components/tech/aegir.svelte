@@ -6,7 +6,7 @@ import item from "../../json/techlinks.json"
 <div class="half" id="animated-border">
 
     <div class="products">
-        <img src={aegir} alt="aegir-logo" id="product"/>
+        <img src={aegir} alt="aegir-logo" id="aegir-logo"/>
 
         <div class="button-row">
             <a href="{item[9].link}" target="_blank" rel="noopener noreferrer" >
@@ -44,5 +44,10 @@ import item from "../../json/techlinks.json"
 
 #aegir-button-ios {
     background-image: none;
+}
+
+#aegir-logo {
+	height: 35px;
+	margin: 10px;
 }
 </style>

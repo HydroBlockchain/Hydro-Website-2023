@@ -44,7 +44,6 @@
 <style>
 a {
     padding: 1rem;
-    animation: fadeIn 2.5s;
 }
 
 .questions {

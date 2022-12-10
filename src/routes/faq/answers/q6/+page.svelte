@@ -15,8 +15,8 @@
                 Polygon, CoinEx Smart Chain & Moonriver using our own Hydro Bridge.
             </div>
             <div class="button-row">
-                <div class="button"><a href="https://www.hydro-bridge.org" target="_blank" rel="noopener noreferrer">Hydro-Bridge</a></div>
-                <div class="button"><a href="/faq">Return</a></div>
+                <a href="https://www.hydro-bridge.org" target="_blank" rel="noopener noreferrer"><div class="button">Hydro-Bridge</div></a>
+                <a href="/faq"><div class="button">Return</div></a>
             </div>
         </div>
     </section>

@@ -17,7 +17,7 @@
                     Apart from that there will be multiple other areas of the KeresVerse such as a Casino, Marketplace, Lounge and more.
                 </div>
             </div>
-            <div class="button"><a href="/faq">Return</a></div>
+            <a href="/faq"><div class="button">Return</div></a>
         </div>
     </section>
 

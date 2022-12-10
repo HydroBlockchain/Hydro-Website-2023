@@ -17,7 +17,7 @@
                     The user is further encouraged to strengthen security with Hydro ID, Biometric Security and local encryption of keys.
                 </div>
             </div>
-            <div class="button"><a href="/faq">Return</a></div>
+            <a href="/faq"><div class="button">Return</div></a>
         </div>
     </section>
 

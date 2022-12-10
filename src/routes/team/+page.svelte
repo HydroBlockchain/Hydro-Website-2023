@@ -271,4 +271,8 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
     border-radius: var(--border-radius);
     animation: fadeIn 2.5s;
 }
+
+#icon {
+	width: 20px;
+}
 </style>

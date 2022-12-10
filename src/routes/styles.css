@@ -1,84 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Mono&display=swap');
 
 :root {
+	/* Font Family */
 	--font-body: 'Roboto Mono';
 	--font-mono: 'Roboto Mono', monospace;
-	--font-size-large: 20px;
-	--font-size-medium: 18px;
-	--font-size-small: 16px;
-	--font-size-xsmall: 14px;
-	--font-size-mini: 12px;
-	--column-margin-top: 4rem;
-	--container-width-desktop: 85rem;
-	--container-height-x-large: 70rem auto;
-	--container-height-large: 30rem;
-	--container-height-small: 25rem;
-	--container-height-xsmall: 22.5rem;
-	--container-height-mini: 20rem;
+	/* Font sizes */
+	--fs-large: 18px;
+	--fs-medium: 16px;
+	--fs-small: 14px;
+	--fs-xsmall: 12px;
+	--fs-mini: 10px;
+	/* Container Width */
+	--cw-desktop: 85rem;
+	/* Container Height */
+	--ch-x-large: 70rem auto;
+	--ch-large: 30rem;
+	--ch-small: 25rem;
+	--ch-xsmall: 22.5rem;
+	--ch-mini: 20rem;
+	/* Misc */
 	--border-radius: 5px;
-	--preloader-bg: #212124;
 	--transparent: rgba(255, 255, 255, 0);
-
-	font-family: var(--font-body);
-	color: var(--color-text);
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
+	font-family: var(--font-body);
+	color: var(--color-text);
 	background: var(--backgound-color);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	background-attachment: fixed;
 }
 
-/* Links */
-
-a {
-	color: var(--link-color);
-}
-
-a:link {
-	text-decoration: none;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-a:hover {
-	opacity: 0.5;
-	text-decoration: none;
-}
-
-a:active {
-	text-decoration: none;
-}
-
 /* Dark Mode */
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		/* Text */
 		--logo-color: #eee;
+		--title-color: #eee;
 		--text-color: #eee;
 		--text-color-alt: #85e1ff;
 		--link-color: #eee;
-		--title-color: rgb(255, 255, 255);
-		--button-color: #eee;
-		--button-text-color: #212124;
-		--backgound-color: linear-gradient(90deg,
-				#1b2f5e,
-				#015087,
-				#004878,
-				#002950);
+		/* Tiles, Banner & Button */
+		--button-color: rgba(255, 255, 255, 0.2);
 		--card-background: rgba(255, 255, 255, 0.2);
-		--animated-bg: linear-gradient(-90deg,
-				rgba(24, 79, 161, 0.25),
-				rgba(0, 94, 157, 0.25),
-				rgba(0, 106, 125, 0.25),
-				rgba(9, 154, 152, 0.25),
-				rgba(9, 23, 154, 0.25));
 		--banner-background: rgba(255, 255, 255, 0.15);
+		/* Gradient Background */
+		--backgound-color: linear-gradient(90deg,#1b2f5e,
+												 #015087,
+												 #004878,
+												 #002950);
+		/* Gradient Tiles */
+		--animated-bg: linear-gradient(-90deg,rgba(24, 79, 161, 0.25),
+											  rgba(0, 94, 157, 0.25),
+											  rgba(0, 106, 125, 0.25),
+											  rgba(9, 154, 152, 0.25),
+											  rgba(9, 23, 154, 0.25));
+		
 	}
 }
 
@@ -86,26 +67,27 @@ a:active {
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--logo-color: #fff;
-		--text-color: #fff;
+		/* Text */
+		--logo-color: #eee;
+		--title-color: #eee;
+		--text-color: #eee;
 		--text-color-alt: #85e1ff;
-		--link-color: #fff;
-		--title-color: #fff;
-		--button-color: #fff;
-		--button-text-color: #212124;
-		--backgound-color: linear-gradient(90deg,
-				#1f82ce,
-				#224669,
-				#195783,
-				#042351);
+		--link-color: #eee;
+		/* Tiles, Banner & Button */
+		--button-color: rgba(255, 255, 255, 0.2);
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
-		--animated-bg: linear-gradient(-90deg,
-				rgba(24, 79, 161, 0.25),
-				rgba(0, 94, 157, 0.25),
-				rgba(0, 106, 125, 0.25),
-				rgba(9, 154, 152, 0.25),
-				rgba(9, 23, 154, 0.25));
+		/* Gradient Background */
+		--backgound-color: linear-gradient(90deg,#1b2f5e,
+												 #015087,
+												 #004878,
+												 #002950);
+		/* Gradient Tiles */
+		--animated-bg: linear-gradient(-90deg,rgba(24, 79, 161, 0.25),
+											  rgba(0, 94, 157, 0.25),
+											  rgba(0, 106, 125, 0.25),
+											  rgba(9, 154, 152, 0.25),
+											  rgba(9, 23, 154, 0.25));
 	}
 }
 
@@ -151,15 +133,15 @@ a:active {
 .multiple-containers-2 {
 	display: flex;
 	flex-direction: row;
-	width: var(--container-width-desktop);
+	width: var(--cw-desktop);
 }
 
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: var(--container-width-desktop);
-	height: var(--container-height-x-large);
+	width: var(--cw-desktop);
+	height: var(--ch-x-large);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
@@ -167,7 +149,6 @@ a:active {
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
-	animation: fadeIn 2.5s;
 }
 
 .container:before {
@@ -198,6 +179,7 @@ a:active {
 	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
+	animation: fadeIn 2.5s;
 }
 
 .full {
@@ -205,8 +187,8 @@ a:active {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: var(--container-width-desktop);
-	height: var(--container-height-xsmall);
+	width: var(--cw-desktop);
+	height: var(--ch-xsmall);
 	border-radius: var(--border-radius);
 	color: var(--text-color);
 	position: relative;
@@ -214,7 +196,6 @@ a:active {
 	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
-	animation: fadeIn 2.5s;
 }
 
 .full:before {
@@ -237,7 +218,7 @@ a:active {
 	align-items: center;
 	justify-content: center;
 	width: 42.5rem;
-	height: var(--container-height-small);
+	height: var(--ch-small);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
@@ -247,7 +228,6 @@ a:active {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2.5s;
 }
 
 .half:before {
@@ -270,7 +250,7 @@ a:active {
 	align-items: center;
 	justify-content: center;
 	width: 35rem;
-	height: var(--container-height-large);
+	height: var(--ch-large);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
@@ -280,7 +260,6 @@ a:active {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2.5s;
 }
 
 .one-quarter:before {
@@ -303,7 +282,7 @@ a:active {
 	justify-content: center;
 	align-items: center;
 	width: 50rem;
-	height: var(--container-height-large);
+	height: var(--ch-large);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
@@ -312,7 +291,6 @@ a:active {
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2.5s;
 }
 
 .three-quarter:before {
@@ -329,6 +307,29 @@ a:active {
 	margin: -20px;
 }
 
+/* Links */
+
+a {
+	color: var(--link-color);
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
 /* Buttons */
 
 .button {
@@ -337,8 +338,7 @@ a:active {
 	padding: 1rem;
 	border-radius: var(--border-radius);
 	background-color: var(--button-color);
-	color: var(--button-text-color);
-	animation: fadeIn 2.5s;
+	color: var(--text-color);
 }
 
 .button:hover {
@@ -352,13 +352,12 @@ a:active {
 	border-radius: var(--border-radius);
 	background-color: var(--button-color);
 	color: var(--button-text-color);
-	animation: fadeIn 2.5s;
 }
 
 .button-row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	margin-top: 2rem;
 }
 
 .container-footer {
@@ -367,53 +366,6 @@ a:active {
 	align-items: center;
 	text-align: center;
 	color: var(--text-color);
-}
-
-/* Images */
-
-#ecosystem {
-	width: 600px;
-	animation: fadeIn 2.5s;
-}
-
-#chain {
-	height: 50px;
-	animation: fadeIn 2.5s;
-}
-
-#product {
-	height: 35px;
-	margin: 10px;
-	animation: fadeIn 2.5s;
-}
-
-#hydro-drop {
-	width: 128px;
-	margin-top: 2rem;
-	animation: fadeIn 2.5s;
-}
-
-#partner {
-	width: 128px;
-	margin: 20px;
-	animation: fadeIn 2.5s;
-}
-
-#featured-on {
-	width: 256px;
-	margin: 20px;
-	animation: fadeIn 2.5s;
-}
-
-#exchange {
-	width: 128px;
-	margin: 20px;
-	animation: fadeIn 2.5s;
-}
-
-#icon {
-	width: 20px;
-	animation: fadeIn 2.5s;
 }
 
 /* FAQ */

@@ -36,4 +36,9 @@ import item from "../../json/landinglinks.json"
     justify-content: center;
     align-items: center;
 }
+
+#exchange {
+	width: 128px;
+	margin: 20px;
+}
 </style>

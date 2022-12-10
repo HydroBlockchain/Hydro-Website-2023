@@ -161,8 +161,6 @@
     footer {
         display: flex;
         justify-content: center;
-        animation: fadeIn 2.5s;
-        width: var(--container-width) auto;
         margin-bottom: 3rem;
     }
 
@@ -171,7 +169,7 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
-        width: var(--container-width-desktop);
+        width: var(--cw-desktop);
         height: 100px;
         background-color: var(--card-background);
         color: var(--text-color);

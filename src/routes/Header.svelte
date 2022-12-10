@@ -213,7 +213,6 @@
 	header {
 		display: flex;
 		justify-content: center;
-		animation: fadeIn 2.5s;
 		width: var(--container-width) auto;
 	}
 
@@ -291,12 +290,10 @@
 	width: 120px;
     height: 50px;
 	margin-right: 2rem;
-	animation: fadeIn 2.5s;
 	}
 
 	.header-button svg {
 	width: 25px;
 	height: 25px;
-	animation: fadeIn 2.5s;
 	}
 </style>
