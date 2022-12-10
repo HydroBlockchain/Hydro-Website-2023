@@ -323,4 +323,7 @@ section {
     height: 90px;
     margin-bottom: var(--margin-xs);
 }
+a:hover {
+    opacity: 0.5;
+}
 </style>

@@ -60,6 +60,7 @@ body {
 		--link-color: #eee;
 		/* Tiles, Banner & Button */
 		--button-color: rgba(255, 255, 255, 0.2);
+		--button-hover: #212124;
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
 		/* Gradient Background */
@@ -336,7 +337,6 @@ a:visited {
 }
 
 a:hover {
-	opacity: 0.5;
 	text-decoration: none;
 }
 
@@ -356,7 +356,8 @@ a:active {
 }
 
 .button:hover {
-	opacity: 0.5;
+	background-color: var(--button-hover);
+	opacity: 1 !important;
 }
 
 .button a {

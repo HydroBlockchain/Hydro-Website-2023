@@ -35,12 +35,16 @@ import item from "../../json/techlinks.json"
     margin: 20px;
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
 .choose-network {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: var(--fs-small);
-	color: var(--text-color);
+    color: var(--text-color);
 }
 </style>

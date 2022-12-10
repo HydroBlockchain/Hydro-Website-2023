@@ -81,12 +81,12 @@ import item from "../../json/techlinks.json"
 }
 
 .apple-button:hover {
-    background-color: #212124;
+    background-color: var(--button-hover);
     opacity: 1 !important;
 }
 
 .playstore-button:hover {
-    background-color: #212124;
+    background-color: var(--button-hover);
     opacity: 1 !important;
 }
 

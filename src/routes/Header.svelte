@@ -149,6 +149,9 @@
 </header>
 
 <style>
+	a:hover{
+		opacity: 0.5;
+	}
 	header {
 		display: flex;
 		flex-direction: column;
