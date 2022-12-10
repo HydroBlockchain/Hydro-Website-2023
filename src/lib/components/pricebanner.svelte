@@ -150,7 +150,7 @@ async function getPriceDataMOVR() {
     getPriceDataPOLY();
     getPriceDataCSC();
     getPriceDataMOVR();
-  }, 3000);
+  }, 60000);
 
   onMount(async () => {
     getPriceDataHydro();

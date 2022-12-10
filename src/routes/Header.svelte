@@ -1,7 +1,10 @@
 <script>
+	import Pricebanner from "$lib/components/pricebanner.svelte";
 </script>
 
 <header>
+	<Pricebanner/>
+	<div class="row">
 	<a href="/tech"
 		><div class="header-button" id="animated-border">
 			<svg
@@ -207,13 +210,21 @@
 			</div>
 		</div>
 	</a>
+</div>
+
 </header>
 
 <style>
 	header {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		width: var(--container-width) auto;
+	}
+	.row{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	.header-button {
