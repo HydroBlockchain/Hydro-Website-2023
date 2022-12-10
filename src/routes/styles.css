@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@300&family=Roboto&family=Roboto+Mono&display=swap');
 
 :root {
 	/* Font Family */
@@ -24,7 +24,7 @@
 	--ch-medium: 30rem;
 	--ch-small: 25rem;
 	--ch-xsmall: 20rem;
-	--ch-mini: 15rem;	
+	--ch-mini: 15rem;
 	/* Margins */
 	--margin-xl: 4rem;
 	--margin-l: 3rem;
@@ -63,17 +63,17 @@ body {
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
 		/* Gradient Background */
-		--backgound-color: linear-gradient(90deg,#1b2f5e,
-												 #015087,
-												 #004878,
-												 #002950);
+		--backgound-color: linear-gradient(90deg, #1b2f5e,
+				#015087,
+				#004878,
+				#002950);
 		/* Gradient Tiles */
-		--animated-bg: linear-gradient(-90deg,rgba(24, 79, 161, 0.25),
-											  rgba(0, 94, 157, 0.25),
-											  rgba(0, 106, 125, 0.25),
-											  rgba(9, 154, 152, 0.25),
-											  rgba(9, 23, 154, 0.25));
-		
+		--animated-bg: linear-gradient(-90deg, rgba(24, 79, 161, 0.25),
+				rgba(0, 94, 157, 0.25),
+				rgba(0, 106, 125, 0.25),
+				rgba(9, 154, 152, 0.25),
+				rgba(9, 23, 154, 0.25));
+
 	}
 }
 
@@ -92,16 +92,16 @@ body {
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.15);
 		/* Gradient Background */
-		--backgound-color: linear-gradient(90deg,#1b2f5e,
-												 #015087,
-												 #004878,
-												 #002950);
+		--backgound-color: linear-gradient(90deg, #1b2f5e,
+				#015087,
+				#004878,
+				#002950);
 		/* Gradient Tiles */
-		--animated-bg: linear-gradient(-90deg,rgba(24, 79, 161, 0.25),
-											  rgba(0, 94, 157, 0.25),
-											  rgba(0, 106, 125, 0.25),
-											  rgba(9, 154, 152, 0.25),
-											  rgba(9, 23, 154, 0.25));
+		--animated-bg: linear-gradient(-90deg, rgba(24, 79, 161, 0.25),
+				rgba(0, 94, 157, 0.25),
+				rgba(0, 106, 125, 0.25),
+				rgba(9, 154, 152, 0.25),
+				rgba(9, 23, 154, 0.25));
 	}
 }
 
