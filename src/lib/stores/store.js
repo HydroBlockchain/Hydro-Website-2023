@@ -1,5 +1,23 @@
 import { writable } from "svelte/store";
 
+//Coingecko endpoints
+const hydroEndpoint = `https://api.coingecko.com/api/v3/coins/hydro`;
+const ethEndpoint = `https://api.coingecko.com/api/v3/coins/ethereum`;
+const bscEndpoint = `https://api.coingecko.com/api/v3/coins/binancecoin`;
+const cscEndpoint = `https://api.coingecko.com/api/v3/coins/coinex-token`;
+const polyEndpoint = `https://api.coingecko.com/api/v3/coins/matic-network`;
+const movrEndpoint = `https://api.coingecko.com/api/v3/coins/moonriver`;
+
+//Bscscan endpoint
+const contractAddress = import.meta.env.VITE_HYDRO_CONTRACT_ADDRESS;
+const kvsAddress = import.meta.env.VITE_KVS_ADDRESS;
+// const apiKey = import.meta.env.BSCSCAN_API_KEY;
+const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=` + `${contractAddress}` + `&address=${kvsAddress}` + `&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9`;
+
+//Medium endpoint
+const mediumEndpoint = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed`;
+
+//Exported Pricedata
 export const priceData = writable({
     hydroPrice: 0,
     hydroChange: 0,
@@ -19,6 +37,7 @@ export const priceData = writable({
     movrChange: 0
 })
 
+//Exported medium data
 export const mediumData = writable({
     mediumTitleOne: [],
     mediumLinkOne: [],
@@ -28,10 +47,11 @@ export const mediumData = writable({
     mediumLinkThree: [],
 })
 
+//Fetch Data
 export const getData = () => {
 
     //fetch Hydro Price
-    fetch('https://api.coingecko.com/api/v3/coins/hydro')
+    fetch(hydroEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch hydro")
@@ -52,7 +72,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch ETH Price
-    fetch('https://api.coingecko.com/api/v3/coins/ethereum')
+    fetch(ethEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch ethereum")
@@ -70,7 +90,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch BSC Price
-    fetch('https://api.coingecko.com/api/v3/coins/binancecoin')
+    fetch(bscEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch bsc")
@@ -88,7 +108,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch Poly Price
-    fetch('https://api.coingecko.com/api/v3/coins/matic-network')
+    fetch(polyEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch Polygon")
@@ -106,7 +126,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch CSC Price
-    fetch('https://api.coingecko.com/api/v3/coins/coinex-token')
+    fetch(cscEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch Coinex")
@@ -124,7 +144,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch MOVR Price
-    fetch('https://api.coingecko.com/api/v3/coins/moonriver')
+    fetch(movrEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch Moonriver")
@@ -142,7 +162,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch HydroData
-    fetch('https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=0xf3DBB49999B25c9D6641a9423C7ad84168D00071&address=0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646&tag=latest&apikey=YKG6FZP98T89KFFPP5NS15Q5JX6QJQXJD9')
+    fetch(bscscanEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch Hydro BSCscan data")
@@ -159,7 +179,7 @@ export const getData = () => {
         }).catch(err => console.log(err))
 
     //fetch Medium Data
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed')
+    fetch(mediumEndpoint)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not Medium data")
@@ -183,6 +203,7 @@ export const getData = () => {
 
 }
 
+//Set interval of 1min and fetch data
 setInterval(getData, 60000)
 getData()
 
