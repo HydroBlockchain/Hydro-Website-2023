@@ -52,11 +52,11 @@ body {
 @media (prefers-color-scheme: dark) {
 	:root {
 		/* Text */
-		--logo-color: #fff;
-		--title-color: #85e1ff;
-		--text-color: #fff;
+		--logo-color: #eee;
+		--title-color: #eee;
+		--text-color: #eee;
 		--text-color-alt: #85e1ff;
-		--link-color: #85e1ff;
+		--link-color: #eee;
 		/* Tiles, Banner & Button */
 		--button-color: rgba(255, 255, 255, 0.2);
 		--button-hover: #212124;
@@ -73,7 +73,6 @@ body {
 				rgba(0, 106, 125, 0.25),
 				rgba(9, 154, 152, 0.25),
 				rgba(9, 23, 154, 0.25));
-
 	}
 }
 

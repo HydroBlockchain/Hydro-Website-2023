@@ -1,5 +1,5 @@
 <script>
-import drop from "$lib/images/ticker-logo/blue-drop.svg";
+import drop from "$lib/images/ticker-logo/hydro-drop.svg";
 </script>
 <div class="full" id="animated-border">
     <img src={drop} alt="hydro-logo" id="hydro-drop"/>

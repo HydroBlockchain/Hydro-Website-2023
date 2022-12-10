@@ -1,5 +1,5 @@
 <script>
-import hydroDrop from "$lib/images/ticker-logo/blue-drop.svg";
+import hydroDrop from "$lib/images/ticker-logo/hydro-drop.svg";
 import ethLogo from "$lib/images/ticker-logo/ethereum.svg";
 import bscLogo from "$lib/images/ticker-logo/bsc.svg";
 import polyLogo from "$lib/images/ticker-logo/polygon.svg";
