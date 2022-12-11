@@ -2,7 +2,6 @@
 import item from "../../json/landinglinks.json"
 </script>
 <div class="full" id="animated-border">
-    <div class="title">Featured on</div>
     <div class="partners">
         <a href="{item[9].link}" target="_blank" rel="noopener noreferrer">
             <svg id="featured-on" viewBox="0 0 601 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,11 +36,6 @@ import item from "../../json/landinglinks.json"
 <style lang="scss">
 .full {
     height: var(--ch-mini);
-}
-
-.title {
-    font-size: var(--font-size-large);
-    color: var(--title-color);
 }
 
 .partners {

@@ -3,7 +3,6 @@
 import item from "../../json/landinglinks.json"
 </script>
 <div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
-    <div class="title">Exchanges</div>
     <div class="exchanges">
         <a href="{item[4].link}" target="_blank" rel="noopener noreferrer">
             <svg id="exchange" viewBox="0 0 1202 335" fill="none" xmlns="http://www.w3.org/2000/svg">

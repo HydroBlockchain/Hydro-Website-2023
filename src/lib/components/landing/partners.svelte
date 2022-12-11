@@ -4,7 +4,6 @@ import sparkpoint from "$lib/images/partners/sparkpoint.png";
 import item from "../../json/landinglinks.json"
 </script>
 <div class="half" id="animated-border">
-    <div class="title">Partners</div>
     <div class="partners">
         <a href="{item[0].link}" target="_blank" rel="noopener noreferrer">
             <svg id="partner" viewBox="0 0 1188 201" fill="none" xmlns="http://www.w3.org/2000/svg">
