@@ -46,7 +46,6 @@
     height: var(--ch-mini);
     position: relative;
     text-align: center;
-    background-color: var(--card-background);
 }
 
 a {

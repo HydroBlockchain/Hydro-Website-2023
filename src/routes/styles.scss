@@ -162,7 +162,7 @@ body {
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1, rgba(0, 17, 127, 0.1), rgba(182, 46, 255, 0.1), rgba(25, 151, 254, 0.1), 20s);
+	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
 }
 
 .container:before {
