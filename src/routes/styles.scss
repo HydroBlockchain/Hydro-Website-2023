@@ -34,6 +34,7 @@
 	--margin-xs: 0.5rem;
 	//Misc
 	--border-radius: 7px;
+	--transparent: rgba(255, 255, 255, 0);
 }
 
 body {
@@ -201,7 +202,7 @@ body {
     @include backlight(1px, 1px, 30px, 1, #23daffa2, #7b0fff88, #0f93ffb0, 15s);
 }
 
-.banner {
+.banner{
     position: relative;
     text-align: center;
     background-color: var(--card-background);
@@ -426,6 +427,18 @@ a:active {
 	justify-content: flex-start;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+}
+
+.red {
+    display: flex;
+    margin-left: 3px;
+    color: #f56a6a !important
+}
+
+.green {
+    display: flex;
+    margin-left: 3px;
+    color: #a6ec64 !important
 }
 
 /* Responsive */

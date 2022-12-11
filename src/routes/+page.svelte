@@ -1,7 +1,7 @@
 <script>
     //Components
     import Medium from "$lib/components/landing/medium.svelte";
-    import Introduction from "$lib/components/landing/introduction.svelte";
+    import Introduction from "$lib/components/landing/pricewidget.svelte";
     import Roadmap from "$lib/components/landing/roadmap.svelte";
     import Hero from "$lib/components/landing/hero.svelte";
     import Partners from "$lib/components/landing/partners.svelte";

@@ -415,18 +415,6 @@ let coinNameMOVR = "MOVR";
     height: 32px;
 }
 
-.red {
-    display: flex;
-    margin-left: 3px;
-    color: #f56a6a !important
-}
-
-.green {
-    display: flex;
-    margin-left: 3px;
-    color: #a6ec64 !important
-}
-
 @keyframes scroll {
     0% {
         transform: translateX(0);
