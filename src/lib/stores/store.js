@@ -172,10 +172,16 @@ export const getData = () => {
 export const mediumData = writable({
     mediumTitleOne: [],
     mediumLinkOne: [],
+    mediumImgOne: [],
+    mediumPubOne: [],
     mediumTitleTwo: [],
     mediumLinkTwo: [],
+    mediumImgTwo: [],
+    mediumPubTwo: [],
     mediumTitleThree: [],
     mediumLinkThree: [],
+    mediumImgThree: [],
+    mediumPubThree: [],
 })
 
 //Medium endpoint
@@ -195,12 +201,21 @@ fetch(mediumEndpoint)
     mediumData.update(current => {
         return {
             ...current,
+            //article 1
             mediumTitleOne: data.items[0].title,
             mediumLinkOne: data.items[0].link,
+            mediumImgOne: data.items[0].thumbnail,
+            mediumPubOne: data.items[0].pubDate,
+            //article 2
             mediumTitleTwo: data.items[1].title,
             mediumLinkTwo: data.items[1].link,
+            mediumImgTwo: data.items[1].thumbnail,
+            mediumPubTwo: data.items[1].pubDate,
+            //article 3
             mediumTitleThree: data.items[2].title,
-            mediumLinkThree: data.items[2].link
+            mediumLinkThree: data.items[2].link,
+            mediumImgThree: data.items[2].thumbnail,
+            mediumPubThree: data.items[2].pubDate,
         }
     })
 }).catch(err => console.log(err))
@@ -211,4 +226,3 @@ fetch(mediumEndpoint)
 setInterval(getData, 60000);
 getMedium();
 getData();
-
