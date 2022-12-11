@@ -64,7 +64,7 @@ body {
 		--card-background: rgba(255, 255, 255, 0.1);
 		--banner-background: rgba(255, 255, 255, 0.1);
 		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #1b3bc8,#0066b0,#073675);
+		--backgound-color: linear-gradient(90deg, #1b3bc8, #0066b0, #073675);
 		//Gradient Tiles
 		--shimmer: linear-gradient(270deg, #0EEAFF, #302ae0, #15A9FA, #0050c9);
 		--animated-bg: rgba(255, 255, 255, 0.1);
@@ -87,10 +87,10 @@ body {
 		--card-background: rgba(255, 255, 255, 0.1);
 		--banner-background: rgba(255, 255, 255, 0.1);
 		//Gradient Background
-		--backgound-color: linear-gradient(180deg, #274a5c, #005b9c, #1c3f9f, #101e58);
+		--backgound-color: linear-gradient(90deg, #1b3bc8, #0066b0, #073675);
 		//Gradient Tiles
-		--shimmer: linear-gradient(270deg, #5bc8ffb9, #3b0fff88, #16ecff67, #023ca0c6, #1466a592);
-		--animated-bg: rgba(255, 255, 255, 0.05);
+		--shimmer: linear-gradient(270deg, #0EEAFF, #302ae0, #15A9FA, #0050c9);
+		--animated-bg: rgba(255, 255, 255, 0.1);
 	}
 }
 
@@ -130,6 +130,16 @@ body {
 
 	100% {
 		background-position: 0% 50%;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -184,7 +194,7 @@ body {
 	background: var(--animated-bg);
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
-	animation: gradient 20s ease infinite;
+	animation: fadeIn 3s;
 }
 
 .header-button,
@@ -196,11 +206,17 @@ body {
 	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
+.header-button,
+.header-logo {
+	animation: fadeIn 3s;
+}
+
 .banner {
 	position: relative;
 	text-align: center;
 	background-color: var(--card-background);
 	@include backlight(2vw, 2vw, 2vw, 1);
+	animation: fadeIn 3s;
 }
 
 .team-card,
@@ -299,6 +315,7 @@ body {
 	margin-right: 15px;
 	color: var(--text-color);
 	@include backlight(5vw, 5vw, 5vw, 1);
+	animation: fadeIn 3s;
 }
 
 .one-quarter:before {
@@ -331,6 +348,7 @@ body {
 	margin-left: 15px;
 	color: var(--text-color);
 	@include backlight(5vw, 5vw, 5vw, 1);
+	animation: fadeIn 3s;
 }
 
 .three-quarter:before {
