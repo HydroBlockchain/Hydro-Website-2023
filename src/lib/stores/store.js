@@ -223,6 +223,6 @@ fetch(mediumEndpoint)
 }
 
 //Set interval of 1min for price data and fetch data
-setInterval(getData, 60000);
+setInterval(getData, 1800000);
 getMedium();
 getData();
