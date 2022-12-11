@@ -22,7 +22,7 @@ import { priceData } from "$lib/stores/store";
 
                 
                 
-        <div class="tagline">Trade on the Hydroswap, a decentralized AMM!</div>
+        <div class="tagline">Trade on the Hydroswap, our decentralized AMM!</div>
         
     <div class="hydroswap">
         <div class="hydro-dashboard">
