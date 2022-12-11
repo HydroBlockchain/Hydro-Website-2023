@@ -33,7 +33,7 @@ import { mediumData } from "$lib/stores/store";
     </div>
 </div>
 
-<style>
+<style lang=scss>
 .three-quarter {
     height: 15rem;
 }

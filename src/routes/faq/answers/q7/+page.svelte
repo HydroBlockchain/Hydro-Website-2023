@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<div class="container">
+	<div class="container" id="animated-border">
         How to stake Hydro and what are the rewards?
         <br><br>
         Answer, bla bla

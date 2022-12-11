@@ -1,8 +1,9 @@
 <script>
-
 </script>
+
 <div class="one-quarter" id="animated-border">Introduction</div>
-<style>
+
+<style lang="scss">
 .one-quarter {
     height: var(--ch-mini);
 }

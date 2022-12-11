@@ -214,18 +214,20 @@ import ContactUs from "$lib/components/team/contact-us.svelte";
         <ContactUs/>
     
     </section>
-<style>
+<style lang="scss">
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: var(--cw-desktop);
+    animation: fadeIn 2.5s;
 }
 .team-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: var(--cw-desktop);
+    animation: fadeIn 2.5s;
 }
 
 .team-card {
@@ -255,7 +257,6 @@ section {
     box-shadow: inset 0 0 2000px var(--card-background);
     filter: blur(10px);
     margin: -20px;
-    
 }
 
 .team-column {
@@ -316,7 +317,6 @@ section {
 	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
-    animation: fadeIn 2.5s;
 }
 
 #hydro-drop svg{

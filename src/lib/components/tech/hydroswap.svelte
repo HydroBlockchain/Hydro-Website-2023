@@ -73,9 +73,7 @@ import {
     <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
 </div>
 
-<style>
-/* Hydroswap */
-
+<style lang="scss">
 .tagline {
     font-size: 12px;
     margin-top: 1rem;

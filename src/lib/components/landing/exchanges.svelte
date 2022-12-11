@@ -66,9 +66,9 @@ import item from "../../json/landinglinks.json"
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .half {
-    height: var(--container-height-mini);
+    height: var(--ch-mini);
 }
 
 .exchanges {

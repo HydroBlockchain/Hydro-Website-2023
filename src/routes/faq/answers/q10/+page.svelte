@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<div class="container">
+	<div class="container" id="animated-border">
         Did Hydro have any ICO, or received any investment?
         <br><br>
         Answer, bla bla

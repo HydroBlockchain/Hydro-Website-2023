@@ -53,7 +53,7 @@ import item from "../../json/techlinks.json"
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .three-quarter {
     margin-right: 15px;
     margin-left: 0px;

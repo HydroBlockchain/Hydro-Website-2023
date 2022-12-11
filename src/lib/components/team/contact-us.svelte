@@ -8,13 +8,13 @@
     </div>
 </div>
 
-<style>
+<style lang="scss">
+.tagline {
+    font-size: var(--fs-medium);
+}
+
 .one-quarter,
 .three-quarter {
     height: var(--ch-mini);
-}
-
-.tagline {
-    font-size: var(--fs-medium);
 }
 </style>

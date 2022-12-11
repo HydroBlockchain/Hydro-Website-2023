@@ -62,8 +62,7 @@ import item from "../../json/techlinks.json"
     <div class="choose-network">Choose a Network to add Hydro Tokens on by clicking a logo above!</div>
 </div>
 
-<style>
-
+<style lang="scss">
     #token-tool{
         height: 40px;
     }

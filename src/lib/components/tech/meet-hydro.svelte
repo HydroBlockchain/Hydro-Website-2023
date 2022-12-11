@@ -17,7 +17,14 @@
     </div>
 </div>
 
-<style>
+<style lang="scss">
+#animated-border{
+    animation: fadeIn 2.5s;
+}
+.one-quarter {
+    height: var(--ch-medium);
+}
+
 .information {
     display: flex;
     justify-content: center;

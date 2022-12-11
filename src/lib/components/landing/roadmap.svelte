@@ -75,7 +75,7 @@
     </div>
 </div>
 
-<style>
+<style lang="scss">
 #progress {
     justify-content: flex-end;
     align-items: end;
@@ -83,7 +83,8 @@
     font-size: 10px;
 }
 
-#what, #what-small {
+#what,
+#what-small {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -109,7 +110,6 @@
     flex-direction: row;
 }
 
-
 .half-card-structure {
     display: flex;
     flex-direction: column;
@@ -123,7 +123,6 @@
     justify-content: space-evenly;
     height: 100%;
 }
-
 
 .row {
     display: flex;

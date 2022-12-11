@@ -7,7 +7,7 @@
     </svelte:head>
 
     <section>
-        <div class="container">
+        <div class="container" id="animated-border">
             <div class="faq-title">What is Aegir wallet?</div>
             <br><br>
             <div class="faq-answer">

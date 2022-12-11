@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<div class="container">
+	<div class="container" id="animated-border">
         How to add Hydro Token in a Web3 wallet?
         <br><br>
         Answer, bla bla

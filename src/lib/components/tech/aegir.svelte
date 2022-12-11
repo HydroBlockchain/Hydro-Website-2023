@@ -53,8 +53,7 @@ import item from "../../json/techlinks.json"
 
 </div>
 
-<style>
-
+<style lang="scss">
 .tagline{
     font-size: 12px;
     margin-top: 1rem;

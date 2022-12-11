@@ -7,7 +7,7 @@
 </svelte:head>
 
 <section>
-	<div class="container">
+	<div class="container" id="animated-border">
         How many percent of total supply does the Team hold?
         <br><br>
         Answer, bla bla

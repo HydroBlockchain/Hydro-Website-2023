@@ -34,7 +34,11 @@ import item from "../../json/landinglinks.json"
     </div>
 </div>
 
-<style>
+<style lang="scss">
+.full {
+    height: var(--ch-mini);
+}
+
 .title {
     font-size: var(--font-size-large);
     color: var(--title-color);

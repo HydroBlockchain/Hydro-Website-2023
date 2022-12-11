@@ -41,7 +41,14 @@
         </div>
     </section>
 
-<style>
+<style lang="scss">
+.container {
+    height: var(--ch-mini);
+    position: relative;
+    text-align: center;
+    background-color: var(--card-background);
+}
+
 a {
     padding: 1rem;
 }
