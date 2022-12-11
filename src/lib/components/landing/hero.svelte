@@ -6,9 +6,9 @@ import hydroDrop from "$lib/images/ticker-logo/hydro-drop.svg";
     <div class="intro-hero">
         <div class="hero-column">
             <div class="hero-text">
-            Web3 Architects building the future of GameFi. <br>
-            We are DeFi, We are Hydro. 
-        </div>
+                Web3 Architects building the future of GameFi. <br>
+                We are DeFi, We are Hydro.
+            </div>
         </div>
 
         <img src={hydroDrop} alt="ecosystem" id="intro-chain"/>
@@ -33,13 +33,13 @@ import hydroDrop from "$lib/images/ticker-logo/hydro-drop.svg";
     height: 300px;
 }
 
-.hero-column{
+.hero-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.hero-text{
+.hero-text {
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
