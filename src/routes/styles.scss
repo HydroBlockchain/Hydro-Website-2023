@@ -101,39 +101,8 @@ body {
 
 
 //Keyframes
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
 
-	50% {
-		background-position: 100% 50%;
-	}
 
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
 
 // Gradient Backlight
 @mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $colorC, $duration) {
@@ -156,6 +125,19 @@ body {
         background-size: 200% 200%;
         animation: gradient $duration ease infinite;
     }
+	@keyframes gradient {
+		0% {
+			background-position: 0% 50%;
+		}
+	
+		50% {
+			background-position: 100% 50%;
+		}
+	
+		100% {
+			background-position: 0% 50%;
+		}
+	}
 }
 
 //Containers
@@ -254,7 +236,6 @@ body {
 	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
-	animation: fadeIn 2.5s !important;
 	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 15s);
 }
 
@@ -288,7 +269,6 @@ body {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2.5s !important;
 	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 15s);
 }
 
@@ -322,7 +302,6 @@ body {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2.5s !important;
 	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 15s);
 }
 

@@ -155,7 +155,6 @@
 
 #intro-chain{
     width: 800px;
-    animation: fadeIn 2.5s;
 }
 
 .full {

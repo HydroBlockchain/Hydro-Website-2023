@@ -18,9 +18,6 @@
 </div>
 
 <style lang="scss">
-#animated-border{
-    animation: fadeIn 2.5s;
-}
 .one-quarter {
     height: var(--ch-medium);
 }

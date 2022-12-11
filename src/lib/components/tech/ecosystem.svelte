@@ -53,6 +53,5 @@
 #ecosystem {
     width: 600px;
     height: auto;
-    animation: fadeIn 2.5s;
 }
 </style>
