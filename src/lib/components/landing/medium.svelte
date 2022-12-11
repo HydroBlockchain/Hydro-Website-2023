@@ -1,36 +1,74 @@
 <script>
 // @ts-nocheck
 import { mediumData } from "$lib/stores/store";
+import Time from "svelte-time";
 </script>
 
 <div class="three-quarter" id="animated-border">
+    
     <div class="blog-posts">
 
         <a id="blog-link" href ="{$mediumData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">
             <div class="blog-title" id="animated-border">
                 <div class="img-link">
-                    <img id="medium-thumbnail" src="{$mediumData.mediumImgOne}" alt="">
                     {$mediumData.mediumTitleOne} </div>
-                <div class="pub-date">{$mediumData.mediumPubOne}</div>
+                <div class="pub-date">
+                    <Time timestamp={$mediumData.mediumPubOne} format="YY/MM/DD" />
+                    </div>
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkTwo}" target="_blank" rel="noopener noreferrer">
             <div class="blog-title" id="animated-border">
                 <div class="img-link">
-                    <img id="medium-thumbnail" src="{$mediumData.mediumImgTwo}" alt="">
                     {$mediumData.mediumTitleTwo} </div>
-                <div class="pub-date">{$mediumData.mediumPubTwo}</div>
+                <div class="pub-date">
+                    <Time timestamp={$mediumData.mediumPubTwo} format="YY/MM/DD" />
+                    </div>
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkThree}" target="_blank" rel="noopener noreferrer">
             <div class="blog-title" id="animated-border">
                 <div class="img-link">
-                    <img id="medium-thumbnail" src="{$mediumData.mediumImgTwo}" alt="">
                     {$mediumData.mediumTitleThree} </div>
-                <div class="pub-date">{$mediumData.mediumPubThree}</div>
+                <div class="pub-date">
+                    <Time timestamp={$mediumData.mediumPubThree} format="YY/MM/DD" />
+                    </div>
             </div></a>
 
     </div>
+
+    <div class="blog-posts">
+
+        <a id="blog-link" href ="{$mediumData.mediumLinkFour}" target="_blank" rel="noopener noreferrer">
+            <div class="blog-title" id="animated-border">
+                <div class="img-link">
+                    {$mediumData.mediumTitleFour} </div>
+                <div class="pub-date">
+                    <Time timestamp={$mediumData.mediumPubFour} format="YY/MM/DD" />
+                    </div>
+            </div></a>
+
+        <a id="blog-link" href ="{$mediumData.mediumLinkFive}" target="_blank" rel="noopener noreferrer">
+            <div class="blog-title" id="animated-border">
+                <div class="img-link">
+                    {$mediumData.mediumTitleFive} </div>
+                <div class="pub-date">
+                    <Time timestamp={$mediumData.mediumPubFive} format="YY/MM/DD" />
+                    </div>
+            </div></a>
+
+        <a id="blog-link" href ="{$mediumData.mediumLinkSix}" target="_blank" rel="noopener noreferrer">
+            <div class="blog-title" id="animated-border">
+                <div class="img-link">
+                    {$mediumData.mediumTitleSix} </div>
+                <div class="pub-date">
+                    <Time timestamp={$mediumData.mediumPubSix} format="YY/MM/DD" />
+                    </div>
+            </div></a>
+
+    </div>
+
+
 </div>
 
 <style lang=scss>
@@ -40,26 +78,26 @@ import { mediumData } from "$lib/stores/store";
 
 .blog-posts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .blog-title {
     display: flex;
     background-color: var(--card-background);
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 0.5rem;
     border-radius: var(--border-radius);
-    width: 42.5rem;
+    width: 200px;
+    height: 50px;
     flex-direction: row;
-    text-align: center;
-    justify-content: space-between;
 }
 
 .img-link {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
+    text-align: start;
+    font-size: 12px;
 }
 
 .pub-date {
@@ -68,23 +106,13 @@ import { mediumData } from "$lib/stores/store";
 }
 
 #blog-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     color: var(--link-color);
-    font-size: var(--fs-large);
+    font-size: 10px;
     width: 100%;
 }
 
 a:hover {
     opacity: 0.5;
-}
-
-#medium-thumbnail {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--border-radius);
-    margin-right: 1rem;
 }
 </style>
