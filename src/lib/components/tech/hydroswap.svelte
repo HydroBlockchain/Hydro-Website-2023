@@ -7,6 +7,8 @@ import {
 
 <div class="one-quarter" id="animated-border">
 
+    <div class="dashboard-slot-logo">
+
     <svg id="hydroswap-logo" viewBox="0 0 316 54" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8.09082 16.9438V0.75H0.625V42H8.09082V21.0259C8.37728 20.6499 8.69059 20.3097 9.03076 20.0054C9.38883 19.701 9.78271 19.4414 10.2124 19.2266C10.6779 18.9759 11.1971 18.7879 11.77 18.6626C12.3429 18.5373 12.9606 18.4746 13.623 18.4746C14.4824 18.4746 15.2523 18.591 15.9326 18.8237C16.613 19.0386 17.1948 19.3787 17.6782 19.8442C18.1616 20.3097 18.5286 20.9185 18.7793 21.6704C19.0479 22.4224 19.1821 23.3175 19.1821 24.356V42H26.6479V24.4097C26.6479 22.2791 26.3883 20.4619 25.8691 18.958C25.3678 17.4362 24.6606 16.1919 23.7476 15.2251C22.8345 14.2583 21.7424 13.5511 20.4712 13.1035C19.2 12.638 17.8035 12.4053 16.2817 12.4053C15.2433 12.4053 14.2586 12.5575 13.3276 12.8618C12.3966 13.1662 11.5462 13.5959 10.7764 14.1509C10.2751 14.509 9.79167 14.9297 9.32617 15.4131C8.87858 15.8786 8.4668 16.3888 8.09082 16.9438Z" fill="var(--logo-color)" class="svg-elem-1"></path>
         <path d="M38.2495 53.7358C39.7534 53.7358 41.0514 53.4852 42.1436 52.9839C43.2536 52.4826 44.1935 51.8649 44.9634 51.1309C45.7332 50.3968 46.3688 49.6001 46.8701 48.7407C47.3893 47.8813 47.8101 47.0846 48.1323 46.3506L62.876 12.9424H54.6313L47.998 30.0225L46.897 32.9229L46.0913 29.9688L39.4312 12.9424H31.2671L43.5669 40.7646L41.8481 43.9604C41.6333 44.3543 41.4453 44.6587 41.2842 44.8735C41.141 45.0884 40.9082 45.4106 40.5859 45.8403C40.2637 46.27 39.8698 46.6639 39.4043 47.022C38.9567 47.3979 38.4375 47.5859 37.8467 47.5859C37.5602 47.5859 37.1753 47.568 36.6919 47.5322C36.2264 47.5143 35.8415 47.5054 35.5371 47.5054L34.624 53.1987C35.2686 53.3778 35.8504 53.512 36.3696 53.6016C36.9067 53.6911 37.5334 53.7358 38.2495 53.7358Z" fill="var(--logo-color)" class="svg-elem-2"></path>
@@ -19,48 +21,71 @@ import {
         <path d="M264.99 53.1719H272.456V39.4756C272.796 39.8516 273.154 40.1917 273.53 40.4961C273.906 40.8005 274.3 41.078 274.712 41.3286C275.41 41.7225 276.162 42.0179 276.968 42.2148C277.791 42.4297 278.687 42.5371 279.653 42.5371C281.479 42.5371 283.1 42.1611 284.514 41.4092C285.929 40.6572 287.119 39.6188 288.086 38.2939C289.035 36.987 289.751 35.4294 290.234 33.6211C290.736 31.8128 290.986 29.8524 290.986 27.7397V27.1758C290.986 24.9736 290.736 22.9684 290.234 21.1602C289.751 19.334 289.026 17.7674 288.059 16.4604C287.092 15.1714 285.902 14.1777 284.487 13.4795C283.073 12.7633 281.444 12.4053 279.6 12.4053C278.704 12.4053 277.863 12.5037 277.075 12.7007C276.305 12.8797 275.598 13.1393 274.954 13.4795C274.417 13.766 273.915 14.1061 273.45 14.5C272.984 14.876 272.555 15.3057 272.161 15.7891L271.892 12.9424H264.99V53.1719ZM283.521 27.1758V27.7397C283.521 28.9393 283.413 30.0762 283.198 31.1504C282.983 32.2067 282.643 33.1377 282.178 33.9434C281.712 34.749 281.104 35.3846 280.352 35.8501C279.618 36.3156 278.722 36.5483 277.666 36.5483C277.004 36.5483 276.404 36.4857 275.867 36.3604C275.33 36.2171 274.855 36.0202 274.443 35.7695C274.014 35.501 273.629 35.1787 273.289 34.8027C272.966 34.4268 272.689 34.006 272.456 33.5405V21.4019C272.707 20.9006 273.002 20.4619 273.342 20.0859C273.7 19.71 274.112 19.3966 274.578 19.146C274.989 18.9312 275.446 18.77 275.947 18.6626C276.449 18.5373 277.004 18.4746 277.612 18.4746C278.669 18.4746 279.564 18.6984 280.298 19.146C281.05 19.5936 281.667 20.2023 282.151 20.9722C282.616 21.7599 282.957 22.6909 283.171 23.7651C283.404 24.8215 283.521 25.9583 283.521 27.1758Z" fill="var(--logo-color)" class="svg-elem-9"></path>
         <path d="M305.461 37.6763C305.461 39.0549 305.927 40.2096 306.858 41.1406C307.789 42.0716 309.051 42.5371 310.645 42.5371C312.22 42.5371 313.473 42.0806 314.404 41.1675C315.353 40.2365 315.828 39.0728 315.828 37.6763C315.828 36.2798 315.362 35.1071 314.431 34.1582C313.518 33.2093 312.256 32.7349 310.645 32.7349C309.015 32.7349 307.744 33.2183 306.831 34.1851C305.918 35.134 305.461 36.2977 305.461 37.6763Z" fill="var(--logo-color)" class="svg-elem-10"></path>
     </svg>
-
-    <div class="tagline">Trade on the Hydroswap, our decentralized AMM!</div>
+</div>
 
     <div class="hydroswap">
+        <div class="row">
         <div class="hydro-dashboard">
 
-            <div class="dashboard-slot" id="price">
+            <div class="dashboard-slot" id="animated-border">
                 <div class="price">Price</div>
                 <div class="currency">{$priceData.hydroPrice}
-                    <div class="currency-class">USD</div>
+                    
                 </div>
+                <div class="currency-class">USD</div>
             </div>
 
-            <div class="dashboard-slot" id="marketcap">
+            <div class="dashboard-slot" id="animated-border">
                 <div class="price">Marketcap</div>
                 <div class="currency">{$priceData.hydroMC}
-                    <div class="currency-class">USD</div>
+                    
                 </div>
+                <div class="currency-class">USD</div>
             </div>
 
-            <div class="dashboard-slot" id="volume">
+            <div class="dashboard-slot" id="animated-border">
+                <div class="price">Change 24/7</div>
+                <div class="procentage">
+                    {#if $priceData.hydroChange > 0}
+                    <div class="green"> {$priceData.hydroChange} %</div>
+                    {:else if 0 > $priceData.hydroChange}
+                    <div class="red"> {$priceData.hydroChange} %</div>
+                    {:else}
+                    {$priceData.hydroChange}
+                    {/if}
+                </div>
+            </div>
+        </div>
+
+            <div class="hydro-dashboard">
+
+            <div class="dashboard-slot" id="animated-border">
                 <div class="price">Vol 24/7</div>
                 <div class="currency">{$priceData.hydroVolume}
-                    <div class="currency-class">USD</div>
+                    
                 </div>
+                <div class="currency-class">USD</div>
             </div>
 
-            <div class="dashboard-slot" id="staked">
+            <div class="dashboard-slot" id="animated-border">
                 <div class="price">Staked</div>
                 <div class="currency">{$priceData.hydroStaked}
-                    <div class="currency-class">HYDRO</div>
+                    
                 </div>
+                <div class="currency-class">HYDRO</div>
             </div>
 
-            <div class="dashboard-slot" id="supply">
-                <div class="price">Circulating Supply</div>
+            <div class="dashboard-slot" id="animated-border">
+                <div class="price">Circ Supply</div>
                 <div class="currency">{$priceData.hydroSupply}
-                    <div class="currency-class">HYDRO</div>
+                    
                 </div>
+                <div class="currency-class">HYDRO</div>
             </div>
 
         </div>
+    </div>
+
         <div class="button-row">
             <a href="{item[1].link}" target="_blank" rel="noopener noreferrer">
                 <div class="button" id="hydroswap-buttons">Swap</div></a>
@@ -74,6 +99,13 @@ import {
 </div>
 
 <style lang="scss">
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 .tagline {
     font-size: 12px;
     margin-top: 1rem;
@@ -95,22 +127,37 @@ import {
     color: var(--text-color);
 }
 
+.hydroswap{
+    display: flex;
+    flex-direction: row;
+}
+
 .hydro-dashboard {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
-    width: 450px;
     color: var(--text-color);
 }
 
 .dashboard-slot {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0.5rem;
+    flex-direction: column;
     justify-content: space-between;
+    width: 200px;
+    height: 40px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.dashboard-slot-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 450px;
+    height: 80px;
+    margin-top: 1rem;
 }
 
 .cg-credit {
@@ -122,12 +169,29 @@ import {
     font-size: var(--fs-mini);
 }
 
+.cg-credit a{
+    color: rgba(255, 255, 255, 0.44) !important;
+}
+
+.cg-credit a:hover{
+    color: rgb(255, 255, 255) !important;
+    cursor: pointer;
+}
+
 .price {
     display: flex;
     justify-content: flex-start;
+    font-size: 9px;
 }
 
-.currency {
+.currency-class{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 9px;
+    
+}
+
+.currency, .procentage {
     display: flex;
     justify-content: flex-end;
 }
@@ -146,20 +210,18 @@ import {
 }
 
 #hydroswap-logo {
-    margin-top: 3rem;
-    margin-bottom: 0rem;
-    height: 45px;
+    height: 32px;
 }
 
 .button-row {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
 #hydroswap-buttons {
-    width: 100px;
-    margin: 1rem;
+    width: 110px;
+    margin: 0.8rem;
 }
 </style>
