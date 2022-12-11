@@ -239,8 +239,8 @@
 
 .progress-moved .progress-bar2 {
   width: 85%; 
-  background-color:rgba(255, 255, 255, 0.75);  
-  animation: progressAnimation 6s;
+  background-color:rgba(255, 255, 255, 0.65);  
+  animation: progressAnimation 3s;
 }
 
 @keyframes progressAnimation {
