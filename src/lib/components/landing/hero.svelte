@@ -1,10 +1,17 @@
 <script>
-import ecosystem from "$lib/images/ecosystem.svg";
+import hydroDrop from "$lib/images/ticker-logo/hydro-drop.svg";
 </script>
 
 <div class="full" id="animated-border">
     <div class="intro-hero">
-        <img src={ecosystem} alt="ecosystem" id="intro-chain"/>
+        <div class="hero-column">
+            <div class="hero-text">
+            Web3 Architects building the future of GameFi. <br>
+            We are DeFi, We are Hydro. 
+        </div>
+        </div>
+
+        <img src={hydroDrop} alt="ecosystem" id="intro-chain"/>
     </div>
 </div>
 
@@ -18,10 +25,24 @@ import ecosystem from "$lib/images/ecosystem.svg";
     flex-direction: row;
     width: 100%;
     margin: 1rem;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #intro-chain {
-    width: 800px;
+    width: 300px;
+    height: 300px;
+}
+
+.hero-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-left: 10rem;
 }
 </style>
