@@ -53,6 +53,7 @@ body {
 	:root {
 		/* Text */
 		--logo-color: #eee;
+		--logo-color-alt: rgba(255, 255, 255, 0.4);
 		--title-color: #eee;
 		--text-color: #eee;
 		--text-color-alt: #85e1ff;
