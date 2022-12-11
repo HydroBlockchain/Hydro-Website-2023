@@ -44,7 +44,7 @@ body {
 	color: var(--color-text);
 	background: var(--backgound-color);
 	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
+	animation: gradient 10s ease infinite;
 	background-attachment: fixed;
 }
 
@@ -64,11 +64,10 @@ body {
 		--card-background: rgba(255, 255, 255, 0.1);
 		--banner-background: rgba(255, 255, 255, 0.1);
 		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #2c1c5f,
-				#0f507f,
-				#252e63);
+		--backgound-color: linear-gradient(90deg, #1b3bc8,#0066b0,#073675);
 		//Gradient Tiles
-		--animated-bg: rgba(255, 255, 255, 0.05);
+		--shimmer: linear-gradient(270deg, #0EEAFF, #302ae0, #15A9FA, #0050c9);
+		--animated-bg: rgba(255, 255, 255, 0.1);
 	}
 }
 
@@ -85,48 +84,41 @@ body {
 		//Tiles, Banner & Button
 		--button-color: rgba(255, 255, 255, 0.2);
 		--button-hover: #212124;
-		--card-background: rgba(255, 255, 255, 0);
-		--banner-background: rgba(255, 255, 255, 0.15);
+		--card-background: rgba(255, 255, 255, 0.1);
+		--banner-background: rgba(255, 255, 255, 0.1);
 		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #2c1c5f,
-				#0f507f,
-				#252e63);
+		--backgound-color: linear-gradient(180deg, #274a5c, #005b9c, #1c3f9f, #101e58);
 		//Gradient Tiles
-		--animated-bg: linear-gradient(-90deg, rgba(61, 139, 255, 0.2),
-				rgba(0, 153, 255, 0.2),
-				rgba(0, 217, 255, 0.2));
+		--shimmer: linear-gradient(270deg, #5bc8ffb9, #3b0fff88, #16ecff67, #023ca0c6, #1466a592);
+		--animated-bg: rgba(255, 255, 255, 0.05);
 	}
 }
 
 
-//Keyframes
-
-
-
 // Gradient Backlight
-@mixin backlight($x, $y, $spread, $size, $colorA, $colorB, $colorC, $duration) {
-    &:after {
-        position: absolute;
-        content: "";
-        top: $y;
-        left: $x;
-        right: 0;
-        z-index: -1;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        transform: scale($size);
-        -webkit-filter: blur($spread);
-        -moz-filter: blur($spread);
-        -ms-filter: blur($spread);
-        filter: blur($spread);
-        background: linear-gradient(270deg, $colorA, $colorB, $colorC);
-        background-size: 200% 200%;
-        animation: gradient $duration ease infinite;
-    }
-	
+@mixin backlight($x, $y, $spread, $size) {
+	&:after {
+		position: absolute;
+		content: "";
+		top: $y;
+		left: $x;
+		right: 0;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		margin: 0 auto;
+		transform: scale($size);
+		-webkit-filter: blur($spread);
+		-moz-filter: blur($spread);
+		-ms-filter: blur($spread);
+		filter: blur($spread);
+		background: var(--shimmer);
+		background-size: 200% 200%;
+		animation: gradient 20s ease infinite;
+	}
 }
 
+//Keyframes
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -162,7 +154,7 @@ body {
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+	@include backlight(5vw, 5vw, 5vw, 1);
 }
 
 .container:before {
@@ -195,32 +187,35 @@ body {
 	animation: gradient 20s ease infinite;
 }
 
-.header-button, .header-logo, .footer-logo {
-    position: relative;
-    text-align: center;
-    background-color: var(--card-background);
-    @include backlight(2vw, 2vw, 2vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+.header-button,
+.header-logo,
+.footer-logo {
+	position: relative;
+	text-align: center;
+	background-color: var(--card-background);
+	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
-.banner{
-    position: relative;
-    text-align: center;
-    background-color: var(--card-background);
-    @include backlight(2vw, 2vw, 2vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+.banner {
+	position: relative;
+	text-align: center;
+	background-color: var(--card-background);
+	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
-.team-card, #hydro-drop {
-    position: relative;
-    text-align: center;
-    background-color: var(--card-background);
-    @include backlight(2vw, 2vw, 2vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+.team-card,
+#hydro-drop {
+	position: relative;
+	text-align: center;
+	background-color: var(--card-background);
+	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
-.blog-title  {
-    position: relative;
-    text-align: center;
-    background-color: var(--card-background);
-    @include backlight(2vw, 2vw, 2vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+.blog-title {
+	position: relative;
+	text-align: center;
+	background-color: var(--card-background);
+	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
 .full {
@@ -237,7 +232,7 @@ body {
 	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
-	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+	@include backlight(5vw, 5vw, 5vw, 1);
 }
 
 .full:before {
@@ -270,7 +265,7 @@ body {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+	@include backlight(5vw, 5vw, 5vw, 1);
 }
 
 .half:before {
@@ -303,7 +298,7 @@ body {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+	@include backlight(5vw, 5vw, 5vw, 1);
 }
 
 .one-quarter:before {
@@ -335,7 +330,7 @@ body {
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1, #23daffa2, #7b0fff88, #0f93ffb0, 20s);
+	@include backlight(5vw, 5vw, 5vw, 1);
 }
 
 .three-quarter:before {
@@ -350,7 +345,6 @@ body {
 	box-shadow: inset 0 0 2000px var(--card-background);
 	filter: blur(10px);
 	margin: -20px;
-	@include backlight(5vw, 5vw, 5vw, 1, #23daffd1, #870fff88, #0f4fffb0, 15s);
 }
 
 /* Links */
@@ -430,15 +424,15 @@ a:active {
 }
 
 .red {
-    display: flex;
-    margin-left: 3px;
-    color: #f56a6a !important
+	display: flex;
+	margin-left: 3px;
+	color: #f56a6a !important
 }
 
 .green {
-    display: flex;
-    margin-left: 3px;
-    color: #a6ec64 !important
+	display: flex;
+	margin-left: 3px;
+	color: #a6ec64 !important
 }
 
 /* Responsive */

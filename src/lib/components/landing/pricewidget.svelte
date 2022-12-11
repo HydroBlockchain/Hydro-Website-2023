@@ -92,7 +92,7 @@ import {
 
 .dashboard-slot,
 .dashboard-slot-stats {
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 1rem;
     width: 110px;
     height: 50px;
