@@ -239,13 +239,13 @@
 
 .progress-moved .progress-bar2 {
   width: 85%; 
-  background-color:rgba(83, 246, 255, 0.8);  
+  background-color:rgba(255, 255, 255, 0.75);  
   animation: progressAnimation 6s;
 }
 
 @keyframes progressAnimation {
-  0%   { width: 5%; background-color: rgba(83, 246, 255, 0.5);}
-  100% { width: 85%; background-color: rgba(83, 246, 255, 0.75); }
+  0%   { width: 5%; background-color: rgba(255, 255, 255, 0.40);}
+  100% { width: 85%; background-color: rgba(255, 255, 255, 0.60); }
 }
 
 </style>
