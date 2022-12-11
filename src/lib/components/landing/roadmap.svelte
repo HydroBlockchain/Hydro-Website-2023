@@ -3,20 +3,42 @@
 </script>
 
 <div class="full" id="animated-border">
-    <div class="title">Roadmap</div>
     <div class="information">
+
         <div class="roadmap">
-            <div class="kvartal">Q1</div>
-            <div class="kvartal">Q2</div>
-            <div class="kvartal">Q3</div>
-            <div class="kvartal">Q4</div>
+            <div class="roadmap-card-half" id="animated-border">Q1</div>
+            <div class="row">
+                <div class="roadmap-card-one" id="animated-border">Q2</div>
+                <div class="roadmap-card-one" id="animated-border">Q2</div>
+            </div>
+            <div class="roadmap-card-half" id="animated-border">Q1</div>
+        </div>
+
+        <div class="roadmap">
+            <div class="row">
+                <div class="roadmap-card-one" id="animated-border">Q2</div>
+                <div class="roadmap-card-one" id="animated-border">Q2</div>
+            </div>
+            <div class="roadmap-card-half" id="animated-border">Q1</div>
+
+            <div class="roadmap-card-half" id="animated-border">Q1</div>
         </div>
     </div>
 </div>
 
 <style>
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 .full {
     height: var(--ch-large);
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
 }
 
 .roadmap {
@@ -25,9 +47,19 @@
     justify-content: center;
 }
 
-.kvartal {
+.roadmap-card-one {
     display: flex;
     justify-content: center;
     margin: 20px;
+    width: 230px;
+    height: 100px;
+}
+
+.roadmap-card-half {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 500px;
+    height: 150px;
 }
 </style>

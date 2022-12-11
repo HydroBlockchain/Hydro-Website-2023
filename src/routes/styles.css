@@ -190,7 +190,7 @@ body {
 
 #animated-border {
 	background: var(--animated-bg);
-	animation: gradient 20s ease infinite;
+	animation: gradient 20s ease infinite !important;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
 	animation: fadeIn 2.5s;
