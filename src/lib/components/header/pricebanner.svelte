@@ -5,7 +5,7 @@ import bscLogo from "$lib/images/ticker-logo/bsc.svg";
 import polyLogo from "$lib/images/ticker-logo/polygon.svg";
 import cscLogo from "$lib/images/ticker-logo/coinex.svg";
 import movrLogo from "$lib/images/ticker-logo/moonriver.svg";
-import { priceData } from "$lib/stores/store";
+import { priceData } from "$lib/stores/price";
 //Coin names
 let coinNameHydro = "HYDRO";
 let coinNameETH = "ETH";
@@ -13,7 +13,6 @@ let coinNameBSC = "BNB";
 let coinNamePOLY = "POLYGON";
 let coinNameCSC = "CET";
 let coinNameMOVR = "MOVR";
-
 </script>
 <section>
     <div class="banner" id="animated-border">

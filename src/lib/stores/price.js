@@ -8,12 +8,6 @@ const cscEndpoint = `https://api.coingecko.com/api/v3/coins/coinex-token`;
 const polyEndpoint = `https://api.coingecko.com/api/v3/coins/matic-network`;
 const movrEndpoint = `https://api.coingecko.com/api/v3/coins/moonriver`;
 
-//Bscscan endpoint
-const contractAddress = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071'
-const kvsAddress = '0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646'
-const apiKey = `4GFGZEQ234QU14UHKQJZ9GDIFSGXJ5KKF9`;
-const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=` + `${contractAddress}` + `&address=${kvsAddress}` + `&tag=latest&apikey=${apiKey}`;
-
 //Exported Pricedata
 export const priceData = writable({
     hydroPrice: 0,
@@ -21,7 +15,6 @@ export const priceData = writable({
     hydroMC: 0,
     hydroVolume: 0,
     hydroSupply: 0,
-    hydroStaked: 0,
     ethPrice: 0,
     ethChange: 0,
     bscPrice: 0,
@@ -35,7 +28,7 @@ export const priceData = writable({
 })
 
 //Fetch Data
-export const getData = () => {
+export const getPriceData = () => {
 
     //fetch Hydro Price
     fetch(hydroEndpoint)
@@ -148,97 +141,8 @@ export const getData = () => {
             })
         }).catch(err => console.log(err))
 
-    //fetch HydroData
-    fetch(bscscanEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Hydro BSCscan data")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    hydroStaked: Math.round(data.result / Math.pow(10, 16)) / 100
-                }
-            })
-        }).catch(err => console.log(err))
-
-
-}
-
-//Exported medium data
-export const mediumData = writable({
-    mediumTitleOne: [],
-    mediumLinkOne: [],
-    mediumPubOne: [],
-    mediumTitleTwo: [],
-    mediumLinkTwo: [],
-    mediumPubTwo: [],
-    mediumTitleThree: [],
-    mediumLinkThree: [],
-    mediumPubThree: [],
-    mediumTitleFour: [],
-    mediumLinkFour: [],
-    mediumPubFour: [],
-    mediumTitleFive: [],
-    mediumLinkFive: [],
-    mediumPubFive: [],
-    mediumTitleSix: [],
-    mediumLinkSix: [],
-    mediumPubSix: [],
-})
-
-//Medium endpoint
-const mediumEndpoint = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprojecthydro.medium.com%2Ffeed`;
-
-//Fetch Medium Data
-export const getMedium = () => {
-
-fetch(mediumEndpoint)
-.then(res => {
-    if (!res.ok) {
-        throw Error("Could not fetch Medium data")
-    }
-    return res.json()
-})
-.then(data => {
-    mediumData.update(current => {
-        return {
-            ...current,
-            //article 1
-            mediumTitleOne: data.items[0].title,
-            mediumLinkOne: data.items[0].link,
-            mediumPubOne: data.items[0].pubDate,
-            //article 2
-            mediumTitleTwo: data.items[1].title,
-            mediumLinkTwo: data.items[1].link,
-            mediumPubTwo: data.items[1].pubDate,
-            //article 3
-            mediumTitleThree: data.items[2].title,
-            mediumLinkThree: data.items[2].link,
-            mediumPubThree: data.items[2].pubDate,
-            //article 4
-            mediumTitleFour: data.items[3].title,
-            mediumLinkFour: data.items[3].link,
-            mediumPubFour: data.items[3].pubDate,
-            //article 5
-            mediumTitleFive: data.items[4].title,
-            mediumLinkFive: data.items[4].link,
-            mediumPubFive: data.items[4].pubDate,
-            //article 6
-            mediumTitleSix: data.items[5].title,
-            mediumLinkSix: data.items[5].link,
-            mediumPubSix: data.items[5].pubDate,
-            
-        }
-    })
-}).catch(err => console.log(err))
-
 }
 
 //Set interval of 1min for price data and fetch data
-setInterval(getData, 1800000);
-getMedium();
-getData();
+setInterval(getPriceData, 1800000);
+getPriceData();

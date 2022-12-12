@@ -1,8 +1,7 @@
 <script>
 import item from "../../json/techlinks.json"
-import {
-    priceData
-} from "$lib/stores/store";
+import { priceData } from "$lib/stores/price";
+import { stakedData } from "$lib/stores/staked"
 </script>
 
 <div class="one-quarter" id="animated-border">
@@ -69,7 +68,7 @@ import {
 
             <div class="dashboard-slot" id="animated-border">
                 <div class="price">Staked</div>
-                <div class="currency">{$priceData.hydroStaked}
+                <div class="currency">{$stakedData.hydroStaked}
                     
                 </div>
                 <div class="currency-class">HYDRO</div>

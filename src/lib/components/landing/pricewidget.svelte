@@ -1,7 +1,6 @@
 <script>
-import {
-    priceData
-} from "$lib/stores/store";
+import { priceData } from "$lib/stores/price";
+import { stakedData } from "$lib/stores/staked"
 </script>
 
 <div class="one-quarter">
@@ -75,7 +74,7 @@ import {
 
         <div class="dashboard-slot" id="animated-border">
             <div class="price">Staked</div>
-            <div class="currency">{$priceData.hydroStaked}
+            <div class="currency">{$stakedData.hydroStaked}
                 <div class="currency-class">HYDRO</div>
             </div>
         </div>
