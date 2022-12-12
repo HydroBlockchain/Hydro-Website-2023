@@ -8,97 +8,96 @@ import { stakedData } from "$lib/stores/staked"
 
     <div>
 
-    <div class="hydroswap">
+        <div class="hydroswap">
 
-        <div class="row">
-        <div class="hydro-dashboard">
+            <div class="row">
+                <div class="hydro-dashboard">
 
-            <div class="dashboard-slot" id="animated-border">
-                <div class="price">Price</div>
-                <div class="currency">{$priceData.hydroPrice}
-                    
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Price</div>
+                        <div class="currency">{$priceData.hydroPrice}
+
+                        </div>
+                        <div class="currency-class">USD</div>
+                    </div>
+
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Marketcap</div>
+                        <div class="currency">{$priceData.hydroMC}
+
+                        </div>
+                        <div class="currency-class">USD</div>
+                    </div>
+
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Change 24/7</div>
+                        <div class="procentage">
+                            {#if $priceData.hydroChange > 0}
+                            <div class="green"> {$priceData.hydroChange} %</div>
+                            {:else if 0 > $priceData.hydroChange}
+                            <div class="red"> {$priceData.hydroChange} %</div>
+                            {:else}
+                            {$priceData.hydroChange}
+                            {/if}
+                        </div>
+                    </div>
                 </div>
-                <div class="currency-class">USD</div>
+
+                <div class="hydro-dashboard">
+
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Vol 24/7</div>
+                        <div class="currency">{$priceData.hydroVolume}
+
+                        </div>
+                        <div class="currency-class">USD</div>
+                    </div>
+
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Staked</div>
+                        <div class="currency">{$stakedData.hydroStaked}
+
+                        </div>
+                        <div class="currency-class">HYDRO</div>
+                    </div>
+
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Circ Supply</div>
+                        <div class="currency">{$priceData.hydroSupply}
+
+                        </div>
+                        <div class="currency-class">HYDRO</div>
+                    </div>
+
+                </div>
             </div>
 
-            <div class="dashboard-slot" id="animated-border">
-                <div class="price">Marketcap</div>
-                <div class="currency">{$priceData.hydroMC}
-                    
-                </div>
-                <div class="currency-class">USD</div>
+            <div class="button-row">
+                <a href="{item[1].link}" target="_blank" rel="noopener noreferrer">
+                    <div class="button" id="hydroswap-buttons">Swap</div></a>
+                <a href="{item[2].link}" target="_blank" rel="noopener noreferrer">
+                    <div class="button" id="hydroswap-buttons">Stake</div></a>
+                <a href="{item[3].link}" target="_blank" rel="noopener noreferrer">
+                    <div class="button" id="hydroswap-buttons">Bridge</div></a>
             </div>
-
-            <div class="dashboard-slot" id="animated-border">
-                <div class="price">Change 24/7</div>
-                <div class="procentage">
-                    {#if $priceData.hydroChange > 0}
-                    <div class="green"> {$priceData.hydroChange} %</div>
-                    {:else if 0 > $priceData.hydroChange}
-                    <div class="red"> {$priceData.hydroChange} %</div>
-                    {:else}
-                    {$priceData.hydroChange}
-                    {/if}
-                </div>
-            </div>
-        </div>
-
-            <div class="hydro-dashboard">
-
-            <div class="dashboard-slot" id="animated-border">
-                <div class="price">Vol 24/7</div>
-                <div class="currency">{$priceData.hydroVolume}
-                    
-                </div>
-                <div class="currency-class">USD</div>
-            </div>
-
-            <div class="dashboard-slot" id="animated-border">
-                <div class="price">Staked</div>
-                <div class="currency">{$stakedData.hydroStaked}
-                    
-                </div>
-                <div class="currency-class">HYDRO</div>
-            </div>
-
-            <div class="dashboard-slot" id="animated-border">
-                <div class="price">Circ Supply</div>
-                <div class="currency">{$priceData.hydroSupply}
-                    
-                </div>
-                <div class="currency-class">HYDRO</div>
-            </div>
-
         </div>
     </div>
-
-        <div class="button-row">
-            <a href="{item[1].link}" target="_blank" rel="noopener noreferrer">
-                <div class="button" id="hydroswap-buttons">Swap</div></a>
-            <a href="{item[2].link}" target="_blank" rel="noopener noreferrer">
-                <div class="button" id="hydroswap-buttons">Stake</div></a>
-            <a href="{item[3].link}" target="_blank" rel="noopener noreferrer">
-                <div class="button" id="hydroswap-buttons">Bridge</div></a>
-        </div>
-    </div>
-  </div>
     <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
 </div>
 
 <style lang="scss">
+.one-quarter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between !important;
+}
 
-    .one-quarter{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between !important;
-    }
-
-    .row{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .currency-class {
     display: flex;
@@ -109,7 +108,7 @@ import { stakedData } from "$lib/stores/staked"
     color: var(--text-color-alt);
 }
 
-.hydroswap{
+.hydroswap {
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
@@ -150,11 +149,11 @@ import { stakedData } from "$lib/stores/staked"
     font-size: var(--fs-mini);
 }
 
-.cg-credit a{
+.cg-credit a {
     color: rgba(255, 255, 255, 0.44) !important;
 }
 
-.cg-credit a:hover{
+.cg-credit a:hover {
     color: rgb(255, 255, 255) !important;
     cursor: pointer;
 }
@@ -165,14 +164,15 @@ import { stakedData } from "$lib/stores/staked"
     font-size: 9px;
 }
 
-.currency-class{
+.currency-class {
     display: flex;
     justify-content: flex-end;
     font-size: 9px;
-    
+
 }
 
-.currency, .procentage {
+.currency,
+.procentage {
     display: flex;
     justify-content: flex-end;
 }
