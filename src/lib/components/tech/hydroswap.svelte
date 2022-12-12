@@ -106,11 +106,6 @@ import {
         justify-content: center;
     }
 
-.tagline {
-    font-size: 12px;
-    margin-top: 1rem;
-}
-
 .currency-class {
     display: flex;
     justify-content: center;
@@ -118,13 +113,6 @@ import {
     font-size: var(--fs-xsmall);
     margin-left: 0.3rem;
     color: var(--text-color-alt);
-}
-
-#staked {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: var(--text-color);
 }
 
 .hydroswap{
