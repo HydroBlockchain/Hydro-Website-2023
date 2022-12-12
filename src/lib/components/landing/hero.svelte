@@ -1,5 +1,5 @@
 <script>
-import hydroDrop from "$lib/images/ticker-logo/hydro-drop.svg";
+import hydroDrop from "$lib/images/logo/hydro-drop.svg";
 </script>
 
 <div class="full" id="animated-border">

@@ -1,10 +1,10 @@
 <script>
-import hydroDrop from "$lib/images/ticker-logo/hydro-drop.svg";
-import ethLogo from "$lib/images/ticker-logo/ethereum.svg";
-import bscLogo from "$lib/images/ticker-logo/bsc.svg";
-import polyLogo from "$lib/images/ticker-logo/polygon.svg";
-import cscLogo from "$lib/images/ticker-logo/coinex.svg";
-import movrLogo from "$lib/images/ticker-logo/moonriver.svg";
+import hydroDrop from "$lib/images/logo/hydro-drop.svg";
+import ethLogo from "$lib/images/logo/ethereum.svg";
+import bscLogo from "$lib/images/logo/bsc.svg";
+import polyLogo from "$lib/images/logo/polygon.svg";
+import cscLogo from "$lib/images/logo/coinex.svg";
+import movrLogo from "$lib/images/logo/moonriver.svg";
 import { priceData } from "$lib/stores/price";
 //Coin names
 let coinNameHydro = "HYDRO";
