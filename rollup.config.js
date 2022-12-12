@@ -1,5 +1,5 @@
 import replace from '@rollup/plugin-replace';
-import includeEnv from "svelte-environment-variables";
+import includeEnv from "module/svelte-environment-variables";
 
 export default {
   input: 'src/index.js',
@@ -9,7 +9,7 @@ export default {
   },
   plugins: [
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.BSCSCAN_API_KEY': JSON.stringify('Production API Key'),
       __buildDate__: () => JSON.stringify(new Date()),
       __buildVersion: 15,
       ...includeEnv(),

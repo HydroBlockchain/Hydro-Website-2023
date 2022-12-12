@@ -5,11 +5,24 @@ import preprocess from 'svelte-preprocess';
 const config = {
     // Consult https://github.com/sveltejs/svelte-preprocess
     // for more information about preprocessors
-    preprocess: preprocess(),
-
     kit: {
-        adapter: adapter()
+        adapter: adapter({
+            fallback: 'index.html',
+        })
+    },
+    preprocess: [
+        preprocess({
+            scss: {
+                prependData: `@import 'src/routes/styles.scss';`
+            }
+        }),
+    ],
+    onwarn: (warning, handler) => {
+        const { code } = warning;
+        if (code === 'css-semicolonexpected' || code === 'css-ruleorselectorexpected' || code === 'css-unused-selector')
+            return;
+        handler(warning);
     }
-};
+}
 
-export default config;
+export default config
