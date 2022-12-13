@@ -43,8 +43,9 @@ body {
 	font-family: var(--font-body);
 	color: var(--color-text);
 	background: var(--backgound-color);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
+	background-size: 1400% 400%;
+	filter: blur(0.75);
+	animation: gradient 30s ease infinite;
 	background-attachment: fixed;
 }
 
@@ -59,15 +60,16 @@ body {
 		--text-color-alt: #85e1ff;
 		--link-color: #eee;
 		//Tiles, Banner & Button
-		--button-color: rgba(255, 255, 255, 0.2);
+		--button-color: rgba(33, 33, 36, 0.2);
 		--button-hover: #212124;
-		--card-background: rgba(255, 255, 255, 0.1);
-		--banner-background: rgba(255, 255, 255, 0.1);
+		--card-background: rgba(33, 33, 36, 0.2);
+		--banner-background: rgba(33, 33, 36, 0.2);
 		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #1b3bc8, #0066b0, #073675);
+		--backgound-color: linear-gradient(90deg, #1531b1, #005491, #042959);
 		//Gradient Tiles
-		--shimmer: linear-gradient(270deg, #0EEAFF, #302ae0, #15A9FA, #0050c9);
-		--animated-bg: rgba(255, 255, 255, 0.1);
+		--shimmer: linear-gradient(270deg, #2d4a76, #14107b, #0e309d, #17396c);
+		--animated-bg: rgba(33, 33, 36, 0.2);
+		--drop-color: #192E46;
 	}
 }
 
@@ -87,10 +89,11 @@ body {
 		--card-background: rgba(255, 255, 255, 0.1);
 		--banner-background: rgba(255, 255, 255, 0.1);
 		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #1b3bc8, #0066b0, #073675);
+		--backgound-color: linear-gradient(90deg, #2996cc, #0089ec, #005fdb);
 		//Gradient Tiles
-		--shimmer: linear-gradient(270deg, #0EEAFF, #302ae0, #15A9FA, #0050c9);
+		--shimmer: linear-gradient(270deg, #0eebffb6, #302ae0ba, #3cb4ff88, #0050c994);
 		--animated-bg: rgba(255, 255, 255, 0.1);
+		--drop-color: #fff;
 	}
 }
 
@@ -114,7 +117,7 @@ body {
 		filter: blur($spread);
 		background: var(--shimmer);
 		background-size: 200% 200%;
-		animation: gradient 20s ease infinite;
+		animation: gradient 30s ease infinite;
 	}
 }
 
@@ -164,7 +167,7 @@ body {
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .container:before {
@@ -194,7 +197,7 @@ body {
 	background: var(--animated-bg);
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
-	animation: fadeIn 3s;
+	animation: fadeIn 2s;
 }
 
 .header-button,
@@ -208,7 +211,7 @@ body {
 
 .header-button,
 .header-logo {
-	animation: fadeIn 3s;
+	animation: fadeIn 2s;
 }
 
 .banner {
@@ -216,7 +219,7 @@ body {
 	text-align: center;
 	background-color: var(--card-background);
 	@include backlight(2vw, 2vw, 2vw, 1);
-	animation: fadeIn 3s;
+	animation: fadeIn 2s;
 }
 
 .team-card,
@@ -248,7 +251,7 @@ body {
 	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
-	@include backlight(5vw, 5vw, 5vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .full:before {
@@ -281,7 +284,7 @@ body {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .half:before {
@@ -314,8 +317,8 @@ body {
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1);
-	animation: fadeIn 3s;
+	@include backlight(5vw, 5vw, 5vw, 0.75);
+	animation: fadeIn 2s;
 }
 
 .one-quarter:before {
@@ -347,8 +350,8 @@ body {
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 1);
-	animation: fadeIn 3s;
+	@include backlight(5vw, 5vw, 5vw, 0.75);
+	animation: fadeIn 2s;
 }
 
 .three-quarter:before {

@@ -220,14 +220,12 @@ section {
     flex-direction: column;
     justify-content: center;
     width: var(--cw-desktop);
-    animation: fadeIn 2.5s;
 }
 .team-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: var(--cw-desktop);
-    animation: fadeIn 2.5s;
 }
 
 .team-card {
@@ -317,6 +315,7 @@ section {
 	animation: gradient 20s ease infinite;
 	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
+    animation: fadeIn 2s;
 }
 
 #hydro-drop svg{
