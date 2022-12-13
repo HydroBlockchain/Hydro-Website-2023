@@ -132,6 +132,7 @@ footer {
     z-index: 1;
     background: inherit;
     overflow: hidden;
+    animation: fadeIn 2s;
 }
 
 #hydro-svg-logo {
