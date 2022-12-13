@@ -10,31 +10,71 @@
 
         <div class="container" id="animated-border">
 
-            <div class="container-header"><div class="title">FAQ</div></div>
+            <div class="hydro-dashboard">
+                <div class="dashboard-slot" id="animated-border">
+                    FAQ
+                </div>
+            </div>
 
-            <div class="questions">
+            <div class="hydro-dashboard">
 
-                <a href="/faq/answers/q1">What is the main purpose of project Hydro?</a>
+                <a href="/faq/answers/q1">
+                    <div class="dashboard-slot" id="animated-border">
+                        What is the main purpose of project Hydro?
+                    </div></a>
 
-                <a href="/faq/answers/q2">What is Hydroswap?</a>
+                <a href="/faq/answers/q2">
+                    <div class="dashboard-slot" id="animated-border">
+                        What is Hydroswap?
+                    </div></a>
 
-                <a href="/faq/answers/q3">What is Aegir wallet?</a>
+                <a href="/faq/answers/q3">
+                    <div class="dashboard-slot" id="animated-border">
+                        What is Aegir wallet?
+                    </div></a>
 
-                <a href="/faq/answers/q4">What is Keresverse?</a>
+                <a href="/faq/answers/q4">
+                    <div class="dashboard-slot" id="animated-border">
+                        What is Keresverse?
+                    </div></a>
 
-                <a href="/faq/answers/q5">How can Hydro benefit its users?</a>
+            </div>
 
-                <a href="/faq/answers/q6">How to swap Hydro between blockchains?</a>
+            <div class="hydro-dashboard">
 
-                <a href="/faq/answers/q7">How to stake Hydro and what are the rewards?</a>
+                <a href="/faq/answers/q5">
+                    <div class="dashboard-slot" id="animated-border">
+                        How can Hydro benefit its users?
+                    </div></a>
 
-                <a href="/faq/answers/q8">How to add Hydro Token in a Web3 wallet?</a>
+                <a href="/faq/answers/q6">
+                    <div class="dashboard-slot" id="animated-border">
+                        How to swap Hydro between blockchains?
+                    </div></a>
 
-                <a href="/faq/answers/q9">Smart Contract addresses of the Hydro token?</a>
+                <a href="/faq/answers/q7">
+                    <div class="dashboard-slot" id="animated-border">
+                        How to stake Hydro and what are the rewards?
+                    </div></a>
 
-                <a href="/faq/answers/q10">Did Hydro have any ICO, or received any investment?</a>
+                <a href="/faq/answers/q8">
+                    <div class="dashboard-slot" id="animated-border">
+                        How to add Hydro Token in a Web3 wallet?
+                    </div></a>
 
-                <a href="/faq/answers/q11">How many percent of total supply does the Team hold?</a>
+            </div>
+
+            <div class="hydro-dashboard">
+
+                <a href="/faq/answers/q10">
+                    <div class="dashboard-slot" id="animated-border">
+                        Did Hydro have any ICO, or received any investment?
+                    </div></a>
+
+                <a href="/faq/answers/q11">
+                    <div class="dashboard-slot" id="animated-border">
+                        How many percent of total supply does the Team hold?
+                    </div></a>
 
             </div>
 
@@ -42,14 +82,64 @@
     </section>
 
 <style lang="scss">
+.hydro-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dashboard-slot,
+.dashboard-slot-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 250px;
+    height: 100px;
+}
+
+.dashboard-slot-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.price,
+.currency-class {
+    text-align: end;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.currency {
+    text-align: end;
+}
+
+.procentage {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+.one-quarter {
+    height: var(--ch-mini);
+}
+
+#hydro-svg-ticker {
+    height: auto;
+    width: 90px;
+}
+
 .container {
     height: var(--ch-mini);
     position: relative;
     text-align: center;
 }
 
-a {
-    padding: 1rem;
+a:hover {
+    opacity: 0.5;
 }
 
 .questions {
