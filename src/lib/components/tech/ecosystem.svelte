@@ -50,8 +50,11 @@
 </div>
 
 <style lang="scss">
+.three-quarter{
+    height: var(--ch-xsmall);
+}
 #ecosystem {
-    width: 600px;
+    width: 400px;
     height: auto;
 }
 </style>

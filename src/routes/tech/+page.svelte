@@ -19,12 +19,12 @@
         <Ecosystem />
     </div>
     <div class="multiple-containers">
-        <Keresverse />
-        <HydroSwap />
-    </div>
-    <div class="multiple-containers">
         <Blockchains />
         <Aegir />
+    </div>
+    <div class="multiple-containers">
+        <Keresverse />
+        <HydroSwap />
     </div>
 </section>
 

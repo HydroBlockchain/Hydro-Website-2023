@@ -19,7 +19,7 @@
 
 <style lang="scss">
 .one-quarter {
-    height: var(--ch-medium);
+    height: var(--ch-xsmall);
 }
 
 .information {
@@ -27,5 +27,6 @@
     justify-content: center;
     margin: 20px;
     font-size: var(--fs-medium);
+    font-size: 14px;
 }
 </style>
