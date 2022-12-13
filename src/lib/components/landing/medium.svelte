@@ -1,11 +1,13 @@
 <script>
 // @ts-nocheck
-import { mediumData } from "$lib/stores/medium";
+import {
+    mediumData
+} from "$lib/stores/medium";
 import Time from "svelte-time";
 </script>
 
 <div class="three-quarter" id="animated-border">
-    
+
     <div class="blog-posts">
 
         <a id="blog-link" href ="{$mediumData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">
@@ -14,7 +16,7 @@ import Time from "svelte-time";
                     {$mediumData.mediumTitleOne} </div>
                 <div class="pub-date">
                     <Time timestamp={$mediumData.mediumPubOne} format="YY/MM/DD" />
-                    </div>
+                </div>
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkTwo}" target="_blank" rel="noopener noreferrer">
@@ -23,7 +25,7 @@ import Time from "svelte-time";
                     {$mediumData.mediumTitleTwo} </div>
                 <div class="pub-date">
                     <Time timestamp={$mediumData.mediumPubTwo} format="YY/MM/DD" />
-                    </div>
+                </div>
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkThree}" target="_blank" rel="noopener noreferrer">
@@ -32,7 +34,7 @@ import Time from "svelte-time";
                     {$mediumData.mediumTitleThree} </div>
                 <div class="pub-date">
                     <Time timestamp={$mediumData.mediumPubThree} format="YY/MM/DD" />
-                    </div>
+                </div>
             </div></a>
 
     </div>
@@ -45,7 +47,7 @@ import Time from "svelte-time";
                     {$mediumData.mediumTitleFour} </div>
                 <div class="pub-date">
                     <Time timestamp={$mediumData.mediumPubFour} format="YY/MM/DD" />
-                    </div>
+                </div>
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkFive}" target="_blank" rel="noopener noreferrer">
@@ -54,7 +56,7 @@ import Time from "svelte-time";
                     {$mediumData.mediumTitleFive} </div>
                 <div class="pub-date">
                     <Time timestamp={$mediumData.mediumPubFive} format="YY/MM/DD" />
-                    </div>
+                </div>
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkSix}" target="_blank" rel="noopener noreferrer">
@@ -63,15 +65,14 @@ import Time from "svelte-time";
                     {$mediumData.mediumTitleSix} </div>
                 <div class="pub-date">
                     <Time timestamp={$mediumData.mediumPubSix} format="YY/MM/DD" />
-                    </div>
+                </div>
             </div></a>
 
     </div>
 
-
 </div>
 
-<style lang=scss>
+<style>
 .three-quarter {
     height: 15rem;
 }

@@ -58,7 +58,7 @@ import item from "../../json/techlinks.json"
 </div>
 
 <style lang="scss">
-.aegir-logo{
+.aegir-logo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -74,8 +74,8 @@ import item from "../../json/techlinks.json"
     margin-left: 1rem;
     font-size: 32px !important;
     font-family: 'Montserrat', sans-serif;
-
 }
+
 #animated-border {
     font-size: 14px;
 }

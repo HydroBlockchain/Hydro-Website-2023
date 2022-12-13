@@ -43,8 +43,7 @@ body {
 	font-family: var(--font-body);
 	color: var(--color-text);
 	background: var(--backgound-color);
-	background-size: 1400% 400%;
-	filter: blur(0.75);
+	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
 	background-attachment: fixed;
 }
@@ -60,15 +59,15 @@ body {
 		--text-color-alt: #85e1ff;
 		--link-color: #eee;
 		//Tiles, Banner & Button
-		--button-color: rgba(33, 33, 36, 0.2);
+		--button-color: rgba(33, 33, 36, 0.3);
 		--button-hover: #212124;
-		--card-background: rgba(33, 33, 36, 0.2);
-		--banner-background: rgba(33, 33, 36, 0.2);
+		--card-background: rgba(33, 33, 36, 0.3);
+		--banner-background: rgba(33, 33, 36, 0.3);
 		//Gradient Background
 		--backgound-color: linear-gradient(90deg, #1531b1, #005491, #042959);
 		//Gradient Tiles
 		--shimmer: linear-gradient(270deg, #2d4a76, #14107b, #0e309d, #17396c);
-		--animated-bg: rgba(33, 33, 36, 0.2);
+		--animated-bg: rgba(33, 33, 36, 0.3);
 		--drop-color: #192E46;
 	}
 }
@@ -86,17 +85,16 @@ body {
 		//Tiles, Banner & Button
 		--button-color: rgba(255, 255, 255, 0.2);
 		--button-hover: #212124;
-		--card-background: rgba(255, 255, 255, 0.1);
-		--banner-background: rgba(255, 255, 255, 0.1);
+		--card-background: rgba(255, 255, 255, 0.2);
+		--banner-background: rgba(255, 255, 255, 0.2);
 		//Gradient Background
 		--backgound-color: linear-gradient(90deg, #2996cc, #0089ec, #005fdb);
 		//Gradient Tiles
 		--shimmer: linear-gradient(270deg, #0eebffb6, #302ae0ba, #3cb4ff88, #0050c994);
-		--animated-bg: rgba(255, 255, 255, 0.1);
+		--animated-bg: rgba(255, 255, 255, 0.2);
 		--drop-color: #fff;
 	}
 }
-
 
 // Gradient Backlight
 @mixin backlight($x, $y, $spread, $size) {
@@ -116,7 +114,7 @@ body {
 		-ms-filter: blur($spread);
 		filter: blur($spread);
 		background: var(--shimmer);
-		background-size: 200% 200%;
+		background-size: 400% 400%;
 		animation: gradient 30s ease infinite;
 	}
 }
@@ -170,20 +168,6 @@ body {
 	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
-.container:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
-
 .container-header {
 	display: flex;
 	align-items: center;
@@ -195,7 +179,6 @@ body {
 
 #animated-border {
 	background: var(--animated-bg);
-	background-size: 1000% 100%;
 	border-radius: var(--border-radius);
 	animation: fadeIn 2s;
 }
@@ -205,7 +188,6 @@ body {
 .footer-logo {
 	position: relative;
 	text-align: center;
-	background-color: var(--card-background);
 	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
@@ -217,7 +199,6 @@ body {
 .banner {
 	position: relative;
 	text-align: center;
-	background-color: var(--card-background);
 	@include backlight(2vw, 2vw, 2vw, 1);
 	animation: fadeIn 2s;
 }
@@ -226,14 +207,12 @@ body {
 #hydro-drop {
 	position: relative;
 	text-align: center;
-	background-color: var(--card-background);
 	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
 .blog-title {
 	position: relative;
 	text-align: center;
-	background-color: var(--card-background);
 	@include backlight(2vw, 2vw, 2vw, 1);
 }
 
@@ -254,20 +233,6 @@ body {
 	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
-.full:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
-
 .half {
 	display: flex;
 	flex-direction: column;
@@ -285,20 +250,6 @@ body {
 	margin-right: 15px;
 	color: var(--text-color);
 	@include backlight(5vw, 5vw, 5vw, 0.75);
-}
-
-.half:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
 }
 
 .one-quarter {
@@ -321,19 +272,6 @@ body {
 	animation: fadeIn 2s;
 }
 
-.one-quarter:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
-}
 
 .three-quarter {
 	display: flex;
@@ -352,20 +290,6 @@ body {
 	color: var(--text-color);
 	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
-}
-
-.three-quarter:before {
-	content: "";
-	position: absolute;
-	background: inherit;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	box-shadow: inset 0 0 2000px var(--card-background);
-	filter: blur(10px);
-	margin: -20px;
 }
 
 /* Links */

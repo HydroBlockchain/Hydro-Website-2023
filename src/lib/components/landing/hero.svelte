@@ -1,5 +1,4 @@
 <script>
-import hydroDrop from "$lib/images/logo/hydro-drop.svg";
 </script>
 
 <div class="full" id="animated-border">
@@ -10,7 +9,6 @@ import hydroDrop from "$lib/images/logo/hydro-drop.svg";
                 We are DeFi, We are Hydro.
             </div>
         </div>
-
         <svg id="intro-chain" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_b_1_63)">
             <circle cx="512" cy="512" r="512" fill="var(--drop-color)"/>
@@ -36,9 +34,6 @@ import hydroDrop from "$lib/images/logo/hydro-drop.svg";
             </defs>
             </svg>
             
-
-
-
     </div>
 </div>
 
