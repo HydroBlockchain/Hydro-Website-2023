@@ -3,7 +3,6 @@
 </script>
 
 <div class="one-quarter" id="animated-border">
-    <div class="title">Meet Hydro</div>
     <div class="information">
         The Hydro protocols are available to use on multiple networks.
         All of our protocols and dApps are powered by Hydro tokens.

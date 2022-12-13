@@ -3,7 +3,7 @@ import { priceData } from "$lib/stores/price";
 import { stakedData } from "$lib/stores/staked"
 </script>
 
-<div class="one-quarter">
+<div class="one-quarter" id="animated-border">
 
     <div class="hydro-dashboard">
 

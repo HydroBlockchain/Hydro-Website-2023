@@ -25,22 +25,20 @@ import item from "../../json/techlinks.json"
 
         <div class="dashboard-slot-alt" id="animated-border">
             <div class="chain-alt">
-                Meet Aegir - Our open source wallet for Web3 assets. <br>
-                Aegir Wallet supports a wide array of currencys such as Bitcoin, Ethereum, Binance Smart Chain
-                and off course the Hydro Token on all its deployed networks. <br>
-                Your keys your Crypto!
+                Info on Aegir
             </div>
         </div>
 
         <div class="dashboard-slot" id="animated-border">
             <div class="chain">
-                more info on aegir
+                Info on Aegir
             </div>
         </div>
 
     </div>
 
     <div class="hydro-dashboard" id="buttons-downloads">
+        <div class="aegir-logo" id="animated-border">ÆGIR.</div>
         <a href="{item[9].link}" target="_blank" rel="noopener noreferrer" >
             <div class="playstore-button" id="aegir-button-play">
                 <img src={playstoreLogo} alt="playstore"id="button-logo">
@@ -60,6 +58,24 @@ import item from "../../json/techlinks.json"
 </div>
 
 <style lang="scss">
+.aegir-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    background-color: var(--button-color);
+    color: var(--text-color);
+    font-size: var(--fs-xsmall);
+    width: 60%;
+    height: 45px;
+    margin-left: 1rem;
+    font-size: 32px !important;
+    font-family: 'Montserrat', sans-serif;
+
+}
 #animated-border {
     font-size: 14px;
 }
@@ -199,6 +215,7 @@ a:hover {
 
 .dashboard-slot-alt {
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 70%;
 }
