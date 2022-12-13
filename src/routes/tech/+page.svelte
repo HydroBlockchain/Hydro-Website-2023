@@ -6,6 +6,7 @@
     import MeetHydro from "$lib/components/tech/meet-hydro.svelte";
     import Blockchains from "$lib/components/tech/blockchains.svelte";
     import Aegir from "$lib/components/tech/aegir.svelte";
+    import Protocols from "$lib/components/tech/protocols.svelte";
 </script>
 
 <svelte:head>
@@ -26,6 +27,7 @@
         <Keresverse />
         <HydroSwap />
     </div>
+    <Protocols/>
 </section>
 
 <style>
