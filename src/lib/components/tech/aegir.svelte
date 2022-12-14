@@ -9,23 +9,8 @@ import appstoreLogo from "$lib/images/icons/appstore.svg";
 import playstoreLogo from "$lib/images/icons/playstore.svg";
 import item from "../../json/techlinks.json"
 import {
-    onMount
-} from "svelte";
-let username
-let commitMsg
-let avatar
-let url
-onMount(() => {
-    //Fetches the last commit on Aegir Wallet
-    fetch("https://api.github.com/repos/HydroBlockchain/aegir-wallet/commits/main")
-        .then((response) => response.json())
-        .then((data) => {
-            username = data.author.login
-            commitMsg = data.commit.message
-            avatar = data.author.avatar_url
-            url = data.html_url
-        });
-})
+    githubData
+} from "$lib/stores/github";
 </script>
 
 <div class="half" id="animated-border">
@@ -51,15 +36,15 @@ onMount(() => {
             </div>
         </div>
 
-        <a href="{url}" id="github-link">
+        <a href="{$githubData.urlAegir}" id="github-link">
 
             <div class="dashboard-slot" id="animated-border">
 
                 <div class="price">Latest Commit</div>
 
-                <div class="github-text" id="commit-message">{commitMsg}</div>
+                <div class="github-text" id="commit-message">{$githubData.commitMsgAegir}</div>
 
-                <div class="github-info-inner"><img src={avatar} alt="github avatar">{username}</div>
+                <div class="github-info-inner"><img src={$githubData.avatarAegir} alt="github avatar">{$githubData.usernameAegir}</div>
 
             </div>
 

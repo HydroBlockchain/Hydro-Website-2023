@@ -7,23 +7,8 @@ import {
     stakedData
 } from "$lib/stores/staked"
 import {
-    onMount
-} from "svelte";
-let username
-let commitMsg
-let avatar
-let url
-onMount(() => {
-    //Fetches the last commit on Hydroswap
-    fetch("https://api.github.com/repos/HydroBlockchain/hydroswap-v2-frontend/commits/main")
-        .then((response) => response.json())
-        .then((data) => {
-            username = data.author.login
-            commitMsg = data.commit.message
-            avatar = data.author.avatar_url
-            url = data.html_url
-        });
-})
+    githubData
+} from "$lib/stores/github";
 </script>
 
 <div class="one-quarter" id="animated-border">
@@ -63,16 +48,16 @@ onMount(() => {
                 <div class="hydro-dashboard">
 
                     <div class="dashboard-slot-alt-logo" id="animated-border">HYDROSWAP</div>
-                    <a href="{url}">
+                    <a href="{$githubData.urlSwap}">
                         <div class="dashboard-slot-alt" id="animated-border">
 
-                                <div class="price">Latest Commit</div>
+                            <div class="price">Latest Commit</div>
 
-                                <div class="github-text" id="commit-message">{commitMsg}</div>
+                            <div class="github-text" id="commit-message">{$githubData.commitMsgSwap}</div>
 
-                                <div class="github-info-inner"><img src={avatar} alt="github avatar">{username}</div>
-                                
-                            </div>
+                            <div class="github-info-inner"><img src={$githubData.avatarSwap} alt="github avatar">{$githubData.usernameSwap}</div>
+
+                        </div>
 
                     </a>
 
@@ -97,7 +82,8 @@ onMount(() => {
     background-color: var(--button-hover) !important;
     opacity: 1 !important;
 }
-#commit-message{
+
+#commit-message {
     font-size: 10px;
     word-wrap: break-word;
     justify-content: center;

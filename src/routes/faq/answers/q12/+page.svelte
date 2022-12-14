@@ -30,12 +30,6 @@
     align-items: center;
 }
 
-.button {
-    width: 150px;
-    padding: 0.5rem;
-    margin: 1rem;
-}
-
 .button-row {
     display: flex;
     flex-direction: row;
