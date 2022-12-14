@@ -12,7 +12,7 @@
                     <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div></div>
                     <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.</div>
                     <div class="card-row" id="progress">
-                        <div class="container">
+                        <div class="container-prog">
                             <div class="progress1 progress-moved">
                                 <div class="progress-bar1" >
                                 </div>
@@ -27,7 +27,7 @@
                     <div class="card-row" id="what">Aegir Wallet Refresh<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Aegir wallet gets an UI update and preparation work for the Hydro Testnet in Q4.</div>
                     <div class="card-row" id="progress">
-                        <div class="container">
+                        <div class="container-prog">
                             <div class="progress2 progress-moved">
                                 <div class="progress-bar2" >
                                 </div>
@@ -43,7 +43,7 @@
                     <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Keresverse Website live for beta testing.</div>
                     <div class="card-row" id="progress">
-                        <div class="container">
+                        <div class="container-prog">
                             <div class="progress3 progress-moved">
                                 <div class="progress-bar3" >
                                 </div>
@@ -62,7 +62,7 @@
                     <div class="card-row" id="what">Keres Diamond<div id="desc">Q2</div></div>
                     <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond</div>
                     <div class="card-row" id="progress">
-                        <div class="container">
+                        <div class="container-prog">
                             <div class="progress4 progress-moved">
                                 <div class="progress-bar4" >
                                 </div>
@@ -77,7 +77,7 @@
                     <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div></div>
                     <div class="card-row" id="desc">Hydroswap gets a ui revamp and preparation work for the hydro testnet.</div>
                     <div class="card-row" id="progress">
-                        <div class="container">
+                        <div class="container-prog">
                             <div class="progress5 progress-moved">
                                 <div class="progress-bar5" >
                                 </div>
@@ -92,7 +92,7 @@
                     <div class="card-row" id="what">Hydro Testnet<div id="q">Q4</div></div>
                     <div class="card-row" id="desc">Hydro Testnet launches in preparation for Hydros own Blockchain.</div>
                     <div class="card-row" id="progress">
-                        <div class="container">
+                        <div class="container-prog">
                             <div class="progress6 progress-moved">
                                 <div class="progress-bar6" >
                                 </div>
@@ -164,10 +164,11 @@
     height: 160px;
 }
 
-.container {
+.container-prog {
     width: 500px;
     text-align: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 //Progress Bar 1
