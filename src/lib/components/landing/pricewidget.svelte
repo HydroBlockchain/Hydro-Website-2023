@@ -129,4 +129,21 @@ import { stakedData } from "$lib/stores/staked"
     height: auto;
     width: 90px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .dashboard-slot,
+.dashboard-slot-stats {
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 70px;
+    height: 50px;
+}
+
+.currency, .procentage {
+    font-size: 12px;
+}
+
+}
 </style>
