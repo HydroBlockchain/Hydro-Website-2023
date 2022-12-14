@@ -110,4 +110,30 @@ import item from "../../json/techlinks.json"
     width: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+
+    .three-quarter {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#jixta, #vox {
+    display: none;
+    margin: 0;
+}
+
+#vox {
+    margin-left: 0rem;
+}
+
+.jixta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+}
+
 </style>
