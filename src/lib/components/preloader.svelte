@@ -2,7 +2,8 @@
 <script>
 import {fade, draw} from "svelte/transition";
 import {onMount} from "svelte";
-import {quadInOut } from 'svelte/easing'
+import {quadInOut} from 'svelte/easing'
+
 let start = false
 onMount(()=> {
     start = true
