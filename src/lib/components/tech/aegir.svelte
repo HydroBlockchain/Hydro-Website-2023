@@ -262,4 +262,68 @@ a:hover {
     flex-direction: column;
     width: 70%;
 }
+
+@media only screen and (max-width: 600px) {
+    .half{
+        height: 35rem;
+    }
+
+    .button-row-small {
+    width: 300px !important;
+    margin: 0.2rem !important;
+}
+
+.hydro-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px !important;
+}
+
+.dashboard-slot,
+.dashboard-slot-alt {
+    justify-content: space-between;
+    text-align: start;
+    display: flex;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 300px !important;
+    height: 150px;
+}
+.dashboard-slot{
+    height: 75px !important;
+}
+
+.support-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem !important;
+    padding: 0.5rem;
+    width: 50px;
+    height: 30px;
+}
+
+.aegir-logo {
+    display: none;
+    width: 316px;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#buttons-downloads {
+    margin-top: 0.5rem;
+    margin-right: 0rem !important;
+    flex-direction: row;
+    justify-content: space-between!important;
+    align-items: center;
+    width: 100%;
+}
+
+.apple-button, .playstore-button{
+    margin-left: 0;
+}
+}
 </style>
