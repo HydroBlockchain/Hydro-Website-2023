@@ -1,4 +1,5 @@
 <script>
+  // @ts-nocheck
     import Menu from "$lib/components/header/menu.svelte";
     import hydroLogo from "$lib/images/logo/hydro-logo.svg";
     import techIcon from "$lib/images/icons/tech.svg";
@@ -13,7 +14,7 @@
     }
 
 </script>
-
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <nav>
     <div class="wrapper">
         <div class="nav-wrapper" id="animated-border">

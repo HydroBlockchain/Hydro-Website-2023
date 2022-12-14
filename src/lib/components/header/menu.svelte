@@ -2,7 +2,7 @@
     import {fade} from "svelte/transition";
 </script>
 
-<div in:fade out:fade="{{delay: 750}}" class="backdrop" on:click>
+<div in:fade out:fade="{{delay: 500}}" class="backdrop" on:click>
     <div class="nav-mobile-wrapper">
         <div class="logo">
             <svg id="intro-chain" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">

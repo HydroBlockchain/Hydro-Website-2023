@@ -9,5 +9,4 @@ export const fetchData = () => {
     getPriceData()
     getGithubData()
 }
-
-fetchData()
+setInterval(fetchData, 1800000);
