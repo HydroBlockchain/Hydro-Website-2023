@@ -326,7 +326,8 @@ a:active {
 }
 
 .button:hover {
-	background-color: var(--button-hover);
+    background-color: var(--button-hover);
+    opacity: 1 !important;
 }
 
 .button a {

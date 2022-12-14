@@ -104,7 +104,9 @@ import item from "$lib/json/whitepapers.json"
     height: 150px;
 }
 
-a:hover {
-    opacity: 0.5;
+.protocol-card:hover {
+    background-color: var(--button-hover) !important;
+    opacity: 1 !important;
 }
+
 </style>

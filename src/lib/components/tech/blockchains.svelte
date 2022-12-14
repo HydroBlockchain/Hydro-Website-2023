@@ -109,7 +109,8 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     margin-top: 0.5rem;
 }
 
-a:hover {
-    opacity: 0.5;
+.dashboard-slot:hover {
+    background-color: var(--button-hover) !important;
+    opacity: 1 !important;
 }
 </style>

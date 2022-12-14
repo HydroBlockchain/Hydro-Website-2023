@@ -113,7 +113,8 @@ import Time from "svelte-time";
     width: 100%;
 }
 
-a:hover {
-    opacity: 0.5;
+.blog-title:hover {
+    background-color: var(--button-hover) !important;
+    opacity: 1 !important;
 }
 </style>

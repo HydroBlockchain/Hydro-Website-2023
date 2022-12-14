@@ -1,7 +1,29 @@
 <script>
 import item from "../../json/techlinks.json"
-import { priceData } from "$lib/stores/price";
-import { stakedData } from "$lib/stores/staked"
+import {
+    priceData
+} from "$lib/stores/price";
+import {
+    stakedData
+} from "$lib/stores/staked"
+import {
+    onMount
+} from "svelte";
+let username
+let commitMsg
+let avatar
+let url
+onMount(() => {
+    //Fetches the last commit on Hydroswap
+    fetch("https://api.github.com/repos/HydroBlockchain/hydroswap-v2-frontend/commits/main")
+        .then((response) => response.json())
+        .then((data) => {
+            username = data.author.login
+            commitMsg = data.commit.message
+            avatar = data.author.avatar_url
+            url = data.html_url
+        });
+})
 </script>
 
 <div class="one-quarter" id="animated-border">
@@ -15,18 +37,7 @@ import { stakedData } from "$lib/stores/staked"
 
                     <div class="dashboard-slot" id="animated-border">
                         <div class="price">Price</div>
-                        <div class="currency">{$priceData.hydroPrice}
-
-                        </div>
-                        <div class="currency-class">USD</div>
-                    </div>
-
-                    <div class="dashboard-slot" id="animated-border">
-                        <div class="price">Marketcap</div>
-                        <div class="currency">{$priceData.hydroMC}
-
-                        </div>
-                        <div class="currency-class">USD</div>
+                        <div class="procentage">{$priceData.hydroPrice} USD </div>
                     </div>
 
                     <div class="dashboard-slot" id="animated-border">
@@ -41,33 +52,29 @@ import { stakedData } from "$lib/stores/staked"
                             {/if}
                         </div>
                     </div>
+
+                    <div class="dashboard-slot" id="animated-border">
+                        <div class="price">Staked</div>
+                        <div class="procentage">{$stakedData.hydroStaked} HYDRO</div>
+                    </div>
+
                 </div>
 
                 <div class="hydro-dashboard">
 
-                    <div class="dashboard-slot" id="animated-border">
-                        <div class="price">Vol 24/7</div>
-                        <div class="currency">{$priceData.hydroVolume}
+                    <div class="dashboard-slot-alt-logo" id="animated-border">HYDROSWAP</div>
+                    <a href="{url}">
+                        <div class="dashboard-slot-alt" id="animated-border">
 
-                        </div>
-                        <div class="currency-class">USD</div>
-                    </div>
+                                <div class="price">Latest Commit</div>
 
-                    <div class="dashboard-slot" id="animated-border">
-                        <div class="price">Staked</div>
-                        <div class="currency">{$stakedData.hydroStaked}
+                                <div class="github-text" id="commit-message">{commitMsg}</div>
 
-                        </div>
-                        <div class="currency-class">HYDRO</div>
-                    </div>
+                                <div class="github-info-inner"><img src={avatar} alt="github avatar">{username}</div>
+                                
+                            </div>
 
-                    <div class="dashboard-slot" id="animated-border">
-                        <div class="price">Circ Supply</div>
-                        <div class="currency">{$priceData.hydroSupply}
-
-                        </div>
-                        <div class="currency-class">HYDRO</div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
@@ -86,6 +93,33 @@ import { stakedData } from "$lib/stores/staked"
 </div>
 
 <style lang="scss">
+.dashboard-slot-alt:hover {
+    background-color: var(--button-hover) !important;
+    opacity: 1 !important;
+}
+#commit-message{
+    font-size: 10px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.github-info-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 8px;
+}
+
+.github-info-inner img {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+}
+
 .one-quarter {
     display: flex;
     flex-direction: column;
@@ -112,6 +146,7 @@ import { stakedData } from "$lib/stores/staked"
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
+    width: 100%;
 }
 
 .hydro-dashboard {
@@ -127,9 +162,34 @@ import { stakedData } from "$lib/stores/staked"
     flex-direction: column;
     justify-content: space-between;
     width: 200px;
-    height: 40px;
+    height: 45px;
     padding: 1rem;
     margin: 0.5rem;
+}
+
+.dashboard-slot-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 140px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.dashboard-slot-alt-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 28px !important;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .dashboard-slot-logo {
@@ -199,6 +259,11 @@ import { stakedData } from "$lib/stores/staked"
     align-items: center;
     width: 100%;
     margin-top: 0;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+    opacity: 1 !important;
 }
 
 #hydroswap-buttons {

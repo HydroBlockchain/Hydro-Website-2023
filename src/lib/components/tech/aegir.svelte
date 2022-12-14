@@ -8,6 +8,24 @@ import btcLogo from "$lib/images/logo/bitcoin.svg"
 import appstoreLogo from "$lib/images/icons/appstore.svg";
 import playstoreLogo from "$lib/images/icons/playstore.svg";
 import item from "../../json/techlinks.json"
+import {
+    onMount
+} from "svelte";
+let username
+let commitMsg
+let avatar
+let url
+onMount(() => {
+    //Fetches the last commit on Aegir Wallet
+    fetch("https://api.github.com/repos/HydroBlockchain/aegir-wallet/commits/main")
+        .then((response) => response.json())
+        .then((data) => {
+            username = data.author.login
+            commitMsg = data.commit.message
+            avatar = data.author.avatar_url
+            url = data.html_url
+        });
+})
 </script>
 
 <div class="half" id="animated-border">
@@ -29,11 +47,19 @@ import item from "../../json/techlinks.json"
             </div>
         </div>
 
-        <div class="dashboard-slot" id="animated-border">
-            <div class="chain">
-                Info on Aegir
+        <a href="{url}" id="github-link">
+
+            <div class="dashboard-slot" id="animated-border">
+
+                <div class="price">Latest Commit</div>
+
+                <div class="github-text" id="commit-message">{commitMsg}</div>
+
+                <div class="github-info-inner"><img src={avatar} alt="github avatar">{username}</div>
+
             </div>
-        </div>
+
+        </a>
 
     </div>
 
@@ -58,6 +84,57 @@ import item from "../../json/techlinks.json"
 </div>
 
 <style lang="scss">
+.dashboard-slot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 9px;
+}
+
+.dashboard-slot:hover {
+    background-color: var(--button-hover) !important;
+    opacity: 1 !important;
+}
+
+#commit-message {
+    font-size: 10px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.github-info-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 8px;
+}
+
+.github-info-inner img {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+}
+
+.github-info-inner {
+    font-size: 8px;
+}
+
+.github-info-inner img {
+    width: 32px;
+    height: 32px;
+    border-radius: 7px;
+}
+
 .aegir-logo {
     display: flex;
     flex-direction: row;
@@ -204,23 +281,27 @@ a:hover {
 .dashboard-slot,
 .dashboard-slot-alt {
     justify-content: space-between;
-    align-items: center;
     text-align: start;
     display: flex;
     margin: 0.5rem;
     padding: 1rem;
-    width: 30%;
+    width: 150px;
     height: 150px;
 }
 
 .dashboard-slot-alt {
-    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 70%;
 }
 
+.dashboard-slot-commit {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
 #chain {
-    font-size: 10px;
+    font-size: 8px;
 }
 </style>
