@@ -30,9 +30,9 @@
             </svg>
 
             <div class="navigation">
-                <a href="/tech"><img src={techIcon} alt="hydro-drop" id="icon" /></a>
-                <a href="/team"><img src={teamIcon} alt="hydro-drop" id="icon" /></a>
-                <a href="/faq"><img src={faqIcon} alt="hydro-drop" id="icon" /></a>
+                <a sveltekit:prefetch href="/tech"><img src={techIcon} alt="hydro-drop" id="icon" /></a>
+                <a sveltekit:prefetch href="/team"><img src={teamIcon} alt="hydro-drop" id="icon" /></a>
+                <a sveltekit:prefetch href="/faq"><img src={faqIcon} alt="hydro-drop" id="icon" /></a>
             </div>
         </div>
     </div>

@@ -31,10 +31,10 @@
                 </svg>
         </div>
         <div class="navigation">
-            <a class="mobile-link" in:fade="{{delay: 150, duration: 500}}" out:fade="{{delay: 350}}" href="/tech">Technology</a>
-            <a class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 250}}" href="/team">Team</a>
-            <a class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 150}}" href="/faq">FAQ</a>
-            <a class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 50}}" href="/">Home</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 150, duration: 500}}" out:fade="{{delay: 350}}" href="/tech">Technology</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 250, duration: 500}}" out:fade="{{delay: 250}}" href="/team">Team</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 350, duration: 500}}" out:fade="{{delay: 150}}" href="/faq">FAQ</a>
+            <a sveltekit:prefetch class="mobile-link" in:fade="{{delay: 450, duration: 500}}" out:fade="{{delay: 50}}" href="/">Home</a>
         </div>
     </div>
 </div>
