@@ -10,47 +10,47 @@
 
         <div class="team-section" id="top-one">
 
-            <a href="/faq/answers/q10">
+            <a href="/faq/answers/q1">
                 <div class="team-card" id="animated-border">
-                    Did Hydro have any ICO, or received any investment?
+                    What is the main purpose of project Hydro?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q2">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    What is Hydroswap?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q3">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    What is Aegir wallet?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q4">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    What is Keresverse?
                 </div></a>
         </div>
 
         <div class="team-section">
 
-            <a href="/faq/answers/q10">
+            <a href="/faq/answers/q5">
                 <div class="team-card" id="animated-border">
-                    Did Hydro have any ICO, or received any investment?
+                    How can Hydro benefit its users?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q6">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    How to swap Hydro between blockchains?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q7">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    How to stake Hydro and what are the rewards?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q8">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    How to add Hydro Token in a Web3 wallet?
                 </div></a>
 
         </div>
@@ -67,14 +67,14 @@
                     How many percent of total supply does the Team hold?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q9">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    Question?
                 </div></a>
 
-            <a href="/faq/answers/q11">
+            <a href="/faq/answers/q12">
                 <div class="team-card" id="animated-border">
-                    How many percent of total supply does the Team hold?
+                    Question?
                 </div></a>
 
         </div>
