@@ -112,7 +112,7 @@ import item from "../../json/techlinks.json"
 
 @media only screen and (max-width: 600px) {
 
-    .three-quarter {
+.three-quarter {
     margin-right: 0px;
     margin-left: 0px;
 }

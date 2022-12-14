@@ -226,4 +226,63 @@ import {
     width: 110px;
     margin: 0.8rem;
 }
+
+@media only screen and (max-width: 600px) {
+
+.one-quarter {
+    height: 50rem;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.row, .button-row{
+    flex-direction: column-reverse !important;
+}
+
+.dashboard-slot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 45px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.dashboard-slot-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 120px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.dashboard-slot-alt-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 28px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-row{
+    margin-top: 1rem;
+}
+
+#hydroswap-buttons {
+    width: 300px;
+    margin: 0.2rem;
+
+}
+.hydroswap{
+    margin-top: 1rem;
+}
+}
 </style>
