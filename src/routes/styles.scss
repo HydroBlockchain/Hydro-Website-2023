@@ -40,10 +40,10 @@
 body {
 	height: 100vh;
 	margin: 0;
+	background: var(--backgound-color);
 	font-family: var(--font-body);
 	color: var(--color-text);
 	overflow-x: hidden;
-	background: var(--backgound-color);
 }
 
 body::-webkit-scrollbar {
@@ -53,24 +53,19 @@ body::-webkit-scrollbar {
 //Dark Mode
 @media (prefers-color-scheme: dark) {
 	:root {
-		//Text
+		--drop-color: #192E46;
 		--logo-color: #eee;
 		--logo-color-alt: rgba(255, 255, 255, 0.4);
 		--title-color: #eee;
 		--text-color: #eee;
 		--text-color-alt: #85e1ff;
 		--link-color: #eee;
-		//Tiles, Banner & Button
 		--button-color: rgba(33, 33, 36, 0.3);
 		--button-hover: rgba(255, 255, 255, 0.2);
 		--card-background: rgba(33, 33, 36, 0.3);
 		--banner-background: rgba(33, 33, 36, 0.3);
-		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #233f71, #00487c, #032f6a);
-		//Gradient Tiles
-		--shimmer: linear-gradient(270deg, #1d6d9ec0, #3bf8ff45, #0e109d96, #0a4bacbb);
+		--backgound-color:  linear-gradient(90deg, #28326a, #183c68);
 		--animated-bg: rgba(33, 33, 36, 0.2);
-		--drop-color: #192E46;
 		--sidemenu-color:rgba(33, 33, 36, 0.85) 
 	}
 }
@@ -78,44 +73,20 @@ body::-webkit-scrollbar {
 //Light Mode
 @media (prefers-color-scheme: light) {
 	:root {
-		//Text
+		--drop-color: #fff;
 		--logo-color: #eee;
 		--logo-color-alt: rgba(255, 255, 255, 0.4);
 		--title-color: #eee;
 		--text-color: #eee;
 		--text-color-alt: #85e1ff;
 		--link-color: #eee;
-		//Tiles, Banner & Button
 		--button-color: rgba(255, 255, 255, 0.2);
 		--button-hover: #212124;
 		--card-background: rgba(255, 255, 255, 0.2);
 		--banner-background: rgba(255, 255, 255, 0.2);
-		//Gradient Background
-		--backgound-color: linear-gradient(90deg, #2996cc, #0089ec, #005fdb);
-		//Gradient Tiles
-		--shimmer: linear-gradient(90deg, #1d6d9ec0, #3bf8ff45, #0e109d96, #0a4bacbb);
-		--animated-bg: rgba(255, 255, 255, 0.2);
-		--drop-color: #fff;
+		--backgound-color: linear-gradient(90deg, #72aaff, #2eafff);
+		--animated-bg: rgba(38, 92, 255, 0.2);
 		--sidemenu-color:rgba(33, 33, 36, 0.85) 
-	}
-}
-
-// Gradient Backlight
-@mixin backlight {
-	&:after {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: -1;
-		height: 100%;
-		width: 100%;
-		border-radius: 7px;
-		background: var(--shimmer);
-		background-size: 400% 400%;
-		animation: gradient 40s ease infinite;
 	}
 }
 
@@ -144,18 +115,7 @@ body::-webkit-scrollbar {
 	}
 }
 
-@keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 0;
-	}
-}
-
 //Containers
-
 .multiple-containers,
 .multiple-containers-alt {
 	display: flex;
@@ -173,7 +133,6 @@ body::-webkit-scrollbar {
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
-	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
@@ -186,14 +145,12 @@ body::-webkit-scrollbar {
 	margin-bottom: 1rem;
 }
 
-/* Tiles */
-
+//Tiles
 #animated-border {
 	background: var(--animated-bg);
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(8px);
 	animation: fadeIn 2s;
-	@include backlight()
 }
 
 nav,
@@ -238,7 +195,6 @@ nav,
 	color: var(--text-color);
 	position: relative;
 	z-index: 1;
-	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
 }
@@ -253,7 +209,6 @@ nav,
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
-	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
 	margin-left: 0;
@@ -271,7 +226,6 @@ nav,
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
-	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
 	margin-left: 0;
@@ -291,7 +245,6 @@ nav,
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
-	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
 	margin-left: 15px;
@@ -299,8 +252,7 @@ nav,
 	animation: fadeIn 2s;
 }
 
-/* Links */
-
+//Links
 a {
 	color: var(--link-color);
 }
@@ -321,8 +273,7 @@ a:active {
 	text-decoration: none;
 }
 
-/* Buttons */
-
+//Buttons
 .button {
 	display: flex;
 	justify-content: center;

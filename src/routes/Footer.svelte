@@ -215,8 +215,5 @@ a:hover {
     width: 18px;
 }
 
-
-    
-
 }
 </style>

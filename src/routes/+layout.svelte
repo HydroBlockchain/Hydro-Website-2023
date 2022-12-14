@@ -1,38 +1,14 @@
 <script>
-    // @ts-nocheck
     import Header from "./Header.svelte";
     import Footer from "./Footer.svelte";
     import "./styles.scss";
-    import { onMount } from "svelte";
-    import { state } from "$lib/stores/store";
-    import Preloader from "$lib/components/preloader.svelte";
-
-    let ready;
-    onMount(() => {
-        ready = true;
-    });
-
-    $: {
-        if (ready) {
-            setInterval(() => {
-                state.set({
-                    loading: false,
-                });
-            }, 1000);
-        }
-    }
 </script>
 
 <div class="app-wrapper">
     <div class="app">
-
-        
         <Header />
         <main>
             <slot />
-            {#if $state.loading}
-                <Preloader />
-            {/if}
         </main>
         <Footer />
     </div>
