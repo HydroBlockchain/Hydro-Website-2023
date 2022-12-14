@@ -22,7 +22,7 @@ function handleClick() {
     <Pricebanner/>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <nav>
-            <div class="wrapper">
+            <div class="wrapper" >
                 <div class="nav-wrapper" id="animated-border">
                     <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo-2"/></a>
                     <svg on:click={handleClick} class="hamburger" width="24px" height="20px" viewBox="0 0 30 23" version="1.1"
