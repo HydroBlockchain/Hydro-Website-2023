@@ -19,7 +19,7 @@
 	--cw-pad: 45rem;
 	--cw-mobile: 35rem;
 	//Container Height
-	--ch-xlarge: 70rem auto;
+	--ch-xlarge: 70rem;
 	--ch-large: 40rem;
 	--ch-medium: 30rem;
 	--ch-small: 25rem;
@@ -157,7 +157,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	width: var(--cw-desktop);
-	height: var(--ch-xlarge);
+	height: var(--ch-large);
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
