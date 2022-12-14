@@ -2,7 +2,7 @@
 //exchanges
 import item from "../../json/landinglinks.json"
 </script>
-<div class="half" id="animated-border" style="margin-right:0px;margin-left:15px;">
+<div class="half" id="animated-border">
     <div class="exchanges">
         <a href="{item[4].link}" target="_blank" rel="noopener noreferrer">
             <svg id="exchange" viewBox="0 0 1202 335" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +68,8 @@ import item from "../../json/landinglinks.json"
 <style>
 .half {
     height: var(--ch-mini);
+    margin-right:0px;
+    margin-left:15px;
 }
 
 .exchanges {
@@ -84,5 +86,22 @@ import item from "../../json/landinglinks.json"
 
 a:hover {
     opacity: 0.5;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .half {
+    height: var(--ch-mini);
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding: 1rem;
+    width: 350px !important;
+    
+}
+
+#exchange {
+	width: 70px;
+    height: auto;
+}
 }
 </style>

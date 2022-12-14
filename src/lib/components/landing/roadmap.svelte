@@ -343,7 +343,8 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .information {
+
+.information {
     flex-direction: column !important;
 }
 
@@ -368,8 +369,6 @@
 .full{
     height: 70rem;
 }
-
-
 
 }
 </style>

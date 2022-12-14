@@ -29,4 +29,21 @@
 </section>
 
 <style>
+    
+.multiple-containers,
+.multiple-containers-alt {
+	display: flex;
+	flex-direction: row;
+	width: var(--cw-desktop);
+}
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    .multiple-containers-alt {
+		display: flex;
+		flex-direction: column-reverse !important;
+	}
+
+
+}
 </style>

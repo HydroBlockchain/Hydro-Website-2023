@@ -53,4 +53,27 @@ import item from "../../json/landinglinks.json"
 a:hover {
     opacity: 0.5;
 }
+
+@media only screen and (max-width: 600px) {
+    .full  {
+    height: var(--ch-mini);
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    padding: 1rem;
+    width: 350px !important;
+    
+}
+
+.partners {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured-on {
+	width: 128px;
+    height: auto;
+}
+}
 </style>

@@ -147,12 +147,7 @@ body {
 }
 
 //Containers
-.multiple-containers,
-.multiple-containers-alt {
-	display: flex;
-	flex-direction: row;
-	width: var(--cw-desktop);
-}
+
 
 .container {
 	display: flex;
@@ -446,6 +441,13 @@ a:active {
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
 	}
+
+	.half {
+		height: var(--ch-mini);
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+
 
 }
 
