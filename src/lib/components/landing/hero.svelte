@@ -101,37 +101,7 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    .intro-hero {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .hero-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .hero-text {
-        display: flex;
-        justify-content: flex-end;
-        font-size: 20px;
-        margin-left: 1rem;
-    }
-
-    #intro-chain {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 1rem;
-    }
-
-
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}

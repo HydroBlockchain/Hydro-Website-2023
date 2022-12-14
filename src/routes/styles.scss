@@ -48,6 +48,10 @@ body {
 	background-attachment: fixed;
 }
 
+body::-webkit-scrollbar {
+	display: none !important;
+  }
+
 //Dark Mode
 @media (prefers-color-scheme: dark) {
 	:root {

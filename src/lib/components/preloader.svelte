@@ -1,8 +1,7 @@
 .
 <script>
-import {fade, draw} from "svelte/transition";
+import {fade} from "svelte/transition";
 import {onMount} from "svelte";
-import {quadInOut} from 'svelte/easing'
 
 let start = false
 onMount(()=> {
@@ -10,7 +9,7 @@ onMount(()=> {
 })
 </script>
 
-<div class="wrapper" out:fade>
+<div transition:fade="{{ duration: 1000 }}" class="wrapper" style="overflow-y: hidden !important;">
     {#if start}
     <svg id="intro-chain" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_1_63)">
@@ -39,21 +38,24 @@ onMount(()=> {
     {/if}
 </div>
 
-<style lang="scss">
+<style>
     .wrapper {
       position: fixed;
+      bottom: 0;
+      right: 0;
+      left: 0;
       top: 0;
-      height: 100%;
+      height: 100vh;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 999;
+      z-index: 1000;
       background-color: #212124;
     }
     #intro-chain{
         width: 256px;
         height: 256px;
-        animation: fadeIn 1s;
     }
+
 </style>

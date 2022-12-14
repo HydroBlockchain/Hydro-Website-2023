@@ -1,30 +1,31 @@
 <script>
-    // @ts-nocheck
     import Header from "./Header.svelte";
     import Footer from "./Footer.svelte";
     import "./styles.scss";
-    // import { onMount } from "svelte";
-    // import { state } from "$lib/stores/store";
-    // import Preloader from "$lib/components/preloader.svelte";
+    import { onMount } from "svelte";
+    import { state } from "$lib/stores/store";
+    import Preloader from "$lib/components/preloader.svelte";
 
-    // let ready;
-    // onMount(() => {
-    //     ready = true;
-    // });
-    // //If we're mounted we wait x (3 second) amount of time to make sure fonts etc is ready. Looks good as well.
-    // $: {
-    //     if (ready) {
-    //         setInterval(() => {
-    //             state.set({ loading: false });
-    //         }, 1000);
-    //     }
-    // }
+    let ready;
+    onMount(() => {
+        ready = true;
+    });
+    //If we're mounted we wait x (3 second) amount of time to make sure fonts etc is ready. Looks good as well.
+    $: {
+        if (ready) {
+            setInterval(() => {
+                state.set({ loading: false });
+            }, 1000);
+        }
+    }
 </script>
 
 <!--Loading screen with animated logo-->
-<!-- {#if $state.loading}
-    <Preloader />
-{/if} -->
+{#if $state.loading}
+<Preloader />
+{/if}
+
+
 
 <div class="app-wrapper">
     <div class="app">
