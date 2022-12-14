@@ -41,7 +41,7 @@
               <div class="roadmap-card-half" id="animated-border">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div></div>
-                    <div class="card-row" id="desc">Keresverse Website with its social features etc live for beta testing.</div>
+                    <div class="card-row" id="desc">Keresverse Website live for beta testing.</div>
                     <div class="card-row" id="progress">
                         <div class="container">
                             <div class="progress3 progress-moved">
@@ -59,8 +59,8 @@
 
               <div class="roadmap-card-half" id="animated-border">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Keresverse Testnet<div id="desc">Q2</div></div>
-                    <div class="card-row" id="desc">Keresverse transitions to public testnet?</div>
+                    <div class="card-row" id="what">Keres Diamond<div id="desc">Q2</div></div>
+                    <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond</div>
                     <div class="card-row" id="progress">
                         <div class="container">
                             <div class="progress4 progress-moved">

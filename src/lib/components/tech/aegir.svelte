@@ -43,7 +43,11 @@ onMount(() => {
 
         <div class="dashboard-slot-alt" id="animated-border">
             <div class="chain-alt">
-                Info on Aegir
+                The Aegir Wallet our open source multicoin and NFT wallet.
+                Aegir encrypts all keys locally, no information is sent to any server.
+                <br><br>
+                Remember to back up your Mnemonic seed!<br>
+                Keep your assets safe with Aegir.
             </div>
         </div>
 
