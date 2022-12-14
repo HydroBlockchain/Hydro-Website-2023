@@ -117,4 +117,23 @@ import Time from "svelte-time";
     background-color: var(--button-hover) !important;
     opacity: 1 !important;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .blog-title {
+    width: 70px;
+    height: 50px;
+    word-wrap: break-word;
+}
+
+.img-link {
+    font-size: 10px!important;
+    
+}
+
+.pub-date {
+    display: none;
+}
+
+}
 </style>
