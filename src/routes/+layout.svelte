@@ -11,7 +11,7 @@
     onMount(() => {
         ready = true;
     });
-    //If we're mounted we wait x (3 second) amount of time to make sure fonts etc is ready. Looks good as well.
+
     $: {
         if (ready) {
             setInterval(() => {
@@ -30,7 +30,6 @@
         <Header />
         <main>
             <slot />
-            <!--Loading screen with animated logo-->
             {#if $state.loading}
                 <Preloader />
             {/if}
