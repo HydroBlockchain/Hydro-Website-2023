@@ -112,4 +112,28 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     background-color: var(--button-hover) !important;
     opacity: 1 !important;
 }
+
+@media only screen and (max-width: 600px) {
+.half{
+    height: 20rem;
+}
+
+.dashboard-slot,
+.dashboard-slot-alt {
+    flex-direction: column !important;
+    width: 70px;
+    height: 100px;
+}
+
+#chain {
+    height: 30px;
+    width: 30px;
+}
+
+.chain {
+    width: 100%;
+    font-size: 10px;
+}
+
+}
 </style>
