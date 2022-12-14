@@ -9,7 +9,7 @@ onMount(()=> {
 })
 </script>
 
-<div transition:fade="{{ duration: 1000 }}" class="wrapper" style="overflow-y: hidden !important;">
+<div transition:fade="{{ duration: 1000 }}" class="wrapper">
     {#if start}
     <svg id="intro-chain" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_1_63)">
@@ -50,12 +50,12 @@ onMount(()=> {
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 1000;
-      background-color: #212124;
+      z-index: 5000;
+      background-color: #000;
     }
     #intro-chain{
-        width: 256px;
-        height: 256px;
+        width: 128px;
+        height: 128px;
     }
 
 </style>
