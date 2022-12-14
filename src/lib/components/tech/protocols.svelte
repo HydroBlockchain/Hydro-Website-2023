@@ -109,4 +109,41 @@ import item from "$lib/json/whitepapers.json"
     opacity: 1 !important;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.full {
+    height: 40rem;
+    flex-direction: column;
+}
+
+.protocol-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro-chain{
+    width: 70px;
+    height: auto;
+}
+
+.right, .left {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.protocol-card{
+    width: 200px;
+    margin: 0.5rem;
+}
+
+    
+
+}
+
 </style>
