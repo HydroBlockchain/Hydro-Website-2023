@@ -207,8 +207,11 @@ nav,
 	position: relative;
 	text-align: center;
 	overflow: hidden;
+	border-radius: 7px;
 	@include backlight(2vw, 2vw, 3vw, 1);
+	
 }
+
 
 .header-button,
 .header-logo {
