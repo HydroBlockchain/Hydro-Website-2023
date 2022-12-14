@@ -1,14 +1,6 @@
 <script>
 import item from "../../json/techlinks.json"
-import {
-    priceData
-} from "$lib/stores/price";
-import {
-    stakedData
-} from "$lib/stores/staked"
-import {
-    githubData
-} from "$lib/stores/github";
+import { priceData, stakedData, githubData } from "$lib/stores/store";
 </script>
 
 <div class="one-quarter" id="animated-border">

@@ -1,6 +1,5 @@
 <script>
-import { priceData } from "$lib/stores/price";
-import { stakedData } from "$lib/stores/staked"
+import { priceData, stakedData } from "$lib/stores/store";
 </script>
 
 <div class="one-quarter" id="animated-border">

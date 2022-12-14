@@ -8,9 +8,7 @@ import btcLogo from "$lib/images/logo/bitcoin.svg"
 import appstoreLogo from "$lib/images/icons/appstore.svg";
 import playstoreLogo from "$lib/images/icons/playstore.svg";
 import item from "../../json/techlinks.json"
-import {
-    githubData
-} from "$lib/stores/github";
+import { githubData } from "$lib/stores/store";
 </script>
 
 <div class="half" id="animated-border">

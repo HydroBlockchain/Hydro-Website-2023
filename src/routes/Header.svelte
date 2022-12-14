@@ -29,9 +29,9 @@ function handleClick() {
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Group-4" fill="var(--text-color)">
-                                <rect id="Rectangle" x="0" y="0" width="30" height="2" rx="2"></rect>
-                                <rect id="Rectangle-Copy-5" x="0" y="9.47368421" width="30" height="2" rx="2"></rect>
-                                <rect id="Rectangle-Copy-6" x="0" y="18.9473684" width="30" height="2" rx="2"></rect>
+                                <rect id="Rectangle" x="0" y="0" width="40" height="3" rx="3"></rect>
+                                <rect id="Rectangle-Copy-5" x="0" y="9.47368421" width="40" height="3" rx="3"></rect>
+                                <rect id="Rectangle-Copy-6" x="0" y="18.9473684" width="40" height="3" rx="3"></rect>
                             </g>
                         </g>
                     </svg>

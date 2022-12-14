@@ -2,7 +2,7 @@
 // @ts-nocheck
 import {
     mediumData
-} from "$lib/stores/medium";
+} from "$lib/stores/store";
 import Time from "svelte-time";
 </script>
 

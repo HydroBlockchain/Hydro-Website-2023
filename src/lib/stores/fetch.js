@@ -1,7 +1,4 @@
-import { getStakedData } from "$lib/stores/staked";
-import { getMediumData } from "$lib/stores/medium";
-import { getPriceData } from "$lib/stores/price";
-import { getGithubData } from "$lib/stores/github";
+import { getStakedData, getMediumData, getPriceData, getGithubData } from "$lib/stores/store";
 
 export const fetchData = () => {
     getStakedData()
