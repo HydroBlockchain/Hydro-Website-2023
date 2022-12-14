@@ -92,7 +92,7 @@ import { priceData, stakedData } from "$lib/stores/store";
 .dashboard-slot-stats {
     margin: 0.5rem;
     padding: 1rem;
-    width: 110px;
+    width: 120px;
     height: 50px;
 }
 
