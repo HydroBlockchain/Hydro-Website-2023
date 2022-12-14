@@ -42,8 +42,8 @@ body {
 	margin: 0;
 	font-family: var(--font-body);
 	color: var(--color-text);
-	background: var(--backgound-color);
 	overflow-x: hidden;
+	background: var(--backgound-color);
 }
 
 body::-webkit-scrollbar {
@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
 		//Gradient Background
 		--backgound-color: linear-gradient(90deg, #2996cc, #0089ec, #005fdb);
 		//Gradient Tiles
-		--shimmer: linear-gradient(270deg, #1d6d9ec0, #3bf8ff45, #0e109d96, #0a4bacbb);
+		--shimmer: linear-gradient(90deg, #1d6d9ec0, #3bf8ff45, #0e109d96, #0a4bacbb);
 		--animated-bg: rgba(255, 255, 255, 0.2);
 		--drop-color: #fff;
 		--sidemenu-color:rgba(33, 33, 36, 0.85) 
@@ -101,22 +101,18 @@ body::-webkit-scrollbar {
 }
 
 // Gradient Backlight
-@mixin backlight($x, $y, $spread, $size) {
+@mixin backlight {
 	&:after {
 		position: absolute;
 		content: "";
-		top: $y;
-		left: $x;
+		top: 0;
+		left: 0;
 		right: 0;
+		bottom: 0;
 		z-index: -1;
 		height: 100%;
 		width: 100%;
-		margin: 0 auto;
-		transform: scale($size);
-		-webkit-filter: blur($spread);
-		-moz-filter: blur($spread);
-		-ms-filter: blur($spread);
-		filter: blur($spread);
+		border-radius: 7px;
 		background: var(--shimmer);
 		background-size: 400% 400%;
 		animation: gradient 40s ease infinite;
@@ -181,7 +177,6 @@ body::-webkit-scrollbar {
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .container-header {
@@ -196,7 +191,9 @@ body::-webkit-scrollbar {
 #animated-border {
 	background: var(--animated-bg);
 	border-radius: var(--border-radius);
+	backdrop-filter: blur(8px);
 	animation: fadeIn 2s;
+	@include backlight()
 }
 
 nav,
@@ -205,7 +202,6 @@ nav,
 	text-align: center;
 	overflow: hidden;
 	border-radius: 7px;
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 
@@ -217,7 +213,6 @@ nav,
 .banner {
 	position: relative;
 	text-align: center;
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
 }
 
@@ -225,13 +220,11 @@ nav,
 #hydro-drop {
 	position: relative;
 	text-align: center;
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .blog-title {
 	position: relative;
 	text-align: center;
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .full {
@@ -248,7 +241,6 @@ nav,
 	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .half {
@@ -267,7 +259,6 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .one-quarter {
@@ -286,7 +277,6 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
 }
 
@@ -306,7 +296,6 @@ nav,
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
-	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
 }
 
