@@ -69,12 +69,12 @@
 
             <a href="/faq/answers/q9">
                 <div class="team-card" id="animated-border">
-                    Question?
+                    Where can i contact Project Hydro?
                 </div></a>
 
             <a href="/faq/answers/q12">
                 <div class="team-card" id="animated-border">
-                    Question?
+                    How can i contribute to Project Hydro?
                 </div></a>
 
         </div>
