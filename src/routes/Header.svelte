@@ -148,7 +148,7 @@
 
 </header>
 
-<style lang="scss">
+<style>
 	a:hover{
 		opacity: 0.5;
 	}

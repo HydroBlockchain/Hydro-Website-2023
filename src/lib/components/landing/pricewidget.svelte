@@ -83,7 +83,7 @@ import { stakedData } from "$lib/stores/staked"
 
 </div>
 
-<style lang="scss">
+<style>
 .hydro-dashboard {
     display: flex;
     flex-direction: row;

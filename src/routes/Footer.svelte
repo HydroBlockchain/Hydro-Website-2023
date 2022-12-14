@@ -111,7 +111,7 @@ import item from "../lib/json/sociallinks.json";
     </div>
 </footer>
 
-<style lang="scss">
+<style>
 footer {
     display: flex;
     justify-content: center;

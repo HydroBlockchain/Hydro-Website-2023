@@ -67,7 +67,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 
 </div>
 
-<style lang="scss">
+<style>
 .hydro-dashboard {
     display: flex;
     flex-direction: row;
@@ -92,8 +92,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     text-align: center;
 }
 
-#chain,
-#coin-logo {
+#chain {
     height: 40px;
     width: 40px;
 }

@@ -65,7 +65,7 @@ import item from "../../json/landinglinks.json"
     </div>
 </div>
 
-<style lang="scss">
+<style>
 .half {
     height: var(--ch-mini);
 }

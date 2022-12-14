@@ -72,7 +72,7 @@ import {
     </div>
 </div>
 
-<style lang="scss">
+<style>
 .dashboard-slot {
     display: flex;
     flex-direction: column;
@@ -96,7 +96,6 @@ import {
     word-wrap: break-word;
     justify-content: center;
     align-items: center;
-
 }
 
 .github-info-inner {
@@ -179,18 +178,10 @@ import {
     width: 600px;
 }
 
-.tagline {
-    font-size: 12px;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 .half {
     flex-direction: column;
     margin-right: 0px;
     margin-left: 15px;
-
 }
 
 .download-text {
@@ -248,18 +239,6 @@ a:hover {
     width: auto;
 }
 
-.products {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#aegir-logo {
-    height: 40px;
-    margin: 10px;
-}
-
 .hydro-dashboard {
     display: flex;
     flex-direction: row;
@@ -282,15 +261,5 @@ a:hover {
     align-items: flex-start;
     flex-direction: column;
     width: 70%;
-}
-
-.dashboard-slot-commit {
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-}
-
-#chain {
-    font-size: 8px;
 }
 </style>

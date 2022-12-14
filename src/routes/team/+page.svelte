@@ -8,7 +8,6 @@ import profile from "$lib/images/team/profile.jpg";
 import twitter from "$lib/images/icons/twitter.svg";
 import linkedin from "$lib/images/icons/linkedin.svg";
 import item from "$lib/json/team.json"
-// import ContactUs from "$lib/components/team/contact-us.svelte";
 import hydroDrop from "$lib/images/logo/hydro-drop.svg";
 </script>
 
@@ -188,11 +187,9 @@ import hydroDrop from "$lib/images/logo/hydro-drop.svg";
 
         </div>
 
-    <!-- <ContactUs/> -->
-
 </section>
 
-<style lang="scss">
+<style>
 section {
     display: flex;
     flex-direction: column;

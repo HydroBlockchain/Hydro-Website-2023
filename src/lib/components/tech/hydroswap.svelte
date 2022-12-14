@@ -77,7 +77,8 @@ import {
     <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
 </div>
 
-<style lang="scss">
+<style>
+
 .dashboard-slot-alt:hover {
     background-color: var(--button-hover) !important;
     opacity: 1 !important;
@@ -88,7 +89,6 @@ import {
     word-wrap: break-word;
     justify-content: center;
     align-items: center;
-
 }
 
 .github-info-inner {
@@ -117,15 +117,6 @@ import {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.currency-class {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--fs-xsmall);
-    margin-left: 0.3rem;
-    color: var(--text-color-alt);
 }
 
 .hydroswap {
@@ -175,15 +166,6 @@ import {
     margin: 0.5rem;
     font-size: 28px !important;
     font-family: 'Montserrat', sans-serif;
-
-}
-
-.dashboard-slot-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 30px;
 }
 
 .cg-credit {
@@ -210,14 +192,6 @@ import {
     font-size: 9px;
 }
 
-.currency-class {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 9px;
-
-}
-
-.currency,
 .procentage {
     display: flex;
     justify-content: flex-end;
@@ -234,10 +208,6 @@ import {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#hydroswap-logo {
-    height: 32px;
 }
 
 .button-row {

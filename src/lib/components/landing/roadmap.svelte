@@ -105,24 +105,14 @@
     </div>
 </div>
 
-<style lang="scss">
+<style>
 
-#what,
-#what-small {
+#what{
     justify-content: space-between;
-
 }
 
 #desc, #q{
   font-size: 10px;
-}
-
-#quarter {
-    justify-content: flex-end;
-    align-self: end;
-    text-align: end;
-    margin-top: 10px;
-    font-size: 10px;
 }
 
 .card-row {
@@ -171,7 +161,6 @@
     margin-bottom: 1rem;
 }
 
-//Progress Bar 1
 .progress1 {
     padding: 3px;
     border-radius: 7px;
@@ -202,7 +191,6 @@
     }
 }
 
-//Progress bar 2
 .progress2 {
     padding: 3px;
     border-radius: 7px;
@@ -233,7 +221,6 @@
     }
 }
 
-//Progress bar 3
 .progress3 {
     padding: 3px;
     border-radius: 7px;
@@ -264,7 +251,6 @@
     }
 }
 
-//Progress bar 4
 .progress4 {
     padding: 3px;
     border-radius: 7px;
@@ -295,7 +281,6 @@
     }
 }
 
-//Progress bar 5
 .progress5 {
     padding: 3px;
     border-radius: 7px;
@@ -326,7 +311,6 @@
     }
 }
 
-//Progress bar 6
 .progress6 {
     padding: 3px;
     border-radius: 7px;
@@ -356,6 +340,4 @@
         background-color: rgba(255, 255, 255, 0.60);
     }
 }
-
-
 </style>
