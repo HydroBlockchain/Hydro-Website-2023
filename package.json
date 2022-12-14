@@ -1,17 +1,14 @@
 {
 	"name": "hydro-website",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"env:dev": "env-cmd npm run dev"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@fontsource/fira-mono": "^4.5.0",
-		"@neoconfetti/svelte": "^1.0.0",
 		"@rollup/plugin-replace": "^5.0.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.84",
@@ -26,7 +23,5 @@
 		"vite": "^3.1.0"
 	},
 	"type": "module",
-	"dependencies": {
-		"svelte-environment-variables": "^1.0.4"
-	}
+	"dependencies": {}
 }
