@@ -1,7 +1,8 @@
 <script>
+// @ts-nocheck
     import {fade} from "svelte/transition";
 </script>
-
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div in:fade out:fade="{{delay: 500}}" class="backdrop" on:click>
     <div class="nav-mobile-wrapper">
         <div class="logo">
