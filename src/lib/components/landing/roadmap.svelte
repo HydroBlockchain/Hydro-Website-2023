@@ -340,4 +340,36 @@
         background-color: rgba(255, 255, 255, 0.60);
     }
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .information {
+    flex-direction: column !important;
+}
+
+.roadmap-card-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 300px;
+    height: 160px;
+}
+
+.container-prog {
+    width: 300px;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.full{
+    height: 70rem;
+}
+
+
+
+}
 </style>
