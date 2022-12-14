@@ -69,6 +69,7 @@ body {
 		--shimmer: linear-gradient(270deg, #2d4a76, #14107b, #0e309d, #17396c);
 		--animated-bg: rgba(33, 33, 36, 0.3);
 		--drop-color: #192E46;
+		--sidemenu-color:rgba(33, 33, 36, 0.85) 
 	}
 }
 
@@ -93,6 +94,7 @@ body {
 		--shimmer: linear-gradient(270deg, #0eebffb6, #302ae0ba, #3cb4ff88, #0050c994);
 		--animated-bg: rgba(255, 255, 255, 0.2);
 		--drop-color: #fff;
+		--sidemenu-color:rgba(33, 33, 36, 0.85) 
 	}
 }
 
@@ -437,6 +439,12 @@ a:active {
 
 	.header-button {
 		width: 3rem !important;
+	}
+
+	.team-card{
+		width: 350px !important;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 
 }
