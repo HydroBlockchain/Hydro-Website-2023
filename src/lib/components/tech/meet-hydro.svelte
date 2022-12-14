@@ -28,4 +28,10 @@
     font-size: var(--fs-medium);
     font-size: 14px;
 }
+
+@media only screen and (max-width: 600px) {
+.one-quarter {
+    height: 25rem;
+}
+}
 </style>

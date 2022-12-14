@@ -55,4 +55,11 @@
     width: 400px;
     height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+#ecosystem {
+    width: 300px;
+    height: auto;
+}
+}
 </style>
