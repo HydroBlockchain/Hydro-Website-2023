@@ -1,9 +1,6 @@
 <script>
 // @ts-nocheck
-
 import Pricebanner from "$lib/components/header/pricebanner.svelte";
-// import Nav from "$lib/components/header/nav.svelte";
-
 import Menu from "$lib/components/header/menu.svelte";
 import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 import techIcon from "$lib/images/icons/tech.svg";
@@ -25,16 +22,9 @@ function handleClick() {
             <div class="wrapper" >
                 <div class="nav-wrapper" id="animated-border">
                     <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo-2"/></a>
-                    <svg on:click={handleClick} class="hamburger" width="24px" height="20px" viewBox="0 0 30 23" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Group-4" fill="var(--text-color)">
-                                <rect id="Rectangle" x="0" y="0" width="40" height="3" rx="3"></rect>
-                                <rect id="Rectangle-Copy-5" x="0" y="9.47368421" width="40" height="3" rx="3"></rect>
-                                <rect id="Rectangle-Copy-6" x="0" y="18.9473684" width="40" height="3" rx="3"></rect>
-                            </g>
-                        </g>
-                    </svg>
+					<svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--logo-color)"/></g>
+					</svg>
 
                     <div class="navigation">
                         <a data-sveltekit-prefetch href="/tech"><img src={techIcon} alt="hydro-drop" id="icon" /></a>
@@ -64,14 +54,14 @@ function handleClick() {
 }
 
 #hydro-logo {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 32px;
     margin-right: 2rem;
 }
 
 #hydro-logo-2 {
-    width: 100px;
-    height: auto;
+    width: 128px;
+    height: 32px;
     margin-left: 2rem;
 }
 
@@ -139,8 +129,8 @@ nav {
 
 .hamburger {
     display: none;
-    height: 20px;
-    margin-right: 1rem;
+    height: 32px;
+    margin-right: 2rem;
     cursor: pointer;
     transition: 250ms ease-in-out;
 
