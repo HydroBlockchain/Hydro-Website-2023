@@ -46,7 +46,6 @@ body {
 	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
 	background-attachment: fixed;
-	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -69,10 +68,10 @@ body::-webkit-scrollbar {
 		--card-background: rgba(33, 33, 36, 0.3);
 		--banner-background: rgba(33, 33, 36, 0.3);
 		//Gradient Background
-		--backgound-color:#192E46; 
+		--backgound-color: linear-gradient(90deg, #003988, #033e69, #042959);
 		//Gradient Tiles
-		--shimmer: linear-gradient(270deg, #4ba27f91, #660e9d83, #1ca2b18a, #370e9dc2, #1a4482);
-		--animated-bg: rgba(255, 255, 255, 0.1);
+		--shimmer: linear-gradient(270deg, #30558d, #1ca2b18a, #370e9dc2, #1a4482);
+		--animated-bg: rgba(33, 33, 36, 0.3);
 		--drop-color: #192E46;
 		--sidemenu-color:rgba(33, 33, 36, 0.85) 
 	}
@@ -82,47 +81,48 @@ body::-webkit-scrollbar {
 @media (prefers-color-scheme: light) {
 	:root {
 		//Text
-		--logo-color: #fff;
+		--logo-color: #eee;
 		--logo-color-alt: rgba(255, 255, 255, 0.4);
-		--title-color: #fff;
-		--text-color: #fff;
+		--title-color: #eee;
+		--text-color: #eee;
 		--text-color-alt: #85e1ff;
-		--link-color: #fff;
+		--link-color: #eee;
 		//Tiles, Banner & Button
 		--button-color: rgba(255, 255, 255, 0.2);
 		--button-hover: #212124;
-		--card-background: rgba(255, 255, 255, 0.1);
-		--banner-background: rgba(255, 255, 255, 0.1);
+		--card-background: rgba(255, 255, 255, 0.2);
+		--banner-background: rgba(255, 255, 255, 0.2);
 		//Gradient Background
-		--backgound-color: #007eb4;
+		--backgound-color: linear-gradient(90deg, #2996cc, #0089ec, #005fdb);
 		//Gradient Tiles
-		--shimmer: linear-gradient(90deg, #0eebffcb, #302ae0ba, #3cb4ffd7, #0050c9b4);
-		--animated-bg: rgba(255, 255, 255, 0.1);
+		--shimmer: linear-gradient(270deg, #0eebffcb, #302ae0ba, #3cb4ffd7, #0050c9b4);
+		--animated-bg: rgba(255, 255, 255, 0.2);
 		--drop-color: #fff;
 		--sidemenu-color:rgba(33, 33, 36, 0.85) 
 	}
 }
 
 // Gradient Backlight
-
-@mixin backlight {
+@mixin backlight($x, $y, $spread, $size) {
 	&:after {
 		position: absolute;
 		content: "";
-		top: 0vw;
-		left: 0vw;
-		right: 0vw;
+		top: $y;
+		left: $x;
+		right: 0;
 		z-index: -1;
 		height: 100%;
 		width: 100%;
-		transform: scale(1);
-		-webkit-filter: blur(5vw);
-		-moz-filter: blur(5vw);
-		-ms-filter: blur(5vw);
-		filter: blur(5vw);
+		margin: 0 auto;
+		transform: scale($size);
+		-webkit-filter: blur($spread);
+		-moz-filter: blur($spread);
+		-ms-filter: blur($spread);
+		filter: blur($spread);
 		background: var(--shimmer);
 		background-size: 400% 400%;
-		animation: gradient 10s ease infinite;
+		animation: gradient 30s ease infinite;
+		overflow: hidden;
 	}
 }
 
@@ -161,7 +161,6 @@ body::-webkit-scrollbar {
 	}
 }
 
-
 //Containers
 
 .multiple-containers,
@@ -181,9 +180,11 @@ body::-webkit-scrollbar {
 	border-radius: var(--border-radius);
 	position: relative;
 	z-index: 1;
+	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
+	@include backlight(5vw, 5vw, 6vw, 1);
 }
 
 .container-header {
@@ -198,7 +199,6 @@ body::-webkit-scrollbar {
 #animated-border {
 	background: var(--animated-bg);
 	border-radius: var(--border-radius);
-	backdrop-filter: blur(10px);
 	animation: fadeIn 2s;
 }
 
@@ -208,6 +208,8 @@ nav,
 	text-align: center;
 	overflow: hidden;
 	border-radius: 7px;
+	@include backlight(2vw, 2vw, 3vw, 1);
+	
 }
 
 
@@ -219,6 +221,7 @@ nav,
 .banner {
 	position: relative;
 	text-align: center;
+	@include backlight(2vw, 2vw, 3vw, 1);
 	animation: fadeIn 2s;
 }
 
@@ -226,11 +229,17 @@ nav,
 #hydro-drop {
 	position: relative;
 	text-align: center;
+	@include backlight(2vw, 2vw, 3vw, 1);
 }
 
 .blog-title {
 	position: relative;
 	text-align: center;
+	@include backlight(2vw, 2vw, 3vw, 1);
+}
+
+#menu-object{
+	@include backlight(2vw, 2vw, 3vw, 1);
 }
 
 .full {
@@ -244,8 +253,10 @@ nav,
 	color: var(--text-color);
 	position: relative;
 	z-index: 1;
+	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
+	@include backlight(5vw, 5vw, 6vw, 1);
 }
 
 .half {
@@ -264,6 +275,7 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
+	@include backlight(5vw, 5vw, 6vw, 1);
 }
 
 .one-quarter {
@@ -282,6 +294,7 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
+	@include backlight(5vw, 5vw, 6vw, 1);
 	animation: fadeIn 2s;
 }
 
@@ -301,6 +314,7 @@ nav,
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
+	@include backlight(5vw, 5vw, 6vw, 1);
 	animation: fadeIn 2s;
 }
 
