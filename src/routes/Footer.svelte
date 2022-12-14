@@ -70,6 +70,7 @@ import item from "../lib/json/sociallinks.json";
                         <path d="M35.8756 2.73045L30.4773 28.1891C30.0697 29.9856 29.0079 30.4328 27.4989 29.587L19.2729 23.5254L15.3043 27.3433C14.8647 27.7828 14.498 28.1495 13.6509 28.1495L14.2425 19.7728L29.487 5.99759C30.1502 5.40729 29.3426 5.07891 28.4572 5.6705L9.61072 17.538L1.49716 14.9979C-0.267377 14.4472 -0.29932 13.2334 1.86515 12.3862L33.6 0.159667C35.0694 -0.391033 36.3548 0.486765 35.8756 2.73173V2.73045Z" fill="var(--logo-color)"/>
                         </svg>
                 </div></a>
+            
 
             <a href={item[5].link} target="_blank" rel="noopener noreferrer">
                 <div class="social-icon">
@@ -86,6 +87,7 @@ import item from "../lib/json/sociallinks.json";
                         <path d="M23.3288 9.15759C20.9046 9.15759 19.1126 10.1997 18.0256 11.3838V10.1245C18.0256 9.85668 17.8086 9.63952 17.5407 9.63952H11.7603C11.4924 9.63952 11.2754 9.85668 11.2754 10.1245V29.515C11.2754 29.7829 11.4924 29.9999 11.7603 29.9999H17.783C18.0508 29.9999 18.2679 29.7829 18.2679 29.515V19.9212C18.2679 16.6883 19.146 15.4288 21.3996 15.4288C23.854 15.4288 24.049 17.4479 24.049 20.0875V29.5151C24.049 29.783 24.2661 30 24.534 30H30.5588C30.8267 30 31.0438 29.783 31.0438 29.5151V18.879C31.0438 14.0719 30.1272 9.15759 23.3288 9.15759Z" fill="var(--logo-color)"/>
                         </svg>
                 </div></a>
+                
 
             <a href={item[7].link} target="_blank" rel="noopener noreferrer">
                 <div class="social-icon">
@@ -120,7 +122,8 @@ footer {
 
 .footer-logo {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between !important;
     align-items: center;
     text-align: center;
     width: var(--cw-desktop);
@@ -159,5 +162,61 @@ footer {
 
 a:hover {
     opacity: 0.5;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: var(--cw-desktop);
+    height: 120px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    animation: fadeIn 2s;
+}
+
+.logo{
+    width: 300px;
+}
+
+#hydro-svg-logo {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    width: 120px;
+    height: 50px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+
+#social-link-logo {
+    height: 18px;
+    width: 18px;
+}
+
+
+    
+
 }
 </style>
