@@ -181,7 +181,7 @@ body::-webkit-scrollbar {
 	overflow: hidden;
 	margin-bottom: 30px;
 	color: var(--text-color);
-	@include backlight(0vw, 0vw, 5vw, 0.75);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .container-header {
@@ -205,7 +205,7 @@ nav,
 	text-align: center;
 	overflow: hidden;
 	border-radius: 7px;
-	@include backlight(0vw, 0vw, 2vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 
@@ -217,7 +217,7 @@ nav,
 .banner {
 	position: relative;
 	text-align: center;
-	@include backlight(0vw, 0vw, 2vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
 }
 
@@ -225,13 +225,13 @@ nav,
 #hydro-drop {
 	position: relative;
 	text-align: center;
-	@include backlight(0vw, 0vw, 2vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .blog-title {
 	position: relative;
 	text-align: center;
-	@include backlight(0vw, 0vw, 2vw, 1);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .full {
@@ -248,7 +248,7 @@ nav,
 	background: inherit;
 	overflow: hidden;
 	margin-bottom: 30px;
-	@include backlight(0vw, 0vw, 5vw, 0.75);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .half {
@@ -267,7 +267,7 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(0vw, 0vw, 5vw, 0.75);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 }
 
 .one-quarter {
@@ -286,7 +286,7 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	@include backlight(0vw, 0vw, 5vw, 0.75);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
 }
 
@@ -306,7 +306,7 @@ nav,
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
-	@include backlight(0vw, 0vw, 5vw, 0.75);
+	@include backlight(5vw, 5vw, 5vw, 0.75);
 	animation: fadeIn 2s;
 }
 
