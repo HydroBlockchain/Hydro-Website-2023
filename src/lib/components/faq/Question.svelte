@@ -88,7 +88,19 @@
     display: none;
   }
 
-  .answer {
+  @media only screen and (max-width: 600px) {
+    .question-container {
+    width: 300px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -96,39 +108,39 @@
     margin: 1rem;
   }
 
-  .question {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 20px;
+  .question-container.active {
+    height: auto;
   }
 
-  #team-card {
-    width: 81rem;
-    height: 150px auto;
-    padding: 2rem;
-    margin-bottom: 1rem;
-    overflow: hidden;
-    background-color: var(--animated-bg);
-    border-radius: var(--border-radius);
-    color: var(--text-color);
+  .question-index.active {
+    display: none;
   }
 
-  @media only screen and (max-width: 600px) {
-    #team-card {
-      width: 300px;
-    }
+  .question-container {
+    height: 50px;
+    margin: 1rem;
+  }
 
-    #team-card:active {
-      height: 300px;
-    }
+  .question-index {
+    display: none;
+  }
 
-    .question {
-      font-size: 16px;
-    }
+  .question-title {
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
 
-    .answer {
-      font-size: 12px;
-    }
+  .question-title.active {
+    width: initial;
+  }
+
+  .body {
+    margin-top: 2rem;
+    font-size: 14px;
+  }
+
+  .question-index.active {
+    display: none;
+  }
   }
 </style>
