@@ -49,7 +49,7 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background: var(--backgound-color);
+	background: var(--bg-color);
 	font-family: var(--font-body);
 	color: var(--color-text);
 	overflow-x: hidden;
@@ -64,18 +64,13 @@ body::-webkit-scrollbar {
 	:root {
 		//Hydro Drop
 		--drop-color: #192E46;
-		//Logo Color
-		--logo-color: #eee;
-		--logo-color-alt: rgba(255, 255, 255, 0.4);
 		//Text Colors
-		--title-color: #eee;
 		--text-color: #eee;
 		--text-color-alt: rgba(255, 255, 255, 0.5);
-		--link-color: #eee;
 		//Background Colors
-		--backgound-color: linear-gradient(90deg, #28326a, #183c68);
+		--bg-color: linear-gradient(90deg, #28326a, #183c68);
 		--card-bg: rgba(33, 33, 36, 0.2);
-		--card-bg-2: rgba(33, 33, 36, 0.05);
+		--card-bg-alt: rgba(33, 33, 36, 0.05);
 		--sidemenu-color: rgba(33, 33, 36, 0.85);
 		//Button Colors
 		--button-color: rgba(33, 33, 36, 0.3);
@@ -90,18 +85,13 @@ body::-webkit-scrollbar {
 	:root {
 		//Hydro Drop
 		--drop-color: #fff;
-		//Logo Color
-		--logo-color: #eee;
-		--logo-color-alt: rgba(255, 255, 255, 0.4);
 		//Text Colors
-		--title-color: #eee;
 		--text-color: #eee;
 		--text-color-alt: #85e1ff;
-		--link-color: #eee;
 		//Background Colors
-		--backgound-color: linear-gradient(90deg, #72aaff, #2eafff);
+		--bg-color: linear-gradient(90deg, #72aaff, #2eafff);
 		--card-bg: rgba(38, 92, 255, 0.2);
-		--card-bg-2: rgba(38, 92, 255, 0.05);
+		--card-bg-alt: rgba(38, 92, 255, 0.05);
 		--sidemenu-color: rgba(33, 33, 36, 0.85);
 		//Button Colors
 		--button-color: rgba(255, 255, 255, 0.2);
@@ -191,15 +181,14 @@ body::-webkit-scrollbar {
 }
 
 #card-background-alt {
-	background: var(--card-bg-2);
+	background: var(--card-bg-alt);
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(8px);
 }
 
-
 //Links
 a {
-	color: var(--link-color);
+	color: var(--text-color);
 }
 
 a:link {
