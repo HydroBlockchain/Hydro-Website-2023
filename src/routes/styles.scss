@@ -48,7 +48,7 @@ body {
 
 body::-webkit-scrollbar {
 	display: none !important;
-  }
+}
 
 //Dark Mode
 @media (prefers-color-scheme: dark) {
@@ -64,9 +64,9 @@ body::-webkit-scrollbar {
 		--button-hover: rgba(255, 255, 255, 0.2);
 		--card-background: rgba(33, 33, 36, 0.3);
 		--banner-background: rgba(33, 33, 36, 0.3);
-		--backgound-color:  linear-gradient(90deg, #28326a, #183c68);
+		--backgound-color: linear-gradient(90deg, #28326a, #183c68);
 		--animated-bg: rgba(33, 33, 36, 0.2);
-		--sidemenu-color:rgba(33, 33, 36, 0.85) 
+		--sidemenu-color: rgba(33, 33, 36, 0.85)
 	}
 }
 
@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
 		--banner-background: rgba(255, 255, 255, 0.2);
 		--backgound-color: linear-gradient(90deg, #72aaff, #2eafff);
 		--animated-bg: rgba(38, 92, 255, 0.2);
-		--sidemenu-color:rgba(33, 33, 36, 0.85) 
+		--sidemenu-color: rgba(33, 33, 36, 0.85)
 	}
 }
 
@@ -122,7 +122,6 @@ body::-webkit-scrollbar {
 	flex-direction: row;
 	width: var(--cw-desktop);
 }
-
 
 .container {
 	display: flex;
@@ -274,8 +273,8 @@ a:active {
 }
 
 .button:hover {
-    background-color: var(--button-hover);
-    opacity: 1 !important;
+	background-color: var(--button-hover);
+	opacity: 1 !important;
 }
 
 .button a {
@@ -387,7 +386,7 @@ a:active {
 		width: 3rem !important;
 	}
 
-	.team-card{
+	.team-card {
 		width: 350px !important;
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;

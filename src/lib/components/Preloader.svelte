@@ -1,12 +1,7 @@
-.
 <script>
-import {
-    fade
-} from "svelte/transition";
-import {
-    onMount
-} from "svelte";
-import logo from "$lib/images/logo/hydro-logo.svg"
+import { fade } from "svelte/transition";
+import { onMount } from "svelte";
+import hydroLogo from "$lib/images/logo/hydro-logo.svg"
 
 let start = false
 onMount(() => {
@@ -14,9 +9,9 @@ onMount(() => {
 })
 </script>
 
-<div in:fade="{{delay: 0, duration: 0}}" out:fade="{{delay: 1000}}" id="preload-wrapper">
+<div out:fade="{{delay: 500, duration: 500}}" id="preload-wrapper">
     {#if start}
-    <img src={logo} alt="hydro-logo" id="hydro-logo"/>
+    <img src={hydroLogo} alt="hydro-logo" id="hydro-logo"/>
     {/if}
 </div>
 

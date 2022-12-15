@@ -16,12 +16,12 @@ let ready
     onMount(() => {
         ready = true
     });
-    
+
     $: {
         if (ready) {
             setInterval(() => {
                 state.set({loading: false})
-            }, 1000)
+            }, 1500)
         }
     }
 </script>

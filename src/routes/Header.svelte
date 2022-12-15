@@ -14,10 +14,9 @@ function handleClick() {
     document.body.classList.toggle('fixed')
 }
 </script>
-
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <header>
     <Pricebanner/>
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
         <nav>
             <div class="wrapper">
                 <div class="nav-wrapper" id="animated-border">
@@ -25,7 +24,6 @@ function handleClick() {
 					<svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--logo-color)"/></g>
 					</svg>
-
                     <div class="navigation">
                         <a data-sveltekit-prefetch href="/tech"><img src={techIcon} alt="hydro-drop" id="icon" /></a>
                         <a data-sveltekit-prefetch href="/team"><img src={teamIcon} alt="hydro-drop" id="icon" /></a>
@@ -35,11 +33,10 @@ function handleClick() {
             </div>
         </nav>
 
-        {#if openMenu}
-        <Menu on:click|once={handleClick}/>
-            {/if}
-
-            </header>
+    {#if openMenu}
+    <Menu on:click|once={handleClick}/>
+    {/if}
+</header>
 
 <style lang="scss">
 #logo-div {
