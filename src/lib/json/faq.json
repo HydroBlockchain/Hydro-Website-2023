@@ -2,82 +2,52 @@
     {
         "id": "0",
         "question": "What is the main purpose of project Hydro?",
-        "answer": "Project Hydro is web3, multi-chain decentralized ecosystem which uses cutting-edge cryptographic technology to secure user identities, accounts, and transactions. Hydro aims to decentralize financial services by bringing public blockchain technology to traditional private systems. It also allows developers around the world to boost their platforms and applications with this innovative technology. As web 3.0 is our coming future and semantic web has already been used, where data is arranged and kept in such a way that computers can easily decipher at a faster pace.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "Project Hydro is web3, multi-chain decentralized ecosystem which uses cutting-edge cryptographic technology to secure user identities, accounts, and transactions. Hydro aims to decentralize financial services by bringing public blockchain technology to traditional private systems. It also allows developers around the world to boost their platforms and applications with this innovative technology. As web 3.0 is our coming future and semantic web has already been used, where data is arranged and kept in such a way that computers can easily decipher at a faster pace."
     },
     {
         "id": "1",
         "question": "What is the Hydroswap?",
-        "answer": "HydroSwap is not your typical decentralized exchange that the DeFi space comes across regularly. It has evolved to involve much more than that. It runs on the Binance Smart Chain to offer high scalability and better transactional experience by users. With this platform, users can seamlessly exchange their tokens/coins for other tokens/coins. They can also become liquidity providers for lucrative rewards. The use cases of HydroSwap continue to increase as newer versions are released into the market. To ensure that everyone, not minding their level of knowledge in the blockchain technology can enjoy the features that HydroSwap offers, the user interface was designed to improve user experience. It is easy to swap tokens without paying a hand and a leg to do that. With HydroSwap, users can easily trade their tokens, stake them and earn. For those that want to create liquidity pools, it is feasible.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "HydroSwap is not your typical decentralized exchange that the DeFi space comes across regularly. It has evolved to involve much more than that. It runs on the Binance Smart Chain to offer high scalability and better transactional experience by users. With this platform, users can seamlessly exchange their tokens/coins for other tokens/coins. They can also become liquidity providers for lucrative rewards. The use cases of HydroSwap continue to increase as newer versions are released into the market. To ensure that everyone, not minding their level of knowledge in the blockchain technology can enjoy the features that HydroSwap offers, the user interface was designed to improve user experience. It is easy to swap tokens without paying a hand and a leg to do that. With HydroSwap, users can easily trade their tokens, stake them and earn. For those that want to create liquidity pools, it is feasible."
     },
     {
         "id": "2",
         "question": "What is the Aegir wallet?",
-        "answer": "Aegir (Ægir) Wallet is our Multi Coin wallet that supports for Bitcoin, Ethereum, Binance Smart Chain, ERC-20, BEP-20, ERC-721 & ERC1155. Aegir does not require any subscription nor it collects any personal information, and uses hydro protocols to provide transfers all over the world through progressive security. The user is further encouraged to strengthen security with Hydro ID, Biometric Security and local encryption of keys.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "Aegir (Ægir) Wallet is our Multi Coin wallet that supports for Bitcoin, Ethereum, Binance Smart Chain, ERC-20, BEP-20, ERC-721 & ERC1155. Aegir does not require any subscription nor it collects any personal information, and uses hydro protocols to provide transfers all over the world through progressive security. The user is further encouraged to strengthen security with Hydro ID, Biometric Security and local encryption of keys."
     },
     {
         "id": "3",
         "question": "What is the Keresverse?",
-        "answer": "Keresverse is an open world game containing for example a first person shooter game that will put players into two teams to compete against each other. The objective of that FPS game will be to eliminate the rest of the enemy team’s players in order to achieve victory and take home the prize in the form of blockchain assets in the Play to Earn model. Apart from that there will be multiple other areas of the KeresVerse such as a Casino, Marketplace, Lounge and more.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "Keresverse is an open world game containing for example a first person shooter game that will put players into two teams to compete against each other. The objective of that FPS game will be to eliminate the rest of the enemy team’s players in order to achieve victory and take home the prize in the form of blockchain assets in the Play to Earn model. Apart from that there will be multiple other areas of the KeresVerse such as a Casino, Marketplace, Lounge and more."
     },
     {
         "id": "4",
         "question": "How can Hydro benefit its users?",
-        "answer": "Creating a robust ecosystem with supply & demand dynamics and market forces. As the ecosystem grows, HYDRO tokens will be integral in: 1.Using dApps 2.Incentivising participation 3.Validating users.                 For instance, the only way to gain initial access to Keres Assets in the KeresVerse will be to stake your Hydro. The evaporation Function natively used in all Hydro smart contracts Consumes a small amount of Hydro which continuously decreases the supply.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "Creating a robust ecosystem with supply & demand dynamics and market forces. As the ecosystem grows, HYDRO tokens will be integral in: 1.Using dApps 2.Incentivising participation 3.Validating users. For instance, the only way to gain initial access to Keres Assets in the KeresVerse will be to stake your Hydro. The evaporation Function natively used in all Hydro smart contracts Consumes a small amount of Hydro which continuously decreases the supply."
     },
     {
         "id": "5",
         "question": "How to swap Hydro between blockchains?",
-        "answer": "You can swap Hydro tokens between Ethereum, Binance Smart Chain, Polygon, CoinEx Smart Chain & Moonriver using our own Hydro Bridge.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "You can swap Hydro tokens between Ethereum, Binance Smart Chain, Polygon, CoinEx Smart Chain & Moonriver using our own Hydro Bridge."
     },
     {
         "id": "6",
         "question": "How to stake Hydro and what are the rewards?",
-        "answer": "Staking is available on the Hydro Swap release along with liquidity pools and the Droplet, The APR is Dynamic and depends on the number of stakers on the platform. Check out the Hydroswap to find out more!",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "Staking is available on the Hydro Swap release along with liquidity pools and the Droplet, The APR is Dynamic and depends on the number of stakers on the platform. Check out the Hydroswap to find out more!"
     },
     {
         "id": "7",
         "question": "How to add Hydro Token in a Web3 wallet?",
-        "answer": "There is a tool for that! Check out the technology page here on the hydro website to add the Hydro token on all networks its deployed on.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "There is a tool for that! Check out the technology page here on the hydro website to add the Hydro token on all networks its deployed on."
     },
     {
         "id": "8",
         "question": "Did Hydro have any ICO, or received any investment?",
-        "answer": "No, Hydro started as an airdrop on Github, all users needed to comply with the tasks to be eligible for airdrop. Project Hydro never had any crowdfunding, Initial Coin Offering nor it received any private investment.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "No, Hydro started as an airdrop on Github, all users needed to comply with the tasks to be eligible for airdrop. Project Hydro never had any crowdfunding, Initial Coin Offering nor it received any private investment."
     },
     {
         "id": "9",
         "question": "How many percent of total supply does the Team hold?",
-        "answer": "The total number of Hydro tokens that the team holds is around 9% of Total Supply.",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "The total number of Hydro tokens that the team holds is around 9% of Total Supply."
     },
     {
         "id": "10",
@@ -90,9 +60,6 @@
     {
         "id": "11",
         "question": "How can i contribute to Project Hydro?",
-        "answer": "We are always interested in collaborations and contributions to our Open Source Project. Contributions can be anything from Pull Requests on Github to donations. Here are some relevant links to discover. link list Donations address",
-        "buttonLinkOne": "null",
-        "buttonLinkTwo": "null",
-        "img": "null"
+        "answer": "We are always interested in collaborations and contributions to our Open Source Project. Contributions can be anything from Pull Requests on Github to donations. Here are some relevant links to discover. link list Donations address"
     }
 ]

@@ -38,7 +38,7 @@
 }
 
 body {
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0;
 	background: var(--backgound-color);
 	font-family: var(--font-body);
@@ -150,7 +150,6 @@ body::-webkit-scrollbar {
 	background: var(--animated-bg);
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(8px);
-	animation: fadeIn 2s;
 }
 
 nav,
@@ -161,16 +160,9 @@ nav,
 	border-radius: 7px;
 }
 
-
-.header-button,
-.header-logo {
-	animation: fadeIn 2s;
-}
-
 .banner {
 	position: relative;
 	text-align: center;
-	animation: fadeIn 2s;
 }
 
 .team-card,
@@ -231,7 +223,6 @@ nav,
 	margin-left: 0;
 	margin-right: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2s;
 }
 
 
@@ -249,7 +240,6 @@ nav,
 	margin-bottom: 30px;
 	margin-left: 15px;
 	color: var(--text-color);
-	animation: fadeIn 2s;
 }
 
 //Links
