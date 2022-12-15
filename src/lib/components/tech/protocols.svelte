@@ -37,15 +37,15 @@ import item from "$lib/json/whitepapers.json"
         </div>
         <div class="protocol-row">
             <a href="{item[0].link}" target="_blank" rel="noopener noreferrer">
-                <div class="protocol-card" id="card-background">Raindrop</div></a>
+                <div class="protocol-card" id="card-background-alt">Raindrop</div></a>
             <a href="{item[1].link}" target="_blank" rel="noopener noreferrer">
-                <div class="protocol-card" id="card-background">Snowflake</div></a>
+                <div class="protocol-card" id="card-background-alt">Snowflake</div></a>
             <a href="{item[2].link}" target="_blank" rel="noopener noreferrer">
-                <div class="protocol-card" id="card-background">Ice</div></a>
+                <div class="protocol-card" id="card-background-alt">Ice</div></a>
             <a href="{item[3].link}" target="_blank" rel="noopener noreferrer">
-                <div class="protocol-card" id="card-background">Tide</div></a>
+                <div class="protocol-card" id="card-background-alt">Tide</div></a>
             <a href="{item[4].link}" target="_blank" rel="noopener noreferrer">
-                <div class="protocol-card" id="card-background">Keresia</div></a>
+                <div class="protocol-card" id="card-background-alt">Keresia</div></a>
         </div>
     </div>
 </div>

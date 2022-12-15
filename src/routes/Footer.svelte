@@ -21,61 +21,61 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 
         <div class="social-media-wrapper">
 
-        <div class="social-media">
-            <a href={item[0].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Facebook} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
+            <div class="social-media">
+                <a href={item[0].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Facebook} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
 
-            <a href={item[1].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Twitter} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
+                <a href={item[1].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Twitter} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
 
-            <a href={item[2].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Youtube} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
+                <a href={item[2].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Youtube} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
 
-            <a href={item[3].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Instagram} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
+                <a href={item[3].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Instagram} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
 
-            <a href={item[4].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Telegram} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
+                <a href={item[4].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Telegram} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
+            </div>
+
+            <div class="social-media">
+
+                <a href={item[5].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Medium} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
+
+                <a href={item[6].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Linkedin} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
+
+                <a href={item[7].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Reddit} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
+
+                <a href={item[8].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Discord} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
+
+                <a href={item[9].link} target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <img src={Github} alt="Facebook-logo" id="social-link-logo"/>
+                    </div></a>
+            </div>
         </div>
-
-        <div class="social-media">
-
-            <a href={item[5].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Medium} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
-
-            <a href={item[6].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Linkedin} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
-
-            <a href={item[7].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Reddit} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
-
-            <a href={item[8].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Discord} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
-
-            <a href={item[9].link} target="_blank" rel="noopener noreferrer">
-                <div class="social-icon">
-                    <img src={Github} alt="Facebook-logo" id="social-link-logo"/>
-                </div></a>
-        </div>
-    </div>
     </div>
 </footer>
 
@@ -99,7 +99,7 @@ footer {
     border-radius: var(--border-radius);
 }
 
-.social-media-wrapper{
+.social-media-wrapper {
     display: flex;
     flex-direction: row;
     margin-right: 0;
@@ -154,12 +154,12 @@ a:hover {
         height: 32px;
     }
 
-    .social-media-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-right: 0;
-    margin-left: 0;
-}
+    .social-media-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    }
 
     .social-media {
         justify-content: center;

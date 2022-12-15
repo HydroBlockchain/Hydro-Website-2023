@@ -7,7 +7,7 @@
 
         <div class="roadmap">
 
-            <div class="roadmap-card-half" id="card-background">
+            <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div></div>
                     <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.</div>
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="roadmap-card-half" id="card-background">
+            <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Aegir Wallet Refresh<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Aegir wallet gets an UI update and preparation work for the Hydro Testnet in Q4.</div>
@@ -38,7 +38,7 @@
             </div>
 
 
-              <div class="roadmap-card-half" id="card-background">
+              <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Keresverse Website live for beta testing.</div>
@@ -57,9 +57,9 @@
 
         <div class="roadmap">
 
-              <div class="roadmap-card-half" id="card-background">
+              <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Keres Diamond<div id="desc">Q2</div></div>
+                    <div class="card-row" id="what">Keres Diamond<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
@@ -72,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="roadmap-card-half" id="card-background">
+            <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div></div>
                     <div class="card-row" id="desc">Hydroswap gets a ui revamp and preparation work for the hydro testnet.</div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="roadmap-card-half" id="card-background">
+            <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Hydro Testnet<div id="q">Q4</div></div>
                     <div class="card-row" id="desc">Hydro Testnet launches in preparation for Hydros own Blockchain.</div>
@@ -107,28 +107,6 @@
 
 <style>
 
-#what{
-    justify-content: space-between;
-}
-
-#desc, #q{
-  font-size: 10px;
-}
-
-.card-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 1.5rem;
-}
-
-.half-card-structure {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-}
-
 .full {
     height: var(--ch-large);
 }
@@ -136,6 +114,8 @@
 .information {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 
 .roadmap {
@@ -150,8 +130,36 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
-    width: 600px;
-    height: 160px;
+    width: 625px;
+    height: 175px;
+}
+
+.half-card-structure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;    
+}
+
+#what{
+    justify-content: space-between;
+}
+
+#desc{
+  font-size: 12px;
+  word-wrap: break-word;
+}
+
+#q{
+  font-size: 10px;
+  color: var(--text-color-alt);
 }
 
 .container-prog {
@@ -175,19 +183,19 @@
 
 .progress-moved .progress-bar1 {
     width: 85%;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: var(--progress-bar);
     animation: progressAnimation1 3s;
 }
 
 @keyframes progressAnimation1 {
     0% {
         width: 5%;
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: var(--progress-bar);
     }
 
     100% {
         width: 85%;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: var(--progress-bar);
     }
 }
 
@@ -205,19 +213,19 @@
 
 .progress-moved .progress-bar2 {
     width: 45%;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: var(--progress-bar);
     animation: progressAnimation2 3s;
 }
 
 @keyframes progressAnimation2 {
     0% {
         width: 5%;
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: var(--progress-bar);
     }
 
     100% {
         width: 45%;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: var(--progress-bar);
     }
 }
 
@@ -235,19 +243,19 @@
 
 .progress-moved .progress-bar3 {
     width: 16%;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: var(--progress-bar);
     animation: progressAnimation3 3s;
 }
 
 @keyframes progressAnimation3 {
     0% {
         width: 5%;
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: var(--progress-bar);
     }
 
     100% {
         width: 16%;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: var(--progress-bar);
     }
 }
 
@@ -265,19 +273,19 @@
 
 .progress-moved .progress-bar4 {
     width: 32%;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: var(--progress-bar);
     animation: progressAnimation4 3s;
 }
 
 @keyframes progressAnimation4 {
     0% {
         width: 5%;
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: var(--progress-bar);
     }
 
     100% {
         width: 32%;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: var(--progress-bar);
     }
 }
 
@@ -295,19 +303,19 @@
 
 .progress-moved .progress-bar5 {
     width: 41%;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: var(--progress-bar);
     animation: progressAnimation5 3s;
 }
 
 @keyframes progressAnimation5 {
     0% {
         width: 5%;
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: var(--progress-bar);
     }
 
     100% {
         width: 41%;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: var(--progress-bar);
     }
 }
 
@@ -325,19 +333,19 @@
 
 .progress-moved .progress-bar6 {
     width: 24%;
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: var(--progress-bar);
     animation: progressAnimation6 3s;
 }
 
 @keyframes progressAnimation6 {
     0% {
         width: 5%;
-        background-color: rgba(255, 255, 255, 0.40);
+        background-color: var(--progress-bar);
     }
 
     100% {
         width: 24%;
-        background-color: rgba(255, 255, 255, 0.60);
+        background-color: var(--progress-bar);
     }
 }
 

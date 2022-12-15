@@ -12,12 +12,12 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
             <div class="row">
                 <div class="hydro-dashboard">
 
-                    <div class="dashboard-slot" id="card-background">
+                    <div class="dashboard-slot" id="card-background-alt">
                         <div class="price">Price</div>
                         <div class="procentage">{$priceData.hydroPrice} USD </div>
                     </div>
 
-                    <div class="dashboard-slot" id="card-background">
+                    <div class="dashboard-slot" id="card-background-alt">
                         <div class="price">Change 24/7</div>
                         <div class="procentage">
                             {#if $priceData.hydroChange > 0}
@@ -30,7 +30,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
                         </div>
                     </div>
 
-                    <div class="dashboard-slot" id="card-background">
+                    <div class="dashboard-slot" id="card-background-alt">
                         <div class="price">Staked</div>
                         <div class="procentage">{$stakedData.hydroStaked} HYDRO</div>
                     </div>
@@ -39,9 +39,9 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 
                 <div class="hydro-dashboard">
 
-                    <div class="dashboard-slot-alt-logo" id="card-background">HYDROSWAP</div>
+                    <div class="dashboard-slot-alt-logo" id="card-background-alt">HYDROSWAP</div>
                     <a href="{$githubData.urlSwap}">
-                        <div class="dashboard-slot-alt" id="card-background">
+                        <div class="dashboard-slot-alt" id="card-background-alt">
 
                             <div class="price">Latest Commit</div>
 

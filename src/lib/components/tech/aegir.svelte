@@ -14,17 +14,17 @@ import { githubData } from "$lib/stores/store";
 <div class="half" id="card-background">
 
     <div class="button-row-small">
-        <div class="support-button" id="card-background"><img src={btcLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
-        <div class="support-button" id="card-background"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
-        <div class="support-button" id="card-background"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
-        <div class="support-button" id="card-background"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
-        <div class="support-button" id="card-background"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
-        <div class="support-button" id="card-background"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
+        <div class="support-button" id="card-background-alt"><img src={btcLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
+        <div class="support-button" id="card-background-alt"><img src={ethLogo} alt="ethereum" id="coin-ticker-logo"/></div>
+        <div class="support-button" id="card-background-alt"><img src={bscLogo} alt="BSC" id="coin-ticker-logo"/></div>
+        <div class="support-button" id="card-background-alt"><img src={polyLogo} alt="polygon" id="coin-ticker-logo"/></div>
+        <div class="support-button" id="card-background-alt"><img src={cscLogo} alt="csc" id="coin-ticker-logo"/></div>
+        <div class="support-button" id="card-background-alt"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
     </div>
 
     <div class="hydro-dashboard">
 
-        <div class="dashboard-slot-alt" id="card-background">
+        <div class="dashboard-slot-alt" id="card-background-alt">
             <div class="chain-alt">
                 The Aegir Wallet our open source multicoin and NFT wallet.
                 Aegir encrypts all keys locally, no information is sent to any server.
@@ -36,7 +36,7 @@ import { githubData } from "$lib/stores/store";
 
         <a href="{$githubData.urlAegir}" id="github-link">
 
-            <div class="dashboard-slot" id="card-background">
+            <div class="dashboard-slot" id="card-background-alt">
 
                 <div class="price">Latest Commit</div>
 
@@ -51,7 +51,7 @@ import { githubData } from "$lib/stores/store";
     </div>
 
     <div class="hydro-dashboard" id="buttons-downloads">
-        <div class="aegir-logo" id="card-background">ÆGIR.</div>
+        <div class="aegir-logo" id="card-background-alt">ÆGIR.</div>
         <a href="{item[9].link}" target="_blank" rel="noopener noreferrer" >
             <div class="playstore-button" id="aegir-button-play">
                 <img src={playstoreLogo} alt="playstore"id="button-logo">
@@ -139,7 +139,7 @@ import { githubData } from "$lib/stores/store";
     font-family: 'Montserrat', sans-serif;
 }
 
-#card-background {
+#card-background-alt {
     font-size: 14px;
 }
 

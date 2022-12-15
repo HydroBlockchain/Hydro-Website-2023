@@ -11,7 +11,7 @@ import Time from "svelte-time";
     <div class="blog-posts">
 
         <a id="blog-link" href ="{$mediumData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="card-background">
+            <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
                     {$mediumData.mediumTitleOne} </div>
                 <div class="pub-date">
@@ -20,7 +20,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkTwo}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="card-background">
+            <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
                     {$mediumData.mediumTitleTwo} </div>
                 <div class="pub-date">
@@ -29,7 +29,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkThree}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="card-background">
+            <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
                     {$mediumData.mediumTitleThree} </div>
                 <div class="pub-date">
@@ -42,7 +42,7 @@ import Time from "svelte-time";
     <div class="blog-posts">
 
         <a id="blog-link" href ="{$mediumData.mediumLinkFour}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="card-background">
+            <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
                     {$mediumData.mediumTitleFour} </div>
                 <div class="pub-date">
@@ -51,7 +51,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkFive}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="card-background">
+            <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
                     {$mediumData.mediumTitleFive} </div>
                 <div class="pub-date">
@@ -60,7 +60,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkSix}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="card-background">
+            <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
                     {$mediumData.mediumTitleSix} </div>
                 <div class="pub-date">
@@ -84,7 +84,7 @@ import Time from "svelte-time";
 
 .blog-title {
     display: flex;
-    background-color: var(--card-background);
+    background-color: var(--card-background-alt);
     padding: 1rem;
     margin: 0.5rem;
     border-radius: var(--border-radius);
@@ -104,6 +104,7 @@ import Time from "svelte-time";
 .pub-date {
     font-size: 9px;
     align-items: flex-start;
+    color: var(--text-color-alt);
 }
 
 #blog-link {

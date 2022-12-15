@@ -1,6 +1,6 @@
 <script>
 import item from "../../json/techlinks.json"
-import hydroDrop from "$lib/images/logo/hydro-drop.svg";
+import hydroDrop from "$lib/images/logo/hydro-drop-white.svg";
 import ethLogo from "$lib/images/logo/ethereum.svg";
 import bscLogo from "$lib/images/logo/bsc.svg";
 import polyLogo from "$lib/images/logo/polygon.svg";
@@ -12,24 +12,21 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 
     <div class="hydro-dashboard">
 
-        <div class="dashboard-slot-alt" id="card-background">
-
-            <img src={hydroDrop} alt="hydro-drop" id="chain"/>
-            <div class="chain-alt">Hydro Token Tool</div>
-
+        <div class="dashboard-slot-alt" id="card-background-alt">
+            <div class="chain-img"><img src={hydroDrop} alt="hydro-drop" id="chain-alt"/></div>
         </div>
 
         <a href="{item[4].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background">
-                <div class="chain">Add Hydro Token on Ethereum Network</div>
-                <img src={ethLogo} alt="hydro-drop" id="chain"/>
+            <div class="dashboard-slot" id="card-background-alt">
+                <div class="chain">Add Hydro Token on Ethereum</div>
+                <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
 
         <a href="{item[5].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background">
-                <div class="chain">Add Hydro Token on Binance Smart Chain Network</div>
-                <img src={bscLogo} alt="hydro-drop" id="chain"/>
+            <div class="dashboard-slot" id="card-background-alt">
+                <div class="chain">Add Hydro Token on BSC Network</div>
+                <div class="chain-img"><img src={bscLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
 
@@ -37,28 +34,28 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 
     <div class="hydro-dashboard">
         <a href="{item[6].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background">
+            <div class="dashboard-slot" id="card-background-alt">
 
-                <div class="chain">Add Hydro Token on Polygon Network</div>
-                <img src={polyLogo} alt="hydro-drop" id="chain"/>
+                <div class="chain">Add Hydro Token on Polygon</div>
+                <div class="chain-img"><img src={polyLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
         <a href="{item[7].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background">
+            <div class="dashboard-slot" id="card-background-alt">
 
-                <div class="chain">Add Hydro Token on CoinEx Smart Chain Network</div>
+                <div class="chain">Add Hydro Token on CSC Network</div>
 
-                <img src={cscLogo} alt="hydro-drop" id="chain"/>
+                <div class="chain-img"><img src={cscLogo} alt="hydro-drop" id="chain"/></div>
 
             </div>
         </a>
 
         <a href="{item[8].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background">
+            <div class="dashboard-slot" id="card-background-alt">
 
-                <div class="chain">Add Hydro Token on Moonriver Network</div>
+                <div class="chain">Add Hydro Token on Moonriver</div>
 
-                <img src={movrLogo} alt="hydro-drop" id="chain"/>
+                <div class="chain-img"> <img src={movrLogo} alt="hydro-drop" id="chain"/></div>
 
             </div>
 
@@ -76,20 +73,34 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 
 .dashboard-slot,
 .dashboard-slot-alt {
+    display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
     text-align: start;
-    display: flex;
     margin: 0.5rem;
     padding: 1rem;
     width: 150px;
-    height: 120px;
+    height: 100px;
 }
 
 .dashboard-slot-alt {
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+}
+
+.chain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}
+
+.chain-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #chain {
@@ -97,15 +108,9 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     width: 40px;
 }
 
-.chain {
-    width: 60%;
-    font-size: 12px;
-}
-
-.chain-alt {
-    width: 100%;
-    font-size: 12px;
-    margin-top: 0.5rem;
+#chain-alt {
+    height: 60px;
+    width: 60px;
 }
 
 .dashboard-slot:hover {
@@ -119,7 +124,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 }
 
 .dashboard-slot,
-.dashboard-slot-alt {
+.dashboard-slot-alt{
     flex-direction: column !important;
     width: 70px;
     height: 100px;

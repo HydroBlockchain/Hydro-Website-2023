@@ -25,9 +25,12 @@ function handleClick() {
 						<g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--logo-color)"/></g>
 					</svg>
                     <div class="navigation">
-                        <a data-sveltekit-prefetch href="/tech"><img src={techIcon} alt="hydro-drop" id="icon" /></a>
-                        <a data-sveltekit-prefetch href="/team"><img src={teamIcon} alt="hydro-drop" id="icon" /></a>
-                        <a data-sveltekit-prefetch href="/faq"><img src={faqIcon} alt="hydro-drop" id="icon" /></a>
+                        <a data-sveltekit-prefetch href="/tech">
+                            <img src={techIcon} alt="Technology" id="icon" /></a>
+                        <a data-sveltekit-prefetch href="/team">
+                            <img src={teamIcon} alt="Team" id="icon" /></a>
+                        <a data-sveltekit-prefetch href="/faq">
+                            <img src={faqIcon} alt="faq" id="icon" /></a>
                     </div>
                 </div>
             </div>
@@ -46,8 +49,8 @@ function handleClick() {
 }
 
 #icon {
-    width: 32px;
-    height: 32px;
+    width: auto;
+    height: 28px;
 }
 
 #hydro-logo {
@@ -105,7 +108,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
 
     a {
         color: var(--nav-link-color);
