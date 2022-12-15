@@ -9,17 +9,11 @@
             <a data-sveltekit-prefetch class="mobile-link" in:fade="{{delay: 50, duration: 400}}" out:fade="{{delay: 350}}" href="/tech">Technology</a>
             <a data-sveltekit-prefetch class="mobile-link" in:fade="{{delay: 150, duration: 400}}" out:fade="{{delay: 250}}" href="/team">Team</a>
             <a data-sveltekit-prefetch class="mobile-link" in:fade="{{delay: 250, duration: 400}}" out:fade="{{delay: 150}}" href="/faq">FAQ</a>
-            <a data-sveltekit-prefetch class="mobile-link" in:fade="{{delay: 350, duration: 400}}" out:fade="{{delay: 50}}" href="/">Home</a>
         </div>
     </div>
 </div>
 
-<style lang="scss">
-#intro-chain{
-    margin-top: 150px;
-    width: 200px;
-    height: 200px;
-}
+<style>
   .backdrop {
     z-index: 9;
     position: fixed;
@@ -58,8 +52,8 @@
     margin: 1rem;
     font-size: 2rem;
     transition: 200ms ease-in-out;
-    &:hover {
-      color: rgb(129, 129, 129);
-    }
+  }
+  .mobile-link:hover{
+    color: rgb(129, 129, 129);
   }
 </style>

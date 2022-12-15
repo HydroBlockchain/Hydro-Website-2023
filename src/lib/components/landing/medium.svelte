@@ -6,12 +6,12 @@ import {
 import Time from "svelte-time";
 </script>
 
-<div class="three-quarter" id="animated-border">
+<div class="three-quarter" id="card-background">
 
     <div class="blog-posts">
 
         <a id="blog-link" href ="{$mediumData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="animated-border">
+            <div class="blog-title" id="card-background">
                 <div class="img-link">
                     {$mediumData.mediumTitleOne} </div>
                 <div class="pub-date">
@@ -20,7 +20,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkTwo}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="animated-border">
+            <div class="blog-title" id="card-background">
                 <div class="img-link">
                     {$mediumData.mediumTitleTwo} </div>
                 <div class="pub-date">
@@ -29,7 +29,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkThree}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="animated-border">
+            <div class="blog-title" id="card-background">
                 <div class="img-link">
                     {$mediumData.mediumTitleThree} </div>
                 <div class="pub-date">
@@ -42,7 +42,7 @@ import Time from "svelte-time";
     <div class="blog-posts">
 
         <a id="blog-link" href ="{$mediumData.mediumLinkFour}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="animated-border">
+            <div class="blog-title" id="card-background">
                 <div class="img-link">
                     {$mediumData.mediumTitleFour} </div>
                 <div class="pub-date">
@@ -51,7 +51,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkFive}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="animated-border">
+            <div class="blog-title" id="card-background">
                 <div class="img-link">
                     {$mediumData.mediumTitleFive} </div>
                 <div class="pub-date">
@@ -60,7 +60,7 @@ import Time from "svelte-time";
             </div></a>
 
         <a id="blog-link" href ="{$mediumData.mediumLinkSix}" target="_blank" rel="noopener noreferrer">
-            <div class="blog-title" id="animated-border">
+            <div class="blog-title" id="card-background">
                 <div class="img-link">
                     {$mediumData.mediumTitleSix} </div>
                 <div class="pub-date">

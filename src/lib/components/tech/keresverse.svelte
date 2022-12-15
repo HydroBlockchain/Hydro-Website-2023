@@ -4,7 +4,7 @@ import vox from "$lib/images/keresverse/vox.png"
 import item from "../../json/techlinks.json"
 </script>
 
-<div class="three-quarter" id="animated-border">
+<div class="three-quarter" id="card-background">
     <div class="jixta">
         <img src={vox} alt="keres-agent" id="vox"/>
 

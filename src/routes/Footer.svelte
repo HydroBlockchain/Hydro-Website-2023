@@ -3,7 +3,7 @@ import item from "../lib/json/sociallinks.json";
 </script>
 
 <footer>
-    <div class="footer-logo" id="animated-border">
+    <div class="footer-logo" id="card-background">
         <div class="logo">
             <svg id="hydro-svg-logo" viewBox="0 0 2561 490" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_b_47_473)">
@@ -130,12 +130,7 @@ footer {
     height: 100px;
     background-color: var(--card-background);
     color: var(--text-color);
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    animation: fadeIn 2s;
+    border-radius: var(--border-radius);
 }
 
 #hydro-svg-logo {
@@ -167,23 +162,12 @@ a:hover {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-
 .footer-logo {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    width: var(--cw-desktop);
     height: 120px;
-    background-color: var(--card-background);
-    color: var(--text-color);
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    animation: fadeIn 2s;
 }
 
 .logo{
@@ -198,7 +182,6 @@ a:hover {
 }
 
 .social-media{
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;

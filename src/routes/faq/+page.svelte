@@ -27,15 +27,6 @@
 <style>
     .container {
         height: 100%;
-        justify-content: center;
         align-items: center;
-    }
-
-    section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 85rem;
     }
 </style>

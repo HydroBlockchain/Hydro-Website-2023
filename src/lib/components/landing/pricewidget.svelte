@@ -2,11 +2,11 @@
 import { priceData, stakedData } from "$lib/stores/store";
 </script>
 
-<div class="one-quarter" id="animated-border">
+<div class="one-quarter" id="card-background">
 
     <div class="hydro-dashboard">
 
-        <div class="dashboard-slot-stats" id="animated-border">
+        <div class="dashboard-slot-stats" id="card-background">
             <svg id="hydro-svg-ticker" viewBox="0 0 2561 490" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_b_47_473)">
                     <path d="M344.4 20C344.4 8.9543 353.354 0 364.4 0H415.4C426.446 0 435.4 8.9543 435.4 20V470C435.4 481.046 426.446 490 415.4 490H364.4C353.354 490 344.4 481.046 344.4 470V20ZM91 470C91 481.046 82.0457 490 71 490H20C8.9543 490 0 481.046 0 470V20C0 8.9543 8.95431 0 20 0H71C82.0457 0 91 8.9543 91 20V470ZM351.4 260C351.4 271.046 342.446 280 331.4 280H103.3C92.2543 280 83.3 271.046 83.3 260V222.3C83.3 211.254 92.2543 202.3 103.3 202.3H331.4C342.446 202.3 351.4 211.254 351.4 222.3V260Z" fill="var(--logo-color)" class="svg-elem-1"></path>
@@ -34,14 +34,14 @@ import { priceData, stakedData } from "$lib/stores/store";
             </svg>
         </div>
 
-        <div class="dashboard-slot" id="animated-border">
+        <div class="dashboard-slot" id="card-background">
             <div class="price">Price</div>
             <div class="currency">{$priceData.hydroPrice}
                 <div class="currency-class">USD</div>
             </div>
         </div>
 
-        <div class="dashboard-slot" id="animated-border">
+        <div class="dashboard-slot" id="card-background">
             <div class="price">Change 24/7</div>
             <div class="procentage">
                 {#if $priceData.hydroChange > 0}
@@ -57,21 +57,21 @@ import { priceData, stakedData } from "$lib/stores/store";
 
     <div class="hydro-dashboard">
 
-        <div class="dashboard-slot" id="animated-border">
+        <div class="dashboard-slot" id="card-background">
             <div class="price">Volume 24/7</div>
             <div class="currency">{$priceData.hydroVolume}
                 <div class="currency-class">USD</div>
             </div>
         </div>
 
-        <div class="dashboard-slot" id="animated-border">
+        <div class="dashboard-slot" id="card-background">
             <div class="price">Marketcap</div>
             <div class="currency">{$priceData.hydroMC}
                 <div class="currency-class">USD</div>
             </div>
         </div>
 
-        <div class="dashboard-slot" id="animated-border">
+        <div class="dashboard-slot" id="card-background">
             <div class="price">Staked</div>
             <div class="currency">{$stakedData.hydroStaked}
                 <div class="currency-class">HYDRO</div>

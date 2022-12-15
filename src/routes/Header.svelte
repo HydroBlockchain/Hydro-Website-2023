@@ -19,7 +19,7 @@ function handleClick() {
     <Pricebanner/>
         <nav>
             <div class="wrapper">
-                <div class="nav-wrapper" id="animated-border">
+                <div class="nav-wrapper" id="card-background">
                     <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo-2"/></a>
 					<svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--logo-color)"/></g>
@@ -69,6 +69,7 @@ function handleClick() {
 
 nav {
     width: 100%;
+    border-radius: var(--border-radius);
 
     @media screen and (max-width: 568px) {
         position: relative;
@@ -93,7 +94,6 @@ nav {
     background-color: var(--card-background);
     color: var(--text-color);
     border-radius: 7px;
-    animation: fadeIn 2s;
     transition: 250ms ease-in-out;
 
     @media only screen and (max-width: 1000px) {

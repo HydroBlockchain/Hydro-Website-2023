@@ -2,7 +2,7 @@
 //exchanges
 import item from "../../json/landinglinks.json"
 </script>
-<div class="half" id="animated-border">
+<div class="half" id="card-background">
     <div class="exchanges">
         <a href="{item[4].link}" target="_blank" rel="noopener noreferrer">
             <svg id="exchange" viewBox="0 0 1202 335" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +95,7 @@ a:hover {
     margin-right: 0px !important;
     margin-left: 0px !important;
     padding: 1rem;
-    width: 350px !important;
+    width: 325px !important;
     
 }
 

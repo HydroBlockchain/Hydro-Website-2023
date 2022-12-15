@@ -1,27 +1,34 @@
 [
     {
         "id": "0",
-        "name": "Saurav Kumar",
-        "title": "President",
+        "name": "Briws Ustyugov",
+        "title": "Frontend Developer",
         "twitter": "https://twitter.com",
         "linkedin": "https://linkedin.com",
         "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "1",
-        "name": "Carl Ulvinen",
-        "title": "Vice President",
+        "name": "Ayushya Chitransh",
+        "title": "Backend Developer",
         "twitter": "https://twitter.com",
         "linkedin": "https://linkedin.com",
         "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "2",
-        "name": "Abhimanyu Bundela",
-        "title": "Chief Gaming Officer",
+        "name": "Jwalin Adhyaru",
+        "title": "3D-Artist",
+        "twitter": "https://twitter.com",
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+    },
+    {
+        "id": "3",
+        "name": "Abishek Padmanaban",
+        "title": "3D-Artist",
         "twitter": "https://twitter.com",
         "linkedin": "https://linkedin.com",
         "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     }
-    
 ]

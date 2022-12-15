@@ -2,12 +2,12 @@
 
 </script>
 
-<div class="full" id="animated-border">
+<div class="full" id="card-background">
     <div class="information">
 
         <div class="roadmap">
 
-            <div class="roadmap-card-half" id="animated-border">
+            <div class="roadmap-card-half" id="card-background">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div></div>
                     <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.</div>
@@ -22,7 +22,7 @@
                 </div>
             </div>
 
-            <div class="roadmap-card-half" id="animated-border">
+            <div class="roadmap-card-half" id="card-background">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Aegir Wallet Refresh<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Aegir wallet gets an UI update and preparation work for the Hydro Testnet in Q4.</div>
@@ -38,7 +38,7 @@
             </div>
 
 
-              <div class="roadmap-card-half" id="animated-border">
+              <div class="roadmap-card-half" id="card-background">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div></div>
                     <div class="card-row" id="desc">Keresverse Website live for beta testing.</div>
@@ -57,7 +57,7 @@
 
         <div class="roadmap">
 
-              <div class="roadmap-card-half" id="animated-border">
+              <div class="roadmap-card-half" id="card-background">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keres Diamond<div id="desc">Q2</div></div>
                     <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond</div>
@@ -72,7 +72,7 @@
                 </div>
             </div>
 
-            <div class="roadmap-card-half" id="animated-border">
+            <div class="roadmap-card-half" id="card-background">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div></div>
                     <div class="card-row" id="desc">Hydroswap gets a ui revamp and preparation work for the hydro testnet.</div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="roadmap-card-half" id="animated-border">
+            <div class="roadmap-card-half" id="card-background">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Hydro Testnet<div id="q">Q4</div></div>
                     <div class="card-row" id="desc">Hydro Testnet launches in preparation for Hydros own Blockchain.</div>

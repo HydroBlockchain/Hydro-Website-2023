@@ -15,7 +15,7 @@ let coinNameCSC = "CET";
 let coinNameMOVR = "MOVR";
 </script>
 <section>
-    <div class="banner" id="animated-border">
+    <div class="banner" id="card-background">
         <div class="slider">
             
             <div class="slide-track">

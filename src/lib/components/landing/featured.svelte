@@ -1,7 +1,7 @@
 <script>
 import item from "../../json/landinglinks.json"
 </script>
-<div class="full" id="animated-border">
+<div class="full" id="card-background">
     <div class="partners">
         <a href="{item[9].link}" target="_blank" rel="noopener noreferrer">
             <svg id="featured-on" viewBox="0 0 601 104" fill="none" xmlns="http://www.w3.org/2000/svg">

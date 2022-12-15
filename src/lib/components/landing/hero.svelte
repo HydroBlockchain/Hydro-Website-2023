@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="full" id="animated-border">
+<div class="full" id="card-background">
     <div class="intro-hero">
         <div class="hero-column">
             <div class="hero-text">

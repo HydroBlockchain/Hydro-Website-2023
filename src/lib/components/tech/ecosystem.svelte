@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="three-quarter" id="animated-border">
+<div class="three-quarter" id="card-background">
     <svg id="ecosystem" viewBox="0 0 1290 804" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="646" cy="162" r="150" stroke="white" stroke-width="23" stroke-dasharray="5 5" class="svg-elem-1"></circle>
         <line x1="227" y1="161" x2="477" y2="161" stroke="white" stroke-width="12" stroke-dasharray="5 5" class="svg-elem-2"></line>

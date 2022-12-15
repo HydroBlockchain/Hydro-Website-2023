@@ -31,7 +31,7 @@
     padding: 2rem;
     margin-bottom: 1rem;
     overflow: hidden;
-    background-color: var(--animated-bg);
+    background-color: var(--card-bg);
     border-radius: var(--border-radius);
     color: var(--text-color);
     transition: height 0.5s ease-in-out;
