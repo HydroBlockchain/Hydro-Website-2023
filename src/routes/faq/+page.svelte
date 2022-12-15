@@ -16,6 +16,7 @@
             <div class:active id="team-card">
                 {#if active}
                 <div class="answer">
+                    {item.question} <br><br>
                     {item.answer}
                 </div>
                 {:else}
@@ -82,20 +83,18 @@
 
         #team-card {
         width: 300px;
-        height: 150px auto;
-        padding: 2rem;
-        margin-bottom: 1rem;
-        overflow: hidden;
-        background-color: var(--animated-bg);
-        border-radius: var(--border-radius);
-        color: var(--text-color);
+    }
+
+    #team-card:active{
+        height: auto;
     }
 
     .question{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
         font-size: 16px;
+    }
+
+    .answer{
+        font-size: 12px;
     }
 
 }
