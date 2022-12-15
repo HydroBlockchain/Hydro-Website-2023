@@ -4,76 +4,87 @@
         "name": "Saurav Kumar",
         "title": "President",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "1",
         "name": "Carl Ulvinen",
         "title": "Vice President",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "2",
         "name": "Abhimanyu Bundela",
         "title": "Chief Gaming Officer",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "3",
         "name": "Briws Ustyugov",
         "title": "Frontend Developer",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "4",
         "name": "Ayushya Chitransh",
         "title": "Backend Developer",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "5",
         "name": "Jwalin Adhyaru",
         "title": "3D-Artist",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "6",
         "name": "Abishek Padmanaban",
         "title": "3D-Artist",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "7",
         "name": "Sundar Mahalingam",
         "title": "3D-Artist",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "8",
         "name": "Jignesh Beladiya",
         "title": "Content Creator",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "9",
         "name": "Anochie Modestus",
         "title": "Community Manager",
         "twitter": "https://twitter.com/uzobankz",
-        "linkedin": "https://www.linkedin.com/in/anochie-modestus-26b75616a"
+        "linkedin": "https://www.linkedin.com/in/anochie-modestus-26b75616a",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     },
     {
         "id": "10",
         "name": "Matas",
         "title": "Community",
         "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com"
+        "linkedin": "https://linkedin.com",
+        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
     }
 ]
