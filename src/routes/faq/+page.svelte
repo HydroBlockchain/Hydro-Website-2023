@@ -1,41 +1,36 @@
 <script>
     // @ts-nocheck
+    import Question from "$lib/components/faq/Question.svelte";
     import items from "$lib/json/faq.json";
-    import Hoverable from "$lib/components/faq/Hoverable.svelte";
+
+    let currentActive = 0;
 </script>
 
 <svelte:head>
     <title>FAQ</title>
     <meta name="FAQ" content="FAQ" />
 </svelte:head>
-
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <section>
     <div class="container">
-    {#each items as item (item.id)}
-        <Hoverable let:hovering={active}>
-            <div class:active id="team-card">
-                {#if active}
-                <div class="answer">
-                    {item.question} <br><br>
-                    {item.answer}
-                </div>
-                {:else}
-                <div class="question">
-                    {item.question}
-                </div>
-                {/if}
-            </div>
-        </Hoverable>
-    {/each}
-</div>
+        {#each items as item, index}
+            <Question
+                {item}
+                {index}
+                on:select={(e) => (currentActive = e.detail)}
+                current={currentActive}
+            />
+        {/each}
+    </div>
 </section>
 
 <style>
-    .container{
+    .container {
         height: 100%;
         justify-content: center;
         align-items: center;
     }
+
     section {
         display: flex;
         flex-direction: column;
@@ -43,19 +38,22 @@
         align-items: center;
         width: 85rem;
     }
-    .answer{
+
+    .answer {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 14px;
         margin: 1rem;
     }
-    .question{
+
+    .question {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         font-size: 20px;
     }
+
     #team-card {
         width: 81rem;
         height: 150px auto;
@@ -66,36 +64,22 @@
         border-radius: var(--border-radius);
         color: var(--text-color);
     }
-    #team-card:hover {
-        background-color: var(--button-hover) !important;
-        opacity: 1 !important;
-        height: 200px;
-        cursor: pointer;
-    }
-
-    #team-card:active {
-        background-color: var(--button-hover) !important;
-        opacity: 1 !important;
-        height: 200px;
-    }
 
     @media only screen and (max-width: 600px) {
-
         #team-card {
-        width: 300px;
-    }
+            width: 300px;
+        }
 
-    #team-card:active{
-        height: auto;
-    }
+        #team-card:active {
+            height: 300px;
+        }
 
-    .question{
-        font-size: 16px;
-    }
+        .question {
+            font-size: 16px;
+        }
 
-    .answer{
-        font-size: 12px;
+        .answer {
+            font-size: 12px;
+        }
     }
-
-}
 </style>

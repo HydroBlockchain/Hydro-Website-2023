@@ -83,7 +83,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     margin: 0.5rem;
     padding: 1rem;
     width: 150px;
-    height: 80px;
+    height: 120px;
 }
 
 .dashboard-slot-alt {

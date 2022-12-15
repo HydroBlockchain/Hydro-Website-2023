@@ -28,8 +28,8 @@
     width: 100%;
     height: 100%;
     background-color:var(--sidemenu-color);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
   .nav-mobile-wrapper {
     box-sizing: border-box;
