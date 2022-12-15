@@ -9,59 +9,43 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 </script>
 
 <div class="half" id="card-background">
-
     <div class="hydro-dashboard">
-
         <div class="dashboard-slot-alt" id="card-background-alt">
             <div class="chain-img"><img src={hydroDrop} alt="hydro-drop" id="chain-alt"/></div>
         </div>
-
         <a href="{item[4].link}" target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
                 <div class="chain">Add Hydro Token on Ethereum</div>
                 <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
-
         <a href="{item[5].link}" target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
                 <div class="chain">Add Hydro Token on BSC Network</div>
                 <div class="chain-img"><img src={bscLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
-
     </div>
-
     <div class="hydro-dashboard">
         <a href="{item[6].link}" target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
-
                 <div class="chain">Add Hydro Token on Polygon</div>
                 <div class="chain-img"><img src={polyLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
         <a href="{item[7].link}" target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
-
                 <div class="chain">Add Hydro Token on CSC Network</div>
-
                 <div class="chain-img"><img src={cscLogo} alt="hydro-drop" id="chain"/></div>
-
             </div>
         </a>
-
         <a href="{item[8].link}" target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
-
                 <div class="chain">Add Hydro Token on Moonriver</div>
-
                 <div class="chain-img"> <img src={movrLogo} alt="hydro-drop" id="chain"/></div>
-
             </div>
-
         </a>
     </div>
-
 </div>
 
 <style>
@@ -88,7 +72,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     justify-content: center;
 }
 
-.chain{
+.chain {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -119,26 +103,30 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 }
 
 @media only screen and (max-width: 600px) {
-.half{
-    height: 20rem;
-}
+    .half {
+        height: auto;
+        flex-direction: row;
+    }
 
-.dashboard-slot,
-.dashboard-slot-alt{
-    flex-direction: column !important;
-    width: 70px;
-    height: 100px;
-}
+    .hydro-dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
-#chain {
-    height: 30px;
-    width: 30px;
-}
+    .dashboard-slot,
+    .dashboard-slot-alt {
+        flex-direction: column !important;
+        width: 120px;
+        height: 100px;
+    }
 
-.chain {
-    width: 100%;
-    font-size: 10px;
-}
+    .chain {
+        width: 100%;
+        font-size: 12px;
+    }
 
 }
 </style>

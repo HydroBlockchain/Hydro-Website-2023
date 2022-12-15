@@ -89,7 +89,7 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between !important;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     width: var(--cw-desktop);
