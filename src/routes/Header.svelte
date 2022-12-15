@@ -22,7 +22,7 @@ function handleClick() {
                 <div class="nav-wrapper" id="card-background">
                     <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo-2"/></a>
 					<svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-						<g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--logo-color)"/></g>
+						<g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--text-color)"/></g>
 					</svg>
                     <div class="navigation">
                         <a data-sveltekit-prefetch href="/tech">

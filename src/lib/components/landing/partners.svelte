@@ -46,18 +46,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-    .half {
-    height: var(--ch-mini);
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    padding: 1rem;
-    width: 350px !important;
-    
-}
 
-#partner {
-	width: 100px;
-    height: 30px;
-}
+    .half {
+        height: var(--ch-mini);
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding: 1rem;
+        width: 327px !important;
+
+    }
+
+    #partner {
+        width: 100px;
+        height: auto;
+    }
 }
 </style>

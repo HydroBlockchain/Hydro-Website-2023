@@ -45,7 +45,7 @@ a:hover {
     margin-right: 0px !important;
     margin-left: 0px !important;
     padding: 1rem;
-    width: 350px !important;
+    width: 327px !important;
     
 }
 
@@ -57,7 +57,7 @@ a:hover {
 }
 
 #featured-on {
-	width: 128px;
+	width: 150px;
     height: auto;
 }
 }

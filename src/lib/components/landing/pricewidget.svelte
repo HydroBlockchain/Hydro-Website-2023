@@ -112,11 +112,20 @@ import HydroLogo from "$lib/images/logo/hydro-logo.svg"
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+    .one-quarter{
+        height: auto;
+        flex-direction: row;
+    }
+    .hydro-dashboard{
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
     .dashboard-slot,
     .dashboard-slot-stats {
         margin: 0.5rem;
         padding: 1rem;
-        width: 70px;
+        width: 120px;
         height: 50px;
     }
 
