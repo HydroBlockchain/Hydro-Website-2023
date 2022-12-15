@@ -23,7 +23,7 @@
         <Blockchains />
         <Aegir />
     </div>
-    <div class="multiple-containers">
+    <div class="multiple-containers" id="mobile-fix">
         <Keresverse />
         <HydroSwap />
     </div>
@@ -31,4 +31,9 @@
 </section>
 
 <style>
+    @media only screen and (max-width: 600px) {
+        #mobile-fix{
+            flex-direction: column-reverse !important;
+        }
+    }
 </style>

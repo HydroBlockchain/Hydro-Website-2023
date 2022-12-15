@@ -263,7 +263,9 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
     .half{
-        height: 35rem;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .button-row-small {

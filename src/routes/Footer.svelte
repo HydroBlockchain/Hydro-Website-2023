@@ -139,15 +139,14 @@ a:hover {
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
-        height: 200px;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
-
-    .logo {
-        width: 300px;
-    }
-
+    
     #hydro-logo {
         margin-top: 1rem;
+        margin-bottom: 1rem;
         margin-left: 0;
         margin-right: 0;
         width: 128px;

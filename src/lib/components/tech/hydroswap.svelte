@@ -14,7 +14,8 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 
                     <div class="dashboard-slot" id="card-background-alt">
                         <div class="price">Price</div>
-                        <div class="procentage">{$priceData.hydroPrice} USD </div>
+                        <div class="procentage">{$priceData.hydroPrice}</div>
+                        <div class="currency">USD</div>
                     </div>
 
                     <div class="dashboard-slot" id="card-background-alt">
@@ -32,7 +33,8 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 
                     <div class="dashboard-slot" id="card-background-alt">
                         <div class="price">Staked</div>
-                        <div class="procentage">{$stakedData.hydroStaked} HYDRO</div>
+                        <div class="procentage">{$stakedData.hydroStaked}</div>
+                        <div class="currency">HYDRO</div>
                     </div>
 
                 </div>
@@ -71,33 +73,6 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 
 <style>
 
-.dashboard-slot-alt:hover {
-    background-color: var(--button-hover) !important;
-    opacity: 1 !important;
-}
-
-#commit-message {
-    font-size: 10px;
-    word-wrap: break-word;
-    justify-content: center;
-    align-items: center;
-}
-
-.github-info-inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 8px;
-}
-
-.github-info-inner img {
-    width: 32px;
-    height: 32px;
-    border-radius: 7px;
-}
-
 .one-quarter {
     display: flex;
     flex-direction: column;
@@ -105,17 +80,17 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     justify-content: space-between !important;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 .hydroswap {
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
     width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .hydro-dashboard {
@@ -160,21 +135,48 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     font-family: 'Montserrat', sans-serif;
 }
 
+.dashboard-slot-alt:hover {
+    background-color: var(--button-hover) !important;
+    opacity: 1 !important;
+}
+
+#commit-message {
+    font-size: 12px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+}
+
+.github-info-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 10px;
+}
+
+.github-info-inner img {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
+}
+
 .cg-credit {
-    display: flex !important;
+    display: flex;
     width: 100%;
     justify-content: flex-end;
-    margin-right: 1rem !important;
+    margin-right: 1rem;
     margin-bottom: 0.5rem;
     font-size: var(--fs-mini);
 }
 
 .cg-credit a {
-    color: rgba(255, 255, 255, 0.44) !important;
+    color: var(--text-color-alt);
 }
 
 .cg-credit a:hover {
-    color: rgb(255, 255, 255) !important;
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -182,6 +184,14 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     display: flex;
     justify-content: flex-start;
     font-size: 9px;
+    color: var(--text-color-alt);
+}
+
+.currency {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 9px;
+    color: var(--text-color-alt);
 }
 
 .procentage {
@@ -222,11 +232,11 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 @media only screen and (max-width: 600px) {
 
 .one-quarter {
-    height: 50rem;
+    height: auto;
     margin-right: 0px;
     margin-left: 0px;
 }
-.row, .button-row{
+.row{
     flex-direction: column-reverse !important;
 }
 
@@ -269,12 +279,19 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 }
 
 #hydroswap-buttons {
-    width: 300px;
+    width: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     margin: 0.2rem;
 
 }
 .hydroswap{
     margin-top: 1rem;
 }
+.cg-credit {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 }
 </style>
