@@ -109,6 +109,8 @@ $: legend = loading ? 'Connecting' : $address ? $address : 'Connect Wallet';
         class:cursor-pointer={!$onExpectedNetwork}>
         {legend}
     </button>
+    {:else}
+    <a href="https://metamask.io"><div class="button" id="card-background">Download Metamask!</div></a>
     {/if}
     {/if}
 </div>
