@@ -4,15 +4,15 @@ import { getCreateNetworkDataByChainId, getNetworkByChainId } from '../utils/net
 import { Web3Provider } from '@ethersproject/providers';
 
 const localhostNetwork = {
-	name: 'Localhost',
-	chainId: 1337,
+	name: 'Binance Smart Chain',
+	chainId: 56,
 	nativeCurrency: {
-		name: 'Ethereum',
-		symbol: 'ETH',
+		name: 'Binance Smart Chain',
+		symbol: 'BNB',
 		decimals: 18
 	},
-	rpc: ['http://localhost:8545/'],
-	explorers: [{ url: 'http://localhost:8545/' }]
+	rpc: ['https://bsc-dataseed1.defibit.io'],
+	explorers: [{ url: 'https://bscscan.com' }]
 };
 
 import type { WindowWithEthereum } from '../../types';
