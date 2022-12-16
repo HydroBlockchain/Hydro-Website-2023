@@ -8,9 +8,9 @@
 </script>
 
 <section>
-<div class="question-container" class:active={current == index}>
-  <!-- svelte-ignore a11y-click-events-have-key-events -->
-  <div class="title" on:click={() => dispatch("select", index)}>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div class="question-container" class:active={current == index} on:click={() => dispatch("select", index)}>
+  <div class="title" >
     <div class="question-index" class:active={current == index}> {index > 9 ? "" : "0"}{index + 1} </div>
     <div class="question-title" class:active={current == index}> {item.question}</div> 
   </div>
