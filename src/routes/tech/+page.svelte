@@ -1,12 +1,12 @@
 <script>
     //components
-    import HydroSwap from "$lib/components/tech/Hydroswap.svelte"
-    import Keresverse from "$lib/components/tech/Keresverse.svelte"
-    import Ecosystem from "$lib/components/tech/Ecosystem.svelte"
-    import MeetHydro from "$lib/components/tech/Meet-hydro.svelte"
-    import Blockchains from "$lib/components/tech/Blockchains.svelte"
-    import Aegir from "$lib/components/tech/Aegir.svelte"
-    import Protocols from "$lib/components/tech/Protocols.svelte"
+    import HydroSwap from "$lib/components/tech/hydroswap.svelte"
+    import Keresverse from "$lib/components/tech/keresverse.svelte"
+    import Ecosystem from "$lib/components/tech/ecosystem.svelte"
+    import MeetHydro from "$lib/components/tech/meet-hydro.svelte"
+    import Blockchains from "$lib/components/tech/blockchains.svelte"
+    import Aegir from "$lib/components/tech/aegir.svelte"
+    import Protocols from "$lib/components/tech/protocols.svelte"
 </script>
 
 <svelte:head>
