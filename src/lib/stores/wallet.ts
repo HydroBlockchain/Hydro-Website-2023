@@ -20,7 +20,8 @@ const localhostNetwork = {
 import type { WindowWithEthereum } from '../../types';
 import type { Signer } from 'ethers';
 
-const expectedChainId = parseInt(import.meta.env.VITE_CHAIN_ID, 10);
+//Binance Smart Chain
+const expectedChainId = 56;
 
 export const metamask = readable<boolean>(browser && window && (window as any).ethereum);
 export const expectedNetwork = readable(

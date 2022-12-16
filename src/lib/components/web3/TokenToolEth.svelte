@@ -14,10 +14,6 @@ import {
     address,
     connect
 } from '$lib/stores/wallet';
-import {
-    showNotification,
-    NotificationType
-} from '$lib/stores/notifications';
 
 const tokenAddressBsc = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071';
 const tokenSymbolBsc = 'Hydro';
@@ -34,7 +30,7 @@ export const addHydroTokenBsc = () => {
                         address: tokenAddressBsc,
                         symbol: tokenSymbolBsc,
                         decimals: tokenDecimalsBsc,
-                        image: tokenImageBsc,
+                        image: tokenImageBsc
                     },
                 },
             });
