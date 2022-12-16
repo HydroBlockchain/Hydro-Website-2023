@@ -44,6 +44,7 @@
 	//Misc
 	--border-radius: 7px;
 	--transparent: rgba(255, 255, 255, 0);
+	--preloader: rgba(0, 0, 0, 0.8);
 }
 
 body {
@@ -65,7 +66,7 @@ body::-webkit-scrollbar {
 		//Hydro Drop
 		--drop-color: #192E46;
 		//Text Colors
-		--text-color: #eee;
+		--text-color: #fff;
 		--text-color-alt: rgba(255, 255, 255, 0.5);
 		//Background Colors
 		--bg-color: linear-gradient(90deg, #28326a, #183c68);
@@ -86,8 +87,8 @@ body::-webkit-scrollbar {
 		//Hydro Drop
 		--drop-color: #fff;
 		//Text Colors
-		--text-color: #eee;
-		--text-color-alt: #85e1ff;
+		--text-color: #fff;
+		--text-color-alt: rgba(255, 255, 255, 0.5);
 		//Background Colors
 		--bg-color: linear-gradient(90deg, #72aaff, #2eafff);
 		--card-bg: rgba(38, 92, 255, 0.2);
@@ -97,7 +98,7 @@ body::-webkit-scrollbar {
 		--button-color: rgba(255, 255, 255, 0.2);
 		--button-hover: rgb(33, 33, 36, 1);
 		//Progress Bar
-		--progress-bar: rgba(106, 83, 255, 0.5);
+		--progress-bar: rgb(107, 201, 255);
 	}
 }
 
@@ -243,13 +244,13 @@ a:active {
 .red {
 	display: flex;
 	margin-left: 3px;
-	color: #f56a6a !important
+	color: #ff9393 !important
 }
 
 .green {
 	display: flex;
 	margin-left: 3px;
-	color: #a6ec64 !important
+	color: #d3ffaa !important
 }
 
 //Keyframes

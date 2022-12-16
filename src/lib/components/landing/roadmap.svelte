@@ -184,7 +184,7 @@
 .progress-moved .progress-bar1 {
     width: 85%;
     background-color: var(--progress-bar);
-    animation: progressAnimation1 3s;
+    animation: progressAnimation1 4s;
 }
 
 @keyframes progressAnimation1 {
@@ -214,7 +214,7 @@
 .progress-moved .progress-bar2 {
     width: 45%;
     background-color: var(--progress-bar);
-    animation: progressAnimation2 3s;
+    animation: progressAnimation2 4s;
 }
 
 @keyframes progressAnimation2 {
@@ -244,7 +244,7 @@
 .progress-moved .progress-bar3 {
     width: 16%;
     background-color: var(--progress-bar);
-    animation: progressAnimation3 3s;
+    animation: progressAnimation3 4s;
 }
 
 @keyframes progressAnimation3 {
@@ -274,7 +274,7 @@
 .progress-moved .progress-bar4 {
     width: 32%;
     background-color: var(--progress-bar);
-    animation: progressAnimation4 3s;
+    animation: progressAnimation4 4s;
 }
 
 @keyframes progressAnimation4 {
@@ -304,7 +304,7 @@
 .progress-moved .progress-bar5 {
     width: 41%;
     background-color: var(--progress-bar);
-    animation: progressAnimation5 3s;
+    animation: progressAnimation5 4s;
 }
 
 @keyframes progressAnimation5 {
@@ -334,7 +334,7 @@
 .progress-moved .progress-bar6 {
     width: 24%;
     background-color: var(--progress-bar);
-    animation: progressAnimation6 3s;
+    animation: progressAnimation6 4s;
 }
 
 @keyframes progressAnimation6 {

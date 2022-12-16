@@ -9,7 +9,7 @@ onMount(() => {
 })
 </script>
 
-<div out:fade="{{delay: 500, duration: 500}}" id="preload-wrapper">
+<div out:fade="{{delay: 0, duration: 500}}" id="preload-wrapper">
     {#if start}
     <img src={hydroLogo} alt="hydro-logo" id="hydro-logo"/>
     {/if}
@@ -28,7 +28,9 @@ onMount(() => {
     justify-content: center;
     align-items: center;
     z-index: 5000;
-    background-color: #000;
+    background-color: var(--preloader);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #hydro-logo {
