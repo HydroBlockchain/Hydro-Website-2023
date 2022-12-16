@@ -1,4 +1,6 @@
-import { chains, type Chain } from 'eth-chains'
+import type { Chain } from 'eth-chains'
+import pkg from 'eth-chains';
+const { chains } = pkg;
 
 type NativeCurrency = {
 	name: string;
