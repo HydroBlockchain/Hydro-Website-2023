@@ -1,7 +1,7 @@
 <script>
 // @ts-nocheck
-import Pricebanner from "$lib/components/header/Pricebanner.svelte";
-import Menu from "$lib/components/header/Menu.svelte";
+import Pricebanner from "$lib/components/header/pricebanner.svelte";
+import Menu from "$lib/components/header/menu.svelte";
 import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 import techIcon from "$lib/images/icons/tech.svg";
 import teamIcon from "$lib/images/icons/team.svg";
