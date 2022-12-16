@@ -23,5 +23,8 @@
 		"vite": "^3.1.0"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"svelte-contracts": "^1.1.25",
+		"svelte-web3": "^4.0.0"
+	}
 }

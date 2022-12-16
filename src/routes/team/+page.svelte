@@ -12,73 +12,66 @@ import items3 from "$lib/json/team3.json"
     <title>Team</title>
     <meta name="Team" content="Team" />
     </svelte:head>
-    <section>
+<section>
 
-        <div class="team-section" id="top-one">
-
-            <div class="team-card" id="card-background">
-                <img src={hydroDrop} alt="hydro-drop" id="hydro-drops"/>
-            </div>
-
-            {#each items as item (item.id)}
-            <div class="team-card" id="card-background">
-                <img src={item.img} alt="profile" id="profile-pic"/>
-                <div class="team-column">
-                    <div class="team-name">{item.name}</div>
-                    <div class="team-title">{item.title}</div>
-                    <div class="team-info">
-                        <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
-                            <img src={twitter} alt="twitter" id="icon"/></a></div>
-                        <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedin} alt="linkedin" id="icon"/></a></div>
-                    </div>
+    <div class="team-section" id="top-one">
+        <div class="team-card" id="card-background">
+            <img src={hydroDrop} alt="hydro-drop" id="hydro-drops"/>
+        </div>
+        {#each items as item (item.id)}
+        <div class="team-card" id="card-background">
+            <img src={item.img} alt="profile" id="profile-pic"/>
+            <div class="team-column">
+                <div class="team-name">{item.name}</div>
+                <div class="team-title">{item.title}</div>
+                <div class="team-info">
+                    <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
+                        <img src={twitter} alt="twitter" id="icon"/></a></div>
+                    <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="linkedin" id="icon"/></a></div>
                 </div>
             </div>
-            {/each}
-
         </div>
+        {/each}
+    </div>
 
-        <div class="team-section" id="middle-one">
-
-            {#each items2 as item (item.id)}
-            <div class="team-card" id="card-background">
-                <img src={item.img} alt="profile" id="profile-pic"/>
-                <div class="team-column">
-                    <div class="team-name">{item.name}</div>
-                    <div class="team-title">{item.title}</div>
-                    <div class="team-info">
-                        <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
-                            <img src={twitter} alt="twitter" id="icon"/></a></div>
-                        <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedin} alt="linkedin" id="icon"/></a></div>
-                    </div>
+    <div class="team-section" id="middle-one">
+        {#each items2 as item (item.id)}
+        <div class="team-card" id="card-background">
+            <img src={item.img} alt="profile" id="profile-pic"/>
+            <div class="team-column">
+                <div class="team-name">{item.name}</div>
+                <div class="team-title">{item.title}</div>
+                <div class="team-info">
+                    <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
+                        <img src={twitter} alt="twitter" id="icon"/></a></div>
+                    <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="linkedin" id="icon"/></a></div>
                 </div>
             </div>
-            {/each}
-
         </div>
+        {/each}
+    </div>
 
-        <div class="team-section" id="last-one">
-
-            {#each items3 as item (item.id)}
-            <div class="team-card" id="card-background">
-                <img src={item.img} alt="profile" id="profile-pic"/>
-                <div class="team-column">
-                    <div class="team-name">{item.name}</div>
-                    <div class="team-title">{item.title}</div>
-                    <div class="team-info">
-                        <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
-                            <img src={twitter} alt="twitter" id="icon"/></a></div>
-                        <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedin} alt="linkedin" id="icon"/></a></div>
-                    </div>
+    <div class="team-section" id="last-one">
+        {#each items3 as item (item.id)}
+        <div class="team-card" id="card-background">
+            <img src={item.img} alt="profile" id="profile-pic"/>
+            <div class="team-column">
+                <div class="team-name">{item.name}</div>
+                <div class="team-title">{item.title}</div>
+                <div class="team-info">
+                    <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
+                        <img src={twitter} alt="twitter" id="icon"/></a></div>
+                    <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedin} alt="linkedin" id="icon"/></a></div>
                 </div>
             </div>
-            {/each}
-
         </div>
+        {/each}
+    </div>
 
-    </section>
+</section>
 
 <style>
 section {

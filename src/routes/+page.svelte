@@ -1,12 +1,12 @@
 <script>
 //Components
-import Medium from "$lib/components/landing/medium.svelte";
-import Introduction from "$lib/components/landing/pricewidget.svelte";
-import Roadmap from "$lib/components/landing/roadmap.svelte";
-import Hero from "$lib/components/landing/hero.svelte";
-import Partners from "$lib/components/landing/partners.svelte";
-import Exchanges from "$lib/components/landing/exchanges.svelte";
-import Featured from "$lib/components/landing/featured.svelte";
+import Medium from "$lib/components/landing/Medium.svelte";
+import Introduction from "$lib/components/landing/Pricewidget.svelte";
+import Roadmap from "$lib/components/landing/Roadmap.svelte";
+import Hero from "$lib/components/landing/Hero.svelte";
+import Partners from "$lib/components/landing/Partners.svelte";
+import Exchanges from "$lib/components/landing/Exchanges.svelte";
+import Featured from "$lib/components/landing/Featured.svelte";
 </script>
 
 <svelte:head>
