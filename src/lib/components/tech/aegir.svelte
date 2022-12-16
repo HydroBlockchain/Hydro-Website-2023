@@ -8,7 +8,9 @@ import btcLogo from "$lib/images/logo/bitcoin.svg"
 import appstoreLogo from "$lib/images/icons/appstore.svg";
 import playstoreLogo from "$lib/images/icons/playstore.svg";
 import item from "../../json/techlinks.json"
-import { githubData } from "$lib/stores/store";
+import {
+    githubData
+} from "$lib/stores/store";
 </script>
 
 <div class="half" id="card-background">
@@ -26,11 +28,10 @@ import { githubData } from "$lib/stores/store";
 
         <div class="dashboard-slot-alt" id="card-background-alt">
             <div class="chain-alt">
-                The Aegir Wallet our open source multicoin and NFT wallet.
+                The Aegir Wallet is our open source multicoin and NFT wallet.
                 Aegir encrypts all keys locally, no information is sent to any server.
                 <br><br>
-                Remember to back up your Mnemonic seed!<br>
-                Keep your assets safe with Aegir.
+                Remember to back up your Mnemonic seed! Keep your assets safe with Aegir.
             </div>
         </div>
 
@@ -71,6 +72,44 @@ import { githubData } from "$lib/stores/store";
 </div>
 
 <style>
+.half {
+    flex-direction: column;
+    margin-right: 0px;
+    margin-left: 15px;
+}
+
+.button-row-small {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+    width: 600px;
+}
+
+.hydro-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 600px;
+}
+
+.dashboard-slot,
+.dashboard-slot-alt {
+    justify-content: space-between;
+    text-align: start;
+    display: flex;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+}
+
+.dashboard-slot-alt {
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+}
+
 .dashboard-slot {
     display: flex;
     flex-direction: column;
@@ -78,19 +117,20 @@ import { githubData } from "$lib/stores/store";
     margin: 0.5rem;
 }
 
-.price {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 9px;
-}
-
 .dashboard-slot:hover {
     background-color: var(--button-hover) !important;
     opacity: 1 !important;
 }
 
+.price {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 9px;
+    color: var(--text-color-alt);
+}
+
 #commit-message {
-    font-size: 10px;
+    font-size: 12px;
     word-wrap: break-word;
     justify-content: center;
     align-items: center;
@@ -102,23 +142,13 @@ import { githubData } from "$lib/stores/store";
     width: 100%;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .github-info-inner img {
-    width: 32px;
-    height: 32px;
-    border-radius: 7px;
-}
-
-.github-info-inner {
-    font-size: 8px;
-}
-
-.github-info-inner img {
-    width: 32px;
-    height: 32px;
-    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-radius);
 }
 
 .aegir-logo {
@@ -166,20 +196,6 @@ import { githubData } from "$lib/stores/store";
     padding: 0.5rem;
     width: 70px;
     height: 30px;
-}
-
-.button-row-small {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 0.5rem;
-    width: 600px;
-}
-
-.half {
-    flex-direction: column;
-    margin-right: 0px;
-    margin-left: 15px;
 }
 
 .download-text {
@@ -237,93 +253,71 @@ a:hover {
     width: auto;
 }
 
-.hydro-dashboard {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 600px;
-}
-
-.dashboard-slot,
-.dashboard-slot-alt {
-    justify-content: space-between;
-    text-align: start;
-    display: flex;
-    margin: 0.5rem;
-    padding: 1rem;
-    width: 150px;
-    height: 150px;
-}
-
-.dashboard-slot-alt {
-    align-items: flex-start;
-    flex-direction: column;
-    width: 70%;
-}
-
 @media only screen and (max-width: 600px) {
-    .half{
+    .half {
         height: auto;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
 
     .button-row-small {
-    width: 300px !important;
-    margin: 0.2rem !important;
-}
+        width: 300px !important;
+        margin: 0.2rem !important;
+    }
 
-.hydro-dashboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px !important;
-}
+    .hydro-dashboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px !important;
+    }
 
-.dashboard-slot,
-.dashboard-slot-alt {
-    justify-content: space-between;
-    text-align: start;
-    display: flex;
-    margin: 0.5rem;
-    padding: 1rem;
-    width: 300px !important;
-    height: 150px;
-}
-.dashboard-slot{
-    height: 75px !important;
-}
+    .dashboard-slot,
+    .dashboard-slot-alt {
+        justify-content: space-between;
+        text-align: start;
+        display: flex;
+        margin: 0.5rem;
+        padding: 1rem;
+        width: 300px !important;
+        height: 150px;
+    }
 
-.support-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0.25rem !important;
-    padding: 0.5rem;
-    width: 50px;
-    height: 30px;
-}
+    .dashboard-slot {
+        height: 75px !important;
+    }
 
-.aegir-logo {
-    display: none;
-    width: 316px;
-    margin-left: 0rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-}
+    .support-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.25rem !important;
+        padding: 0.5rem;
+        width: 50px;
+        height: 30px;
+    }
 
-#buttons-downloads {
-    margin-top: 0.5rem;
-    margin-right: 0rem !important;
-    flex-direction: row;
-    justify-content: space-between!important;
-    align-items: center;
-    width: 100%;
-}
+    .aegir-logo {
+        display: none;
+        width: 316px;
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
 
-.apple-button, .playstore-button{
-    margin-left: 0;
-}
+    #buttons-downloads {
+        margin-top: 0.5rem;
+        margin-right: 0rem !important;
+        flex-direction: row;
+        justify-content: space-between !important;
+        align-items: center;
+        width: 100%;
+    }
+
+    .apple-button,
+    .playstore-button {
+        margin-left: 0;
+    }
 }
 </style>
