@@ -25,7 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"eth-chains": "^1.0.0",
+		"eth-chains": "0.4.0",
 		"ethers": "^5.7.2"
 	}
 }
