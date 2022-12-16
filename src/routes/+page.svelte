@@ -1,6 +1,5 @@
 <script>
 // //Components
-
 import Medium from "$lib/components/landing/Medium.svelte";
 import Pricewidget from "$lib/components/landing/Pricewidget.svelte";
 import Roadmap from "$lib/components/landing/Roadmap.svelte";
