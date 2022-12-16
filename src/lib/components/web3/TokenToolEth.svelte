@@ -1,24 +1,13 @@
 <script lang="ts">
 // @ts-nocheck
-import {
-    metamask,
-    expectedNetwork,
-    switchNetwork,
-    onExpectedNetwork
-} from '$lib/stores/wallet';
-import {
-    showNotification,
-    NotificationType
-} from '$lib/stores/notifications';
-import {
-    address,
-    connect
-} from '$lib/stores/wallet';
+import { metamask, expectedNetwork, switchNetwork, onExpectedNetwork, address, connect } from '$lib/stores/wallet';
+import { showNotification, NotificationType } from '$lib/stores/notifications';
 
 const tokenAddressBsc = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071';
 const tokenSymbolBsc = 'Hydro';
 const tokenDecimalsBsc = 18;
 const tokenImageBsc = 'http://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/128px/drop/Dark-blue-drop.png?raw=true';
+
 export const addHydroTokenBsc = () => {
     if (typeof window.ethereum !== 'undefined') {
         try {
