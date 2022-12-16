@@ -4,12 +4,9 @@
 import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
 import "./styles.scss";
-import {
-    onMount
-} from "svelte";
-import {
-    state
-} from "$lib/stores/store";
+import { onMount } from "svelte";
+import { state } from "$lib/stores/store";
+import { init } from '$lib/stores/wallet.ts';
 import Preloader from "$lib/components/Preloader.svelte";
 
 let ready
@@ -24,8 +21,6 @@ let ready
             }, 1000)
         }
     }
-
-    import { init } from '$lib/stores/wallet.ts';
 
 	onMount(() => {
 		init();
