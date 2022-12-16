@@ -7,7 +7,6 @@
     import Blockchains from "$lib/components/tech/Blockchains.svelte";
     import Aegir from "$lib/components/tech/Aegir.svelte";
     import Protocols from "$lib/components/tech/Protocols.svelte";
-    import TokenTool from "$lib/components/web3/TokenTool.svelte";
 </script>
 
 <svelte:head>
@@ -30,7 +29,6 @@
     </div>
     <Protocols/>
 </section>
-<TokenTool/>
 <style>
     @media only screen and (max-width: 600px) {
         #mobile-fix{
