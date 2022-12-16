@@ -1,8 +1,8 @@
 <script>
 // @ts-nocheck
-import twitter from "$lib/images/icons/twitter.svg"
-import linkedin from "$lib/images/icons/linkedin.svg"
-import hydroDrop from "$lib/images/logo/hydro-drop.svg"
+import twitter from "$lib/images/icons/twitter.svg";
+import linkedin from "$lib/images/icons/linkedin.svg";
+import hydroDrop from "$lib/images/logo/hydro-drop.svg";
 import items from "$lib/json/team.json"
 import items2 from "$lib/json/team2.json"
 import items3 from "$lib/json/team3.json"

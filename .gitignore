@@ -1,7 +1,6 @@
 # build folder
 dist/
 build/
-.netlify
 
 # logs
 logs/
@@ -36,3 +35,4 @@ internal
 *.tgz
 .eslintcache
 .svelte-kit
+.netlify

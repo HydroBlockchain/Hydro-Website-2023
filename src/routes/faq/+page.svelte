@@ -1,7 +1,7 @@
 <script>
     // @ts-nocheck
-    import Question from "$lib/components/faq/Question.svelte"
-    import items from "$lib/json/faq.json"
+    import Question from "$lib/components/faq/Question.svelte";
+    import items from "$lib/json/faq.json";
 
     let currentActive = 0;
 </script>

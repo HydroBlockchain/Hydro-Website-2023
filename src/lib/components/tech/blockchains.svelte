@@ -1,4 +1,5 @@
 <script>
+// @ts-nocheck
 import item from "../../json/techlinks.json"
 import hydroDrop from "$lib/images/logo/hydro-drop-white.svg";
 import ethLogo from "$lib/images/logo/ethereum.svg";
@@ -6,25 +7,40 @@ import bscLogo from "$lib/images/logo/bsc.svg";
 import polyLogo from "$lib/images/logo/polygon.svg";
 import cscLogo from "$lib/images/logo/coinex.svg";
 import movrLogo from "$lib/images/logo/moonriver.svg";
+
+import ConnectButton from '$lib/components/web3/ConnectButton.svelte';
+import SwitchNetwork from '$lib/components/web3/SwitchNetwork.svelte';
+import { onExpectedNetwork } from "$lib/stores/wallet";
+    import AddHydro from "../web3/AddHydro.svelte";
 </script>
+
+<!-- svelte-ignore a11y-missing-attribute -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+
 
 <div class="half" id="card-background">
     <div class="hydro-dashboard">
         <div class="dashboard-slot-alt" id="card-background-alt">
-            <div class="chain-img"><img src={hydroDrop} alt="hydro-drop" id="chain-alt"/></div>
-        </div>
-        <a href="{item[4].link}" target="_blank" rel="noopener noreferrer" >
+            <ConnectButton/>
+            <SwitchNetwork/>
+            {#if $onExpectedNetwork}
+            <div class="small">Your Address</div>
+            {/if}
+            
+    </div>
+       
+        <a target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
                 <div class="chain">Add Hydro Token on Ethereum</div>
                 <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
-        <a href="{item[5].link}" target="_blank" rel="noopener noreferrer" >
+        
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="chain">Add Hydro Token on BSC Network</div>
+                <AddHydro/>
+                <div class="chain"></div>
                 <div class="chain-img"><img src={bscLogo} alt="hydro-drop" id="chain"/></div>
             </div>
-        </a>
     </div>
     <div class="hydro-dashboard">
         <a href="{item[6].link}" target="_blank" rel="noopener noreferrer" >
@@ -66,7 +82,9 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     padding: 1rem;
     width: 150px;
     height: 100px;
+    cursor: pointer;
 }
+
 
 .dashboard-slot-alt {
     justify-content: center;
@@ -88,13 +106,18 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
 }
 
 #chain {
-    height: 40px;
-    width: 40px;
+    height: 48px;
+    width: 48px;
 }
 
-#chain-alt {
-    height: 60px;
-    width: 60px;
+.small{
+    display: flex;
+    width: 140px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    font-size: 10px;
+    color:var(--text-color-alt);
 }
 
 .dashboard-slot:hover {
