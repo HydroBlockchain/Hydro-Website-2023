@@ -8,12 +8,10 @@ import Partners from "$lib/components/landing/Partners.svelte";
 import Exchanges from "$lib/components/landing/Exchanges.svelte";
 import Featured from "$lib/components/landing/Featured.svelte";
 </script>
-
 <svelte:head>
     <title>Home</title>
     <meta name="Project Hydro" content="Project Hydro Website" />
-    </svelte:head>
-
+</svelte:head>
     <section>
         <Hero />
         <div class="multiple-containers">
@@ -27,6 +25,5 @@ import Featured from "$lib/components/landing/Featured.svelte";
         </div>
         <Featured />
     </section>
-
 <style>
 </style>
