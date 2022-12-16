@@ -30,9 +30,21 @@ async function addHydroBSC() {
             console.log(error);
         }
 }
-$: legend3 = 'Add Hydro Token';
 </script>
 {#if $onExpectedNetwork}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={addHydroBSC} disabled={!$onExpectedNetwork} class="button" id="card-background">{legend3}</div>
+<a on:click={addHydroBSC} disabled={!$onExpectedNetwork} id="button">Add Hydro Token on BSC Network</a>
 {/if}
+<style>
+    #button {
+        background-color: var(--transparent);
+        display: flex;
+        flex-direction: row;
+        width: 150px;
+        font-size: 14px;
+        word-wrap: break-word;
+        overflow: hidden;
+        margin-top: 0.5rem;
+        cursor: pointer;
+    }
+</style>

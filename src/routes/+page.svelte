@@ -7,7 +7,6 @@ import Hero from "$lib/components/landing/hero.svelte";
 import Partners from "$lib/components/landing/partners.svelte";
 import Exchanges from "$lib/components/landing/exchanges.svelte";
 import Featured from "$lib/components/landing/featured.svelte";
-import TokenToolEth from "$lib/components/web3/TokenToolEth.svelte";
 </script>
 
 <svelte:head>
@@ -28,7 +27,5 @@ import TokenToolEth from "$lib/components/web3/TokenToolEth.svelte";
         </div>
         <Featured />
     </section>
-    
-    <TokenToolEth/>
 <style>
 </style>

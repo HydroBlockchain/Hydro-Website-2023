@@ -1,6 +1,10 @@
-import type { Chain } from 'eth-chains'
-import pkg from 'eth-chains';
-const { chains } = pkg;
+//Production
+ import type { Chain } from 'eth-chains'
+ import pkg from 'eth-chains';
+ const { chains } = pkg;
+//Development
+// import {chains, type Chain} from 'eth-chains'
+
 
 type NativeCurrency = {
 	name: string;

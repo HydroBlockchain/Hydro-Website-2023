@@ -6,7 +6,7 @@ import SwitchNetwork from './SwitchNetwork.svelte';
 import AddHydro from './AddHydro.svelte';
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="full" id="card-background">
+<div id="card-background">
     <ConnectButton/>
     <SwitchNetwork/>
     <AddHydro/>
@@ -16,8 +16,8 @@ import AddHydro from './AddHydro.svelte';
 </div>
 
 <style>
-.full {
-    height: 10rem;
+#card-background {
+    width: 130px;
 }
 .button {
     border: none !important;
