@@ -1,4 +1,3 @@
-
 import { chains, type Chain } from 'eth-chains'
 
 type NativeCurrency = {
