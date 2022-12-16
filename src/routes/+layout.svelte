@@ -1,5 +1,6 @@
 <script>
 // @ts-nocheck
+
 import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
 import "./styles.scss";
@@ -23,6 +24,12 @@ let ready
             }, 1000)
         }
     }
+
+    import { init } from '$lib/stores/wallet.ts';
+
+	onMount(() => {
+		init();
+	});
 </script>
 
 <div class="app-wrapper">

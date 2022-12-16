@@ -1,4 +1,5 @@
 <script>
+// @ts-nocheck
 import item from "../../json/techlinks.json"
 import hydroDrop from "$lib/images/logo/hydro-drop-white.svg";
 import ethLogo from "$lib/images/logo/ethereum.svg";
@@ -8,12 +9,16 @@ import cscLogo from "$lib/images/logo/coinex.svg";
 import movrLogo from "$lib/images/logo/moonriver.svg";
 </script>
 
+<!-- svelte-ignore a11y-missing-attribute -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+
+
 <div class="half" id="card-background">
     <div class="hydro-dashboard">
         <div class="dashboard-slot-alt" id="card-background-alt">
-            <div class="chain-img"><img src={hydroDrop} alt="hydro-drop" id="chain-alt"/></div>
-        </div>
-        <a href="{item[4].link}" target="_blank" rel="noopener noreferrer" >
+    </div>
+       
+        <a target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
                 <div class="chain">Add Hydro Token on Ethereum</div>
                 <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
@@ -68,6 +73,11 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     height: 100px;
 }
 
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
 .dashboard-slot-alt {
     justify-content: center;
 }
@@ -92,9 +102,24 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     width: 40px;
 }
 
+.button{
+    justify-content: center;
+    margin: 2px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    font-size: 10px;
+}
+
 #chain-alt {
     height: 60px;
     width: 60px;
+}
+
+.connected-address{
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 9px;
 }
 
 .dashboard-slot:hover {

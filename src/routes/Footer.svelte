@@ -10,7 +10,7 @@ import Linkedin from "$lib/images/icons/linkedin.svg"
 import Reddit from "$lib/images/icons/reddit.svg"
 import Discord from "$lib/images/icons/discord.svg"
 import Github from "$lib/images/icons/github.svg"
-import hydroLogo from "$lib/images/logo/hydro-logo.svg"
+import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 </script>
 
 <footer>
