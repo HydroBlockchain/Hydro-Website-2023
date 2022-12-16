@@ -6,47 +6,14 @@ import bscLogo from "$lib/images/logo/bsc.svg";
 import polyLogo from "$lib/images/logo/polygon.svg";
 import cscLogo from "$lib/images/logo/coinex.svg";
 import movrLogo from "$lib/images/logo/moonriver.svg";
-import {
-		accountChainId,
-		connected,
-		connectMetamask,
-		disconnect,
-		walletAddress,
-		addHydroTokenEth,
-        addHydroTokenBSC
-	} from '$lib/stores/provider';
-    import NoMetamask from "$lib/components/web3/NoMetamask.svelte";
-
-
-let hasMetamask = false;
-if (typeof window.ethereum !== "undefined" && ethereum.isMetaMask) {
-hasMetamask = true;
-} else {
-hasMetamask = false;
-}
 </script>
-
-<!-- svelte-ignore a11y-missing-attribute -->
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-
 
 <div class="half" id="card-background">
     <div class="hydro-dashboard">
         <div class="dashboard-slot-alt" id="card-background-alt">
-        {#if hasMetamask}
-            <div class="connected-address">connected: {$connected}</div>
-            <div class="connected-address">{$walletAddress}</div>
-            <div on:click={addHydroTokenEth} class="button">Add Hydro</div>
-            <div class="row">
-            <div on:click={connectMetamask} class="button">Connect</div>
-            <div on:click={disconnect} class="button">Disconnect</div>
+            <div class="chain-img"><img src={hydroDrop} alt="hydro-drop" id="chain-alt"/></div>
         </div>
-        {:else}
-        <NoMetamask/>
-        {/if}
-    </div>
-       
-        <a target="_blank" rel="noopener noreferrer" >
+        <a href="{item[4].link}" target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
                 <div class="chain">Add Hydro Token on Ethereum</div>
                 <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
@@ -101,11 +68,6 @@ hasMetamask = false;
     height: 100px;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-}
-
 .dashboard-slot-alt {
     justify-content: center;
 }
@@ -130,24 +92,9 @@ hasMetamask = false;
     width: 40px;
 }
 
-.button{
-    justify-content: center;
-    margin: 2px;
-    padding: 10px;
-    height: auto;
-    width: auto;
-    font-size: 10px;
-}
-
 #chain-alt {
     height: 60px;
     width: 60px;
-}
-
-.connected-address{
-    width: 100%;
-    word-wrap: break-word;
-    font-size: 9px;
 }
 
 .dashboard-slot:hover {
