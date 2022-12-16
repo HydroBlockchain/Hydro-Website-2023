@@ -12,6 +12,7 @@ import Preloader from "$lib/components/Preloader.svelte";
 let ready
     onMount(() => {
         ready = true
+        init();
     });
 
     $: {
@@ -21,10 +22,6 @@ let ready
             }, 1000)
         }
     }
-
-	onMount(() => {
-		init();
-	});
 </script>
 
 <div class="app-wrapper">
