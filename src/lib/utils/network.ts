@@ -1,5 +1,5 @@
 
-import chains, { ChainId, ChainName } from 'eth-chains'
+import { chains, type Chain } from 'eth-chains'
 
 type NativeCurrency = {
 	name: string;
@@ -15,8 +15,8 @@ type CreateNewNetworkData = {
 	blockExplorerUrls: string[];
 };
 
-export function getNetworkByChainId(chainId: number): ChainId {
-	const network = chains.ChainId;
+export function getNetworkByChainId(chainId: number): Chain {
+	const network = chains.getById(chainId);
 	if (!network) {
 		throw new Error('invalid chain id');
 	}

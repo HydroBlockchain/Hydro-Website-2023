@@ -1,27 +1,17 @@
 <script>
 // @ts-nocheck
-
 import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
 import "./styles.scss";
-import { onMount } from "svelte";
-import { state } from "$lib/stores/store";
+
 import { init } from '$lib/stores/wallet.ts';
-import Preloader from "$lib/components/Preloader.svelte";
+import { onMount } from 'svelte';
 
 let ready
-    onMount(() => {
-        ready = true
-        init();
-    });
-
-    $: {
-        if (ready) {
-            setInterval(() => {
-                state.set({loading: false})
-            }, 1000)
-        }
-    }
+onMount(() => {
+    ready = true
+    init();
+});
 </script>
 
 <div class="app-wrapper">
@@ -29,9 +19,6 @@ let ready
         <Header />
         <main>
             <slot />
-            {#if $state.loading}
-                <Preloader />
-            {/if}
         </main>
         <Footer />
     </div>
