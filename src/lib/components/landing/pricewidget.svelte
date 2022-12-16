@@ -80,7 +80,6 @@ import HydroLogo from "$lib/images/logo/hydro-logo.svg"
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
 }
 
 .price,
@@ -125,13 +124,13 @@ import HydroLogo from "$lib/images/logo/hydro-logo.svg"
     .dashboard-slot-stats {
         margin: 0.5rem;
         padding: 1rem;
-        width: 120px;
+        width: 130px;
         height: 50px;
     }
 
-    .currency,
-    .procentage {
-        font-size: 12px;
+    .currency-class,
+    .price {
+        font-size: 10px;
     }
 
 }

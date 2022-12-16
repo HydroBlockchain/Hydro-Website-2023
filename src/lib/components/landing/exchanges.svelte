@@ -55,11 +55,11 @@ a:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
     .half {
-        height: var(--ch-mini);
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         margin-right: 0px !important;
         margin-left: 0px !important;
-        padding: 1rem;
-        width: 325px !important;
 
     }
 

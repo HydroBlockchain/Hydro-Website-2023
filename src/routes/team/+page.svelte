@@ -173,6 +173,10 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
+    section{
+        width: 100%;
+    }
+
     .team-section {
         flex-direction: column !important;
         justify-content: center;
@@ -181,9 +185,16 @@ a:hover {
     }
 
     .team-card {
-        width: 325px !important;
+        justify-content: space-around;
+        padding: 0;
+        width: 100% !important;
         margin-top: 0.5rem;
 	 	margin-bottom: 0.5rem;
+    }
+
+    #profile-pic {
+    width: 100px;
+    margin-right: 1rem;
     }
 
     #top-one {

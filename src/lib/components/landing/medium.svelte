@@ -121,14 +121,9 @@ import Time from "svelte-time";
     }
 
     .blog-title {
-        width: 120px;
+        width: 130px;
         height: 50px;
         word-wrap: break-word;
-    }
-
-    .img-link {
-        font-size: 10px !important;
-
     }
 
 }

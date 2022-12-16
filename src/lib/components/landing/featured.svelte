@@ -41,12 +41,11 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
     .full  {
-    height: var(--ch-mini);
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-right: 0px !important;
     margin-left: 0px !important;
-    padding: 1rem;
-    width: 327px !important;
-    
 }
 
 .partners {
