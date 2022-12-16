@@ -24,10 +24,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@walletconnect/ethereum-provider": "^2.1.4",
 		"eth-chains": "^1.0.0",
-		"ether-state": "^0.0.2",
-		"ethers": "^5.7.2",
-		"web3": "^1.8.1"
+		"ethers": "^5.7.2"
 	}
 }
