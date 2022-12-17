@@ -4,7 +4,7 @@ import { onExpectedNetwork } from '$lib/stores/wallet';
 const tokenAddressBsc = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071';
 const tokenSymbolBsc = 'Hydro';
 const tokenDecimalsBsc = 18;
-const tokenImageBsc = 'http://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/128px/drop/Dark-blue-drop.png?raw=true';
+const tokenImageBsc = 'http://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/858e2d2a56ffdf375f4edfb51219f3abd6bab749/svg/drop/Dark-blue-drop.svg';
 
 async function addHydroBSC() {
     if (typeof window.ethereum !== 'undefined')
