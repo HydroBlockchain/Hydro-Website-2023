@@ -29,6 +29,11 @@ import AddHydroPoly from "../web3/poly/AddHydroPoly.svelte";
 import ConnectButtonPoly from "../web3/poly/ConnectButtonPoly.svelte";
 import SwitchNetworkPoly from "../web3/poly/SwitchNetworkPoly.svelte";
 
+//Movr
+import { addressMovr, onExpectedNetworkMovr } from "$lib/stores/wallet-movr";
+import ConnectButtonMovr from "../web3/movr/ConnectButtonMovr.svelte";
+import SwitchNetworkMovr from "../web3/movr/SwitchNetworkMovr.svelte";
+import AddHydroMovr from "../web3/movr/AddHydroMovr.svelte";
 
 </script>
 
@@ -57,6 +62,11 @@ import SwitchNetworkPoly from "../web3/poly/SwitchNetworkPoly.svelte";
             {:else}
             <ConnectButtonEth/>
             <SwitchNetworkEth/>
+            {#if $onExpectedNetworkMovr}
+            <ConnectButtonMovr/>
+            <SwitchNetworkMovr/>
+            {:else}
+            {/if}
             {/if}
             {/if}
             {/if}
@@ -87,6 +97,14 @@ import SwitchNetworkPoly from "../web3/poly/SwitchNetworkPoly.svelte";
                 {/if}
                 <div class="chain"></div>
                 <div class="chain-img"><img src={polyLogo} alt="hydro-drop" id="chain"/></div>
+            </div>
+
+            <div class="dashboard-slot" id="card-background-alt">
+                {#if $addressMovr && $onExpectedNetworkMovr}
+                <AddHydroMovr/>
+                {/if}
+                <div class="chain"></div>
+                <div class="chain-img"><img src={movrLogo} alt="hydro-drop" id="chain"/></div>
             </div>
     </div>
   
@@ -134,8 +152,8 @@ import SwitchNetworkPoly from "../web3/poly/SwitchNetworkPoly.svelte";
 }
 
 #chain {
-    height: 48px;
-    width: 48px;
+    height: 32px;
+    width: 32px;
 }
 
 .small{

@@ -7,6 +7,7 @@ import "./styles.scss";
 import { initBsc } from '$lib/stores/wallet-bsc.ts';
 import { initEth } from '$lib/stores/wallet-eth.ts';
 import { initPoly } from "$lib/stores/wallet-poly";
+import { initMovr } from "$lib/stores/wallet-movr";
 import { onMount } from 'svelte';
 
 let ready
@@ -15,6 +16,7 @@ onMount(() => {
     initBsc();
     initEth();
     initPoly();
+    initMovr();
 });
 </script>
 
