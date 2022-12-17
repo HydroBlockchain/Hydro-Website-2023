@@ -33,7 +33,7 @@
     </script>
     {#if $onExpectedNetworkMovr}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <a on:click={addHydroPoly} disabled={!$onExpectedNetworkMovr} id="button">Add Hydro Token on Polygon Network</a>
+    <a on:click={addHydroPoly} disabled={!$onExpectedNetworkMovr} id="button">Add Hydro Token on Moonriver Network</a>
     {/if}
     <style>
         #button {
