@@ -8,10 +8,14 @@ import polyLogo from "$lib/images/logo/polygon.svg";
 import cscLogo from "$lib/images/logo/coinex.svg";
 import movrLogo from "$lib/images/logo/moonriver.svg";
 
-import ConnectButton from '$lib/components/web3/ConnectButton.svelte';
-import SwitchNetwork from '$lib/components/web3/SwitchNetwork.svelte';
-import { onExpectedNetwork } from "$lib/stores/wallet";
-    import AddHydro from "../web3/AddHydro.svelte";
+import ConnectButtonBsc from '$lib/components/web3/bsc/ConnectButtonBsc.svelte';
+import SwitchNetworkBsc from '$lib/components/web3/bsc/SwitchNetworkBsc.svelte';
+import { address, onExpectedNetwork } from "$lib/stores/wallet-bsc";
+import { address2, onExpectedNetwork2 } from "$lib/stores/wallet-eth";
+import AddHydroBsc from "../web3/bsc/AddHydroBsc.svelte";
+import AddHydroEth from "../web3/eth/AddHydroEth.svelte";
+import SwitchNetworkEth from "../web3/eth/SwitchNetworkEth.svelte";
+import ConnectButtonEth from "../web3/eth/ConnectButtonEth.svelte";
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
@@ -21,47 +25,42 @@ import { onExpectedNetwork } from "$lib/stores/wallet";
 <div class="half" id="card-background">
     <div class="hydro-dashboard">
         <div class="dashboard-slot-alt" id="card-background-alt">
-            <ConnectButton/>
-            <SwitchNetwork/>
+            
+
             {#if $onExpectedNetwork}
-            <div class="small">Your Address</div>
+            <ConnectButtonBsc/>
+            <SwitchNetworkBsc/>
+            {:else}
+            {#if $onExpectedNetwork2}
+            <ConnectButtonEth/>
+            <SwitchNetworkEth/>
+            {:else}
+            <ConnectButtonEth/>
+            <SwitchNetworkEth/>
+            {/if}
             {/if}
             
     </div>
        
         <a target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="chain">Add Hydro Token on Ethereum</div>
+                {#if $address2 && $onExpectedNetwork2}
+                <AddHydroEth/>
+                {/if}
+                <div class="chain"></div>
                 <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
             </div>
         </a>
         
             <div class="dashboard-slot" id="card-background-alt">
-                <AddHydro/>
+                {#if $address && $onExpectedNetwork}
+                <AddHydroBsc/>
+                {/if}
                 <div class="chain"></div>
                 <div class="chain-img"><img src={bscLogo} alt="hydro-drop" id="chain"/></div>
             </div>
     </div>
-    <div class="hydro-dashboard">
-        <a href="{item[6].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background-alt">
-                <div class="chain">Add Hydro Token on Polygon</div>
-                <div class="chain-img"><img src={polyLogo} alt="hydro-drop" id="chain"/></div>
-            </div>
-        </a>
-        <a href="{item[7].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background-alt">
-                <div class="chain">Add Hydro Token on CSC Network</div>
-                <div class="chain-img"><img src={cscLogo} alt="hydro-drop" id="chain"/></div>
-            </div>
-        </a>
-        <a href="{item[8].link}" target="_blank" rel="noopener noreferrer" >
-            <div class="dashboard-slot" id="card-background-alt">
-                <div class="chain">Add Hydro Token on Moonriver</div>
-                <div class="chain-img"> <img src={movrLogo} alt="hydro-drop" id="chain"/></div>
-            </div>
-        </a>
-    </div>
+  
 </div>
 
 <style>

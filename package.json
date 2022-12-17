@@ -10,8 +10,8 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-replace": "^5.0.1",
-		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/adapter-netlify": "^1.0.0-next.84",
+		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.5.1",
 		"sass": "^1.56.2",
@@ -26,6 +26,9 @@
 	"type": "module",
 	"dependencies": {
 		"eth-chains": "^1.0.0",
-		"ethers": "^5.7.2"
+		"ethers": "^5.7.2",
+		"@sveltejs/adapter-static": "^1.0.0-next.43",
+    	"@walletconnect/ethereum-provider": "^1.8.0",
+    	"ether-state": "0.0.1"
 	}
 }

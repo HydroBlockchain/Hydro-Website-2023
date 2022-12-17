@@ -4,13 +4,15 @@ import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
 import "./styles.scss";
 
-import { init } from '$lib/stores/wallet.ts';
+import { init } from '$lib/stores/wallet-bsc.ts';
+import { init2 } from '$lib/stores/wallet-eth.ts';
 import { onMount } from 'svelte';
 
 let ready
 onMount(() => {
     ready = true
     init();
+    init2();
 });
 </script>
 

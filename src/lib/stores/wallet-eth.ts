@@ -18,26 +18,28 @@ const localhostNetwork = {
 import type { WindowWithEthereum } from '../../types';
 import type { Signer } from 'ethers';
 
-//Binance Smart Chain
-const expectedChainId = 56;
+
+const expectedChainId2 = 1;
 
 export const metamask = readable<boolean>(browser && window && (window as any).ethereum);
-export const expectedNetwork = readable(
-	expectedChainId === localhostNetwork.chainId
+export const expectedNetwork2 = readable(
+
+	expectedChainId2 === localhostNetwork.chainId
 		? localhostNetwork
-		: getNetworkByChainId(expectedChainId)
+		: getNetworkByChainId(expectedChainId2)
+		
 );
-export const address = writable<null | string>(null);
+export const address2 = writable<null | string>(null);
 export const provider = writable<null | Web3Provider>(null);
 export const signer = writable<null | Signer>(null);
 export const errorTx = writable(false);
 export const network = writable<null | any>({});
 export const chainId = writable(-1);
-export const onExpectedNetwork = derived([network], ([$network]: [any]) => {
-	return $network && $network.chainId === expectedChainId;
+export const onExpectedNetwork2 = derived([network], ([$network]: [any]) => {
+	return $network && $network.chainId === expectedChainId2;
 });
 
-export async function init() {
+export async function init2() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -59,18 +61,18 @@ export async function init() {
 	const [newAddress] = await ethereum.request({
 		method: 'eth_accounts'
 	});
-	address.set(newAddress);
+	address2.set(newAddress);
 
 	newProvider.on('chainChanged', () => {
-		init();
+		init2();
 	});
 
 	ethereum.on('accountsChanged', ([newAddress]: string[]) => {
-		address.set(newAddress);
+		address2.set(newAddress);
 	});
 
 	newProvider.on('accountsChanged', ([newAddress]) => {
-		address.set(newAddress);
+		address2.set(newAddress);
 	});
 
 	newProvider.on('network', async (newNetwork) => {
@@ -93,10 +95,10 @@ export async function login() {
 		console.error(error);
 	}
 
-	await init();
+	await init2();
 }
 
-export async function switchNetwork(chainId: number = expectedChainId) {
+export async function switchNetwork(chainId: number = expectedChainId2) {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -134,7 +136,9 @@ export async function connect() {
 		method: 'eth_requestAccounts'
 	});
 
-	address.update(() => {
+	address2.update(() => {
 		return _address;
 	});
 }
+
+
