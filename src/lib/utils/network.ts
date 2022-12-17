@@ -1,9 +1,9 @@
 //Production
-  import type { Chain } from 'eth-chains'
-  import pkg from 'eth-chains';
-  const { chains } = pkg;
+//   import type { Chain } from 'eth-chains'
+//   import pkg from 'eth-chains';
+//   const { chains } = pkg;
 //Development
-//  import {chains, type Chain} from 'eth-chains'
+import {chains, type Chain} from 'eth-chains'
 
 
 type NativeCurrency = {

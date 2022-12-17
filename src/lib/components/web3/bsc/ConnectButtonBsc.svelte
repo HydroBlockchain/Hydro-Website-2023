@@ -18,7 +18,8 @@ $: legend = loading ? "Connecting" : $addressBsc ? $addressBsc : "Connect Wallet
 </script>
 {#if $metamask && $onExpectedNetworkBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="center">Binance smart chain
+<div class="center">
+<div class="text-fix">Binance smart chain</div>
 <div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button">{legend}</div>
 </div>
 
@@ -40,5 +41,10 @@ $: legend = loading ? "Connecting" : $addressBsc ? $addressBsc : "Connect Wallet
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+    .text-fix{
+        font-size: 12px;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
     }
 </style>

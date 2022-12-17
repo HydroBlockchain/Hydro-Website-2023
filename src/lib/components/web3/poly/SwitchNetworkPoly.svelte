@@ -19,7 +19,7 @@
         }
         loading = false;
     }
-    $: legend = loading ? 'Switching' : $onExpectedNetworkPoly ? `Switch to the ${$expectedNetworkPoly.name} to add Hydro Token` : $expectedNetworkPoly.name;
+    $: legend = loading ? 'Switching' : !$onExpectedNetworkPoly ? `Switch to the ${$expectedNetworkPoly.name} to add Hydro Token` : $expectedNetworkPoly.name;
     </script>
     {#if $metamask && $onExpectedNetworkPoly}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
