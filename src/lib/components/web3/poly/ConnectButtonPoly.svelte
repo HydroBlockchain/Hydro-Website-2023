@@ -1,12 +1,12 @@
 <script lang="ts">
-    import { addressEth, connectEth, onExpectedNetworkEth } from "$lib/stores/wallet-eth";
+    import { addressPoly, connectPoly, onExpectedNetworkPoly } from "$lib/stores/wallet-poly";
     import { showNotification, NotificationType} from "$lib/stores/notifications";
     import { metamask } from '$lib/stores/wallet-bsc';
     let loading = false;
-    async function onConnectEth() {
+    async function onConnectPoly() {
         loading = true;
         try {
-            await connectEth();
+            await connectPoly();
         } catch (error: any) {
             showNotification(error.message, {
                 type: NotificationType.Error,
@@ -14,11 +14,11 @@
         }
         loading = false;
     }
-    $: legend = loading ? "Connecting" : $addressEth ? $addressEth : "Connect Wallet";
+    $: legend = loading ? "Connecting" : $addressPoly ? $addressPoly : "Connect Wallet";
     </script>
-    {#if $metamask && $onExpectedNetworkEth}
+    {#if $metamask && $onExpectedNetworkPoly}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div on:click={onConnectEth} disabled={loading || !$onExpectedNetworkEth} class="button">{legend}</div>
+    <div on:click={onConnectPoly} disabled={loading || !$onExpectedNetworkPoly} class="button">{legend}</div>
     
     {/if}
     

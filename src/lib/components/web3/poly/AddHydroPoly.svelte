@@ -1,12 +1,12 @@
 <script lang="ts">
     // @ts-nocheck
-    import { onExpectedNetworkEth } from '$lib/stores/wallet-eth';
-    const tokenAddressEth = '0x946112efaB61C3636CBD52DE2E1392D7A75A6f01';
-    const tokenSymbolEth = 'Hydro';
-    const tokenDecimalsEth = 18;
-    const tokenImageEth = 'http://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/858e2d2a56ffdf375f4edfb51219f3abd6bab749/svg/drop/Dark-blue-drop.svg';
+    import { onExpectedNetworkPoly } from '$lib/stores/wallet-poly';
+    const tokenAddressPoly = '0x946112efaB61C3636CBD52DE2E1392D7A75A6f01';
+    const tokenSymbolPoly = 'Hydro';
+    const tokenDecimalsPoly = 18;
+    const tokenImagePoly = 'http://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/858e2d2a56ffdf375f4edfb51219f3abd6bab749/svg/drop/Dark-blue-drop.svg';
     
-    async function addHydroEth() {
+    async function addHydroPoly() {
         if (typeof window.ethereum !== 'undefined')
             try {
                 const wasAdded = ethereum.request({
@@ -14,10 +14,10 @@
                     params: {
                         type: 'ERC20',
                         options: {
-                            address: tokenAddressEth,
-                            symbol: tokenSymbolEth,
-                            decimals: tokenDecimalsEth,
-                            image: tokenImageEth
+                            address: tokenAddressPoly,
+                            symbol: tokenSymbolPoly,
+                            decimals: tokenDecimalsPoly,
+                            image: tokenImagePoly
                         },
                     },
                 });
@@ -31,9 +31,9 @@
             }
     }
     </script>
-    {#if $onExpectedNetworkEth}
+    {#if $onExpectedNetworkPoly}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <a on:click={addHydroEth} disabled={!$onExpectedNetworkEth} id="button">Add Hydro Token on Eth Network</a>
+    <a on:click={addHydroPoly} disabled={!$onExpectedNetworkPoly} id="button">Add Hydro Token on Polygon Network</a>
     {/if}
     <style>
         #button {

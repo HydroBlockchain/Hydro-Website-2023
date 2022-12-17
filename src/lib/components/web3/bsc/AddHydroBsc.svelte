@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import { onExpectedNetwork } from '$lib/stores/wallet-bsc';
+import { onExpectedNetworkBsc } from '$lib/stores/wallet-bsc';
 const tokenAddressBsc = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071';
 const tokenSymbolBsc = 'Hydro';
 const tokenDecimalsBsc = 18;
@@ -31,9 +31,9 @@ async function addHydroBSC() {
         }
 }
 </script>
-{#if $onExpectedNetwork}
+{#if $onExpectedNetworkBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<a on:click={addHydroBSC} disabled={!$onExpectedNetwork} id="button">Add Hydro Token on BSC Network</a>
+<a on:click={addHydroBSC} disabled={!$onExpectedNetworkBsc} id="button">Add Hydro Token on BSC Network</a>
 {/if}
 <style>
     #button {

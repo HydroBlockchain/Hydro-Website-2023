@@ -19,27 +19,27 @@ import type { WindowWithEthereum } from '../../types';
 import type { Signer } from 'ethers';
 
 
-const expectedChainIdEth = 1;
+const expectedChainIdPoly = 137;
 
 export const metamask = readable<boolean>(browser && window && (window as any).ethereum);
-export const expectedNetworkEth = readable(
+export const expectedNetworkPoly = readable(
 
-	expectedChainIdEth === localhostNetwork.chainId
+	expectedChainIdPoly === localhostNetwork.chainId
 		? localhostNetwork
-		: getNetworkByChainId(expectedChainIdEth)
+		: getNetworkByChainId(expectedChainIdPoly)
 		
 );
-export const addressEth = writable<null | string>(null);
+export const addressPoly = writable<null | string>(null);
 export const provider = writable<null | Web3Provider>(null);
 export const signer = writable<null | Signer>(null);
 export const errorTx = writable(false);
 export const network = writable<null | any>({});
 export const chainId = writable(-1);
-export const onExpectedNetworkEth = derived([network], ([$network]: [any]) => {
-	return $network && $network.chainId === expectedChainIdEth;
+export const onExpectedNetworkPoly = derived([network], ([$network]: [any]) => {
+	return $network && $network.chainId === expectedChainIdPoly;
 });
 
-export async function initEth() {
+export async function initPoly() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -61,18 +61,18 @@ export async function initEth() {
 	const [newAddress] = await ethereum.request({
 		method: 'eth_accounts'
 	});
-	addressEth.set(newAddress);
+	addressPoly.set(newAddress);
 
 	newProvider.on('chainChanged', () => {
-		initEth();
+		initPoly();
 	});
 
 	ethereum.on('accountsChanged', ([newAddress]: string[]) => {
-		addressEth.set(newAddress);
+		addressPoly.set(newAddress);
 	});
 
 	newProvider.on('accountsChanged', ([newAddress]) => {
-		addressEth.set(newAddress);
+		addressPoly.set(newAddress);
 	});
 
 	newProvider.on('network', async (newNetwork) => {
@@ -95,10 +95,10 @@ export async function login() {
 		console.error(error);
 	}
 
-	await initEth();
+	await initPoly();
 }
 
-export async function switchNetworkEth(chainId: number = expectedChainIdEth) {
+export async function switchNetworkPoly(chainId: number = expectedChainIdPoly) {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -128,7 +128,7 @@ export async function switchNetworkEth(chainId: number = expectedChainIdEth) {
 	}
 }
 
-export async function connectEth() {
+export async function connectPoly() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -136,9 +136,7 @@ export async function connectEth() {
 		method: 'eth_requestAccounts'
 	});
 
-	addressEth.update(() => {
+	addressPoly.update(() => {
 		return _address;
 	});
 }
-
-

@@ -1,12 +1,12 @@
 <script lang="ts">
-import { address, connect, onExpectedNetwork } from "$lib/stores/wallet-bsc";
+import { addressBsc, connectBsc, onExpectedNetworkBsc } from "$lib/stores/wallet-bsc";
 import { showNotification, NotificationType} from "$lib/stores/notifications";
 import { metamask } from '$lib/stores/wallet-bsc';
 let loading = false;
-async function onConnect() {
+async function onConnectBsc() {
     loading = true;
     try {
-        await connect();
+        await connectBsc();
     } catch (error: any) {
         showNotification(error.message, {
             type: NotificationType.Error,
@@ -14,12 +14,12 @@ async function onConnect() {
     }
     loading = false;
 }
-$: legend = loading ? "Connecting" : $address ? $address : "Connect Wallet";
+$: legend = loading ? "Connecting" : $addressBsc ? $addressBsc : "Connect Wallet";
 </script>
-{#if $metamask && $onExpectedNetwork}
+{#if $metamask && $onExpectedNetworkBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="center">Binance smart chain
-<div on:click={onConnect} disabled={loading || !$onExpectedNetwork} class="button">{legend}</div>
+<div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button">{legend}</div>
 </div>
 
 {/if}

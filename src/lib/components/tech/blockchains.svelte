@@ -8,14 +8,28 @@ import polyLogo from "$lib/images/logo/polygon.svg";
 import cscLogo from "$lib/images/logo/coinex.svg";
 import movrLogo from "$lib/images/logo/moonriver.svg";
 
+//Switching Networks
+import SwitchingNetworks from "../web3/SwitchingNetworks.svelte";
+
+//Binance Smart Chain
+import { addressBsc, onExpectedNetworkBsc } from "$lib/stores/wallet-bsc";
 import ConnectButtonBsc from '$lib/components/web3/bsc/ConnectButtonBsc.svelte';
 import SwitchNetworkBsc from '$lib/components/web3/bsc/SwitchNetworkBsc.svelte';
-import { address, onExpectedNetwork } from "$lib/stores/wallet-bsc";
-import { address2, onExpectedNetwork2 } from "$lib/stores/wallet-eth";
 import AddHydroBsc from "../web3/bsc/AddHydroBsc.svelte";
-import AddHydroEth from "../web3/eth/AddHydroEth.svelte";
-import SwitchNetworkEth from "../web3/eth/SwitchNetworkEth.svelte";
+
+//Ethereum
+import { addressEth, onExpectedNetworkEth } from "$lib/stores/wallet-eth";
 import ConnectButtonEth from "../web3/eth/ConnectButtonEth.svelte";
+import SwitchNetworkEth from "../web3/eth/SwitchNetworkEth.svelte";
+import AddHydroEth from "../web3/eth/AddHydroEth.svelte";
+
+//Polygon
+import { addressPoly, onExpectedNetworkPoly } from "$lib/stores/wallet-poly";
+import AddHydroPoly from "../web3/poly/AddHydroPoly.svelte";
+import ConnectButtonPoly from "../web3/poly/ConnectButtonPoly.svelte";
+import SwitchNetworkPoly from "../web3/poly/SwitchNetworkPoly.svelte";
+
+
 </script>
 
 <!-- svelte-ignore a11y-missing-attribute -->
@@ -23,41 +37,56 @@ import ConnectButtonEth from "../web3/eth/ConnectButtonEth.svelte";
 
 
 <div class="half" id="card-background">
+    <div class="hydro-dashboard"><SwitchingNetworks/></div>
     <div class="hydro-dashboard">
+        
         <div class="dashboard-slot-alt" id="card-background-alt">
             
 
-            {#if $onExpectedNetwork}
+            {#if $onExpectedNetworkBsc}
             <ConnectButtonBsc/>
             <SwitchNetworkBsc/>
             {:else}
-            {#if $onExpectedNetwork2}
+            {#if $onExpectedNetworkEth}
             <ConnectButtonEth/>
             <SwitchNetworkEth/>
+            {:else}
+            {#if $onExpectedNetworkPoly}
+            <ConnectButtonPoly/>
+            <SwitchNetworkPoly/>
             {:else}
             <ConnectButtonEth/>
             <SwitchNetworkEth/>
             {/if}
             {/if}
+            {/if}
             
-    </div>
+            </div>
+ 
        
-        <a target="_blank" rel="noopener noreferrer" >
             <div class="dashboard-slot" id="card-background-alt">
-                {#if $address2 && $onExpectedNetwork2}
+                {#if $addressEth && $onExpectedNetworkEth}
                 <AddHydroEth/>
                 {/if}
                 <div class="chain"></div>
                 <div class="chain-img"><img src={ethLogo} alt="hydro-drop" id="chain"/></div>
             </div>
-        </a>
+        
         
             <div class="dashboard-slot" id="card-background-alt">
-                {#if $address && $onExpectedNetwork}
+                {#if $addressBsc && $onExpectedNetworkBsc}
                 <AddHydroBsc/>
                 {/if}
                 <div class="chain"></div>
                 <div class="chain-img"><img src={bscLogo} alt="hydro-drop" id="chain"/></div>
+            </div>
+
+            <div class="dashboard-slot" id="card-background-alt">
+                {#if $addressPoly && $onExpectedNetworkPoly}
+                <AddHydroPoly/>
+                {/if}
+                <div class="chain"></div>
+                <div class="chain-img"><img src={polyLogo} alt="hydro-drop" id="chain"/></div>
             </div>
     </div>
   
@@ -79,7 +108,7 @@ import ConnectButtonEth from "../web3/eth/ConnectButtonEth.svelte";
     text-align: start;
     margin: 0.5rem;
     padding: 1rem;
-    width: 150px;
+    width: auto;
     height: 100px;
     cursor: pointer;
 }

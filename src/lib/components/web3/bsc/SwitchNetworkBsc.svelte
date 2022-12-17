@@ -1,17 +1,17 @@
 <script lang="ts">
 // @ts-nocheck
-import { expectedNetwork, switchNetwork, onExpectedNetwork } from '$lib/stores/wallet-bsc';
+import { expectedNetworkBsc, switchNetworkBsc, onExpectedNetworkBsc } from '$lib/stores/wallet-bsc';
 import { showNotification, NotificationType } from '$lib/stores/notifications';
 import { metamask } from '$lib/stores/wallet-bsc';
 
 let loading = false;
-async function onSwitchNetwork() {
+async function onSwitchNetworkBsc() {
     loading = true;
     showNotification('Switching network', {
         type: NotificationType.Error,
     });
     try {
-        await switchNetwork();
+        await switchNetworkBsc();
     } catch (error: any) {
         showNotification(error.message, {
             type: NotificationType.Error,
@@ -19,13 +19,13 @@ async function onSwitchNetwork() {
     }
     loading = false;
 }
-$: legend = loading ? 'Switching' : !$onExpectedNetwork ? `Switch to the ${$expectedNetwork.name} to add Hydro Token` : $expectedNetwork.name;
+$: legend = loading ? 'Switching' : !$onExpectedNetworkBsc ? `Switch to the ${$expectedNetworkBsc.name} to add Hydro Token` : $expectedNetworkBsc.name;
 </script>
-{#if $metamask && !$onExpectedNetwork}
+{#if $metamask && !$onExpectedNetworkBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={onSwitchNetwork} disabled={loading || $onExpectedNetwork} class="button">{legend}</div>
+<div on:click={onSwitchNetworkBsc} disabled={loading || $onExpectedNetworkBsc} class="button">{legend}</div>
 {/if}
-{#if !$metamask && !$onExpectedNetwork}
+{#if !$metamask && !$onExpectedNetworkBsc}
     <a href="https://metamask.io"><div class="button" id="card-background">Download Metamask!</div></a>
 {/if}
 <style>
