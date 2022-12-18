@@ -193,7 +193,7 @@
                     params: [
                         {
                             chainId: "0x34", //Coinex RPC is down atm
-                            chainName: "CoinEx Smart Chain",
+                            chainName: "CoinEx Smart Chain Mainnet",
                             nativeCurrency: {
                                 name: "CoinEx Chain Native Token",
                                 symbol: "cet",
