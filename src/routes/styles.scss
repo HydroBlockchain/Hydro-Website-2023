@@ -61,46 +61,45 @@ body::-webkit-scrollbar {
 }
 
 //Dark Mode
-@media (prefers-color-scheme: dark) {
-	:root {
-		//Hydro Drop
-		--drop-color: #192E46;
-		//Text Colors
-		--text-color: #fff;
-		--text-color-alt: rgba(255, 255, 255, 0.5);
-		//Background Colors
-		--bg-color: linear-gradient(90deg, #28326a, #183c68);
-		--card-bg: rgba(33, 33, 36, 0.2);
-		--card-bg-alt: rgba(33, 33, 36, 0.2);
-		--sidemenu-color: rgba(33, 33, 36, 0.85);
-		//Button Colors
-		--button-color: rgba(33, 33, 36, 0.3);
-		--button-hover: rgba(255, 255, 255, 0.2);
-		//Progress Bar
-		--progress-bar: rgba(106, 83, 255, 0.5);
-	}
+:global(body.dark) {
+	//Hydro Drop
+	--drop-color: #192E46;
+	//Text Colors
+	--text-color: #fff;
+	--text-color-alt: rgba(255, 255, 255, 0.5);
+	//Background Colors
+	--bg-color: linear-gradient(90deg, #28326a, #183c68);
+	--card-bg: rgba(33, 33, 36, 0.2);
+	--card-bg-alt: rgba(33, 33, 36, 0.2);
+	--sidemenu-color: rgba(33, 33, 36, 0.85);
+	//Button Colors
+	--button-color: rgba(33, 33, 36, 0.3);
+	--button-hover: rgba(255, 255, 255, 0.2);
+	//Progress Bar
+	--progress-bar: rgba(106, 83, 255, 0.5);
 }
 
 //Light Mode
-@media (prefers-color-scheme: light) {
-	:root {
-		//Hydro Drop
-		--drop-color: #fff;
-		//Text Colors
-		--text-color: #fff;
-		--text-color-alt: rgba(255, 255, 255, 0.5);
-		//Background Colors
-		--bg-color: linear-gradient(90deg, #72aaff, #2eafff);
-		--card-bg: rgba(255, 255, 255, 0.2);
-		--card-bg-alt: rgba(255, 255, 255, 0.2);
-		--sidemenu-color: rgba(33, 33, 36, 0.85);
-		//Button Colors
-		--button-color: rgba(255, 255, 255, 0.2);
-		--button-hover: rgb(33, 33, 36, 1);
-		//Progress Bar
-		--progress-bar: rgb(107, 201, 255);
-	}
+:global(body) {
+	//Hydro Drop
+	--drop-color: #fff;
+	//Text Colors
+	--text-color: #fff;
+	--text-color-alt: rgba(255, 255, 255, 0.5);
+	//Background Colors
+	--bg-color: linear-gradient(90deg, #72aaff, #2eafff);
+	--card-bg: rgba(255, 255, 255, 0.2);
+	--card-bg-alt: rgba(255, 255, 255, 0.2);
+	--sidemenu-color: rgba(33, 33, 36, 0.85);
+	//Button Colors
+	--button-color: rgba(255, 255, 255, 0.2);
+	--button-hover: rgb(33, 33, 36, 1);
+	//Progress Bar
+	--progress-bar: rgb(107, 201, 255);
 }
+
+
+
 
 //Containers
 .container {
