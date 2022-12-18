@@ -195,7 +195,7 @@
                             chainId: "0x34", //Coinex RPC is down atm
                             chainName: "CoinEx Smart Chain",
                             nativeCurrency: {
-                                name: "Coinex",
+                                name: "CoinEx Chain Native Token",
                                 symbol: "CET",
                                 decimals: 18,
                             },
