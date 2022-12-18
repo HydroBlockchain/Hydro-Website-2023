@@ -50,7 +50,6 @@
 body {
 	min-height: 100vh;
 	margin: 0;
-	background: var(--bg-color);
 	font-family: var(--font-body);
 	color: var(--color-text);
 	overflow-x: hidden;
@@ -68,7 +67,7 @@ body::-webkit-scrollbar {
 	--text-color: #fff;
 	--text-color-alt: rgba(255, 255, 255, 0.5);
 	//Background Colors
-	--bg-color: linear-gradient(90deg, #28326a, #183c68);
+	--bg-color: linear-gradient(90deg, #30286a, #183c68);
 	--card-bg: rgba(33, 33, 36, 0.2);
 	--card-bg-alt: rgba(33, 33, 36, 0.2);
 	--sidemenu-color: rgba(33, 33, 36, 0.85);
@@ -77,6 +76,17 @@ body::-webkit-scrollbar {
 	--button-hover: rgba(255, 255, 255, 0.2);
 	//Progress Bar
 	--progress-bar: rgba(106, 83, 255, 0.5);
+	//background animation
+	--animation-color-0: rgba(35, 81, 142, 0.5);
+	--animation-color-1: rgba(2, 91, 173, 0.5);
+	--animation-color-2: rgba(13, 127, 204, 0.5);
+	--animation-color-3: rgba(104, 53, 158, 0.5);
+	--animation-color-4: rgba(32, 127, 148, 0.5);
+	--animation-color-5: rgba(94, 0, 201, 0.5);
+	--animation-color-6: rgba(89, 158, 188, 0.5);
+	--animation-color-7: rgba(44, 54, 130, 0.5);
+	--animation-color-8: rgba(29, 67, 120, 0.5);
+	--animation-color-9: rgba(69, 149, 183, 0.5);
 }
 
 //Light Mode
@@ -84,18 +94,29 @@ body::-webkit-scrollbar {
 	//Hydro Drop
 	--drop-color: #fff;
 	//Text Colors
-	--text-color: #fff;
+	--text-color: rgb(255, 255, 255);
 	--text-color-alt: rgba(255, 255, 255, 0.5);
 	//Background Colors
-	--bg-color: linear-gradient(90deg, #72aaff, #2eafff);
+	--bg-color: linear-gradient(90deg, #729cff, #2eafff);
 	--card-bg: rgba(255, 255, 255, 0.2);
-	--card-bg-alt: rgba(255, 255, 255, 0.2);
+	--card-bg-alt: rgba(255, 255, 255, 0.05);
 	--sidemenu-color: rgba(33, 33, 36, 0.85);
 	//Button Colors
 	--button-color: rgba(255, 255, 255, 0.2);
 	--button-hover: rgb(33, 33, 36, 1);
 	//Progress Bar
-	--progress-bar: rgb(107, 201, 255);
+	--progress-bar: rgb(107, 147, 255);
+	//background animation
+	--animation-color-0: rgba(181, 138, 255, 0.8);
+	--animation-color-1: rgba(46, 224, 255, 0.8);
+	--animation-color-2: rgba(0, 153, 255, 0.8);
+	--animation-color-3: rgba(59, 82, 255, 0.8);
+	--animation-color-4: rgba(96, 226, 255, 0.8);
+	--animation-color-5: rgba(0, 119, 255, 0.8);
+	--animation-color-6: rgba(0, 179, 255, 0.8);
+	--animation-color-7: rgba(65, 233, 255, 0.8);
+	--animation-color-8: rgba(68, 205, 255, 0.8);
+	--animation-color-9: rgba(87, 174, 255, 0.8);
 }
 
 //Containers
@@ -204,8 +225,6 @@ a:active {
 	text-decoration: none;
 }
 
-
-
 //Buttons
 .button {
 	display: flex;
@@ -236,9 +255,7 @@ a:active {
 	margin-top: 2rem;
 }
 
-
 //Hydro Token Tool Buttons
-
 .button-connect {
 	background-color: var(--card-bg-alt);
 	display: flex;
@@ -322,8 +339,6 @@ a:active {
     font-size: 14px;
 }
 
-
-
 //Priceaction +/-
 .red {
 	display: flex;
@@ -346,6 +361,12 @@ a:active {
 	100% {
 		opacity: 1;
 	}
+}
+
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
 }
 
 //Responsive
@@ -430,13 +451,6 @@ a:active {
 @media only screen and (min-width: 1200px) {}
 
 //Animated Background
-
-@keyframes move {
-    100% {
-        transform: translate3d(0, 0, 1px) rotate(360deg);
-    }
-}
-
 .background {
     position: fixed;
     width: 100vw;
@@ -460,9 +474,8 @@ a:active {
     animation-iteration-count: infinite;
 }
 
-
 .background span:nth-child(0) {
-    color: #0a27ff;
+    color: var(--animation-color-0);
     top: 91%;
     left: 47%;
     animation-duration: 219s;
@@ -470,8 +483,9 @@ a:active {
     transform-origin: -2vw 22vh;
     box-shadow: -100vmin 0 13.380490600663542vmin currentColor;
 }
+
 .background span:nth-child(1) {
-    color: #4c00ff;
+    color: var(--animation-color-1);
     top: 88%;
     left: 32%;
     animation-duration: 291s;
@@ -479,8 +493,9 @@ a:active {
     transform-origin: 17vw 12vh;
     box-shadow: 100vmin 0 13.468910405457814vmin currentColor;
 }
+
 .background span:nth-child(2) {
-    color: #00b3ff;
+    color: var(--animation-color-2);
     top: 68%;
     left: 42%;
     animation-duration: 104s;
@@ -488,8 +503,9 @@ a:active {
     transform-origin: -16vw -4vh;
     box-shadow: -100vmin 0 12.74029809041134vmin currentColor;
 }
+
 .background span:nth-child(3) {
-    color: #0a27ff;
+    color: var(--animation-color-3);
     top: 30%;
     left: 91%;
     animation-duration: 87s;
@@ -497,8 +513,9 @@ a:active {
     transform-origin: 8vw -1vh;
     box-shadow: 100vmin 0 13.229999948254367vmin currentColor;
 }
+
 .background span:nth-child(4) {
-    color: #0a27ff;
+    color: var(--animation-color-4);
     top: 97%;
     left: 48%;
     animation-duration: 464s;
@@ -506,8 +523,9 @@ a:active {
     transform-origin: 6vw -6vh;
     box-shadow: -100vmin 0 12.638428911891703vmin currentColor;
 }
+
 .background span:nth-child(5) {
-    color: #00b3ff;
+    color: var(--animation-color-5);
     top: 84%;
     left: 3%;
     animation-duration: 37s;
@@ -515,8 +533,9 @@ a:active {
     transform-origin: -3vw 11vh;
     box-shadow: -100vmin 0 13.003365440000394vmin currentColor;
 }
+
 .background span:nth-child(6) {
-    color: #00b3ff;
+    color: var(--animation-color-6);
     top: 26%;
     left: 54%;
     animation-duration: 264s;
@@ -524,8 +543,9 @@ a:active {
     transform-origin: 16vw -23vh;
     box-shadow: -100vmin 0 12.522500246815223vmin currentColor;
 }
+
 .background span:nth-child(7) {
-    color: #0a27ff;
+    color: var(--animation-color-7);
     top: 30%;
     left: 26%;
     animation-duration: 160s;
@@ -533,8 +553,9 @@ a:active {
     transform-origin: 6vw -19vh;
     box-shadow: -100vmin 0 13.225965767713827vmin currentColor;
 }
+
 .background span:nth-child(8) {
-    color: #00b3ff;
+    color: var(--animation-color-8);
     top: 4%;
     left: 19%;
     animation-duration: 127s;
@@ -542,8 +563,9 @@ a:active {
     transform-origin: 2vw 6vh;
     box-shadow: -100vmin 0 12.985791608940657vmin currentColor;
 }
+
 .background span:nth-child(9) {
-    color: #00b3ff;
+    color: var(--animation-color-9);
     top: 44%;
     left: 62%;
     animation-duration: 254s;
