@@ -15,22 +15,14 @@
         loading = false;
     }
     $: legend = loading ? "Connecting" : $addressPoly ? $addressPoly : "Connect Wallet";
+    $: legend2 = 'You are Connected to Polygon Network';
     </script>
     {#if $metamask && $onExpectedNetworkPoly}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div on:click={onConnectPoly} disabled={loading || !$onExpectedNetworkPoly} class="button">{legend}</div>
+    <div on:click={onConnectPoly} disabled={loading || !$onExpectedNetworkPoly} class="button-connect">{legend}</div>
+    <div disabled={loading || $onExpectedNetworkPoly} class="button-network">{legend2}</div>
     
     {/if}
     
     <style>
-        .button{
-            background-color: var(--transparent);
-            display: flex;
-            flex-direction: row;
-            text-align: start;
-            height: 50px;
-            width: 140px;
-            font-size: 14px !important;
-            word-break: break-all;
-        }
     </style>

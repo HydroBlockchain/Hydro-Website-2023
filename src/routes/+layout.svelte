@@ -8,6 +8,7 @@ import { initBsc } from '$lib/stores/wallet-bsc.ts';
 import { initEth } from '$lib/stores/wallet-eth.ts';
 import { initPoly } from "$lib/stores/wallet-poly";
 import { initMovr } from "$lib/stores/wallet-movr";
+import { initCsc } from "$lib/stores/wallet-csc";
 import { onMount } from 'svelte';
 
 let ready
@@ -17,6 +18,7 @@ onMount(() => {
     initEth();
     initPoly();
     initMovr();
+    initCsc();
 });
 </script>
 

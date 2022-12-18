@@ -240,6 +240,89 @@ a:active {
 	margin-top: 2rem;
 }
 
+
+//Hydro Token Tool Buttons
+
+.button-connect {
+	background-color: var(--card-bg-alt);
+	display: flex;
+	flex-direction: row;
+	text-align: start;
+	height: auto;
+	width: auto;
+	padding: 1rem;
+	font-size: 14px !important;
+	border-radius: var(--border-radius);
+	backdrop-filter: blur(10px);
+}
+
+.button-network {
+	background-color: var(--card-bg-alt);
+	color: var(--text-color-alt);
+	backdrop-filter: blur(10px);
+	padding-top: 1rem ;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	margin-top: 0.5rem;
+	height: auto;
+	width: auto;
+	font-size: 12px !important;
+	border-radius: var(--border-radius);
+	cursor: default;
+}
+
+.button-network-switch {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: start;
+	height: auto;
+	width: auto;
+	padding: 1rem;
+	margin: 0.5rem;
+	background-color: var(--card-bg) !important;
+	backdrop-filter: blur(10px);
+	border-radius: var(--border-radius);
+	cursor: pointer;
+}
+
+.button-network-switch:hover {
+	background-color: var(--button-hover) !important;
+}
+
+.button-add-hydro {
+    background-color: var(--card-bg-alt);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 105px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-left: 1rem;
+}
+.button-add-hydro:hover{
+    background-color: var(--button-hover) !important;
+}
+
+#coin-ticker-logo {
+    width: 32px;
+    height: 32px;
+}
+.text-add-hydro {
+    margin: 1rem;
+    font-size: 10px;
+}
+
+
+
 //Priceaction +/-
 .red {
 	display: flex;

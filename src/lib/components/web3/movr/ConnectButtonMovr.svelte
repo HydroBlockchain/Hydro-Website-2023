@@ -15,22 +15,14 @@
         loading = false;
     }
     $: legend = loading ? "Connecting" : $addressMovr ? $addressMovr : "Connect Wallet";
+    $: legend2 = 'You are Connected to Moonriver Network';
     </script>
     {#if $metamask && $onExpectedNetworkMovr}
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div on:click={onConnectMovr} disabled={loading || !$onExpectedNetworkMovr} class="button">{legend}</div>
+    <div on:click={onConnectMovr} disabled={loading || !$onExpectedNetworkMovr} class="button-connect">{legend}</div>
+    <div disabled={loading || $onExpectedNetworkMovr} class="button-network">{legend2}</div>
     
     {/if}
     
     <style>
-        .button{
-            background-color: var(--transparent);
-            display: flex;
-            flex-direction: row;
-            text-align: start;
-            height: 50px;
-            width: 140px;
-            font-size: 14px !important;
-            word-break: break-all;
-        }
     </style>

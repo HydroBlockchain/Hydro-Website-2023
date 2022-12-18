@@ -15,36 +15,14 @@ async function onConnectBsc() {
     loading = false;
 }
 $: legend = loading ? "Connecting" : $addressBsc ? $addressBsc : "Connect Wallet";
+$: legend2 = 'You are Connected to Binance Smart Chain'
 </script>
 {#if $metamask && $onExpectedNetworkBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="center">
-<div class="text-fix">Binance smart chain</div>
-<div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button">{legend}</div>
-</div>
+<div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button-connect">{legend}</div>
+<div disabled={loading || $onExpectedNetworkBsc} class="button-network">{legend2}</div>
 
 {/if}
 
 <style>
-    .button{
-        background-color: var(--transparent);
-        display: flex;
-        flex-direction: row;
-        text-align: start;
-        height: 50px;
-        width: 140px;
-        font-size: 14px !important;
-        word-break: break-all;
-    }
-    .center{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    .text-fix{
-        font-size: 12px;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-    }
 </style>

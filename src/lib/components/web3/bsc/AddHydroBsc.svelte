@@ -1,6 +1,9 @@
 <script lang="ts">
 // @ts-nocheck
-import { onExpectedNetworkBsc } from '$lib/stores/wallet-bsc';
+import hydroDrop from "$lib/images/logo/hydro-drop.svg";
+import {
+    onExpectedNetworkBsc
+} from '$lib/stores/wallet-bsc';
 const tokenAddressBsc = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071';
 const tokenSymbolBsc = 'Hydro';
 const tokenDecimalsBsc = 18;
@@ -33,18 +36,8 @@ async function addHydroBSC() {
 </script>
 {#if $onExpectedNetworkBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<a on:click={addHydroBSC} disabled={!$onExpectedNetworkBsc} id="button">Add Hydro Token on BSC Network</a>
+<div on:click={addHydroBSC} disabled={!$onExpectedNetworkBsc} class="button-add-hydro">
+    <img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/><div class="text-add-hydro">Add Hydro on BSC Network</div></div>
 {/if}
 <style>
-    #button {
-        background-color: var(--transparent);
-        display: flex;
-        flex-direction: row;
-        width: 150px;
-        font-size: 14px;
-        word-wrap: break-word;
-        overflow: hidden;
-        margin-top: 0.5rem;
-        cursor: pointer;
-    }
 </style>
