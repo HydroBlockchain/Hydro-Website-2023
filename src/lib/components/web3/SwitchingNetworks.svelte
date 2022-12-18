@@ -260,21 +260,28 @@ import movrLogo from "$lib/images/logo/moonriver.svg"
 $: legendMetamask = 'Download Metamask'
 
 </script>
+<div class="networks-button-row-container">
 {#if $metamask}
+<div class="networks-button-row">
 <div class="button-network-switch" id="no-hover">Select <br> Network</div>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onSwitchNetworkEth} disabled={loading} class="button-network-switch"><img src={ethLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onSwitchNetworkBsc} disabled={loading} class="button-network-switch"><img src={bscLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
+</div>
+<div class="networks-button-row">
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onSwitchNetworkPoly} disabled={loading} class="button-network-switch"><img src={polyLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onSwitchNetworkMovr} disabled={loading} class="button-network-switch"><img src={movrLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onSwitchNetworkCsc} disabled={loading} class="button-network-switch"><img src={cscLogo} alt="bitcoin" id="coin-ticker-logo"/></div>
+</div>
 {:else}
 <div disabled={loading} class="button-network-switch">{legendMetamask}</div>
 {/if}
+</div>
 
 <style>
 #no-hover:hover{
@@ -285,5 +292,23 @@ $: legendMetamask = 'Download Metamask'
 #coin-ticker-logo {
     width: 32px;
     height: 32px;
+}
+.networks-button-row-container{
+    display: flex;
+    flex-direction: row;
+}
+.networks-button-row{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    .networks-button-row-container{
+    flex-direction: column;
+}
+    .networks-button-row{
+    display: flex;
+    flex-direction: row;
+}   
 }
 </style>

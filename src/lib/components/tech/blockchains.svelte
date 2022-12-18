@@ -122,7 +122,30 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
 @media only screen and (max-width: 600px) {
     .half {
         height: auto;
-        flex-direction: row;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
+
+    .function-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .address-row{
+    width: 340px;
+    
+}
+
+.add-button-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+    
 }
 </style>
