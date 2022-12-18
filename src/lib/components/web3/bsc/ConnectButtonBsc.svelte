@@ -18,14 +18,12 @@ async function onConnectBsc() {
 $: legend = loading ? "Connecting" : $addressBsc ? "Connected to Binance Smart Chain" : "Connect Wallet";
 $: legend1 = loading ? '..' : $addressBsc ? "Disconnect" : "Disconnect";
 $: legend2 = $addressBsc
+
 </script>
 {#if $metamask && $onExpectedNetworkBsc }
-
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button-connect" id="connect">{legend}</div>
-
 {/if}
-
 {#if $addressBsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div disabled={loading || $onExpectedNetworkBsc} class="button-network" id="address-div">{legend2}</div>
@@ -34,12 +32,10 @@ $: legend2 = $addressBsc
 {/if}
 
 <style>
-
-    #disconnect{
-        margin-top: 0.5rem;
-    }
-    #connect{
-        font-size: 12px !important;
-    }
-
+#disconnect{
+    margin-top: 0.5rem;
+}
+#connect{
+    font-size: 12px !important;
+}
 </style>

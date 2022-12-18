@@ -18,14 +18,13 @@
 $: legend = loading ? "Connecting" : $addressCsc ? "Connected to CoinEx Smart Chain" : "Connect Wallet";
 $: legend1 = loading ? '..' : $addressCsc ? "Disconnect" : "Disconnect";
 $: legend2 = $addressCsc
-</script>
-{#if $metamask && $onExpectedNetworkCsc }
 
+</script>
+
+{#if $metamask && $onExpectedNetworkCsc }
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onConnectCsc} disabled={loading || !$onExpectedNetworkCsc} class="button-connect" id="connect">{legend}</div>
-
 {/if}
-
 {#if $addressCsc}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div disabled={loading || $onExpectedNetworkCsc} class="button-network" id="address-div">{legend2}</div>
@@ -34,12 +33,10 @@ $: legend2 = $addressCsc
 {/if}
 
 <style>
-
-    #disconnect{
-        margin-top: 0.5rem;
-    }
-    #connect{
-        font-size: 12px !important;
-    }
-
+#disconnect{
+    margin-top: 0.5rem;
+}
+#connect{
+    font-size: 12px !important;
+}
 </style>

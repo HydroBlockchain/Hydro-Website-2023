@@ -34,8 +34,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
 
 <!-- svelte-ignore a11y-missing-attribute -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-
-
 <div class="half" id="card-background">
     <div class="switch-networks-row"><SwitchingNetworks/></div>
     <div class="function-row">
@@ -69,7 +67,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
                 {/if}
             </div>
         
-        
             <div class="dashboard-slot">
                 {#if $addressBsc && $onExpectedNetworkBsc}
                 <AddHydroBsc/>
@@ -102,6 +99,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
 .switch-networks-row{
     display: flex;
     flex-direction: row;
+    margin-bottom: 0.5rem;
 }
 
 .function-row{
@@ -121,20 +119,10 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
-.choose-network{
-    width: auto;
-    background-color: var(--card-bg-alt);
-    backdrop-filter: blur(10px);
-    padding: 1rem;
-}
-
 @media only screen and (max-width: 600px) {
     .half {
         height: auto;
         flex-direction: row;
     }
-
-   
-
 }
 </style>

@@ -14,17 +14,17 @@
         }
         loading = false;
     }
-    $: legend = loading ? "Connecting" : $addressPoly ? "Connected to Polygon Network" : "Connect Wallet";
+
+$: legend = loading ? "Connecting" : $addressPoly ? "Connected to Polygon Network" : "Connect Wallet";
 $: legend1 = loading ? '..' : $addressPoly ? "Disconnect" : "Disconnect";
 $: legend2 = $addressPoly
-</script>
-{#if $metamask && $onExpectedNetworkPoly }
 
+</script>
+
+{#if $metamask && $onExpectedNetworkPoly }
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onConnectPoly} disabled={loading || !$onExpectedNetworkPoly} class="button-connect" id="connect">{legend}</div>
-
 {/if}
-
 {#if $addressPoly}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div disabled={loading || $onExpectedNetworkPoly} class="button-network" id="address-div">{legend2}</div>
@@ -33,12 +33,10 @@ $: legend2 = $addressPoly
 {/if}
 
 <style>
-
-    #disconnect{
-        margin-top: 0.5rem;
-    }
-    #connect{
-        font-size: 12px !important;
-    }
-
+#disconnect {
+    margin-top: 0.5rem;
+}
+#connect {
+    font-size: 12px !important;
+}
 </style>

@@ -21,28 +21,28 @@
     },
     {
         "id": "4",
-        "title": "Add-Hydro-Eth-Tool",
-        "link": "https://add-hydro-eth.netlify.app/"
+        "title": "Ethereum-Hydro-Contract",
+        "link": "https://etherscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"
     },
     {
         "id": "5",
-        "title": "Add-Hydro-BSC-Tool",
-        "link": "https://add-hydro.netlify.app/"
+        "title": "Bsc-Hydro-Contract",
+        "link": "https://bscscan.com/token/0xf3dbb49999b25c9d6641a9423c7ad84168d00071"
     },
     {
         "id": "6",
         "title": "Polygon-Hydro-Contract",
-        "link": "https://polygonscan.com/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"
+        "link": "https://polygonscan.com/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"
     },
     {
         "id": "7",
         "title": "CSC-Hydro-Contract",
-        "link": "https://www.coinex.net/address/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01#code"
+        "link": "https://www.coinex.net/token/0x946112efaB61C3636CBD52DE2E1392D7A75A6f01"
     },
     {
         "id": "8",
         "title": "MOVR-Hydro-Contract",
-        "link": "https://moonriver.moonscan.io/address/0x946112efab61c3636cbd52de2e1392d7a75a6f01#code"
+        "link": "https://moonriver.moonscan.io/token/0x946112efab61c3636cbd52de2e1392d7a75a6f01"
     },
     {
         "id": "9",

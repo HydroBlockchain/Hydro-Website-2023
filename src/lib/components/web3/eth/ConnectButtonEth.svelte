@@ -14,17 +14,17 @@
         }
         loading = false;
     }
+
 $: legend = loading ? "Connecting" : $addressEth ? "Connected to Ethereum Network" : "Connect Wallet";
 $: legend1 = loading ? '..' : $addressEth ? "Disconnect" : "Disconnect";
 $: legend2 = $addressEth
-</script>
-{#if $metamask && $onExpectedNetworkEth }
 
+</script>
+
+{#if $metamask && $onExpectedNetworkEth }
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div on:click={onConnectEth} disabled={loading || !$onExpectedNetworkEth} class="button-connect" id="connect">{legend}</div>
-
 {/if}
-
 {#if $addressEth}
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div disabled={loading || $onExpectedNetworkEth} class="button-network" id="address-div">{legend2}</div>
@@ -33,12 +33,10 @@ $: legend2 = $addressEth
 {/if}
 
 <style>
-
-    #disconnect{
-        margin-top: 0.5rem;
-    }
-    #connect{
-        font-size: 12px !important;
-    }
-
+#disconnect{
+    margin-top: 0.5rem;
+}
+#connect{
+    font-size: 12px !important;
+}
 </style>
