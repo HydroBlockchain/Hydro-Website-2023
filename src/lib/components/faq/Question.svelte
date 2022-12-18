@@ -35,6 +35,7 @@
     border-radius: var(--border-radius);
     color: var(--text-color);
     transition: height 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .title {
