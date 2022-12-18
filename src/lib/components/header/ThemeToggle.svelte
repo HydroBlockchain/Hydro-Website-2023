@@ -70,6 +70,8 @@ import { onMount } from 'svelte';
 }
 #themeToggle{
     width: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
     height: 28px;
     cursor: pointer;
 }
