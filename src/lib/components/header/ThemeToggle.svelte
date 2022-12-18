@@ -24,7 +24,6 @@ import { onMount } from 'svelte';
       // store opposite of preference
       localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
     }
-
     applyTheme();
   };
 
@@ -47,23 +46,56 @@ import { onMount } from 'svelte';
     applyTheme();
     window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme);
   });
+
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="themeDiv" checked={currentTheme !== THEMES.DARK} on:click={toggleTheme}>
-	{#if THEMES.DARK}
-    <img src={Moon} alt="bitcoin" id="themeToggle" />
+<div class="themeDiv" id="header-link" checked={currentTheme !== THEMES.DARK} on:click={toggleTheme}>
+	{#if currentTheme === THEMES.DARK}
+    <img src={Sun} alt="Sun" id="themeToggle" />
 	{:else}
-    <img src={Sun} alt="bitcoin" id="themeToggle" />
+    <img src={Moon} alt="Moon" id="themeToggle" />
 	{/if}
 </div> 
 
 <style>
 .themeDiv{
     width: 100px;
-    margin-bottom: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeDiv:hover {
+    opacity: 0.5;
 }
 #themeToggle{
-    width: 32px;
+    width: auto;
+    height: 28px;
+    cursor: pointer;
+}
+#header-link{
+    background-color: var(--card-bg-alt);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: var(--border-radius);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .themeDiv{
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: var(--transparent) !important;
+    margin-right: 2rem;
+}
+
+#themeToggle{
     height: 32px;
+}
+
+
 }
 </style>

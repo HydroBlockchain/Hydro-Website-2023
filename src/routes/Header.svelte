@@ -27,11 +27,11 @@ function handleClick() {
 					</svg>
                     <div class="navigation">
                           <ThemeToggle/>
-                        <a data-sveltekit-prefetch href="/tech">
+                        <a data-sveltekit-prefetch id="header-link" href="/tech">
                             <img src={techIcon} alt="Technology" id="icon" /></a>
-                        <a data-sveltekit-prefetch href="/team">
+                        <a data-sveltekit-prefetch id="header-link" href="/team">
                             <img src={teamIcon} alt="Team" id="icon" /></a>
-                        <a data-sveltekit-prefetch href="/faq">
+                        <a data-sveltekit-prefetch id="header-link-last" href="/faq">
                             <img src={faqIcon} alt="faq" id="icon" /></a>
                     </div>
                 </div>
@@ -44,6 +44,15 @@ function handleClick() {
 </header>
 
 <style lang="scss">
+#header-link, #header-link-last{
+    background-color: var(--card-bg-alt);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: var(--border-radius);
+}
+#header-link-last{
+    margin-right: 1rem;
+}
 #logo-div {
     align-items: flex-end;
     text-align: end;
@@ -110,13 +119,12 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
 
     a {
         color: var(--nav-link-color);
         text-decoration: none;
         width: 100px;
-        margin-bottom: 3px;
         transition: 250ms ease-in-out;
 
         &:hover {
