@@ -32,7 +32,7 @@
                     },
                 ],
             });
-        } catch (error: any) {
+        } catch (switchError: any) {
             // Missing network
             if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
@@ -91,7 +91,7 @@
                     },
                 ],
             });
-        } catch (error: any) {
+        } catch (switchError: any) {
             
             // Missing network
             if (switchswitchError.code === 4902 || switchError.code === -32603) {
@@ -149,7 +149,7 @@
                     },
                 ],
             });
-        } catch (error: any) {
+        } catch (switchError: any) {
             // Missing network
             if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
@@ -206,7 +206,7 @@
                     },
                 ],
             });
-        } catch (error: any) {
+        } catch (switchError: any) {
             // Missing network
             if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
@@ -266,7 +266,7 @@
                     },
                 ],
             });
-        } catch (error: any) {
+        } catch (switchError: any) {
             // Missing network
             if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
