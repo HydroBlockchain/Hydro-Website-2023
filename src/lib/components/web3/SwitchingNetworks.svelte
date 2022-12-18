@@ -9,26 +9,18 @@
     import movrLogo from "$lib/images/logo/moonriver.svg";
     import Metamask from "./Metamask.svelte";
 
-    const expectedChainIdEth = 1;
     let loading = false;
 
     //Switch to Ethereum Network
-    export async function switchNetworkEth(
-        chainId: number = expectedChainIdEth
-    ) {
+    export async function switchNetworkEth() {
         const windowWithEthereum = window as unknown as WindowWithEthereum;
         const { ethereum } = windowWithEthereum;
-
-        if (!ethereum) {
-            throw new Error("asdas");
-        }
-
         try {
             await ethereum.request({
                 method: "wallet_switchEthereumChain",
                 params: [
                     {
-                        chainId: `0x${chainId.toString(16)}`,
+                        chainId: `0x1`,
                     },
                 ],
             });
@@ -51,7 +43,6 @@
         const { ethereum } = windowWithEthereum;
         const newProvider = new Web3Provider(ethereum, "any");
         provider.set(newProvider);
-
         try {
             await ethereum.request({
                 method: "wallet_switchEthereumChain",
