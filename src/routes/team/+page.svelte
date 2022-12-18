@@ -10,7 +10,7 @@ import items3 from "$lib/json/team3.json"
 
 <svelte:head>
     <title>Team</title>
-    <meta name="Team" content="Team" />
+    <meta name="Team Hydro" content="Projects Hydros Global Blockchain Team" />
     </svelte:head>
 <section>
 

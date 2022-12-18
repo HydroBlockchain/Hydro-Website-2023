@@ -8,7 +8,7 @@
 
 <svelte:head>
     <title>FAQ</title>
-    <meta name="FAQ" content="FAQ" />
+    <meta name="Hydro FAQ" content="Hydro FAQ to answer your questions" />
 </svelte:head>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <section>

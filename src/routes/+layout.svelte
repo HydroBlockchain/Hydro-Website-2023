@@ -3,7 +3,7 @@
 import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
 import "./styles.scss";
-
+// Init chains
 import { initBsc } from '$lib/stores/wallet-bsc.ts';
 import { initEth } from '$lib/stores/wallet-eth.ts';
 import { initPoly } from "$lib/stores/wallet-poly";

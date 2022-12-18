@@ -11,8 +11,8 @@ import Featured from "$lib/components/landing/featured.svelte";
 
 <svelte:head>
     <title>Home</title>
-    <meta name="Project Hydro" content="Project Hydro Website" />
-    </svelte:head>
+    <meta name="Project Hydro" content="Project Hydro Web3 Architects" />
+</svelte:head>
 
     <section>
         <Hero />

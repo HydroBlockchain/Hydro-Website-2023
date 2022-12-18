@@ -12,7 +12,7 @@
 
 <svelte:head>
     <title>Technology</title>
-    <meta name="Tech" content="Tech" />
+    <meta name="Technology" content="Project Hydro Web3 Technology" />
 </svelte:head>
 
 <section>
