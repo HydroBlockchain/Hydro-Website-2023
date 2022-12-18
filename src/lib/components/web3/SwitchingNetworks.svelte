@@ -92,8 +92,9 @@
                 ],
             });
         } catch (error: any) {
+            
             // Missing network
-            if (error.code === 4902) {
+            if (switchError.code === 4902 || switchError?.data?.orginalError?.code === 4902) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
