@@ -94,7 +94,7 @@
         } catch (switchError: any) {
             
             // Missing network
-            if (switchswitchError.code === 4902 || switchError.code === -32603) {
+            if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
