@@ -10,6 +10,8 @@ import { initPoly } from "$lib/stores/wallet-poly";
 import { initMovr } from "$lib/stores/wallet-movr";
 import { initCsc } from "$lib/stores/wallet-csc";
 import { onMount } from 'svelte';
+import {state} from "$lib/stores/store";
+import Preloader from "$lib/components/Preloader.svelte";
 
 let ready
 onMount(() => {
@@ -20,6 +22,15 @@ onMount(() => {
     initMovr();
     initCsc();
 });
+
+$: {
+        if (ready) {
+            setInterval(() => {
+                state.set({loading: false})
+            }, 1000)
+        }
+    }
+    
 </script>
 
 <div class="app-wrapper">
@@ -37,7 +48,10 @@ onMount(() => {
                 <span></span>
                 <span></span>
                 <span></span>
-             </div>
+            </div>
+            {#if $state.loading}
+            <Preloader/>
+            {/if}
             <slot />
         </main>
         <Footer />
