@@ -196,7 +196,7 @@
                             chainName: "CoinEx Smart Chain",
                             nativeCurrency: {
                                 name: "CoinEx Chain Native Token",
-                                symbol: "CET",
+                                symbol: "cet",
                                 decimals: 18,
                             },
                             rpcUrls: ["https://rpc.coinex.net"],
