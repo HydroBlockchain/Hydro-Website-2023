@@ -10,7 +10,7 @@
 </script>
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={toggle}>
+<div class="themeDiv" on:click={toggle}>
 	{#if darkMode }
     <img src={Moon} alt="bitcoin" id="themeToggle" />
 	{:else}
@@ -19,6 +19,10 @@
 </div>
 
 <style>
+.themeDiv{
+    width: 100px;
+    margin-bottom: 3px;
+}
 #themeToggle{
     width: 32px;
     height: 32px;
