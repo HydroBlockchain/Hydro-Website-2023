@@ -254,6 +254,11 @@ a:active {
 	font-size: 14px !important;
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(10px);
+	cursor: pointer;
+}
+
+.button-connect:hover{
+	background-color: var(--button-hover) !important;
 }
 
 .button-network {
@@ -262,10 +267,10 @@ a:active {
 	backdrop-filter: blur(10px);
 	padding-top: 1rem ;
 	padding-bottom: 1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	text-align: center;
 	margin-top: 0.5rem;
 	height: auto;
 	width: auto;
@@ -301,9 +306,9 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 140px;
-    height: 105px;
-    font-size: 12px;
+    width: 143px;
+    height: 163px;
+    font-size: 14px;
     cursor: pointer;
     border-radius: 7px;
     margin-left: 1rem;
@@ -313,12 +318,12 @@ a:active {
 }
 
 #coin-ticker-logo {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
 }
 .text-add-hydro {
     margin: 1rem;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 

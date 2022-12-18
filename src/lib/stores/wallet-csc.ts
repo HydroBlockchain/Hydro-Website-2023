@@ -140,3 +140,7 @@ export async function connectCsc() {
 		return _address;
 	});
 }
+
+export async function disconnectCsc() {
+	addressCsc.set(null);
+}

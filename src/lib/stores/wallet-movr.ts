@@ -140,3 +140,7 @@ export async function connectMovr() {
 		return _address;
 	});
 }
+
+export async function disconnectMovr() {
+	addressMovr.set(null);
+}

@@ -140,3 +140,7 @@ export async function connectPoly() {
 		return _address;
 	});
 }
+
+export async function disconnectPoly() {
+	addressPoly.set(null);
+}

@@ -141,4 +141,8 @@ export async function connectEth() {
 	});
 }
 
+export async function disconnectEth() {
+	addressEth.set(null);
+}
+
 

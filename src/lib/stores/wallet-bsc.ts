@@ -141,6 +141,10 @@ export async function connectBsc() {
 	});
 }
 
+export async function disconnectBsc() {
+	addressBsc.set(null);
+}
+
 
 
 

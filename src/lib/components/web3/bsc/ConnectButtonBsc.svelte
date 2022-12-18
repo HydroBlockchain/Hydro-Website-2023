@@ -1,5 +1,5 @@
 <script lang="ts">
-import { addressBsc, connectBsc, onExpectedNetworkBsc } from "$lib/stores/wallet-bsc";
+import { addressBsc, connectBsc, disconnectBsc, onExpectedNetworkBsc } from "$lib/stores/wallet-bsc";
 import { showNotification, NotificationType} from "$lib/stores/notifications";
 import { metamask } from '$lib/stores/wallet-bsc';
 let loading = false;
@@ -14,15 +14,32 @@ async function onConnectBsc() {
     }
     loading = false;
 }
-$: legend = loading ? "Connecting" : $addressBsc ? $addressBsc : "Connect Wallet";
-$: legend2 = 'You are Connected to Binance Smart Chain'
+
+$: legend = loading ? "Connecting" : $addressBsc ? "Connected to Binance Smart Chain" : "Connect Wallet";
+$: legend1 = loading ? '..' : $addressBsc ? "Disconnect" : "Disconnect";
+$: legend2 = $addressBsc
 </script>
-{#if $metamask && $onExpectedNetworkBsc}
+{#if $metamask && $onExpectedNetworkBsc }
+
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button-connect">{legend}</div>
-<div disabled={loading || $onExpectedNetworkBsc} class="button-network">{legend2}</div>
+<div on:click={onConnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button-connect" id="connect">{legend}</div>
 
 {/if}
 
+{#if $addressBsc}
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div disabled={loading || $onExpectedNetworkBsc} class="button-network" id="address-div">{legend2}</div>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div on:click={disconnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button-connect" id="disconnect">{legend1}</div>
+{/if}
+
 <style>
+
+    #disconnect{
+        margin-top: 0.5rem;
+    }
+    #connect{
+        font-size: 12px !important;
+    }
+
 </style>

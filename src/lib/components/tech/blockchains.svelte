@@ -111,7 +111,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 .address-row{
-    width: auto;
+    width: 340px;
     
 }
 .add-button-column{
