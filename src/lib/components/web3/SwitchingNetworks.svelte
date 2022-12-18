@@ -7,6 +7,7 @@
     import polyLogo from "$lib/images/logo/polygon.svg";
     import cscLogo from "$lib/images/logo/coinex.svg";
     import movrLogo from "$lib/images/logo/moonriver.svg";
+    import Metamask from "./Metamask.svelte";
 
     const expectedChainIdEth = 1;
     let loading = false;
@@ -208,9 +209,7 @@
             }
         }
     }
-
-    //Button content
-    $: legendMetamask = "Download Metamask";
+    
 </script>
 
 <div class="networks-button-row-container">
@@ -264,8 +263,8 @@
             </div>
         </div>
     {:else}
-        <div disabled={loading} class="button-network-switch">
-            {legendMetamask}
+        <div disabled={loading} class="button-container">
+            <Metamask/>
         </div>
     {/if}
 </div>
