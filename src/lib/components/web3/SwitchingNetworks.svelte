@@ -1,6 +1,5 @@
 <script lang="ts">
     // @ts-nocheck
-    import { showNotification, NotificationType } from "$lib/stores/notifications";
     import { metamask, provider } from "$lib/stores/wallet-bsc";
     import { Web3Provider } from "@ethersproject/providers";
     import ethLogo from "$lib/images/logo/ethereum.svg";
@@ -45,37 +44,7 @@
         }
     }
 
-    async function onSwitchNetworkEth() {
-        loading = true;
-        showNotification("Switching network", {
-            type: NotificationType.Error,
-        });
-        try {
-            await switchNetworkEth();
-        } catch (error: any) {
-            showNotification(error.message, {
-                type: NotificationType.Error,
-            });
-        }
-        loading = false;
-    }
-
     //Add or switch Binance Smart Chain Network
-    async function onSwitchNetworkBsc() {
-        loading = true;
-        showNotification("Switching network", {
-            type: NotificationType.Error,
-        });
-        try {
-            await switchNetworkBsc();
-        } catch (error: any) {
-            showNotification(error.message, {
-                type: NotificationType.Error,
-            });
-        }
-        loading = false;
-    }
-
     async function addNetworkBsc() {
         const windowWithEthereum = window as unknown as WindowWithEthereum;
         const { ethereum } = windowWithEthereum;
@@ -92,7 +61,6 @@
                 ],
             });
         } catch (switchError: any) {
-            
             // Missing network
             if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
@@ -114,32 +82,15 @@
             } else {
                 throw Error(error);
             }
-            onSwitchNetworkBsc();
         }
     }
 
     //Add or switch to Polygon Network
-    async function onSwitchNetworkPoly() {
-        loading = true;
-        showNotification("Switching network", {
-            type: NotificationType.Error,
-        });
-        try {
-            await switchNetworkPoly();
-        } catch (error: any) {
-            showNotification(error.message, {
-                type: NotificationType.Error,
-            });
-        }
-        loading = false;
-    }
-
     async function addNetworkPoly() {
         const windowWithEthereum = window as unknown as WindowWithEthereum;
         const { ethereum } = windowWithEthereum;
         const newProvider = new Web3Provider(ethereum, "any");
         provider.set(newProvider);
-
         try {
             await ethereum.request({
                 method: "wallet_switchEthereumChain",
@@ -171,32 +122,15 @@
             } else {
                 throw Error(error);
             }
-            onSwitchNetworkPoly();
         }
     }
 
     //Add or switch to Moonriver Network
-    async function onSwitchNetworkMovr() {
-        loading = true;
-        showNotification("Switching network", {
-            type: NotificationType.Error,
-        });
-        try {
-            await switchNetworkMovr();
-        } catch (error: any) {
-            showNotification(error.message, {
-                type: NotificationType.Error,
-            });
-        }
-        loading = false;
-    }
-
     async function addNetworkMovr() {
         const windowWithEthereum = window as unknown as WindowWithEthereum;
         const { ethereum } = windowWithEthereum;
         const newProvider = new Web3Provider(ethereum, "any");
         provider.set(newProvider);
-
         try {
             await ethereum.request({
                 method: "wallet_switchEthereumChain",
@@ -232,26 +166,10 @@
             } else {
                 throw Error(error);
             }
-            onSwitchNetworkMovr();
         }
     }
 
     //Add or switch to Coinex Smart Chain
-    async function onSwitchNetworkCsc() {
-        loading = true;
-        showNotification("Switching network", {
-            type: NotificationType.Error,
-        });
-        try {
-            await switchNetworkCsc();
-        } catch (error: any) {
-            showNotification(error.message, {
-                type: NotificationType.Error,
-            });
-        }
-        loading = false;
-    }
-
     async function addNetworkCsc() {
         const windowWithEthereum = window as unknown as WindowWithEthereum;
         const { ethereum } = windowWithEthereum;
@@ -288,12 +206,10 @@
             } else {
                 throw Error(error);
             }
-            onSwitchNetworkCsc();
         }
     }
 
     //Button content
-
     $: legendMetamask = "Download Metamask";
 </script>
 
@@ -305,7 +221,7 @@
             </div>
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <div
-                on:click={onSwitchNetworkEth}
+                on:click={switchNetworkEth}
                 disabled={loading}
                 class="button-network-switch"
             >
