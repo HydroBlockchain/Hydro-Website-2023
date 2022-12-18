@@ -113,6 +113,9 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     margin: 0.2rem;
     border-radius: var(--border-radius);
     backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -122,9 +125,70 @@ a {
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a:hover {
     background-color: var(--button-hover) !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .half{
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .metamask-notice {
+    width: auto;
+    height: auto;
+}
+
+a {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    width: 250px;
+}
+
+.hydro-chain {
+    margin-top: 1;
+    width: 50px;
+    padding: 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.metamask-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 1rem;
+}
+
+.metamask-hydro-chains {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.metamask-hydro-chains-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-right: 0rem;
+}
+
+
 }
 </style>
