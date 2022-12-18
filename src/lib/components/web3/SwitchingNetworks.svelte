@@ -34,7 +34,7 @@
             });
         } catch (error: any) {
             // Missing network
-            if (error.code === 4902) {
+            if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [getCreateNetworkDataByChainId(1)],
@@ -94,7 +94,7 @@
         } catch (error: any) {
             
             // Missing network
-            if (switchError.code === 4902 || switchError.code -32603) {
+            if (switchswitchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
@@ -151,7 +151,7 @@
             });
         } catch (error: any) {
             // Missing network
-            if (error.code === 4902) {
+            if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
@@ -208,7 +208,7 @@
             });
         } catch (error: any) {
             // Missing network
-            if (error.code === 4902) {
+            if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
@@ -268,7 +268,7 @@
             });
         } catch (error: any) {
             // Missing network
-            if (error.code === 4902) {
+            if (switchError.code === 4902 || switchError.code === -32603) {
                 await ethereum.request({
                     method: "wallet_addEthereumChain",
                     params: [
