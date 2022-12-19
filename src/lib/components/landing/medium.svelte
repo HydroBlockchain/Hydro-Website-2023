@@ -127,4 +127,25 @@ import Time from "svelte-time";
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+.three-quarter {
+    height: auto;
+    flex-direction: row;
+}
+
+.blog-posts {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog-title {
+    width: 130px;
+    height: 50px;
+    word-wrap: break-word;
+}
+
+}
 </style>

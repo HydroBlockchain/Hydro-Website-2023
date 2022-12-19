@@ -204,4 +204,112 @@ a:hover {
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+section{
+    width: 100%;
+}
+
+.team-section {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-card {
+    justify-content: space-around;
+    padding: 0;
+    width: 100% !important;
+    margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+}
+
+#profile-pic {
+width: 100px;
+margin-right: 1rem;
+}
+
+#top-one {
+    margin-bottom: 0;
+}
+
+#last-one {
+    margin-top: 0;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+section{
+    width: 100%;
+}
+
+.team-section {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-card {
+    justify-content: space-around;
+    padding: 0;
+    width: 100% !important;
+    margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+}
+
+#profile-pic {
+width: 100px;
+margin-right: 1rem;
+}
+
+#top-one {
+    margin-bottom: 0;
+}
+
+#last-one {
+    margin-top: 0;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+section{
+    width: 100%;
+}
+
+.team-section {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team-card {
+    justify-content: space-around;
+    padding: 0;
+    width: 100% !important;
+    margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+}
+
+#profile-pic {
+width: 100px;
+margin-right: 1rem;
+}
+
+#top-one {
+    margin-bottom: 0;
+}
+
+#last-one {
+    margin-top: 0;
+}
+
+}
 </style>

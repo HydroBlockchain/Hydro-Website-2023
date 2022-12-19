@@ -174,4 +174,49 @@ a:hover {
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+.footer-container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#hydro-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    width: 128px;
+    height: 32px;
+}
+
+.social-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.social-media {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+}
+
+
 </style>
