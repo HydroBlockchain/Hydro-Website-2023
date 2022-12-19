@@ -291,6 +291,49 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 .cg-credit {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .one-quarter {
+    height: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.cg-credit {
+    margin-right: 3rem;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.one-quarter {
+height: auto;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.cg-credit {
+margin-right: 3rem;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.one-quarter {
+height: auto;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.cg-credit {
+margin-right: 3rem;
 }
 
 }

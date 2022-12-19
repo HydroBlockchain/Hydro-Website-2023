@@ -120,8 +120,32 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
 }
 
 @media only screen and (max-width: 600px) {
+
+    .function-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .address-row{
+    width: 340px;
+    
+}
+
+.add-button-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+    
+}
+
+@media only screen and (max-width: 768px) {
     .half {
-        height: auto;
+        height: auto!important;
         flex-direction: column;
         padding-bottom: 1rem;
         padding-top: 1rem;
@@ -129,7 +153,67 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
 
     .function-row{
     display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+    .address-row{
+    width: 340px;
+    
+}
+
+.add-button-column{
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .half {
+        height: auto!important;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .function-row{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+    .address-row{
+    width: 340px;
+    
+}
+
+.add-button-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .half {
+        height: auto!important;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    .function-row{
+    display: flex;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
 }

@@ -1,7 +1,10 @@
 <script>
 // @ts-nocheck
+import { onMount } from 'svelte';
+import { state } from "$lib/stores/store";
 import Header from "./Header.svelte";
 import Footer from "./Footer.svelte";
+import Preloader from "$lib/components/Preloader.svelte";
 import "./styles.scss";
 // Init chains
 import { initBsc } from '$lib/stores/wallet-bsc.ts';
@@ -9,9 +12,6 @@ import { initEth } from '$lib/stores/wallet-eth.ts';
 import { initPoly } from "$lib/stores/wallet-poly";
 import { initMovr } from "$lib/stores/wallet-movr";
 import { initCsc } from "$lib/stores/wallet-csc";
-import { onMount } from 'svelte';
-import {state} from "$lib/stores/store";
-import Preloader from "$lib/components/Preloader.svelte";
 
 let ready
 onMount(() => {

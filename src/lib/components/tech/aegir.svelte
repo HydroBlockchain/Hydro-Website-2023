@@ -255,7 +255,7 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
     .half {
-        height: auto;
+        height: auto !important;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -319,5 +319,40 @@ a:hover {
     .playstore-button {
         margin-left: 0;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .half {
+        height: auto!important;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .half {
+        height: auto!important;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    .half {
+        height: auto!important;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+
+    
 }
 </style>

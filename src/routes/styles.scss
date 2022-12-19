@@ -47,29 +47,12 @@
 	--preloader: rgba(0, 0, 0, 1);
 }
 
-html {
-    background-color: var(--bg-color);
-}
-
-body {
-	min-height: 100vh;
-	margin: 0;
-	font-family: var(--font-body);
-	color: var(--color-text);
-	background-color: var(--bg-color);
-	overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-	display: none !important;
-}
-
 //Dark Mode
 :global(body.dark) {
 	//Hydro Drop
 	--drop-color: #192E46;
 	//Text Colors
-	--text-color: #fff;
+	--text-color: #ffffff;
 	--text-color-alt: rgba(255, 255, 255, 0.5);
 	//Background Colors
 	--bg-color: linear-gradient(90deg, #30286a, #183c68);
@@ -92,14 +75,17 @@ body::-webkit-scrollbar {
 	--animation-color-7: rgba(64, 44, 130, 0.5);
 	--animation-color-8: rgba(29, 67, 120, 0.5);
 	--animation-color-9: rgba(69, 149, 183, 0.5);
+	//Price variation color
+	--red: #ff9393;
+	--green: #d3ffaa;
 }
 
 //Light Mode
 :global(body) {
 	//Hydro Drop
-	--drop-color: #fff;
+	--drop-color: #ffffff;
 	//Text Colors
-	--text-color: rgb(255, 255, 255);
+	--text-color: #ffffff;
 	--text-color-alt: rgba(255, 255, 255, 0.5);
 	//Background Colors
 	--bg-color: linear-gradient(90deg, #6493ff, #009dff);
@@ -122,6 +108,67 @@ body::-webkit-scrollbar {
 	--animation-color-7: rgba(144, 125, 255, 0.8);
 	--animation-color-8: rgba(68, 205, 255, 0.8);
 	--animation-color-9: rgba(0, 132, 255, 0.8);
+	//Price variation color
+	--red: #e32a15;
+	--green: #12bf02;
+}
+
+html {
+	background-color: var(--bg-color);
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	font-family: var(--font-body);
+	color: var(--color-text);
+	background-color: var(--bg-color);
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none !important;
+}
+
+//Keyframes
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes move {
+	100% {
+		transform: translate3d(0, 0, 1px) rotate(360deg);
+	}
+}
+
+//Animated Background
+.background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	top: 0;
+	left: 0;
+	background: var(--bg-color);
+	overflow: hidden;
+}
+
+.background span {
+	width: 50vmin;
+	height: 50vmin;
+	border-radius: 50vmin;
+	backface-visibility: hidden;
+	position: absolute;
+	animation: move;
+	animation-duration: 1;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
 //Containers
@@ -207,16 +254,20 @@ body::-webkit-scrollbar {
 	background: var(--card-bg-alt);
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(8px);
-	
 }
 
 //Animation
-
-#card-background, header, footer {
+#card-background,
+header,
+footer,
+.question-container {
 	animation: fadeIn 2s;
 }
 
-#ecosystem, #intro-chain, #profile-pic, #hydro-logo-2{
+#ecosystem,
+#intro-chain,
+#profile-pic,
+#hydro-logo-2 {
 	animation: fadeIn 3s;
 }
 
@@ -225,18 +276,9 @@ a {
 	color: var(--text-color);
 }
 
-a:link {
-	text-decoration: none;
-}
-
-a:visited {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
+a:link,
+a:visited,
+a:hover,
 a:active {
 	text-decoration: none;
 }
@@ -253,7 +295,6 @@ a:active {
 
 .button:hover {
 	background-color: var(--button-hover);
-	opacity: 1 !important;
 }
 
 .button a {
@@ -286,7 +327,7 @@ a:active {
 	cursor: pointer;
 }
 
-.button-connect:hover{
+.button-connect:hover {
 	background-color: var(--button-hover) !important;
 }
 
@@ -294,7 +335,7 @@ a:active {
 	background-color: var(--card-bg-alt);
 	color: var(--text-color-alt);
 	backdrop-filter: blur(10px);
-	padding-top: 1rem ;
+	padding-top: 1rem;
 	padding-bottom: 1rem;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
@@ -329,60 +370,45 @@ a:active {
 }
 
 .button-add-hydro {
-    background-color: var(--card-bg-alt);
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 143px;
-    height: 163px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 7px;
-    margin-left: 1rem;
+	background-color: var(--card-bg-alt);
+	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 143px;
+	height: 163px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 7px;
+	margin-left: 1rem;
 }
-.button-add-hydro:hover{
-    background-color: var(--button-hover) !important;
+
+.button-add-hydro:hover {
+	background-color: var(--button-hover) !important;
 }
 
 #coin-ticker-logo {
-    width: 40px;
-    height: 40px;
+	width: 40px;
+	height: 40px;
 }
+
 .text-add-hydro {
-    margin: 1rem;
-    font-size: 14px;
+	margin: 1rem;
+	font-size: 14px;
 }
 
 //Priceaction +/-
 .red {
 	display: flex;
 	margin-left: 3px;
-	color: #ff9393 !important
+	color: var(--red);
 }
 
 .green {
 	display: flex;
 	margin-left: 3px;
-	color: #d3ffaa !important
-}
-
-//Keyframes
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes move {
-    100% {
-        transform: translate3d(0, 0, 1px) rotate(360deg);
-    }
+	color: var(--green);
 }
 
 //Responsive
@@ -451,147 +477,352 @@ a:active {
 		height: auto;
 		width: 70px;
 	}
-	
-	#ecosystem, #intro-chain, #profile-pic, #hydro-logo-2, #card-background, header, footer{
+
+	#ecosystem,
+	#intro-chain,
+	#profile-pic,
+	#hydro-logo-2,
+	#card-background,
+	header,
+	footer {
 		animation: none !important;
 	}
-	
+
 }
 
-//Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
 
-//Medium devices (landscape tablets, 768px and up) 
-@media only screen and (min-width: 768px) {}
+//Medium devices (landscape tablets, up to 768px) 
+@media only screen and (max-width: 768px) {
 
-//Large devices (laptops/desktops, 992px and up) 
-@media only screen and (min-width: 992px) {}
+	.app-wrapper {
+		max-width: 768px !important;
+		margin: 1rem !important;
+		overflow-x: hidden !important;
+	}
 
-//Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {}
+	.multiple-containers,
+	.multiple-containers-alt,
+	.container {
+		flex-direction: column !important;
+		margin: var(--margin-none) !important;
+	}
 
-//Animated Background
-.background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-	z-index: -10;
-    top: 0;
-    left: 0;
-    background: var(--bg-color);
-    overflow: hidden;
+	.container {
+		height: auto !important;
+		margin-bottom: 2rem !important;
+	}
+
+	#second {
+		margin-right: var(--margin-none);
+		margin-left: var(--margin-none);
+	}
+
+	html,
+	section,
+	.app,
+	.multiple-containers,
+	.multiple-containers-alt,
+	.full,
+	.half,
+	.one-quarter,
+	.three-quarter,
+	.footer-container,
+	.container {
+		width: 100% !important;
+	}
+
+	.three-quarter {
+		margin-left: var(--margin-none);
+	}
+
+	.header-button {
+		width: 3rem !important;
+	}
+
+	.half {
+		height: var(--ch-mini);
+		margin-right: var(--margin-none) !important;
+		margin-left: var(--margin-none) !important;
+	}
+
+	.button-add-hydro {
+		width: 340px;
+		height: auto;
+		margin-left: 0rem;
+		padding-top: 1rem;
+	}
+
+	.button-network-switch {
+		height: auto;
+		width: 70px;
+	}
+
+	#ecosystem,
+	#intro-chain,
+	#profile-pic,
+	#hydro-logo-2,
+	#card-background,
+	header,
+	footer {
+		animation: none !important;
+	}
+
 }
 
-.background span {
-    width: 50vmin;
-    height: 50vmin;
-    border-radius: 50vmin;
-    backface-visibility: hidden;
-    position: absolute;
-    animation: move;
-    animation-duration: 1;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+//Large devices (laptops/desktops, up to 992px) 
+@media only screen and (max-width: 992px) {
+
+	.app-wrapper {
+		max-width: 992px !important;
+		margin: 1rem !important;
+		overflow-x: hidden !important;
+	}
+
+	.multiple-containers,
+	.multiple-containers-alt,
+	.container {
+		flex-direction: column !important;
+		margin: var(--margin-none) !important;
+	}
+
+	.container {
+		height: auto !important;
+		margin-bottom: 2rem !important;
+	}
+
+	#second {
+		margin-right: var(--margin-none);
+		margin-left: var(--margin-none);
+	}
+
+	html,
+	section,
+	.app,
+	.multiple-containers,
+	.multiple-containers-alt,
+	.full,
+	.half,
+	.one-quarter,
+	.three-quarter,
+	.footer-container,
+	.container {
+		width: 100% !important;
+	}
+
+	.three-quarter {
+		margin-left: var(--margin-none);
+	}
+
+	.header-button {
+		width: 3rem !important;
+	}
+
+	.half {
+		height: var(--ch-mini);
+		margin-right: var(--margin-none) !important;
+		margin-left: var(--margin-none) !important;
+	}
+
+	.button-add-hydro {
+		width: 340px;
+		height: auto;
+		margin-left: 0rem;
+		padding-top: 1rem;
+	}
+
+	.button-network-switch {
+		height: auto;
+		width: 70px;
+	}
+
+	#ecosystem,
+	#intro-chain,
+	#profile-pic,
+	#hydro-logo-2,
+	#card-background,
+	header,
+	footer {
+		animation: none !important;
+	}
+
 }
+
+//Extra large devices (large laptops and desktops, up to 1400px) 
+@media only screen and (max-width: 1200px) {
+
+	.app-wrapper {
+		max-width: 1200px !important;
+		margin: 1rem !important;
+		overflow-x: hidden !important;
+	}
+
+	.multiple-containers,
+	.multiple-containers-alt,
+	.container {
+		flex-direction: column !important;
+		margin: var(--margin-none) !important;
+	}
+
+	.container {
+		height: auto !important;
+		margin-bottom: 2rem !important;
+	}
+
+	#second {
+		margin-right: var(--margin-none);
+		margin-left: var(--margin-none);
+	}
+
+	html,
+	section,
+	.app,
+	.multiple-containers,
+	.multiple-containers-alt,
+	.full,
+	.half,
+	.one-quarter,
+	.three-quarter,
+	.footer-container,
+	.container {
+		width: 100% !important;
+	}
+
+	.three-quarter {
+		margin-left: var(--margin-none);
+	}
+
+	.header-button {
+		width: 3rem !important;
+	}
+
+	.half {
+		height: var(--ch-mini);
+		margin-right: var(--margin-none) !important;
+		margin-left: var(--margin-none) !important;
+	}
+
+	.button-add-hydro {
+		width: 340px;
+		height: auto;
+		margin-left: 0rem;
+		padding-top: 1rem;
+	}
+
+	.button-network-switch {
+		height: auto;
+		width: 70px;
+	}
+
+	#ecosystem,
+	#intro-chain,
+	#profile-pic,
+	#hydro-logo-2,
+	#card-background,
+	header,
+	footer {
+		animation: none !important;
+	}
+
+}
+
+
 
 .background span:nth-child(0) {
-    color: var(--animation-color-0);
-    top: 91%;
-    left: 47%;
-    animation-duration: 219s;
-    animation-delay: -321s;
-    transform-origin: -2vw 22vh;
-    box-shadow: -100vmin 0 13.380490600663542vmin currentColor;
+	color: var(--animation-color-0);
+	top: 91%;
+	left: 47%;
+	animation-duration: 219s;
+	animation-delay: -321s;
+	transform-origin: -2vw 22vh;
+	box-shadow: -100vmin 0 13.380490600663542vmin currentColor;
 }
 
 .background span:nth-child(1) {
-    color: var(--animation-color-1);
-    top: 88%;
-    left: 32%;
-    animation-duration: 291s;
-    animation-delay: -13s;
-    transform-origin: 17vw 12vh;
-    box-shadow: 100vmin 0 13.468910405457814vmin currentColor;
+	color: var(--animation-color-1);
+	top: 88%;
+	left: 32%;
+	animation-duration: 291s;
+	animation-delay: -13s;
+	transform-origin: 17vw 12vh;
+	box-shadow: 100vmin 0 13.468910405457814vmin currentColor;
 }
 
 .background span:nth-child(2) {
-    color: var(--animation-color-2);
-    top: 68%;
-    left: 42%;
-    animation-duration: 104s;
-    animation-delay: -420s;
-    transform-origin: -16vw -4vh;
-    box-shadow: -100vmin 0 12.74029809041134vmin currentColor;
+	color: var(--animation-color-2);
+	top: 68%;
+	left: 42%;
+	animation-duration: 104s;
+	animation-delay: -420s;
+	transform-origin: -16vw -4vh;
+	box-shadow: -100vmin 0 12.74029809041134vmin currentColor;
 }
 
 .background span:nth-child(3) {
-    color: var(--animation-color-3);
-    top: 30%;
-    left: 91%;
-    animation-duration: 87s;
-    animation-delay: -237s;
-    transform-origin: 8vw -1vh;
-    box-shadow: 100vmin 0 13.229999948254367vmin currentColor;
+	color: var(--animation-color-3);
+	top: 30%;
+	left: 91%;
+	animation-duration: 87s;
+	animation-delay: -237s;
+	transform-origin: 8vw -1vh;
+	box-shadow: 100vmin 0 13.229999948254367vmin currentColor;
 }
 
 .background span:nth-child(4) {
-    color: var(--animation-color-4);
-    top: 97%;
-    left: 48%;
-    animation-duration: 464s;
-    animation-delay: -72s;
-    transform-origin: 6vw -6vh;
-    box-shadow: -100vmin 0 12.638428911891703vmin currentColor;
+	color: var(--animation-color-4);
+	top: 97%;
+	left: 48%;
+	animation-duration: 464s;
+	animation-delay: -72s;
+	transform-origin: 6vw -6vh;
+	box-shadow: -100vmin 0 12.638428911891703vmin currentColor;
 }
 
 .background span:nth-child(5) {
-    color: var(--animation-color-5);
-    top: 84%;
-    left: 3%;
-    animation-duration: 37s;
-    animation-delay: -95s;
-    transform-origin: -3vw 11vh;
-    box-shadow: -100vmin 0 13.003365440000394vmin currentColor;
+	color: var(--animation-color-5);
+	top: 84%;
+	left: 3%;
+	animation-duration: 37s;
+	animation-delay: -95s;
+	transform-origin: -3vw 11vh;
+	box-shadow: -100vmin 0 13.003365440000394vmin currentColor;
 }
 
 .background span:nth-child(6) {
-    color: var(--animation-color-6);
-    top: 26%;
-    left: 54%;
-    animation-duration: 264s;
-    animation-delay: -169s;
-    transform-origin: 16vw -23vh;
-    box-shadow: -100vmin 0 12.522500246815223vmin currentColor;
+	color: var(--animation-color-6);
+	top: 26%;
+	left: 54%;
+	animation-duration: 264s;
+	animation-delay: -169s;
+	transform-origin: 16vw -23vh;
+	box-shadow: -100vmin 0 12.522500246815223vmin currentColor;
 }
 
 .background span:nth-child(7) {
-    color: var(--animation-color-7);
-    top: 30%;
-    left: 26%;
-    animation-duration: 160s;
-    animation-delay: -408s;
-    transform-origin: 6vw -19vh;
-    box-shadow: -100vmin 0 13.225965767713827vmin currentColor;
+	color: var(--animation-color-7);
+	top: 30%;
+	left: 26%;
+	animation-duration: 160s;
+	animation-delay: -408s;
+	transform-origin: 6vw -19vh;
+	box-shadow: -100vmin 0 13.225965767713827vmin currentColor;
 }
 
 .background span:nth-child(8) {
-    color: var(--animation-color-8);
-    top: 4%;
-    left: 19%;
-    animation-duration: 127s;
-    animation-delay: -26s;
-    transform-origin: 2vw 6vh;
-    box-shadow: -100vmin 0 12.985791608940657vmin currentColor;
+	color: var(--animation-color-8);
+	top: 4%;
+	left: 19%;
+	animation-duration: 127s;
+	animation-delay: -26s;
+	transform-origin: 2vw 6vh;
+	box-shadow: -100vmin 0 12.985791608940657vmin currentColor;
 }
 
 .background span:nth-child(9) {
-    color: var(--animation-color-9);
-    top: 44%;
-    left: 62%;
-    animation-duration: 254s;
-    animation-delay: -389s;
-    transform-origin: -22vw -15vh;
-    box-shadow: 100vmin 0 12.685716282052567vmin currentColor;
+	color: var(--animation-color-9);
+	top: 44%;
+	left: 62%;
+	animation-duration: 254s;
+	animation-delay: -389s;
+	transform-origin: -22vw -15vh;
+	box-shadow: 100vmin 0 12.685716282052567vmin currentColor;
 }
-
-

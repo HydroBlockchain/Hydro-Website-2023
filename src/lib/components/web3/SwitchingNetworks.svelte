@@ -288,4 +288,22 @@
             flex-direction: row;
         }
     }
+    @media only screen and (max-width: 768px) {
+        .networks-button-row-container {
+            flex-direction: column;
+        }
+        .networks-button-row {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        .networks-button-row-container {
+            flex-direction: column;
+        }
+        .networks-button-row {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 </style>

@@ -111,4 +111,109 @@ import item from "$lib/json/whitepapers.json"
 
 }
 
+@media only screen and (max-width: 768px) {
+
+.full {
+    height: auto;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.protocol-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right, .left {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.protocol-card{
+    width: auto;
+    margin: 0.5rem;
+}
+
+.building-statement {
+    font-size: 16px;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.full {
+    height: auto;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.protocol-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right, .left {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.protocol-card{
+    width: auto;
+    margin: 0.5rem;
+}
+
+.building-statement {
+    font-size: 16px;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.full {
+    height: auto;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.protocol-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right, .left {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.protocol-card{
+    width: auto;
+    margin: 0.5rem;
+}
+
+.building-statement {
+    font-size: 16px;
+}
+
+}
+
 </style>

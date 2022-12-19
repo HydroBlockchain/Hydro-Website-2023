@@ -105,4 +105,70 @@ import Keresverse from "$lib/images/keresverse/keresverse-logo.svg"
     }
 
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+.three-quarter {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#jixta,
+#vox {
+    display: none;
+    margin: 0;
+}
+
+#vox {
+    margin-left: 0rem;
+}
+
+.jixta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.three-quarter {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+.jixta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.three-quarter {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+
+.jixta {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+}
 </style>
