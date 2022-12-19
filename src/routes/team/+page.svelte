@@ -3,9 +3,11 @@
 import twitter from "$lib/images/icons/twitter.svg";
 import linkedin from "$lib/images/icons/linkedin.svg";
 import hydroDrop from "$lib/images/logo/hydro-drop.svg";
+import profilePic from "$lib/images/profilepic.jpg"
 import items from "$lib/json/team.json"
 import items2 from "$lib/json/team2.json"
 import items3 from "$lib/json/team3.json"
+
 </script>
 
 <svelte:head>
@@ -20,7 +22,10 @@ import items3 from "$lib/json/team3.json"
         </div>
         {#each items as item (item.id)}
         <div class="team-card" id="card-background">
-            <img src={item.img} alt="profile" id="profile-pic"/>
+
+
+            <img src={profilePic} alt="profile" id="profile-pic"/>
+            
             <div class="team-column">
                 <div class="team-name">{item.name}</div>
                 <div class="team-title">{item.title}</div>
@@ -38,7 +43,7 @@ import items3 from "$lib/json/team3.json"
     <div class="team-section" id="middle-one">
         {#each items2 as item (item.id)}
         <div class="team-card" id="card-background">
-            <img src={item.img} alt="profile" id="profile-pic"/>
+            <img src={profilePic} alt="profile" id="profile-pic"/>
             <div class="team-column">
                 <div class="team-name">{item.name}</div>
                 <div class="team-title">{item.title}</div>
@@ -56,7 +61,7 @@ import items3 from "$lib/json/team3.json"
     <div class="team-section" id="last-one">
         {#each items3 as item (item.id)}
         <div class="team-card" id="card-background">
-            <img src={item.img} alt="profile" id="profile-pic"/>
+            <img src={profilePic} alt="profile" id="profile-pic"/>
             <div class="team-column">
                 <div class="team-name">{item.name}</div>
                 <div class="team-title">{item.title}</div>

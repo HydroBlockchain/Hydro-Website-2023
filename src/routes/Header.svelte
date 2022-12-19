@@ -44,6 +44,7 @@ function handleClick() {
 </header>
 
 <style lang="scss">
+
 #header-link, #header-link-last{
     background-color: var(--card-bg-alt);
     padding-top: 1rem;
@@ -52,6 +53,9 @@ function handleClick() {
 }
 #header-link-last{
     margin-right: 1rem;
+}
+#header-link:hover, #header-link-last:hover{
+    background-color: var(--button-hover);
 }
 #logo-div {
     align-items: flex-end;
@@ -128,7 +132,7 @@ nav {
         transition: 250ms ease-in-out;
 
         &:hover {
-            opacity: 0.5;
+            background-color: var(--button-hover);
         }
     }
 

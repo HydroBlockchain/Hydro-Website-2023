@@ -66,7 +66,7 @@ import { onMount } from 'svelte';
     align-items: center;
 }
 .themeDiv:hover {
-    opacity: 0.5;
+    background-color: var(--button-hover) !important;
 }
 #themeToggle{
     width: auto;

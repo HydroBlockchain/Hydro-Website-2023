@@ -44,7 +44,11 @@
 	//Misc
 	--border-radius: 7px;
 	--transparent: rgba(255, 255, 255, 0);
-	--preloader: rgba(0, 0, 0, 0.8);
+	--preloader: rgba(0, 0, 0, 1);
+}
+
+html {
+    background-color: var(--bg-color);
 }
 
 body {
@@ -52,6 +56,7 @@ body {
 	margin: 0;
 	font-family: var(--font-body);
 	color: var(--color-text);
+	background-color: var(--bg-color);
 	overflow-x: hidden;
 }
 
@@ -81,10 +86,10 @@ body::-webkit-scrollbar {
 	--animation-color-1: rgba(2, 91, 173, 0.5);
 	--animation-color-2: rgba(13, 127, 204, 0.5);
 	--animation-color-3: rgba(104, 53, 158, 0.5);
-	--animation-color-4: rgba(32, 127, 148, 0.5);
+	--animation-color-4: rgba(0, 141, 172, 0.5);
 	--animation-color-5: rgba(94, 0, 201, 0.5);
-	--animation-color-6: rgba(89, 158, 188, 0.5);
-	--animation-color-7: rgba(44, 54, 130, 0.5);
+	--animation-color-6: rgba(0, 104, 148, 0.5);
+	--animation-color-7: rgba(64, 44, 130, 0.5);
 	--animation-color-8: rgba(29, 67, 120, 0.5);
 	--animation-color-9: rgba(69, 149, 183, 0.5);
 }
@@ -97,26 +102,26 @@ body::-webkit-scrollbar {
 	--text-color: rgb(255, 255, 255);
 	--text-color-alt: rgba(255, 255, 255, 0.5);
 	//Background Colors
-	--bg-color: linear-gradient(90deg, #729cff, #2eafff);
+	--bg-color: linear-gradient(90deg, #6493ff, #009dff);
 	--card-bg: rgba(255, 255, 255, 0.2);
 	--card-bg-alt: rgba(255, 255, 255, 0.05);
 	--sidemenu-color: rgba(33, 33, 36, 0.85);
 	//Button Colors
 	--button-color: rgba(255, 255, 255, 0.2);
-	--button-hover: rgb(33, 33, 36, 1);
+	--button-hover: rgba(33, 33, 36, 0.3);
 	//Progress Bar
 	--progress-bar: rgb(107, 147, 255);
 	//background animation
 	--animation-color-0: rgba(181, 138, 255, 0.8);
-	--animation-color-1: rgba(46, 224, 255, 0.8);
+	--animation-color-1: rgba(41, 197, 224, 0.8);
 	--animation-color-2: rgba(0, 153, 255, 0.8);
 	--animation-color-3: rgba(59, 82, 255, 0.8);
-	--animation-color-4: rgba(96, 226, 255, 0.8);
+	--animation-color-4: rgba(140, 90, 255, 0.8);
 	--animation-color-5: rgba(0, 119, 255, 0.8);
 	--animation-color-6: rgba(0, 179, 255, 0.8);
-	--animation-color-7: rgba(65, 233, 255, 0.8);
+	--animation-color-7: rgba(144, 125, 255, 0.8);
 	--animation-color-8: rgba(68, 205, 255, 0.8);
-	--animation-color-9: rgba(87, 174, 255, 0.8);
+	--animation-color-9: rgba(0, 132, 255, 0.8);
 }
 
 //Containers
@@ -202,6 +207,17 @@ body::-webkit-scrollbar {
 	background: var(--card-bg-alt);
 	border-radius: var(--border-radius);
 	backdrop-filter: blur(8px);
+	
+}
+
+//Animation
+
+#card-background, header, footer {
+	animation: fadeIn 2s;
+}
+
+#ecosystem, #intro-chain, #profile-pic, #hydro-logo-2{
+	animation: fadeIn 3s;
 }
 
 //Links
@@ -435,7 +451,11 @@ a:active {
 		height: auto;
 		width: 70px;
 	}
-
+	
+	#ecosystem, #intro-chain, #profile-pic, #hydro-logo-2, #card-background, header, footer{
+		animation: none !important;
+	}
+	
 }
 
 //Small devices (portrait tablets and large phones, 600px and up) */
