@@ -14,7 +14,20 @@
     <div class="question-index" class:active={current == index}> {index > 9 ? "" : "0"}{index + 1} </div>
     <div class="question-title" class:active={current == index}> {item.question}</div> 
   </div>
-  <div class="body">{item.answer}</div>
+  <div class="body">{item.answer}
+  <div class="button-row">
+    {#if item.link1}
+  <a class="button" href={item.link1} target="_blank" rel="noopener noreferrer">{item.linktitle1}</a>
+  {/if}
+  {#if item.link2}
+  <a class="button" href={item.link2} target="_blank" rel="noopener noreferrer">{item.linktitle2}</a>
+  {/if}
+  {#if item.link3}
+  <a class="button" href={item.link3} target="_blank" rel="noopener noreferrer">{item.linktitle3}</a>
+  {/if}
+  </div>
+  </div>
+  
 </div>
 </section>
 
@@ -48,12 +61,18 @@
 
   .body {
     display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     font-size: 14px;
-    margin: 1rem;
     margin-top: 1.5rem;
     font-size: 20px;
+  }
+
+  .button-row{
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   .question-container.active {
