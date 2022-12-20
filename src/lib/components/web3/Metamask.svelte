@@ -40,12 +40,15 @@ import metamask from "$lib/images/icons/metamask.svg"
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 1rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
 }
 
 .metamask-notice {
     width: auto;
-    height: 250px;
+    height: auto;
     padding: 1rem;
     background-color: var(--button-color);
     backdrop-filter: blur(10px);
