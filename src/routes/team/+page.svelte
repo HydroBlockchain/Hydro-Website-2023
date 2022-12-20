@@ -7,6 +7,7 @@ import profilePic from "$lib/images/profilepic.webp"
 import items from "$lib/json/team.json"
 import items2 from "$lib/json/team2.json"
 import items3 from "$lib/json/team3.json"
+    import Protocols from "$lib/components/tech/protocols.svelte";
 
 </script>
 
@@ -75,7 +76,7 @@ import items3 from "$lib/json/team3.json"
         </div>
         {/each}
     </div>
-
+<Protocols/>
 </section>
 
 <style>

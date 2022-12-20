@@ -31,8 +31,12 @@ function handleClick() {
                                         <img src={techIcon} alt="Technology" id="icon" /></a>
                                     <a data-sveltekit-preload-data="hover" id="header-link" href="/team">
                                         <img src={teamIcon} alt="Team" id="icon" /></a>
-                                    <a data-sveltekit-preload-data="hover" id="header-link-last" href="/faq">
+                                    <a data-sveltekit-preload-data="hover" id="header-link" href="/faq">
                                         <img src={faqIcon} alt="faq" id="icon" /></a>
+                                        <a data-sveltekit-preload-data="hover" id="header-link" href="/roadmap">
+                                            <img src={faqIcon} alt="faq" id="icon" /></a>
+                                            <a data-sveltekit-preload-data="hover" id="header-link-last" href="/exchanges">
+                                                <img src={faqIcon} alt="faq" id="icon" /></a>
                                     </div>
                                 </div>
                             </div>

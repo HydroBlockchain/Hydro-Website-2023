@@ -24,6 +24,7 @@
 	"type": "module",
 	"dependencies": {
 		"@ethersproject/providers": "^5.7.2",
+		"@sveltejs/adapter-static": "^1.0.0",
 		"eth-chains": "^1.0.0",
 		"ethers": "^5.7.2"
 	}

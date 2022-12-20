@@ -10,6 +10,8 @@
             <a data-sveltekit-preload-data="hover" class="mobile-link" in:fade="{{delay: 50, duration: 400}}" out:fade="{{delay: 350}}" href="/tech">Technology</a>
             <a data-sveltekit-preload-data="hover" class="mobile-link" in:fade="{{delay: 150, duration: 400}}" out:fade="{{delay: 250}}" href="/team">Team</a>
             <a data-sveltekit-preload-data="hover" class="mobile-link" in:fade="{{delay: 250, duration: 400}}" out:fade="{{delay: 150}}" href="/faq">FAQ</a>
+            <a data-sveltekit-preload-data="hover" class="mobile-link" in:fade="{{delay: 50, duration: 400}}" out:fade="{{delay: 350}}" href="/roadmap">Roadmap</a>
+            <a data-sveltekit-preload-data="hover" class="mobile-link" in:fade="{{delay: 150, duration: 400}}" out:fade="{{delay: 250}}" href="/exchanges">Exchanges</a>
             <ThemeToggle/>
         </div>
     </div>

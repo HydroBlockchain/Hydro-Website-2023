@@ -33,7 +33,7 @@ export let current;
     </div>
 </section>
 
-<style>
+<style lang="scss">
 section {
     width: var(--cw-desktop);
 }
@@ -43,7 +43,7 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 50px;
+    height: 30px;
     padding: 1rem;
     margin-bottom: 0.5rem;
     overflow: hidden;
@@ -56,7 +56,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 30px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -66,9 +67,9 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 14px;
+    font-size: 14px !important;
     margin-top: 1.5rem;
-    font-size: 20px;
+    display: none;
 }
 
 .button-row {
@@ -78,6 +79,9 @@ section {
 
 .question-container.active {
     height: auto;
+    .body{
+        display: block;
+    }
 }
 
 .question-index,
@@ -86,7 +90,8 @@ section {
 }
 
 .question-title {
-    font-size: 32px;
+    font-size: 20px;
+    height: auto;
     width: 100%;
 }
 
@@ -106,21 +111,32 @@ section {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        display: none;
         font-size: 14px;
     }
 
     .question-container {
-        height: 50px;
+        height: 30px;
     }
 
     .question-title {
-        height: 50px;
+        height: 30px;
         font-size: 18px;
     }
 
     .body {
         font-size: 14px;
     }
+
+    .body{
+        display: none;
+    }
+    .question-container.active {
+    .body{
+        display: block;
+    }
+}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -143,17 +159,27 @@ section {
     }
 
     .question-container {
-        height: 50px;
+        height: 30px;
     }
 
     .question-title {
-        height: 50px;
+        height: 30px;
         font-size: 18px;
     }
 
     .body {
         font-size: 14px;
     }
+
+    .body{
+        display: none;
+    }
+    .question-container.active {
+    .body{
+        display: block;
+    }
+}
+    
 }
 
 @media only screen and (max-width: 992px) {
@@ -176,16 +202,24 @@ section {
     }
 
     .question-container {
-        height: 50px;
+        height: 30px;
     }
 
     .question-title {
-        height: 50px;
-        font-size: 20px;
+        height: 30px;
     }
 
     .body {
         font-size: 16px;
     }
+
+    .body{
+        display: none;
+    }
+    .question-container.active {
+    .body{
+        display: block;
+    }
+}
 }
 </style>

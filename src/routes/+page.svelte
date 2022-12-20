@@ -2,11 +2,7 @@
 //Components
 import Medium from "$lib/components/landing/medium.svelte";
 import Introduction from "$lib/components/landing/pricewidget.svelte";
-import Roadmap from "$lib/components/landing/roadmap.svelte";
 import Hero from "$lib/components/landing/hero.svelte";
-import Partners from "$lib/components/landing/partners.svelte";
-import Exchanges from "$lib/components/landing/exchanges.svelte";
-import Featured from "$lib/components/landing/featured.svelte";
 </script>
 
 <svelte:head>
@@ -20,12 +16,15 @@ import Featured from "$lib/components/landing/featured.svelte";
             <Introduction />
             <Medium />
         </div>
-        <Roadmap />
-        <div class="multiple-containers-alt">
-            <Partners />
-            <Exchanges />
+
+        <div class="full" id="card-background">
+            hello
         </div>
-        <Featured />
+        
+        
     </section>
 <style>
+    .full{
+        height: var(--ch-mini);
+    }
 </style>
