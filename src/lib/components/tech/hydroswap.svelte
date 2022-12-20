@@ -59,11 +59,11 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
             </div>
 
             <div class="button-row">
-                <a href="{item[1].link}" target="_blank" rel="noopener noreferrer">
+                <a data-sveltekit-preload-data="hover" href="{item[1].link}" target="_blank" rel="noopener noreferrer">
                     <div class="button" id="hydroswap-buttons">Swap</div></a>
-                <a href="{item[2].link}" target="_blank" rel="noopener noreferrer">
+                <a data-sveltekit-preload-data="hover" href="{item[2].link}" target="_blank" rel="noopener noreferrer">
                     <div class="button" id="hydroswap-buttons">Stake</div></a>
-                <a href="{item[3].link}" target="_blank" rel="noopener noreferrer">
+                <a data-sveltekit-preload-data="hover" href="{item[3].link}" target="_blank" rel="noopener noreferrer">
                     <div class="button" id="hydroswap-buttons">Bridge</div></a>
             </div>
         </div>

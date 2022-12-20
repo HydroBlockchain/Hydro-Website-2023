@@ -82,7 +82,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     font-size: 10px;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     color: var(--text-color-alt);
 }
 
