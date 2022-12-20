@@ -125,6 +125,10 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
+.switch-networks-row{
+    margin-top: 1rem;
+}
+
 
 .add-button-column{
     display: flex;
@@ -132,6 +136,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
     
 }
@@ -140,8 +145,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     .half {
         height: auto!important;
         flex-direction: column;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
     }
 
     .function-row{
@@ -151,6 +154,10 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
+.switch-networks-row{
+    margin-top: 1rem;
+}
+
 
 .add-button-column{
     display: flex;
@@ -158,6 +165,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
     
 }
@@ -166,8 +174,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     .half {
         height: auto!important;
         flex-direction: column;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
     }
 
     .function-row{
@@ -177,6 +183,9 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
+.switch-networks-row{
+    margin-top: 1rem;
+}
 
 .add-button-column{
     display: flex;
@@ -184,6 +193,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
     
 }
@@ -192,8 +202,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     .half {
         height: auto!important;
         flex-direction: column;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
     }
 
     .function-row{
@@ -201,6 +209,11 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
+}
+
+.switch-networks-row{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 

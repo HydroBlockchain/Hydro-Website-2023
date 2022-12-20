@@ -7,13 +7,13 @@ import metamask from "$lib/images/icons/metamask.svg"
         <div class="metamask-notice">
             <div class="metamask-notice-title">
                 Hydro Token Tool
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <img src={hydroDrop} id="hydro-logo">
+                <!-- svelte-ignore a11y-missing-attribute -->
+                <img src={hydroDrop} id="hydro-logo">
             </div>
-            
-                The Hydro Token Tool Can Add Hydro Tokens on all supported networks. <br>
-                In order to use it you have to first download Metamask. <br>
-                Once you have, head on back here to add the Hydro Token automatically. 
+
+            The Hydro Token Tool Can Add Hydro Tokens on all supported networks. <br>
+            In order to use it you have to first download Metamask. <br>
+            Once you have, head on back here to add the Hydro Token automatically.
             <h3>
                 The Hydro token tool only reads public data and asks for permission to add the Hydro Token Smart contract.
                 No information is stored or sent to any servers</h3></div>
@@ -40,7 +40,7 @@ import metamask from "$lib/images/icons/metamask.svg"
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
@@ -56,7 +56,7 @@ import metamask from "$lib/images/icons/metamask.svg"
     font-size: 14px;
 }
 
-.metamask-notice-title{
+.metamask-notice-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,27 +65,15 @@ import metamask from "$lib/images/icons/metamask.svg"
     margin-bottom: 0.5rem;
 }
 
-#metamask-logo{
+#metamask-logo {
     margin-right: 0.5rem;
     width: 32px;
     height: auto;
 }
 
-#hydro-logo{
+#hydro-logo {
     width: 64px;
     height: auto;
-}
-
-.metamask-notice h1 {
-    font-size: 20px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-
-.metamask-notice h2 {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    font-size: 14px;
 }
 
 .metamask-notice h3 {
@@ -114,59 +102,35 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
 
-    .half{
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+    .metamask-container {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
     }
 
     .metamask-notice {
-    width: auto;
-    height: auto;
-}
+        width: auto;
+        height: auto;
+    }
 
-a {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    width: 250px;
-}
+    a {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        width: 250px;
+    }
 
-.hydro-chain {
-    margin-top: 1;
-    width: 50px;
-    padding: 0.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
-}
-
-.metamask-container {
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 1rem;
-}
-
-.metamask-hydro-chains {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.metamask-hydro-chains-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin-right: 0rem;
-}
-
+    .metamask-container {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 1rem;
+    }
 
 }
 </style>

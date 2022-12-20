@@ -14,7 +14,7 @@ import { onMount } from 'svelte';
 
   const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
 
-  const toggleTheme = () => {
+ export const toggleTheme = () => {
     const stored = localStorage.getItem(STORAGE_KEY);
 
     if (stored) {
