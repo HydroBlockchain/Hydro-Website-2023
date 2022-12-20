@@ -5,14 +5,15 @@
 </script>
 
 <section>
+    <div class="full" id="card-background">
+        hello
+    </div>
     <div class="multiple-containers-alt">
         <Partners />
         <Exchanges />
     </div>
     <Featured />
-    <div class="full" id="card-background">
-        hello
-    </div>
+    
 </section>
 
 <style>

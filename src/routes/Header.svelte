@@ -6,6 +6,8 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 import techIcon from "$lib/images/icons/tech.svg";
 import teamIcon from "$lib/images/icons/team.svg";
 import faqIcon from "$lib/images/icons/faq.svg";
+import roadmapIcon from "$lib/images/icons/roadmap.svg";
+import exchangeIcon from "$lib/images/icons/exchange.svg";
 import ThemeToggle from "$lib/components/header/ThemeToggle.svelte";
 
 let openMenu = false
@@ -31,12 +33,13 @@ function handleClick() {
                                         <img src={techIcon} alt="Technology" id="icon" /></a>
                                     <a data-sveltekit-preload-data="hover" id="header-link" href="/team">
                                         <img src={teamIcon} alt="Team" id="icon" /></a>
-                                    <a data-sveltekit-preload-data="hover" id="header-link" href="/faq">
-                                        <img src={faqIcon} alt="faq" id="icon" /></a>
                                         <a data-sveltekit-preload-data="hover" id="header-link" href="/roadmap">
-                                            <img src={faqIcon} alt="faq" id="icon" /></a>
-                                            <a data-sveltekit-preload-data="hover" id="header-link-last" href="/exchanges">
-                                                <img src={faqIcon} alt="faq" id="icon" /></a>
+                                            <img src={roadmapIcon} alt="faq" id="icon" /></a>
+                                            <a data-sveltekit-preload-data="hover" id="header-link" href="/exchanges">
+                                                <img src={exchangeIcon} alt="faq" id="icon" /></a>
+                                    <a data-sveltekit-preload-data="hover" id="header-link-last" href="/faq">
+                                        <img src={faqIcon} alt="faq" id="icon" /></a>
+                                        
                                     </div>
                                 </div>
                             </div>
