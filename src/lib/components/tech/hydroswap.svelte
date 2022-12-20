@@ -83,7 +83,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 .hydroswap {
     display: flex;
     flex-direction: row;
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 100%;
 }
 
