@@ -108,10 +108,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     justify-content: center;
     align-items: center;
 }
-.address-row{
-    width: 340px;
-    
-}
+
 .add-button-column{
     display: flex;
     flex-direction: column;
@@ -128,10 +125,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
-    .address-row{
-    width: 340px;
-    
-}
 
 .add-button-column{
     display: flex;
@@ -158,10 +151,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
-    .address-row{
-    width: 340px;
-    
-}
 
 .add-button-column{
     display: flex;
@@ -188,10 +177,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
-    .address-row{
-    width: 340px;
-    
-}
 
 .add-button-column{
     display: flex;
@@ -218,10 +203,6 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     align-items: center;
 }
 
-    .address-row{
-    width: 340px;
-    
-}
 
 .add-button-column{
     display: flex;

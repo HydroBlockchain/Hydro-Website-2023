@@ -259,9 +259,18 @@ a:hover {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+    #coin-ticker-logo {
+        height: auto;
+        width: 28px;    
+    }
+    
+    .chain-alt{
+        font-size: 14px;
+    }
 
     .button-row-small {
-        width: 300px !important;
+        width: 280px !important;
+        height: auto !important;
         margin: 0.2rem !important;
     }
 
@@ -280,8 +289,12 @@ a:hover {
         display: flex;
         margin: 0.5rem;
         padding: 1rem;
-        width: 300px !important;
+        width: 280px!important;
         height: 150px;
+    }
+
+    .dashboard-slot-alt {
+        height: 200px !important;
     }
 
     .dashboard-slot {

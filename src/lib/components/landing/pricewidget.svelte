@@ -111,6 +111,12 @@ import HydroLogo from "$lib/images/logo/hydro-logo.svg"
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+    .dashboard-slot,
+.dashboard-slot-stats {
+    width: auto !important;
+    height: 50px;
+}
+
     .one-quarter{
         height: auto;
         flex-direction: row;

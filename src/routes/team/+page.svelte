@@ -227,7 +227,7 @@ section{
 }
 
 #profile-pic {
-width: 100px;
+width: 120px;
 margin-right: 1rem;
 }
 

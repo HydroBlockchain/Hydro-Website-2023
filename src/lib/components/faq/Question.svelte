@@ -155,4 +155,37 @@ section {
         font-size: 14px;
     }
 }
+
+@media only screen and (max-width: 992px) {
+    section {
+        width: 100% !important;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .body {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .question-container {
+        height: 50px;
+    }
+
+    .question-title {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .body {
+        font-size: 16px;
+    }
+}
 </style>

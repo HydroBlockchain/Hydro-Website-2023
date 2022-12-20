@@ -361,8 +361,8 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     width: 300px;
     height: 160px;
 }

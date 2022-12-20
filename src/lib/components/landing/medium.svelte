@@ -116,14 +116,13 @@ import Time from "svelte-time";
 
     .blog-posts {
         flex-direction: column;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 
     .blog-title {
-        width: 130px;
-        height: 50px;
+        width: auto !important;
+        height: 60px !important;
         word-wrap: break-word;
+        padding: 0.5rem;
     }
 
 }

@@ -60,4 +60,48 @@ a:hover {
     height: auto;
 }
 }
+
+@media only screen and (max-width: 768px) {
+    .full  {
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured-on {
+	width: 150px;
+    height: auto;
+}
+}
+
+@media only screen and (max-width: 992px) {
+    .full  {
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured-on {
+	width: 250px;
+    height: auto;
+}
+}
 </style>

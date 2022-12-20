@@ -229,6 +229,53 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     margin: 0.8rem;
 }
 
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+
+.one-quarter {
+height: auto;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.cg-credit {
+margin-right: 3rem;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.hydroswap{
+   margin-top: 1rem;
+}
+
+.one-quarter {
+height: auto;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.cg-credit {
+margin-right: 3rem;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.one-quarter {
+height: auto;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.cg-credit {
+margin-right: 3rem;
+}
+
+}
+
 @media only screen and (max-width: 600px) {
 
 .one-quarter {
@@ -244,7 +291,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 280px;
     height: 45px;
     padding: 1rem;
     margin: 0.5rem;
@@ -254,7 +301,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 300px;
+    width: 280px;
     height: 120px;
     padding: 1rem;
     margin: 0.5rem;
@@ -266,7 +313,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 300px;
+    width: 280px;
     height: 45px;
     padding: 1rem;
     margin: 0.5rem;
@@ -285,55 +332,10 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     margin: 0.2rem;
 
 }
-.hydroswap{
-    margin-top: 1rem;
-}
 .cg-credit {
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-right: 1rem;
-}
-
-}
-
-@media only screen and (max-width: 768px) {
-
-    .one-quarter {
-    height: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.cg-credit {
-    margin-right: 3rem;
-}
-
-}
-
-@media only screen and (max-width: 992px) {
-
-.one-quarter {
-height: auto;
-margin-right: 0px;
-margin-left: 0px;
-}
-
-.cg-credit {
-margin-right: 3rem;
-}
-
-}
-
-@media only screen and (max-width: 1200px) {
-
-.one-quarter {
-height: auto;
-margin-right: 0px;
-margin-left: 0px;
-}
-
-.cg-credit {
-margin-right: 3rem;
 }
 
 }
