@@ -18,7 +18,7 @@ import Coingecko from "$lib/images/featured/coingecko.svg"
     </div>
 </div>
 
-<style lang="scss">
+<style>
 .full {
     height: var(--ch-mini);
 }

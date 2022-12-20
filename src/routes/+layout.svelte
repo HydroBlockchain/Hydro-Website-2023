@@ -58,7 +58,7 @@ $: {
     </div>
 </div>
 
-<style lang="scss">
+<style>
     .app {
         display: flex;
         flex-direction: column;

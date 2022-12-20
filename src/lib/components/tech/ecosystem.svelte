@@ -47,7 +47,7 @@
 
 </div>
 
-<style lang="scss">
+<style>
 .three-quarter{
     height: var(--ch-xsmall);
 }

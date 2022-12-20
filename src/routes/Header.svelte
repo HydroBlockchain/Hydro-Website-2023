@@ -21,17 +21,17 @@ function handleClick() {
         <nav>
             <div class="wrapper">
                 <div class="nav-wrapper" id="card-background">
-                    <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo"/></a>
+                    <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo-2"/></a>
                     <svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <g><path fill="none" d="M0 0h24v24H0z"/><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--text-color)"/></g>
                             </svg>
                             <div class="navigation">
                                 <ThemeToggle/>
-                                    <a data-sveltekit-preload-data="hover" id="header-link" href="/tech">
+                                    <a data-sveltekit-prefetch id="header-link" href="/tech">
                                         <img src={techIcon} alt="Technology" id="icon" /></a>
-                                    <a data-sveltekit-preload-data="hover" id="header-link" href="/team">
+                                    <a data-sveltekit-prefetch id="header-link" href="/team">
                                         <img src={teamIcon} alt="Team" id="icon" /></a>
-                                    <a data-sveltekit-preload-data="hover" id="header-link-last" href="/faq">
+                                    <a data-sveltekit-prefetch id="header-link-last" href="/faq">
                                         <img src={faqIcon} alt="faq" id="icon" /></a>
                                     </div>
                                 </div>
@@ -60,18 +60,30 @@ function handleClick() {
     background-color: var(--button-hover);
 }
 
+#logo-div {
+    align-items: flex-end;
+    text-align: end;
+    justify-content: flex-end;
+}
+
 #icon {
     width: auto;
     height: 28px;
 }
 
-#hydro-logo{
+#hydro-logo {
+    width: auto;
+    height: 32px;
+    margin-right: 2rem;
+}
+
+#hydro-logo-2 {
     width: 128px;
     height: 32px;
     margin-left: 2rem;
 }
 
-#hydro-logo:hover {
+#hydro-logo-2:hover {
     opacity: 0.5;
     cursor: pointer;
 }

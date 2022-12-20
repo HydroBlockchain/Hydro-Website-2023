@@ -31,7 +31,7 @@ $: legend2 = $addressBsc
 <div on:click={disconnectBsc} disabled={loading || !$onExpectedNetworkBsc} class="button-connect" id="disconnect">{legend1}</div>
 {/if}
 
-<style lang="scss">
+<style>
 #disconnect{
     margin-top: 0.5rem;
 }

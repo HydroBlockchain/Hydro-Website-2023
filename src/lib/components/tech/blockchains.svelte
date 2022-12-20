@@ -95,7 +95,7 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
   
 </div>
 
-<style lang="scss">
+<style>
 .switch-networks-row{
     display: flex;
     flex-direction: row;

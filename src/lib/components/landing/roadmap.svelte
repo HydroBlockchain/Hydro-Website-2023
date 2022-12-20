@@ -105,7 +105,7 @@
     </div>
 </div>
 
-<style lang="scss">
+<style>
 
 .full {
     height: var(--ch-large);

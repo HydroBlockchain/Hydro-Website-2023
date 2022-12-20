@@ -57,7 +57,7 @@ import { onMount } from 'svelte';
 	{/if}
 </div> 
 
-<style lang="scss">
+<style>
 .themeDiv{
     width: 100px;
     cursor: pointer;

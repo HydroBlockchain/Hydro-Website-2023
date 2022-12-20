@@ -59,7 +59,7 @@ import Time from "svelte-time";
     </div>
 </div>
 
-<style lang="scss">
+<style>
 .three-quarter {
     height: 15rem;
 }

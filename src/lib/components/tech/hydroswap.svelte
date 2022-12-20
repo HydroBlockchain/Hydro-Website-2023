@@ -71,7 +71,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
     <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
 </div>
 
-<style lang="scss">
+<style>
 
 .one-quarter {
     display: flex;

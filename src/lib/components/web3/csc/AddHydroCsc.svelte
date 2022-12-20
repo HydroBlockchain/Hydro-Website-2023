@@ -39,5 +39,5 @@ async function addHydroCsc() {
 <div on:click={addHydroCsc} disabled={!$onExpectedNetworkCsc} class="button-add-hydro">
     <img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/><div class="text-add-hydro">Add Hydro on CSC Network</div></div>
 {/if}
-<style lang="scss">
+<style>
 </style>
