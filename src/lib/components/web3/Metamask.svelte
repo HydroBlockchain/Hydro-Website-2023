@@ -1,38 +1,28 @@
 <script>
-import ethLogo from "$lib/images/logo/ethereum.svg";
-import bscLogo from "$lib/images/logo/bsc.svg";
-import polyLogo from "$lib/images/logo/polygon.svg";
-import cscLogo from "$lib/images/logo/coinex.svg";
-import movrLogo from "$lib/images/logo/moonriver.svg";
+import hydroDrop from "$lib/images/logo/hydro-drop.svg"
+import metamask from "$lib/images/icons/metamask.svg"
 </script>
 <div class="metamask-wrapper">
     <div class="metamask-container">
         <div class="metamask-notice">
-            <h1>Hydro Token Tool</h1> <br> <br>
-            <h2>
-                The Hydro Token Tool Can Add Hydro Tokens on all Hydros supported networks. <br>
+            <div class="metamask-notice-title">
+                Hydro Token Tool
+            <!-- svelte-ignore a11y-missing-attribute -->
+            <img src={hydroDrop} id="hydro-logo">
+            </div>
+            
+                The Hydro Token Tool Can Add Hydro Tokens on all supported networks. <br>
                 In order to use it you have to first download Metamask. <br>
-                Once you have, head on back here to add the Hydro Token automatically. </h2>
+                Once you have, head on back here to add the Hydro Token automatically. 
             <h3>
                 The Hydro token tool only reads public data and asks for permission to add the Hydro Token Smart contract.
                 No information is stored or sent to any servers</h3></div>
 
-        <div class="metamask-hydro-chains-container">
-
-            <div class="metamask-hydro-chains">
-                <div class="hydro-chain"><img src={ethLogo} alt="bitcoin" id="metamask-network-icon" /></div>
-                <div class="hydro-chain"><img src={bscLogo} alt="bitcoin" id="metamask-network-icon" /></div>
-                <div class="hydro-chain"><img src={polyLogo} alt="bitcoin" id="metamask-network-icon" /></div>
-                <div class="metamask-hydro-chains">
-                    <div class="hydro-chain"><img src={movrLogo} alt="bitcoin" id="metamask-network-icon" /></div>
-                    <div class="hydro-chain"><img src={cscLogo} alt="bitcoin" id="metamask-network-icon" /></div>
-
-                </div>
-            </div>
-        </div>
-
     </div>
-    <a href="https://metamask.io" target="_blank" rel="noopener noreferrer">Download Metamask</a>
+    <a href="https://metamask.io" target="_blank" rel="noopener noreferrer">
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <img src={metamask} id="metamask-logo">
+        Download Metamask</a>
 </div>
 
 <style>
@@ -50,9 +40,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-left: 1rem;
+    margin: 1rem;
 }
 
 .metamask-notice {
@@ -63,6 +51,26 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
     font-size: 14px;
+}
+
+.metamask-notice-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+#metamask-logo{
+    margin-right: 0.5rem;
+    width: 32px;
+    height: auto;
+}
+
+#hydro-logo{
+    width: 64px;
+    height: auto;
 }
 
 .metamask-notice h1 {
@@ -84,39 +92,6 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     margin-block-end: 0em;
     margin-top: 2.5rem;
     color: var(--text-color-alt);
-}
-
-#metamask-network-icon {
-    width: 25px;
-    height: 25px;
-}
-
-.metamask-hydro-chains {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.metamask-hydro-chains-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    margin-right: 1rem;
-}
-
-.hydro-chain {
-    background: var(--button-color);
-    padding: 0.7rem;
-    margin: 0.2rem;
-    border-radius: var(--border-radius);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 a {
