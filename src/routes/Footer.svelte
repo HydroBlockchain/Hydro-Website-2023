@@ -83,7 +83,6 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 footer {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
 }
 
 .footer-container {

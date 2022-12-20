@@ -185,7 +185,7 @@ body::-webkit-scrollbar {
 	width: var(--cw-desktop);
 	height: var(--ch-large);
 	border-radius: var(--border-radius);
-	margin-bottom: var(--margin-l);
+	margin-bottom: 1rem;
 	color: var(--text-color);
 }
 
@@ -206,7 +206,7 @@ body::-webkit-scrollbar {
 	height: var(--ch-xsmall);
 	border-radius: var(--border-radius);
 	color: var(--text-color);
-	margin-bottom: var(--margin-l);
+	margin-bottom: 1rem;
 }
 
 .three-quarter {
@@ -217,7 +217,7 @@ body::-webkit-scrollbar {
 	width: var(--cw-desktop-three);
 	height: var(--ch-medium);
 	border-radius: var(--border-radius);
-	margin-bottom: var(--margin-l);
+	margin-bottom: 1rem;
 	margin-left: var(--margin-x);
 	color: var(--text-color);
 }
@@ -230,7 +230,7 @@ body::-webkit-scrollbar {
 	width: var(--cw-desktop-half);
 	height: var(--ch-small);
 	border-radius: var(--border-radius);
-	margin-bottom: var(--margin-l);
+	margin-bottom: 1rem;
 	margin-left: var(--margin-none);
 	margin-right: var(--margin-x);
 	color: var(--text-color);
@@ -244,7 +244,7 @@ body::-webkit-scrollbar {
 	width: var(--cw-desktop-one);
 	height: var(--ch-medium);
 	border-radius: var(--border-radius);
-	margin-bottom: var(--margin-l);
+	margin-bottom: 1rem;
 	margin-left: var(--margin-none);
 	margin-right: var(--margin-x);
 	color: var(--text-color);
@@ -440,7 +440,7 @@ a:active {
 
 	.container {
 		height: auto !important;
-		margin-bottom: 2rem !important;
+		margin-bottom: 1rem !important;
 	}
 
 	#second {
@@ -519,7 +519,7 @@ a:active {
 
 	.container {
 		height: auto !important;
-		margin-bottom: 2rem !important;
+		margin-bottom: 1rem !important;
 	}
 
 	#second {
@@ -597,7 +597,7 @@ a:active {
 
 	.container {
 		height: auto !important;
-		margin-bottom: 2rem !important;
+		margin-bottom: 1rem !important;
 	}
 
 	#second {
@@ -675,7 +675,7 @@ a:active {
 
 	.container {
 		height: auto !important;
-		margin-bottom: 2rem !important;
+		margin-bottom: 1rem !important;
 	}
 
 	#second {
