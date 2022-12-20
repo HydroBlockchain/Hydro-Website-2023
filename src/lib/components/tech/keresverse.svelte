@@ -22,7 +22,7 @@ import Keresverse from "$lib/images/keresverse/keresverse-logo.svg"
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .three-quarter {
     margin-right: 15px;
     margin-left: 0px;

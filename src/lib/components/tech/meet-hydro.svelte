@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .one-quarter {
     height: var(--ch-xsmall);
 }

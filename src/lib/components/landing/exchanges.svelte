@@ -29,7 +29,7 @@ import Buyucoin from "$lib/images/exchanges/buyucoin.svg"
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .half {
     height: var(--ch-mini);
     margin-right: 0px;

@@ -37,7 +37,7 @@
         </div>
     </div>
 
-<style>
+<style lang="scss">
 .full {
     height: 25rem;
 }

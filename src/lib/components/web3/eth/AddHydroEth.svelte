@@ -39,5 +39,5 @@ async function addHydroEth() {
 <div on:click={addHydroEth} disabled={!$onExpectedNetworkEth} class="button-add-hydro">
     <img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/><div class="text-add-hydro">Add Hydro on Ethereum Network</div></div>
 {/if}
-<style>
+<style lang="scss">
 </style>

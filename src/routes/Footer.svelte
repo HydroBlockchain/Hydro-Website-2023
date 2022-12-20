@@ -79,7 +79,7 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
     </div>
 </footer>
 
-<style>
+<style lang="scss">
 footer {
     display: flex;
     justify-content: center;

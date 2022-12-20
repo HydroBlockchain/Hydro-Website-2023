@@ -256,7 +256,7 @@ async function addNetworkCsc() {
     {/if}
 </div>
 
-<style>
+<style lang="scss">
 #no-hover:hover {
     background-color: var(--card-bg-alt) !important;
     cursor: default;

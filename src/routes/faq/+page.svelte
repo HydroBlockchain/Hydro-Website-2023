@@ -24,7 +24,7 @@
     </div>
 </section>
 
-<style>
+<style lang="scss">
     .container {
         height: 100%;
         width: var(--cw-desktop);

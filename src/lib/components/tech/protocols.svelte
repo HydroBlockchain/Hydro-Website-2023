@@ -26,7 +26,7 @@ import item from "$lib/json/whitepapers.json"
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .full {
     height: 10rem;
     flex-direction: row;

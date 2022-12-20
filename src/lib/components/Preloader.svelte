@@ -15,7 +15,7 @@ onMount(() => {
     {/if}
 </div>
 
-<style>
+<style lang="scss">
 #preload-wrapper {
     position: fixed;
     bottom: 0;

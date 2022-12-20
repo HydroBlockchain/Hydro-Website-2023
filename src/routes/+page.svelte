@@ -27,5 +27,5 @@ import Featured from "$lib/components/landing/featured.svelte";
         </div>
         <Featured />
     </section>
-<style>
+<style lang="scss">
 </style>

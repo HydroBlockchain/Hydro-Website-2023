@@ -39,5 +39,5 @@ async function addHydroPoly() {
 <div on:click={addHydroPoly} disabled={!$onExpectedNetworkMovr} class="button-add-hydro">
     <img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/><div class="text-add-hydro">Add Hydro on Moonriver Network</div></div>
 {/if}
-<style>
+<style lang="scss">
 </style>

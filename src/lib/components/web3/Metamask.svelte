@@ -35,7 +35,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     <a href="https://metamask.io" target="_blank" rel="noopener noreferrer">Download Metamask</a>
 </div>
 
-<style>
+<style lang="scss">
 .metamask-wrapper {
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ import movrLogo from "$lib/images/logo/moonriver.svg";
     font-size: 10px;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     color: var(--text-color-alt);
 }
 

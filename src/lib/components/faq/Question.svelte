@@ -33,7 +33,7 @@ export let current;
     </div>
 </section>
 
-<style>
+<style lang="scss">
 section {
     width: var(--cw-desktop);
 }

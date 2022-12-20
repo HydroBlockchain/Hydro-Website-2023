@@ -71,7 +71,7 @@ import {
     </div>
 </div>
 
-<style>
+<style lang="scss">
 .half {
     flex-direction: column;
     margin-right: 0px;

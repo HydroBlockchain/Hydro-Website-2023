@@ -346,7 +346,7 @@ let coinNameMOVR = "MOVR";
 
 </section>
 
-<style>
+<style lang="scss">
 .banner {
     display: flex;
     flex-direction: row;

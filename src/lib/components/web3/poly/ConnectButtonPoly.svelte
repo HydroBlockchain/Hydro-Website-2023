@@ -32,7 +32,7 @@ $: legend2 = $addressPoly
 <div on:click={disconnectPoly} disabled={loading || !$onExpectedNetworkPoly} class="button-connect" id="disconnect">{legend1}</div>
 {/if}
 
-<style>
+<style lang="scss">
 #disconnect {
     margin-top: 0.5rem;
 }

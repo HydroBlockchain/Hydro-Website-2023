@@ -78,7 +78,7 @@ import items3 from "$lib/json/team3.json"
 
 </section>
 
-<style>
+<style lang="scss">
 section {
     display: flex;
     flex-direction: column;

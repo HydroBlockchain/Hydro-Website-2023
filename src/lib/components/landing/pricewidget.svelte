@@ -62,7 +62,7 @@ import HydroLogo from "$lib/images/logo/hydro-logo.svg"
 
 </div>
 
-<style>
+<style lang="scss">
 .hydro-dashboard {
     display: flex;
     flex-direction: row;

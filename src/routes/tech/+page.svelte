@@ -34,7 +34,7 @@
     <!-- svelte-ignore a11y-click-events-have-key-events -->
         
 </section>
-<style>
+<style lang="scss">
     @media only screen and (max-width: 600px) {
         #mobile-fix{
             flex-direction: column-reverse !important;
