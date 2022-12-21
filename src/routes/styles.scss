@@ -53,7 +53,7 @@
 	--drop-color: #192E46;
 	//Text Colors
 	--text-color: #ffffff;
-	--text-color-alt: rgba(255, 255, 255, 0.5);
+	--text-color-alt: rgba(255, 255, 255, 0.502);
 	//Background Colors
 	--bg-color: linear-gradient(90deg, #30286a, #183c68);
 	--card-bg: rgba(33, 33, 36, 0.2);
@@ -63,7 +63,7 @@
 	--button-color: rgba(33, 33, 36, 0.3);
 	--button-hover: rgba(255, 255, 255, 0.2);
 	//Progress Bar
-	--progress-bar: rgba(106, 83, 255, 0.5);
+	--progress-bar: rgba(106, 83, 255, 0.502);
 	//background animation
 	--animation-color-0: rgba(35, 81, 142, 0.5);
 	--animation-color-1: rgba(2, 91, 173, 0.5);
@@ -78,19 +78,23 @@
 	//Price variation color
 	--red: #ff9393;
 	--green: #d3ffaa;
+	//Chart-colors
+	--chart-line: #fff;
+	--chart-axis: rgba(255, 255, 255, 0.457);
+	--chart-title: rgba(255, 255, 255, 0.551);
 }
 
 //Light Mode
-:global(body) {
+:global(body) {	
 	//Hydro Drop
-	--drop-color: #ffffff;
+	--drop-color: #f8f8f8;
 	//Text Colors
 	--text-color: #ffffff;
 	--text-color-alt: rgba(255, 255, 255, 0.5);
 	//Background Colors
 	--bg-color: linear-gradient(90deg, #6493ff, #009dff);
-	--card-bg: rgba(255, 255, 255, 0.2);
-	--card-bg-alt: rgba(255, 255, 255, 0.05);
+	--card-bg: rgba(205, 205, 205, 0.2);
+	--card-bg-alt: rgba(205, 205, 205, 0.05);
 	--sidemenu-color: rgba(33, 33, 36, 0.85);
 	//Button Colors
 	--button-color: rgba(255, 255, 255, 0.2);
@@ -109,8 +113,12 @@
 	--animation-color-8: rgba(68, 205, 255, 0.8);
 	--animation-color-9: rgba(0, 132, 255, 0.8);
 	//Price variation color
-	--red: #e32a15;
-	--green: #12bf02;
+	--red: #f42f19;
+	--green: #20ff0c;
+	//Chart-colors
+	--chart-line: #fff;
+	--chart-axis: #fff;
+	--chart-title: #fff;
 }
 
 html {

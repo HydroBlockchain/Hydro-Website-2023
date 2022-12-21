@@ -46,12 +46,12 @@ import {
             </div>
 
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="price">Marketcap Rank</div>
+                <div class="price">Marketcap</div>
                 <div class="currency">{$hydroInfo.marketcapRank}<div class="currency-class">Rank</div></div>
             </div>
 
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="price">Coingecko Rank</div>
+                <div class="price">Coingecko</div>
                 <div class="currency">{$hydroInfo.coingeckoRank}<div class="currency-class">Rank</div></div>
             </div>
 
@@ -60,17 +60,17 @@ import {
         <div class="hydro-dashboard">
 
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="price">Twitter Followers</div>
+                <div class="price">Twitter</div>
                 <div class="currency">{$hydroInfo.twitterFollowers}<div class="currency-class">Followers</div></div>
             </div>
 
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="price">Reddit Subs</div>
+                <div class="price">Reddit</div>
                 <div class="currency">{$hydroInfo.redditSubscribers}<div class="currency-class">Subs</div></div>
             </div>
 
             <div class="dashboard-slot" id="card-background-alt">
-                <div class="price">Telegram Users</div>
+                <div class="price">Telegram</div>
                 <div class="currency">{$hydroInfo.telegramUsers}<div class="currency-class">Users</div></div>
             </div>
 

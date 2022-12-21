@@ -4,91 +4,77 @@ import {
 } from 'svelte';
 import moment from 'moment';
 import chartjs from 'chart.js/auto';
+    import { end_hydrating } from 'svelte/internal';
+
 
 let hydroChartDataFetch: any[] = [];
+let hydroChartVolumeFetch: any[] = [];
 let ctx;
 let chartCanvas: HTMLCanvasElement;
+// Chart.defaults.color = '#fff';
+
+// let lineColor = styles.getPropertyValue('--chart-line');
+// let axisColor = styles.getPropertyValue('--chart-axis');
+// let titleColor = styles.getPropertyValue('--chart-title');
 
 onMount(async () => {
     await hydroChart();
     ctx = chartCanvas;
     let chart = new chartjs(chartCanvas, {
-        type: 'line',
         data: {
             labels: hydroChartDataFetch.map((val) => moment(val.x).format('MMM DD')),
             datasets: [{
-                label: 'Hydro',
+                type: 'line',
+                label: 'HYDRO/USD',
                 data: hydroChartDataFetch.map((value) => value.y),
-                backgroundColor: 'var(--transparent)',
                 borderColor: '#fff',
                 borderWidth: 1,
                 pointRadius: 0,
                 fill: false,
+                yAxisID: 'A',
+
+            },{
+                type: 'bar',
+                label: 'VOLUME/USD',
+                data: hydroChartVolumeFetch.map((value) => value.y),
+                yAxisID: 'B',
+                backgroundColor: '#6a53ff80',
+                borderWidth: 0,
+                borderRadius: 2,
+                barThickness: 2,
+                barPercentage: 1
             }]
         },
         options: {
-            animation: false,
-            plugins: {
-                legend: {
-                    display: false
-                },
-                title: {
-                    display: true,
-                    text: 'hydro/usd',
-                    position: 'top',
-                    align: 'end',
-                    color: '#fff',
-                    font: {
-                        family: 'Roboto Mono',
-                        size: 16
-                    }
-                },
-                subtitle: {
-                    display: true,
-                    text: '12h',
-                    position: 'top',
-                    align: 'end',
-                    color: '#fff',
-                    font: {
-                        family: 'Roboto Mono',
-                        size: 12
-                    }
-                },
-            },
             responsive: true,
+            plugins: { 
+                // title: { display: true, text: 'HYDRO/USD', color: '#fff', font: { family: 'Roboto Mono', size: 18}, align: 'end' },
+                // subtitle: { display: true, text: 'Pastweek', color: '#fff', font: { family: 'Roboto Mono', size: 10}, align: 'end' },
+                legend: { display: true, labels: {color: '#fff', font: { family: 'Roboto Mono', size: 12}}, align: 'end'}},
+                
             scales: {
-
-                x: {
-                    grid: {
-                        display: false
-                    },
-                    border: {
-                        display: false
-                    },
-                    ticks: {
-                        font: {
-                            family: 'Roboto Mono',
-                            size: 10
-                        },
-                        color: '#fff'
-                    }
-                },
-                y: {
-                    grid: {
-                        display: false
-                    },
-                    border: {
-                        display: false
-                    },
-                    ticks: {
-                        font: {
-                            family: 'Roboto Mono',
-                            size: 11
-                        },
-                        color: '#fff'
-                    }
-                }
+            A: {
+                type: 'linear',
+                grid: {display:false},
+                border: {display:false},
+                position: 'left',
+                ticks: {color: '#fff', font: { family: 'Roboto Mono', size: 11}}
+            },
+            B: {
+                grid: {display:false},
+                border: {display:false},
+                position: 'right',
+                ticks: {color: '#fff', font: { family: 'Roboto Mono', size: 11}},
+                min: 1000,
+                max: 30000,
+            },
+            x: {
+                grid: {display:false},
+                border: {display:false},
+                position: 'right',
+                ticks: {color: '#fff', font: { family: 'Roboto Mono', size: 11}}
             }
+        }
         }
     });
 });
@@ -96,7 +82,7 @@ onMount(async () => {
 // fetch data from coingecko
 const hydroChart = async () => {
     const res = await fetch(
-        `https://api.coingecko.com/api/v3/coins/hydro/market_chart?vs_currency=usd&days=30&interval=12H`
+        `https://api.coingecko.com/api/v3/coins/hydro/market_chart?vs_currency=usd&days=14&interval=hourly`
     );
 
     const priceData = await res.json();
@@ -108,8 +94,13 @@ const hydroChart = async () => {
             x: value[0],
             y: value[1].toFixed(5)
         }));
+        const fetchHydroVolume = priceData.total_volumes.map((value: number[]) => ({
+            x: value[0],
+            y: value[1].toFixed(1)
+        }));
 
         hydroChartDataFetch = fetchHydroChart;
+        hydroChartVolumeFetch = fetchHydroVolume;
 
     }
 
