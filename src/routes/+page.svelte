@@ -3,7 +3,7 @@
 import Medium from "$lib/components/landing/medium.svelte";
 import Introduction from "$lib/components/landing/pricewidget.svelte";
 import Hero from "$lib/components/landing/hero.svelte";
-import Submarine from "$lib/components/landing/Submarine.svelte";
+import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.svelte";
 </script>
 
 <svelte:head>
@@ -17,5 +17,5 @@ import Submarine from "$lib/components/landing/Submarine.svelte";
     <Introduction />
     <Medium />
   </div>
-  <Submarine/>
+  <BlockchainAnimation/>
 </section>

@@ -39,7 +39,7 @@
 
 <style>
 .full {
-    height: 25rem;
+    height: 22rem;
 }
 
 .intro-hero {
@@ -70,6 +70,10 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+    .full{
+        height: 25rem !important;
+    }
 
     .intro-hero {
         display: flex;
