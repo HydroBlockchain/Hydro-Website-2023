@@ -9,13 +9,7 @@
 
 <section>
     <Roadmap/>
-    <div class="full" id="card-background">
-        hello
-    </div>
 </section>
 
 <style>
-.full{
-    height: var(--ch-mini);
-}
 </style>

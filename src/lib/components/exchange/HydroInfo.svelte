@@ -123,7 +123,7 @@ import {
     margin: 0.5rem;
     padding: 1rem;
     width: 120px;
-    height: 40px;
+    height: 45px;
 }
 
 .price,
@@ -168,7 +168,7 @@ import {
     }
 
     .dashboard-slot {
-        margin: 0.5rem;
+        margin: 0.2rem !important;
         padding: 1rem;
         width: 130px;
         height: 50px;

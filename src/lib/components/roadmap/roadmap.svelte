@@ -10,7 +10,9 @@
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div></div>
-                    <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.</div>
+                    <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay. <br>
+                                                    The General public will be able to download and play the Keresverse Beta pending its full blockchain integration.
+                                                    More info will be released in an article regarding the Beta release.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress1 progress-moved">
@@ -108,7 +110,9 @@
 <style>
 
 .full {
-    height: var(--ch-large);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
 }
 
 .information {
@@ -131,13 +135,13 @@
     align-items: center;
     margin: 10px;
     width: 625px;
-    height: 175px;
+    height: 250px;
 }
 
 .half-card-structure {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
     width: 100%;
     padding: 1rem;
@@ -155,6 +159,7 @@
 #desc{
   font-size: 12px;
   word-wrap: break-word;
+  height: 80px;
 }
 
 #q{
@@ -361,10 +366,9 @@
     justify-content: center;
     align-items: center;
     margin: 10px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    width: 300px;
-    height: 160px;
+    padding: 1rem;
+    width: 280px;
+    height: 300px;
 }
 
 .container-prog {
@@ -378,6 +382,10 @@
     height: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+#desc{
+    height: auto !important;
 }
 
 }

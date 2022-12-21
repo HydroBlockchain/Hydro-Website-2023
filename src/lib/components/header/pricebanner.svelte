@@ -361,7 +361,7 @@ let coinNameMOVR = "MOVR";
     background: inherit;
     overflow: hidden;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .hydro-slot,
