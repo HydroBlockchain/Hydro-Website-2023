@@ -30,8 +30,8 @@ onMount(async () => {
             animation: false,
             plugins: {
                 legend: {
-                display: false
-            },
+                    display: false
+                },
                 title: {
                     display: true,
                     text: 'hydro/usd',
@@ -44,8 +44,8 @@ onMount(async () => {
                     }
                 },
                 subtitle: {
-                display: true,
-                text: '12h',
+                    display: true,
+                    text: '12h',
                     position: 'top',
                     align: 'end',
                     color: '#fff',
@@ -53,7 +53,7 @@ onMount(async () => {
                         family: 'Roboto Mono',
                         size: 12
                     }
-            },
+                },
             },
             responsive: true,
             scales: {
@@ -98,13 +98,23 @@ const hydroChart = async () => {
     const res = await fetch(
         `https://api.coingecko.com/api/v3/coins/hydro/market_chart?vs_currency=usd&days=30&interval=12H`
     );
+
     const priceData = await res.json();
-    const fetchHydroChart = priceData.prices.map((value: number[]) => ({
-        x: value[0],
-        y: value[1].toFixed(4)
-    }));
-    hydroChartDataFetch = fetchHydroChart;
+
+    if (!res.ok) {
+        console.log("error")
+    } else {
+        const fetchHydroChart = priceData.prices.map((value: number[]) => ({
+            x: value[0],
+            y: value[1].toFixed(4)
+        }));
+
+        hydroChartDataFetch = fetchHydroChart;
+
+    }
+
 };
+
 hydroChart();
 </script>
 
