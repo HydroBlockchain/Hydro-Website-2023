@@ -153,9 +153,39 @@ hydroChart();
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-.three-quarter{
-    display: none;
+    .three-quarter {
+        display: none;
+    }
+
 }
+
+@media only screen and (max-width: 768px) {
+
+    #myChart {
+        margin: 2rem;
+        width: 600px !important;
+        height: 300px !important;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    #myChart {
+        margin: 2rem;
+        width: 600px !important;
+        height: 300px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #myChart {
+        margin: 2rem;
+        width: 600px !important;
+        height: 300px !important;
+    }
 
 }
 </style>

@@ -1,5 +1,5 @@
 <script>
-import hydroDrop from "$lib/images/logo/hydro-drop.svg"
+import hydroDrop from "$lib/images/logo/hydro-drop-white.svg"
 import metamask from "$lib/images/icons/metamask.svg"
 </script>
 <div class="metamask-wrapper">

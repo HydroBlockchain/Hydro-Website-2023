@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import hydroDrop from "$lib/images/logo/hydro-drop.svg";
+import hydroDrop from "$lib/images/logo/hydro-drop-white.svg";
 import {
     onExpectedNetworkMovr
 } from '$lib/stores/wallet-movr';
