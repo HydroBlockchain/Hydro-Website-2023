@@ -82,6 +82,11 @@
 	--chart-line: #fff;
 	--chart-axis: rgba(255, 255, 255, 0.457);
 	--chart-title: rgba(255, 255, 255, 0.551);
+	//submarine
+	--ocean-bg: #2214766c;
+	--submarine-color: linear-gradient(90deg, #611dcf, #21628b);
+	--sea-ground-1: #002655f0;
+	--sea-ground-2: #16004ad2;
 }
 
 //Light Mode
@@ -119,6 +124,11 @@
 	--chart-line: #fff;
 	--chart-axis: #fff;
 	--chart-title: #fff;
+	//submarine
+	--ocean-bg: #55658a87;
+	--submarine-color: linear-gradient(90deg, #5a44d2, #293fd0);
+	--sea-ground-1: #3151cf;
+	--sea-ground-2: #1bbbff;
 }
 
 html {

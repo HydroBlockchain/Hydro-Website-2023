@@ -23,11 +23,10 @@ import hydroDrop from "$lib/images/logo/hydro-drop-noframe.svg"
                 <div class="statement">
                     Explore the depths of Web3 with Hydro!
                 </div>
-                <img src={hydroDrop} alt="hydro-drop" id="hydro-drop"> 
-                <img src={hydroDrop} alt="hydro-drop" id="hydro-drop-alt"> 
-                <img src={hydroDrop} alt="hydro-drop" id="hydro-drop-third"> 
-                <img src={hydroDrop} alt="hydro-drop" id="hydro-drop-fourth"> 
-                
+                <img src={hydroDrop} alt="hydro-drop" class="hydro-drop" id="hydro-drop"> 
+                <img src={hydroDrop} alt="hydro-drop" class="hydro-drop" id="hydro-drop-alt"> 
+                <img src={hydroDrop} alt="hydro-drop" class="hydro-drop" id="hydro-drop-third"> 
+                <img src={hydroDrop} alt="hydro-drop" class="hydro-drop" id="hydro-drop-fourth"> 
                 <div class="submarine__container">
                   <div class="light"></div>
                   <div class="submarine__periscope"></div>
@@ -112,40 +111,39 @@ import hydroDrop from "$lib/images/logo/hydro-drop-noframe.svg"
     margin-top: 3rem;
     margin-left: 18rem;
     font-size: 22px;
+    z-index: 100;
 }
 
+
 #hydro-drop{
-    margin-top: -3rem;
-    margin-left: 1rem;
-    height: 180px;
-    animation: move-right ease-in-out 45s infinite;
+  z-index: 1000;
+  margin-top: -1.5rem;
+    height: 130px;
+    animation: moveDrop 38s infinite ease-in-out;
 }
 
 #hydro-drop-alt{
-    margin-bottom: 1rem;
-    z-index: 1;
-    margin-left: 2.5rem;
+  z-index: 1000;
     height: 100px;
-    animation: move-right ease-in-out 35s infinite;
+    animation: moveDrop 31s infinite ease-in-out;
 }
 
 #hydro-drop-third{
-    margin-bottom: 1rem;
-    margin-left: 2rem;
+  z-index: 1000;
+    margin-bottom: -1rem;
     height: 50px;
-    animation: move-right ease-in-out 55s infinite;
+    animation: moveDrop 25s infinite ease-in-out;
 }
 
 #hydro-drop-fourth{
-    margin-bottom: 1rem;
-    margin-left: 2rem;
+  z-index: 1000;
     height: 80px;
-    animation: move-right ease-in-out 30s infinite;
+    animation: moveDrop 18s infinite ease-in-out;
 }
 
 //colors
 $bgColor: #130560;
-$subMarineColor: linear-gradient(90deg, #611dcf, #21628b);
+$subMarineColor: var(--submarine-color) ;
 $lightShadowColor: #9968ef;
 $lightShadowColor2: #820ccb;
 $lightShadowColor3: #752de9;
@@ -155,8 +153,8 @@ $propellerColor: #72178b;
 $propellerColor2: #93369f;
 $windowLightColor: #c9dce5;
 $lightColor: #b9c7d1;
-$seaGroundColor1:#0c0051;
-$seaGroundColor2:#08003b;
+$seaGroundColor1: var(--sea-ground-1);
+$seaGroundColor2: var(--sea-ground-2);
 //sizes
 
 html,body {
@@ -169,7 +167,7 @@ html,body {
   left: 0%;
   width: 100%;
   height: 100%;
-  background: #1305606c;
+  background: var(--ocean-bg) ;
   overflow:hidden;
   border-radius: var(--border-radius);
 }
@@ -427,7 +425,7 @@ $bubble-class: bubble;
    width:80px;
   height:80px;
   border-radius:100%;
- transform:translateY(20%);
+ transform:translateY(25%);
 }
 
 $ground-class: up;
@@ -441,17 +439,57 @@ $ground-class: up;
 }
 //animation
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
+@keyframes moveDrop {
+  0%
+  {
+    opacity:0;
+  }
+  10%
+  {
+    opacity:0.6;
+    transform:translate(10%,20%);
+  }
+  20%{
+    opacity: 1;
 
-@keyframes bounce {
-   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-   40% {transform: translateY(-10px);} 
-   60% {transform: translateY(-5px);} 
-} 
+  }
+  30%{
+    opacity: 1;
+
+  }
+  40%{
+    opacity: 1;
+    transform:translate(350%,30%);
+
+  }
+  50%{
+    opacity: 0.9;
+
+  }
+  60%
+  {
+    opacity:0.6;
+    transform:translate(550%,15%);
+  }
+  70%{
+    opacity: 0.4;
+  }
+  80%{
+    opacity: 0.1;
+
+  }
+  90%
+  {
+    opacity:0;
+     transform:translateX(955%);
+  }
+  100%
+  {
+    opacity:0;
+    left:0%;
+    top:0%;
+  }
+}
 
 @keyframes shadow-change
 {
