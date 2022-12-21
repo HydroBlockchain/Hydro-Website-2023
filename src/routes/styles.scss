@@ -83,10 +83,19 @@
 	--chart-axis: rgba(255, 255, 255, 0.457);
 	--chart-title: rgba(255, 255, 255, 0.551);
 	//submarine
-	--ocean-bg: #2214766c;
+	--ocean-bg: rgba(33, 33, 36, 0.2);
 	--submarine-color: linear-gradient(90deg, #611dcf, #21628b);
 	--sea-ground-1: #002655f0;
 	--sea-ground-2: #16004ad2;
+	--propeller-1: #72178b;
+	--propeller-2: #93369f;
+	--tophatch-1: #9968ef;
+	--tophatch-2: #820ccb;
+	--tophatch-3: #752de9;
+	--shadow: #3d96c6;
+	--periscope: #ba8bf7;
+	--flashlight: #b9c7d1;
+	--window: #c9dce5;
 }
 
 //Light Mode
@@ -125,10 +134,19 @@
 	--chart-axis: #fff;
 	--chart-title: #fff;
 	//submarine
-	--ocean-bg: #55658a87;
-	--submarine-color: linear-gradient(90deg, #5a44d2, #293fd0);
-	--sea-ground-1: #3151cf;
-	--sea-ground-2: #1bbbff;
+	--ocean-bg: rgba(205, 205, 205, 0.2);
+	--submarine-color: linear-gradient(90deg, #5fffff, #1246a7);
+	--sea-ground-1: #4960bcdc;
+	--sea-ground-2: #2f7dd6;
+	--propeller-1: #17518b;
+	--propeller-2: #5b73a0;
+	--tophatch-1: #5956ed;
+	--tophatch-2: #2e5a97;
+	--tophatch-3: #4252a6;
+	--shadow: #3a43e3;
+	--periscope: #ba8bf7;
+	--flashlight: #fafedb;
+	--window: #8ceeec;
 }
 
 html {
@@ -151,19 +169,12 @@ body::-webkit-scrollbar {
 
 //Keyframes
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 @keyframes move {
-	100% {
-		transform: translate3d(0, 0, 1px) rotate(360deg);
-	}
+	100% {transform: translate3d(0, 0, 1px) rotate(360deg);}
 }
 
 //Animated Background

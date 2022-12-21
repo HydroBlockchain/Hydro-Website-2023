@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-    <title>Technology</title>
+    <title>Web3 Technology</title>
     <meta name="Technology" content="Project Hydro Web3 Technology" />
 </svelte:head>
 
@@ -21,5 +21,3 @@
         <Aegir />
     </div>
 </section>
-<style>
-</style>

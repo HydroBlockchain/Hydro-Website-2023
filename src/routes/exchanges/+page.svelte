@@ -7,7 +7,7 @@ import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
 </script>
 
 <svelte:head>
-    <title>Exchanges & Partners</title>
+    <title>Markets & Partners</title>
     <meta name="Exchanges & Partners" content="Project Hydro Exchanges & Partners" />
 </svelte:head>
 

@@ -10,6 +10,3 @@
 <section>
     <Roadmap/>
 </section>
-
-<style>
-</style>
