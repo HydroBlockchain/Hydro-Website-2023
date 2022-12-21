@@ -20,10 +20,14 @@ import hydroDrop from "$lib/images/logo/hydro-drop-white.svg"
 
         <div class="full" id="card-background">
             <div class="seaContainer">
+                <div class="statement">
+                    Explore the depths of Web3 with Hydro!
+                </div>
                 <img src={hydroDrop} alt="hydro-drop" id="hydro-drop"> 
                 <img src={hydroDrop} alt="hydro-drop" id="hydro-drop-alt"> 
                 <img src={hydroDrop} alt="hydro-drop" id="hydro-drop-third"> 
                 <img src={hydroDrop} alt="hydro-drop" id="hydro-drop-fourth"> 
+                
                 <div class="submarine__container">
                   <div class="light"></div>
                   <div class="submarine__periscope"></div>
@@ -104,8 +108,14 @@ import hydroDrop from "$lib/images/logo/hydro-drop-white.svg"
     height: var(--ch-mini);
 }
 
+.statement{
+    margin-top: 3rem;
+    margin-left: 18rem;
+    font-size: 22px;
+}
+
 #hydro-drop{
-    margin-top: 2rem;
+    margin-top: -3rem;
     margin-left: 3rem;
     width: 200px;
     animation: fadeIn 3s;
@@ -119,14 +129,13 @@ import hydroDrop from "$lib/images/logo/hydro-drop-white.svg"
 }
 
 #hydro-drop-third{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 50px;
     animation: fadeIn 6s;
 }
 
 #hydro-drop-fourth{
-    margin-bottom: 3rem;
-    margin-left: 0.5rem;
+    margin-bottom: 4rem;
     width: 25px;
     animation: fadeIn 5s;
 }
@@ -517,5 +526,31 @@ $ground-class: up;
 }
 
 }
+
+@media only screen and (max-width: 768px) {
+
+    .statement{
+    display: none !important;
+}
+#hydro-drop{
+    margin-top: 1rem !important;
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.statement{
+display: none !important;
+}
+
+#hydro-drop{
+    margin-top: 1rem !important;
+}
+
+}
+
+
+
 
 </style>
