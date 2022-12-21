@@ -3,7 +3,7 @@
 import Medium from "$lib/components/landing/medium.svelte";
 import Introduction from "$lib/components/landing/pricewidget.svelte";
 import Hero from "$lib/components/landing/hero.svelte";
-import hydroDrop from "$lib/images/logo/hydro-drop-white.svg" 
+import hydroDrop from "$lib/images/logo/hydro-drop-noframe.svg" 
 </script>
 
 <svelte:head>
@@ -117,27 +117,28 @@ import hydroDrop from "$lib/images/logo/hydro-drop-white.svg"
 #hydro-drop{
     margin-top: -3rem;
     margin-left: 3rem;
-    width: 200px;
-    animation: fadeIn 3s;
+    height: 200px;
+    animation: bounce linear 3s infinite;
 }
 
 #hydro-drop-alt{
     margin-bottom: 2rem;
-    margin-left: 1rem;
-    width: 100px;
-    animation: fadeIn 4s;
+    margin-left: 0.5rem;
+    height: 100px;
+    animation: bounce linear 3s infinite;
 }
 
 #hydro-drop-third{
     margin-bottom: 2rem;
-    width: 50px;
-    animation: fadeIn 6s;
+    height: 50px;
+    animation: bounce linear 3s infinite;
 }
 
 #hydro-drop-fourth{
-    margin-bottom: 4rem;
-    width: 25px;
-    animation: fadeIn 5s;
+    margin-bottom: 5rem;
+    margin-left: -1rem;
+    height: 25px;
+    animation: bounce linear 3s infinite;
 }
 
 //colors
@@ -437,6 +438,18 @@ $ground-class: up;
 }
 }
 //animation
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-10px);} 
+   60% {transform: translateY(-5px);} 
+} 
 
 @keyframes shadow-change
 {
