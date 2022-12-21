@@ -108,37 +108,41 @@ import hydroDrop from "$lib/images/logo/hydro-drop-white.svg"
     margin-top: 2rem;
     margin-left: 3rem;
     width: 200px;
+    animation: fadeIn 3s;
 }
 
 #hydro-drop-alt{
     margin-bottom: 2rem;
     margin-left: 1rem;
     width: 100px;
+    animation: fadeIn 4s;
 }
 
 #hydro-drop-third{
     margin-bottom: 1rem;
     width: 50px;
+    animation: fadeIn 6s;
 }
 
 #hydro-drop-fourth{
     margin-bottom: 3rem;
     margin-left: 0.5rem;
     width: 25px;
+    animation: fadeIn 5s;
 }
 
 //colors
 $bgColor: #130560;
-$subMarineColor: linear-gradient(90deg, #00a6cb, #183c68);
+$subMarineColor: linear-gradient(90deg, #611dcf, #21628b);
 $lightShadowColor: #9968ef;
-$lightShadowColor2: #5200c6;
-$lightShadowColor3: #2d88e9;
-$darkShadowColor: #6d05a1;
+$lightShadowColor2: #820ccb;
+$lightShadowColor3: #752de9;
+$darkShadowColor: #3d96c6;
 $periscopeColor: #ba8bf7;
 $propellerColor: #72178b;
-$propellerColor2: #cb08f7;
+$propellerColor2: #93369f;
 $windowLightColor: #c9dce5;
-$lightColor: #7e8c97;
+$lightColor: #b9c7d1;
 $seaGroundColor1:#0c0051;
 $seaGroundColor2:#08003b;
 //sizes
@@ -155,6 +159,7 @@ html,body {
   height: 100%;
   background: #1305606c;
   overflow:hidden;
+  border-radius: var(--border-radius);
 }
 .submarine__container {
   position: absolute;
@@ -201,6 +206,7 @@ html,body {
   width: 100%;
   height: 100%;
   top: 0%;
+  border-radius: 15px;
   perspective: 1000px;
   transform-style: preserve-3d;
 }
@@ -221,6 +227,7 @@ html,body {
   left: 50%;
   width: 120px;
   height: 35px;
+  border-radius: 15px 0px 0px 0px;
   transform: translate(-50%, -100%);
   background: $lightShadowColor2;
   clip-path: polygon(0% 0%, 70% 0%, 100% 100%, 0% 100%);
@@ -228,10 +235,10 @@ html,body {
 
 .submarine__sail-shadow {
   position: absolute;
-  width: 160%;
+  width: 100%;
   height: 10%;
-  background: $darkShadowColor;
-  border-radius: 5px;
+  background: var(--transparent);
+  border-radius: 15px;
 }
 .dark1 {
   left: 0%;
@@ -302,10 +309,10 @@ html,body {
 }
 .submarine__periscope {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 40%;
   width: 10px;
-  height: 50px;
+  height: 30px;
   border-right: 10px solid $lightShadowColor3;
   border-top: 10px solid $lightShadowColor2;
   border-left: 0px solid transparent;
@@ -315,7 +322,7 @@ html,body {
 .submarine__periscope-glass {
   position: absolute;
   left: 40%;
-  top: 10%;
+  top: 15%;
   width: 10px;
   border-radius: 10px;
   height: 15px;
@@ -324,7 +331,7 @@ html,body {
 }
 .light {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 0%;
   width: 500px;
   height: 100px;
@@ -408,7 +415,7 @@ $bubble-class: bubble;
    width:80px;
   height:80px;
   border-radius:100%;
- transform:translateY(30%);
+ transform:translateY(20%);
 }
 
 $ground-class: up;
@@ -417,7 +424,7 @@ $ground-class: up;
   .#{$ground-class}-#{$i}{
     left:-10%*($i+-1);
     top:-20px*($i*0.10);
-    animation:moveThegroundRight $i+2s infinite linear;
+    animation:moveThegroundRight $i+5s infinite linear;
 }
 }
 //animation
