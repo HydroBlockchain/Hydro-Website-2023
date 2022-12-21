@@ -88,16 +88,89 @@ import { onMount } from 'svelte';
     width: 100%;
     cursor: pointer;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
     background-color: var(--transparent) !important;
-    margin-right: 2rem;
 }
 
 #themeToggle{
     height: 32px;
 }
 
+#header-link{
+    background-color: var(--transparent);
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.themeDiv{
+width: 100%;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 !important;
+padding: 0 !important;
+background-color: var(--transparent) !important;
+}
+
+#themeToggle{
+height: 32px;
+}
+
+#header-link{
+background-color: var(--transparent);
+}
+
+}
+
+@media only screen and (max-width: 992px) {
+
+.themeDiv{
+width: 100%;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 !important;
+padding: 0 !important;
+background-color: var(--transparent) !important;
+}
+
+#themeToggle{
+height: 32px;
+}
+
+#header-link{
+background-color: var(--transparent);
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.themeDiv{
+width: 100%;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 !important;
+padding: 0 !important;
+background-color: var(--transparent) !important;
+}
+
+#themeToggle{
+height: 32px;
+}
+
+#header-link{
+background-color: var(--transparent);
+}
 
 }
 </style>
