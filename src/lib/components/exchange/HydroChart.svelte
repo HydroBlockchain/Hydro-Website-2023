@@ -106,7 +106,7 @@ const hydroChart = async () => {
     } else {
         const fetchHydroChart = priceData.prices.map((value: number[]) => ({
             x: value[0],
-            y: value[1].toFixed(4)
+            y: value[1].toFixed(5)
         }));
 
         hydroChartDataFetch = fetchHydroChart;
@@ -148,5 +148,14 @@ hydroChart();
     margin: 2rem;
     width: 100%;
     height: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+.three-quarter{
+    display: none;
+}
+
 }
 </style>
