@@ -5,12 +5,9 @@ import {
 import {
     priceData
 } from "$lib/stores/store";
-import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 </script>
 
 <div class="one-quarter" id="card-background">
-
-    <img src={hydroLogo} alt="hydro-logo" id="hydro-logo">
 
     <div class="dashboards">
 

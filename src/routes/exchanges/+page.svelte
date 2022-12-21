@@ -3,7 +3,7 @@ import Partners from "$lib/components/exchange/partners.svelte";
 import Exchanges from "$lib/components/exchange/exchanges.svelte";
 import Featured from "$lib/components/exchange/featured.svelte";
 import HydroChart from "$lib/components/exchange/HydroChart.svelte";
-    import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
+import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
 </script>
 
 <svelte:head>
@@ -13,15 +13,15 @@ import HydroChart from "$lib/components/exchange/HydroChart.svelte";
 
 <section>
     <div class="multiple-containers" id="mobile-fix">
-        <HydroChart/>
-        <HydroInfo/>
+        <HydroChart />
+        <HydroInfo />
     </div>
-        <div class="multiple-containers-alt">
-            <Partners />
-            <Exchanges />
-        </div>
-        <Featured />
-        </section>
+    <div class="multiple-containers-alt">
+        <Partners />
+        <Exchanges />
+    </div>
+    <Featured />
+    </section>
 
 <style>
 </style>
