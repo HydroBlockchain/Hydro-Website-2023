@@ -116,29 +116,31 @@ import hydroDrop from "$lib/images/logo/hydro-drop-noframe.svg"
 
 #hydro-drop{
     margin-top: -3rem;
-    margin-left: 3rem;
-    height: 200px;
-    animation: bounce linear 3s infinite;
+    margin-left: 1rem;
+    height: 180px;
+    animation: move-right ease-in-out 45s infinite;
 }
 
 #hydro-drop-alt{
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+    margin-left: 2.5rem;
     height: 100px;
-    animation: bounce linear 3s infinite;
+    animation: move-right ease-in-out 35s infinite;
 }
 
 #hydro-drop-third{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
     height: 50px;
-    animation: bounce linear 3s infinite;
+    animation: move-right ease-in-out 55s infinite;
 }
 
 #hydro-drop-fourth{
-    margin-bottom: 5rem;
-    margin-left: -1rem;
-    height: 25px;
-    animation: bounce linear 3s infinite;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    height: 80px;
+    animation: move-right ease-in-out 30s infinite;
 }
 
 //colors
