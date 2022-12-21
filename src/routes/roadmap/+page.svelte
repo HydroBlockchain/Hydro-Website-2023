@@ -1,5 +1,6 @@
 <script>
-    import Roadmap from "$lib/components/roadmap/roadmap.svelte";
+    import Submarine from "$lib/components/roadmap/Submarine.svelte";
+import Roadmap from "$lib/components/roadmap/roadmap.svelte";
 </script>
 
 <svelte:head>
@@ -9,4 +10,5 @@
 
 <section>
     <Roadmap/>
+    <Submarine/>
 </section>

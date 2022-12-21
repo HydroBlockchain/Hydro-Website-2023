@@ -135,7 +135,7 @@
     align-items: center;
     margin: 10px;
     width: 625px;
-    height: 250px;
+    height: 170px;
 }
 
 .half-card-structure {
