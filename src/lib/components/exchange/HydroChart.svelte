@@ -4,11 +4,11 @@ import {
 } from 'svelte';
 import moment from 'moment';
 import chartjs from 'chart.js/auto';
-    import { end_hydrating } from 'svelte/internal';
 
 
 let hydroChartDataFetch: any[] = [];
 let hydroChartVolumeFetch: any[] = [];
+let hydroChartMarketcapFetch: any[] = [];
 let ctx;
 let chartCanvas: HTMLCanvasElement;
 // Chart.defaults.color = '#fff';
@@ -27,52 +27,67 @@ onMount(async () => {
                 type: 'line',
                 label: 'HYDRO/USD',
                 data: hydroChartDataFetch.map((value) => value.y),
-                borderColor: '#fff',
+                borderColor: 'rgba(255, 255, 255, 0.50)',
+                backgroundColor: 'rgba(255, 255, 255, 0.2)',
                 borderWidth: 1,
                 pointRadius: 0,
-                fill: false,
+                fill: true,
                 yAxisID: 'A',
-
             },{
                 type: 'bar',
                 label: 'VOLUME/USD',
                 data: hydroChartVolumeFetch.map((value) => value.y),
                 yAxisID: 'B',
-                backgroundColor: '#6a53ff80',
-                borderWidth: 0,
-                borderRadius: 2,
-                barThickness: 2,
+                backgroundColor: '#6a53ff',
+                borderWidth: 1,
+                borderRadius: 1,
+                barThickness: 1,
                 barPercentage: 1
-            }]
+            }, {
+                type: 'line',
+                label: 'MARKETCAP/USD',
+                data: hydroChartMarketcapFetch.map((value) => value.y),
+                yAxisID: 'C',
+                borderWidth: 2,
+                borderColor: '#933db5',
+                backgroundColor: '#933db5',
+                pointRadius: 0,
+            }
+        ]
         },
         options: {
             responsive: true,
             plugins: { 
-                // title: { display: true, text: 'HYDRO/USD', color: '#fff', font: { family: 'Roboto Mono', size: 18}, align: 'end' },
-                // subtitle: { display: true, text: 'Pastweek', color: '#fff', font: { family: 'Roboto Mono', size: 10}, align: 'end' },
-                legend: { display: true, labels: {color: '#fff', font: { family: 'Roboto Mono', size: 12}}, align: 'end'}},
-                
+                legend: { display: true, labels: {color: '#fff', font: { family: 'Roboto Mono', size: 14}}, align: 'end'}},
             scales: {
             A: {
                 type: 'linear',
                 grid: {display:false},
                 border: {display:false},
                 position: 'left',
-                ticks: {color: '#fff', font: { family: 'Roboto Mono', size: 11}}
+                ticks: {color: '#ffffff80', font: { family: 'Roboto Mono', size: 10}}
             },
             B: {
                 grid: {display:false},
                 border: {display:false},
                 position: 'right',
-                ticks: {color: '#fff', font: { family: 'Roboto Mono', size: 11}},
+                ticks: {color: '#ffffff80', font: { family: 'Roboto Mono', size: 10}},
                 min: 1000,
                 max: 30000,
+                
+            },
+            C: {
+                grid: {display:false},
+                border: {display:false},
+                position: 'right',
+                ticks: {color: '#ffffff80', font: { family: 'Roboto Mono', size: 8}},
+                min: 50000,
+                max: 150000,
             },
             x: {
                 grid: {display:false},
                 border: {display:false},
-                position: 'right',
-                ticks: {color: '#fff', font: { family: 'Roboto Mono', size: 11}}
+                ticks: {color: '#ffffff80', font: { family: 'Roboto Mono', size: 10}}
             }
         }
         }
@@ -99,8 +114,14 @@ const hydroChart = async () => {
             y: value[1].toFixed(1)
         }));
 
+        const fetchHydroMarketcap = priceData.market_caps.map((value: number[]) => ({
+            x: value[0],
+            y: value[1].toFixed(1)
+        }));
+
         hydroChartDataFetch = fetchHydroChart;
         hydroChartVolumeFetch = fetchHydroVolume;
+        hydroChartMarketcapFetch = fetchHydroMarketcap;
 
     }
 
