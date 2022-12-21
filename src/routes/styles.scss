@@ -134,7 +134,7 @@
 	--chart-axis: #fff;
 	--chart-title: #fff;
 	//submarine
-	--ocean-bg: rgba(205, 205, 205, 0.2);
+	--ocean-bg: rgba(205, 205, 205, 0.05);
 	--submarine-color: linear-gradient(90deg, #5fffff, #1246a7);
 	--sea-ground-1: #4960bcdc;
 	--sea-ground-2: #2f7dd6;
@@ -527,9 +527,7 @@ a:active {
 		width: 70px;
 	}
 
-
 }
-
 
 //Medium devices (landscape tablets, up to 768px) 
 @media only screen and (max-width: 768px) {
@@ -597,7 +595,6 @@ a:active {
 		height: auto;
 		width: 70px;
 	}
-
 
 }
 
@@ -668,7 +665,6 @@ a:active {
 		width: 70px;
 	}
 
-
 }
 
 //Extra large devices (large laptops and desktops, up to 1400px) 
@@ -738,10 +734,7 @@ a:active {
 		width: 70px;
 	}
 
-
 }
-
-
 
 .background span:nth-child(0) {
 	color: var(--animation-color-0);
