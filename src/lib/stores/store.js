@@ -83,6 +83,7 @@ export const getPriceData = () => {
                     hydroMC: data.market_data.market_cap.usd,
                     hydroVolume: data.market_data.total_volume.usd,
                     hydroSupply: data.market_data.total_supply
+
                 }
             })
         }).catch(err => console.log(err))
@@ -317,3 +318,40 @@ export const getGithubData = () => {
 setInterval(getGithubData, 1800000);
 getGithubData();
 
+
+
+export const hydroInfo = writable({
+    marketcapRank: 0,
+    coingeckoRank: 0,
+    twitterFollowers: 0,
+    redditSubscribers: 0,
+    telegramUsers: 0,
+    
+})
+
+export const getHydroInfo = () => {
+
+fetch('https://api.coingecko.com/api/v3/coins/hydro?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true')
+    .then(res => {
+        if (!res.ok) {
+            throw Error("Could not fetch Hydro Info")
+        }
+        return res.json()
+    })
+    .then(data => {
+        hydroInfo.update(current => {
+            return {
+                ...current,
+                marketcapRank: data.market_cap_rank,
+                coingeckoRank: data.coingecko_rank,
+                twitterFollowers: data.community_data.twitter_followers,
+                redditSubscribers: data.community_data.reddit_subscribers,
+                telegramUsers: data.community_data.telegram_channel_user_count
+            }
+        })
+    }).catch(err => console.log(err))
+
+}
+
+setInterval(getHydroInfo, 1800000);
+getHydroInfo();

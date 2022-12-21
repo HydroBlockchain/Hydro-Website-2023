@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 //Components
 import Medium from "$lib/components/landing/medium.svelte";
 import Introduction from "$lib/components/landing/pricewidget.svelte";
@@ -8,7 +8,7 @@ import Hero from "$lib/components/landing/hero.svelte";
 <svelte:head>
     <title>Home</title>
     <meta name="Project Hydro" content="Project Hydro Web3 Architects" />
-</svelte:head>
+    </svelte:head>
 
     <section>
         <Hero />
@@ -18,13 +18,15 @@ import Hero from "$lib/components/landing/hero.svelte";
         </div>
 
         <div class="full" id="card-background">
+
             hello
+
         </div>
-        
-        
+
     </section>
+
 <style>
-    .full{
-        height: var(--ch-mini);
-    }
+.full {
+    height: var(--ch-mini);
+}
 </style>

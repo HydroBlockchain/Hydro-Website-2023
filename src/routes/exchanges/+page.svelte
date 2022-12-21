@@ -1,23 +1,27 @@
 <script>
-    import Partners from "$lib/components/landing/partners.svelte";
-    import Exchanges from "$lib/components/landing/exchanges.svelte";
-    import Featured from "$lib/components/landing/featured.svelte";
+import Partners from "$lib/components/exchange/partners.svelte";
+import Exchanges from "$lib/components/exchange/exchanges.svelte";
+import Featured from "$lib/components/exchange/featured.svelte";
+import HydroChart from "$lib/components/exchange/HydroChart.svelte";
+    import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
 </script>
 
+<svelte:head>
+    <title>Exchanges & Partners</title>
+    <meta name="Exchanges & Partners" content="Project Hydro Exchanges & Partners" />
+</svelte:head>
+
 <section>
-    <div class="full" id="card-background">
-        hello
+    <div class="multiple-containers" id="mobile-fix">
+        <HydroChart/>
+        <HydroInfo/>
     </div>
-    <div class="multiple-containers-alt">
-        <Partners />
-        <Exchanges />
-    </div>
-    <Featured />
-    
-</section>
+        <div class="multiple-containers-alt">
+            <Partners />
+            <Exchanges />
+        </div>
+        <Featured />
+        </section>
 
 <style>
-.full{
-        height: var(--ch-mini);
-    }
 </style>
