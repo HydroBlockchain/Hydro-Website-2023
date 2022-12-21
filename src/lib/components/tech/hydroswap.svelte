@@ -5,7 +5,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 
 <div class="one-quarter" id="card-background">
 
-    <div>
+    <div class="center">
 
         <div class="hydroswap">
 
@@ -83,7 +83,7 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
 .hydroswap {
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
 }
 

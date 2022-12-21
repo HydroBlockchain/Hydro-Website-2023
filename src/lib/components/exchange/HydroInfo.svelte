@@ -77,6 +77,7 @@ import {
         </div>
 
     </div>
+    <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko</a></div>
 </div>
 
 <style>
@@ -86,18 +87,31 @@ import {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .dashboards {
     display: flex;
     flex-direction: row;
+    margin-top: 4rem;
 }
 
-#hydro-logo {
-    width: 120px;
-    height: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+.cg-credit {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: var(--fs-mini);
+}
+
+.cg-credit a {
+    color: var(--text-color-alt);
+}
+
+.cg-credit a:hover {
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 .hydro-dashboard {
@@ -131,6 +145,12 @@ import {
 
 @media only screen and (max-width: 600px) {
 
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
     .dashboard-slot {
         width: auto !important;
         height: 50px;
@@ -138,7 +158,6 @@ import {
 
     .one-quarter {
         height: auto;
-        flex-direction: row;
         margin-left: 0 !important;
     }
 
@@ -158,10 +177,6 @@ import {
     .currency-class,
     .price {
         font-size: 10px;
-    }
-
-    #hydro-logo {
-        display: none;
     }
 
 }
@@ -175,7 +190,6 @@ import {
 
     .one-quarter {
         height: auto;
-        flex-direction: row;
         margin-left: 0 !important;
     }
 
@@ -197,9 +211,11 @@ import {
         font-size: 10px;
     }
 
-    #hydro-logo {
-        display: none;
-    }
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 }
 
@@ -212,7 +228,6 @@ import {
 
     .one-quarter {
         height: auto;
-        flex-direction: row;
         margin-left: 0 !important;
     }
 
@@ -234,10 +249,11 @@ import {
         font-size: 10px;
     }
 
-    #hydro-logo {
-        display: none;
-    }
-
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -249,7 +265,6 @@ import {
 
     .one-quarter {
         height: auto;
-        flex-direction: row;
         margin-left: 0 !important;
     }
 
@@ -271,9 +286,11 @@ import {
         font-size: 10px;
     }
 
-    #hydro-logo {
-        display: none;
-    }
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
 }
 </style>
