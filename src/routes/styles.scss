@@ -98,34 +98,41 @@
 	--window: #20233300;
 	--test: #489fe6;
 
-	//Blockchain
-	--block-1: #489fe6;
-	--block-2: #2f7dd6;
-	--block-3: #2e5a97;
-	--block-4: #245ace;
-	--block-5: #2e5a97;
-	--block-6: #245ace;
+	//Blockchain Animation
+	--block-1: #78c2ff;
+	--block-2: #29486f;
+	--block-3: #426290;
+	--block-4: #758cbc;
+	--block-5: #4b5a6e;
+	--block-6: #587f89;
+	--block-edge-1: #71aefd;
+	--block-edge-2: #badbfd;
+	--block-edge-3: #83b3fb;
+	--block-edge-4: #685bf9;
+	--block-edge-5: #3a43e3;
+	--block-edge-6: #793af8;
+	--block-edge-7: #5c89a7;
 
 	--block-line: #489fe6;
 
-	--small-block-1: #5956ed;
-	--small-block-2: #fff;
+	--small-block-1: rgb(67, 12, 103);
+	--small-block-2: rgb(136, 96, 197);
 	--small-block-3: #fff;
 
-	--mini-block-1: #4583e6;
+	--mini-block-1: #3d5a89;
 	--mini-block-2: #1d3ba6;
 	--mini-block-3: #752de9;
-	--mini-block-line: rgb(28, 134, 143);
-	--mini-block-structure: rgba(76, 174, 255, 0.822);
+	--mini-block-line: #e2a3ff;
+	--mini-block-structure: #4caeffd2;
 	--mini-block-structure-2: #fff;
 
 	--tiny-block-1: #215488;
-	--tiny-block-2: #80279e;
-	--tiny-block-3: #53107a;
-	--tiny-block-4: #7c178ea4;
+	--tiny-block-2: #908395;
+	--tiny-block-3: #10357a;
+	--tiny-block-4: #532a86;
 	--tiny-block-5: #219696;
 	--tiny-block-6: #36d0d5;
-	--tiny-block-7: #b875ff;
+	--tiny-block-7: #ece0fa;
 	--tiny-block-8: #029aff;
 	--tiny-block-9: #AAAAAE;
 	--tiny-block-10: #767884;
@@ -138,21 +145,26 @@
 	--glow-2: #fff;
 	--glow-3: #fff;
 
-	--background-blocks: #592595;
-	--background-blocks-alt: #fff;
+	--background-blocks: #2e095a;
+	--background-blocks-alt: rgb(172, 172, 176);
 	--background-blocks-third: #fff;
 	--background-blocks-line: #5C6399;
 	--background-blocks-line-alt: #5C6399;
-	--block-platform: #bc71eea5;
+	--block-platform: #ffffffa5;
 
 	--lines: #fff;
 
 	--particles-1: #fff;
+	--particles-2: #48e6de;
 
 	--nodes-data: #fff;
 
-	--block-drop: rgb(0, 200, 255);
-	--block-drop-alt: rgb(81, 104, 255);
+	--block-drop: #00c8ff;
+	--block-drop-alt: #5e74ff;
+
+	--drop-platform: rgb(188, 185, 198);
+	--drop-contact: #fff;
+	--drop-shimmer: #fff;
 
 }
 
@@ -205,6 +217,73 @@
 	--periscope: #ba8bf7;
 	--flashlight: #fafedb;
 	--window: #6cb2f4;
+	//Blockchain Animation
+	--block-1: #008cff;
+	--block-2: #4882ff;
+	--block-3: #5165ff;
+	--block-4: #2da0ff;
+	--block-5: #a6afff;
+	--block-6: #2d8fff;
+	--block-edge-1: #fff;
+	--block-edge-2: #5aacfe;
+	--block-edge-3: #c1daff;
+	--block-edge-4: #d7d4ff;
+	--block-edge-5: #cbceff;
+	--block-edge-6: #e1d2ff;
+	--block-edge-7: #9ffff7;
+
+	--block-line: #008cff;
+
+	--small-block-1: #885dff;
+	--small-block-2: rgb(255, 255, 255);
+	--small-block-3: #fff;
+
+	--mini-block-1: #454ae6;
+	--mini-block-2: #1d3ba6;
+	--mini-block-3: #752de9;
+	--mini-block-line: #1c868f;
+	--mini-block-structure: #4caeffd2;
+	--mini-block-structure-2: #fff;
+
+	--tiny-block-1: #bcd5ed;
+	--tiny-block-2: #ccb9d2;
+	--tiny-block-3: #aa81c2;
+	--tiny-block-4: #f7ddfca4;
+	--tiny-block-5: #219696;
+	--tiny-block-6: #36d0d5;
+	--tiny-block-7: #ffffff;
+	--tiny-block-8: #029aff;
+	--tiny-block-9: #AAAAAE;
+	--tiny-block-10: #767884;
+	--tiny-block-11: #515366;
+	--tiny-block-12: #3A3D54;
+	--tiny-block-13: #32354D;
+	--tiny-block-14: #FFF;
+
+	--glow-1: #6cb2f4;
+	--glow-2: #fff;
+	--glow-3: #fff;
+
+	--background-blocks: #52f0ff;
+	--background-blocks-alt: rgb(16, 33, 117);
+	--background-blocks-third: rgb(112, 250, 255);
+	--background-blocks-line: #4155ea;
+	--background-blocks-line-alt: #a256c8;
+	--block-platform: #f0d9ff;
+
+	--lines: rgb(51, 209, 209);
+
+	--particles-1: #fff;
+	--particles-2: #48e6de;
+
+	--nodes-data: #fff;
+
+	--block-drop: #0039ca;
+	--block-drop-alt: #03488e;
+
+	--drop-platform: rgb(248, 235, 254);
+	--drop-contact: rgb(255, 255, 255);
+	--drop-shimmer: #fff;
 }
 
 html {
