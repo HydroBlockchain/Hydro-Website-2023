@@ -15,8 +15,10 @@ import metamask from "$lib/images/icons/metamask.svg"
             In order to use it you have to first download Metamask. <br>
             Once you have, head on back here to add the Hydro Token automatically.
             <h3>
-                The Hydro token tool only reads public data and asks for permission to add the Hydro Token Smart contract.
-                No information is stored or sent to any servers</h3></div>
+                The Hydro token tool only reads public data and asks for permission to add the Hydro Token Smart
+                contract.
+                No information is stored or sent to any servers</h3>
+        </div>
 
     </div>
     <a href="https://metamask.io" target="_blank" rel="noopener noreferrer">

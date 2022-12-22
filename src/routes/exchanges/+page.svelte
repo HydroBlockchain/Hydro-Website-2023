@@ -21,7 +21,4 @@ import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
         <Exchanges />
     </div>
     <Featured />
-    </section>
-
-<style>
-</style>
+</section>

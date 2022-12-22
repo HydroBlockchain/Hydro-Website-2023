@@ -2,10 +2,8 @@
     // @ts-nocheck
     import Question from "$lib/components/faq/Question.svelte";
     import items from "$lib/json/faq.json";
-
     let currentActive = 0;
 </script>
-
 <svelte:head>
     <title>FAQ</title>
     <meta name="Hydro FAQ" content="Hydro FAQ to answer your questions" />

@@ -17,21 +17,21 @@
 </div>
 
 <style>
-.one-quarter {
-    height: var(--ch-xsmall);
-}
+    .one-quarter {
+        height: var(--ch-xsmall);
+    }
 
-.information {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    font-size: var(--fs-medium);
-    font-size: 14px;
-}
+    .information {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        font-size: var(--fs-medium);
+        font-size: 14px;
+    }
 
-@media only screen and (max-width: 600px) {
-.one-quarter {
-    height: 25rem;
-}
-}
+    @media only screen and (max-width: 600px) {
+        .one-quarter {
+            height: 25rem;
+        }
+    }
 </style>

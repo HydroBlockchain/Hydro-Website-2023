@@ -1,5 +1,4 @@
 <script>
-    //components
     import HydroSwap from "$lib/components/tech/hydroswap.svelte";
     import Keresverse from "$lib/components/tech/keresverse.svelte";
     import Blockchains from "$lib/components/tech/blockchains.svelte";

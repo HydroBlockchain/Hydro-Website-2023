@@ -5,17 +5,11 @@ import {
 import moment from 'moment';
 import chartjs from 'chart.js/auto';
 
-
 let hydroChartDataFetch: any[] = [];
 let hydroChartVolumeFetch: any[] = [];
 let hydroChartMarketcapFetch: any[] = [];
 let ctx;
 let chartCanvas: HTMLCanvasElement;
-// Chart.defaults.color = '#fff';
-
-// let lineColor = styles.getPropertyValue('--chart-line');
-// let axisColor = styles.getPropertyValue('--chart-axis');
-// let titleColor = styles.getPropertyValue('--chart-title');
 
 onMount(async () => {
     await hydroChart();
@@ -99,9 +93,7 @@ const hydroChart = async () => {
     const res = await fetch(
         `https://api.coingecko.com/api/v3/coins/hydro/market_chart?vs_currency=usd&days=14&interval=hourly`
     );
-
     const priceData = await res.json();
-
     if (!res.ok) {
         console.log("error")
     } else {
@@ -118,19 +110,16 @@ const hydroChart = async () => {
             x: value[0],
             y: value[1].toFixed(1)
         }));
-
         hydroChartDataFetch = fetchHydroChart;
         hydroChartVolumeFetch = fetchHydroVolume;
         hydroChartMarketcapFetch = fetchHydroMarketcap;
-
     }
-
 };
 
 hydroChart();
 </script>
 
-<div class="three-quarter"  id="card-background">
+<div class="three-quarter" id="card-background">
     <div class="column" id="a">
         <canvas bind:this={chartCanvas} id="myChart" width="auto" height="auto" />
     </div>
@@ -138,66 +127,66 @@ hydroChart();
 </div>
 
 <style>
-.three-quarter {
-    display: flex;
-    flex-direction: row;
-    margin-left: 0;
-    height: 25rem;
-}
-
-.column {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#a {
-    width: 100%;
-    flex-direction: row;
-}
-
-#myChart {
-    margin: 2rem;
-    width: 100%;
-    height: 100%;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
     .three-quarter {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+        height: 25rem;
     }
 
-}
+    .column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-@media only screen and (max-width: 768px) {
+    #a {
+        width: 100%;
+        flex-direction: row;
+    }
 
     #myChart {
         margin: 2rem;
-        width: 600px !important;
-        height: 300px !important;
+        width: 100%;
+        height: 100%;
     }
 
-}
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
 
-@media only screen and (max-width: 992px) {
+        .three-quarter {
+            display: none;
+        }
 
-    #myChart {
-        margin: 2rem;
-        width: 600px !important;
-        height: 300px !important;
     }
 
-}
+    @media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 1200px) {
+        #myChart {
+            margin: 2rem;
+            width: 600px !important;
+            height: 300px !important;
+        }
 
-    #myChart {
-        margin: 2rem;
-        width: 600px !important;
-        height: 300px !important;
     }
 
-}
+    @media only screen and (max-width: 992px) {
+
+        #myChart {
+            margin: 2rem;
+            width: 600px !important;
+            height: 300px !important;
+        }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        #myChart {
+            margin: 2rem;
+            width: 600px !important;
+            height: 300px !important;
+        }
+
+    }
 </style>

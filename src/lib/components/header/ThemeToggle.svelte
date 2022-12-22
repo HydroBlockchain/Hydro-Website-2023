@@ -49,8 +49,8 @@ import { onMount } from 'svelte';
 
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="themeDiv" id="header-link" checked={currentTheme !== THEMES.DARK} on:click={toggleTheme}>
-	{#if currentTheme === THEMES.DARK}
+<div class="themeDiv" id="header-link" checked={currentTheme !==THEMES.DARK} on:click={toggleTheme}>
+  {#if currentTheme === THEMES.DARK}
     <img src={Sun} alt="Sun" id="themeToggle" />
 	{:else}
     <img src={Moon} alt="Moon" id="themeToggle" />
@@ -58,119 +58,122 @@ import { onMount } from 'svelte';
 </div> 
 
 <style>
-.themeDiv{
+  .themeDiv {
     width: 100px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.themeDiv:hover {
+  }
+
+  .themeDiv:hover {
     background-color: var(--button-hover) !important;
-}
-#themeToggle{
+  }
+
+  #themeToggle {
     width: auto;
     margin-top: 2px;
     margin-bottom: 2px;
     height: 28px;
     cursor: pointer;
-}
-#header-link{
+  }
+
+  #header-link {
     background-color: var(--card-bg-alt);
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: var(--border-radius);
-}
+  }
 
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
 
-    .themeDiv{
-    width: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 !important;
-    padding: 0 !important;
-    background-color: var(--transparent) !important;
-}
+    .themeDiv {
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: var(--transparent) !important;
+    }
 
-#themeToggle{
-    height: 32px;
-}
+    #themeToggle {
+      height: 32px;
+    }
 
-#header-link{
-    background-color: var(--transparent);
-}
+    #header-link {
+      background-color: var(--transparent);
+    }
 
-}
+  }
 
-@media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
 
-.themeDiv{
-width: 100%;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 !important;
-padding: 0 !important;
-background-color: var(--transparent) !important;
-}
+    .themeDiv {
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: var(--transparent) !important;
+    }
 
-#themeToggle{
-height: 32px;
-}
+    #themeToggle {
+      height: 32px;
+    }
 
-#header-link{
-background-color: var(--transparent);
-}
+    #header-link {
+      background-color: var(--transparent);
+    }
 
-}
+  }
 
-@media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 992px) {
 
-.themeDiv{
-width: 100%;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 !important;
-padding: 0 !important;
-background-color: var(--transparent) !important;
-}
+    .themeDiv {
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: var(--transparent) !important;
+    }
 
-#themeToggle{
-height: 32px;
-}
+    #themeToggle {
+      height: 32px;
+    }
 
-#header-link{
-background-color: var(--transparent);
-}
+    #header-link {
+      background-color: var(--transparent);
+    }
 
-}
+  }
 
-@media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) {
 
-.themeDiv{
-width: 100%;
-cursor: pointer;
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 !important;
-padding: 0 !important;
-background-color: var(--transparent) !important;
-}
+    .themeDiv {
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: var(--transparent) !important;
+    }
 
-#themeToggle{
-height: 32px;
-}
+    #themeToggle {
+      height: 32px;
+    }
 
-#header-link{
-background-color: var(--transparent);
-}
+    #header-link {
+      background-color: var(--transparent);
+    }
 
-}
+  }
 </style>

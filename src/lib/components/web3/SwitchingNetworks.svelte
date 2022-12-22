@@ -1,12 +1,7 @@
 <script lang="ts">
 // @ts-nocheck
-import {
-    metamask,
-    provider
-} from "$lib/stores/wallet-bsc";
-import {
-    Web3Provider
-} from "@ethersproject/providers";
+import { metamask, provider } from "$lib/stores/wallet-bsc";
+import { Web3Provider } from "@ethersproject/providers";
 import ethLogo from "$lib/images/logo/ethereum.svg";
 import bscLogo from "$lib/images/logo/bsc.svg";
 import polyLogo from "$lib/images/logo/polygon.svg";
@@ -206,46 +201,25 @@ async function addNetworkCsc() {
             Select <br /> Network
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div
-            on:click={switchNetworkEth}
-            disabled={loading}
-            class="button-network-switch"
-            >
+        <div on:click={switchNetworkEth} disabled={loading} class="button-network-switch">
             <img src={ethLogo} alt="bitcoin" id="coin-ticker-logo" />
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div
-            on:click={addNetworkBsc}
-            disabled={loading}
-            class="button-network-switch"
-            >
+        <div on:click={addNetworkBsc} disabled={loading} class="button-network-switch">
             <img src={bscLogo} alt="bitcoin" id="coin-ticker-logo" />
         </div>
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
     </div>
     <div class="networks-button-row">
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div
-            on:click={addNetworkPoly}
-            disabled={loading}
-            class="button-network-switch"
-            >
+        <div on:click={addNetworkPoly} disabled={loading} class="button-network-switch">
             <img src={polyLogo} alt="bitcoin" id="coin-ticker-logo" />
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div
-            on:click={addNetworkMovr}
-            disabled={loading}
-            class="button-network-switch"
-            >
+        <div on:click={addNetworkMovr} disabled={loading} class="button-network-switch">
             <img src={movrLogo} alt="bitcoin" id="coin-ticker-logo" />
         </div>
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <div
-            on:click={addNetworkCsc}
-            disabled={loading}
-            class="button-network-switch"
-            >
+        <div on:click={addNetworkCsc} disabled={loading} class="button-network-switch">
             <img src={cscLogo} alt="bitcoin" id="coin-ticker-logo" />
         </div>
     </div>

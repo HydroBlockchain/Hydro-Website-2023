@@ -127,7 +127,7 @@
 }
 
 //Light Mode
-:global(body) {	
+:global(body) {
 	//Hydro Drop
 	--drop-color: #f8f8f8;
 	//Text Colors
@@ -161,7 +161,6 @@
 	--chart-line: #fff;
 	--chart-axis: #fff;
 	--chart-title: #fff;
-	
 	//Blockchain Animation
 	//Large Block
 	--block: #3f73ff;
@@ -226,12 +225,19 @@ body::-webkit-scrollbar {
 
 //Keyframes
 @keyframes fadeIn {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes move {
-	100% {transform: translate3d(0, 0, 1px) rotate(360deg);}
+	100% {
+		transform: translate3d(0, 0, 1px) rotate(360deg);
+	}
 }
 
 //Animated Background
@@ -263,6 +269,7 @@ body::-webkit-scrollbar {
 .background::after {
 	will-change: all;
 }
+
 //Containers
 .container {
 	display: flex;
@@ -641,7 +648,7 @@ a:active {
 	}
 
 	.button-add-hydro {
-		width:318px;
+		width: 318px;
 		height: auto;
 		margin-left: 0rem;
 		padding-top: 1rem;

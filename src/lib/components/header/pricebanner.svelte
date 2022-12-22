@@ -17,12 +17,11 @@ let coinNameMOVR = "MOVR";
 <section>
     <div class="banner" id="card-background">
         <div class="slider">
-            
             <div class="slide-track">
                 <a href="https://www.coingecko.com/en/coins/hydro" target="_blank" rel="noopener noreferrer">
                     <div class="slide">
                         <div class="hydro-slot">
-                            <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo"/></div>
+                            <div class="coin-img"><img src={hydroDrop} alt="hydro-drop" id="coin-ticker-logo" /></div>
                             <div class="coin-data">
                                 <div class="banner-slot" id="name">{(coinNameHydro)}</div>
                                 <div class="banner-slot" id="price">Price: {$priceData.hydroPrice} USD</div>
@@ -341,9 +340,7 @@ let coinNameMOVR = "MOVR";
                     </div></a>
             </div>
         </div>
-
     </div>
-
 </section>
 
 <style>

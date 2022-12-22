@@ -17,5 +17,5 @@ import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.sve
     <Introduction />
     <Medium />
   </div>
-  <BlockchainAnimation/>
+  <BlockchainAnimation />
 </section>

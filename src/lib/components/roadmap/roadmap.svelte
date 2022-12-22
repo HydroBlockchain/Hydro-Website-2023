@@ -1,102 +1,102 @@
 <script>
-
 </script>
-
 <div class="full" id="card-background">
     <div class="information">
-
         <div class="roadmap">
-
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div></div>
-                    <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay. <br>
-                                                    The General public will be able to download and play the Keresverse Beta pending its full blockchain integration.
-                                                    More info will be released in an article regarding the Beta release.</div>
+                    <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div>
+                    </div>
+                    <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.
+                        <br>
+                        The General public will be able to download and play the Keresverse Beta pending its full
+                        blockchain integration.
+                        More info will be released in an article regarding the Beta release.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress1 progress-moved">
-                                <div class="progress-bar1" >
+                                <div class="progress-bar1">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Aegir Wallet Refresh<div id="q">Q2</div></div>
-                    <div class="card-row" id="desc">Aegir wallet gets an UI update and preparation work for the Hydro Testnet in Q4.</div>
+                    <div class="card-row" id="what">Aegir Wallet Refresh<div id="q">Q2</div>
+                    </div>
+                    <div class="card-row" id="desc">Aegir wallet gets an UI update and preparation work for the Hydro
+                        Testnet in Q4.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress2 progress-moved">
-                                <div class="progress-bar2" >
+                                <div class="progress-bar2">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-              <div class="roadmap-card-half" id="card-background-alt">
+            <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div></div>
+                    <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div>
+                    </div>
                     <div class="card-row" id="desc">Keresverse Website live for beta testing.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress3 progress-moved">
-                                <div class="progress-bar3" >
+                                <div class="progress-bar3">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
         <div class="roadmap">
-
-              <div class="roadmap-card-half" id="card-background-alt">
+            <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Keres Diamond<div id="q">Q2</div></div>
-                    <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond</div>
+                    <div class="card-row" id="what">Keres Diamond<div id="q">Q2</div>
+                    </div>
+                    <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond
+                    </div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress4 progress-moved">
-                                <div class="progress-bar4" >
+                                <div class="progress-bar4">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div></div>
-                    <div class="card-row" id="desc">Hydroswap gets a ui revamp and preparation work for the hydro testnet.</div>
+                    <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div>
+                    </div>
+                    <div class="card-row" id="desc">Hydroswap gets a ui revamp and preparation work for the hydro
+                        testnet.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress5 progress-moved">
-                                <div class="progress-bar5" >
+                                <div class="progress-bar5">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Hydro Testnet<div id="q">Q4</div></div>
-                    <div class="card-row" id="desc">Hydro Testnet launches in preparation for Hydros own Blockchain.</div>
+                    <div class="card-row" id="what">Hydro Testnet<div id="q">Q4</div>
+                    </div>
+                    <div class="card-row" id="desc">Hydro Testnet launches in preparation for Hydros own Blockchain.
+                    </div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress6 progress-moved">
-                                <div class="progress-bar6" >
+                                <div class="progress-bar6">
                                 </div>
                             </div>
                         </div>
@@ -108,329 +108,326 @@
 </div>
 
 <style>
-
-.full {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    height: auto;
-}
-
-.information {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.roadmap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.roadmap-card-half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    width: 625px;
-    height: 170px;
-}
-
-.half-card-structure {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-}
-
-.card-row {
-    display: flex;
-    flex-direction: row;    
-}
-
-#what{
-    justify-content: space-between;
-}
-
-#desc{
-  font-size: 12px;
-  word-wrap: break-word;
-  height: 80px;
-}
-
-#q{
-  font-size: 10px;
-  color: var(--text-color-alt);
-}
-
-.container-prog {
-    width: 500px;
-    text-align: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.progress1 {
-    padding: 3px;
-    border-radius: 7px;
-}
-
-.progress-bar1 {
-    height: 10px;
-    border-radius: 7px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-}
-
-.progress-moved .progress-bar1 {
-    width: 85%;
-    background-color: var(--progress-bar);
-    animation: progressAnimation1 4s;
-}
-
-@keyframes progressAnimation1 {
-    0% {
-        width: 5%;
-        background-color: var(--progress-bar);
+    .full {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: auto;
     }
 
-    100% {
+    .information {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .roadmap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .roadmap-card-half {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 625px;
+        height: 170px;
+    }
+
+    .half-card-structure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .card-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #what {
+        justify-content: space-between;
+    }
+
+    #desc {
+        font-size: 12px;
+        word-wrap: break-word;
+        height: 80px;
+    }
+
+    #q {
+        font-size: 10px;
+        color: var(--text-color-alt);
+    }
+
+    .container-prog {
+        width: 500px;
+        text-align: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .progress1 {
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    .progress-bar1 {
+        height: 10px;
+        border-radius: 7px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    .progress-moved .progress-bar1 {
         width: 85%;
         background-color: var(--progress-bar);
-    }
-}
-
-.progress2 {
-    padding: 3px;
-    border-radius: 7px;
-}
-
-.progress-bar2 {
-    height: 10px;
-    border-radius: 7px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-}
-
-.progress-moved .progress-bar2 {
-    width: 45%;
-    background-color: var(--progress-bar);
-    animation: progressAnimation2 4s;
-}
-
-@keyframes progressAnimation2 {
-    0% {
-        width: 5%;
-        background-color: var(--progress-bar);
+        animation: progressAnimation1 4s;
     }
 
-    100% {
+    @keyframes progressAnimation1 {
+        0% {
+            width: 5%;
+            background-color: var(--progress-bar);
+        }
+
+        100% {
+            width: 85%;
+            background-color: var(--progress-bar);
+        }
+    }
+
+    .progress2 {
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    .progress-bar2 {
+        height: 10px;
+        border-radius: 7px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    .progress-moved .progress-bar2 {
         width: 45%;
         background-color: var(--progress-bar);
-    }
-}
-
-.progress3 {
-    padding: 3px;
-    border-radius: 7px;
-}
-
-.progress-bar3 {
-    height: 10px;
-    border-radius: 7px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-}
-
-.progress-moved .progress-bar3 {
-    width: 16%;
-    background-color: var(--progress-bar);
-    animation: progressAnimation3 4s;
-}
-
-@keyframes progressAnimation3 {
-    0% {
-        width: 5%;
-        background-color: var(--progress-bar);
+        animation: progressAnimation2 4s;
     }
 
-    100% {
+    @keyframes progressAnimation2 {
+        0% {
+            width: 5%;
+            background-color: var(--progress-bar);
+        }
+
+        100% {
+            width: 45%;
+            background-color: var(--progress-bar);
+        }
+    }
+
+    .progress3 {
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    .progress-bar3 {
+        height: 10px;
+        border-radius: 7px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    .progress-moved .progress-bar3 {
         width: 16%;
         background-color: var(--progress-bar);
-    }
-}
-
-.progress4 {
-    padding: 3px;
-    border-radius: 7px;
-}
-
-.progress-bar4 {
-    height: 10px;
-    border-radius: 7px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-}
-
-.progress-moved .progress-bar4 {
-    width: 32%;
-    background-color: var(--progress-bar);
-    animation: progressAnimation4 4s;
-}
-
-@keyframes progressAnimation4 {
-    0% {
-        width: 5%;
-        background-color: var(--progress-bar);
+        animation: progressAnimation3 4s;
     }
 
-    100% {
+    @keyframes progressAnimation3 {
+        0% {
+            width: 5%;
+            background-color: var(--progress-bar);
+        }
+
+        100% {
+            width: 16%;
+            background-color: var(--progress-bar);
+        }
+    }
+
+    .progress4 {
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    .progress-bar4 {
+        height: 10px;
+        border-radius: 7px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    .progress-moved .progress-bar4 {
         width: 32%;
         background-color: var(--progress-bar);
-    }
-}
-
-.progress5 {
-    padding: 3px;
-    border-radius: 7px;
-}
-
-.progress-bar5 {
-    height: 10px;
-    border-radius: 7px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-}
-
-.progress-moved .progress-bar5 {
-    width: 41%;
-    background-color: var(--progress-bar);
-    animation: progressAnimation5 4s;
-}
-
-@keyframes progressAnimation5 {
-    0% {
-        width: 5%;
-        background-color: var(--progress-bar);
+        animation: progressAnimation4 4s;
     }
 
-    100% {
+    @keyframes progressAnimation4 {
+        0% {
+            width: 5%;
+            background-color: var(--progress-bar);
+        }
+
+        100% {
+            width: 32%;
+            background-color: var(--progress-bar);
+        }
+    }
+
+    .progress5 {
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    .progress-bar5 {
+        height: 10px;
+        border-radius: 7px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    .progress-moved .progress-bar5 {
         width: 41%;
         background-color: var(--progress-bar);
-    }
-}
-
-.progress6 {
-    padding: 3px;
-    border-radius: 7px;
-}
-
-.progress-bar6 {
-    height: 10px;
-    border-radius: 7px;
-    transition: 0.4s linear;
-    transition-property: width, background-color;
-}
-
-.progress-moved .progress-bar6 {
-    width: 24%;
-    background-color: var(--progress-bar);
-    animation: progressAnimation6 4s;
-}
-
-@keyframes progressAnimation6 {
-    0% {
-        width: 5%;
-        background-color: var(--progress-bar);
+        animation: progressAnimation5 4s;
     }
 
-    100% {
+    @keyframes progressAnimation5 {
+        0% {
+            width: 5%;
+            background-color: var(--progress-bar);
+        }
+
+        100% {
+            width: 41%;
+            background-color: var(--progress-bar);
+        }
+    }
+
+    .progress6 {
+        padding: 3px;
+        border-radius: 7px;
+    }
+
+    .progress-bar6 {
+        height: 10px;
+        border-radius: 7px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+    }
+
+    .progress-moved .progress-bar6 {
         width: 24%;
         background-color: var(--progress-bar);
+        animation: progressAnimation6 4s;
     }
-}
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+    @keyframes progressAnimation6 {
+        0% {
+            width: 5%;
+            background-color: var(--progress-bar);
+        }
 
-.information {
-    flex-direction: column !important;
-}
+        100% {
+            width: 24%;
+            background-color: var(--progress-bar);
+        }
+    }
 
-.roadmap-card-half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 1rem;
-    width: 280px;
-    height: 300px;
-}
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
 
-.container-prog {
-    width: 300px !important;
-    text-align: center;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
+        .information {
+            flex-direction: column !important;
+        }
 
-.full{
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+        .roadmap-card-half {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 1rem;
+            width: 280px;
+            height: 300px;
+        }
 
-#desc{
-    height: auto !important;
-}
+        .container-prog {
+            width: 300px !important;
+            text-align: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
 
-}
+        .full {
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
-@media only screen and (max-width: 768px) {
+        #desc {
+            height: auto !important;
+        }
 
-.information {
-    flex-direction: column !important;
-}
+    }
 
-.full{
-    height: auto ;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+    @media only screen and (max-width: 768px) {
 
-}
+        .information {
+            flex-direction: column !important;
+        }
 
-@media only screen and (max-width: 992px) {
+        .full {
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
-.information {
-    flex-direction: column !important;
-}
+    }
 
-.full{
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+    @media only screen and (max-width: 992px) {
 
-}
+        .information {
+            flex-direction: column !important;
+        }
 
-@media only screen and (max-width: 1200px) {
+        .full {
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
-.information {
-    flex-direction: column !important;
-}
+    }
 
-.full{
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+    @media only screen and (max-width: 1200px) {
 
-}
+        .information {
+            flex-direction: column !important;
+        }
 
+        .full {
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
+    }
 </style>

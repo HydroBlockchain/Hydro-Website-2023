@@ -1,6 +1,5 @@
 <script>
 </script>
-
 <!-- Credit to http://codepen.io/nw/pen/EKdBKx -->
 <div class="full" id="card-background">
     <div class="statement" id="cta">Explore the depths of Web3 with Hydro!

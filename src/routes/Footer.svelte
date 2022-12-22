@@ -16,64 +16,62 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 <footer>
     <div class="footer-container" id="card-background">
         <div class="logo">
-            <img src={hydroLogo} alt="hydro-drop" id="hydro-logo"/>
+            <img src={hydroLogo} alt="hydro-drop" id="hydro-logo" />
         </div>
-
         <div class="social-media-wrapper">
-
             <div class="social-media">
                 <a href={item[0].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Facebook} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Facebook} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[1].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Twitter} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Twitter} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[2].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Youtube} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Youtube} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[3].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Instagram} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Instagram} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[4].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Telegram} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
+                        <img src={Telegram} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
             </div>
-
             <div class="social-media">
-
                 <a href={item[5].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Medium} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Medium} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[6].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Linkedin} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Linkedin} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[7].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Reddit} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Reddit} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[8].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Discord} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
-
+                        <img src={Discord} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
                 <a href={item[9].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Github} alt="Facebook-logo" id="social-link-logo"/>
-                    </div></a>
+                        <img src={Github} alt="Facebook-logo" id="social-link-logo" />
+                    </div>
+                </a>
             </div>
         </div>
     </div>
