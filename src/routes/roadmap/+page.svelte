@@ -1,6 +1,6 @@
 <script>
-    import Submarine from "$lib/components/roadmap/Submarine.svelte";
 import Roadmap from "$lib/components/roadmap/roadmap.svelte";
+import BlockchainCall from "$lib/components/roadmap/BlockchainCall.svelte";
 </script>
 
 <svelte:head>
@@ -10,5 +10,5 @@ import Roadmap from "$lib/components/roadmap/roadmap.svelte";
 
 <section>
     <Roadmap/>
-    <Submarine/>
+    <BlockchainCall/>
 </section>

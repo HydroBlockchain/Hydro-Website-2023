@@ -82,21 +82,6 @@
 	--chart-line: #fff;
 	--chart-axis: rgba(255, 255, 255, 0.457);
 	--chart-title: rgba(255, 255, 255, 0.551);
-	//submarine
-	--ocean-bg: rgba(33, 33, 36, 0.2);
-	--submarine-color: linear-gradient(90deg, #611dcf, #21628b);
-	--sea-ground-1: #002655f0;
-	--sea-ground-2: #16004ad2;
-	--propeller-1: #72178b;
-	--propeller-2: #93369f;
-	--tophatch-1: #9968ef;
-	--tophatch-2: #820ccb;
-	--tophatch-3: #752de9;
-	--shadow: #3d96c6;
-	--periscope: #ba8bf7;
-	--flashlight: #b9c7d1;
-	--window: #20233300;
-	--test: #489fe6;
 	//Blockchain Animation
 	//Large Block
 	--block: #00d9ff;
@@ -129,6 +114,16 @@
 	//Particles
 	--particles-1: #fff;
 	--particles-2: #48e6de;
+	//Roadmap animation
+	--pillar-1: #1fbcd3;
+	--pillar-2: #126d7a;
+	--pillar-3: #1894a7;
+	--pillar-4: #b4d9e2;
+	--pillar-5: #6a8cc6;
+	--pillar-6: #8f96d4;
+	--pillar-7: #b6c0f6;
+	--pillar-8: #655beb;
+	--pillar-9: #89b4f0;
 }
 
 //Light Mode
@@ -166,20 +161,7 @@
 	--chart-line: #fff;
 	--chart-axis: #fff;
 	--chart-title: #fff;
-	//submarine
-	--ocean-bg: rgba(205, 205, 205, 0.05);
-	--submarine-color: linear-gradient(90deg, #5fffff, #1246a7);
-	--sea-ground-1: #4960bcdc;
-	--sea-ground-2: #2f7dd6;
-	--propeller-1: #17518b;
-	--propeller-2: #5b73a0;
-	--tophatch-1: #5956ed;
-	--tophatch-2: #2e5a97;
-	--tophatch-3: #4252a6;
-	--shadow: #3a43e3;
-	--periscope: #ba8bf7;
-	--flashlight: #fafedb;
-	--window: #6cb2f4;
+	
 	//Blockchain Animation
 	//Large Block
 	--block: #3f73ff;
@@ -212,6 +194,16 @@
 	//Particles
 	--particles-1: #fff;
 	--particles-2: #48e6de;
+	//Roadmap animation
+	--pillar-1: #00ddff;
+	--pillar-2: #1999ac;
+	--pillar-3: #00a6c0;
+	--pillar-4: #7cd7ee;
+	--pillar-5: #356fd3;
+	--pillar-6: #4050dd;
+	--pillar-7: #7083ef;
+	--pillar-8: #2b20cd;
+	--pillar-9: #277aee;
 }
 
 html {

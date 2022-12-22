@@ -952,8 +952,8 @@ stroke-linejoin="round" stroke-miterlimit="10" x1="563" y1="555.5" x2="648.3" y2
 <g>
   <linearGradient id="SVGID_40_" gradientUnits="userSpaceOnUse" x1="2940.311" y1="-609.3386" x2="2953.176"
     y2="-601.2035" gradientTransform="matrix(-1 0 0 1 3563.1868 1126.7981)">
-    <stop offset="0" style="stop-color:var(--block-edge-s)" />
-    <stop offset="0.8387" style="stop-color:var(--block-edge-s);stop-opacity:0" />
+    <stop offset="0" style="stop-color:#FFFFFF" />
+    <stop offset="0.8387" style="stop-color:#FFFFFF;stop-opacity:0" />
   </linearGradient>
   <polygon fill="url(#SVGID_40_)" points="608.9,523.4 611.5,527.6 624.4,519.4 621.9,515.1 		" />
 </g>
