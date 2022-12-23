@@ -327,8 +327,8 @@ import { githubData } from "$lib/stores/store";
             width: 100%;
         }
 
-        .apple-button,
-        .playstore-button {
+        #aegir-button-play,
+        #aegir-button-play {
             margin-left: 0;
         }
     }
