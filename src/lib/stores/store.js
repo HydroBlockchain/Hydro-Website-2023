@@ -7,7 +7,10 @@ export const state = writable({
 //BSCSCAN 
 const contractAddress = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071'
 const kvsAddress = '0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646'
+//Production
 const apiKey = process.env.BSCSCAN_API_KEY;
+//Development
+// const apiKey = import.meta.env.BSCSCAN_API_KEY
 const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=` + `${contractAddress}` + `&address=${kvsAddress}` + `&tag=latest&apikey=${apiKey}`;
 
 export const stakedData = writable({

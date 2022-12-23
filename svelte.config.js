@@ -8,7 +8,7 @@ dotenv.config()
 const config = {
 	kit: {
 		adapter: adapter(),
-		alias: { $utils: resolve('./src/utils/'), $store: resolve('./src/store/') }
+		alias: { $utils: resolve('./src/utils/'), $store: resolve('./src/store/') },
 	},
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
