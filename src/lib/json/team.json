@@ -3,25 +3,22 @@
         "id": "0",
         "name": "Saurav Kumar",
         "title": "President",
-        "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "linkedin": "https://www.linkedin.com/in/saurav-kumar-77b60776/",
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     },
     {
         "id": "1",
         "name": "Carl Ulvinen",
         "title": "Vice President",
-        "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "linkedin": "https://www.linkedin.com/in/carl-ulvinen-5b654428",
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     },
     {
         "id": "2",
         "name": "Abhimanyu Bundela",
         "title": "Chief Gaming Officer",
-        "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "linkedin": "https://www.linkedin.com/in/abhimanyu-bundela-7a21a0114/",
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     }
     
 ]

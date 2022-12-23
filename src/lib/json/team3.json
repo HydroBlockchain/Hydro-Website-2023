@@ -3,32 +3,28 @@
         "id": "0",
         "name": "Sundar Mahalingam",
         "title": "3D-Artist",
-        "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "linkedin": "https://www.linkedin.com/in/sundar-mahalingam-b2362310/",
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     },
     {
         "id": "1",
         "name": "Jignesh Beladiya",
         "title": "Content Creator",
-        "twitter": "https://twitter.com",
-        "linkedin": "https://linkedin.com",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "linkedin": "https://www.linkedin.com/in/jigneshon",
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     },
     {
         "id": "2",
         "name": "Anochie Modestus",
         "title": "Community Manager",
-        "twitter": "https://twitter.com/uzobankz",
         "linkedin": "https://www.linkedin.com/in/anochie-modestus-26b75616a",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     },
     {
         "id": "3",
         "name": "Matas",
         "title": "Community",
-        "twitter": "https://twitter.com",
         "linkedin": "https://linkedin.com",
-        "img": "https://github.com/HydroBlockchain/Hydro-Brandkit-2023/blob/main/png/256px/drop/light-blue-square.png?raw=true"
+        "img": "https://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/main/profilepic.webp"
     }
 ]

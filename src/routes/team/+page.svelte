@@ -1,7 +1,5 @@
 <script>
-import twitter from "$lib/images/icons/twitter.svg";
 import linkedin from "$lib/images/icons/linkedin.svg";
-import profilePic from "$lib/images/profilepic.webp"
 import items from "$lib/json/team.json"
 import items2 from "$lib/json/team2.json"
 import items3 from "$lib/json/team3.json"
@@ -42,13 +40,11 @@ import Protocols from "$lib/components/tech/protocols.svelte";
         </div>
         {#each items as item (item.id)}
         <div class="team-card" id="card-background">
-            <img src={profilePic} alt="profile" id="profile-pic"/>
+            <img src={item.img} alt="profile" id="profile-pic"/>
             <div class="team-column">
                 <div class="team-name">{item.name}</div>
                 <div class="team-title">{item.title}</div>
                 <div class="team-info">
-                    <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
-                        <img src={twitter} alt="twitter" id="icon"/></a></div>
                     <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="linkedin" id="icon"/></a></div>
                 </div>
@@ -59,13 +55,11 @@ import Protocols from "$lib/components/tech/protocols.svelte";
     <div class="team-section" id="middle-one">
         {#each items2 as item (item.id)}
         <div class="team-card" id="card-background">
-            <img src={profilePic} alt="profile" id="profile-pic"/>
+            <img src={item.img} alt="profile" id="profile-pic"/>
             <div class="team-column">
                 <div class="team-name">{item.name}</div>
                 <div class="team-title">{item.title}</div>
                 <div class="team-info">
-                    <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
-                        <img src={twitter} alt="twitter" id="icon"/></a></div>
                     <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="linkedin" id="icon"/></a></div>
                 </div>
@@ -76,13 +70,11 @@ import Protocols from "$lib/components/tech/protocols.svelte";
     <div class="team-section" id="last-one">
         {#each items3 as item (item.id)}
         <div class="team-card" id="card-background">
-            <img src={profilePic} alt="profile" id="profile-pic"/>
+            <img src={item.img} alt="profile" id="profile-pic"/>
             <div class="team-column">
                 <div class="team-name">{item.name}</div>
                 <div class="team-title">{item.title}</div>
                 <div class="team-info">
-                    <div class="button-team"><a href="{item.twitter}" target="_blank" rel="noopener noreferrer">
-                        <img src={twitter} alt="twitter" id="icon"/></a></div>
                     <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="linkedin" id="icon"/></a></div>
                 </div>
