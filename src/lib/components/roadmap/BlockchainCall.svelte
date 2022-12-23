@@ -175,4 +175,35 @@
         transform: translate3d(-50%, -50%, 0) scaleX(1);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .full {
+    justify-content: center;
+}
+
+#cta {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    .full {
+    justify-content: center;
+}
+
+#cta {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 992px) {
+    .full {
+    justify-content: center;
+}
+
+#cta {
+    display: none;
+}
+
+}
 </style>

@@ -84,46 +84,49 @@
 	--chart-title: rgba(255, 255, 255, 0.551);
 	//Blockchain Animation
 	//Large Block
-	--block: #00d9ff;
-	--block-edge: #000;
-	--block-line: #000;
+	--block: #356cb5;
+	--block-edge: #68beff;
+	--block-line: #68beff;
 	//Small block
-	--block-s: #5538fb;
-	--block-line-s: rgb(0, 0, 0);
-	--block-edge-s: #000;
+	--block-s: #4568e5;
+	--block-line-s: rgb(106, 112, 175);
+	--block-edge-s: rgb(255, 255, 255);
 	//Mini Block
 	--block-xs: #0099e5;
-	--block-line-xs: #d106ff;
+	--block-line-xs: #06a4ff;
 	--block-edge-xs: #000;
 	--block-line-data: #fff;
-	--block-platform: #00ccff;
+	--block-platform: #224779;
 	//Node
-	--node: rgb(255, 255, 255);
+	--node: rgba(255, 255, 255, 0.955);
 	--node-middle: rgb(1, 53, 173);
 	--node-line: #000;
 	--block-drop: #00c8ff;
 	--block-drop-alt: #5e74ff;
 	--drop-shimmer: rgb(255, 255, 255);
 	//Background Blocks
-	--background-blocks: #7722ff69;
-	--background-blocks-alt: #00ddff;
+	--background-blocks: #2277ff69;
+	--background-blocks-alt: #ffffff;
 	--background-blocks-line: #5C6399;
 	//Shimmering Glow
-	--glow-1: #6cc9f4;
-	--glow-2: #fff;
+	--glow-1: #356cb5;
+	--glow-2: #00367c;
 	//Particles
-	--particles-1: #fff;
+	--particles-1: rgb(255, 255, 255);
 	--particles-2: #48e6de;
 	//Roadmap animation
-	--pillar-1: #1fbcd3;
-	--pillar-2: #126d7a;
-	--pillar-3: #1894a7;
-	--pillar-4: #b4d9e2;
-	--pillar-5: #6a8cc6;
-	--pillar-6: #8f96d4;
-	--pillar-7: #b6c0f6;
-	--pillar-8: #655beb;
-	--pillar-9: #89b4f0;
+	//First
+	--pillar-1: #28bfff;
+	--pillar-2: #006bb3;
+	--pillar-3: #0068f9;
+	//Second
+	--pillar-4: #0037ff;
+	--pillar-5: #00379c;
+	--pillar-6: #002975;
+	//Third
+	--pillar-7: #7a8eff;
+	--pillar-8: #4133ff;
+	--pillar-9: #35009e;
 }
 
 //Light Mode
@@ -164,45 +167,48 @@
 	//Blockchain Animation
 	//Large Block
 	--block: #3f73ff;
-	--block-edge: rgb(0, 10, 77);
-	--block-line: rgb(0, 10, 77);
+	--block-edge: #1841b0;
+	--block-line: #1841b0;
 	//Small block
-	--block-s: #00ffdd;
-	--block-line-s: rgb(8, 0, 94);
-	--block-edge-s: #000;
+	--block-s: #00bfff;
+	--block-line-s: rgb(0, 60, 255);
+	--block-edge-s: rgb(0, 60, 255);
 	//Mini Block
-	--block-xs: #bb00ff8c;
-	--block-line-xs: #06deff;
+	--block-xs: #005ebc;
+	--block-line-xs: #0640ff;
 	--block-edge-xs: #000;
 	--block-line-data: #fff;
-	--block-platform: #ffffff;
+	--block-platform: #c4e7ff;
 	//Node
-	--node: rgb(255, 255, 255);
-	--node-middle: rgb(78, 38, 255);
-	--node-line: rgb(8, 0, 94);
-	--block-drop: #002a84;
-	--block-drop-alt: #3e4eff;
+	--node: rgba(255, 255, 255, 0.745);
+	--node-middle: rgb(38, 114, 255);
+	--node-line: rgb(0, 60, 255);
+	--block-drop: #0900ae;
+	--block-drop-alt: #004cff;
 	--drop-shimmer: rgb(255, 255, 255);
 	//Background Blocks
-	--background-blocks: #5922ff97;
-	--background-blocks-alt: #04002b;
-	--background-blocks-line: #5C6399;
+	--background-blocks: #1840b04a;
+	--background-blocks-alt: #1840b0a3;
+	--background-blocks-line: #1840b0a7;
 	//Shimmering Glow
 	--glow-1: #3f73ff;
-	--glow-2: #fff;
+	--glow-2: #1841b0;
 	//Particles
-	--particles-1: #fff;
+	--particles-1: rgb(212, 168, 255);
 	--particles-2: #48e6de;
 	//Roadmap animation
-	--pillar-1: #00ddff;
-	--pillar-2: #1999ac;
-	--pillar-3: #00a6c0;
-	--pillar-4: #7cd7ee;
-	--pillar-5: #356fd3;
-	--pillar-6: #4050dd;
-	--pillar-7: #7083ef;
-	--pillar-8: #2b20cd;
-	--pillar-9: #277aee;
+	//First
+	--pillar-1: #006eff;
+	--pillar-2: #0049be;
+	--pillar-3: #0054ef;
+	//Second
+	--pillar-4: #5de9ff;
+	--pillar-5: #00d0ff;
+	--pillar-6: #00a4c8;
+	//Third
+	--pillar-7: #a19dff;
+	--pillar-8: #8894ff;
+	--pillar-9: #6675ff;
 }
 
 html {
