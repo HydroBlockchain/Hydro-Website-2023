@@ -1,7 +1,7 @@
 <script>
-// @ts-nocheck
-import { mediumData } from "$lib/stores/store";
-import Time from "svelte-time";
+    // @ts-nocheck
+    import { mediumData } from "$lib/stores/store";
+    import Time from "svelte-time";
 </script>
 
 <div class="three-quarter" id="card-background">
@@ -114,7 +114,6 @@ import Time from "svelte-time";
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-
         .three-quarter {
             height: auto;
             flex-direction: row;
@@ -138,8 +137,6 @@ import Time from "svelte-time";
             word-wrap: break-word;
             padding: 0.5rem;
         }
-
-
     }
 
     @media only screen and (max-width: 768px) {
@@ -160,6 +157,5 @@ import Time from "svelte-time";
             height: 50px;
             word-wrap: break-word;
         }
-
     }
 </style>

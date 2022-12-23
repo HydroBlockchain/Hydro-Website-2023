@@ -1,23 +1,23 @@
 <script>
-import { priceData, stakedData } from "$lib/stores/store";
-import HydroLogo from "$lib/images/logo/hydro-logo.svg"
+    import { priceData, stakedData } from "$lib/stores/store";
+    import HydroLogo from "$lib/images/logo/hydro-logo.svg"
 </script>
 <div class="one-quarter" id="card-background">
     <div class="hydro">
-    <div class="hydro-dashboard">
-        <div class="dashboard-slot-stats" id="card-background-alt">
-            <img src={HydroLogo} alt="hydro-logo" id="hydro-logo" />
-        </div>
-        <div class="dashboard-slot" id="card-background-alt">
-            <div class="price">Price</div>
-            <div class="currency">{$priceData.hydroPrice}
-                <div class="currency-class">USD</div>
+        <div class="hydro-dashboard">
+            <div class="dashboard-slot-stats" id="card-background-alt">
+                <img src={HydroLogo} alt="hydro-logo" id="hydro-logo" />
             </div>
-        </div>
-        <div class="dashboard-slot" id="card-background-alt">
-            <div class="price">Change 24/7</div>
-            <div class="procentage">
-                {#if $priceData.hydroChange > 0}
+            <div class="dashboard-slot" id="card-background-alt">
+                <div class="price">Price</div>
+                <div class="currency">{$priceData.hydroPrice}
+                    <div class="currency-class">USD</div>
+                </div>
+            </div>
+            <div class="dashboard-slot" id="card-background-alt">
+                <div class="price">Change 24/7</div>
+                <div class="procentage">
+                    {#if $priceData.hydroChange > 0}
                 <div class="green"> {$priceData.hydroChange} %</div>
                 {:else if 0 > $priceData.hydroChange}
                 <div class="red"> {$priceData.hydroChange} %</div>
