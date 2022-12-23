@@ -534,6 +534,11 @@ a:active {
 //Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
 
+	#to-the-top{
+        display: block !important;
+		margin-top: 1rem;
+    }
+
 	.app-wrapper {
 		max-width: 600px !important;
 		margin: 1rem !important;
@@ -601,6 +606,13 @@ a:active {
 
 //Medium devices (landscape tablets, up to 768px) 
 @media only screen and (max-width: 768px) {
+
+	#to-the-top{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+		margin-top: 1rem;
+    }
 
 	.app-wrapper {
 		max-width: 768px !important;
@@ -671,6 +683,13 @@ a:active {
 //Large devices (laptops/desktops, up to 992px) 
 @media only screen and (max-width: 992px) {
 
+	#to-the-top{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+		margin-top: 1rem;
+    }
+
 	.app-wrapper {
 		max-width: 992px !important;
 		margin: 1rem !important;
@@ -739,6 +758,13 @@ a:active {
 
 //Extra large devices (large laptops and desktops, up to 1400px) 
 @media only screen and (max-width: 1200px) {
+
+	#to-the-top{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+		margin-top: 1rem;
+    }
 
 	.app-wrapper {
 		max-width: 1200px !important;

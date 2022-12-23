@@ -16,7 +16,7 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 <footer>
     <div class="footer-container" id="card-background">
         <div class="logo">
-            <img src={hydroLogo} alt="hydro-drop" id="hydro-logo" />
+            <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo" /></a>
         </div>
         <div class="social-media-wrapper">
             <div class="social-media">

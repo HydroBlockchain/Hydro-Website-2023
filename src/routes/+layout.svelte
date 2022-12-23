@@ -12,6 +12,9 @@ import { initEth } from '$lib/stores/wallet-eth.ts';
 import { initPoly } from "$lib/stores/wallet-poly";
 import { initMovr } from "$lib/stores/wallet-movr";
 import { initCsc } from "$lib/stores/wallet-csc";
+//Scroll to top
+import upIcon from "$lib/images/icons/up.svg"
+import * as animateScroll from "svelte-scrollto";
 
 let ready
 onMount(() => {
@@ -55,10 +58,22 @@ $: {
             <slot />
         </main>
         <Footer />
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <!-- svelte-ignore a11y-missing-attribute -->
+        <a class="button" id="to-the-top" on:click={() => animateScroll.scrollToTop()}> 
+        <img src={upIcon} alt="up-icon" id="up-icon">
+        </a>
     </div>
 </div>
 
 <style>
+    #to-the-top{
+        display: none;
+    }
+    #up-icon{
+        width: 32px;
+        height: auto;
+    }
     .app {
         display: flex;
         flex-direction: column;

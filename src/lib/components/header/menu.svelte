@@ -36,7 +36,7 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
         </svg>
         <br>
         <br>
-        <img src={hydroLogo} alt="hydro-logo" id="hydro-logo"/>
+        <a href="/"><img src={hydroLogo} alt="hydro-logo" id="hydro-logo"/></a>
         <div class="navigation">
             <div class="hydro-dashboard">
                 <div class="dashboard-slot" id="card-background-alt">
