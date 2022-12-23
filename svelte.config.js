@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-netlify';
 import preprocess from 'svelte-preprocess';
 import { resolve } from 'path';
+import dotenv from "dotenv"
+dotenv.config() 
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,7 +14,8 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			scss: {prependData: `@import 'src/routes/styles.scss';`} 
+			scss: {prependData: `@import 'src/routes/styles.scss';`},
+			replace: [["process.env.BSCSCAN_API_KEY", process.env.BSCSCAN_API_KEY]] 
 		})
 	]
 };

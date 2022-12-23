@@ -4,7 +4,6 @@ import item from "$lib/json/landinglinks.json"
 import Coinex from "$lib/images/exchanges/coinex.svg"
 import Bithumb from "$lib/images/exchanges/bithumb.svg"
 import Mercatox from "$lib/images/exchanges/mercatox.svg"
-import Latoken from "$lib/images/exchanges/latoken.svg"
 import Buyucoin from "$lib/images/exchanges/buyucoin.svg"
 </script>
 <div class="half" id="card-background">
