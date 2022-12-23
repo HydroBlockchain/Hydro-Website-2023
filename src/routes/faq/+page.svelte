@@ -25,8 +25,9 @@
 
 <style>
     .container {
-        height: 100%;
+        height: auto;
         width: var(--cw-desktop);
         align-items: center;
+        margin-bottom: 0.5rem;
     }
 </style>

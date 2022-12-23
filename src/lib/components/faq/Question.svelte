@@ -49,6 +49,7 @@ export let current;
         color: var(--text-color);
         transition: height 0.5s ease-in-out;
         cursor: pointer;
+        
     }
 
     .title {
@@ -56,7 +57,7 @@ export let current;
         justify-content: center;
         align-items: center;
         height: 30px;
-        font-size: 16px;
+        font-size: 20px;
         cursor: pointer;
         padding-left: 1rem;
 
@@ -64,12 +65,11 @@ export let current;
 
     .body {
         display: flex;
-        width: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 14px !important;
-        margin-top: 3rem;
+        font-size: 16px !important;
+        margin-top: 2rem;
         display: none;
         padding-left: 1rem;
     }
@@ -117,6 +117,7 @@ export let current;
             display: none;
             font-size: 14px;
             width: 300px;
+            margin-top: 3rem;
             word-wrap: break-word;
         }
 
@@ -126,7 +127,7 @@ export let current;
             justify-content: center;
             align-items: center;
             margin: 0.5rem;
-            font-size: 10px !important;
+            font-size: 14px !important;
         }
 
         .question-container {

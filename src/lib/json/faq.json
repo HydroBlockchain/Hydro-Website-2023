@@ -2,7 +2,9 @@
     {
         "id": "0",
         "question": "What is the main purpose of project Hydro?",
-        "answer": "Project Hydro is web3, multi-chain decentralized ecosystem which uses cutting-edge cryptographic technology to secure user identities, accounts, and transactions. Hydro aims to decentralize financial services by bringing public blockchain technology to traditional private systems. It also allows developers around the world to boost their platforms and applications with this innovative technology. As web 3.0 is our coming future and semantic web has already been used, where data is arranged and kept in such a way that computers can easily decipher at a faster pace."
+        "answer": "Project Hydro is web3, multi-chain decentralized ecosystem which uses cutting-edge cryptographic technology to secure user identities, accounts, and transactions. The Hydro protocols are available to use on multiple networks. All of our protocols and dApps are powered by Hydro tokens. Hydro has a total supply of 111,111,111 which was elected by its community. The distribution between chains is handled by our bridge that swaps your tokens between chains. Once the swap from one chain to another is complete you are free to enjoy the benefits of your chosen network. All of the Hydro tokens that are consumed by a Smart Contract will evaporate, hence the supply will continously decrease over time. In this way Hydro aims to decentralize financial services by bringing public blockchain technology to traditional private systems. It also allows developers around the world to boost their platforms and applications with this innovative technology. As web 3.0 is our coming future and semantic web has already been used, where data is arranged and kept in such a way that computers can easily decipher at a faster pace.",
+        "link1": "/roadmap",
+        "linktitle1": "Check out our Roadmap"
     },
     {
         "id": "1",
@@ -36,42 +38,37 @@
     },
     {
         "id": "5",
-        "question": "How can Hydro benefit its users?",
-        "answer": "Creating a robust ecosystem with supply & demand dynamics and market forces. As the ecosystem grows, HYDRO tokens will be integral in: 1.Using dApps 2.Incentivising participation 3.Validating users. For instance, the only way to gain initial access to Keres Assets in the KeresVerse will be to stake your Hydro. The evaporation Function natively used in all Hydro smart contracts Consumes a small amount of Hydro which continuously decreases the supply."
-    },
-    {
-        "id": "6",
         "question": "How to swap Hydro between blockchains?",
         "answer": "You can swap Hydro tokens between Ethereum, Binance Smart Chain, Polygon, CoinEx Smart Chain & Moonriver using our own Hydro Bridge.",
         "link1": "https://hydro-bridge.org",
         "linktitle1": "Use the Hydro Bridge"
     },
     {
-        "id": "7",
+        "id": "6",
         "question": "How to stake Hydro and what are the rewards?",
         "answer": "Staking is available on the Hydro Swap release along with liquidity pools and the Droplet, The APR is Dynamic and depends on the number of stakers on the platform. Check out the Hydroswap to find out more!",
         "link1": "https://hydroswap.org/pools",
         "linktitle1": "Stake Hydroswap"
     },
     {
-        "id": "8",
+        "id": "7",
         "question": "Did Hydro have any ICO, or received any investment?",
         "answer": "No, Hydro started as an airdrop on Github, all users needed to comply with the tasks to be eligible for airdrop. Project Hydro never had any crowdfunding, Initial Coin Offering nor it received any private investment."
     },
     {
-        "id": "9",
+        "id": "8",
         "question": "How many percent of total supply does the Team hold?",
         "answer": "The total number of Hydro tokens that the team holds is around 9% of Total Supply."
     },
     {
-        "id": "10",
+        "id": "9",
         "question": "Where can i contact Project Hydro?",
         "answer": "You may send us an email at team@projecthydro.org",
         "link1": "mailto:team@projecthydro.org",
         "linktitle1": "Email us"
     },
     {
-        "id": "11",
+        "id": "10",
         "question": "How can i contribute to Project Hydro?",
         "answer": "We are always interested in collaborations and contributions to our Open Source Project. Contributions can be anything from Pull Requests on Github to donations. Here are some relevant links to discover. link list Donations address",
         "link1": "EthereumAddress",
@@ -82,3 +79,5 @@
         "linktitle3": "Bticoin"
     }
 ]
+
+        
