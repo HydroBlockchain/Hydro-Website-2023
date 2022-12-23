@@ -23,7 +23,7 @@ function handleClick() {
         <nav>
             <div class="wrapper">
                 <div class="nav-wrapper" id="card-background">
-                    <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo" /></a>
+                    <a data-sveltekit-preload-data="hover" href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo" /></a>
                     <svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <g>
                             <path fill="none" d="M0 0h24v24H0z" />
@@ -62,11 +62,6 @@ function handleClick() {
 
 #header-link-last {
     margin-right: 1rem;
-}
-
-#header-link:hover,
-#header-link-last:hover {
-    background-color: var(--button-hover);
 }
 
 #icon {

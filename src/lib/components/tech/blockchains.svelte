@@ -52,27 +52,27 @@ import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
         {/if}
     </div>
     <div class="add-button-column">
-            <div class="dashboard-slot">
+            <div class="network-slot">
                 {#if $addressEth && $onExpectedNetworkEth}
                 <AddHydroEth/>
                 {/if}
             </div>
-            <div class="dashboard-slot">
+            <div class="network-slot">
                 {#if $addressBsc && $onExpectedNetworkBsc}
                 <AddHydroBsc/>
                 {/if}
             </div>
-            <div class="dashboard-slot">
+            <div class="network-slot">
                 {#if $addressPoly && $onExpectedNetworkPoly}
                 <AddHydroPoly/>
                 {/if}
             </div>
-            <div class="dashboard-slot">
+            <div class="network-slot">
                 {#if $addressMovr && $onExpectedNetworkMovr}
                 <AddHydroMovr/>
                 {/if}
             </div>
-            <div class="dashboard-slot">
+            <div class="network-slot">
                 {#if $addressCsc && $onExpectedNetworkCsc}
                 <AddHydroCsc/>
                 {/if}

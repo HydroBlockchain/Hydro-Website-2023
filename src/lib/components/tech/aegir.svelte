@@ -29,8 +29,8 @@ import { githubData } from "$lib/stores/store";
                 Remember to back up your Mnemonic seed! Keep your assets safe with Aegir.
             </div>
         </div>
-        <a href="{$githubData.urlAegir}" id="github-link">
-            <div class="dashboard-slot" id="card-background-alt">
+        <a href="{$githubData.urlAegir}" >
+            <div class="dashboard-slot" id="card-background">
                 <div class="price">Latest Commit</div>
                 <div class="github-text" id="commit-message">{$githubData.commitMsgAegir}</div>
                 <div class="github-info-inner"><img src={$githubData.avatarAegir}
@@ -41,7 +41,7 @@ import { githubData } from "$lib/stores/store";
     <div class="hydro-dashboard" id="buttons-downloads">
         <div class="aegir-logo" id="card-background-alt">ÆGIR.</div>
         <a href="{item[9].link}" target="_blank" rel="noopener noreferrer">
-            <div class="playstore-button" id="aegir-button-play">
+            <div class="button" id="aegir-button-play">
                 <img src={playstoreLogo} alt="playstore" id="button-logo">
                 <div class="download-text">Get it on
                     <div class="download-text-inner">Google Play</div>
@@ -49,7 +49,7 @@ import { githubData } from "$lib/stores/store";
             </div>
         </a>
         <a href="{item[10].link}" target="_blank" rel="noopener noreferrer">
-            <div class="apple-button" id="aegir-button-ios">
+            <div class="button" id="aegir-button-ios">
                 <img src={appstoreLogo} alt="appstore" id="button-logo" />
                 <div class="download-text">Download on the
                     <div class="download-text-inner">Appstore</div>
@@ -197,8 +197,7 @@ import { githubData } from "$lib/stores/store";
         font-size: var(--fs-small);
     }
 
-    .apple-button,
-    .playstore-button {
+    .button {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -214,25 +213,12 @@ import { githubData } from "$lib/stores/store";
         margin-left: 1rem;
     }
 
-    .apple-button {
+    #aegir-button-ios {
         font-family: 'Open Sans', sans-serif;
     }
 
-    .apple-button:hover {
-        background-color: var(--button-hover);
-        opacity: 1 !important;
-    }
 
-    .playstore-button:hover {
-        background-color: var(--button-hover);
-        opacity: 1 !important;
-    }
-
-    a:hover {
-        opacity: 1 !important;
-    }
-
-    .playstore-button {
+    #aegir-button-play {
         font-family: 'Roboto', sans-serif;
     }
 

@@ -111,7 +111,7 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 
 .dashboard-slot {
     padding: 1rem;
-    width: 120px;
+    width: 100px !important;
     height: 50px;
     display: flex;
     align-items: center;

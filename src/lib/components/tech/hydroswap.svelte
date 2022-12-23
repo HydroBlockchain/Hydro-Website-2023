@@ -8,12 +8,12 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
         <div class="hydroswap">
             <div class="row">
                 <div class="hydro-dashboard">
-                    <div class="dashboard-slot" id="card-background-alt">
+                    <div class="hydroswap-slot" id="card-background-alt">
                         <div class="price">Price</div>
                         <div class="procentage">{$priceData.hydroPrice}</div>
                         <div class="currency">USD</div>
                     </div>
-                    <div class="dashboard-slot" id="card-background-alt">
+                    <div class="hydroswap-slot" id="card-background-alt">
                         <div class="price">Change 24/7</div>
                         <div class="procentage">
                             {#if $priceData.hydroChange > 0}
@@ -25,16 +25,16 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
                             {/if}
                         </div>
                     </div>
-                    <div class="dashboard-slot" id="card-background-alt">
+                    <div class="hydroswap-slot" id="card-background-alt">
                         <div class="price">Staked</div>
                         <div class="procentage">{$stakedData.hydroStaked}</div>
                         <div class="currency">HYDRO</div>
                     </div>
                 </div>
                 <div class="hydro-dashboard">
-                    <div class="dashboard-slot-alt-logo" id="card-background-alt">HYDROSWAP</div>
                     <a href="{$githubData.urlSwap}">
-                        <div class="dashboard-slot-alt" id="card-background-alt">
+                        <div class="hydroswap-slot-alt" id="card-background-alt">
+                            <div class="hydroswap-logo">HYDROSWAP</div>
                             <div class="price">Latest Commit</div>
                             <div class="github-text" id="commit-message">{$githubData.commitMsgSwap}</div>
                             <div class="github-info-inner"><img src={$githubData.avatarSwap} alt="github avatar">{$githubData.usernameSwap}</div>
@@ -52,276 +52,222 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
             </div>
         </div>
     </div>
-    <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko & Bscscan</a></div>
+    <div class="cg-credit"><a href="https://www.coingecko.com/" target="_blank" rel="noopener noreferrer">Data from Coingecko</a></div>
 </div>
 
 <style>
     .one-quarter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between !important;
-    }
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between !important;
+   }
 
-    .hydroswap {
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
-        width: 100%;
-    }
+   .hydroswap {
+   display: flex;
+   flex-direction: row;
+   margin-top: 2rem;
+   width: 100%;
+   }
 
-    .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+   .row {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   }
 
-    .hydro-dashboard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: var(--text-color);
-    }
+   .hydro-dashboard {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: var(--text-color);
+   }
 
-    .dashboard-slot {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 200px;
-        height: 45px;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
+   .hydroswap-slot {
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   padding: 1rem;
+   margin: 0.5rem;
+   }
 
-    .dashboard-slot-alt {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 200px;
-        height: 140px;
-        padding: 1rem;
-        margin: 0.5rem;
-    }
+   .hydroswap-slot-alt {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 200px;
+   height: 245px;
+   padding: 1rem;
+   margin: 0.5rem;
+   }
 
-    .dashboard-slot-alt-logo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 200px;
-        height: 45px;
-        padding: 1rem;
-        margin: 0.5rem;
-        font-size: 28px !important;
-        font-family: 'Montserrat', sans-serif;
-    }
+   .hydroswap-logo {
+   font-size: 28px !important;
+   font-family: 'Montserrat', sans-serif;
+   margin: 0.1rem;
+   }
 
-    .dashboard-slot-alt:hover {
-        background-color: var(--button-hover) !important;
-        opacity: 1 !important;
-    }
+   .hydroswap-slot-alt:hover {
+   background-color: var(--button-hover) !important;
+   opacity: 1 !important;
+   }
 
-    #commit-message {
-        font-size: 12px;
-        word-wrap: break-word;
-        justify-content: center;
-        align-items: center;
-    }
+   #commit-message {
+   font-size: 12px;
+   word-wrap: break-word;
+   justify-content: center;
+   align-items: center;
+   }
 
-    .github-info-inner {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-end;
-        justify-content: flex-end;
-        font-size: 10px;
-    }
+   .github-info-inner {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: flex-end;
+   justify-content: flex-end;
+   font-size: 10px;
+   }
 
-    .github-info-inner img {
-        width: 40px;
-        height: 40px;
-        border-radius: var(--border-radius);
-    }
+   .github-info-inner img {
+   width: 40px;
+   height: 40px;
+   border-radius: var(--border-radius);
+   }
 
-    .cg-credit {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 1rem;
-        margin-bottom: 0.5rem;
-        font-size: var(--fs-mini);
-    }
+   .currency {
+   display: flex;
+   justify-content: flex-end;
+   font-size: 9px;
+   color: var(--text-color-alt);
+   }
 
-    .cg-credit a {
-        color: var(--text-color-alt);
-    }
+   .one-quarter {
+   margin-right: 0px;
+   margin-left: 15px;
+   flex-direction: column;
+   justify-content: space-between;
+   }
 
-    .cg-credit a:hover {
-        color: var(--text-color);
-        cursor: pointer;
-    }
+   .hydroswap {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   }
 
-    .price {
-        display: flex;
-        justify-content: flex-start;
-        font-size: 9px;
-        color: var(--text-color-alt);
-    }
+   .button-row {
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   margin-top: 0;
+   }
 
-    .currency {
-        display: flex;
-        justify-content: flex-end;
-        font-size: 9px;
-        color: var(--text-color-alt);
-    }
+   .button:hover {
+   background-color: var(--button-hover);
+   opacity: 1 !important;
+   }
 
-    .procentage {
-        display: flex;
-        justify-content: flex-end;
-    }
+   #hydroswap-buttons {
+   width: 110px;
+   margin: 0.8rem;
+   }
 
-    .one-quarter {
-        margin-right: 0px;
-        margin-left: 15px;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+   /* Responsive */
+   @media only screen and (max-width: 1200px) {
 
-    .hydroswap {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+   .one-quarter {
+   height: auto;
+   margin-right: 0px;
+   margin-left: 0px;
+   }
 
-    .button-row {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 0;
-    }
+   .cg-credit {
+   margin-right: 3rem;
+   }
 
-    .button:hover {
-        background-color: var(--button-hover);
-        opacity: 1 !important;
-    }
+   }
 
-    #hydroswap-buttons {
-        width: 110px;
-        margin: 0.8rem;
-    }
+   @media only screen and (max-width: 992px) {
 
-    /* Responsive */
-    @media only screen and (max-width: 1200px) {
+   .hydroswap {
+   margin-top: 1rem;
+   }
 
-        .one-quarter {
-            height: auto;
-            margin-right: 0px;
-            margin-left: 0px;
-        }
+   .one-quarter {
+   height: auto;
+   margin-right: 0px;
+   margin-left: 0px;
+   }
 
-        .cg-credit {
-            margin-right: 3rem;
-        }
+   .cg-credit {
+   margin-right: 3rem;
+   }
 
-    }
+   }
 
-    @media only screen and (max-width: 992px) {
+   @media only screen and (max-width: 768px) {
 
-        .hydroswap {
-            margin-top: 1rem;
-        }
+   .one-quarter {
+   height: auto;
+   margin-right: 0px;
+   margin-left: 0px;
+   }
 
-        .one-quarter {
-            height: auto;
-            margin-right: 0px;
-            margin-left: 0px;
-        }
+   .cg-credit {
+   margin-right: 3rem;
+   }
 
-        .cg-credit {
-            margin-right: 3rem;
-        }
+   }
 
-    }
+   @media only screen and (max-width: 600px) {
 
-    @media only screen and (max-width: 768px) {
+   .one-quarter {
+   height: auto;
+   margin-right: 0px;
+   margin-left: 0px;
+   }
 
-        .one-quarter {
-            height: auto;
-            margin-right: 0px;
-            margin-left: 0px;
-        }
+   .row {
+   flex-direction: column-reverse !important;
+   }
 
-        .cg-credit {
-            margin-right: 3rem;
-        }
+   .hydroswap-slot {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 280px;
+   height: 45px;
+   padding: 1rem;
+   margin: 0.5rem;
+   }
 
-    }
+   .hydroswap-slot-alt {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 280px;
+   height: auto;
+   padding: 1rem;
+   margin: 0.5rem;
+   }
 
-    @media only screen and (max-width: 600px) {
+   .button-row {
+   margin-top: 1rem;
+   }
 
-        .one-quarter {
-            height: auto;
-            margin-right: 0px;
-            margin-left: 0px;
-        }
+   #hydroswap-buttons {
+   width: auto;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   margin: 0.2rem;
 
-        .row {
-            flex-direction: column-reverse !important;
-        }
+   }
 
-        .dashboard-slot {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 280px;
-            height: 45px;
-            padding: 1rem;
-            margin: 0.5rem;
-        }
+   .cg-credit {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   margin-right: 1rem;
+   }
 
-        .dashboard-slot-alt {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 280px;
-            height: 120px;
-            padding: 1rem;
-            margin: 0.5rem;
-        }
-
-        .dashboard-slot-alt-logo {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 280px;
-            height: 45px;
-            padding: 1rem;
-            margin: 0.5rem;
-            font-size: 28px !important;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .button-row {
-            margin-top: 1rem;
-        }
-
-        #hydroswap-buttons {
-            width: auto;
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-            margin: 0.2rem;
-
-        }
-
-        .cg-credit {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            margin-right: 1rem;
-        }
-
-    }
+   }
 </style>

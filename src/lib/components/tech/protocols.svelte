@@ -74,11 +74,6 @@
         font-size: 20px;
     }
 
-    .protocol-card:hover {
-        background-color: var(--button-hover) !important;
-        opacity: 1 !important;
-    }
-
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
 

@@ -61,215 +61,110 @@ import { priceData } from "$lib/stores/store";
 </div>
 <style>
     .one-quarter {
-        height: 25rem;
-        margin-right: 0;
-        margin-left: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    height: 25rem;
+    margin-right: 0;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }
 
     .dashboards {
-        display: flex;
-        flex-direction: row;
-        margin-top: 4rem;
-    }
-
-    .cg-credit {
-        display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 1rem;
-        margin-bottom: 0.5rem;
-        font-size: var(--fs-mini);
-    }
-
-    .cg-credit a {
-        color: var(--text-color-alt);
-    }
-
-    .cg-credit a:hover {
-        color: var(--text-color);
-        cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
     }
 
     .hydro-dashboard {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dashboard-slot {
-        margin: 0.5rem;
-        padding: 1rem;
-        width: 120px;
-        height: 45px;
-    }
-
-    .price,
-    .currency-class {
-        text-align: end;
-        font-size: 10px;
-        color: var(--text-color-alt);
-    }
-
-    .currency {
-        text-align: end;
-    }
-
-    .procentage {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 0.5rem;
+    flex-direction: column;
     }
 
     @media only screen and (max-width: 600px) {
 
-        .dashboards {
-            margin-top: 0rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+    .one-quarter {
+    height: auto;
+    margin-left: 0 !important;
+    }
 
-        .dashboard-slot {
-            width: auto !important;
-            height: 50px;
-        }
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
 
-        .one-quarter {
-            height: auto;
-            margin-left: 0 !important;
-        }
+    .hydro-dashboard {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
 
-        .hydro-dashboard {
-            flex-direction: column;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .dashboard-slot {
-            margin: 0.2rem !important;
-            padding: 1rem;
-            width: 130px;
-            height: 50px;
-        }
-
-        .currency-class,
-        .price {
-            font-size: 10px;
-        }
+    .dashboard-slot {
+    margin: 0.2rem !important;
+    width: 130px;
+    }
 
     }
 
     @media only screen and (max-width: 768px) {
 
-        .dashboard-slot {
-            width: auto !important;
-            height: 50px;
-        }
+    .one-quarter {
+    height: auto;
+    margin-left: 0 !important;
+    }
 
-        .one-quarter {
-            height: auto;
-            margin-left: 0 !important;
-        }
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
 
-        .hydro-dashboard {
-            flex-direction: column;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .dashboard-slot {
-            margin: 0.5rem;
-            padding: 1rem;
-            width: 130px;
-            height: 50px;
-        }
-
-        .currency-class,
-        .price {
-            font-size: 10px;
-        }
-
-        .dashboards {
-            margin-top: 0rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+    .hydro-dashboard {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
 
     }
 
     @media only screen and (max-width: 992px) {
 
-        .dashboard-slot {
-            width: auto !important;
-            height: 50px;
-        }
+    .one-quarter {
+    height: auto;
+    margin-left: 0 !important;
+    }
 
-        .one-quarter {
-            height: auto;
-            margin-left: 0 !important;
-        }
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
 
-        .hydro-dashboard {
-            flex-direction: column;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
+    .hydro-dashboard {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
 
-        .dashboard-slot {
-            margin: 0.5rem;
-            padding: 1rem;
-            width: 130px;
-            height: 50px;
-        }
-
-        .currency-class,
-        .price {
-            font-size: 10px;
-        }
-
-        .dashboards {
-            margin-top: 0rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
     }
 
     @media only screen and (max-width: 1200px) {
 
-        .dashboard-slot {
-            width: auto !important;
-            height: 50px;
-        }
+    .one-quarter {
+    height: auto;
+    margin-left: 0 !important;
+    }
 
-        .one-quarter {
-            height: auto;
-            margin-left: 0 !important;
-        }
+    .dashboards {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
 
-        .hydro-dashboard {
-            flex-direction: column;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .dashboard-slot {
-            margin: 0.5rem;
-            padding: 1rem;
-            width: 130px;
-            height: 50px;
-        }
-
-        .currency-class,
-        .price {
-            font-size: 10px;
-        }
-
-        .dashboards {
-            margin-top: 0rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+    .hydro-dashboard {
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
 
     }
 </style>
