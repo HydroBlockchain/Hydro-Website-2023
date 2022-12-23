@@ -52,6 +52,8 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ope
 :global(body.dark) {
 //Hydro Drop
 --drop-color: #192E46;
+--drop-color-2: #f8f8f8;
+
 //Text Colors
 --text-color: #ffffff;
 --text-color-alt: rgba(255, 255, 255, 0.50);
@@ -134,6 +136,7 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ope
 :global(body) {
 //Hydro Drop
 --drop-color: #f8f8f8;
+--drop-color-2: #192E46; 
 //Text Colors
 --text-color: #ffffff;
 --text-color-alt: rgba(255, 255, 255, 0.5);
