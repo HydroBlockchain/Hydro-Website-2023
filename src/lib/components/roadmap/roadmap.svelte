@@ -9,8 +9,8 @@
                     </div>
                     <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its
                         gameplay.<br>
-                        - Full Gameplay Beta
-                        - Public access with beta free key
+                        - Full Gameplay Beta <br>
+                        - Public access with free beta key <br>
                         - More info to follow</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
@@ -85,8 +85,8 @@
                     </div>
                     <div class="card-row" id="desc">Hydroswap performance and UI/UX upgrades with vital preparations for
                         the "NAME OF CHAIN" Testnet. <br>
-                        - Hydroswap transitions to Svelte.
-                        - UI/UX update to follow New Hydro Style.
+                        - Hydroswap transitions to Svelte. <br>
+                        - UI/UX update to follow New Hydro Style. <br>
                         - Hydroswap staking pools on "NAME OF CHAIN" Testnet.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">

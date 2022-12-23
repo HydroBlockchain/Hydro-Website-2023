@@ -6,13 +6,20 @@
     },
     {
         "id": "1",
+        "question": "Why does Hydro need its own blockchain?",
+        "answer": "The short answer is: To run Keresverse. We decided to build a blockchain that caters specifically to Keresverse in order to ensure its stability, features and performance remain superior even through the toughest of stresstests.",
+        "link1": "https://docs.keresverse.org",
+        "linktitle1": "Read more about Keresverse"
+    },
+    {
+        "id": "2",
         "question": "What is the Hydroswap?",
         "answer": "HydroSwap is not your typical decentralized exchange that the DeFi space comes across regularly. It has evolved to involve much more than that. It runs on the Binance Smart Chain to offer high scalability and better transactional experience by users. With this platform, users can seamlessly exchange their tokens/coins for other tokens/coins. They can also become liquidity providers for lucrative rewards. The use cases of HydroSwap continue to increase as newer versions are released into the market. To ensure that everyone, not minding their level of knowledge in the blockchain technology can enjoy the features that HydroSwap offers, the user interface was designed to improve user experience. It is easy to swap tokens without paying a hand and a leg to do that. With HydroSwap, users can easily trade their tokens, stake them and earn. For those that want to create liquidity pools, it is feasible.",
         "link1": "https://hydroswap.org",
         "linktitle1": "Visit Hydroswap"
     },
     {
-        "id": "2",
+        "id": "3",
         "question": "What is the Aegir wallet?",
         "answer": "Aegir (Ægir) Wallet is our Multi Coin wallet that supports for Bitcoin, Ethereum, Binance Smart Chain, ERC-20, BEP-20, ERC-721 & ERC1155. Aegir does not require any subscription nor it collects any personal information, and uses hydro protocols to provide transfers all over the world through progressive security. The user is further encouraged to strengthen security with Hydro ID, Biometric Security and local encryption of keys.",
         "link1": "https://apps.apple.com/us/app/aegir-wallet/id1598353170?ign-itscg=30200&ign-itsct=apps_box_link",
@@ -21,26 +28,26 @@
         "linktitle2": "Playstore"
     },
     {
-        "id": "3",
+        "id": "4",
         "question": "What is the Keresverse?",
         "answer": "Keresverse is an open world game containing for example a first person shooter game that will put players into two teams to compete against each other. The objective of that FPS game will be to eliminate the rest of the enemy team’s players in order to achieve victory and take home the prize in the form of blockchain assets in the Play to Earn model. Apart from that there will be multiple other areas of the KeresVerse such as a Casino, Marketplace, Lounge and more.",
         "link1": "https://keresverse.org",
         "linktitle1": "Visit Keresverse"
     },
     {
-        "id": "4",
+        "id": "5",
         "question": "How can Hydro benefit its users?",
         "answer": "Creating a robust ecosystem with supply & demand dynamics and market forces. As the ecosystem grows, HYDRO tokens will be integral in: 1.Using dApps 2.Incentivising participation 3.Validating users. For instance, the only way to gain initial access to Keres Assets in the KeresVerse will be to stake your Hydro. The evaporation Function natively used in all Hydro smart contracts Consumes a small amount of Hydro which continuously decreases the supply."
     },
     {
-        "id": "5",
+        "id": "6",
         "question": "How to swap Hydro between blockchains?",
         "answer": "You can swap Hydro tokens between Ethereum, Binance Smart Chain, Polygon, CoinEx Smart Chain & Moonriver using our own Hydro Bridge.",
         "link1": "https://hydro-bridge.org",
         "linktitle1": "Use the Hydro Bridge"
     },
     {
-        "id": "6",
+        "id": "7",
         "question": "How to stake Hydro and what are the rewards?",
         "answer": "Staking is available on the Hydro Swap release along with liquidity pools and the Droplet, The APR is Dynamic and depends on the number of stakers on the platform. Check out the Hydroswap to find out more!",
         "link1": "https://hydroswap.org/pools",

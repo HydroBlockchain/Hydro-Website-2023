@@ -15,13 +15,10 @@ import Buyucoin from "$lib/images/exchanges/buyucoin.svg"
         <a href="{item[5].link}" target="_blank" rel="noopener noreferrer">
             <img src={Bithumb} alt="Bithumb" id="exchange" />
         </a>
-        <a href="{item[6].link}" target="_blank" rel="noopener noreferrer">
-            <img src={Mercatox} alt="Mercatox" id="exchange" />
-        </a>
     </div>
     <div class="exchanges">
-        <a href="{item[7].link}" target="_blank" rel="noopener noreferrer">
-            <img src={Latoken} alt="Latoken" id="exchange" />
+        <a href="{item[6].link}" target="_blank" rel="noopener noreferrer">
+            <img src={Mercatox} alt="Mercatox" id="exchange" />
         </a>
         <a href="{item[8].link}" target="_blank" rel="noopener noreferrer">
             <img src={Buyucoin} alt="Buyucoin" id="exchange" />
