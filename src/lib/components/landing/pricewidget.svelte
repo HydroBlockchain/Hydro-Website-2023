@@ -3,6 +3,7 @@ import { priceData, stakedData } from "$lib/stores/store";
 import HydroLogo from "$lib/images/logo/hydro-logo.svg"
 </script>
 <div class="one-quarter" id="card-background">
+    <div class="hydro">
     <div class="hydro-dashboard">
         <div class="dashboard-slot-stats" id="card-background-alt">
             <img src={HydroLogo} alt="hydro-logo" id="hydro-logo" />
@@ -47,84 +48,155 @@ import HydroLogo from "$lib/images/logo/hydro-logo.svg"
         </div>
     </div>
 </div>
+</div>
 <style>
     .hydro-dashboard {
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
     }
 
     .dashboard-slot,
     .dashboard-slot-stats {
-        margin: 0.5rem;
-        padding: 1rem;
-        width: 120px;
-        height: 50px;
+    margin: 0.5rem;
+    padding: 1rem;
+    width: 120px;
+    height: 50px;
     }
 
     .dashboard-slot-stats {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     .price,
     .currency-class {
-        text-align: end;
-        font-size: 10px;
-        color: var(--text-color-alt);
+    text-align: end;
+    font-size: 10px;
+    color: var(--text-color-alt);
     }
 
     .currency {
-        text-align: end;
+    text-align: end;
     }
 
     .procentage {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
     }
 
     .one-quarter {
-        height: var(--ch-mini);
+    height: var(--ch-mini);
     }
 
     #hydro-logo {
-        height: 14px;
-        width: auto;
+    height: 14px;
+    width: auto;
     }
 
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
 
-        .dashboard-slot,
-        .dashboard-slot-stats {
-            width: auto !important;
-            height: 50px;
-        }
+    .hydro{
+        display: flex;
+        flex-direction: row ;
+    }
 
-        .one-quarter {
-            height: auto;
-            flex-direction: row;
-        }
+    .dashboard-slot,
+    .dashboard-slot-stats {
+    width: auto !important;
+    height: 50px;
+    }
 
-        .hydro-dashboard {
-            flex-direction: column;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
+    .one-quarter {
+    height: auto;
+    flex-direction: row !important;
+    }
 
-        .dashboard-slot,
-        .dashboard-slot-stats {
-            margin: 0.5rem;
-            padding: 1rem;
-            width: 130px;
-            height: 50px;
-        }
+    .hydro-dashboard {
+    flex-direction: column !important;
+    }
 
-        .currency-class,
-        .price {
-            font-size: 10px;
-        }
+    .dashboard-slot,
+    .dashboard-slot-stats {
+    margin: 0.5rem;
+    padding: 1rem;
+    height: 50px;
+    }
+
+    .currency-class,
+    .price {
+    font-size: 10px;
+    }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+
+    .hydro{
+        margin: 1rem;
+    }
+
+    .dashboard-slot,
+    .dashboard-slot-stats {
+    height: 50px;
+    }
+
+    .one-quarter {
+    height: auto;
+    flex-direction: column ;
+    }
+
+    .hydro-dashboard {
+    flex-direction: row ;
+    }
+
+    .dashboard-slot,
+    .dashboard-slot-stats {
+    margin: 0.5rem;
+    padding: 1rem;
+    height: 50px;
+    }
+
+    .currency-class,
+    .price {
+    font-size: 10px;
+    }
+
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        .hydro{
+        margin: 1rem;
+    }    
+
+    .dashboard-slot,
+    .dashboard-slot-stats {
+    height: 50px;
+    }
+
+    .one-quarter {
+    height: auto;
+    flex-direction: column ;
+    }
+
+    .hydro-dashboard {
+    flex-direction: row;
+    }
+
+    .dashboard-slot,
+    .dashboard-slot-stats {
+    margin: 0.5rem;
+    padding: 1rem;
+    height: 50px;
+    }
+
+    .currency-class,
+    .price {
+    font-size: 10px;
+    }
 
     }
 </style>

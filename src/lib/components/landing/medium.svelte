@@ -5,7 +5,7 @@ import Time from "svelte-time";
 </script>
 
 <div class="three-quarter" id="card-background">
-    <div class="blog-posts">
+    <div class="blog-posts" id="first-blog-post-column">
         <a id="blog-link" href="{$mediumData.mediumLinkOne}" target="_blank" rel="noopener noreferrer">
             <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
@@ -34,7 +34,7 @@ import Time from "svelte-time";
             </div>
         </a>
     </div>
-    <div class="blog-posts">
+    <div class="blog-posts" id="second-blog-post-column">
         <a id="blog-link" href="{$mediumData.mediumLinkFour}" target="_blank" rel="noopener noreferrer">
             <div class="blog-title" id="card-background-alt">
                 <div class="img-link">
@@ -124,12 +124,21 @@ import Time from "svelte-time";
             flex-direction: column;
         }
 
+        #first-blog-post-column {
+            margin-left: 1rem;
+        }
+
+        #second-blog-post-column {
+            margin-right: 1rem;
+        }
+
         .blog-title {
             width: auto !important;
             height: 60px !important;
             word-wrap: break-word;
             padding: 0.5rem;
         }
+
 
     }
 

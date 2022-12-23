@@ -2,8 +2,9 @@
 </script>
 <!-- Credit to http://codepen.io/nw/pen/EKdBKx -->
 <div class="full" id="card-background">
-    <div class="statement" id="cta">Explore the depths of Web3 with Hydro!
-        <a class="button" data-sveltekit-preload-data="hover" href="/tech">Explore Blockchain</a></div>
+    <div class="statement" id="cta">GameFi is at the core of the Hydro Ecosystem. <br>
+                                    Join us in the Keresverse where you can manifest your skills to earn.
+        <a class="button" data-sveltekit-preload-data="hover" href="/tech">Explore Web3 with us!</a></div>
     <div class="statement">
         <div class="container">
             <div class="holder"><div class="box" /></div>
@@ -37,7 +38,7 @@
 }
 
 .statement a {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .container {

@@ -7,11 +7,10 @@
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Public Beta <div id="q">Q1</div>
                     </div>
-                    <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.
-                        <br>
-                        The General public will be able to download and play the Keresverse Beta pending its full
-                        blockchain integration.
-                        More info will be released in an article regarding the Beta release.</div>
+                    <div class="card-row" id="desc">Keresverse is released as a public beta to evaluate its gameplay.<br>
+                        - Full Gameplay Beta
+                        - Public access with beta free key
+                        - More info to follow</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress1 progress-moved">
@@ -26,8 +25,10 @@
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Aegir Wallet Refresh<div id="q">Q2</div>
                     </div>
-                    <div class="card-row" id="desc">Aegir wallet gets an UI update and preparation work for the Hydro
-                        Testnet in Q4.</div>
+                    <div class="card-row" id="desc">Aegir wallet gets an UI and UX update to integrate the new Hydro Style! <br>
+                        - Updates in preparation for the Hydro Testnet in Q4 <br>
+                        - Integration of the Keres Diamond.                     
+                    </div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress2 progress-moved">
@@ -42,7 +43,9 @@
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Keresverse Website Beta<div id="q">Q2</div>
                     </div>
-                    <div class="card-row" id="desc">Keresverse Website live for beta testing.</div>
+                    <div class="card-row" id="desc">Keresverse Website live for beta testing. <br>
+                        - Main Web3 interface on testnet for evaluation. <br>
+                        - Keres Diamond on testnet for evaluation.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress3 progress-moved">
@@ -57,9 +60,11 @@
         <div class="roadmap">
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Keres Diamond<div id="q">Q2</div>
+                    <div class="card-row" id="what">Keres Diamond, The Keresian Protocol.<div id="q">Q2</div>
                     </div>
-                    <div class="card-row" id="desc">Keresverse transitions to public testnet launching the Keres Diamond
+                    <div class="card-row" id="desc">Deploy Keres Diamond on testnet for integration with Keresverse. <br>
+                        - Keresverse Assets on testnet. <br>
+                        - Keres Voucher redeem contract on testnet.
                     </div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
@@ -75,8 +80,10 @@
                 <div class="half-card-structure">
                     <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div>
                     </div>
-                    <div class="card-row" id="desc">Hydroswap gets a ui revamp and preparation work for the hydro
-                        testnet.</div>
+                    <div class="card-row" id="desc">Hydroswap performance and UI/UX upgrades with vital preparations for the "NAME OF CHAIN" Testnet. <br>
+                        - Hydroswap transitions to Svelte.
+                        - UI/UX update to follow New Hydro Style.
+                        - Hydroswap staking pools on "NAME OF CHAIN" Testnet.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress5 progress-moved">
@@ -89,9 +96,12 @@
             </div>
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Hydro Testnet<div id="q">Q4</div>
+                    <div class="card-row" id="what">Hydro "NAME OF CHAIN" Testnet<div id="q">Q4</div>
                     </div>
-                    <div class="card-row" id="desc">Hydro Testnet launches in preparation for Hydros own Blockchain.
+                    <div class="card-row" id="desc">Genesis block of "NAME OF CHAIN", the blockchain powered by Hydro. <br>
+                        - "NAME OF CHAIN" Testnet Genesis block. <br>
+                        - The first Hydro Testnet Coins are mined. <br>
+                        - Hydroswap on "NAME OF CHAIN" Testnet. 
                     </div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">

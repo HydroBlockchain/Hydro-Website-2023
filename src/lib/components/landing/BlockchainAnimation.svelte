@@ -4,7 +4,7 @@
 <div class="full" id="card-background">
   <div class="statement">
     Discover the depths of Web3 & GameFi with Hydro! <br />
-    <a class="button" data-sveltekit-preload-data="hover" href="/tech">Explore Blockchain</a>
+    <a class="button" data-sveltekit-preload-data="hover" href="/roadmap">Explore our Roadmap</a>
   </div>
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
