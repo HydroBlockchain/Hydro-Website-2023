@@ -46,7 +46,10 @@ import Protocols from "$lib/components/tech/protocols.svelte";
                 <div class="team-title">{item.title}</div>
                 <div class="team-info">
                     <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedin} alt="linkedin" id="icon"/></a></div>
+                        <svg id="icon" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.976 9.64H1.94a.485.485 0 0 0-.485.484v19.391c0 .268.217.485.485.485h6.036a.485.485 0 0 0 .485-.485v-19.39a.485.485 0 0 0-.485-.485zM4.96 0A3.985 3.985 0 0 0 .978 3.979a3.986 3.986 0 0 0 3.982 3.98 3.984 3.984 0 0 0 3.98-3.98A3.984 3.984 0 0 0 4.96 0zM23.33 9.158c-2.424 0-4.216 1.042-5.303 2.226v-1.26a.485.485 0 0 0-.485-.484h-5.78a.485.485 0 0 0-.486.484v19.391c0 .268.217.485.485.485h6.023a.485.485 0 0 0 .485-.485v-9.594c0-3.233.878-4.492 3.132-4.492 2.454 0 2.649 2.019 2.649 4.658v9.428c0 .268.217.485.485.485h6.025a.485.485 0 0 0 .485-.485V18.88c0-4.807-.917-9.721-7.715-9.721z"
+                                fill="var(--svg-color)" /></svg></a></div>
                 </div>
             </div>
         </div>
@@ -61,7 +64,10 @@ import Protocols from "$lib/components/tech/protocols.svelte";
                 <div class="team-title">{item.title}</div>
                 <div class="team-info">
                     <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedin} alt="linkedin" id="icon"/></a></div>
+                        <svg id="icon" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.976 9.64H1.94a.485.485 0 0 0-.485.484v19.391c0 .268.217.485.485.485h6.036a.485.485 0 0 0 .485-.485v-19.39a.485.485 0 0 0-.485-.485zM4.96 0A3.985 3.985 0 0 0 .978 3.979a3.986 3.986 0 0 0 3.982 3.98 3.984 3.984 0 0 0 3.98-3.98A3.984 3.984 0 0 0 4.96 0zM23.33 9.158c-2.424 0-4.216 1.042-5.303 2.226v-1.26a.485.485 0 0 0-.485-.484h-5.78a.485.485 0 0 0-.486.484v19.391c0 .268.217.485.485.485h6.023a.485.485 0 0 0 .485-.485v-9.594c0-3.233.878-4.492 3.132-4.492 2.454 0 2.649 2.019 2.649 4.658v9.428c0 .268.217.485.485.485h6.025a.485.485 0 0 0 .485-.485V18.88c0-4.807-.917-9.721-7.715-9.721z"
+                                fill="var(--svg-color)" /></svg></a></div>
                 </div>
             </div>
         </div>
@@ -76,7 +82,10 @@ import Protocols from "$lib/components/tech/protocols.svelte";
                 <div class="team-title">{item.title}</div>
                 <div class="team-info">
                     <div class="button-team"><a href="{item.linkedin}" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedin} alt="linkedin" id="icon"/></a></div>
+                        <svg id="icon" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.976 9.64H1.94a.485.485 0 0 0-.485.484v19.391c0 .268.217.485.485.485h6.036a.485.485 0 0 0 .485-.485v-19.39a.485.485 0 0 0-.485-.485zM4.96 0A3.985 3.985 0 0 0 .978 3.979a3.986 3.986 0 0 0 3.982 3.98 3.984 3.984 0 0 0 3.98-3.98A3.984 3.984 0 0 0 4.96 0zM23.33 9.158c-2.424 0-4.216 1.042-5.303 2.226v-1.26a.485.485 0 0 0-.485-.484h-5.78a.485.485 0 0 0-.486.484v19.391c0 .268.217.485.485.485h6.023a.485.485 0 0 0 .485-.485v-9.594c0-3.233.878-4.492 3.132-4.492 2.454 0 2.649 2.019 2.649 4.658v9.428c0 .268.217.485.485.485h6.025a.485.485 0 0 0 .485-.485V18.88c0-4.807-.917-9.721-7.715-9.721z"
+                                fill="var(--svg-color)" /></svg></a></div>
                 </div>
             </div>
         </div>

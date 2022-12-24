@@ -1,75 +1,128 @@
 <script>
-import item from "$lib/json/sociallinks.json"
-import Facebook from "$lib/images/icons/facebook.svg"
-import Twitter from "$lib/images/icons/twitter.svg"
-import Youtube from "$lib/images/icons/youtube.svg"
-import Instagram from "$lib/images/icons/instagram.svg"
-import Telegram from "$lib/images/icons/telegram.svg"
-import Medium from "$lib/images/icons/medium.svg"
-import Linkedin from "$lib/images/icons/linkedin.svg"
-import Reddit from "$lib/images/icons/reddit.svg"
-import Discord from "$lib/images/icons/discord.svg"
-import Github from "$lib/images/icons/github.svg"
-import hydroLogo from "$lib/images/logo/hydro-logo.svg";
+    import item from "$lib/json/sociallinks.json"
 </script>
 
 <footer>
     <div class="footer-container" id="card-background">
         <div class="logo">
-            <a href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo" /></a>
+            <a href="/"><svg id="hydro-logo" fill="none" viewBox="0 0 2561 490" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <filter id="a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="690"
+                        width="2211.86" x="-100" y="-100">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="50" />
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_47_473" />
+                        <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_47_473" mode="normal" result="shape" />
+                    </filter>
+                    <filter id="b" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="690"
+                        width="690" x="1970.26" y="-100">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="50" />
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_47_473" />
+                        <feBlend in="SourceGraphic" in2="effect1_backgroundBlur_47_473" mode="normal" result="shape" />
+                    </filter>
+                    <g fill="var(--svg-color)" filter="url(#a)">
+                        <path
+                            d="m344.4 20c0-11.0457 8.954-20 20-20h51c11.046 0 20 8.9543 20 20v450c0 11.046-8.954 20-20 20h-51c-11.046 0-20-8.954-20-20zm-253.4 450c0 11.046-8.9543 20-20 20h-51c-11.0457 0-20-8.954-20-20v-450c0-11.0457 8.95431-20 20-20h51c11.0457 0 20 8.9543 20 20zm260.4-210c0 11.046-8.954 20-20 20h-228.1c-11.0457 0-20-8.954-20-20v-37.7c0-11.046 8.9543-20 20-20h228.1c11.046 0 20 8.954 20 20z" />
+                        <path
+                            d="m707.099 490c-11.045 0-20-8.954-20-20v-152.534c0-4.202 5.85-5.23 7.282-1.279 1.546 4.264-4.394 7.102-6.741 3.22l-174.701-289.0621c-8.056-13.3293 1.542-30.3449 17.117-30.3449h50.543c7.013 0 13.513 3.67253 17.132 9.679l150.91 250.486c6.18 10.259-1.208 23.335-13.184 23.335-12.001 0-19.386-13.125-13.155-23.382l152.156-250.50085c3.627-5.97133 10.107-9.61715 17.093-9.61715h42.892c15.574 0 25.172 17.0156 17.117 30.3449l-173.99 287.8831c-2.306 3.817-8.14.99-6.574-3.185 1.434-3.824 7.103-2.796 7.103 1.288v153.669c0 11.046-8.954 20-20 20z" />
+                        <path
+                            d="m1043.34 490c-11.05 0-20-8.954-20-20v-450c0-11.0457 8.95-20 20-20h194.2c53.2 0 99.87 10.2667 140 30.8s71.4 49 93.8 85.4 33.6 79.333 33.6 128.8c0 49-11.2 91.933-33.6 128.8-22.4 36.4-53.67 64.867-93.8 85.4s-86.8 30.8-140 30.8zm71-97c0 11.046 8.95 20 20 20h99c36.87 0 68.6-7 95.2-21 27.07-14 47.83-33.6 62.3-58.8 14.93-25.2 22.4-54.6 22.4-88.2 0-34.067-7.47-63.467-22.4-88.2-14.47-25.2-35.23-44.8-62.3-58.8-26.6-14-58.33-21-95.2-21h-99c-11.05 0-20 8.9543-20 20z" />
+                        <path
+                            d="m1621.66 490c-11.05 0-20-8.954-20-20v-450c0-11.0457 8.95-20 20-20h181.6c43.4 0 80.5 7.00001 111.3 21 31.27 14 55.3 34.0667 72.1 60.2 16.8 26.133 25.2 57.167 25.2 93.1s-8.4 66.967-25.2 93.1c-16.8 25.667-40.83 45.5-72.1 59.5-30.8 13.533-67.9 20.3-111.3 20.3h-122.59c-10.64 0-16.01-12.816-8.56-20.4 7.53-7.655 20.55-2.327 20.55 8.407v134.793c0 11.046-8.95 20-20 20zm311.04 0c-6.54 0-12.67-3.199-16.41-8.565l-96.02-137.8c-9.24-13.26.24-31.435 16.4-31.435h48.58c6.53 0 12.64 3.181 16.38 8.522l96.57 137.8c9.29 13.255-.19 31.478-16.38 31.478zm-240.04-205.415c0 11.143-13.64 16.53-21.26 8.393-7.34-7.85-1.77-20.678 8.98-20.678h118.68c40.13 0 70.23-8.633 90.3-25.9 20.53-17.267 30.8-41.3 30.8-72.1 0-31.267-10.27-55.3-30.8-72.1-20.07-16.8-50.17-25.2-90.3-25.2h-118.87c-10.82 0-16.5-12.829-9.24-20.8439 7.66-8.4529 21.71-3.0337 21.71 8.3739z" />
+                    </g>
+                    <g filter="url(#b)">
+                        <path
+                            d="m2315.26 490c-48.46 0-95.83-14.369-136.12-41.29s-71.69-65.185-90.23-109.953c-18.55-44.767-23.4-94.029-13.94-141.554 9.45-47.525 32.78-91.18 67.05-125.4441 34.26-34.2638 77.92-57.5978 125.44-67.05118 47.53-9.45338 96.79-4.601564 141.56 13.94188 44.76 18.5435 83.03 49.9457 109.95 90.2354 26.92 40.29 41.29 87.659 41.29 136.115 0 64.978-25.81 127.295-71.76 173.241-45.95 45.947-108.26 71.759-173.24 71.759zm0-85.221c67.66 0 122.5-57.487 122.5-128.419 0-39.67-28.75-93.4-86.24-161.19-7.33-8.69-19.42-22.2528-36.26-40.6899-17.73 19.404-30.44 33.6659-38.12 42.7869-56.26 66.862-84.38 119.893-84.38 159.093 0 70.932 54.84 128.419 122.5 128.419z"
+                            fill="var(--svg-color)" />
+                    </g>
+                </svg></a>
         </div>
         <div class="social-media-wrapper">
             <div class="social-media">
                 <a href={item[0].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Facebook} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M.516 17.043h3.508v14.44c0 .286.23.517.516.517h5.947a.516.516 0 0 0 .517-.516V17.11h4.032a.516.516 0 0 0 .513-.457l.612-5.316a.516.516 0 0 0-.513-.575h-4.644V7.43c0-1.005.54-1.514 1.608-1.514h3.037a.516.516 0 0 0 .516-.516V.52a.516.516 0 0 0-.516-.516h-4.186A4.1 4.1 0 0 0 11.272 0c-.727 0-3.25.143-5.245 1.977C3.818 4.01 4.125 6.443 4.198 6.865v3.897H.517A.516.516 0 0 0 0 11.28v5.248c0 .285.231.516.516.516z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[1].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Twitter} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 38 30"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M37.698 3.574a15.408 15.408 0 0 1-4.343 1.19A7.616 7.616 0 0 0 36.683.578a15.782 15.782 0 0 1-4.812 1.82A7.539 7.539 0 0 0 26.35 0c-4.181 0-7.57 3.388-7.57 7.563 0 .6.072 1.177.198 1.724-6.29-.294-11.865-3.316-15.594-7.881a7.449 7.449 0 0 0-1.028 3.81A7.56 7.56 0 0 0 5.72 11.51a7.519 7.519 0 0 1-3.423-.942v.09a7.574 7.574 0 0 0 6.066 7.425 7.792 7.792 0 0 1-1.988.264c-.486 0-.95-.047-1.412-.133a7.602 7.602 0 0 0 7.082 5.257 15.189 15.189 0 0 1-9.383 3.23c-.6 0-1.2-.029-1.803-.101A21.518 21.518 0 0 0 12.485 30c13.918 0 21.523-11.528 21.523-21.512 0-.318 0-.643-.024-.968a15.146 15.146 0 0 0 3.784-3.917l-.07-.029z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[2].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Youtube} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.01 2.575C39.473.746 36.63 0 31.206 0H11.51C5.96 0 3.072.794 1.54 2.742.044 4.64.044 7.438.044 11.31v7.38C.044 26.191 1.817 30 11.51 30h19.695c4.705 0 7.313-.658 9-2.273 1.729-1.655 2.467-4.358 2.467-9.037v-7.38c0-4.083-.116-6.897-1.661-8.735zM27.412 16.02l-8.943 4.674a1.372 1.372 0 0 1-1.35-.042 1.375 1.375 0 0 1-.662-1.177v-9.318a1.375 1.375 0 0 1 2.009-1.22l8.943 4.644a1.375 1.375 0 0 1 .003 2.439z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[3].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Instagram} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.963 7.757a8.204 8.204 0 1 0 0 16.408 8.204 8.204 0 0 0 0-16.408zm0 13.532a5.33 5.33 0 1 1 0-10.66 5.33 5.33 0 0 1 0 10.66zM24.49 9.368a1.913 1.913 0 1 0 0-3.825 1.913 1.913 0 0 0 0 3.825z"
+                                fill="var(--svg-color)" />
+                            <path
+                                d="M31.104 5.51A8.17 8.17 0 0 0 26.433.842a11.72 11.72 0 0 0-3.879-.745C20.845.02 20.304 0 15.972 0c-4.333 0-4.888 0-6.583.096A11.628 11.628 0 0 0 5.514.84a8.161 8.161 0 0 0-4.671 4.67 11.683 11.683 0 0 0-.744 3.878C.023 11.096 0 11.637 0 15.972c0 4.332 0 4.884.1 6.582.026 1.327.276 2.637.743 3.88a8.18 8.18 0 0 0 4.673 4.67c1.237.485 2.549.755 3.877.798 1.708.075 2.25.098 6.582.098 4.333 0 4.888 0 6.583-.098a11.734 11.734 0 0 0 3.878-.743 8.184 8.184 0 0 0 4.672-4.671c.466-1.242.716-2.552.743-3.879.076-1.707.1-2.248.1-6.582 0-4.335 0-4.885-.1-6.583a11.677 11.677 0 0 0-.747-3.933zm-2.161 16.913a8.947 8.947 0 0 1-.552 2.995 5.297 5.297 0 0 1-3.037 3.035 8.845 8.845 0 0 1-2.963.552c-1.686.078-2.161.098-6.483.098-4.326 0-4.768 0-6.485-.098a8.8 8.8 0 0 1-2.961-.552 5.297 5.297 0 0 1-3.05-3.035 9.013 9.013 0 0 1-.552-2.962c-.076-1.685-.094-2.16-.094-6.483 0-4.323 0-4.765.094-6.484a8.939 8.939 0 0 1 .552-2.994 5.298 5.298 0 0 1 3.05-3.037 8.889 8.889 0 0 1 2.96-.552c1.688-.076 2.162-.097 6.486-.097s4.767 0 6.483.097a8.8 8.8 0 0 1 2.963.552 5.307 5.307 0 0 1 3.037 3.037c.349.95.536 1.95.552 2.962.076 1.687.096 2.16.096 6.484 0 4.322 0 4.787-.077 6.483h-.019v-.001z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[4].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Telegram} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M35.876 2.73l-5.399 25.46c-.407 1.796-1.47 2.243-2.978 1.397l-8.226-6.062-3.969 3.818c-.44.44-.806.806-1.653.806l.591-8.376L29.487 5.998c.663-.59-.144-.92-1.03-.328L9.611 17.538l-8.114-2.54c-1.764-.55-1.796-1.765.368-2.612L33.6.16c1.47-.551 2.755.327 2.276 2.572V2.73z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
             </div>
             <div class="social-media">
                 <a href={item[5].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Medium} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 38 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.807 6.12a1.47 1.47 0 0 0-.473-1.234L.832.636V0h10.871l8.404 18.572L27.494 0H37.86v.636l-2.994 2.889a.884.884 0 0 0-.332.847v21.252a.884.884 0 0 0 .332.847l2.925 2.892V30H23.084v-.636l3.029-2.962c.298-.3.298-.388.298-.846V8.377L17.988 29.93h-1.136L7.046 8.377v14.446c-.081.607.12 1.218.543 1.657l3.94 4.815v.634H.359v-.634l3.938-4.815a1.931 1.931 0 0 0 .51-1.657V6.12z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[6].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Linkedin} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.976 9.64H1.94a.485.485 0 0 0-.485.484v19.391c0 .268.217.485.485.485h6.036a.485.485 0 0 0 .485-.485v-19.39a.485.485 0 0 0-.485-.485zM4.96 0A3.985 3.985 0 0 0 .978 3.979a3.986 3.986 0 0 0 3.982 3.98 3.984 3.984 0 0 0 3.98-3.98A3.984 3.984 0 0 0 4.96 0zM23.33 9.158c-2.424 0-4.216 1.042-5.303 2.226v-1.26a.485.485 0 0 0-.485-.484h-5.78a.485.485 0 0 0-.486.484v19.391c0 .268.217.485.485.485h6.023a.485.485 0 0 0 .485-.485v-9.594c0-3.233.878-4.492 3.132-4.492 2.454 0 2.649 2.019 2.649 4.658v9.428c0 .268.217.485.485.485h6.025a.485.485 0 0 0 .485-.485V18.88c0-4.807-.917-9.721-7.715-9.721z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[7].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Reddit} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" fill="none" viewBox="0 0 31 30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.237 9.769l.938-4.42a2.499 2.499 0 0 1 2.967-1.925l3.995.85a2.5 2.5 0 1 1-.52 2.445l-3.995-.85-.833 3.919c2.23.17 4.446.912 6.454 2.124a3.989 3.989 0 0 1 5.926 3.342v.026a3.99 3.99 0 0 1-1.509 3.188 3.767 3.767 0 0 1-.01.153c0 4.998-5.562 8.788-12.248 8.788-6.665 0-12.135-3.78-12.132-8.691a6.639 6.639 0 0 1-.012-.227 3.99 3.99 0 0 1 4.317-6.687 14.308 14.308 0 0 1 6.662-2.035zm11.607 6.907c.51-.253.83-.775.826-1.343a1.49 1.49 0 0 0-2.52-1.008l-.73.7-.838-.569c-2.02-1.372-4.315-2.156-6.538-2.205h-1.257c-2.344.037-4.564.75-6.547 2.094l-.828.563-.73-.688a1.491 1.491 0 0 0-2.455 1.489 1.49 1.49 0 0 0 .812.951l.791.363-.067.868c-.016.213-.016.424.004.73 0 3.388 4.195 6.288 9.635 6.288 5.463 0 9.748-2.92 9.752-6.383a4.13 4.13 0 0 0 0-.635l-.065-.84zm-16.735.199a1.875 1.875 0 1 1 3.75 0 1.875 1.875 0 0 1-3.75 0zm8.75 0a1.875 1.875 0 1 1 3.75 0 1.875 1.875 0 0 1-3.75 0zm-2.48 6.379c-1.746 0-3.459-.463-4.852-1.513a.53.53 0 0 1 .746-.746c1.181.866 2.654 1.238 4.086 1.238 1.433 0 2.913-.344 4.105-1.2a.549.549 0 0 1 .915.258.586.586 0 0 1-.149.529c-.855.996-3.105 1.434-4.85 1.434z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[8].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Discord} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33.32 2.487A32.457 32.457 0 0 0 25.307.002a.121.121 0 0 0-.13.06 22.87 22.87 0 0 0-.996 2.05 29.961 29.961 0 0 0-8.999 0 20.71 20.71 0 0 0-1.012-2.05.126.126 0 0 0-.13-.06 32.366 32.366 0 0 0-8.01 2.485.115.115 0 0 0-.053.044C.875 10.155-.524 17.591.163 24.933a.135.135 0 0 0 .051.093 32.637 32.637 0 0 0 9.828 4.969.128.128 0 0 0 .138-.046 23.093 23.093 0 0 0 2.01-3.27.125.125 0 0 0-.067-.174 21.498 21.498 0 0 1-3.07-1.463.127.127 0 0 1-.051-.162.127.127 0 0 1 .038-.048c.207-.154.41-.314.61-.478a.121.121 0 0 1 .126-.017c6.442 2.94 13.415 2.94 19.781 0a.121.121 0 0 1 .128.017c.197.16.404.324.612.478a.126.126 0 0 1-.01.209 20.165 20.165 0 0 1-3.072 1.462.127.127 0 0 0-.067.176 26.205 26.205 0 0 0 2.01 3.268.125.125 0 0 0 .137.046 32.533 32.533 0 0 0 9.843-4.969.125.125 0 0 0 .052-.088c.82-8.49-1.374-15.865-5.82-22.402a.1.1 0 0 0-.05-.049v.002zM13.152 20.46c-1.94 0-3.537-1.779-3.537-3.967 0-2.186 1.568-3.967 3.537-3.967 1.984 0 3.568 1.798 3.537 3.969 0 2.186-1.567 3.965-3.537 3.965zm13.079 0c-1.94 0-3.538-1.779-3.538-3.967 0-2.186 1.566-3.967 3.538-3.967 1.984 0 3.568 1.798 3.537 3.969 0 2.186-1.551 3.965-3.537 3.965z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
                 <a href={item[9].link} target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <img src={Github} alt="Facebook-logo" id="social-link-logo" />
+                        <svg id="social-link-logo" fill="none" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M256 131.206c0 28.587-8.139 54.299-24.417 77.134-16.277 22.836-37.305 38.639-63.083 47.409-3 .569-5.194.171-6.583-1.196s-2.084-3.075-2.084-5.125V213.38c0-11.047-2.889-19.134-8.666-24.259 6.333-.684 12.027-1.709 17.083-3.075 5.056-1.367 10.278-3.588 15.667-6.663s9.889-6.862 13.5-11.361 6.555-10.478 8.833-17.938 3.417-16.031 3.417-25.712c0-13.781-4.389-25.512-13.167-35.193 4.111-10.364 3.667-21.982-1.333-34.852-3.111-1.025-7.611-.398-13.5 1.88-5.889 2.277-11 4.783-15.334 7.517l-6.333 4.1c-10.333-2.961-21-4.442-32-4.442s-21.667 1.48-32 4.442c-1.778-1.253-4.139-2.79-7.083-4.613-2.945-1.822-7.584-4.015-13.917-6.577-6.333-2.563-11.111-3.332-14.333-2.307-4.89 12.87-5.278 24.488-1.167 34.852-8.778 9.68-13.167 21.412-13.167 35.193 0 9.681 1.14 18.223 3.417 25.626 2.278 7.403 5.194 13.383 8.75 17.939 3.556 4.555 8.028 8.371 13.417 11.446s10.61 5.296 15.666 6.663c5.056 1.366 10.75 2.391 17.084 3.075-4.445 4.1-7.167 9.966-8.167 17.596a32.471 32.471 0 0 1-7.5 2.563c-2.667.57-5.833.854-9.5.854s-7.306-1.224-10.917-3.673c-3.61-2.449-6.694-6.008-9.25-10.677-2.11-3.645-4.805-6.606-8.083-8.884s-6.028-3.645-8.25-4.1l-3.333-.513c-2.334 0-3.945.256-4.834.769s-1.166 1.167-.833 1.965c.333.797.833 1.594 1.5 2.391a12.304 12.304 0 0 0 2.167 2.051l1.166.854c2.445 1.139 4.861 3.303 7.25 6.492 2.39 3.189 4.14 6.093 5.25 8.713L53 209.451c1.444 4.328 3.889 7.83 7.333 10.507 3.445 2.676 7.167 4.385 11.167 5.125s7.861 1.139 11.583 1.196c3.723.057 6.806-.143 9.25-.598l3.834-.684c0 4.328.027 9.397.083 15.205.056 5.809.083 8.884.083 9.226 0 2.05-.722 3.758-2.166 5.125-1.445 1.367-3.667 1.765-6.667 1.196-25.778-8.77-46.806-24.573-63.083-47.409C8.139 185.505 0 159.793 0 131.206c0-23.804 5.722-45.757 17.167-65.86C28.61 45.245 44.139 29.329 63.75 17.597 83.361 5.867 104.778 0 128 0s44.639 5.866 64.25 17.597c19.611 11.73 35.139 27.647 46.583 47.75C250.278 85.449 256 107.402 256 131.206z"
+                                fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
             </div>
@@ -78,142 +131,142 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
 </footer>
 
 <style>
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    width: var(--cw-desktop);
-    height: 100px;
-    background-color: var(--card-background);
-    color: var(--text-color);
-    border-radius: var(--border-radius);
-}
-
-.social-media-wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-right: 0;
-    margin-left: 1rem;
-}
-
-#hydro-logo {
-    width: 128px;
-    height: 32px;
-    margin-right: 2rem;
-}
-
-.social-media {
-    display: flex;
-    flex-direction: row;
-}
-
-.social-icon {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-#social-link-logo {
-    height: 25px;
-    width: 25px;
-}
-
-a:hover {
-    opacity: 0.5;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        justify-content: center;
+    }
 
     .footer-container {
-        flex-direction: column;
-        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
-        height: auto;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    
-    #hydro-logo {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        margin-left: 0;
-        margin-right: 0;
-        width: 128px;
-        height: 32px;
+        width: var(--cw-desktop);
+        height: 100px;
+        background-color: var(--card-background);
+        color: var(--text-color);
+        border-radius: var(--border-radius);
     }
 
     .social-media-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-right: 0;
-        margin-left: 0;
+        margin-left: 1rem;
+    }
+
+    #hydro-logo {
+        width: 128px;
+        height: 32px;
+        margin-right: 2rem;
     }
 
     .social-media {
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
-        margin-right: 0;
-        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
     }
 
     .social-icon {
         margin-left: 1rem;
         margin-right: 1rem;
+        height: 25px;
+        width: 25px;
     }
 
-}
+    #social-link-logo {
+        height: 25px;
+        width: 25px;
+    }
 
-@media only screen and (max-width: 768px) {
+    a:hover {
+        opacity: 0.5;
+    }
 
-.footer-container {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
 
-#hydro-logo {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 0;
-    margin-right: 0;
-    width: 128px;
-    height: 32px;
-}
+        .footer-container {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
 
-.social-media-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-right: 0;
-    margin-left: 0;
-}
+        #hydro-logo {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 0;
+            margin-right: 0;
+            width: 128px;
+            height: 32px;
+        }
 
-.social-media {
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    margin-right: 0;
-    margin-bottom: 1rem;
-}
+        .social-media-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            margin-left: 0;
+        }
 
-.social-icon {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+        .social-media {
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
 
-}
+        .social-icon {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
 
+    }
 
+    @media only screen and (max-width: 768px) {
+
+        .footer-container {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        #hydro-logo {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 0;
+            margin-right: 0;
+            width: 128px;
+            height: 32px;
+        }
+
+        .social-media-wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .social-media {
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+
+        .social-icon {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+    }
 </style>
