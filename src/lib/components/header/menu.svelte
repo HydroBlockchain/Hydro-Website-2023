@@ -66,7 +66,7 @@ import ThemeToggle from "./ThemeToggle.svelte";
         </a>
         <div class="navigation">
             <div class="hydro-dashboard">
-                <div class="dashboard-slot" id="card-background-alt">
+                <div class="dashboard-slot" data-sveltekit-preload-data="hover" id="card-background-alt">
                     <ThemeToggle />
                 </div>
                 <a id="header-link" data-sveltekit-preload-data="hover" href="/exchanges ">
