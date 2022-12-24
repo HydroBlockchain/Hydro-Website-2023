@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 // import ThemeToggle from "./ThemeToggle.svelte";
 import Logo from '$lib/images/logo/logo.svelte';
 import { onMount } from 'svelte';
@@ -20,12 +20,12 @@ import { onMount } from 'svelte';
       // clear storage
       localStorage.removeItem(STORAGE_KEY);
       //Reloads the window to upon theme switch to read in CSS
-      // location.reload(true);
+      location.reload(true);
     } else {
       // store opposite of preference
       localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
       //Reloads the window to upon theme switch to read in CSS
-      // location.reload(true);
+      location.reload(true);
     }
     applyTheme();
   };
@@ -49,6 +49,8 @@ import { onMount } from 'svelte';
     applyTheme();
     window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme);
   });
+
+  
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div class="backdrop" on:click>
