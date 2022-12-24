@@ -1,4 +1,5 @@
 <script>
+	
     // @ts-nocheck
     import Pricebanner from "$lib/components/header/pricebanner.svelte";
     import Menu from "$lib/components/header/menu.svelte";
@@ -15,9 +16,12 @@
     <Pricebanner />
     <nav>
         <div class="wrapper">
-            <div class="nav-wrapper" id="card-background">
-                <a data-sveltekit-preload-data="hover" href="/"><svg id="hydro-logo" fill="none" viewBox="0 0 2561 490"
+            <div class="nav-wrapper" data-sveltekit-preload-data="hover" id="card-background">
+                <a data-sveltekit-preload-data="hover" href="/">
+                  <svg id="hydro-logo" fill="none" viewBox="0 0 2561 490"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                        
                         <filter id="a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="690"
                             width="2211.86" x="-100" y="-100">
                             <feFlood flood-opacity="0" result="BackgroundImageFix" />
@@ -49,7 +53,8 @@
                                 d="m2315.26 490c-48.46 0-95.83-14.369-136.12-41.29s-71.69-65.185-90.23-109.953c-18.55-44.767-23.4-94.029-13.94-141.554 9.45-47.525 32.78-91.18 67.05-125.4441 34.26-34.2638 77.92-57.5978 125.44-67.05118 47.53-9.45338 96.79-4.601564 141.56 13.94188 44.76 18.5435 83.03 49.9457 109.95 90.2354 26.92 40.29 41.29 87.659 41.29 136.115 0 64.978-25.81 127.295-71.76 173.241-45.95 45.947-108.26 71.759-173.24 71.759zm0-85.221c67.66 0 122.5-57.487 122.5-128.419 0-39.67-28.75-93.4-86.24-161.19-7.33-8.69-19.42-22.2528-36.26-40.6899-17.73 19.404-30.44 33.6659-38.12 42.7869-56.26 66.862-84.38 119.893-84.38 159.093 0 70.932 54.84 128.419 122.5 128.419z"
                                 fill="var(--svg-color)" />
                         </g>
-                    </svg></a>
+                    </svg>
+                </a>
                 <svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <g>
