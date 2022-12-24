@@ -236,7 +236,6 @@ import { priceData, stakedData, githubData } from "$lib/stores/store";
    flex-direction: column;
    justify-content: space-between;
    width: 280px;
-   height: 45px;
    padding: 1rem;
    margin: 0.5rem;
    }
