@@ -54,7 +54,7 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ope
 --drop-color: #192E46;
 --drop-color-2: #f8f8f8;
 //Text Colors
---text-color: #ffffff;
+--text-color: #f8f8f8;
 --text-color-alt: rgba(255, 255, 255, 0.50);
 //Background Colors
 --bg-color: linear-gradient(90deg, #30286a, #183c68);
@@ -64,6 +64,7 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ope
 //Button Colors
 --button-color: rgba(33, 33, 36, 0.3);
 --button-hover: rgba(255, 255, 255, 0.2);
+--sidemenu-button: rgba(255, 255, 255, 0.3);
 //Progress Bar
 --progress-bar: rgba(105, 82, 255, 0.50);
 //background animation
@@ -147,6 +148,7 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ope
 //Button Colors
 --button-color: rgba(255, 255, 255, 0.2);
 --button-hover: rgba(0, 49, 146, 0.3);
+--sidemenu-button: rgba(33, 33, 36, 0.3);
 //Progress Bar
 --progress-bar: rgb(107, 147, 255);
 //background animation
@@ -653,7 +655,7 @@ width: 70px;
 
 .dashboard-slot,
 .dashboard-slot-alt {
-width: auto !important;
+width: 100px;
 height: 50px;
 margin: 0.5rem;
 padding: 1rem;
@@ -737,7 +739,7 @@ width: 70px;
 
 .dashboard-slot,
 .dashboard-slot-alt {
-width: auto !important;
+width: 150px !important;
 height: 50px;
 margin: 0.5rem;
 padding: 1rem;
@@ -826,7 +828,7 @@ width: 70px;
 
 .dashboard-slot,
 .dashboard-slot-alt {
-width: auto !important;
+width: 200px;
 height: 50px;
 margin: 0.5rem;
 padding: 1rem;
@@ -913,13 +915,13 @@ height: auto;
 width: 70px;
 }
 
-.dashboard-slot,
-.dashboard-slot-alt {
-width: auto !important;
-height: 50px;
-margin: 0.5rem;
-padding: 1rem;
-}
+// .dashboard-slot,
+// .dashboard-slot-alt {
+// width: 200px;
+// height: 50px;
+// margin: 0.5rem;
+// padding: 1rem;
+// }
 
 .currency-class,
 .price {

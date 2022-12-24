@@ -45,7 +45,7 @@ import { githubData } from "$lib/stores/store";
         </div>
     </div>
     <div class="hydro-dashboard">
-        <div class="dashboard-slot-alt" id="card-background-alt">
+        <div class="aegir-slot-alt" id="card-background-alt">
             <div class="chain-alt">
                 The Aegir Wallet is our open source multicoin and NFT wallet.
                 Aegir encrypts all keys locally, no information is sent to any server.
@@ -54,7 +54,7 @@ import { githubData } from "$lib/stores/store";
             </div>
         </div>
         <a href="{$githubData.urlAegir}" >
-            <div class="dashboard-slot" id="card-background">
+            <div class="aegir-slot" id="card-background">
                 <div class="price">Latest Commit</div>
                 <div class="github-text" id="commit-message">{$githubData.commitMsgAegir}</div>
                 <div class="github-info-inner"><img src={$githubData.avatarAegir}
@@ -105,8 +105,8 @@ import { githubData } from "$lib/stores/store";
         width: 600px;
     }
 
-    .dashboard-slot,
-    .dashboard-slot-alt {
+    .aegir-slot,
+    .aegir-slot-alt {
         justify-content: space-between;
         text-align: start;
         display: flex;
@@ -116,20 +116,20 @@ import { githubData } from "$lib/stores/store";
         height: 150px;
     }
 
-    .dashboard-slot-alt {
+    .aegir-slot-alt {
         align-items: flex-start;
         flex-direction: column;
         width: 70%;
     }
 
-    .dashboard-slot {
+    .aegir-slot {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 0.5rem;
     }
 
-    .dashboard-slot:hover {
+    .aegir-slot:hover {
         background-color: var(--button-hover) !important;
         opacity: 1 !important;
     }
@@ -281,8 +281,8 @@ import { githubData } from "$lib/stores/store";
             width: 300px !important;
         }
 
-        .dashboard-slot,
-        .dashboard-slot-alt {
+        .aegir-slot,
+        .aegir-slot-alt {
             justify-content: space-between;
             text-align: start;
             display: flex;
@@ -292,11 +292,11 @@ import { githubData } from "$lib/stores/store";
             height: 150px;
         }
 
-        .dashboard-slot-alt {
+        .aegir-slot-alt {
             height: 200px !important;
         }
 
-        .dashboard-slot {
+        .aegir-slot {
             height: 75px !important;
         }
 

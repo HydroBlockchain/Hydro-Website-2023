@@ -81,6 +81,10 @@
     flex-direction: column !important;
     }
 
+    .dashboard-slot,
+    .dashboard-slot-alt {
+    width: 100px !important;
+    }
     }
 
     @media only screen and (max-width: 768px) {
@@ -91,6 +95,10 @@
 
     .hydro-dashboard {
     flex-direction: row ;
+    }
+    .dashboard-slot,
+    .dashboard-slot-alt {
+    width: 150px;
     }
 
     }
@@ -103,6 +111,22 @@
 
     .hydro-dashboard {
     flex-direction: row;
+    }
+    .dashboard-slot,
+    .dashboard-slot-alt {
+    width: 200px;
+    }
+
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+    .hydro-dashboard {
+    flex-direction: row;
+    }
+    .dashboard-slot,
+    .dashboard-slot-alt {
+    width: 200px;
     }
 
     }

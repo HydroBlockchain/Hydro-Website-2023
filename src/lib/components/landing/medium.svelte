@@ -131,8 +131,8 @@
     }
 
     .blog-card {
-    width: auto !important;
-    height: 60px !important;
+    width: 120px !important;
+    height: 70px !important;
     word-wrap: break-word;
     padding: 0.5rem;
     }
@@ -152,7 +152,7 @@
     }
 
     .blog-card {
-    width: 130px;
+    width: 250px;
     height: 50px;
     word-wrap: break-word;
     }

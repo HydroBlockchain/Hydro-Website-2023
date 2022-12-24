@@ -68,6 +68,11 @@
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
 
+        #intro-chain {
+            width: 200px !important;
+            height: 200px !important;
+        }
+
         .full {
             height: 25rem !important;
         }
@@ -91,7 +96,8 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
             margin-left: 3rem;
             font-size: 16px;
         }

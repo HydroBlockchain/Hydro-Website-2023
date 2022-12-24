@@ -107,6 +107,7 @@
 
         .building-statement {
             font-size: 16px;
+            margin: 0.5rem;
         }
 
     }
@@ -143,6 +144,7 @@
 
         .building-statement {
             font-size: 16px;
+            margin: 0.5rem;
         }
 
     }
@@ -179,6 +181,7 @@
 
         .building-statement {
             font-size: 16px;
+            margin: 0.5rem;
         }
 
     }
@@ -215,6 +218,7 @@
 
         .building-statement {
             font-size: 16px;
+            margin: 0.5rem;
         }
 
     }

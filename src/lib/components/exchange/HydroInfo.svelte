@@ -80,27 +80,35 @@ import { priceData } from "$lib/stores/store";
     }
 
     @media only screen and (max-width: 600px) {
-
+    .price,
+    .currency-class {
+    font-size: 8px;
+    }
+    .currency, .procentage{
+        font-size: 12px;
+    }
     .one-quarter {
     height: auto;
     margin-left: 0 !important;
     }
 
     .dashboards {
-    margin-top: 0rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    flex-direction: column;
+    margin: 1rem !important;
     }
 
     .hydro-dashboard {
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    flex-direction: row !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+    
     }
 
     .dashboard-slot {
-    margin: 0.2rem !important;
-    width: 130px;
+    margin: 0.3rem !important;
+    width: 60px !important;
+    height: 40px !important;
+
     }
 
     }

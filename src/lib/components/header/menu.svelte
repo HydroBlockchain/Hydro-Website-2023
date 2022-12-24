@@ -12,7 +12,7 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
     <div class="nav-mobile-wrapper">
         <svg id="hydro-drop" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_b_1_63)">
-        <circle cx="512" cy="512" r="512" fill="var(--drop-color)"/>
+        <circle cx="512" cy="512" r="512" fill="var(--drop-color-2)"/>
         </g>
         <path d="M512 857.08C653.38 857.08 768 736.93 768 588.72C768 505.82 707.937 393.523 587.81 251.83C572.443 233.703 547.173 205.427 512 167C474.94 207.54 448.38 237.343 432.32 256.41C314.773 395.943 256 506.713 256 588.72C256 736.93 370.62 857.08 512 857.08Z" fill="url(#paint0_linear_1_63)"/>
         <path d="M512 855.73C618.035 855.73 704 765.617 704 654.46C704 592.285 658.952 508.062 568.857 401.792C557.333 388.197 538.38 366.99 512 338.17C484.205 368.575 464.285 390.927 452.24 405.227C364.08 509.877 320 592.955 320 654.46C320 765.617 405.965 855.73 512 855.73Z" fill="#244A93" fill-opacity="0.5"/>
@@ -42,29 +42,29 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
                 <div class="dashboard-slot" id="card-background-alt">
                     <ThemeToggle />
                 </div>
-                <a data-sveltekit-preload-data="hover" id="header-link" href="/exchanges">
+                <a id="header-link" href="/exchanges">
                     <div class="dashboard-slot" id="card-background-alt">
                         <img src={exchangeIcon} alt="faq" id="icon" />
                     </div>
                 </a>
-                <a data-sveltekit-preload-data="hover" id="header-link" href="/roadmap">
+                <a id="header-link" href="/roadmap">
                     <div class="dashboard-slot" id="card-background-alt">
                         <img src={roadmapIcon} alt="faq" id="icon" />
                     </div>
                 </a>
             </div>
             <div class="hydro-dashboard">
-                <a data-sveltekit-preload-data="hover" id="header-link" href="/faq">
+                <a id="header-link" href="/faq">
                     <div class="dashboard-slot" id="card-background-alt">
                         <img src={faqIcon} alt="faq" id="icon" />
                     </div>
                 </a>
-                <a data-sveltekit-preload-data="hover" id="header-link" href="/team">
+                <a id="header-link" href="/team">
                     <div class="dashboard-slot" id="card-background-alt">
                         <img src={teamIcon} alt="Team" id="icon" />
                     </div>
                 </a>
-                <a data-sveltekit-preload-data="hover" id="header-link" href="/tech">
+                <a id="header-link" href="/tech">
                     <div class="dashboard-slot" id="card-background-alt">
                         <img src={techIcon} alt="Technology" id="icon" />
                     </div>
@@ -117,6 +117,7 @@ import hydroLogo from "$lib/images/logo/hydro-logo.svg";
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
+    background-color: var(--sidemenu-button) !important;
 }
 
 #hydro-drop {

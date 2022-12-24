@@ -208,6 +208,7 @@ a:hover {
 
     #last-one {
         margin-top: 0;
+        margin-bottom: 0.5rem;
     }
 
 }
@@ -244,6 +245,7 @@ margin-right: 1rem;
 
 #last-one {
     margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 }
@@ -280,6 +282,7 @@ margin-right: 1rem;
 
 #last-one {
     margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 }
@@ -316,6 +319,7 @@ margin-right: 1rem;
 
 #last-one {
     margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
 }

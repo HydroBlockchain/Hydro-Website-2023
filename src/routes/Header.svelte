@@ -19,36 +19,28 @@ function handleClick() {
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <header>
-        <Pricebanner />
-        <nav>
-            <div class="wrapper">
-                <div class="nav-wrapper" id="card-background">
-                    <a data-sveltekit-preload-data="hover" href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo" /></a>
-                    <svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--text-color)" />
-                        </g>
-                    </svg>
-                    <div class="navigation">
-                        <ThemeToggle />
-                        <a data-sveltekit-preload-data="hover" id="header-link" href="/tech">
-                            <img src={techIcon} alt="Technology" id="icon" /></a>
-                        <a data-sveltekit-preload-data="hover" id="header-link" href="/team">
-                            <img src={teamIcon} alt="Team" id="icon" /></a>
-                        <a data-sveltekit-preload-data="hover" id="header-link" href="/roadmap">
-                            <img src={roadmapIcon} alt="faq" id="icon" /></a>
-                        <a data-sveltekit-preload-data="hover" id="header-link" href="/exchanges">
-                            <img src={exchangeIcon} alt="faq" id="icon" /></a>
-                        <a data-sveltekit-preload-data="hover" id="header-link-last" href="/faq">
-                            <img src={faqIcon} alt="faq" id="icon" /></a>
-                    </div>
-                </div>
+<Pricebanner />
+<nav>
+    <div class="wrapper">
+        <div class="nav-wrapper" id="card-background">
+            <a data-sveltekit-preload-data="hover" href="/"><img src={hydroLogo} alt="hydro-drop" id="hydro-logo" /></a>
+            <svg on:click={handleClick} class="hamburger" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g><path fill="none" d="M0 0h24v24H0z" /><path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--text-color)" /></g>
+            </svg>
+            <div class="navigation">
+                <ThemeToggle />
+                <a data-sveltekit-preload-data="hover" id="header-link" href="/tech"><img src={techIcon} alt="Technology" id="icon" /></a>
+                <a data-sveltekit-preload-data="hover" id="header-link" href="/team"><img src={teamIcon} alt="Team" id="icon" /></a>
+                <a data-sveltekit-preload-data="hover" id="header-link" href="/roadmap"><img src={roadmapIcon} alt="faq" id="icon" /></a>
+                <a data-sveltekit-preload-data="hover" id="header-link" href="/exchanges"><img src={exchangeIcon} alt="faq" id="icon" /></a>
+                <a data-sveltekit-preload-data="hover" id="header-link-last" href="/faq"><img src={faqIcon} alt="faq" id="icon" /></a>
             </div>
-        </nav>
-        {#if openMenu}
-        <Menu on:click|once={handleClick}/>
-        {/if}
+        </div>
+    </div>
+</nav>
+{#if openMenu}
+<Menu on:click|once={handleClick}/>
+{/if}
 </header>
 
 <style lang="scss">

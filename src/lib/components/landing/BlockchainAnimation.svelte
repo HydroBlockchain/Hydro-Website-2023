@@ -8,7 +8,7 @@
   </div>
 
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-y="0px" height="350px" viewBox="0 0 2000 1200" enable-background="new 0 0 2000 1200" xml:space="preserve">
+y="0px" height="340px" viewBox="0 0 2000 1200" enable-background="new 0 0 2000 1200" xml:space="preserve">
 <g>
 <g>
 <linearGradient id="linepath_1_" gradientUnits="userSpaceOnUse" x1="415.4998" y1="357.141" x2="1526.2567"
