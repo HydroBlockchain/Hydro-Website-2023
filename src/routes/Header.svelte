@@ -16,9 +16,9 @@
     <Pricebanner />
     <nav>
         <div class="wrapper">
-            <div class="nav-wrapper" data-sveltekit-preload-data="hover" id="card-background">
+            <div class="nav-wrapper" id="card-background">
                 <a data-sveltekit-preload-data="hover" href="/">
-                  <svg id="hydro-logo" fill="none" viewBox="0 0 2561 490"
+                  <svg id="hydro-logo" data-sveltekit-preload-data fill="none" viewBox="0 0 2561 490"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                         
