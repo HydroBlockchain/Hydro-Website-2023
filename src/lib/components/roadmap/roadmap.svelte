@@ -84,10 +84,10 @@
                     <div class="card-row" id="what">Hydroswap Refresh<div id="q">Q3</div>
                     </div>
                     <div class="card-row" id="desc">Hydroswap performance and UI/UX upgrades with vital preparations for
-                        the "NAME OF CHAIN" Testnet. <br>
+                        the Regn Testnet. <br>
                         - Hydroswap transitions to Svelte. <br>
                         - UI/UX update to follow New Hydro Style. <br>
-                        - Hydroswap staking pools on "NAME OF CHAIN" Testnet.</div>
+                        - Hydroswap staking pools on Regn Testnet.</div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">
                             <div class="progress5 progress-moved">
@@ -100,13 +100,13 @@
             </div>
             <div class="roadmap-card-half" id="card-background-alt">
                 <div class="half-card-structure">
-                    <div class="card-row" id="what">Hydro "NAME OF CHAIN" Testnet<div id="q">Q4</div>
+                    <div class="card-row" id="what">Regn Testnet<div id="q">Q4</div>
                     </div>
-                    <div class="card-row" id="desc">Genesis block of "NAME OF CHAIN", the blockchain powered by Hydro.
+                    <div class="card-row" id="desc">Genesis block of Regn Testnet, the blockchain powered by Hydro.
                         <br>
-                        - "NAME OF CHAIN" Testnet Genesis block. <br>
+                        - Regn Testnet Genesis block. <br>
                         - The first Hydro Testnet Coins are mined. <br>
-                        - Hydroswap on "NAME OF CHAIN" Testnet.
+                        - Hydroswap on Regn Testnet.
                     </div>
                     <div class="card-row" id="progress">
                         <div class="container-prog">

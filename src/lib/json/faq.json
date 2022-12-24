@@ -9,7 +9,7 @@
     {
         "id": "1",
         "question": "Why does Hydro need its own blockchain?",
-        "answer": "The short answer is: To run Keresverse. We decided to build a blockchain that caters specifically to Keresverse in order to ensure its stability, features and performance remain superior even through the toughest of stresstests.",
+        "answer": "The short answer is: To run Keresverse. We decided to build a blockchain that caters specifically to Keresverse in order to ensure its stability, features and performance remain superior even through the toughest of stresstests. Regn will be our answer to that. The native currecny of Regn will be Hydro Coins. Hydro tokens will be exchangable for Hydro Coins through the bridge,",
         "link1": "https://docs.keresverse.org",
         "linktitle1": "Read more about Keresverse"
     },
