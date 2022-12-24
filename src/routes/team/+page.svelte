@@ -1,5 +1,4 @@
 <script>
-import linkedin from "$lib/images/icons/linkedin.svg";
 import items from "$lib/json/team.json"
 import items2 from "$lib/json/team2.json"
 import items3 from "$lib/json/team3.json"
