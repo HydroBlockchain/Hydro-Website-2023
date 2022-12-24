@@ -105,10 +105,6 @@
 
     @media only screen and (max-width: 992px) {
 
-    .hydro{
-    margin: 1rem;
-    }
-
     .hydro-dashboard {
     flex-direction: row;
     }
