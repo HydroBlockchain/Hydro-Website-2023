@@ -134,7 +134,6 @@ section {
 .team-name {
     font-size: var(--fs-xsmall);
     text-align: right;
-    margin-top: var(--margin-s);
     color: var(--text-color);
 }
 
