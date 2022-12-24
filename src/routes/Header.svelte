@@ -57,7 +57,7 @@
                         <path d="M16 18v2H5v-2h11zm5-7v2H3v-2h18zm-2-7v2H8V4h11z" fill="var(--text-color)" />
                     </g>
                 </svg>
-                <div class="navigation">
+                <div class="navigation" data-sveltekit-preload-data="hover">
                     <ThemeToggle />
                     <a data-sveltekit-preload-data="hover" id="header-link" href="/tech">
                         <svg id="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">

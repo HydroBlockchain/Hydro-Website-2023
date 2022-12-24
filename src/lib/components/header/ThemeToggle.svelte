@@ -47,7 +47,7 @@ import { onMount } from 'svelte';
 
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<div class="themeDiv" id="header-link" checked={currentTheme !==THEMES.DARK} on:click={toggleTheme}>
+<div class="themeDiv" data-sveltekit-preload-data="hover" id="header-link" checked={currentTheme !==THEMES.DARK} on:click={toggleTheme}>
   {#if currentTheme === THEMES.DARK}
     <svg id="themeToggle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
