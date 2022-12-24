@@ -1,6 +1,4 @@
 <script>
-	import hydroDropDark from '$lib/images/logo/hydro-drop.svg';
-    import hydroLogoLight from '$lib/images/logo/hydro-logo.svg'
 import ThemeToggle from "./ThemeToggle.svelte";
 </script>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -71,7 +69,7 @@ import ThemeToggle from "./ThemeToggle.svelte";
                 <div class="dashboard-slot" id="card-background-alt">
                     <ThemeToggle />
                 </div>
-                <a id="header-link" data-sveltekit-preload-data="hover" href="/exchanges">
+                <a id="header-link" data-sveltekit-preload-data="hover" href="/exchanges ">
                     <div class="dashboard-slot" id="card-background-alt">
                         <svg id="icon" viewBox="0 0 39 32"  fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
