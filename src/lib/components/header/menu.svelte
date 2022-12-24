@@ -1,6 +1,5 @@
 <script lang="ts">
 // import ThemeToggle from "./ThemeToggle.svelte";
-import Logo from '$lib/images/logo/logo.svelte';
 import { onMount } from 'svelte';
 
   const STORAGE_KEY = 'theme';
