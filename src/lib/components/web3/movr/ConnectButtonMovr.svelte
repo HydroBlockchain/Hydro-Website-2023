@@ -1,43 +1,71 @@
 <script lang="ts">
-    //@ts-nocheck
-    import { addressMovr, connectMovr, disconnectMovr, onExpectedNetworkMovr } from "$lib/utils/wallet-movr";
-    import { showNotification, NotificationType} from "$lib/utils/notifications";
-    import { metamask } from '$lib/utils/wallet-bsc';
-    let loading = false;
-    async function onConnectMovr() {
-        loading = true;
-        try {
-            await connectMovr();
-        } catch (error: any) {
-            showNotification(error.message, {
-                type: NotificationType.Error,
-            });
-        }
-        loading = false;
+  //@ts-nocheck
+  import {
+    addressMovr,
+    connectMovr,
+    disconnectMovr,
+    onExpectedNetworkMovr,
+  } from "$lib/utils/wallet-movr";
+  import { showNotification, NotificationType } from "$lib/utils/notifications";
+  import { metamask } from "$lib/utils/wallet-bsc";
+  let loading = false;
+  async function onConnectMovr() {
+    loading = true;
+    try {
+      await connectMovr();
+    } catch (error: any) {
+      showNotification(error.message, {
+        type: NotificationType.Error,
+      });
     }
-    
-$: legend = loading ? "Connecting" : $addressMovr ? "Connected to Moonriver Network" : "Connect Wallet";
-$: legend1 = loading ? '..' : $addressMovr ? "Disconnect" : "Disconnect";
-$: legend2 = $addressMovr
+    loading = false;
+  }
 
+  $: legend = loading
+    ? "Connecting"
+    : $addressMovr
+    ? "Connected to Moonriver Network"
+    : "Connect Wallet";
+  $: legend1 = loading ? ".." : $addressMovr ? "Disconnect" : "Disconnect";
+  $: legend2 = $addressMovr;
 </script>
 
-{#if $metamask && $onExpectedNetworkMovr }
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={onConnectMovr} disabled={loading || !$onExpectedNetworkMovr} class="button-connect" id="connect">{legend}</div>
+{#if $metamask && $onExpectedNetworkMovr}
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div
+    on:click={onConnectMovr}
+    disabled={loading || !$onExpectedNetworkMovr}
+    class="button-connect"
+    id="connect"
+  >
+    {legend}
+  </div>
 {/if}
 {#if $addressMovr}
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<div disabled={loading || $onExpectedNetworkMovr} class="button-network" id="address-div">{legend2}</div>
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<div on:click={disconnectMovr} disabled={loading || !$onExpectedNetworkMovr} class="button-connect" id="disconnect">{legend1}</div>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div
+    disabled={loading || $onExpectedNetworkMovr}
+    class="button-network"
+    id="address-div"
+  >
+    {legend2}
+  </div>
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <div
+    on:click={disconnectMovr}
+    disabled={loading || !$onExpectedNetworkMovr}
+    class="button-connect"
+    id="disconnect"
+  >
+    {legend1}
+  </div>
 {/if}
 
 <style>
-#disconnect{
+  #disconnect {
     margin-top: 0.5rem;
-}
-#connect{
+  }
+  #connect {
     font-size: 12px !important;
-}
+  }
 </style>

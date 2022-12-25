@@ -1,8 +1,8 @@
 <script>
-import HeroCard from "$lib/components/landing/HeroCard.svelte";
-import InfoWidget from "$lib/components/landing/InfoWidget.svelte";
-import MediumCards from "$lib/components/landing/MediumCards.svelte";
-import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.svelte";
+  import HeroCard from "$lib/components/landing/HeroCard.svelte";
+  import InfoWidget from "$lib/components/landing/InfoWidget.svelte";
+  import MediumCards from "$lib/components/landing/MediumCards.svelte";
+  import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.svelte";
 </script>
 
 <svelte:head>
@@ -13,7 +13,7 @@ import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.sve
 <section>
   <HeroCard />
   <div class="multiple-containers">
-    <InfoWidget/>
+    <InfoWidget />
     <MediumCards />
   </div>
   <BlockchainAnimation />

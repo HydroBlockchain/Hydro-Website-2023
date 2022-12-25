@@ -293,8 +293,8 @@ export const getGithubData = () => {
             })
         }).catch(err => console.log(err))
 
-        //Fetch Aegir commits
-        fetch(githubEndpointAegir)
+    //Fetch Aegir commits
+    fetch(githubEndpointAegir)
         .then(res => {
             if (!res.ok) {
                 throw Error("Could not fetch Hydroswap Github data")
@@ -326,30 +326,30 @@ export const hydroInfo = writable({
     twitterFollowers: 0,
     redditSubscribers: 0,
     telegramUsers: 0,
-    
+
 })
 
 export const getHydroInfo = () => {
 
-fetch('https://api.coingecko.com/api/v3/coins/hydro?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true')
-    .then(res => {
-        if (!res.ok) {
-            throw Error("Could not fetch Hydro Info")
-        }
-        return res.json()
-    })
-    .then(data => {
-        hydroInfo.update(current => {
-            return {
-                ...current,
-                marketcapRank: data.market_cap_rank,
-                coingeckoRank: data.coingecko_rank,
-                twitterFollowers: data.community_data.twitter_followers,
-                redditSubscribers: data.community_data.reddit_subscribers,
-                telegramUsers: data.community_data.telegram_channel_user_count
+    fetch('https://api.coingecko.com/api/v3/coins/hydro?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true')
+        .then(res => {
+            if (!res.ok) {
+                throw Error("Could not fetch Hydro Info")
             }
+            return res.json()
         })
-    }).catch(err => console.log(err))
+        .then(data => {
+            hydroInfo.update(current => {
+                return {
+                    ...current,
+                    marketcapRank: data.market_cap_rank,
+                    coingeckoRank: data.coingecko_rank,
+                    twitterFollowers: data.community_data.twitter_followers,
+                    redditSubscribers: data.community_data.reddit_subscribers,
+                    telegramUsers: data.community_data.telegram_channel_user_count
+                }
+            })
+        }).catch(err => console.log(err))
 
 }
 

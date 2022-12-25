@@ -12,7 +12,7 @@ const config = {
 	// for more information about preprocessors
 	preprocess: [
 		preprocess({
-			scss: {prependData: `@import 'src/routes/styles.scss';`}
+			scss: { prependData: `@import 'src/routes/styles.scss';` }
 		})
 	]
 }
