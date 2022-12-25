@@ -1,13 +1,54 @@
 <script lang="ts">
-  function toggle() {
-    window.document.body.classList.toggle('dark')
-    location.reload()
-  }
+// @ts-nocheck
+import { onMount } from 'svelte';
+
+  const STORAGE_KEY = 'theme';
+  const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
+
+  const THEMES = {
+    DARK: 'dark',
+    LIGHT: 'light',
+  };
+
+  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
+
+ export const toggleTheme = () => {
+    const stored = localStorage.getItem(STORAGE_KEY);
+
+    if (stored) {
+      // clear storage
+      localStorage.removeItem(STORAGE_KEY);
+    } else {
+      // store opposite of preference
+      localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
+    }
+    applyTheme(location.reload());
+  };
+
+  let currentTheme = '';
+
+  const applyTheme = () => {
+    const preferredTheme = prefersDarkThemes() ? THEMES.DARK : THEMES.LIGHT;
+    currentTheme = localStorage.getItem(STORAGE_KEY) ?? preferredTheme;
+
+    if (currentTheme === THEMES.DARK) {
+      document.body.classList.remove(THEMES.LIGHT);
+      document.body.classList.add(THEMES.DARK);
+    } else {
+      document.body.classList.remove(THEMES.DARK);
+      document.body.classList.add(THEMES.LIGHT);
+    }
+  };
+
+  onMount( async () => {
+    applyTheme();
+    window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme);
+  });
 </script>
 
 <div>
   <!-- svelte-ignore a11y-click-events-have-key-events -->
-  <a id="header-link" data-sveltekit-preload-data="hover" on:click={toggle}>
+  <a id="header-link" data-sveltekit-preload-data="hover" on:click={toggleTheme}>
     <div class="theme-switch">
       <div class="theme-statement">Switch Theme</div>
       <svg id="theme-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
