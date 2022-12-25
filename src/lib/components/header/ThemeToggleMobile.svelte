@@ -22,7 +22,7 @@ import { onMount } from 'svelte';
       // store opposite of preference
       localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
     }
-    applyTheme(location.reload());
+    applyTheme();
   };
 
   let currentTheme = '';
