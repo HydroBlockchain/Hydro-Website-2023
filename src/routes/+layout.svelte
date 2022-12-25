@@ -80,9 +80,11 @@
     display: flex;
     flex-direction: column;
     height: auto !important;
+    margin: 0rem;
     height: -moz-available !important; /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
     height: fill-available !important;
+    background-color: var(--bg-color) !important;
   }
 
   .app-wrapper {
@@ -90,6 +92,7 @@
     align-items: center;
     justify-content: center;
     height: auto !important;
+    width: auto !important;
     scroll-behavior: smooth !important;
     overflow-y: scroll !important;
     -webkit-overflow-scrolling: touch !important;
@@ -105,5 +108,8 @@
     width: 100%;
     margin: 0;
     margin-top: 1rem;
+  }
+  @media only screen and (max-width: 600px) {
+
   }
 </style>
