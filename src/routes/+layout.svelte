@@ -82,6 +82,9 @@ $: {
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        scroll-behavior: smooth !important;
+        overflow-y: scroll !important;
+        -webkit-overflow-scrolling: touch !important;
     }
 
     main {
