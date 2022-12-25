@@ -79,8 +79,8 @@
   --animation-color-8: rgba(29, 67, 120, 0.5);
   --animation-color-9: rgba(69, 149, 183, 0.5);
   //Price variation color
-  --red: #FFADAD;
-  --green: #B0FC69;
+  --red: #ffadad;
+  --green: #b0fc69;
   //Chart-colors
   --chart-line: #fff;
   --chart-axis: rgba(255, 255, 255, 0.457);
@@ -165,7 +165,7 @@
   --animation-color-9: rgba(0, 132, 255, 0.8);
   //Price variation color
   --red: #f00000;
-  --green: #00F500;
+  --green: #00f500;
   //Chart-colors
   --chart-line: #fff;
   --chart-axis: #fff;
@@ -583,6 +583,12 @@ a:active {
 //Responsive
 //Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
+  .app-wrapper {
+    height: 100% !important;
+    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
+    height: fill-available !important;
+  }
   body:focus-within,
   html:focus-within {
     scroll-behavior: smooth !important;
@@ -675,6 +681,12 @@ a:active {
 
 //Medium devices (landscape tablets, up to 768px)
 @media only screen and (max-width: 768px) {
+  .app-wrapper {
+    height: 100% !important;
+    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
+    height: fill-available !important;
+  }
   body:focus-within,
   html:focus-within {
     scroll-behavior: smooth !important;
@@ -776,6 +788,12 @@ a:active {
 
 //Large devices (laptops/desktops, up to 992px)
 @media only screen and (max-width: 992px) {
+  .app-wrapper {
+    height: 100% !important;
+    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
+    height: fill-available !important;
+  }
   body:focus-within,
   html:focus-within {
     scroll-behavior: smooth !important;
@@ -871,6 +889,12 @@ a:active {
 
 //Extra large devices (large laptops and desktops, up to 1400px)
 @media only screen and (max-width: 1200px) {
+  .app-wrapper {
+    height: 100% !important;
+    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
+    height: fill-available !important;
+  }
   #to-the-top {
     display: flex !important;
     justify-content: center;
