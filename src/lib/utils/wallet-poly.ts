@@ -1,6 +1,6 @@
 import { writable, readable, derived, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { getCreateNetworkDataByChainId, getNetworkByChainId } from '../utils/network';
+import { getCreateNetworkDataByChainId, getNetworkByChainId } from './network';
 import { Web3Provider } from '@ethersproject/providers';
 
 const localhostNetwork = {
@@ -19,27 +19,27 @@ import type { WindowWithEthereum } from '../../types';
 import type { Signer } from 'ethers';
 
 
-const expectedChainIdMovr = 1285;
+const expectedChainIdPoly = 137;
 
 export const metamask = readable<boolean>(browser && window && (window as any).ethereum);
-export const expectedNetworkMovr = readable(
+export const expectedNetworkPoly = readable(
 
-	expectedChainIdMovr === localhostNetwork.chainId
+	expectedChainIdPoly === localhostNetwork.chainId
 		? localhostNetwork
-		: getNetworkByChainId(expectedChainIdMovr)
+		: getNetworkByChainId(expectedChainIdPoly)
 		
 );
-export const addressMovr = writable<null | string>(null);
+export const addressPoly = writable<null | string>(null);
 export const provider = writable<null | Web3Provider>(null);
 export const signer = writable<null | Signer>(null);
 export const errorTx = writable(false);
 export const network = writable<null | any>({});
 export const chainId = writable(-1);
-export const onExpectedNetworkMovr = derived([network], ([$network]: [any]) => {
-	return $network && $network.chainId === expectedChainIdMovr;
+export const onExpectedNetworkPoly = derived([network], ([$network]: [any]) => {
+	return $network && $network.chainId === expectedChainIdPoly;
 });
 
-export async function initMovr() {
+export async function initPoly() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -61,18 +61,18 @@ export async function initMovr() {
 	const [newAddress] = await ethereum.request({
 		method: 'eth_accounts'
 	});
-	addressMovr.set(newAddress);
+	addressPoly.set(newAddress);
 
 	newProvider.on('chainChanged', () => {
-		initMovr();
+		initPoly();
 	});
 
 	ethereum.on('accountsChanged', ([newAddress]: string[]) => {
-		addressMovr.set(newAddress);
+		addressPoly.set(newAddress);
 	});
 
 	newProvider.on('accountsChanged', ([newAddress]) => {
-		addressMovr.set(newAddress);
+		addressPoly.set(newAddress);
 	});
 
 	newProvider.on('network', async (newNetwork) => {
@@ -95,10 +95,10 @@ export async function login() {
 		console.error(error);
 	}
 
-	await initMovr();
+	await initPoly();
 }
 
-export async function switchNetworkMovr(chainId: number = expectedChainIdMovr) {
+export async function switchNetworkPoly(chainId: number = expectedChainIdPoly) {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -128,7 +128,7 @@ export async function switchNetworkMovr(chainId: number = expectedChainIdMovr) {
 	}
 }
 
-export async function connectMovr() {
+export async function connectPoly() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -136,11 +136,11 @@ export async function connectMovr() {
 		method: 'eth_requestAccounts'
 	});
 
-	addressMovr.update(() => {
+	addressPoly.update(() => {
 		return _address;
 	});
 }
 
-export async function disconnectMovr() {
-	addressMovr.set(null);
+export async function disconnectPoly() {
+	addressPoly.set(null);
 }

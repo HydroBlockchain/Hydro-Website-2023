@@ -5,7 +5,7 @@
     import cscLogo from "$lib/images/logo/coinex.svg";
     import btcLogo from "$lib/images/logo/bitcoin.svg"
     import item from "../../json/techlinks.json"
-    import { githubData } from "$lib/stores/store";
+    import { githubData } from "$lib/store/store";
     </script>
     
     <div class="half" id="card-background">

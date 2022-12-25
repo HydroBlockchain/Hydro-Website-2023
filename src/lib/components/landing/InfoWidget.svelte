@@ -1,5 +1,5 @@
 <script>
-    import { priceData, stakedData } from "$lib/stores/store";
+    import { priceData, stakedData } from "$lib/store/store";
 </script>
 <div class="one-quarter" id="card-background">
     <div class="dashboards">

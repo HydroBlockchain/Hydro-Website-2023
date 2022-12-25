@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { addressEth, connectEth, disconnectEth, onExpectedNetworkEth } from "$lib/stores/wallet-eth";
-    import { showNotification, NotificationType} from "$lib/stores/notifications";
-    import { metamask } from '$lib/stores/wallet-bsc';
+    //@ts-nocheck
+    import { addressEth, connectEth, disconnectEth, onExpectedNetworkEth } from "$lib/utils/wallet-eth";
+    import { showNotification, NotificationType} from "$lib/utils/notifications";
+    import { metamask } from '$lib/utils/wallet-bsc';
     let loading = false;
     async function onConnectEth() {
         loading = true;

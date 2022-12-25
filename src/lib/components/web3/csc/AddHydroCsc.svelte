@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import { onExpectedNetworkCsc } from '$lib/stores/wallet-csc';
+import { onExpectedNetworkCsc } from '$lib/utils/wallet-csc';
 const tokenAddressCsc = '0x946112efaB61C3636CBD52DE2E1392D7A75A6f01';
 const tokenSymbolCsc = 'Hydro';
 const tokenDecimalsCsc = 18;

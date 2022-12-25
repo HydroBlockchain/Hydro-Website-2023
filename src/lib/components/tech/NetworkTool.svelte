@@ -2,23 +2,23 @@
     //Switching Networks
     import SwitchingNetworks from "../web3/SwitchingNetworks.svelte";
     //Binance Smart Chain
-    import { addressBsc, onExpectedNetworkBsc } from "$lib/stores/wallet-bsc";
+    import { addressBsc, onExpectedNetworkBsc } from "$lib/utils/wallet-bsc";
     import ConnectButtonBsc from '$lib/components/web3/bsc/ConnectButtonBsc.svelte';
     import AddHydroBsc from "../web3/bsc/AddHydroBsc.svelte";
     //Ethereum
-    import { addressEth, onExpectedNetworkEth } from "$lib/stores/wallet-eth";
+    import { addressEth, onExpectedNetworkEth } from "$lib/utils/wallet-eth";
     import ConnectButtonEth from "$lib/components/web3/eth/ConnectButtonEth.svelte";
     import AddHydroEth from "$lib/components/web3/eth/AddHydroEth.svelte";
     //Polygon
-    import { addressPoly, onExpectedNetworkPoly } from "$lib/stores/wallet-poly";
+    import { addressPoly, onExpectedNetworkPoly } from "$lib/utils/wallet-poly";
     import AddHydroPoly from "$lib/components/web3/poly/AddHydroPoly.svelte";
     import ConnectButtonPoly from "$lib/components/web3/poly/ConnectButtonPoly.svelte";
     //Movr
-    import { addressMovr, onExpectedNetworkMovr } from "$lib/stores/wallet-movr";
+    import { addressMovr, onExpectedNetworkMovr } from "$lib/utils/wallet-movr";
     import ConnectButtonMovr from "$lib/components/web3/movr/ConnectButtonMovr.svelte";
     import AddHydroMovr from "$lib/components/web3/movr/AddHydroMovr.svelte";
     //Csc
-    import { addressCsc, onExpectedNetworkCsc } from "$lib/stores/wallet-csc";
+    import { addressCsc, onExpectedNetworkCsc } from "$lib/utils/wallet-csc";
     import ConnectButtonCsc from "$lib/components/web3/csc/ConnectButtonCsc.svelte";
     import AddHydroCsc from "$lib/components/web3/csc/AddHydroCsc.svelte";
     </script>

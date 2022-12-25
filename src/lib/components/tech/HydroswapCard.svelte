@@ -1,6 +1,6 @@
 <script>
     import item from "../../json/techlinks.json"
-    import { priceData, stakedData, githubData } from "$lib/stores/store";
+    import { priceData, stakedData, githubData } from "$lib/store/store";
     </script>
     
     <div class="one-quarter" id="card-background">

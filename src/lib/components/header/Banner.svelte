@@ -4,7 +4,7 @@
     import polyLogo from "$lib/images/logo/polygon.svg";
     import cscLogo from "$lib/images/logo/coinex.svg";
     import movrLogo from "$lib/images/logo/moonriver.svg";
-    import { priceData } from "$lib/stores/store";
+    import { priceData } from "$lib/store/store";
     //Coin names
     let coinNameHydro = "HYDRO";
     let coinNameETH = "ETH";

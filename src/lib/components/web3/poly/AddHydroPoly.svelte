@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import { onExpectedNetworkPoly } from '$lib/stores/wallet-poly';
+import { onExpectedNetworkPoly } from '$lib/utils/wallet-poly';
 const tokenAddressPoly = '0x946112efaB61C3636CBD52DE2E1392D7A75A6f01';
 const tokenSymbolPoly = 'Hydro';
 const tokenDecimalsPoly = 18;

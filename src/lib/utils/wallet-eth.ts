@@ -1,6 +1,6 @@
 import { writable, readable, derived, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { getCreateNetworkDataByChainId, getNetworkByChainId } from '../utils/network';
+import { getCreateNetworkDataByChainId, getNetworkByChainId } from './network';
 import { Web3Provider } from '@ethersproject/providers';
 
 const localhostNetwork = {

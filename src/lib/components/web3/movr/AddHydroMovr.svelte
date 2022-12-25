@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import { onExpectedNetworkMovr } from '$lib/stores/wallet-movr';
+import { onExpectedNetworkMovr } from '$lib/utils/wallet-movr';
 const tokenAddressMovr = '0x946112efaB61C3636CBD52DE2E1392D7A75A6f01';
 const tokenSymbolMovr = 'Hydro';
 const tokenDecimalsMovr = 18;

@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import { metamask, provider } from "$lib/stores/wallet-bsc";
+import { metamask, provider } from "$lib/utils/wallet-bsc";
 import { Web3Provider } from "@ethersproject/providers";
 import ethLogo from "$lib/images/logo/ethereum.svg";
 import bscLogo from "$lib/images/logo/bsc.svg";

@@ -1,7 +1,8 @@
 <script lang="ts">
-import { addressBsc, connectBsc, disconnectBsc, onExpectedNetworkBsc } from "$lib/stores/wallet-bsc";
-import { showNotification, NotificationType} from "$lib/stores/notifications";
-import { metamask } from '$lib/stores/wallet-bsc';
+//@ts-nocheck
+import { addressBsc, connectBsc, disconnectBsc, onExpectedNetworkBsc } from "$lib/utils/wallet-bsc";
+import { showNotification, NotificationType} from "$lib/utils/notifications";
+import { metamask } from '$lib/utils/wallet-bsc';
 let loading = false;
 async function onConnectBsc() {
     loading = true;

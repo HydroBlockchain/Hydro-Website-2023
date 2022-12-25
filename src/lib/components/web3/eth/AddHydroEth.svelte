@@ -1,6 +1,6 @@
 <script lang="ts">
 // @ts-nocheck
-import { onExpectedNetworkEth } from '$lib/stores/wallet-eth';
+import { onExpectedNetworkEth } from '$lib/utils/wallet-eth';
 const tokenAddressEth = '0x946112efaB61C3636CBD52DE2E1392D7A75A6f01';
 const tokenSymbolEth = 'Hydro';
 const tokenDecimalsEth = 18;

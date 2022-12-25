@@ -1,6 +1,6 @@
 import { writable, readable, derived, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { getCreateNetworkDataByChainId, getNetworkByChainId } from '../utils/network';
+import { getCreateNetworkDataByChainId, getNetworkByChainId } from './network';
 import { Web3Provider } from '@ethersproject/providers';
 
 const localhostNetwork = {
@@ -19,27 +19,27 @@ import type { WindowWithEthereum } from '../../types';
 import type { Signer } from 'ethers';
 
 
-const expectedChainIdPoly = 137;
+const expectedChainIdCsc = 52;
 
 export const metamask = readable<boolean>(browser && window && (window as any).ethereum);
-export const expectedNetworkPoly = readable(
+export const expectedNetworkCsc = readable(
 
-	expectedChainIdPoly === localhostNetwork.chainId
+	expectedChainIdCsc === localhostNetwork.chainId
 		? localhostNetwork
-		: getNetworkByChainId(expectedChainIdPoly)
+		: getNetworkByChainId(expectedChainIdCsc)
 		
 );
-export const addressPoly = writable<null | string>(null);
+export const addressCsc = writable<null | string>(null);
 export const provider = writable<null | Web3Provider>(null);
 export const signer = writable<null | Signer>(null);
 export const errorTx = writable(false);
 export const network = writable<null | any>({});
 export const chainId = writable(-1);
-export const onExpectedNetworkPoly = derived([network], ([$network]: [any]) => {
-	return $network && $network.chainId === expectedChainIdPoly;
+export const onExpectedNetworkCsc = derived([network], ([$network]: [any]) => {
+	return $network && $network.chainId === expectedChainIdCsc;
 });
 
-export async function initPoly() {
+export async function initCsc() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -61,18 +61,18 @@ export async function initPoly() {
 	const [newAddress] = await ethereum.request({
 		method: 'eth_accounts'
 	});
-	addressPoly.set(newAddress);
+	addressCsc.set(newAddress);
 
 	newProvider.on('chainChanged', () => {
-		initPoly();
+		initCsc();
 	});
 
 	ethereum.on('accountsChanged', ([newAddress]: string[]) => {
-		addressPoly.set(newAddress);
+		addressCsc.set(newAddress);
 	});
 
 	newProvider.on('accountsChanged', ([newAddress]) => {
-		addressPoly.set(newAddress);
+		addressCsc.set(newAddress);
 	});
 
 	newProvider.on('network', async (newNetwork) => {
@@ -95,10 +95,10 @@ export async function login() {
 		console.error(error);
 	}
 
-	await initPoly();
+	await initCsc();
 }
 
-export async function switchNetworkPoly(chainId: number = expectedChainIdPoly) {
+export async function switchNetworkCsc(chainId: number = expectedChainIdCsc) {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -128,7 +128,7 @@ export async function switchNetworkPoly(chainId: number = expectedChainIdPoly) {
 	}
 }
 
-export async function connectPoly() {
+export async function connectCsc() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -136,11 +136,11 @@ export async function connectPoly() {
 		method: 'eth_requestAccounts'
 	});
 
-	addressPoly.update(() => {
+	addressCsc.update(() => {
 		return _address;
 	});
 }
 
-export async function disconnectPoly() {
-	addressPoly.set(null);
+export async function disconnectCsc() {
+	addressCsc.set(null);
 }

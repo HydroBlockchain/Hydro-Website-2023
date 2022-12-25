@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { addressMovr, connectMovr, disconnectMovr, onExpectedNetworkMovr } from "$lib/stores/wallet-movr";
-    import { showNotification, NotificationType} from "$lib/stores/notifications";
-    import { metamask } from '$lib/stores/wallet-bsc';
+    //@ts-nocheck
+    import { addressMovr, connectMovr, disconnectMovr, onExpectedNetworkMovr } from "$lib/utils/wallet-movr";
+    import { showNotification, NotificationType} from "$lib/utils/notifications";
+    import { metamask } from '$lib/utils/wallet-bsc';
     let loading = false;
     async function onConnectMovr() {
         loading = true;

@@ -1,17 +1,17 @@
 <script>
 // @ts-nocheck
 import { onMount } from 'svelte';
-import { state } from "$lib/stores/store";
+import { state } from "$lib/store/store";
 import Header from "$lib/components/header/Header.svelte";
 import Footer from "$lib/components/footer/Footer.svelte";
 import Preloader from "$lib/components/Preloader.svelte";
 import "./styles.scss";
 // Init chains
-import { initBsc } from '$lib/stores/wallet-bsc.ts';
-import { initEth } from '$lib/stores/wallet-eth.ts';
-import { initPoly } from "$lib/stores/wallet-poly";
-import { initMovr } from "$lib/stores/wallet-movr";
-import { initCsc } from "$lib/stores/wallet-csc";
+import { initBsc } from '$lib/utils/wallet-bsc.ts';
+import { initEth } from '$lib/utils/wallet-eth.ts';
+import { initPoly } from "$lib/utils/wallet-poly";
+import { initMovr } from "$lib/utils/wallet-movr";
+import { initCsc } from "$lib/utils/wallet-csc";
 //Scroll to top
 import * as animateScroll from "svelte-scrollto";
 

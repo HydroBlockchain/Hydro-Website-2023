@@ -1,6 +1,6 @@
 import { writable, readable, derived, get } from 'svelte/store';
 import { browser } from '$app/environment';
-import { getCreateNetworkDataByChainId, getNetworkByChainId } from '../utils/network';
+import { getCreateNetworkDataByChainId, getNetworkByChainId } from './network';
 import { Web3Provider } from '@ethersproject/providers';
 
 const localhostNetwork = {
@@ -19,27 +19,27 @@ import type { WindowWithEthereum } from '../../types';
 import type { Signer } from 'ethers';
 
 
-const expectedChainIdCsc = 52;
+const expectedChainBsc = 56;
 
 export const metamask = readable<boolean>(browser && window && (window as any).ethereum);
-export const expectedNetworkCsc = readable(
+export const expectedNetworkBsc = readable(
 
-	expectedChainIdCsc === localhostNetwork.chainId
+	expectedChainBsc === localhostNetwork.chainId
 		? localhostNetwork
-		: getNetworkByChainId(expectedChainIdCsc)
+		: getNetworkByChainId(expectedChainBsc)
 		
 );
-export const addressCsc = writable<null | string>(null);
+export const addressBsc = writable<null | string>(null);
 export const provider = writable<null | Web3Provider>(null);
 export const signer = writable<null | Signer>(null);
 export const errorTx = writable(false);
 export const network = writable<null | any>({});
 export const chainId = writable(-1);
-export const onExpectedNetworkCsc = derived([network], ([$network]: [any]) => {
-	return $network && $network.chainId === expectedChainIdCsc;
+export const onExpectedNetworkBsc = derived([network], ([$network]: [any]) => {
+	return $network && $network.chainId === expectedChainBsc;
 });
 
-export async function initCsc() {
+export async function initBsc() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -61,18 +61,18 @@ export async function initCsc() {
 	const [newAddress] = await ethereum.request({
 		method: 'eth_accounts'
 	});
-	addressCsc.set(newAddress);
+	addressBsc.set(newAddress);
 
 	newProvider.on('chainChanged', () => {
-		initCsc();
+		initBsc();
 	});
 
 	ethereum.on('accountsChanged', ([newAddress]: string[]) => {
-		addressCsc.set(newAddress);
+		addressBsc.set(newAddress);
 	});
 
 	newProvider.on('accountsChanged', ([newAddress]) => {
-		addressCsc.set(newAddress);
+		addressBsc.set(newAddress);
 	});
 
 	newProvider.on('network', async (newNetwork) => {
@@ -95,10 +95,10 @@ export async function login() {
 		console.error(error);
 	}
 
-	await initCsc();
+	await initBsc();
 }
 
-export async function switchNetworkCsc(chainId: number = expectedChainIdCsc) {
+export async function switchNetworkBsc(chainId: number = expectedChainBsc) {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -128,7 +128,7 @@ export async function switchNetworkCsc(chainId: number = expectedChainIdCsc) {
 	}
 }
 
-export async function connectCsc() {
+export async function connectBsc() {
 	const windowWithEthereum = window as unknown as WindowWithEthereum;
 	const { ethereum } = windowWithEthereum;
 
@@ -136,11 +136,17 @@ export async function connectCsc() {
 		method: 'eth_requestAccounts'
 	});
 
-	addressCsc.update(() => {
+	addressBsc.update(() => {
 		return _address;
 	});
 }
 
-export async function disconnectCsc() {
-	addressCsc.set(null);
+export async function disconnectBsc() {
+	addressBsc.set(null);
 }
+
+
+
+
+
+

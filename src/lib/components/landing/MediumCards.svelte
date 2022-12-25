@@ -1,6 +1,6 @@
 <script>
     // @ts-nocheck
-    import { mediumData } from "$lib/stores/store";
+    import { mediumData } from "$lib/store/store";
     import Time from "svelte-time";
 </script>
 

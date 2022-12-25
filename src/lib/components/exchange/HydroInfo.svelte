@@ -1,6 +1,6 @@
 <script>
-import { hydroInfo } from "$lib/stores/store";
-import { priceData } from "$lib/stores/store";
+import { hydroInfo } from "$lib/store/store";
+import { priceData } from "$lib/store/store";
 </script>
 
 <div class="one-quarter" id="card-background">

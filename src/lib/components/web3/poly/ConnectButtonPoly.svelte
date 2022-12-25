@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { addressPoly, connectPoly, disconnectPoly, onExpectedNetworkPoly } from "$lib/stores/wallet-poly";
-    import { showNotification, NotificationType} from "$lib/stores/notifications";
-    import { metamask } from '$lib/stores/wallet-bsc';
+    //@ts-nocheck
+    import { addressPoly, connectPoly, disconnectPoly, onExpectedNetworkPoly } from "$lib/utils/wallet-poly";
+    import { showNotification, NotificationType} from "$lib/utils/notifications";
+    import { metamask } from '$lib/utils/wallet-bsc';
     let loading = false;
     async function onConnectPoly() {
         loading = true;
