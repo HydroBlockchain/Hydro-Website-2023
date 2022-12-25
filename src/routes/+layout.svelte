@@ -61,6 +61,7 @@
     <a
       class="button"
       aria-label="button-to-the-top"
+      alt="button-to-the-top"
       id="to-the-top"
       on:click={() => animateScroll.scrollToTop()}
     >

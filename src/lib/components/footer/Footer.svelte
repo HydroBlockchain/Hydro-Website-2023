@@ -136,6 +136,7 @@
         <a
           class="social-icon"
           href={item[5].link}
+          aria-label="Footer Logo"
           target="_blank"
           rel="noopener noreferrer"
         >
