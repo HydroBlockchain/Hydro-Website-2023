@@ -68,6 +68,8 @@ $: {
 <style>
     #to-the-top{
         display: none;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
     .app {
         display: flex;
