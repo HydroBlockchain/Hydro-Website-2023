@@ -12,8 +12,6 @@
   import { initPoly } from "$lib/utils/wallet-poly";
   import { initMovr } from "$lib/utils/wallet-movr";
   import { initCsc } from "$lib/utils/wallet-csc";
-  //Scroll to top
-  import * as animateScroll from "svelte-scrollto";
 
   let ready;
   onMount(() => {
@@ -31,6 +29,11 @@
         state.set({ loading: false });
       }, 1000);
     }
+  }
+
+  function toTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
 
@@ -58,15 +61,15 @@
     <Footer />
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-missing-attribute -->
-    <a
+    <div
       class="button"
       aria-label="button-to-the-top"
       alt="button-to-the-top"
       id="to-the-top"
-      on:click={() => animateScroll.scrollToTop()}
+      on:click={toTop}
     >
       Take me to the top!
-  </a>
+    </div>
   </div>
 </div>
 
@@ -107,8 +110,7 @@
     margin-top: 1rem;
   }
   @media only screen and (max-width: 600px) {
-
-    .app-wrapper:focus-within{
+    .app-wrapper:focus-within {
       scroll-behavior: smooth !important;
       overflow-y: scroll !important;
       -webkit-overflow-scrolling: touch !important;
@@ -120,6 +122,5 @@
     .app-wrapper::-webkit-scrollbar {
       display: none !important;
     }
-
   }
 </style>
