@@ -19,7 +19,7 @@
         cx="512"
         cy="512"
         r="512"
-        fill="var(--drop-color-2)"
+        fill="var(--drop-color)"
         filter="url(#filter0_b_1616_338)"
       />
       <path

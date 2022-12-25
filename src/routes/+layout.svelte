@@ -95,9 +95,6 @@
     width: auto !important;
     scroll-behavior: smooth !important;
     overflow-y: scroll !important;
-    -webkit-overflow-scrolling: touch !important;
-    backface-visibility: hidden !important;
-    -webkit-backface-visibility: hidden !important;
     background-color: var(--bg-color) !important;
   }
 
@@ -110,6 +107,19 @@
     margin-top: 1rem;
   }
   @media only screen and (max-width: 600px) {
+
+    .app-wrapper:focus-within{
+      scroll-behavior: smooth !important;
+      overflow-y: scroll !important;
+      -webkit-overflow-scrolling: touch !important;
+      backface-visibility: hidden !important;
+      -webkit-backface-visibility: hidden !important;
+      background-color: var(--bg-color) !important;
+    }
+
+    .app-wrapper::-webkit-scrollbar {
+      display: none !important;
+    }
 
   }
 </style>
