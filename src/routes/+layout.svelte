@@ -58,7 +58,7 @@
     <Footer />
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-missing-attribute -->
-    <div
+    <a
       class="button"
       aria-label="button-to-the-top"
       alt="button-to-the-top"
@@ -66,7 +66,7 @@
       on:click={() => animateScroll.scrollToTop()}
     >
       Take me to the top!
-  </div>
+  </a>
   </div>
 </div>
 
