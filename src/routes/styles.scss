@@ -587,6 +587,9 @@ color: var(--green);
 //Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
 
+body, #aegir-button-play, #aegir-button-ios {
+font-family: "Lucida Console", "Courier New", monospace !important;
+}
 #to-the-top{
 display: block !important;
 margin-top: 1rem;
@@ -667,6 +670,10 @@ padding: 1rem;
 
 //Medium devices (landscape tablets, up to 768px)
 @media only screen and (max-width: 768px) {
+
+body, #aegir-button-play, #aegir-button-ios {
+font-family: "Lucida Console", "Courier New", monospace !important;
+}
 
 #to-the-top{
 display: flex !important;

@@ -17,10 +17,10 @@
     
         if (stored) {
           // clear storage & reload to read in svgs
-          localStorage.removeItem(STORAGE_KEY, location.reload());
+          localStorage.removeItem(STORAGE_KEY);
         } else {
           // store opposite of preference & reload to read in svgs
-          localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK, location.reload());
+          localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
         }
         applyTheme();
       };
@@ -48,7 +48,7 @@
     
 <div>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
-<a id="header-link" checked={currentTheme !==THEMES.DARK} on:click={toggleTheme}>
+<a id="header-link" data-sveltekit-reload checked={currentTheme !==THEMES.DARK} on:click={toggleTheme}>
     {#if currentTheme === THEMES.DARK}
       <svg id="themeToggle" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

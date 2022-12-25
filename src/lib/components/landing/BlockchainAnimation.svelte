@@ -3199,23 +3199,17 @@ points="1319.9,469.6 1316.8,489.5 1290.8,488.5 1285.7,491.6 1320.3,492.9 1324.3,
 
   @media only screen and (max-width: 600px) {
     .full {
-    justify-content: center;
-}
-
-.statement {
-    display: none;
-}
-}
+      display: none;
+}}
 
 @media only screen and (max-width: 768px) {
-    .full {
+  .full {
     justify-content: center;
 }
 
 .statement {
     display: none;
-}
-}
+}}
 
 @media only screen and (max-width: 992px) {
     .full {
