@@ -219,7 +219,7 @@ url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ope
 }
 
 html {
-background-color: var(--bg-color);
+background-color: var(--bg-color) !important;
 }
 
 body {
@@ -227,7 +227,7 @@ min-height: 100vh;
 margin: 0;
 font-family: var(--font-body);
 color: var(--color-text);
-background-color: var(--bg-color);
+background-color: var(--bg-color) !important;
 overflow-x: hidden;
 }
 

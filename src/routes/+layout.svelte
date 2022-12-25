@@ -87,6 +87,7 @@ $: {
         -webkit-overflow-scrolling: touch !important;
         backface-visibility: hidden !important;
         -webkit-backface-visibility: hidden !important;
+        background-color: var(--bg-color) !important;
     }
 
     main {
