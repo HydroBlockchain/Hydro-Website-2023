@@ -17,12 +17,14 @@
     
         if (stored) {
           // clear storage & reload to read in svgs
-          localStorage.removeItem(STORAGE_KEY).location.reload();
+          localStorage.removeItem(STORAGE_KEY);
         } else {
           // store opposite of preference & reload to read in svgs
-          localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK), location.reload();
+          localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
+          
         }
         applyTheme();
+        window.location.reload()
       };
     
       let currentTheme = '';
