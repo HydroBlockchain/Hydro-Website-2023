@@ -79,7 +79,7 @@
   .app {
     display: flex;
     flex-direction: column;
-    height: 100% !important;
+    height: auto !important;
     height: -moz-available !important; /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
     height: fill-available !important;
@@ -89,10 +89,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100% !important;
-    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-    height: fill-available !important;
+    height: auto !important;
     scroll-behavior: smooth !important;
     overflow-y: scroll !important;
     -webkit-overflow-scrolling: touch !important;

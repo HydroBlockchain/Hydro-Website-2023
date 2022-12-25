@@ -230,7 +230,8 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.app-wrapper::-webkit-scrollbar {
   display: none !important;
 }
 
@@ -583,12 +584,6 @@ a:active {
 //Responsive
 //Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
-  .app-wrapper {
-    height: 100% !important;
-    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-    height: fill-available !important;
-  }
   body:focus-within,
   html:focus-within {
     scroll-behavior: smooth !important;
@@ -681,12 +676,6 @@ a:active {
 
 //Medium devices (landscape tablets, up to 768px)
 @media only screen and (max-width: 768px) {
-  .app-wrapper {
-    height: 100% !important;
-    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-    height: fill-available !important;
-  }
   body:focus-within,
   html:focus-within {
     scroll-behavior: smooth !important;
@@ -788,12 +777,6 @@ a:active {
 
 //Large devices (laptops/desktops, up to 992px)
 @media only screen and (max-width: 992px) {
-  .app-wrapper {
-    height: 100% !important;
-    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-    height: fill-available !important;
-  }
   body:focus-within,
   html:focus-within {
     scroll-behavior: smooth !important;
@@ -889,12 +872,6 @@ a:active {
 
 //Extra large devices (large laptops and desktops, up to 1400px)
 @media only screen and (max-width: 1200px) {
-  .app-wrapper {
-    height: 100% !important;
-    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-    height: fill-available !important;
-  }
   #to-the-top {
     display: flex !important;
     justify-content: center;
@@ -965,14 +942,6 @@ a:active {
     height: auto;
     width: 70px;
   }
-
-  // .dashboard-slot,
-  // .dashboard-slot-alt {
-  // width: 200px;
-  // height: 50px;
-  // margin: 0.5rem;
-  // padding: 1rem;
-  // }
 
   .currency-class,
   .price {
