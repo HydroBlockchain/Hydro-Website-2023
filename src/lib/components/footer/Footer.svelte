@@ -5,7 +5,7 @@
 <footer>
     <div class="footer-container" id="card-background">
         <div class="logo">
-            <a href="/">
+            <a aria-label="Hydro Logo" href="/">
                 <svg id="hydro-logo" viewBox="0 0 2561 490" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1733_118)">
                         <path
@@ -25,7 +25,7 @@
         </div>
         <div class="social-media-wrapper">
             <div class="social-media">
-                <a href={item[0].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[0].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -33,15 +33,15 @@
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[1].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[1].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
-                        <svg id="social-link-logo" viewBox="0 0 38 30"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg id="social-link-logo"  viewBox="0 0 38 30"  fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M37.698 3.574a15.408 15.408 0 0 1-4.343 1.19A7.616 7.616 0 0 0 36.683.578a15.782 15.782 0 0 1-4.812 1.82A7.539 7.539 0 0 0 26.35 0c-4.181 0-7.57 3.388-7.57 7.563 0 .6.072 1.177.198 1.724-6.29-.294-11.865-3.316-15.594-7.881a7.449 7.449 0 0 0-1.028 3.81A7.56 7.56 0 0 0 5.72 11.51a7.519 7.519 0 0 1-3.423-.942v.09a7.574 7.574 0 0 0 6.066 7.425 7.792 7.792 0 0 1-1.988.264c-.486 0-.95-.047-1.412-.133a7.602 7.602 0 0 0 7.082 5.257 15.189 15.189 0 0 1-9.383 3.23c-.6 0-1.2-.029-1.803-.101A21.518 21.518 0 0 0 12.485 30c13.918 0 21.523-11.528 21.523-21.512 0-.318 0-.643-.024-.968a15.146 15.146 0 0 0 3.784-3.917l-.07-.029z"
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[2].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[2].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" viewBox="0 0 43 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -49,7 +49,7 @@
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[3].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[3].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -60,7 +60,7 @@
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[4].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[4].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -78,7 +78,7 @@
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[6].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[6].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -86,7 +86,7 @@
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[7].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[7].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" fill="none" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -95,7 +95,7 @@
                                 
                     </div>
                 </a>
-                <a href={item[8].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[8].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -103,7 +103,7 @@
                                 fill="var(--svg-color)" /></svg>
                     </div>
                 </a>
-                <a href={item[9].link} target="_blank" rel="noopener noreferrer">
+                <a href={item[9].link} aria-label="Footer Logo" target="_blank" rel="noopener noreferrer">
                     <div class="social-icon">
                         <svg id="social-link-logo" fill="none" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                             <path
