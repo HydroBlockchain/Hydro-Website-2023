@@ -79,14 +79,20 @@
   .app {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100% !important;
+    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
+    height: fill-available !important;
   }
 
   .app-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100% !important;
+    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
+    height: fill-available !important;
     scroll-behavior: smooth !important;
     overflow-y: scroll !important;
     -webkit-overflow-scrolling: touch !important;
