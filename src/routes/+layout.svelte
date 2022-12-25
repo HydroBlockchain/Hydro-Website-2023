@@ -59,7 +59,7 @@ $: {
         <Footer />
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <!-- svelte-ignore a11y-missing-attribute -->
-        <a class="button" id="to-the-top" on:click={() => animateScroll.scrollToTop()}> 
+        <a class="button" alt="button-to-the-top" id="to-the-top" on:click={() => animateScroll.scrollToTop()}> 
         Take me to the top!
         </a>
     </div>
