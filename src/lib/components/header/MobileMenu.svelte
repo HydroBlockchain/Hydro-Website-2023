@@ -71,7 +71,7 @@
                     <div class="dashboard-slot" id="card-background-alt">
                         <ThemeToggleMobile/>
                     </div>
-                    <a id="header-link" data-sveltekit-prefetch href="/exchanges ">
+                    <a id="header-link" data-sveltekit-preload-data="hover" href="/exchanges ">
                         <div class="dashboard-slot" id="card-background-alt">
                             <svg id="icon" viewBox="0 0 39 32"  fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -79,7 +79,7 @@
                                     fill="var(--svg-color)" /></svg>
                         </div>
                     </a>
-                    <a id="header-link" data-sveltekit-prefetch href="/roadmap">
+                    <a id="header-link" data-sveltekit-preload-data="hover" href="/roadmap">
                         <div class="dashboard-slot" id="card-background-alt">
                             <svg id="icon" viewBox="0 0 32 32"  fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -89,7 +89,7 @@
                     </a>
                 </div>
                 <div class="hydro-dashboard">
-                    <a id="header-link" data-sveltekit-prefetch href="/faq">
+                    <a id="header-link" data-sveltekit-preload-data="hover" href="/faq">
                         <div class="dashboard-slot" id="card-background-alt">
                             <svg id="icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -97,7 +97,7 @@
                                     fill="var(--svg-color)" /></svg>
                         </div>
                     </a>
-                    <a id="header-link" data-sveltekit-prefetch href="/team">
+                    <a id="header-link" data-sveltekit-preload-data="hover" href="/team">
                         <div class="dashboard-slot" id="card-background-alt">
                             <svg id="icon" viewBox="0 0 32 32"  fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -108,7 +108,7 @@
                                     fill="var(--svg-color)" /></svg>
                         </div>
                     </a>
-                    <a id="header-link" data-sveltekit-prefetch href="/tech">
+                    <a id="header-link" data-sveltekit-preload-data="hover" href="/tech">
                         <div class="dashboard-slot" id="card-background-alt">
                             <svg id="icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M30.598 3.57l-2.154-2.155a4.843 4.843 0 0 0-6.842 0l-4.91 4.91a4.843 4.843 0 0 0 0 6.842l.124.124-3.519 3.518-.13-.13a4.843 4.843 0 0 0-6.842 0l-4.91 4.91a4.843 4.843 0 0 0 0 6.841l2.155 2.155a4.843 4.843 0 0 0 6.841 0l4.91-4.91a4.843 4.843 0 0 0 0-6.842l-.124-.124 3.519-3.518.13.13a4.843 4.843 0 0 0 6.843 0l4.909-4.91c1.887-1.88 1.887-4.955 0-6.841zm-17.17 17.157a2.171 2.171 0 0 1 0 3.062l-4.91 4.91a2.171 2.171 0 0 1-3.062 0l-2.154-2.155a2.171 2.171 0 0 1 0-3.062l4.91-4.91a2.171 2.171 0 0 1 3.061 0l.13.13-2.127 2.13c-.542.541-.542 1.357 0 1.905.274.275.613.412.953.412s.679-.137.953-.412l2.128-2.128zM28.705 8.525l-4.91 4.91a2.171 2.171 0 0 1-3.062 0l-.13-.131 2.128-2.129c.542-.542.542-1.358 0-1.906s-1.358-.542-1.906 0l-2.129 2.128-.124-.124a2.171 2.171 0 0 1 0-3.062l4.91-4.91a2.171 2.171 0 0 1 3.062 0l2.154 2.155c.855.849.855 2.22.007 3.069z"
