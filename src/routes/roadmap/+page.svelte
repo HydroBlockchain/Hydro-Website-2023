@@ -1,5 +1,5 @@
 <script>
-import Roadmap from "$lib/components/roadmap/roadmap.svelte";
+import RoadmapCards from "$lib/components/roadmap/RoadmapCards.svelte";
 import BlockchainCall from "$lib/components/roadmap/BlockchainCall.svelte";
 </script>
 
@@ -9,6 +9,6 @@ import BlockchainCall from "$lib/components/roadmap/BlockchainCall.svelte";
 </svelte:head>
 
 <section>
-    <Roadmap/>
+    <RoadmapCards/>
     <BlockchainCall/>
 </section>

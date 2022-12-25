@@ -2,8 +2,8 @@
 // @ts-nocheck
 import { onMount } from 'svelte';
 import { state } from "$lib/stores/store";
-import Header from "./Header.svelte";
-import Footer from "./Footer.svelte";
+import Header from "$lib/components/header/Header.svelte";
+import Footer from "$lib/components/footer/Footer.svelte";
 import Preloader from "$lib/components/Preloader.svelte";
 import "./styles.scss";
 // Init chains
@@ -68,10 +68,6 @@ $: {
 <style>
     #to-the-top{
         display: none;
-    }
-    #up-icon{
-        width: 32px;
-        height: auto;
     }
     .app {
         display: flex;

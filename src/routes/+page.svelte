@@ -1,8 +1,7 @@
-<script lang="ts">
-//Components
-import Medium from "$lib/components/landing/medium.svelte";
-import Introduction from "$lib/components/landing/pricewidget.svelte";
-import Hero from "$lib/components/landing/hero.svelte";
+<script>
+import HeroCard from "$lib/components/landing/HeroCard.svelte";
+import InfoWidget from "$lib/components/landing/InfoWidget.svelte";
+import MediumCards from "$lib/components/landing/MediumCards.svelte";
 import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.svelte";
 </script>
 
@@ -12,10 +11,10 @@ import BlockchainAnimation from "$lib/components/landing/BlockchainAnimation.sve
 </svelte:head>
 
 <section>
-  <Hero />
+  <HeroCard />
   <div class="multiple-containers">
-    <Introduction />
-    <Medium />
+    <InfoWidget/>
+    <MediumCards />
   </div>
   <BlockchainAnimation />
 </section>

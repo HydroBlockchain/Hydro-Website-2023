@@ -18,13 +18,9 @@ import { onMount } from 'svelte';
     if (stored) {
       // clear storage
       localStorage.removeItem(STORAGE_KEY);
-      //Reloads the window to upon theme switch to read in CSS
-      // location.reload(true);
     } else {
       // store opposite of preference
       localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
-      //Reloads the window to upon theme switch to read in CSS
-      // location.reload(true);
     }
     applyTheme();
   };

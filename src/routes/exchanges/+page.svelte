@@ -1,9 +1,9 @@
 <script>
-import Partners from "$lib/components/exchange/partners.svelte";
-import Exchanges from "$lib/components/exchange/exchanges.svelte";
-import Featured from "$lib/components/exchange/featured.svelte";
 import HydroChart from "$lib/components/exchange/HydroChart.svelte";
 import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
+import ExchangesCard from "$lib/components/exchange/ExchangesCard.svelte";
+import PartnersCard from "$lib/components/exchange/PartnersCard.svelte";
+import FeaturedOn from "$lib/components/exchange/FeaturedOn.svelte";
 </script>
 
 <svelte:head>
@@ -17,8 +17,8 @@ import HydroInfo from "$lib/components/exchange/HydroInfo.svelte";
         <HydroInfo />
     </div>
     <div class="multiple-containers-alt">
-        <Partners />
-        <Exchanges />
+        <PartnersCard/>
+        <ExchangesCard/>
     </div>
-    <Featured />
+    <FeaturedOn/>
 </section>
