@@ -1,6 +1,5 @@
 <script>
 // @ts-nocheck
-    import ThemeToggle from './ThemeToggle.svelte';
     import ThemeToggleMobile from './ThemeToggleMobile.svelte';
 </script>
     
