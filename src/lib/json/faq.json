@@ -71,12 +71,10 @@
         "id": "10",
         "question": "How can i contribute to Project Hydro?",
         "answer": "We are always interested in collaborations and contributions to our Open Source Project. Contributions can be anything from Pull Requests on Github to donations. Here are some relevant links to discover. link list Donations address",
-        "link1": "EthereumAddress",
+        "link1": "https://etherscan.io",
         "linktitle1": "Ethereum",
-        "link2": "bscaddress",
-        "linktitle2": "Binance smart chain",
-        "link3": "bitcoin",
-        "linktitle3": "Bticoin"
+        "link2": "https://bscscan.com",
+        "linktitle2": "Binance smart chain"
     }
 ]
 
