@@ -1,6 +1,7 @@
 <script>
 // @ts-nocheck
     import ThemeToggle from './ThemeToggle.svelte';
+    import ThemeToggleMobile from './ThemeToggleMobile.svelte';
 </script>
     
     <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -74,7 +75,7 @@
             <div class="navigation" data-sveltekit-preload-data="hover">
                 <div class="hydro-dashboard">
                     <div class="dashboard-slot" id="card-background-alt">
-                        <ThemeToggle/>
+                        <ThemeToggleMobile/>
                     </div>
                     <a id="header-link" href="/exchanges" data-sveltekit-preload-data="hover">
                         <div class="dashboard-slot" id="card-background-alt" data-sveltekit-preload-data="hover">
