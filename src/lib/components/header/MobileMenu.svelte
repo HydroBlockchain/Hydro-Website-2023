@@ -1,5 +1,4 @@
 <script>
-    // @ts-nocheck
     import ThemeToggleMobile from './ThemeToggleMobile.svelte';
     </script>
     
