@@ -85,6 +85,8 @@ $: {
         scroll-behavior: smooth !important;
         overflow-y: scroll !important;
         -webkit-overflow-scrolling: touch !important;
+        backface-visibility: hidden !important;
+        -webkit-backface-visibility: hidden !important;
     }
 
     main {

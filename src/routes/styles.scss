@@ -584,6 +584,13 @@ color: var(--green);
 //Responsive
 //Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {
+body:focus-within, html:focus-within{
+scroll-behavior: smooth !important;
+overflow-y: scroll !important;
+-webkit-overflow-scrolling: touch !important;
+backface-visibility: hidden !important;
+-webkit-backface-visibility: hidden !important;
+}
 body, #aegir-button-play, #aegir-button-ios {
 font-family: "Lucida Console", "Courier New", monospace !important;
 }
@@ -667,6 +674,13 @@ padding: 1rem;
 
 //Medium devices (landscape tablets, up to 768px)
 @media only screen and (max-width: 768px) {
+body:focus-within, html:focus-within{
+scroll-behavior: smooth !important;
+overflow-y: scroll !important;
+-webkit-overflow-scrolling: touch !important;
+backface-visibility: hidden !important;
+-webkit-backface-visibility: hidden !important;
+}
 body, #aegir-button-play, #aegir-button-ios {
 font-family: "Lucida Console", "Courier New", monospace !important;
 }
@@ -759,6 +773,13 @@ font-size: 10px;
 
 //Large devices (laptops/desktops, up to 992px)
 @media only screen and (max-width: 992px) {
+body:focus-within, html:focus-within{
+scroll-behavior: smooth !important;
+overflow-y: scroll !important;
+-webkit-overflow-scrolling: touch !important;
+backface-visibility: hidden !important;
+-webkit-backface-visibility: hidden !important;
+}
 #to-the-top{
 display: flex !important;
 justify-content: center;
