@@ -80,10 +80,6 @@
     display: flex;
     flex-direction: column;
     height: auto !important;
-    margin: 0rem;
-    height: -moz-available !important; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
-    height: fill-available !important;
     background-color: var(--bg-color) !important;
   }
 
