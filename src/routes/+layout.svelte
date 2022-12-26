@@ -1,17 +1,16 @@
 <script>
   // @ts-nocheck
+  import "./styles.scss";
   import { onMount } from "svelte";
   import { state } from "$lib/store/store";
-  import Header from "$lib/components/header/Header.svelte";
-  import Footer from "$lib/components/footer/Footer.svelte";
-  import Preloader from "$lib/components/Preloader.svelte";
-  import "./styles.scss";
-  // Init chains
   import { initBsc } from "$lib/utils/wallet-bsc.ts";
   import { initEth } from "$lib/utils/wallet-eth.ts";
   import { initPoly } from "$lib/utils/wallet-poly";
   import { initMovr } from "$lib/utils/wallet-movr";
   import { initCsc } from "$lib/utils/wallet-csc";
+  import Header from "$lib/components/header/Header.svelte";
+  import Footer from "$lib/components/footer/Footer.svelte";
+  import Preloader from "$lib/components/Preloader.svelte";
 
   let ready;
   onMount(() => {
@@ -29,11 +28,6 @@
         state.set({ loading: false });
       }, 1000);
     }
-  }
-
-  function toTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
 
@@ -59,26 +53,10 @@
       <slot />
     </main>
     <Footer />
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <!-- svelte-ignore a11y-missing-attribute -->
-    <div
-      class="button"
-      aria-label="button-to-the-top"
-      alt="button-to-the-top"
-      id="to-the-top"
-      on:click={toTop}
-    >
-      Take me to the top!
-    </div>
   </div>
 </div>
 
 <style>
-  #to-the-top {
-    display: none;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
   .app {
     display: flex;
     flex-direction: column;
@@ -99,6 +77,10 @@
     scroll-behavior: smooth !important;
     overflow-y: scroll !important;
     background-color: var(--bg-color) !important;
+  }
+
+  .app-wrapper::-webkit-scrollbar {
+    display: none !important;
   }
 
   main {

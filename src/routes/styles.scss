@@ -230,9 +230,11 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar-track-piece {
+body::-webkit-scrollbar {
   display: none !important;
 }
+
+
 
 //Keyframes
 @keyframes fadeIn {
