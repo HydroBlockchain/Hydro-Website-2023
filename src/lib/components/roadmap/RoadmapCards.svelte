@@ -216,7 +216,7 @@
   }
 
   .progress-moved .progress-bar1 {
-    width: 85%;
+    width: var(--progressbar1);
     background-color: var(--progress-bar);
     animation: progressAnimation1 4s;
   }
@@ -228,7 +228,7 @@
     }
 
     100% {
-      width: 85%;
+      width: var(--progressbar1);
       background-color: var(--progress-bar);
     }
   }
@@ -246,7 +246,7 @@
   }
 
   .progress-moved .progress-bar2 {
-    width: 45%;
+    width: var(--progressbar2);
     background-color: var(--progress-bar);
     animation: progressAnimation2 4s;
   }
@@ -258,7 +258,7 @@
     }
 
     100% {
-      width: 45%;
+      width: var(--progressbar2);
       background-color: var(--progress-bar);
     }
   }
@@ -276,7 +276,7 @@
   }
 
   .progress-moved .progress-bar3 {
-    width: 16%;
+    width: var(--progressbar3);
     background-color: var(--progress-bar);
     animation: progressAnimation3 4s;
   }
@@ -288,7 +288,7 @@
     }
 
     100% {
-      width: 16%;
+      width: var(--progressbar3);
       background-color: var(--progress-bar);
     }
   }
@@ -306,7 +306,7 @@
   }
 
   .progress-moved .progress-bar4 {
-    width: 32%;
+    width: var(--progressbar4);
     background-color: var(--progress-bar);
     animation: progressAnimation4 4s;
   }
@@ -318,7 +318,7 @@
     }
 
     100% {
-      width: 32%;
+      width: var(--progressbar4);
       background-color: var(--progress-bar);
     }
   }
@@ -336,7 +336,7 @@
   }
 
   .progress-moved .progress-bar5 {
-    width: 41%;
+    width: var(--progressbar5);
     background-color: var(--progress-bar);
     animation: progressAnimation5 4s;
   }
@@ -348,7 +348,7 @@
     }
 
     100% {
-      width: 41%;
+      width: var(--progressbar5);
       background-color: var(--progress-bar);
     }
   }
@@ -366,7 +366,7 @@
   }
 
   .progress-moved .progress-bar6 {
-    width: 24%;
+    width: var(--progressbar6);
     background-color: var(--progress-bar);
     animation: progressAnimation6 4s;
   }
@@ -378,7 +378,7 @@
     }
 
     100% {
-      width: 24%;
+      width: var(--progressbar6);
       background-color: var(--progress-bar);
     }
   }

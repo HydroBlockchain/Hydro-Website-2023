@@ -114,7 +114,7 @@
 <style>
   .half {
     height: var(--ch-mini);
-    margin-right: 0px;
+    margin-right: var(--zero);
     margin-left: 15px;
   }
 
@@ -138,10 +138,10 @@
   @media only screen and (max-width: 600px) {
     .half {
       height: auto;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      margin-right: 0px !important;
-      margin-left: 0px !important;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
+      margin-right: var(--zero) !important;
+      margin-left: var(--zero) !important;
     }
 
     #exchange {

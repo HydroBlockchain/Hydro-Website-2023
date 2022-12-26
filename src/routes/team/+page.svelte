@@ -188,7 +188,7 @@
   .team-card {
     width: 285px;
     height: 130px;
-    padding: 1rem;
+    padding: var(--padding-standard);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -216,7 +216,6 @@
   .team-title {
     font-size: var(--fs-mini);
     text-align: right;
-    margin-top: var(--margin-xs);
     color: var(--text-color-alt);
   }
 
@@ -227,18 +226,18 @@
   }
 
   .button-team {
-    margin-top: var(--margin-l);
-    margin-left: var(--margin-x);
-    margin-right: 0;
+    margin-top: var(--margin-standard);
+    margin-left: var(--margin-standard);
+    margin-right: var(--zero);
   }
 
   #top-one {
-    margin-bottom: var(--margin-m);
+    margin-bottom: var(--margin-standard);
   }
 
   #last-one {
-    margin-top: var(--margin-m);
-    margin-bottom: var(--margin-m);
+    margin-top: var(--margin-standard);
+    margin-bottom: var(--margin-standard);
   }
 
   #profile-pic {
@@ -253,7 +252,7 @@
   #hydro-drops {
     width: 90px;
     height: 90px;
-    margin-bottom: var(--margin-xs);
+    margin-bottom: var(--margin-half);
   }
 
   a:hover {
@@ -274,23 +273,23 @@
 
     .team-card {
       justify-content: space-around;
-      padding: 0;
+      padding: var(--zero);
       width: 100% !important;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-top: var(--margin-half);
+      margin-bottom: var(--margin-half);
     }
 
     #profile-pic {
       width: 100px;
-      margin-right: 1rem;
+      margin-right: var(--margin-standard);
     }
 
     #top-one {
-      margin-bottom: 0;
+      margin-bottom: var(--zero);
     }
 
     #last-one {
-      margin-top: 0;
+      margin-top: var(--zero);
       margin-bottom: 0.5rem;
     }
   }
@@ -309,24 +308,24 @@
 
     .team-card {
       justify-content: space-around;
-      padding: 0;
+      padding: var(--zero);
       width: 100% !important;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-top: var(--margin-half);
+      margin-bottom: var(--margin-half);
     }
 
     #profile-pic {
       width: 120px;
-      margin-right: 1rem;
+      margin-right: var(--margin-standard);
     }
 
     #top-one {
-      margin-bottom: 0;
+      margin-bottom: var(--zero);
     }
 
     #last-one {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
+      margin-top: var(--zero);
+      margin-bottom: var(--margin-half);
     }
   }
 
@@ -346,22 +345,22 @@
       justify-content: space-around;
       padding: 0;
       width: 100% !important;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-top: var(--margin-half);
+      margin-bottom: var(--margin-half);
     }
 
     #profile-pic {
       width: 100px;
-      margin-right: 1rem;
+      margin-right: var(--margin-standard);
     }
 
     #top-one {
-      margin-bottom: 0;
+      margin-bottom: var(--zero);
     }
 
     #last-one {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
+      margin-top: var(--zero);
+      margin-bottom: var(--margin-half);
     }
   }
 
@@ -379,24 +378,24 @@
 
     .team-card {
       justify-content: space-around;
-      padding: 0;
+      padding: var(--zero);
       width: 100% !important;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-top: var(--margin-half);
+      margin-bottom: var(--margin-half);
     }
 
     #profile-pic {
       width: 100px;
-      margin-right: 1rem;
+      margin-right: var(--margin-standard);
     }
 
     #top-one {
-      margin-bottom: 0;
+      margin-bottom: var(--zero);
     }
 
     #last-one {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
+      margin-top: var(--zero);
+      margin-bottom: var(--margin-half);
     }
   }
 </style>

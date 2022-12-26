@@ -91,9 +91,9 @@
 
 <style>
   .one-quarter {
-    height: 25rem;
-    margin-right: 0;
-    margin-left: 2rem;
+    height: var(--ch-small);
+    margin-right: var(--zero);
+    margin-left: var(--margin-alt);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,18 +120,18 @@
     }
     .one-quarter {
       height: auto;
-      margin-left: 0 !important;
+      margin-left: var(--zero) !important;
     }
 
     .dashboards {
       flex-direction: column;
-      margin: 1rem !important;
+      margin: var(--margin-standard) !important;
     }
 
     .hydro-dashboard {
       flex-direction: row !important;
-      margin-top: 0rem !important;
-      margin-bottom: 0rem !important;
+      margin-top: var(--zero) !important;
+      margin-bottom: var(--zero) !important;
     }
 
     .dashboard-slot {
@@ -144,38 +144,38 @@
   @media only screen and (max-width: 768px) {
     .one-quarter {
       height: auto;
-      margin-left: 0 !important;
+      margin-left: var(--zero) !important;
     }
 
     .dashboards {
-      margin-top: 0rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-top: var(--zero);
+      margin-left: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
 
     .hydro-dashboard {
       flex-direction: column;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
   }
 
   @media only screen and (max-width: 992px) {
     .one-quarter {
       height: auto;
-      margin-left: 0 !important;
+      margin-left: var(--zero) !important;
     }
 
     .dashboards {
-      margin-top: 0rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-top: var(--zero);
+      margin-left: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
 
     .hydro-dashboard {
       flex-direction: column;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
   }
 
@@ -186,15 +186,15 @@
     }
 
     .dashboards {
-      margin-top: 0rem;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-top: var(--zero);
+      margin-left: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
 
     .hydro-dashboard {
       flex-direction: column;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
   }
 </style>

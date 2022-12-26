@@ -155,7 +155,7 @@
   .three-quarter {
     display: flex;
     flex-direction: row;
-    margin-left: 0;
+    margin-left: var(--zero);
     height: 25rem;
   }
 
@@ -171,7 +171,7 @@
   }
 
   #myChart {
-    margin: 2rem;
+    margin: var(--margin-alt);
     width: 100%;
     height: 100%;
   }
@@ -185,7 +185,7 @@
 
   @media only screen and (max-width: 768px) {
     #myChart {
-      margin: 2rem;
+      margin: var(--margin-alt);
       width: 600px !important;
       height: 300px !important;
     }
@@ -193,7 +193,7 @@
 
   @media only screen and (max-width: 992px) {
     #myChart {
-      margin: 2rem;
+      margin: var(--margin-alt);
       width: 600px !important;
       height: 300px !important;
     }
@@ -201,7 +201,7 @@
 
   @media only screen and (max-width: 1200px) {
     #myChart {
-      margin: 2rem;
+      margin: var(--margin-alt);
       width: 600px !important;
       height: 300px !important;
     }

@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: column;
     height: auto !important;
-    margin: 0rem;
+    margin: var(--zero);
     height: -moz-available !important; /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available !important; /* Mozilla-based browsers will ignore this. */
     height: fill-available !important;
@@ -88,8 +88,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0;
-    margin-top: 1rem;
+    margin: var(--zero);
+    margin-top: var(--margin-standard);
   }
   @media only screen and (max-width: 600px) {
     .app-wrapper:focus-within {

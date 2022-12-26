@@ -40,6 +40,13 @@
   --border-radius: 7px;
   --transparent: rgba(255, 255, 255, 0);
   --preloader: rgba(0, 0, 0, 1);
+  //Progress Bars
+  --progressbar1: 75%;
+  --progressbar2: 35%;
+  --progressbar3: 16%;
+  --progressbar4: 32%;
+  --progressbar5: 41%;
+  --progressbar6: 24%;
 }
 
 //Dark Mode
@@ -483,7 +490,7 @@ a:active {
 .button-row {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
+  margin-top: var(--margin-alt);
 }
 
 //Hydro Token Tool Buttons

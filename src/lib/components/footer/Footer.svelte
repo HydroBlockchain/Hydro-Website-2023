@@ -256,13 +256,13 @@
     display: flex;
     flex-direction: row;
     margin-right: 0;
-    margin-left: 1rem;
+    margin-left: var(--margin-standard);
   }
 
   #hydro-logo {
     width: 128px;
     height: 32px;
-    margin-right: 2rem;
+    margin-right: var(--margin-alt);
   }
 
   .social-media {
@@ -271,8 +271,8 @@
   }
 
   .social-icon {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: var(--margin-standard);
+    margin-right: var(--margin-standard);
     height: 25px;
     width: 25px;
   }
@@ -299,8 +299,8 @@
     }
 
     #hydro-logo {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
       margin-left: 0;
       margin-right: 0;
       width: 128px;
@@ -317,14 +317,14 @@
     .social-media {
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
       margin-right: 0;
-      margin-bottom: 1rem;
+      margin-bottom: var(--margin-standard);
     }
 
     .social-icon {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
   }
 
@@ -340,8 +340,8 @@
     }
 
     #hydro-logo {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
       margin-left: 0;
       margin-right: 0;
       width: 128px;
@@ -358,9 +358,9 @@
     .social-media {
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
       margin-right: 0;
-      margin-bottom: 1rem;
+      margin-bottom: var(--margin-standard);
     }
 
     .social-icon {

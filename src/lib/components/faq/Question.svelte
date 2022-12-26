@@ -66,9 +66,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     height: 35px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 0.5rem;
+    padding-top: var(--padding-standard);
+    padding-bottom: var(--padding-standard);
+    margin-bottom: var(--margin-half);
     overflow: hidden;
     color: var(--text-color);
     transition: height 0.5s ease-in-out;
@@ -82,7 +82,7 @@
     height: 30px;
     font-size: (--fs-xlarge);
     cursor: pointer;
-    padding-left: 1rem;
+    padding-left: var(--padding-standard);
   }
 
   .body {
@@ -93,7 +93,7 @@
     font-size: var(--fs-medium) !important;
     margin-top: 2rem;
     display: none;
-    padding-left: 1rem;
+    padding-left: var(--padding-standard);
   }
 
   .button-row {
