@@ -164,8 +164,8 @@
   --animation-color-8: rgba(68, 205, 255, 0.8);
   --animation-color-9: rgba(0, 132, 255, 0.8);
   //Price variation color
-  --red: #f00000;
-  --green: #00f500;
+  --red: #a60404;
+  --green: #047e04;
   //Chart-colors
   --chart-line: #fff;
   --chart-axis: #fff;
@@ -233,8 +233,6 @@ body {
 body::-webkit-scrollbar {
   display: none !important;
 }
-
-
 
 //Keyframes
 @keyframes fadeIn {

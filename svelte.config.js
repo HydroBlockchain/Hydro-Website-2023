@@ -14,7 +14,13 @@ const config = {
 		preprocess({
 			scss: { prependData: `@import 'src/routes/styles.scss';` }
 		})
-	]
+	],
+    onwarn: (warning, handler) => {
+        const { code } = warning;
+        if (code === 'css-semicolonexpected' || code === 'css-ruleorselectorexpected' || code === 'css-unused-selector')
+            return;
+        handler(warning);
+    }
 }
 
 export default config;
