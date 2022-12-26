@@ -34,12 +34,12 @@
         </g>
       </svg>
     </a>
-    <a href={item[1].link} target="_blank" rel="noopener noreferrer">
+    <a href={item[2].link} target="_blank" rel="noopener noreferrer">
       <img src={Sparkpoint} alt="Sparkpoint" id="partner" />
     </a>
   </div>
   <div class="partners">
-    <a href={item[2].link} target="_blank" rel="noopener noreferrer">
+    <a href={item[1].link} target="_blank" rel="noopener noreferrer">
       <svg
         id="partner"
         viewBox="0 0 596 154"
