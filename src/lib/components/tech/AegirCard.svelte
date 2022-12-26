@@ -112,7 +112,7 @@
         <br />
         <a
           class="aegir-privacy-link"
-          href="/aegir-privacy-policy.html"
+          href="https://projecthydro.org/aegir-privacy-policy"
           target="_blank"
           rel="noopener noreferrer">privacy policy</a
         >
