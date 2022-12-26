@@ -5,6 +5,8 @@
   --font-body: "Roboto Mono";
   --font-mono: "Roboto Mono", monospace;
   //Font sizes
+  --fs-monster: 32px;
+  --fs-monster-alt: 28px;
   --fs-xlarge: 20px;
   --fs-large: 18px;
   --fs-medium: 16px;
@@ -383,7 +385,7 @@ body::-webkit-scrollbar {
 .price,
 .currency-class {
   text-align: end;
-  font-size: 10px;
+  font-size: var(--fs-mini);
   color: var(--text-color-alt);
 }
 
@@ -501,7 +503,7 @@ a:active {
   height: auto;
   width: auto;
   padding: 1rem;
-  font-size: 14px !important;
+  font-size: var(--fs-small) !important;
   border-radius: var(--border-radius);
   backdrop-filter: blur(10px);
   cursor: pointer;
@@ -520,7 +522,7 @@ a:active {
   margin-top: 0.5rem;
   height: auto;
   width: auto;
-  font-size: 12px !important;
+  font-size: var(--fs-xsmall) !important;
   border-radius: var(--border-radius);
   cursor: default;
 }
@@ -551,7 +553,7 @@ a:active {
   text-align: center;
   width: 165px;
   height: 163px;
-  font-size: 14px;
+  font-size: var(--fs-small);
   cursor: pointer;
   border-radius: 7px;
   margin-left: 1rem;
@@ -564,7 +566,7 @@ a:active {
 
 .text-add-hydro {
   margin: 1rem;
-  font-size: 14px;
+  font-size: var(--fs-small);
 }
 
 //Priceaction +/-
@@ -754,7 +756,7 @@ a:active {
 
   .currency-class,
   .price {
-    font-size: 10px;
+    font-size: var(--fs-mini);
   }
 }
 
@@ -841,7 +843,7 @@ a:active {
 
   .currency-class,
   .price {
-    font-size: 10px;
+    font-size: var(--fs-mini);
   }
 }
 
@@ -920,7 +922,7 @@ a:active {
 
   .currency-class,
   .price {
-    font-size: 10px;
+    font-size: var(--fs-mini);
   }
 }
 

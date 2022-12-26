@@ -186,13 +186,13 @@
   }
 
   #desc {
-    font-size: 12px;
+    font-size: var(--fs-xsmall);
     word-wrap: break-word;
     height: 80px;
   }
 
   #q {
-    font-size: 10px;
+    font-size: var(--fs-mini);
     color: var(--text-color-alt);
   }
 

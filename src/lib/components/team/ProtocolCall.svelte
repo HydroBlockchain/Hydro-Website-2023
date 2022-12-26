@@ -72,7 +72,7 @@
     display: flex;
     justify-content: center;
     margin: 2rem;
-    font-size: 20px;
+    font-size: var(--fs-xlarge);
   }
 
   /* Extra small devices (phones, 600px and down) */
@@ -106,7 +106,7 @@
     }
 
     .building-statement {
-      font-size: 16px;
+      font-size: var(--fs-medium);
       margin: 0.5rem;
     }
   }
@@ -141,7 +141,7 @@
     }
 
     .building-statement {
-      font-size: 16px;
+      font-size: var(--fs-medium);
       margin: 0.5rem;
     }
   }
@@ -176,7 +176,7 @@
     }
 
     .building-statement {
-      font-size: 16px;
+      font-size: var(--fs-medium);
       margin: 0.5rem;
     }
   }
@@ -211,7 +211,7 @@
     }
 
     .building-statement {
-      font-size: 16px;
+      font-size: var(--fs-medium)x;
       margin: 0.5rem;
     }
   }

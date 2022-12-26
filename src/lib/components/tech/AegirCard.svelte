@@ -256,12 +256,12 @@
   .price {
     display: flex;
     justify-content: flex-start;
-    font-size: 9px;
+    font-size: var(--fs-mini);
     color: var(--text-color-alt);
   }
 
   #commit-message {
-    font-size: 12px;
+    font-size: var(--fs-xsmall);
     word-wrap: break-word;
     justify-content: center;
     align-items: center;
@@ -273,7 +273,7 @@
     width: 100%;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 10px;
+    font-size: var(--fs-mini);
   }
 
   .github-info-inner img {
@@ -296,12 +296,12 @@
     width: 60%;
     height: 45px;
     margin-left: 1rem;
-    font-size: 32px !important;
+    font-size: var(--fs-monster) !important;
     font-family: "Montserrat", sans-serif;
   }
 
   #card-background-alt {
-    font-size: 14px;
+    font-size: var(--fs-small);
   }
 
   #coin-ticker-logo {
@@ -333,7 +333,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-    font-size: 9px;
+    font-size: var(--fs-mini);
   }
 
   .download-text-inner {
@@ -357,7 +357,7 @@
   }
 
   .aegir-privacy-link {
-    font-size: 9px;
+    font-size: var(--fs-mini);
     color: var(--text-color-alt);
   }
 
@@ -387,7 +387,7 @@
     }
 
     .chain-alt {
-      font-size: 14px;
+      font-size: var(--fs-small);
     }
 
     .button-row-small {

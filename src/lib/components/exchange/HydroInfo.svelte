@@ -112,11 +112,11 @@
   @media only screen and (max-width: 600px) {
     .price,
     .currency-class {
-      font-size: 8px;
+      font-size: var(--fs-mini);
     }
     .currency,
     .procentage {
-      font-size: 12px;
+      font-size: var(--fs-xsmall);
     }
     .one-quarter {
       height: auto;

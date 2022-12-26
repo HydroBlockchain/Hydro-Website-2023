@@ -200,7 +200,7 @@
     padding: 1rem;
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius);
-    font-size: 14px;
+    font-size: var(--fs-small);
   }
 
   .metamask-notice-title {
@@ -208,7 +208,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 20px;
+    font-size: var(--fs-xlarge);
     margin-bottom: 0.5rem;
   }
 
@@ -225,7 +225,7 @@
 
   .metamask-notice h3 {
     text-align: end;
-    font-size: 10px;
+    font-size: var(--fs-mini);
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-top: 2.5rem;

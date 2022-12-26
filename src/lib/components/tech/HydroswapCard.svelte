@@ -134,7 +134,7 @@
   }
 
   .hydroswap-logo {
-    font-size: 28px !important;
+    font-size: var(--fs-monster-alt)!important;
     font-family: "Montserrat", sans-serif;
     margin: 0.1rem;
   }
@@ -145,7 +145,7 @@
   }
 
   #commit-message {
-    font-size: 12px;
+    font-size: var(--fs-xsmall);
     word-wrap: break-word;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,7 @@
     width: 100%;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 10px;
+    font-size: var(--fs-mini);
   }
 
   .github-info-inner img {
@@ -169,7 +169,7 @@
   .currency {
     display: flex;
     justify-content: flex-end;
-    font-size: 9px;
+    font-size: var(--fs-mini);
     color: var(--text-color-alt);
   }
 

@@ -5343,7 +5343,7 @@ l0.8-1.2l-2.8-1.8l-0.8,1.2L1447.2,588.7z"
     justify-content: flex-start;
     margin-top: 2rem;
     margin-left: 2rem;
-    font-size: 20px;
+    font-size: var(--fs-xlarge);
     z-index: 100;
   }
 

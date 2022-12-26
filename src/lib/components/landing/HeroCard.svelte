@@ -113,7 +113,7 @@
   .hero-text {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
+    font-size: 20px var(--fs-xlarge);
     margin-left: 10rem;
   }
 
@@ -150,7 +150,7 @@
       margin-top: 2rem;
       margin-bottom: 2rem;
       margin-left: 3rem;
-      font-size: 16px;
+      font-size: var(--fs-medium);
     }
 
     #hydro-logo {
@@ -182,7 +182,7 @@
       align-items: center;
       margin-top: 1rem;
       margin-left: 3rem;
-      font-size: 16px;
+      font-size: var(--fs-medium);
     }
 
     #hydro-logo {
@@ -214,7 +214,7 @@
       align-items: center;
       margin-top: 1rem;
       margin-left: 3rem;
-      font-size: 16px;
+      font-size: var(--fs-medium);
     }
 
     #hydro-logo {
@@ -245,7 +245,7 @@
       align-items: center;
       margin-top: 1rem;
       margin-left: 3rem;
-      font-size: 16px;
+      font-size: var(--fs-medium);
     }
 
     #hydro-logo {

@@ -750,7 +750,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     color: var(--text-color);
-    font-size: 11px;
+    font-size: var(--fs-xsmall);
   }
 
   #volume {
@@ -761,7 +761,7 @@
   #name {
     display: flex;
     justify-content: flex-start;
-    font-size: 11px;
+    font-size: var(--fs-xsmall);
   }
 
   #coin-ticker-logo {

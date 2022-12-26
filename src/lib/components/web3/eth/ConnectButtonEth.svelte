@@ -66,6 +66,6 @@
     margin-top: 0.5rem;
   }
   #connect {
-    font-size: 12px !important;
+    font-size: var(--fs-xsmall) !important;
   }
 </style>

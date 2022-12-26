@@ -113,7 +113,7 @@
 
   .blog-link {
     width: 100%;
-    font-size: 10px;
+    font-size: var(--fs-mini);
     cursor: pointer;
     color: var(--link-color);
   }
@@ -138,11 +138,11 @@
     justify-content: center;
     align-items: center;
     text-align: start;
-    font-size: 12px;
+    font-size: var(--fs-xsmall);
   }
 
   .pub-date {
-    font-size: 9px;
+    font-size: var(--fs-mini);
     align-items: flex-start;
     color: var(--text-color-alt);
   }
