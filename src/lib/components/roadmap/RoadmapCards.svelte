@@ -14,7 +14,6 @@
             />
             - Full Gameplay Beta <br />
             - Public access with free beta key <br />
-            - More info to follow
           </div>
           <div class="card-row" id="progress">
             <div class="container-prog">
@@ -100,7 +99,6 @@
             the Regn Testnet. <br />
             - Hydroswap transitions to Svelte. <br />
             - UI/UX update to follow New Hydro Style. <br />
-            - Hydroswap staking pools on Regn Testnet.
           </div>
           <div class="card-row" id="progress">
             <div class="container-prog">
@@ -122,7 +120,6 @@
             <br />
             - Regn Testnet Genesis block. <br />
             - The first Hydro Testnet Coins are mined. <br />
-            - Hydroswap on Regn Testnet.
           </div>
           <div class="card-row" id="progress">
             <div class="container-prog">

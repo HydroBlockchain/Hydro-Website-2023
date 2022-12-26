@@ -38,7 +38,7 @@
   }
 
   .left {
-    margin: 0;
+    margin: var(--zero);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +46,7 @@
   }
 
   .right {
-    margin: 0;
+    margin: var(--zero);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,14 +64,14 @@
     justify-content: center;
     align-items: center;
     width: auto;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: var(--padding-standard);
+    margin: var(--margin-half);
   }
 
   .building-statement {
     display: flex;
     justify-content: center;
-    margin: 2rem;
+    margin: var(--margin-alt);
     font-size: var(--fs-xlarge);
   }
 
@@ -80,8 +80,8 @@
     .full {
       height: auto;
       flex-direction: column;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     .protocol-row {
@@ -93,7 +93,7 @@
 
     .right,
     .left {
-      margin: 0;
+      margin: var(--zero);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -102,12 +102,12 @@
 
     .protocol-card {
       width: auto;
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
 
     .building-statement {
       font-size: var(--fs-medium);
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
   }
 
@@ -115,8 +115,8 @@
     .full {
       height: auto;
       flex-direction: column;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     .protocol-row {
@@ -128,7 +128,7 @@
 
     .right,
     .left {
-      margin: 0;
+      margin: var(--zero);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -137,12 +137,12 @@
 
     .protocol-card {
       width: auto;
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
 
     .building-statement {
       font-size: var(--fs-medium);
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
   }
 
@@ -150,8 +150,8 @@
     .full {
       height: auto;
       flex-direction: column;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     .protocol-row {
@@ -163,7 +163,7 @@
 
     .right,
     .left {
-      margin: 0;
+      margin: var(--zero);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -172,12 +172,12 @@
 
     .protocol-card {
       width: auto;
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
 
     .building-statement {
       font-size: var(--fs-medium);
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
   }
 
@@ -185,8 +185,8 @@
     .full {
       height: auto;
       flex-direction: column;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     .protocol-row {
@@ -198,7 +198,7 @@
 
     .right,
     .left {
-      margin: 0;
+      margin: var(--zero);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -207,12 +207,12 @@
 
     .protocol-card {
       width: auto;
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
 
     .building-statement {
       font-size: var(--fs-medium)x;
-      margin: 0.5rem;
+      margin: var(--margin-half);
     }
   }
 </style>

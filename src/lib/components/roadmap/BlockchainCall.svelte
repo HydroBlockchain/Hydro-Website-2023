@@ -46,11 +46,11 @@
   }
 
   .statement a {
-    margin-top: 2rem;
+    margin-top: var(--margin-alt);
   }
 
   .container {
-    padding: 1rem;
+    padding: var(--padding-standard);
     padding-left: 4rem;
     width: 300px;
     height: 100%;
@@ -134,13 +134,13 @@
 
   .box:before {
     left: 100%;
-    bottom: 0;
+    bottom: var(--zero);
     transform: rotateY(90deg);
     transform-origin: 0 50%;
   }
 
   .box:after {
-    left: 0;
+    left: var(--zero);
     bottom: 100%;
     transform: rotateX(90deg);
     transform-origin: 0 100%;

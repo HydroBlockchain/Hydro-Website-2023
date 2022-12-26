@@ -5341,14 +5341,14 @@ l0.8-1.2l-2.8-1.8l-0.8,1.2L1447.2,588.7z"
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: var(--margin-alt);
+    margin-left: var(--margin-alt);
     font-size: var(--fs-xlarge);
     z-index: 100;
   }
 
   .button {
-    margin-top: 2rem;
+    margin-top: var(--margin-alt);
   }
 
   .full {

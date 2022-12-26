@@ -123,8 +123,8 @@
     flex-direction: row;
     width: 200px;
     height: 50px;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: var(--padding-standard);
+    margin: var(--margin-half);
     background-color: var(--card-background-alt);
     border-radius: var(--border-radius);
   }
@@ -159,18 +159,18 @@
     }
 
     #first-blog-post-column {
-      margin-left: 1rem;
+      margin-left: var(--margin-standard);
     }
 
     #second-blog-post-column {
-      margin-right: 1rem;
+      margin-right: var(--margin-standard);
     }
 
     .blog-card {
       width: 120px !important;
       height: 70px !important;
       word-wrap: break-word;
-      padding: 0.5rem;
+      padding: var(--padding-half);
     }
   }
 
@@ -182,8 +182,8 @@
 
     .blog-column {
       flex-direction: column;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
 
     .blog-card {

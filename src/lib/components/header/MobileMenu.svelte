@@ -274,8 +274,8 @@
   .backdrop {
     z-index: 9;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: var(--zero);
+    left: var(--zero);
     width: 100%;
     height: 100%;
     background-color: var(--sidemenu-color);
@@ -303,17 +303,17 @@
   .hydro-dashboard {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: var(--margin-alt);
   }
 
   .dashboard-slot {
-    padding: 1rem;
+    padding: var(--padding-standard);
     width: 100px !important;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5rem;
+    margin: var(--margin-half);
     background-color: var(--sidemenu-button) !important;
   }
 

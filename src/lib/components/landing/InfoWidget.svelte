@@ -114,7 +114,7 @@
 
   @media only screen and (max-width: 768px) {
     .dashboards {
-      margin: 1rem;
+      margin: var(--margin-standard);
     }
 
     .hydro-dashboard {

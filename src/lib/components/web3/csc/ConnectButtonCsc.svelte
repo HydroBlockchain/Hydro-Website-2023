@@ -63,7 +63,7 @@
 
 <style>
   #disconnect {
-    margin-top: 0.5rem;
+    margin-top: var(--margin-half);
   }
   #connect {
     font-size: var(--fs-xsmall) !important;

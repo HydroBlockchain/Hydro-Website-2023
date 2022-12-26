@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 1rem;
+    margin: var(--margin-standard);
     justify-content: space-evenly;
   }
 
@@ -113,7 +113,7 @@
   .hero-text {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px var(--fs-xlarge);
+    font-size: var(--fs-xlarge);
     margin-left: 10rem;
   }
 
@@ -147,8 +147,8 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      margin-top: var(--margin-alt);
+      margin-bottom: var(--margin-alt);
       margin-left: 3rem;
       font-size: var(--fs-medium);
     }
@@ -156,7 +156,7 @@
     #hydro-logo {
       width: 200px;
       height: 200px;
-      margin-bottom: 1rem;
+      margin-bottom: var(--margin-standard);
     }
   }
 
@@ -180,7 +180,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
       margin-left: 3rem;
       font-size: var(--fs-medium);
     }
@@ -188,7 +188,7 @@
     #hydro-logo {
       width: 200px;
       height: 200px;
-      margin-bottom: 1rem;
+      margin-bottom: var(--margin-standard);
     }
   }
 
@@ -212,7 +212,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
       margin-left: 3rem;
       font-size: var(--fs-medium);
     }
@@ -243,7 +243,7 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
       margin-left: 3rem;
       font-size: var(--fs-medium);
     }
@@ -251,8 +251,8 @@
     #hydro-logo {
       width: 256px;
       height: 256px;
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
   }
 </style>

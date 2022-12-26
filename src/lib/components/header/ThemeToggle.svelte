@@ -111,8 +111,8 @@
 
   #header-link {
     background-color: var(--card-bg-alt);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--padding-standard);
+    padding-bottom: var(--padding-standard);
     border-radius: var(--border-radius);
   }
 
@@ -123,8 +123,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 !important;
-      padding: 0 !important;
+      margin: var(--zero) !important;
+      padding: var(--zero) !important;
       background-color: var(--transparent) !important;
     }
 
@@ -144,8 +144,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 !important;
-      padding: 0 !important;
+      margin: var(--zero) !important;
+      padding: var(--zero) !important;
       background-color: var(--transparent) !important;
     }
 
@@ -165,8 +165,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 !important;
-      padding: 0 !important;
+      margin: var(--zero) !important;
+      padding: var(--zero) !important;
       background-color: var(--transparent) !important;
     }
 
@@ -186,8 +186,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 !important;
-      padding: 0 !important;
+      margin: var(--zero) !important;
+      padding: var(--zero) !important;
       background-color: var(--transparent) !important;
     }
 

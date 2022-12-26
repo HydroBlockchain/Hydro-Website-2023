@@ -729,8 +729,11 @@
     z-index: 1;
     background: inherit;
     overflow: hidden;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: var(--margin-standard);
+    margin-top: var(--margin-standard);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   .hydro-slot,
@@ -747,8 +750,8 @@
   }
 
   .banner-slot {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: var(--margin-standard);
+    margin-right: var(--margin-standard);
     color: var(--text-color);
     font-size: var(--fs-xsmall);
   }

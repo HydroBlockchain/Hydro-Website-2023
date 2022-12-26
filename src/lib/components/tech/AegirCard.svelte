@@ -205,7 +205,7 @@
 <style>
   .half {
     flex-direction: column;
-    margin-right: 0px;
+    margin-right: var(--zero);
     margin-left: 15px;
   }
 
@@ -213,7 +213,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--margin-half);
     width: 600px;
   }
 
@@ -229,8 +229,8 @@
     justify-content: space-between;
     text-align: start;
     display: flex;
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: var(--margin-half);
+    padding: var(--padding-standard);
     width: 150px;
     height: 150px;
   }
@@ -245,7 +245,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0.5rem;
+    margin: var(--margin-half);
   }
 
   .aegir-slot:hover {
@@ -288,14 +288,14 @@
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: var(--padding-half);
     border-radius: var(--border-radius);
     background-color: var(--button-color);
     color: var(--text-color);
     font-size: var(--fs-xsmall);
     width: 60%;
     height: 45px;
-    margin-left: 1rem;
+    margin-left: var(--margin-standard);
     font-size: var(--fs-monster) !important;
     font-family: "Montserrat", sans-serif;
   }
@@ -310,7 +310,7 @@
   }
 
   #buttons-downloads {
-    margin-top: 0.5rem;
+    margin-top: var(--margin-half);
     margin-right: 0.8rem;
     justify-content: flex-end;
     align-items: flex-end;
@@ -322,9 +322,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 0.2rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    padding: 0.5rem;
+    margin-left: var(--margin-half);
+    margin-right: var(--margin-half);
+    padding: var(--padding-half);
     width: 70px;
     height: 30px;
   }
@@ -346,14 +346,14 @@
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: var(--padding-half);
     border-radius: var(--border-radius);
     background-color: var(--button-color);
     color: var(--text-color);
     font-size: var(--fs-xsmall);
     width: 130px;
     height: 45px;
-    margin-left: 1rem;
+    margin-left: var(--margin-standard);
   }
 
   .aegir-privacy-link {
@@ -377,8 +377,8 @@
   @media only screen and (max-width: 600px) {
     .half {
       height: auto !important;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     #coin-ticker-logo {
@@ -409,8 +409,8 @@
       justify-content: space-between;
       text-align: start;
       display: flex;
-      margin: 0.5rem;
-      padding: 1rem;
+      margin: var(--margin-half);
+      padding: var(--padding-standard);
       width: 280px !important;
       height: 150px;
     }
@@ -428,7 +428,7 @@
       align-items: center;
       justify-content: center;
       margin: 0.25rem !important;
-      padding: 0.5rem;
+      padding: var(--padding-half);
       width: 50px;
       height: 30px;
     }
@@ -436,14 +436,14 @@
     .aegir-logo {
       display: none;
       width: 316px;
-      margin-left: 0rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
+      margin-left: var(--zero);
+      margin-top: var(--margin-half);
+      margin-bottom: var(--margin-standard);
     }
 
     #buttons-downloads {
-      margin-top: 0.5rem;
-      margin-right: 0rem !important;
+      margin-top: var(--margin-half);
+      margin-right: var(--zero) !important;
       flex-direction: row;
       justify-content: space-between !important;
       align-items: center;
@@ -452,7 +452,7 @@
 
     #aegir-button-play,
     #aegir-button-play {
-      margin-left: 0;
+      margin-left: var(--zero);
     }
   }
 
@@ -460,8 +460,8 @@
     .half {
       height: auto !important;
       flex-direction: column;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-bottom: var(--padding-standard);
+      padding-top: var(--padding-standard);
     }
   }
 
@@ -469,8 +469,8 @@
     .half {
       height: auto !important;
       flex-direction: column;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-bottom: var(--padding-standard);
+      padding-top: var(--padding-standard);
     }
   }
 
@@ -478,8 +478,8 @@
     .half {
       height: auto !important;
       flex-direction: column;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
+      padding-bottom: var(--padding-standard);
+      padding-top: var(--padding-standard);
     }
   }
 </style>

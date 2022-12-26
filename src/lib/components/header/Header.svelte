@@ -170,13 +170,13 @@
 <style lang="scss">
   .header-link {
     background-color: var(--card-bg-alt);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: var(--padding-standard);
+    padding-bottom: var(--padding-standard);
     border-radius: var(--border-radius);
   }
 
   #header-link-last {
-    margin-right: 1rem;
+    margin-right: var(--margin-standard);
   }
 
   #icon {
@@ -187,7 +187,7 @@
   #hydro-logo {
     width: 128px;
     height: 32px;
-    margin-left: 2rem;
+    margin-left: var(--margin-alt);
   }
 
   #hydro-logo:hover {
@@ -215,7 +215,7 @@
     height: 100px;
     background-color: var(--card-background);
     color: var(--text-color);
-    border-radius: 7px;
+    border-radius: var(--border-radius);
   }
 
   .navigation {
@@ -234,7 +234,7 @@
   .hamburger {
     display: none;
     height: 32px;
-    margin-right: 2rem;
+    margin-right: var(--margin-alt);
     cursor: pointer;
   }
 

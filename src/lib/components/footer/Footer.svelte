@@ -255,7 +255,7 @@
   .social-media-wrapper {
     display: flex;
     flex-direction: row;
-    margin-right: 0;
+    margin-right: var(--zero);
     margin-left: var(--margin-standard);
   }
 
@@ -294,15 +294,15 @@
       align-items: center;
       text-align: center;
       height: auto;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     #hydro-logo {
       margin-top: var(--margin-standard);
       margin-bottom: var(--margin-standard);
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: var(--zero);
+      margin-right: var(--zero);
       width: 128px;
       height: 32px;
     }
@@ -310,15 +310,15 @@
     .social-media-wrapper {
       display: flex;
       flex-direction: column;
-      margin-right: 0;
-      margin-left: 0;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .social-media {
       justify-content: center;
       align-items: center;
       margin-top: var(--margin-standard);
-      margin-right: 0;
+      margin-right: var(--zero);
       margin-bottom: var(--margin-standard);
     }
 
@@ -335,15 +335,15 @@
       align-items: center;
       text-align: center;
       height: auto;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding-top: var(--padding-standard);
+      padding-bottom: var(--padding-standard);
     }
 
     #hydro-logo {
       margin-top: var(--margin-standard);
       margin-bottom: var(--margin-standard);
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: var(--zero);
+      margin-right: var(--zero);
       width: 128px;
       height: 32px;
     }
@@ -351,21 +351,21 @@
     .social-media-wrapper {
       display: flex;
       flex-direction: column;
-      margin-right: 0;
-      margin-left: 0;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .social-media {
       justify-content: center;
       align-items: center;
       margin-top: var(--margin-standard);
-      margin-right: 0;
+      margin-right: var(--zero);
       margin-bottom: var(--margin-standard);
     }
 
     .social-icon {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
   }
 </style>

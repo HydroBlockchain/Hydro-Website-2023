@@ -77,7 +77,7 @@
   .switch-networks-row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--margin-half);
   }
 
   .function-row {
@@ -103,7 +103,7 @@
     }
 
     .switch-networks-row {
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
     }
 
     .add-button-column {
@@ -111,8 +111,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
   }
 
@@ -130,7 +130,7 @@
     }
 
     .switch-networks-row {
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
     }
 
     .add-button-column {
@@ -138,8 +138,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
   }
 
@@ -157,7 +157,7 @@
     }
 
     .switch-networks-row {
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
     }
 
     .add-button-column {
@@ -165,8 +165,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
   }
 
@@ -184,8 +184,8 @@
     }
 
     .switch-networks-row {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
     }
 
     .add-button-column {
@@ -193,7 +193,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
     }
   }
 </style>

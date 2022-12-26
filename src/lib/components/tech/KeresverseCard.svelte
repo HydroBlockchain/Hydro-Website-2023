@@ -72,12 +72,12 @@
 <style>
   .three-quarter {
     margin-right: 15px;
-    margin-left: 0px;
+    margin-left: var(--zero);
   }
 
   #keresverse-logo {
     height: 50px;
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-standard);
   }
 
   #jixta {
@@ -117,7 +117,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: var(--margin-standard);
   }
 
   #keres-play-button {
@@ -127,18 +127,18 @@
 
   @media only screen and (max-width: 600px) {
     .three-quarter {
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     #jixta,
     #vox {
       display: none;
-      margin: 0;
+      margin: var(--zero);
     }
 
     #vox {
-      margin-left: 0rem;
+      margin-left: var(--zero);
     }
 
     .jixta {
@@ -152,18 +152,18 @@
 
   @media only screen and (max-width: 768px) {
     .three-quarter {
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     #jixta,
     #vox {
       display: none;
-      margin: 0;
+      margin: var(--zero);
     }
 
     #vox {
-      margin-left: 0rem;
+      margin-left: var(--zero);
     }
 
     .jixta {
@@ -177,8 +177,8 @@
 
   @media only screen and (max-width: 992px) {
     .three-quarter {
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .jixta {
@@ -192,8 +192,8 @@
 
   @media only screen and (max-width: 1200px) {
     .three-quarter {
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .jixta {

@@ -87,10 +87,10 @@
 <style>
   #preload-wrapper {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
+    bottom: var(--zero);
+    right: var(--zero);
+    left: var(--zero);
+    top: var(--zero);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -106,7 +106,7 @@
   #hydro-logo {
     width: 200px;
     height: auto;
-    margin-bottom: 2rem;
+    margin-bottom: var(--margin-alt);
     animation: fadeIn 0.5s;
   }
 

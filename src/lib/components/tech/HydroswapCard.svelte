@@ -97,7 +97,7 @@
   .hydroswap {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: var(--margin-alt);
     width: 100%;
   }
 
@@ -119,8 +119,8 @@
     display: flex;
     flex-direction: column;
     width: 200px;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: var(--padding-standard);
+    margin: var(--margin-half);
   }
 
   .hydroswap-slot-alt {
@@ -129,8 +129,8 @@
     justify-content: space-between;
     width: 200px;
     height: 245px;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: var(--padding-standard);
+    margin: var(--margin-half);
   }
 
   .hydroswap-logo {
@@ -174,7 +174,7 @@
   }
 
   .one-quarter {
-    margin-right: 0px;
+    margin-right: var(--zero);
     margin-left: 15px;
     flex-direction: column;
     justify-content: space-between;
@@ -190,7 +190,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 0;
+    margin-top: var(--zero);
   }
 
   .button:hover {
@@ -207,8 +207,8 @@
   @media only screen and (max-width: 1200px) {
     .one-quarter {
       height: auto;
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .cg-credit {
@@ -218,13 +218,13 @@
 
   @media only screen and (max-width: 992px) {
     .hydroswap {
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
     }
 
     .one-quarter {
       height: auto;
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .cg-credit {
@@ -235,8 +235,8 @@
   @media only screen and (max-width: 768px) {
     .one-quarter {
       height: auto;
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .cg-credit {
@@ -247,8 +247,8 @@
   @media only screen and (max-width: 600px) {
     .one-quarter {
       height: auto;
-      margin-right: 0px;
-      margin-left: 0px;
+      margin-right: var(--zero);
+      margin-left: var(--zero);
     }
 
     .row {
@@ -260,8 +260,8 @@
       flex-direction: column;
       justify-content: space-between;
       width: 280px;
-      padding: 1rem;
-      margin: 0.5rem;
+      padding: var(--padding-standard);
+      margin: var(--margin-half);
     }
 
     .hydroswap-slot-alt {
@@ -270,12 +270,12 @@
       justify-content: space-between;
       width: 280px;
       height: auto;
-      padding: 1rem;
-      margin: 0.5rem;
+      padding: var(--padding-standard);
+      margin: var(--margin-half);
     }
 
     .button-row {
-      margin-top: 1rem;
+      margin-top: var(--margin-standard);
     }
 
     #hydroswap-buttons {
@@ -286,9 +286,9 @@
     }
 
     .cg-credit {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin-right: 1rem;
+      margin-top: var(--margin-standard);
+      margin-bottom: var(--margin-standard);
+      margin-right: var(--margin-standard);
     }
   }
 </style>
