@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { writable, readable, derived, get } from "svelte/store";
 import { browser } from "$app/environment";
 import { getCreateNetworkDataByChainId, getNetworkByChainId } from "./network";
@@ -84,25 +85,25 @@ export async function initBsc() {
   });
 }
 
+
 export async function login() {
   const windowWithEthereum = window as unknown as WindowWithEthereum;
   const { ethereum } = windowWithEthereum;
 
   try {
     await ethereum.enable();
+    await initBsc();
   } catch (error) {
     console.error(error);
   }
-
-  await initBsc();
 }
 
-export async function switchNetworkBsc(chainId: number = expectedChainBsc) {
+export async function switchNetworkBsc(chainId = expectedChainBsc) {
   const windowWithEthereum = window as unknown as WindowWithEthereum;
   const { ethereum } = windowWithEthereum;
 
   if (!ethereum) {
-    throw new Error("asdas");
+    throw new Error("Ethereum not available");
   }
 
   try {
@@ -114,7 +115,7 @@ export async function switchNetworkBsc(chainId: number = expectedChainBsc) {
         },
       ],
     });
-  } catch (error: any) {
+  } catch (error) {
     // Missing network
     if (error.code === 4902) {
       await ethereum.request({
@@ -135,11 +136,9 @@ export async function connectBsc() {
     method: "eth_requestAccounts",
   });
 
-  addressBsc.update(() => {
-    return _address;
-  });
+  addressBsc.update(() => _address);
 }
 
-export async function disconnectBsc() {
+export function disconnectBsc() {
   addressBsc.set(null);
 }

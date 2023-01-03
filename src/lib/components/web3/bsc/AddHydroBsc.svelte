@@ -1,36 +1,39 @@
 <script lang="ts">
   // @ts-nocheck
   import { onExpectedNetworkBsc } from "$lib/utils/wallet-bsc";
+ 
+  const addHydroBSC = async () => {
   const tokenAddressBsc = "0xf3DBB49999B25c9D6641a9423C7ad84168D00071";
   const tokenSymbolBsc = "Hydro";
   const tokenDecimalsBsc = 18;
   const tokenImageBsc =
     "http://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/858e2d2a56ffdf375f4edfb51219f3abd6bab749/svg/drop/Dark-blue-drop.svg";
 
-  async function addHydroBSC() {
-    if (typeof window.ethereum !== "undefined")
-      try {
-        const wasAdded = ethereum.request({
-          method: "wallet_watchAsset",
-          params: {
-            type: "ERC20",
-            options: {
-              address: tokenAddressBsc,
-              symbol: tokenSymbolBsc,
-              decimals: tokenDecimalsBsc,
-              image: tokenImageBsc,
-            },
+  if (typeof window.ethereum !== "undefined") {
+    try {
+      const wasAdded = await ethereum.request({
+        method: "wallet_watchAsset",
+        params: {
+          type: "ERC20",
+          options: {
+            address: tokenAddressBsc,
+            symbol: tokenSymbolBsc,
+            decimals: tokenDecimalsBsc,
+            image: tokenImageBsc,
           },
-        });
-        if (wasAdded) {
-          console.log("Adding Hydro Token!");
-        } else {
-          console.log("Something went wrong!");
-        }
-      } catch (error) {
-        console.log(error);
+        },
+      });
+      if (wasAdded) {
+        console.log("Added Hydro Token on the BSC network!");
+      } else {
+        console.log("Something went wrong!");
       }
+    } catch (error) {
+      console.log(error);
+    }
   }
+};
+
 </script>
 
 {#if $onExpectedNetworkBsc}

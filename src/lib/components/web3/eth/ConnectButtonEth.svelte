@@ -8,18 +8,20 @@
   } from "$lib/utils/wallet-eth";
   import { showNotification, NotificationType } from "$lib/utils/notifications";
   import { metamask } from "$lib/utils/wallet-bsc";
+
   let loading = false;
-  async function onConnectEth() {
+
+  const onConnectEth = async () => {
     loading = true;
     try {
       await connectEth();
-    } catch (error: any) {
+    } catch (error) {
       showNotification(error.message, {
         type: NotificationType.Error,
       });
     }
     loading = false;
-  }
+  };
 
   $: legend = loading
     ? "Connecting"
