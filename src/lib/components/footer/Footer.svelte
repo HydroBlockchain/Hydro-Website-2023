@@ -237,6 +237,7 @@
   footer {
     display: flex;
     justify-content: center;
+    margin-bottom: var(--margin-standard);
   }
 
   .footer-container {
