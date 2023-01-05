@@ -1,36 +1,39 @@
 <script lang="ts">
   // @ts-nocheck
   import { onExpectedNetworkEth } from "$lib/utils/wallet-eth";
+
+  const addHydroEth = async () => {
   const tokenAddressEth = "0x946112efaB61C3636CBD52DE2E1392D7A75A6f01";
   const tokenSymbolEth = "Hydro";
   const tokenDecimalsEth = 18;
   const tokenImageEth =
     "http://raw.githubusercontent.com/HydroBlockchain/Hydro-Brandkit-2023/858e2d2a56ffdf375f4edfb51219f3abd6bab749/svg/drop/Dark-blue-drop.svg";
 
-  async function addHydroEth() {
-    if (typeof window.ethereum !== "undefined")
-      try {
-        const wasAdded = ethereum.request({
-          method: "wallet_watchAsset",
-          params: {
-            type: "ERC20",
-            options: {
-              address: tokenAddressEth,
-              symbol: tokenSymbolEth,
-              decimals: tokenDecimalsEth,
-              image: tokenImageEth,
-            },
+  if (typeof window.ethereum !== "undefined") {
+    try {
+      const wasAdded = await ethereum.request({
+        method: "wallet_watchAsset",
+        params: {
+          type: "ERC20",
+          options: {
+            address: tokenAddressEth,
+            symbol: tokenSymbolEth,
+            decimals: tokenDecimalsEth,
+            image: tokenImageEth,
           },
-        });
-        if (wasAdded) {
-          console.log("Adding Hydro Token!");
-        } else {
-          console.log("Something went wrong!");
-        }
-      } catch (error) {
-        console.log(error);
+        },
+      });
+      if (wasAdded) {
+        console.log("Added Hydro Token on the Ethereum Network!");
+      } else {
+        console.log("Something went wrong!");
       }
+    } catch (error) {
+      console.log(error);
+    }
   }
+};
+
 </script>
 
 {#if $onExpectedNetworkEth}

@@ -11,191 +11,100 @@
 
   let loading = false;
 
-  //Switch to Ethereum Network
-  export async function switchNetworkEth() {
-    const windowWithEthereum = window as unknown as WindowWithEthereum;
-    const { ethereum } = windowWithEthereum;
-    try {
-      await ethereum.request({
-        method: "wallet_switchEthereumChain",
-        params: [
-          {
-            chainId: `0x1`,
-          },
-        ],
-      });
-    } catch (switchError: any) {
-      // Missing network
-      if (switchError.code === 4902 || switchError.code === -32603) {
-        await ethereum.request({
-          method: "wallet_addEthereumChain",
-          params: [getCreateNetworkDataByChainId(1)],
-        });
-      } else {
-        throw Error(error);
-      }
-    }
-  }
+  const NETWORKS = {
+  eth: {
+    chainId: "0x1",
+  },
+  bsc: {
+    chainId: "0x38",
+    chainName: "Binance Smart Chain Mainnet",
+    nativeCurrency: {
+      name: "BNB",
+      symbol: "BNB",
+      decimals: 18,
+    },
+    rpcUrls: ["https://bsc-dataseed1.binance.org/"],
+    blockExplorerUrls: ["https://bscscan.com/"],
+  },
+  poly: {
+    chainId: "0x89",
+    chainName: "Polygon Mainnet",
+    nativeCurrency: {
+      name: "Matic",
+      symbol: "MATIC",
+      decimals: 18,
+    },
+    rpcUrls: ["https://polygon-rpc.com"],
+    blockExplorerUrls: ["https://polygonscan.com/"],
+  },
+  movr: {
+    chainId: "0x505",
+    chainName: "Moonriver Network",
+    nativeCurrency: {
+      name: "MOVR",
+      symbol: "MOVR",
+      decimals: 18,
+    },
+    rpcUrls: ["https://moon-rpc.com"],
+    blockExplorerUrls: ["https://moonriver.explorer.com/"],
+  },
+  csc: {
+    chainId: "0x34",
+    chainName: "CoinEx Smart Chain Mainnet",
+    nativeCurrency: {
+      name: "CoinEx Chain Native Token",
+      symbol: "cet",
+      decimals: 18,
+    },
+    rpcUrls: ["https://rpc.coinex.net/"],
+    blockExplorerUrls: ["https://coinex.net/"],
+  },
+};
 
-  //Add or switch Binance Smart Chain Network
-  async function addNetworkBsc() {
-    const windowWithEthereum = window as unknown as WindowWithEthereum;
-    const { ethereum } = windowWithEthereum;
-    const newProvider = new Web3Provider(ethereum, "any");
-    provider.set(newProvider);
-    try {
-      await ethereum.request({
-        method: "wallet_switchEthereumChain",
-        params: [
-          {
-            chainId: "0x38",
-          },
-        ],
-      });
-    } catch (switchError: any) {
-      // Missing network
-      if (switchError.code === 4902 || switchError.code === -32603) {
-        await ethereum.request({
-          method: "wallet_addEthereumChain",
-          params: [
-            {
-              chainId: "0x38",
-              chainName: "Binance Smart Chain Mainnet",
-              nativeCurrency: {
-                name: "BNB",
-                symbol: "BNB",
-                decimals: 18,
-              },
-              rpcUrls: ["https://bsc-dataseed1.binance.org/"],
-              blockExplorerUrls: ["https://bscscan.com/"],
-            },
-          ],
-        });
-      } else {
-        throw Error(error);
-      }
-    }
-  }
+async function switchNetwork(network: keyof typeof NETWORKS) {
+  const windowWithEthereum = window as unknown as WindowWithEthereum;
+  const { ethereum } = windowWithEthereum;
+  const newProvider = new Web3Provider(ethereum, "any");
+  provider.set(newProvider);
 
-  //Add or switch to Polygon Network
-  async function addNetworkPoly() {
-    const windowWithEthereum = window as unknown as WindowWithEthereum;
-    const { ethereum } = windowWithEthereum;
-    const newProvider = new Web3Provider(ethereum, "any");
-    provider.set(newProvider);
-    try {
+  try {
+    await ethereum.request({
+      method: "wallet_switchEthereumChain",
+      params: [{ chainId: NETWORKS[network].chainId }],
+    });
+  } catch (switchError: any) {
+    // Missing network
+    if (switchError.code === 4902 || switchError.code === -32603) {
       await ethereum.request({
-        method: "wallet_switchEthereumChain",
-        params: [
-          {
-            chainId: "0x89",
-          },
-        ],
+        method: "wallet_addEthereumChain",
+        params: [NETWORKS[network]],
       });
-    } catch (switchError: any) {
-      // Missing network
-      if (switchError.code === 4902 || switchError.code === -32603) {
-        await ethereum.request({
-          method: "wallet_addEthereumChain",
-          params: [
-            {
-              chainId: "0x89",
-              chainName: "Polygon Mainnet",
-              nativeCurrency: {
-                name: "Matic",
-                symbol: "MATIC",
-                decimals: 18,
-              },
-              rpcUrls: ["https://polygon-rpc.com"],
-              blockExplorerUrls: ["https://polygonscan.com/"],
-            },
-          ],
-        });
-      } else {
-        throw Error(error);
-      }
+    } else {
+      throw Error(error);
     }
   }
+}
 
-  //Add or switch to Moonriver Network
-  async function addNetworkMovr() {
-    const windowWithEthereum = window as unknown as WindowWithEthereum;
-    const { ethereum } = windowWithEthereum;
-    const newProvider = new Web3Provider(ethereum, "any");
-    provider.set(newProvider);
-    try {
-      await ethereum.request({
-        method: "wallet_switchEthereumChain",
-        params: [
-          {
-            chainId: "0x505",
-          },
-        ],
-      });
-    } catch (switchError: any) {
-      // Missing network
-      if (switchError.code === 4902 || switchError.code === -32603) {
-        await ethereum.request({
-          method: "wallet_addEthereumChain",
-          params: [
-            {
-              chainId: "0x505",
-              chainName: "Moonriver",
-              nativeCurrency: {
-                name: "Moonriver",
-                symbol: "MOVR",
-                decimals: 18,
-              },
-              rpcUrls: ["https://rpc.api.moonriver.moonbeam.network"],
-              blockExplorerUrls: ["https://moonriver.moonscan.io"],
-            },
-          ],
-        });
-      } else {
-        throw Error(error);
-      }
-    }
-  }
+export async function switchNetworkEth() {
+  await switchNetwork("eth");
+}
 
-  //Add or switch to Coinex Smart Chain
-  async function addNetworkCsc() {
-    const windowWithEthereum = window as unknown as WindowWithEthereum;
-    const { ethereum } = windowWithEthereum;
-    const newProvider = new Web3Provider(ethereum, "any");
-    provider.set(newProvider);
-    try {
-      await ethereum.request({
-        method: "wallet_switchEthereumChain",
-        params: [
-          {
-            chainId: "0x34",
-          },
-        ],
-      });
-    } catch (switchError: any) {
-      // Missing network
-      if (switchError.code === 4902 || switchError.code === -32603) {
-        await ethereum.request({
-          method: "wallet_addEthereumChain",
-          params: [
-            {
-              chainId: "0x34", //Coinex RPC is down atm
-              chainName: "CoinEx Smart Chain Mainnet",
-              nativeCurrency: {
-                name: "CoinEx Chain Native Token",
-                symbol: "cet",
-                decimals: 18,
-              },
-              rpcUrls: ["https://rpc.coinex.net"],
-              blockExplorerUrls: ["https://coinex.net"],
-            },
-          ],
-        });
-      } else {
-        throw Error(error);
-      }
-    }
-  }
+async function addNetworkBsc() {
+  await switchNetwork("bsc");
+}
+
+async function addNetworkPoly() {
+  await switchNetwork("poly");
+}
+
+async function addNetworkMovr() {
+  await switchNetwork("movr");
+}
+
+async function addNetworkCsc() {
+  await switchNetwork("csc");
+}
+
 </script>
 
 <div class="networks-button-row-container">

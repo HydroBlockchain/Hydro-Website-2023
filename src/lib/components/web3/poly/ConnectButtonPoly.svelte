@@ -8,18 +8,20 @@
   } from "$lib/utils/wallet-poly";
   import { showNotification, NotificationType } from "$lib/utils/notifications";
   import { metamask } from "$lib/utils/wallet-bsc";
+
   let loading = false;
-  async function onConnectPoly() {
+
+  const onConnectPoly = async () => {
     loading = true;
     try {
       await connectPoly();
-    } catch (error: any) {
+    } catch (error) {
       showNotification(error.message, {
         type: NotificationType.Error,
       });
     }
     loading = false;
-  }
+  };
 
   $: legend = loading
     ? "Connecting"

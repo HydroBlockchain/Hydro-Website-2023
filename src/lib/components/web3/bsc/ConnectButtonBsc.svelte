@@ -8,8 +8,10 @@
   } from "$lib/utils/wallet-bsc";
   import { showNotification, NotificationType } from "$lib/utils/notifications";
   import { metamask } from "$lib/utils/wallet-bsc";
+
   let loading = false;
-  async function onConnectBsc() {
+
+  const onConnectBsc = async () => {
     loading = true;
     try {
       await connectBsc();
@@ -19,7 +21,7 @@
       });
     }
     loading = false;
-  }
+  };
 
   $: legend = loading
     ? "Connecting"

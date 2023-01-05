@@ -66,6 +66,7 @@
           <ThemeToggle />
           <a
             class="header-link"
+            id="button-header"
             data-sveltekit-preload-data="hover"
             aria-label="Hydro Technology"
             href="/tech"
@@ -83,6 +84,7 @@
           </a>
           <a
             class="header-link"
+            id="button-header"
             data-sveltekit-preload-data="hover"
             aria-label="Team Hydro"
             href="/team"
@@ -105,6 +107,7 @@
           </a>
           <a
             class="header-link"
+            id="button-header"
             data-sveltekit-preload-data="hover"
             aria-label="Hydro Roadmap"
             href="/roadmap"
@@ -123,6 +126,7 @@
           </a>
           <a
             class="header-link"
+            id="button-header"
             data-sveltekit-preload-data="hover"
             aria-label="Exchanges & Partners"
             href="/exchanges"
@@ -193,6 +197,10 @@
   #hydro-logo:hover {
     opacity: 0.5;
     cursor: pointer;
+  }
+
+  #button-header:hover{
+    background-color: var(--button-hover);
   }
 
   nav {

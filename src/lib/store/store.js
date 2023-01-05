@@ -1,42 +1,42 @@
+// @ts-nocheck
 import { writable } from "svelte/store";
 
 export const state = writable({
     loading: true
-})
+});
 
-//BSCSCAN 
-const contractAddress = '0xf3DBB49999B25c9D6641a9423C7ad84168D00071'
-const kvsAddress = '0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646'
-const apiKey = import.meta.env.VITE_BSCSCAN_API_KEY
-const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=` + `${contractAddress}` + `&address=${kvsAddress}` + `&tag=latest&apikey=${apiKey}`;
+//BSCSCAN
+const contractAddress = "0xf3DBB49999B25c9D6641a9423C7ad84168D00071";
+const kvsAddress = "0x587DF4d33C83e0b13cA7F45f6BD1D99F0A402646";
+const apiKey = import.meta.env.VITE_BSCSCAN_API_KEY;
+const bscscanEndpoint = `https://api.bscscan.com/api?module=account&action=tokenbalance&contractaddress=${contractAddress}&address=${kvsAddress}&tag=latest&apikey=${apiKey}`;
 
 export const stakedData = writable({
     hydroStaked: 0
-})
+});
 
-export const getStakedData = () => {
+export const getStakedData = async () => {
+    try {
+        const res = await fetch(bscscanEndpoint);
+        if (!res.ok) {
+            throw Error("Could not fetch Hydro BSCscan data");
+        }
+        const data = await res.json();
+        stakedData.update(current => {
+            return {
+                ...current,
+                hydroStaked: Math.round(data.result / Math.pow(10, 16)) / 100
+            };
+        });
+    } catch (err) {
+        console.log(err);
+    }
+};
 
-    fetch(bscscanEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Hydro BSCscan data")
-            }
-            return res.json()
-        })
-        .then(data => {
-            stakedData.update(current => {
-                return {
-                    ...current,
-                    hydroStaked: Math.round(data.result / Math.pow(10, 16)) / 100
-                }
-            })
-        }).catch(err => console.log(err))
-
-}
 setInterval(getStakedData, 1800000);
 getStakedData();
 
-//COINGECKO
+//Coingecko
 const hydroEndpoint = `https://api.coingecko.com/api/v3/coins/hydro`;
 const ethEndpoint = `https://api.coingecko.com/api/v3/coins/ethereum`;
 const bscEndpoint = `https://api.coingecko.com/api/v3/coins/binancecoin`;
@@ -44,7 +44,16 @@ const cscEndpoint = `https://api.coingecko.com/api/v3/coins/coinex-token`;
 const polyEndpoint = `https://api.coingecko.com/api/v3/coins/matic-network`;
 const movrEndpoint = `https://api.coingecko.com/api/v3/coins/moonriver`;
 
-//Exported Pricedata
+const endpoints = [
+    hydroEndpoint,
+    ethEndpoint,
+    bscEndpoint,
+    cscEndpoint,
+    polyEndpoint,
+    movrEndpoint,
+];
+
+// Exported Pricedata
 export const priceData = writable({
     hydroPrice: 0,
     hydroChange: 0,
@@ -60,127 +69,51 @@ export const priceData = writable({
     cscPrice: 0,
     cscChange: 0,
     movrPrice: 0,
-    movrChange: 0
-})
+    movrChange: 0,
+});
 
-//Fetch Data
-export const getPriceData = () => {
+const fetchPriceData = async (endpoint) => {
+    try {
+        const res = await fetch(endpoint);
+        if (!res.ok) {
+            throw Error("Could not fetch price data");
+        }
+        const data = await res.json();
+        return data.market_data;
+    } catch (err) {
+        console.log(err);
+    }
+};
 
-    //fetch Hydro Price
-    fetch(hydroEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch hydro")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    hydroPrice: data.market_data.current_price.usd,
-                    hydroChange: data.market_data.price_change_percentage_24h.toFixed(2),
-                    hydroMC: data.market_data.market_cap.usd,
-                    hydroVolume: data.market_data.total_volume.usd,
-                    hydroSupply: data.market_data.total_supply
+export const getPriceData = async () => {
+    try {
+        const data = await Promise.all(endpoints.map(fetchPriceData));
 
-                }
-            })
-        }).catch(err => console.log(err))
+        priceData.update((current) => {
+            return {
+                ...current,
+                hydroPrice: data[0].current_price.usd,
+                hydroChange: data[0].price_change_percentage_24h.toFixed(2),
+                hydroMC: data[0].market_cap.usd,
+                hydroVolume: data[0].total_volume.usd,
+                hydroSupply: data[0].total_supply,
+                ethPrice: data[1].current_price.usd.toFixed(2),
+                ethChange: data[1].price_change_percentage_24h.toFixed(2),
+                bscPrice: data[2].current_price.usd.toFixed(2),
+                bscChange: data[2].price_change_percentage_24h.toFixed(2),
+                polyPrice: data[3].current_price.usd,
+                polyChange: data[3].price_change_percentage_24h.toFixed(2),
+                cscPrice: data[4].current_price.usd,
+                cscChange: data[4].price_change_percentage_24h.toFixed(2),
+                movrPrice: data[5].current_price.usd,
+                movrChange: data[5].price_change_percentage_24h.toFixed(2),
+            };
+        });
+    } catch (err) {
+        console.log(err);
+    }
+};
 
-    //fetch ETH Price
-    fetch(ethEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch ethereum")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    ethPrice: data.market_data.current_price.usd.toFixed(2),
-                    ethChange: data.market_data.price_change_percentage_24h.toFixed(2)
-                }
-            })
-        }).catch(err => console.log(err))
-
-    //fetch BSC Price
-    fetch(bscEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch bsc")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    bscPrice: data.market_data.current_price.usd.toFixed(2),
-                    bscChange: data.market_data.price_change_percentage_24h.toFixed(2)
-                }
-            })
-        }).catch(err => console.log(err))
-
-    //fetch Poly Price
-    fetch(polyEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Polygon")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    polyPrice: data.market_data.current_price.usd,
-                    polyChange: data.market_data.price_change_percentage_24h.toFixed(2)
-                }
-            })
-        }).catch(err => console.log(err))
-
-    //fetch CSC Price
-    fetch(cscEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Coinex")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    cscPrice: data.market_data.current_price.usd,
-                    cscChange: data.market_data.price_change_percentage_24h.toFixed(2)
-                }
-            })
-        }).catch(err => console.log(err))
-
-    //fetch MOVR Price
-    fetch(movrEndpoint)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Moonriver")
-            }
-            return res.json()
-        })
-        .then(data => {
-            priceData.update(current => {
-                return {
-                    ...current,
-                    movrPrice: data.market_data.current_price.usd,
-                    movrChange: data.market_data.price_change_percentage_24h.toFixed(2)
-                }
-            })
-        }).catch(err => console.log(err))
-
-}
-
-//Set interval of 1min for price data and fetch data
 setInterval(getPriceData, 1800000);
 getPriceData();
 
@@ -256,7 +189,6 @@ export const getMediumData = () => {
 setInterval(getMediumData, 18000000);
 getMediumData();
 
-//GITHUB
 const githubEndpointHydroswap = "https://api.github.com/repos/HydroBlockchain/hydroswap-v2-frontend/commits/main";
 const githubEndpointAegir = "https://api.github.com/repos/HydroBlockchain/aegir-wallet/commits/main";
 
@@ -269,89 +201,83 @@ export const githubData = writable({
     commitMsgAegir: null,
     avatarAegir: null,
     urlAegir: null
-})
+});
 
-export const getGithubData = () => {
-
-    //Fetch Hydroswap commits
-    fetch(githubEndpointHydroswap)
-        .then(res => {
+const fetchGithubData = (endpoint) =>
+    fetch(endpoint)
+        .then((res) => {
             if (!res.ok) {
-                throw Error("Could not fetch Hydroswap Github data")
+                throw Error("Could not fetch Github data");
             }
-            return res.json()
+            return res.json();
         })
-        .then(data => {
-            githubData.update(current => {
-                return {
-                    ...current,
-                    usernameSwap: data.author.login,
-                    commitMsgSwap: data.commit.message,
-                    avatarSwap: data.author.avatar_url,
-                    urlSwap: data.html_url
-                }
-            })
-        }).catch(err => console.log(err))
-
-    //Fetch Aegir commits
-    fetch(githubEndpointAegir)
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Hydroswap Github data")
-            }
-            return res.json()
+        .then((data) => {
+            return {
+                username: data.author.login,
+                commitMsg: data.commit.message,
+                avatar: data.author.avatar_url,
+                url: data.html_url,
+            };
         })
-        .then(data => {
-            githubData.update(current => {
-                return {
-                    ...current,
-                    usernameAegir: data.author.login,
-                    commitMsgAegir: data.commit.message,
-                    avatarAegir: data.author.avatar_url,
-                    urlAegir: data.html_url
-                }
-            })
-        }).catch(err => console.log(err))
+        .catch((err) => console.log(err));
 
-}
+export const getGithubData = async () => {
+    try {
+        const [hydroswapData, aegirData] = await Promise.all([
+            fetchGithubData(githubEndpointHydroswap),
+            fetchGithubData(githubEndpointAegir),
+        ]);
+
+        githubData.update((current) => {
+            return {
+                ...current,
+                usernameSwap: hydroswapData.username,
+                commitMsgSwap: hydroswapData.commitMsg,
+                avatarSwap: hydroswapData.avatar,
+                urlSwap: hydroswapData.url,
+                usernameAegir: aegirData.username,
+                commitMsgAegir: aegirData.commitMsg,
+                avatarAegir: aegirData.avatar,
+                urlAegir: aegirData.url,
+            };
+        });
+    } catch (err) {
+        console.log(err);
+    }
+};
 
 setInterval(getGithubData, 1800000);
 getGithubData();
 
-
-
+//Hydro Info
 export const hydroInfo = writable({
     marketcapRank: 0,
     coingeckoRank: 0,
     twitterFollowers: 0,
     redditSubscribers: 0,
-    telegramUsers: 0,
+    telegramUsers: 0
+});
 
-})
-
-export const getHydroInfo = () => {
-
-    fetch('https://api.coingecko.com/api/v3/coins/hydro?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true')
-        .then(res => {
-            if (!res.ok) {
-                throw Error("Could not fetch Hydro Info")
-            }
-            return res.json()
-        })
-        .then(data => {
-            hydroInfo.update(current => {
-                return {
-                    ...current,
-                    marketcapRank: data.market_cap_rank,
-                    coingeckoRank: data.coingecko_rank,
-                    twitterFollowers: data.community_data.twitter_followers,
-                    redditSubscribers: data.community_data.reddit_subscribers,
-                    telegramUsers: data.community_data.telegram_channel_user_count
-                }
-            })
-        }).catch(err => console.log(err))
-
-}
+export const getHydroInfo = async () => {
+    try {
+        const res = await fetch(
+            "https://api.coingecko.com/api/v3/coins/hydro?localization=false&tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true"
+        );
+        if (!res.ok) {
+            throw Error("Could not fetch Hydro Info");
+        }
+        const data = await res.json();
+        hydroInfo.set({
+            marketcapRank: data.market_cap_rank,
+            coingeckoRank: data.coingecko_rank,
+            twitterFollowers: data.community_data.twitter_followers,
+            redditSubscribers: data.community_data.reddit_subscribers,
+            telegramUsers: data.community_data.telegram_channel_user_count
+        });
+    } catch (err) {
+        console.log(err);
+    }
+};
 
 setInterval(getHydroInfo, 1800000);
 getHydroInfo();
