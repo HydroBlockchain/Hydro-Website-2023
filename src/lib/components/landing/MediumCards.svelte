@@ -2,6 +2,12 @@
   // @ts-nocheck
   import { mediumData } from "$lib/store/store";
   import Time from "svelte-time";
+
+  function truncateString(str, num) {
+  return str;
+}
+
+
 </script>
 
 <div class="three-quarter" id="card-background">
@@ -13,8 +19,9 @@
       rel="noopener noreferrer"
     >
       <div class="blog-card" id="card-background-alt">
+        <!-- svelte-ignore missing-declaration -->
         <div class="blog-title">
-          {$mediumData.mediumTitleOne}
+          {$mediumData.mediumTitleOne.slice(0, 40)}
         </div>
         <div class="pub-date">
           <Time timestamp={$mediumData.mediumPubOne} format="MM/DD" />
@@ -29,7 +36,7 @@
     >
       <div class="blog-card" id="card-background-alt">
         <div class="blog-title">
-          {$mediumData.mediumTitleTwo}
+          {$mediumData.mediumTitleTwo.slice(0, 40)}
         </div>
         <div class="pub-date">
           <Time timestamp={$mediumData.mediumPubTwo} format="MM/DD" />
@@ -44,7 +51,7 @@
     >
       <div class="blog-card" id="card-background-alt">
         <div class="blog-title">
-          {$mediumData.mediumTitleThree}
+          {$mediumData.mediumTitleThree.slice(0, 40)}
         </div>
         <div class="pub-date">
           <Time timestamp={$mediumData.mediumPubThree} format="MM/DD" />
@@ -61,7 +68,7 @@
     >
       <div class="blog-card" id="card-background-alt">
         <div class="blog-title">
-          {$mediumData.mediumTitleFour}
+          {$mediumData.mediumTitleFour.slice(0, 40)}
         </div>
         <div class="pub-date">
           <Time timestamp={$mediumData.mediumPubFour} format="MM/DD" />
@@ -76,7 +83,7 @@
     >
       <div class="blog-card" id="card-background-alt">
         <div class="blog-title">
-          {$mediumData.mediumTitleFive}
+          {$mediumData.mediumTitleFive.slice(0, 40)}
         </div>
         <div class="pub-date">
           <Time timestamp={$mediumData.mediumPubFive} format="MM/DD" />
@@ -85,7 +92,7 @@
     </a>
     <a
       class="blog-link"
-      href={$mediumData.mediumLinkSix}
+      href={$mediumData.mediumLinkSix.slice(0, 40)}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -139,6 +146,7 @@
     align-items: center;
     text-align: start;
     font-size: var(--fs-xsmall);
+    text-overflow: ellipsis;
   }
 
   .pub-date {
