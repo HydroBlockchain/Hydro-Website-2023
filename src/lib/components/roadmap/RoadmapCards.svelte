@@ -71,7 +71,7 @@
         <div class="half-card-structure">
           <div class="card-row" id="what">
             Keres Diamond, The Keresian Protocol.
-            <div id="q">Q2</div>
+            <div id="q">Q3</div>
           </div>
           <div class="card-row" id="desc">
             Deploy Keres Diamond on testnet for integration with Keresverse.
