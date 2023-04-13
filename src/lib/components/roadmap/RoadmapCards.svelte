@@ -214,19 +214,19 @@
 
   .progress-moved .progress-bar1 {
     width: var(--progressbar1);
-    background-color: var(--progress-bar);
+    background-color: var(--progress-bar-complete);
     animation: progressAnimation1 4s;
   }
 
   @keyframes progressAnimation1 {
     0% {
       width: 5%;
-      background-color: var(--progress-bar);
+      background-color: var(--progress-bar-complete);
     }
 
     100% {
       width: var(--progressbar1);
-      background-color: var(--progress-bar);
+      background-color: var(--progress-bar-complete);
     }
   }
 

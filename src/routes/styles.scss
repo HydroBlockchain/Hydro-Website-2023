@@ -41,9 +41,9 @@
   --transparent: rgba(255, 255, 255, 0);
   --preloader: rgba(0, 0, 0, 1);
   //Progress Bars
-  --progressbar1: 75%;
-  --progressbar2: 35%;
-  --progressbar3: 30%;
+  --progressbar1: 100%;
+  --progressbar2: 55%;
+  --progressbar3: 40%;
   --progressbar4: 32%;
   --progressbar5: 28%;
   --progressbar6: 12%;
@@ -69,6 +69,7 @@
   --sidemenu-button: rgba(255, 255, 255, 0.3);
   //Progress Bar
   --progress-bar: rgba(105, 82, 255, 0.5);
+  --progress-bar-complete: rgba(82, 255, 157, 0.5);
   //background animation
   --animation-color-0: rgba(35, 81, 142, 0.5);
   --animation-color-1: rgba(2, 91, 173, 0.5);
@@ -154,6 +155,7 @@
   --sidemenu-button: rgba(255, 255, 255, 0.3);
   //Progress Bar
   --progress-bar: rgb(107, 147, 255);
+  --progress-bar-complete: rgba(109, 254, 172, 0.5);
   //background animation
   --animation-color-0: rgba(181, 138, 255, 0.8);
   --animation-color-1: rgba(41, 197, 224, 0.8);
