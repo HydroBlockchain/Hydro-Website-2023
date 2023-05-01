@@ -4,10 +4,6 @@
   import { onMount } from "svelte";
   import { state } from "$lib/store/store";
   import { initBsc } from "$lib/utils/wallet-bsc.ts";
-  import { initEth } from "$lib/utils/wallet-eth.ts";
-  import { initPoly } from "$lib/utils/wallet-poly";
-  import { initMovr } from "$lib/utils/wallet-movr";
-  import { initCsc } from "$lib/utils/wallet-csc";
   import Header from "$lib/components/header/Header.svelte";
   import Footer from "$lib/components/footer/Footer.svelte";
   import Preloader from "$lib/components/Preloader.svelte";
@@ -16,10 +12,6 @@
   onMount(() => {
     ready = true;
     initBsc();
-    initEth();
-    initPoly();
-    initMovr();
-    initCsc();
   });
 
   $: {
