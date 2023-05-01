@@ -83,7 +83,7 @@
         </svg>
       </div>
 
-      The Hydro Token Tool Can Add Hydro Tokens on all supported networks.<br />
+      The Hydro Token Tool Can Add Hydro Tokens to your wallet on the BSC Network.<br />
       In order to use it you have to first download Metamask. <br />
       Once you have, head on back here to add the Hydro Token automatically.
       <h3>

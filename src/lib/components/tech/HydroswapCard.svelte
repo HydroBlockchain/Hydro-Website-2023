@@ -66,14 +66,7 @@
         >
           <div class="button" id="hydroswap-buttons">Stake</div></a
         >
-        <a
-          data-sveltekit-preload-data="hover"
-          href={item[3].link}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="button" id="hydroswap-buttons">Bridge</div></a
-        >
+      
       </div>
     </div>
   </div>
