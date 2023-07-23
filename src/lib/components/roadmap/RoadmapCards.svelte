@@ -53,7 +53,7 @@
           </div>
           <div class="card-row" id="desc">
             Keresverse Website live for beta testing. <br />
-            - Main Web3 interface on testnet for evaluation. <br />
+            - Main interface & Registration. <br />
             - Keres Diamond on testnet for evaluation.
           </div>
           <div class="card-row" id="progress">
@@ -274,19 +274,19 @@
 
   .progress-moved .progress-bar3 {
     width: var(--progressbar3);
-    background-color: var(--progress-bar);
+    background-color: var(--progress-bar-complete);
     animation: progressAnimation3 4s;
   }
 
   @keyframes progressAnimation3 {
     0% {
       width: 5%;
-      background-color: var(--progress-bar);
+      background-color: var(--progress-bar-complete);
     }
 
     100% {
       width: var(--progressbar3);
-      background-color: var(--progress-bar);
+      background-color: var(--progress-bar-complete);
     }
   }
 
